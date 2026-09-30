@@ -1,0 +1,26 @@
+# Закрытие поддоменов alsn.ru от индексации
+# Дата: 07.09.2026
+#
+# Куда вставить: на КАЖДЫЙ поддомен свой файл
+#   https://demo.alsn.ru/robots.txt
+#   https://apps.alsn.ru/robots.txt
+#   https://www.alsn.ru/robots.txt   (лучше ещё 301 → https://alsn.ru/)
+#   https://lk.alsn.ru/robots.txt
+#
+# НЕ класть этот файл на основной https://alsn.ru/ —
+# у Тильды robots.txt автогенерируется и правится нельзя.
+# Основной сайт должен оставаться открытым для поиска.
+#
+# После выкладки: Яндекс.Вебмастер → добавить поддомен →
+# Инструменты → Удаление страниц из поиска → префикс https://поддомен.alsn.ru/
+
+User-Agent: *
+Disallow: /
+
+# Яндекс: явный запрет всего хоста
+User-Agent: Yandex
+Disallow: /
+
+# Google
+User-Agent: Googlebot
+Disallow: /

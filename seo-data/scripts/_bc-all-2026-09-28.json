@@ -1,0 +1,5762 @@
+[
+  {
+    "path": "/",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Аллсан Интеграция — внедрение 1С и интеграции для торговли и производства",
+    "kind": "page"
+  },
+  {
+    "path": "/about_us",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "О компании"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / О ко",
+    "last_vis": "О компании",
+    "last_ld": "О компании",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "О компании",
+          "https://alsn.ru/about_us"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "О компании «Аллсан Интеграция»",
+    "kind": "page"
+  },
+  {
+    "path": "/blog",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Блог"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> / Блог",
+    "last_vis": "Блог",
+    "last_ld": "Блог",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Блог",
+          "https://alsn.ru/blog"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Блог Аллсан: интеграция 1С с 2005 года",
+    "kind": "page"
+  },
+  {
+    "path": "/vacancy",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Вакансии"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Вака",
+    "last_vis": "Вакансии",
+    "last_ld": "Вакансии",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Вакансии",
+          "https://alsn.ru/vacancy"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Вакансии",
+    "kind": "page"
+  },
+  {
+    "path": "/internship",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Стажировка"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Стаж",
+    "last_vis": "Стажировка",
+    "last_ld": "Стажировка",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Стажировка",
+          "https://alsn.ru/internship"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Запишись на стажировку в Аллсан Интеграцию",
+    "kind": "page"
+  },
+  {
+    "path": "/contacts",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Контакты"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Конт",
+    "last_vis": "Контакты",
+    "last_ld": "Контакты",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Контакты",
+          "https://alsn.ru/contacts"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Контакты ООО «Аллсан Интеграция» Генеральный директор: Львов С. А.",
+    "kind": "page"
+  },
+  {
+    "path": "/persons",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Команда"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кома",
+    "last_vis": "Команда",
+    "last_ld": "Команда",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Команда",
+          "https://alsn.ru/persons"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Встречайте нашу команду",
+    "kind": "page"
+  },
+  {
+    "path": "/amo_crm",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "amoCRM"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / amoC",
+    "last_vis": "amoCRM",
+    "last_ld": "amoCRM",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "amoCRM",
+          "https://alsn.ru/amo_crm"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "«Аллсан Интеграция» — официальный партнер amoCRM",
+    "kind": "page"
+  },
+  {
+    "path": "/outsorce_vs_inhouse",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Аутсорс или штат"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Аутс",
+    "last_vis": "Аутсорс или штат",
+    "last_ld": "Аутсорс или штат",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Аутсорс или штат",
+          "https://alsn.ru/outsorce_vs_inhouse"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Сотрудник в штате или команда программистов 1С на аутсорсе?",
+    "kind": "page"
+  },
+  {
+    "path": "/clients",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Клиенты"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Клие",
+    "last_vis": "Клиенты",
+    "last_ld": "Клиенты",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Клиенты",
+          "https://alsn.ru/clients"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Клиенты компании Аллсан Интеграция",
+    "kind": "page"
+  },
+  {
+    "path": "/review",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Отзывы"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Отзы",
+    "last_vis": "Отзывы",
+    "last_ld": "Отзывы",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Отзывы",
+          "https://alsn.ru/review"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Отзывы о сотрудничестве с командой Allsun Integration",
+    "kind": "page"
+  },
+  {
+    "path": "/cra",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "ЦРА"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / ЦРА",
+    "last_vis": "ЦРА",
+    "last_ld": "ЦРА",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "ЦРА",
+          "https://alsn.ru/cra"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Аллсан Интеграция - Центр Реальной Автоматизации в Зеленограде",
+    "kind": "page"
+  },
+  {
+    "path": "/blog/integration",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1С Что, с чем и зачем интегрировать?",
+    "kind": "page"
+  },
+  {
+    "path": "/integrationeco",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с экосистемой"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Интеграция с экосистемой",
+    "last_ld": "Интеграция с экосистемой",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция с экосистемой",
+          "https://alsn.ru/integrationeco"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1С с экосистемой организации",
+    "kind": "page"
+  },
+  {
+    "path": "/blog/erp",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Функции программного комплекса 1С:ERP. Условия успешного внедрения 1С:ERP на предприятии",
+    "kind": "page"
+  },
+  {
+    "path": "/remotework",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Как улучшить адаптацию удаленных сотрудников — обязательная основа и ноу-хау компаний",
+    "kind": "page"
+  },
+  {
+    "path": "/business0",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "",
+    "kind": "page"
+  },
+  {
+    "path": "/utp",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Подберём и установим 1С за 1 день, техзадание напишем бесплатно",
+    "kind": "page"
+  },
+  {
+    "path": "/uslovia-vozvrata",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Обмен и возврат товара",
+    "kind": "page"
+  },
+  {
+    "path": "/sitemap",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Карта сайта",
+    "kind": "page"
+  },
+  {
+    "path": "/policy",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Политика в отношении обработки персональных данных",
+    "kind": "page"
+  },
+  {
+    "path": "/privacy",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Политика в отношении обработки персональных данных ООО «Аллсан Интеграция»",
+    "kind": "page"
+  },
+  {
+    "path": "/soglashenie",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Пользовательское соглашение",
+    "kind": "page"
+  },
+  {
+    "path": "/event-2025-05",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Секретные способы увеличения продаж на маркетплейсах ОЗОН и Wildberries",
+    "kind": "page"
+  },
+  {
+    "path": "/event-2025-06",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кому будет полезен вебинар?",
+    "kind": "page"
+  },
+  {
+    "path": "/casemarketplace",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Модуль 1С для маркетплейсов"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Моду",
+    "last_vis": "Модуль 1С для маркетплейсов",
+    "last_ld": "Модуль 1С для маркетплейсов",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Модуль 1С для маркетплейсов",
+          "https://alsn.ru/casemarketplace"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Модуль интеграции 1С с маркетплейсами Ozon и Wildberries",
+    "kind": "page"
+  },
+  {
+    "path": "/development1c",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Внедрение 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Внед",
+    "last_vis": "Внедрение 1С",
+    "last_ld": "Внедрение 1С",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Внедрение 1С",
+          "https://alsn.ru/development1c"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Внедрение 1С под ключ - УТ, КА, ERP | Аллсан",
+    "kind": "page"
+  },
+  {
+    "path": "/bitrix24",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Битрикс24"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Битр",
+    "last_vis": "Битрикс24",
+    "last_ld": "Битрикс24",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Битрикс24",
+          "https://alsn.ru/bitrix24"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Внедрение CRM Битрикс24: тарифы и цены",
+    "kind": "page"
+  },
+  {
+    "path": "/support1c",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Техподдержка 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> / Техп",
+    "last_vis": "Техподдержка 1С",
+    "last_ld": "Техподдержка 1С",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Техподдержка 1С",
+          "https://alsn.ru/support1c"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Техническая поддержка 1С — программист на час",
+    "kind": "page"
+  },
+  {
+    "path": "/1cbitrix",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция Битрикс24 и 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Интеграция Битрикс24 и 1С",
+    "last_ld": "Интеграция Битрикс24 и 1С",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция Битрикс24 и 1С",
+          "https://alsn.ru/1cbitrix"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция Битрикс24 и 1С для интернет-магазина (сайта)",
+    "kind": "page"
+  },
+  {
+    "path": "/whatsapp",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "WhatsApp-бот 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / What",
+    "last_vis": "WhatsApp-бот 1С",
+    "last_ld": "WhatsApp-бот 1С",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "WhatsApp-бот 1С",
+          "https://alsn.ru/whatsapp"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "WhatsApp-бот 1С для увеличения продаж и автоматизации бизнеса",
+    "kind": "page"
+  },
+  {
+    "path": "/crmfurniture",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "CRM для мебели"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / CRM ",
+    "last_vis": "CRM для мебели",
+    "last_ld": "CRM для мебели",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "CRM для мебели",
+          "https://alsn.ru/crmfurniture"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Allsun 1С:CRM для мебельного бизнеса, мебельных магазинов, производства мебели",
+    "kind": "page"
+  },
+  {
+    "path": "/integrationsite",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с сайтом"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Интеграция с сайтом",
+    "last_ld": "Интеграция с сайтом",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция с сайтом",
+          "https://alsn.ru/integrationsite"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция с CMS сайта от 25 000 рублей",
+    "kind": "page"
+  },
+  {
+    "path": "/erp-time-price",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Внедрение 1С",
+      "Стоимость 1С:ERP"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> / Внед",
+    "last_vis": "Стоимость 1С:ERP",
+    "last_ld": "Стоимость 1С:ERP",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Внедрение 1С",
+          "https://alsn.ru/development1c"
+        ],
+        [
+          "Стоимость 1С:ERP",
+          "https://alsn.ru/erp-time-price"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Стоимость внедрения 1С:ERP на производственном предприятии",
+    "kind": "page"
+  },
+  {
+    "path": "/perevystavlenie-uslug-posledney-mili-ozon-v-1s",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Перевыставление услуг последней мили ОЗОН с НДС за три клика в 1С",
+    "kind": "page"
+  },
+  {
+    "path": "/moy-sklad-perenos-v-1s",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Переход с МойСклад на 1С за 3 дня",
+    "kind": "page"
+  },
+  {
+    "path": "/ecom",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Интеграция с поставщиками",
+    "last_ld": "Интеграция с поставщиками",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция с поставщиками",
+          "https://alsn.ru/ecom"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1С с поставщиками телеком- и IT-оборудования",
+    "kind": "page"
+  },
+  {
+    "path": "/merlion",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "Мерлион"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Мерлион",
+    "last_ld": "Мерлион",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция с поставщиками",
+          "https://alsn.ru/ecom"
+        ],
+        [
+          "Мерлион",
+          "https://alsn.ru/merlion"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1C с Merlion B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/ocs",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "OCS"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "OCS",
+    "last_ld": "OCS",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция с поставщиками",
+          "https://alsn.ru/ecom"
+        ],
+        [
+          "OCS",
+          "https://alsn.ru/ocs"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1C с OCS B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/marvel",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "Марвел"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Марвел",
+    "last_ld": "Марвел",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция с поставщиками",
+          "https://alsn.ru/ecom"
+        ],
+        [
+          "Марвел",
+          "https://alsn.ru/marvel"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1C с Marvel B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/treolan",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "Treolan"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Treolan",
+    "last_ld": "Treolan",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция с поставщиками",
+          "https://alsn.ru/ecom"
+        ],
+        [
+          "Treolan",
+          "https://alsn.ru/treolan"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1C с Treolan B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/3logic",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "3logic"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "3logic",
+    "last_ld": "3logic",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция с поставщиками",
+          "https://alsn.ru/ecom"
+        ],
+        [
+          "3logic",
+          "https://alsn.ru/3logic"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1C с 3Logic B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/buhv8",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:Бухгалтерия"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:Б",
+    "last_vis": "1С:Бухгалтерия",
+    "last_ld": "1С:Бухгалтерия",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "1С:Бухгалтерия",
+          "https://alsn.ru/buhv8"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "1С:Бухгалтерия: внедрение, сопровождение, обслуживание",
+    "kind": "page"
+  },
+  {
+    "path": "/zup8",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:ЗУП"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:З",
+    "last_vis": "1С:ЗУП",
+    "last_ld": "1С:ЗУП",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "1С:ЗУП",
+          "https://alsn.ru/zup8"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "1С ЗУП 8: внедрение, техподдержка, сопровождение",
+    "kind": "page"
+  },
+  {
+    "path": "/upt8",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:УТ"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:У",
+    "last_vis": "1С:УТ",
+    "last_ld": "1С:УТ",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "1С:УТ",
+          "https://alsn.ru/upt8"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "1С:Управление торговлей 8 ред 11: внедрение, техподдержка, лицензии",
+    "kind": "page"
+  },
+  {
+    "path": "/kompleksnaya_avtomatizaciya",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Внедрение 1С",
+      "1С:Комплексная автоматизация"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Внед",
+    "last_vis": "1С:Комплексная автоматизация",
+    "last_ld": "1С:Комплексная автоматизация",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Внедрение 1С",
+          "https://alsn.ru/development1c"
+        ],
+        [
+          "1С:Комплексная автоматизация",
+          "https://alsn.ru/kompleksnaya_avtomatizaciya"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Внедрение 1С:Комплексная автоматизация под ключ",
+    "kind": "page"
+  },
+  {
+    "path": "/dokumentooborot8",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:Документооборот"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:Д",
+    "last_vis": "1С:Документооборот",
+    "last_ld": "1С:Документооборот",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "1С:Документооборот",
+          "https://alsn.ru/dokumentooborot8"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "1С:Документооборот 8: внедрение, техподдержка, лицензии",
+    "kind": "page"
+  },
+  {
+    "path": "/upravlenie_nashei_firmoi",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:УНФ"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:У",
+    "last_vis": "1С:УНФ",
+    "last_ld": "1С:УНФ",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "1С:УНФ",
+          "https://alsn.ru/upravlenie_nashei_firmoi"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "1С:Управление нашей фирмой (1С УНФ): внедрение, техподдержка, лицензии",
+    "kind": "page"
+  },
+  {
+    "path": "/1_obschepit_fastfood",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "1C:Предприятие 8. Фастфуд и Общепит",
+    "kind": "page"
+  },
+  {
+    "path": "/its",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:КП"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:К",
+    "last_vis": "1С:КП",
+    "last_ld": "1С:КП",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "1С:КП",
+          "https://alsn.ru/its"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Купить 1С:КП ПРОФ — комплект поддержки ИТС",
+    "kind": "page"
+  },
+  {
+    "path": "/1cfresh",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:Фреш"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:Ф",
+    "last_vis": "1С:Фреш",
+    "last_ld": "1С:Фреш",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "1С:Фреш",
+          "https://alsn.ru/1cfresh"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "1С:Фреш — купить тариф в облаке",
+    "kind": "page"
+  },
+  {
+    "path": "/products",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Продукты"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Прод",
+    "last_vis": "Продукты",
+    "last_ld": "Продукты",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Продукты",
+          "https://alsn.ru/products"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "1С Предприятие 8: программы, лицензии, внедрение, разработка",
+    "kind": "page"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii",
+    "style": "CANON",
+    "bc_blocks": 2,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Лицензии 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> / Лице",
+    "last_vis": "Лицензии 1С",
+    "last_ld": "Лицензии 1С",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Лицензии 1С",
+          "https://alsn.ru/dopolnitelnie_licenzii"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Купить лицензии 1С ПРОФ",
+    "kind": "page"
+  },
+  {
+    "path": "/tbstroit",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Telegram-bot для строительной компании",
+    "kind": "page"
+  },
+  {
+    "path": "/tbtehpod",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Телеграм-бот 1С для технической поддержки клиентов",
+    "kind": "page"
+  },
+  {
+    "path": "/tbintmag",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Телеграм-бот 1С для интернет-магазина",
+    "kind": "page"
+  },
+  {
+    "path": "/tbavtoservis",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Telegram-bot для сервисной компании",
+    "kind": "page"
+  },
+  {
+    "path": "/telegram1c",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Telegram-бот 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Tele",
+    "last_vis": "Telegram-бот 1С",
+    "last_ld": "Telegram-бот 1С",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Telegram-бот 1С",
+          "https://alsn.ru/telegram1c"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Telegram-бот 1С для увеличения продаж и автоматизации бизнеса",
+    "kind": "page"
+  },
+  {
+    "path": "/tbhr",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Телеграм бот для кадровой службы HR",
+    "kind": "page"
+  },
+  {
+    "path": "/tbdokument",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Telegram-бот для документооборота",
+    "kind": "page"
+  },
+  {
+    "path": "/tbotdelprod",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Телеграм-бот 1С для продажи товаров и услуг",
+    "kind": "page"
+  },
+  {
+    "path": "/tbsotrudniki",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Телеграм-бот 1С для контроля переписки менеджеров с клиентами",
+    "kind": "page"
+  },
+  {
+    "path": "/tbfiksasotrud",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Telegram-bot для фиксации выхода сотрудников на работу",
+    "kind": "page"
+  },
+  {
+    "path": "/case_telegram_bot",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейсы по Телеграм-ботам",
+    "kind": "page"
+  },
+  {
+    "path": "/tbbot-parkovka-parking-garazh-stoyanka",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Телеграм-бот 1С для парковки, паркинга, гаражей, стоянки",
+    "kind": "page"
+  },
+  {
+    "path": "/tbbot-restoran-kafe-kofeynya-bar",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "1С чат-бот ресторана, кафе, кофейни, бара и другого общепита!",
+    "kind": "page"
+  },
+  {
+    "path": "/cases",
+    "style": "CANON",
+    "bc_blocks": 2,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Интеграция 1С с поставщиками — ООО «СЦ»",
+      "Главная",
+      "Кейсы"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейс",
+    "last_vis": "Кейсы",
+    "last_ld": "Кейсы",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Кейсы",
+          "https://alsn.ru/cases"
+        ],
+        [
+          "Интеграция 1С с поставщиками — ООО «СЦ»",
+          "https://alsn.ru/caseecom"
+        ]
+      ],
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Кейсы",
+          "https://alsn.ru/cases"
+        ]
+      ]
+    ],
+    "n_lists": 2,
+    "last_url_ok": false,
+    "visible_blocks": 1,
+    "h1": "Кейсы Аллсан Интеграция по доработке и интеграции 1С",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/autobuild",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейсы по автоматизации деятельности строительных компаний",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/onlinetrade",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейсы по интеграции 1С с интернет-магазинами",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_integratsii_s_crm_megaplan",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Интеграция 1С с CRM Мегаплан/Битрикс»",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/kidzintagration",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс \"Интеграция 1С:КА c CRM Битрикс24 для парка развлечений\"",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_integratsii_s_bitriks24",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс по интеграции 1С с Битрикс24 в строительстве",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/114bitrix",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс \"Интеграция 1С:УТ 11.4 с интернет-магазином и модулем 1С-Битрикс\"",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_na_uskorenie",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Ускорение обработки документов в 1С с 7 минут до 2 секунд»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_vnedreniyu_ut_11_3",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Корректное внедрение 1C:УТ 11.3»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_integratsii_zup_erp",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Интеграция 1С:ЗУП И 1С:ЕРП »",
+    "kind": "page"
+  },
+  {
+    "path": "/keys-perehod-s-sistemy-1szup-na-sap-hcm",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Переход с системы 1С:ЗУП на SAP HCM»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_integratsii_s_saytom",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Автоматический вывод списка сотрудников из 1С на сайт»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_telegram",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1С с клиентом Telegram",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_integratsii_s_messendzherom_telegram",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Отчетность из 1С в Telegram и в другие мессенджеры",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/trello_integration",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Интеграция 1С с Trello»",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/business_pro",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Программирование и стандартизация бизнес-процессов»",
+    "kind": "page"
+  },
+  {
+    "path": "/avtomatizatsiya_tekhpodderzhki",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Автоматизация технической поддержки»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_vnedrenyu_klassifikatsii_klientov",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Процесс внедрения одного из этапов классификации клиентов»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_lk",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Личный кабинет для контроля статуса выполнения задач»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_vnedreniyu_modulya_diadok",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Внедрение системы электронного документооборота Диадок»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_rezervirovaniyatovarov",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Доработка подсистемы резервирования товаров в зависимости от АВС классификации клиен",
+    "kind": "page"
+  },
+  {
+    "path": "/constr",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Allsun для строителей"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейс",
+    "last_vis": "Allsun для строителей",
+    "last_ld": "Allsun для строителей",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Кейсы",
+          "https://alsn.ru/cases"
+        ],
+        [
+          "Allsun для строителей",
+          "https://alsn.ru/constr"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Allsun для строителей",
+    "kind": "page"
+  },
+  {
+    "path": "/vnedrenie_mobilnoy_1c_kassy",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс \"Внедрение 1С:Мобильная касса\"",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_integratsiya_s_korporativnymi_prilozheniyami",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Интеграция мобильных приложений и мессенджеров с 1С: как сократить ФОТ на 1 млн руб.",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_byudzhetam",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Бюджетирование: контроль и анализ статей расходов»",
+    "kind": "page"
+  },
+  {
+    "path": "/integraciya-1c-dlya-prodavcov-kompyuternoy-tehniki",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1C для продавцов компьютерной техники",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/artis",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1С в мебельном бизнесе. Кейсы, реализованные для «Артис-XXI век»",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/xcom",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейсы по интеграции 1С, реализованные для X-COM",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/pek",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс \"Создание задания на доставку для транспортной компании ПЭК\"",
+    "kind": "page"
+  },
+  {
+    "path": "/cases/gwd",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1С. Автоматизация строительного бизнеса.",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_upravlencheskomu_uchetu",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Управленческая отчетность по МФСО для строителя»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_integratsiya_s_powerbi",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Формирование отчетности для строительной компании. Power Bi»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_mobilnym_prilozheniyam",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс. Мобильное приложение для контроля сотрудников строительной компании",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_lk2",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Личный кабинет клиента строительной компании»",
+    "kind": "page"
+  },
+  {
+    "path": "/keys_po_kartam_google",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Интеграция 1С с сайтом: отображение строительных объектов на карте Google Maps»",
+    "kind": "page"
+  },
+  {
+    "path": "/sklad",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Автоматизация работы сотрудников склада»",
+    "kind": "page"
+  },
+  {
+    "path": "/avtomaticheskaya_zagruzka_prays-listov_it-kholdinga_lanit",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Автоматическая загрузка прайс-листов IT- холдинга Ланит»",
+    "kind": "page"
+  },
+  {
+    "path": "/integratsiya_sap_hcm_i_1c_erp_2",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция SAP HCM и 1C: ERP 2",
+    "kind": "page"
+  },
+  {
+    "path": "/cracasesoftvideo",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "ЦРА"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / ЦРА",
+    "last_vis": "ЦРА",
+    "last_ld": "ЦРА",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "ЦРА",
+          "https://alsn.ru/cra"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": false,
+    "visible_blocks": 1,
+    "h1": "Кейс «Внедрение CRM системы в ООО \"Софтвидео\"»",
+    "kind": "page"
+  },
+  {
+    "path": "/avtomatizaciya-biznes-processov-kompanii-simon-elektrik-keys",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Автоматизация бизнес-процессов компании «Симон Электрик»",
+    "kind": "page"
+  },
+  {
+    "path": "/persons/interw_lvov",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Команда"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кома",
+    "last_vis": "Команда",
+    "last_ld": "Команда",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Команда",
+          "https://alsn.ru/persons"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": false,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1С. Как услуга стала отдельным бизнесом?",
+    "kind": "page"
+  },
+  {
+    "path": "/rbc_pro",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "«Чтобы обработать взрывной рост, мы усилили набор сотрудников из регионов»",
+    "kind": "page"
+  },
+  {
+    "path": "/article_digital-report",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "«Крупный бизнес нуждается в производительных системах»",
+    "kind": "page"
+  },
+  {
+    "path": "/komersant",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "«Облачное будущее»",
+    "kind": "page"
+  },
+  {
+    "path": "/gd",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "«50% рабочего времени мы сэкономили с помощью канбан»",
+    "kind": "page"
+  },
+  {
+    "path": "/bbit",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "«У меня никогда не получается точно сказать, какими инструментами я воспользуюсь по ходу п",
+    "kind": "page"
+  },
+  {
+    "path": "/interview_hr",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "«Порядочность и надежность по отношению к сотрудникам и клиентам»",
+    "kind": "page"
+  },
+  {
+    "path": "/publication",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Публикации в СМИ"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Публ",
+    "last_vis": "Публикации в СМИ",
+    "last_ld": "Публикации в СМИ",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Публикации в СМИ",
+          "https://alsn.ru/publication"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Публикации в СМИ",
+    "kind": "page"
+  },
+  {
+    "path": "/event-2025-06-----old1",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Секретные способы увеличения продаж на маркетплейсах ОЗОН и Wildberries",
+    "kind": "page"
+  },
+  {
+    "path": "/resurs-media",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1C с Ресурс-Медиа B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/russkiy-svet",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1C с Русский Свет B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/digis",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1C с DIGIS B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/etm-ipro",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "ЭТМ iPRO"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "ЭТМ iPRO",
+    "last_ld": "ЭТМ iPRO",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Интеграция с поставщиками",
+          "https://alsn.ru/ecom"
+        ],
+        [
+          "ЭТМ iPRO",
+          "https://alsn.ru/etm-ipro"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1C с ЭТМ iPRO по API",
+    "kind": "page"
+  },
+  {
+    "path": "/auvix",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1C с AUVIX B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/vtt",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1C с ВТТ B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/dssl",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1C с ДССЛ B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/elko",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Интеграция 1C с ELKO Rus B2B по API",
+    "kind": "page"
+  },
+  {
+    "path": "/event-marketplaces",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Секретные способы увеличения продаж на маркетплейсах ОЗОН и Wildberries",
+    "kind": "page"
+  },
+  {
+    "path": "/perehod-s-ut-na-unf",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Переход с УТ 10.3 и 11 на УНФ 3.0 от 1 дня",
+    "kind": "page"
+  },
+  {
+    "path": "/perehod-s-dokumentooborota-2-1-na-3-0",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Переход с 1С:Документооборот 2.1 на 3.0",
+    "kind": "page"
+  },
+  {
+    "path": "/telegram-bot-1s-dlya-sdachi-v-arendu-avtomobiley-i-tehniki-s-voditelyami",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Телеграм бот 1С для сдачи в аренду автомобилей с водителями",
+    "kind": "page"
+  },
+  {
+    "path": "/perehod-s-ut-10-3",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Переход с УТ 10.3 на 11.5 от 1 дня",
+    "kind": "page"
+  },
+  {
+    "path": "/perehod-s-upp-na-ka-unf-ut",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Внедрение 1С",
+      "Переход с УПП"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Внед",
+    "last_vis": "Переход с УПП",
+    "last_ld": "Переход с УПП",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Внедрение 1С",
+          "https://alsn.ru/development1c"
+        ],
+        [
+          "Переход с УПП",
+          "https://alsn.ru/perehod-s-upp-na-ka-unf-ut"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Переход с 1С УПП на КА, УНФ, УТ от 3 дней",
+    "kind": "page"
+  },
+  {
+    "path": "/sinhronizaciya-bp-i-bp",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Синхронизация БП и БП от 1 дня",
+    "kind": "page"
+  },
+  {
+    "path": "/sinhronizaciya-mezhdu-zup-i-zup",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Синхронизация между ЗУП и ЗУП от 1 дня",
+    "kind": "page"
+  },
+  {
+    "path": "/sinhronizaciya-mezhdu-ut-i-ut",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Синхронизация между 1С: УТ и УТ от 1 дня",
+    "kind": "page"
+  },
+  {
+    "path": "/telegram-bot-1s-dlya-soglasovaniya-i-podpisaniya-dokumentov-po-edo",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Согласование бухгалтерских документов по ЭДО с помощью Телеграм бота 1С",
+    "kind": "page"
+  },
+  {
+    "path": "/case-tehnokomp",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «B2B-интеграция с поставщиками для агрегатора маркетплейсов: обработка заказов в комп",
+    "kind": "page"
+  },
+  {
+    "path": "/1c-ozon-old",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Модуль 1С для маркетплейсов",
+      "Интеграция 1С с Ozon"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#8a8a8a;padding:8px 20px 0;\"> / Модуль 1С для маркетплейсов / Интеграция 1С с Ozon",
+    "last_vis": "Интеграция 1С с Ozon",
+    "last_ld": "Интеграция 1С с Ozon",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Модуль 1С для маркетплейсов",
+          "https://alsn.ru/casemarketplace"
+        ],
+        [
+          "Интеграция 1С с Ozon",
+          "https://alsn.ru/1c-ozon"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": false,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1С с Ozon",
+    "kind": "page"
+  },
+  {
+    "path": "/1c-wildberries",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Модуль 1С для маркетплейсов",
+      "Интеграция 1С с Wildberries"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#8a8a8a;padding:8px 20px 0;\"> / Модуль 1С для маркетплейсов / Интеграция 1С с Wildberrie",
+    "last_vis": "Интеграция 1С с Wildberries",
+    "last_ld": "Интеграция 1С с Wildberries",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Модуль 1С для маркетплейсов",
+          "https://alsn.ru/casemarketplace"
+        ],
+        [
+          "Интеграция 1С с Wildberries",
+          "https://alsn.ru/1c-wildberries"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1С с Wildberries",
+    "kind": "page"
+  },
+  {
+    "path": "/1c-ozon",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Модуль 1С для маркетплейсов",
+      "Интеграция 1С с Ozon"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#8a8a8a;padding:8px 20px 0;\"> / Модуль 1С для маркетплейсов / Интеграция 1С с Ozon",
+    "last_vis": "Интеграция 1С с Ozon",
+    "last_ld": "Интеграция 1С с Ozon",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Модуль 1С для маркетплейсов",
+          "https://alsn.ru/casemarketplace"
+        ],
+        [
+          "Интеграция 1С с Ozon",
+          "https://alsn.ru/1c-ozon"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Интеграция 1С с&nbsp; Ozon",
+    "kind": "page"
+  },
+  {
+    "path": "/page187317109.html",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "",
+    "kind": "page"
+  },
+  {
+    "path": "/https/keys_po_rfidmetki",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Кейс «Автоматизация учёта и оборачиваемости в ООО «МатСервис»",
+    "kind": "page"
+  },
+  {
+    "path": "/caseecomsc",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:wrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейсы ",
+    "last_vis": "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»",
+    "last_ld": "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Кейсы",
+          "https://alsn.ru/cases"
+        ],
+        [
+          "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»",
+          "https://alsn.ru/caseecomsc"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»",
+    "kind": "page"
+  },
+  {
+    "path": "/vesii",
+    "style": "NONE",
+    "bc_blocks": 1,
+    "bc_ok": false,
+    "bc_names": [
+      "INVALID_JSON"
+    ],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false,
+    "lists": [],
+    "n_lists": 0,
+    "last_url_ok": null,
+    "visible_blocks": 0,
+    "h1": "Автоматизация производственного учета и интеграция весового оборудования с 1С:УНФ для ООО ",
+    "kind": "page"
+  },
+  {
+    "path": "/xitsadmarketplace",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:wrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейсы ",
+    "last_vis": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+    "last_ld": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+    "name_match": true,
+    "lists": [
+      [
+        [
+          "Главная",
+          "https://alsn.ru/"
+        ],
+        [
+          "Кейсы",
+          "https://alsn.ru/cases"
+        ],
+        [
+          "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+          "https://alsn.ru/xitsadmarketplace"
+        ]
+      ]
+    ],
+    "n_lists": 1,
+    "last_url_ok": true,
+    "visible_blocks": 1,
+    "h1": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+    "kind": "page"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-590525180281-1sbuhgalteriya-8-prof-korobochnaya-posta",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546092540",
+    "name": "1С:Бухгалтерия 8 ПРОФ Коробочная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-948239768351-1s-buhgalteriya-8-prof-elektronnaya-post",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546116680",
+    "name": "1С Бухгалтерия 8 ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-472094879401-1sbuhgalteriya-8-korp-korobochnaya-posta",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546091970",
+    "name": "1С:Бухгалтерия 8 КОРП Коробочная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-385791130041-1s-buhgalteriya-8-korp-elektronnaya-post",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850445",
+    "name": "1С Бухгалтерия 8 КОРП Электронная поставка"
+  },
+  {
+    "path": "/zup8/tproduct/382489805-726105719231-1szarplata-i-upravlenie-personalom-8",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546092588",
+    "name": "1С:Зарплата и Управление Персоналом 8"
+  },
+  {
+    "path": "/zup8/tproduct/382489805-323583267611-1szarplata-i-upravlenie-personalom-8-kor",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546081506",
+    "name": "1С:Зарплата и Управление Персоналом 8 КОРП"
+  },
+  {
+    "path": "/zup8/tproduct/382489805-601537363831-1s-zup-zarplata-i-upravlenie-personalom",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850230",
+    "name": "1С ЗУП Зарплата и Управление Персоналом 8 КОРП Электронная поставка"
+  },
+  {
+    "path": "/zup8/tproduct/382489805-684572207481-1s-zup-zarplata-i-upravlenie-personalom",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850223",
+    "name": "1С ЗУП Зарплата и Управление Персоналом 8 ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/upt8/tproduct/382519864-446833311811-1s-predpriyatie-8-upravlenie-torgovlei",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546092595",
+    "name": "1С Предприятие 8 Управление торговлей"
+  },
+  {
+    "path": "/upt8/tproduct/382519864-269685662451-1s-ut-upravlenie-torgovlei-prof-8-elektr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850162",
+    "name": "1С УТ Управление торговлей ПРОФ 8 Электронная поставка"
+  },
+  {
+    "path": "/kompleksnaya_avtomatizaciya/tproduct/382573839-231428250681-1s-kompleksnaya-avtomatizatsiya-8-redakt",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546122445",
+    "name": "1С Комплексная автоматизация 8 Редакция 2 (коробочная поставка)"
+  },
+  {
+    "path": "/kompleksnaya_avtomatizaciya/tproduct/382573839-872098939391-1s-kompleksnaya-avtomatizatsiya-8-redakt",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850193",
+    "name": "1С Комплексная автоматизация 8 Редакция 2 (Электронная поставка)"
+  },
+  {
+    "path": "/kompleksnaya_avtomatizaciya/tproduct/382573839-282548349311-1s-kompleksnaya-avtomatizatsiya-dlya-10",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546142894",
+    "name": "1С Комплексная автоматизация для 10 пользователей + клиент-сервер (x86-64) Короб"
+  },
+  {
+    "path": "/kompleksnaya_avtomatizaciya/tproduct/382573839-680601662821-1s-kompleksnaya-avtomatizatsiya-dlya-10",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002153033",
+    "name": "1С Комплексная автоматизация для 10 пользователей + клиент-сервер (x86-64) Элект"
+  },
+  {
+    "path": "/dokumentooborot8/tproduct/382576916-990727761901-1s-dokumentooborot-8-korp",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546085931",
+    "name": "1С Документооборот 8 КОРП"
+  },
+  {
+    "path": "/dokumentooborot8/tproduct/382576916-571477913281-1s-dokumentooborot-8-korp-elektronnaya-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850285",
+    "name": "1С Документооборот 8 КОРП Электронная поставка"
+  },
+  {
+    "path": "/dokumentooborot8/tproduct/382576916-496027198971-1s-dokumentooborot-8-prof",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546081117",
+    "name": "1С Документооборот 8 ПРОФ"
+  },
+  {
+    "path": "/dokumentooborot8/tproduct/382576916-707398646141-1s-dokumentooborot-8-prof-elektronnaya-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850278",
+    "name": "1С Документооборот 8 ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/upravlenie_nashei_firmoi/tproduct/382580675-363597620931-1s-upravlenie-nashei-firmoi-8-prof",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546081124",
+    "name": "1С Управление нашей фирмой 8 ПРОФ"
+  },
+  {
+    "path": "/upravlenie_nashei_firmoi/tproduct/382580675-355792470971-1s-unf-upravlenie-nashei-firmoi-8-prof-e",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001705240",
+    "name": "1С УНФ Управление нашей фирмой 8 ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-967506814101-1spredpriyatie-8-prof-klientskie-litsenz",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546080875",
+    "name": "1С:Предприятие 8 ПРОФ. Клиентские лицензии на рабочие места (1-500 мест)"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-530486348521-1s-predpriyatie-83-prof-litsenziya-na-se",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546106773",
+    "name": "1С Предприятие 8.3 ПРОФ Лицензия на сервер"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-637890967551-1s-predpriyatie-83-prof-litsenziya-na-se",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546106780",
+    "name": "1С Предприятие 8.3 ПРОФ Лицензия на сервер (x86-64)"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-905369310501-1s-predpriyatie-83-prof-litsenziya-na-se",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001833585",
+    "name": "1С Предприятие 8.3 ПРОФ Лицензия на сервер (x86-64) Электронная поставка"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-891131555041-1s-predpriyatie-83-prof-litsenziya-na-se",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001833578",
+    "name": "1С Предприятие 8.3 ПРОФ Лицензия на сервер Электронная поставка"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-260795443151-1spredpriyatie-83-server-mini-na-5-podkl",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546109019",
+    "name": "1С:Предприятие 8.3. Сервер МИНИ на 5 подключений"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-956153679391-1s-predpriyatie-83-server-mini-na-5-podk",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001833561",
+    "name": "1С Предприятие 8.3 Сервер МИНИ на 5 подключений Электронная поставка"
+  },
+  {
+    "path": "/upravlenie_nashei_firmoi/tproduct/382580675-844556156881-1s-unf-upravlenie-nashei-firmoi-8-na-5-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001705257",
+    "name": "1С УНФ Управление нашей фирмой 8 на 5 пользователей Электронная поставка"
+  },
+  {
+    "path": "/upravlenie_nashei_firmoi/tproduct/382580675-889889864741-1s-upravlenie-nashei-firmoi-8-na-5-polzo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546086211",
+    "name": "1С Управление нашей фирмой 8 на 5 пользователей"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-270827666911-1s-buhgalteriya-8-prof-komplekt-na-5-pol",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850186",
+    "name": "1С Бухгалтерия 8 ПРОФ Комплект на 5 пользователей Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-897202038941-1sbuhgalteriya-8-komplekt-na-5-polzovate",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546092649",
+    "name": "1С:Бухгалтерия 8 Комплект на 5 пользователей"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-281139266361-1s-buhgalteriya-8-bazovaya-versiya-elekt",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546116673",
+    "name": "1С Бухгалтерия 8 Базовая версия Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-904683955451-1s-buhgalteriya-8-bazovaya-versiya-korob",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546041661",
+    "name": "1С Бухгалтерия 8 Базовая версия Коробочная поставка"
+  },
+  {
+    "path": "/upt8/tproduct/382519864-711533674411-1s-upravlenie-torgovlei-8-bazovaya-versi",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546113498",
+    "name": "1С Управление торговлей 8 Базовая версия"
+  },
+  {
+    "path": "/upt8/tproduct/382519864-237856863241-1s-ut-upravlenie-torgovlei-8-bazovaya-ve",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850391",
+    "name": "1С УТ Управление торговлей 8 Базовая версия Электронная поставка"
+  },
+  {
+    "path": "/zup8/tproduct/382489805-356897618411-1szarplata-i-upravlenie-personalom-8-baz",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546044433",
+    "name": "1С:Зарплата и Управление Персоналом 8 Базовая версия"
+  },
+  {
+    "path": "/zup8/tproduct/382489805-857790387941-1s-zup-zarplata-i-upravlenie-personalom",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001856744",
+    "name": "1С ЗУП Зарплата и Управление Персоналом 8 Базовая версия Электронная поставка"
+  },
+  {
+    "path": "/1_obschepit_fastfood/tproduct/419920200-179095986311-1s-predpriyatie-8-obschepit-elektronnaya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": false,
+    "sku": "2900002156812",
+    "name": "1С Предприятие 8 Общепит Электронная поставка"
+  },
+  {
+    "path": "/1_obschepit_fastfood/tproduct/419920200-587791020491-1spredpriyatie-8-obschepit",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": false,
+    "sku": "4601546118998",
+    "name": "1С:Предприятие 8. Общепит"
+  },
+  {
+    "path": "/1_obschepit_fastfood/tproduct/419920200-898720463841-1s-predpriyatie-8-obschepit-komplekt-dly",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": false,
+    "sku": "2900002156829",
+    "name": "1С Предприятие 8 Общепит Комплект для 5 пользователей Электронная поставка"
+  },
+  {
+    "path": "/1_obschepit_fastfood/tproduct/419920200-509769693301-1spredpriyatie-8-obschepit-komplekt-dlya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": false,
+    "sku": "4601546119001",
+    "name": "1С:Предприятие 8. Общепит. Комплект для 5 пользователей"
+  },
+  {
+    "path": "/1_obschepit_fastfood/tproduct/420025362-707151318681-1s-predpriyatie-8-fastfud-front-ofis-ele",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": false,
+    "sku": "2900001901932",
+    "name": "1С Предприятие 8 Фастфуд Фронт-офис Электронная поставка"
+  },
+  {
+    "path": "/1_obschepit_fastfood/tproduct/419928619-837358323511-1s-obschepit-klientskie-litsenzii-na-rab",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": false,
+    "sku": "2900002156850",
+    "name": "1С Общепит Клиентские лицензии на рабочие места Электронная поставка"
+  },
+  {
+    "path": "/1_obschepit_fastfood/tproduct/419928619-226213368711-1sobschepit-klientskie-litsenzii-na-rabo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": false,
+    "sku": "4601546119032",
+    "name": "1С:Общепит. Клиентские лицензии на рабочие места"
+  },
+  {
+    "path": "/1_obschepit_fastfood/tproduct/419928619-195238633241-1s-fastfud-i-restoran-klientskie-litsenz",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": false,
+    "sku": "2900001901963",
+    "name": "1С Фастфуд и Ресторан Клиентские лицензии на рабочие места Электронная поставка"
+  },
+  {
+    "path": "/1_obschepit_fastfood/tproduct/419928619-845146210291-1sfastfud-i-restoran-klientskie-litsenzi",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": false,
+    "sku": "4601546136718",
+    "name": "1С:Фастфуд и Ресторан. Клиентские лицензии на рабочие места"
+  },
+  {
+    "path": "/its/tproduct/903464734-270300004892-1skp-otraslevoi-prof-1-ya-kategoriya-na",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577563",
+    "name": "1С:КП Отраслевой ПРОФ, 1-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-122664362562-1skp-otraslevoi-prof-2-ya-kategoriya-na",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577600",
+    "name": "1С:КП Отраслевой ПРОФ, 2-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-976487371252-1skp-otraslevoi-prof-3-ya-kategoriya-na",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577648",
+    "name": "1С:КП Отраслевой ПРОФ, 3-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-164100780012-1skp-otraslevoi-prof-4-ya-kategoriya-na",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577686",
+    "name": "1С:КП Отраслевой ПРОФ, 4-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-705236749402-1skp-otraslevoi-prof-5-ya-kategoriya-na",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577723",
+    "name": "1С:КП Отраслевой ПРОФ, 5-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-377007673372-1skp-otraslevoi-prof-dlya-bazovih-versii",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577761",
+    "name": "1С:КП Отраслевой ПРОФ для базовых версий ПП на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-989592537612-1skp-otraslevoi-bazovii-1-ya-kategoriya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577808",
+    "name": "1С:КП Отраслевой Базовый, 1-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-772691320312-1skp-otraslevoi-bazovii-2-ya-kategoriya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577822",
+    "name": "1С:КП Отраслевой Базовый, 2-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-319428187922-1skp-otraslevoi-bazovii-3-ya-kategoriya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577846",
+    "name": "1С:КП Отраслевой Базовый, 3-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-244893673682-1skp-otraslevoi-bazovii-4-ya-kategoriya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577860",
+    "name": "1С:КП Отраслевой Базовый, 4-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-850529330562-1skp-otraslevoi-bazovii-5-ya-kategoriya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002577884",
+    "name": "1С:КП Отраслевой Базовый, 5-я Категория на 12 месяцев"
+  },
+  {
+    "path": "/its/tproduct/903464734-424635617992-1skp-prof-na-1-mesyats-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф1",
+    "name": "1С:КП ПРОФ на 1 месяц (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-448394889452-1skp-prof-na-2-mesyatsa-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф2",
+    "name": "1С:КП ПРОФ на 2 месяца (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-499614778042-1skp-prof-na-3-mesyatsa-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф3",
+    "name": "1С:КП ПРОФ на 3 месяца (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-788364700002-1skp-prof-na-4-mesyatsa-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф4",
+    "name": "1С:КП ПРОФ на 4 месяца (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-103995775942-1skp-prof-na-5-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф5",
+    "name": "1С:КП ПРОФ на 5 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-980641273672-1skp-prof-na-6-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф6",
+    "name": "1С:КП ПРОФ на 6 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-501690489102-1skp-prof-na-7-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф7",
+    "name": "1С:КП ПРОФ на 7 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-962437781362-1skp-prof-na-8-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф8",
+    "name": "1С:КП ПРОФ на 8 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-982745204662-1skp-prof-na-9-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф9",
+    "name": "1С:КП ПРОФ на 9 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-445368170462-1skp-prof-na-10-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф10",
+    "name": "1С:КП ПРОФ на 10 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-818798739052-1skp-prof-na-11-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф11",
+    "name": "1С:КП ПРОФ на 11 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-496608730882-1skp-prof-na-12-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф12",
+    "name": "1С:КП ПРОФ на 12 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-764618239662-1skp-bazovii-na-1-mesyats-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз1",
+    "name": "1С:КП Базовый на 1 месяц (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-550932765812-1skp-bazovii-na-2-mesyatsa-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз2",
+    "name": "1С:КП Базовый на 2 месяца (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-738106609142-1skp-bazovii-na-3-mesyatsa-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз3",
+    "name": "1С:КП Базовый на 3 месяца (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-364838726392-1skp-bazovii-na-4-mesyatsa-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз4",
+    "name": "1С:КП Базовый на 4 месяца (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-535473226702-1skp-bazovii-na-5-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз5",
+    "name": "1С:КП Базовый на 5 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-870212032332-1skp-bazovii-na-6-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз6",
+    "name": "1С:КП Базовый на 6 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-262734767482-1skp-bazovii-na-7-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз7",
+    "name": "1С:КП Базовый на 7 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-873825167072-1skp-bazovii-na-8-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз8",
+    "name": "1С:КП Базовый на 8 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-212922501902-1skp-bazovii-na-9-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз9",
+    "name": "1С:КП Базовый на 9 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-918824273122-1skp-bazovii-na-10-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз10",
+    "name": "1С:КП Базовый на 10 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-393830468842-1skp-bazovii-na-11-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз11",
+    "name": "1С:КП Базовый на 11 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-882776022392-1skp-bazovii-na-12-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз12",
+    "name": "1С:КП Базовый на 12 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-865515246452-1skp-prof-na-12-mesyatsev-po-sheme-84-4",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф8_4ЛЦ",
+    "name": "1С:КП ПРОФ на 12 месяцев по схеме 8+4 (4 месяца в подарок)"
+  },
+  {
+    "path": "/its/tproduct/903464734-161044878472-1skp-prof-na-1-mesyats-lgotnaya-tsena-pr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф1ЛЦ",
+    "name": "1С:КП ПРОФ на 1 месяц Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-804381015552-1skp-prof-na-2-mesyatsa-lgotnaya-tsena-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф2ЛЦ",
+    "name": "1С:КП ПРОФ на 2 месяца Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-533304466452-1skp-prof-na-3-mesyatsa-lgotnaya-tsena-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф3ЛЦ",
+    "name": "1С:КП ПРОФ на 3 месяца Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-418109387472-1skp-prof-na-4-mesyatsa-lgotnaya-tsena-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф4ЛЦ",
+    "name": "1С:КП ПРОФ на 4 месяца Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-255837593162-1skp-prof-na-5-mesyatsev-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф5ЛЦ",
+    "name": "1С:КП ПРОФ на 5 месяцев Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-401175316862-1skp-prof-na-6-mesyatsev-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф6ЛЦ",
+    "name": "1С:КП ПРОФ на 6 месяцев Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-813659492522-1skp-prof-na-7-mesyatsev-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф7ЛЦ",
+    "name": "1С:КП ПРОФ на 7 месяцев Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-314180568492-1skp-prof-na-8-mesyatsev-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф8ЛЦ",
+    "name": "1С:КП ПРОФ на 8 месяцев Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-825409306492-1skp-prof-na-9-mesyatsev-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф9ЛЦ",
+    "name": "1С:КП ПРОФ на 9 месяцев Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-397835061732-1skp-prof-na-10-mesyatsev-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф10ЛЦ",
+    "name": "1С:КП ПРОФ на 10 месяцев Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-920005120982-1skp-prof-na-11-mesyatsev-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф11ЛЦ",
+    "name": "1С:КП ПРОФ на 11 месяцев Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-756476542422-1skp-prof-na-12-mesyatsev-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф12ЛЦ",
+    "name": "1С:КП ПРОФ на 12 месяцев Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-461450095072-1skp-prof-na-24-mesyatsa-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КППроф24ЛЦ",
+    "name": "1С:КП ПРОФ на 24 месяца Льготная цена (Продление ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-296398640052-1skp-bazovii-na-1-mesyats-lgotnaya-tsena",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз1ЛЦ",
+    "name": "1С:КП Базовый на 1 месяц Льготная цена (Продление ИТС арт. КПБаз1ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-160048330512-1skp-bazovii-na-2-mesyatsa-lgotnaya-tsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз2ЛЦ",
+    "name": "1С:КП Базовый на 2 месяца Льготная цена (Продление ИТС арт. КПБаз2ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-121997830022-1skp-bazovii-na-3-mesyatsa-lgotnaya-tsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз3ЛЦ",
+    "name": "1С:КП Базовый на 3 месяца Льготная цена (Продление ИТС арт. КПБаз3ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-672221246742-1skp-bazovii-na-4-mesyatsa-lgotnaya-tsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз4ЛЦ",
+    "name": "1С:КП Базовый на 4 месяца Льготная цена (Продление ИТС арт. КПБаз4ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-865536901062-1skp-bazovii-na-5-mesyatsev-lgotnaya-tse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз5ЛЦ",
+    "name": "1С:КП Базовый на 5 месяцев Льготная цена (Продление ИТС арт. КПБаз5ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-923010205392-1skp-bazovii-na-6-mesyatsev-lgotnaya-tse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз6ЛЦ",
+    "name": "1С:КП Базовый на 6 месяцев Льготная цена (Продление ИТС арт. КПБаз6ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-576028239272-1skp-bazovii-na-7-mesyatsev-lgotnaya-tse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз7ЛЦ",
+    "name": "1С:КП Базовый на 7 месяцев Льготная цена (Продление ИТС арт. КПБаз7ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-557312975482-1skp-bazovii-na-8-mesyatsev-lgotnaya-tse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз8ЛЦ",
+    "name": "1С:КП Базовый на 8 месяцев Льготная цена (Продление ИТС арт. КПБаз8ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-119086702672-1skp-bazovii-na-9-mesyatsev-lgotnaya-tse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз9ЛЦ",
+    "name": "1С:КП Базовый на 9 месяцев Льготная цена (Продление ИТС арт. КПБаз9ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-743246687052-1skp-bazovii-na-10-mesyatsev-lgotnaya-ts",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз10ЛЦ",
+    "name": "1С:КП Базовый на 10 месяцев Льготная цена (Продление ИТС арт. КПБаз10ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-870149758212-1skp-bazovii-na-11-mesyatsev-lgotnaya-ts",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз11ЛЦ",
+    "name": "1С:КП Базовый на 11 месяцев Льготная цена (Продление ИТС арт. КПБаз11ЛЦ)"
+  },
+  {
+    "path": "/its/tproduct/903464734-105132092072-1skp-bazovii-na-12-mesyatsev-lgotnaya-ts",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПБаз12ЛЦ",
+    "name": "1С:КП Базовый на 12 месяцев Льготная цена (Продление ИТС арт. КПБаз12ЛЦ)"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-697998222332-1s-predpriyatie-8-prof-klientskaya-litse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546116697",
+    "name": "1С Предприятие 8 ПРОФ Клиентская лицензия на 1 рабочее место Электронная поставк"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-368525678472-1s-predpriyatie-8-prof-klientskaya-litse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546117588",
+    "name": "1С Предприятие 8 ПРОФ Клиентская лицензия на 5 рабочих мест Электронная поставка"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-359060596292-1s-predpriyatie-8-prof-klientskaya-litse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546117595",
+    "name": "1С Предприятие 8 ПРОФ Клиентская лицензия на 10 рабочих мест Электронная поставк"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-729293580752-1s-predpriyatie-8-prof-klientskaya-litse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001833547",
+    "name": "1С Предприятие 8 ПРОФ Клиентская лицензия на 20 рабочих мест Электронная поставк"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-159637201592-1s-predpriyatie-8-prof-klientskaya-litse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001833554",
+    "name": "1С Предприятие 8 ПРОФ Клиентская лицензия на 50 рабочих мест Электронная поставк"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-658261749802-1s-predpriyatie-8-prof-klientskaya-litse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001847209",
+    "name": "1С Предприятие 8 ПРОФ Клиентская лицензия на 100 рабочих мест Электронная постав"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-293950783102-1s-predpriyatie-8-prof-klientskaya-litse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002133608",
+    "name": "1С Предприятие 8 ПРОФ Клиентская лицензия на 300 рабочих мест Электронная постав"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-556990081002-1s-predpriyatie-8-prof-klientskaya-litse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002133615",
+    "name": "1С Предприятие 8 ПРОФ Клиентская лицензия на 500 рабочих мест Электронная постав"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-350780030942-1spredpriyatie-8-prof-klientskaya-litsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546080875",
+    "name": "1С:Предприятие 8 ПРОФ. Клиентская лицензия на 1 рабочее место. Коробочная постав"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-206773331182-1spredpriyatie-8-prof-klientskaya-litsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546080882",
+    "name": "1С:Предприятие 8 ПРОФ. Клиентская лицензия на 5 рабочих мест. Коробочная поставк"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-579717645782-1spredpriyatie-8-prof-klientskaya-litsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546080899",
+    "name": "1С:Предприятие 8 ПРОФ. Клиентская лицензия на 10 рабочих мест. Коробочная постав"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-758650958432-1spredpriyatie-8-prof-klientskaya-litsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546080905",
+    "name": "1С:Предприятие 8 ПРОФ. Клиентская лицензия на 20 рабочих мест. Коробочная постав"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-295893253862-1spredpriyatie-8-prof-klientskaya-litsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546080912",
+    "name": "1С:Предприятие 8 ПРОФ. Клиентская лицензия на 50 рабочих мест. Коробочная постав"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-583281700322-1spredpriyatie-8-prof-klientskaya-litsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546080929",
+    "name": "1С:Предприятие 8 ПРОФ. Клиентская лицензия на 100 рабочих мест. Коробочная поста"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-792021947492-1spredpriyatie-8-prof-klientskaya-litsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546080936",
+    "name": "1С:Предприятие 8 ПРОФ. Клиентская лицензия на 300 рабочих мест. Коробочная поста"
+  },
+  {
+    "path": "/dopolnitelnie_licenzii/tproduct/1231123726-308293969592-1spredpriyatie-8-prof-klientskaya-litsen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546080943",
+    "name": "1С:Предприятие 8 ПРОФ. Клиентская лицензия на 500 рабочих мест. Коробочная поста"
+  },
+  {
+    "path": "/support1c/tproduct/913413379-628090982172-tehpodderzhka-po-1s-na-1-chas-1-mes",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "",
+    "name": "Техподдержка по 1С на 1 час / 1 мес"
+  },
+  {
+    "path": "/support1c/tproduct/913413379-215664845112-tehpodderzhka-po-1s-na-3-chasa-1-mes",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "",
+    "name": "Техподдержка по 1С на 3 часа / 1 мес"
+  },
+  {
+    "path": "/support1c/tproduct/913413379-606574811542-tehpodderzhka-po-1s-na-5-chasov-1-mes",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "",
+    "name": "Техподдержка по 1С на 5 часов / 1 мес"
+  },
+  {
+    "path": "/support1c/tproduct/913413379-238064160262-tehpodderzhka-po-1s-na-30-chasov-2-mes",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "",
+    "name": "Техподдержка по 1С на 30 часов / 2 мес"
+  },
+  {
+    "path": "/support1c/tproduct/913413379-226950278332-tehpodderzhka-po-1s-na-60-chasov-6-mes",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "",
+    "name": "Техподдержка по 1С на 60 часов / 6 мес"
+  },
+  {
+    "path": "/support1c/tproduct/913413379-434259719342-tehpodderzhka-po-1s-na-15-chasov-1-mes",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "",
+    "name": "Техподдержка по 1С на 15 часов / 1 мес"
+  },
+  {
+    "path": "/casemarketplace/tproduct/913805053-713209120582-modul-integratsii-1s-s-ozon",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "",
+    "name": "Модуль интеграции 1С с OZON"
+  },
+  {
+    "path": "/casemarketplace/tproduct/913805053-553126495292-modul-integratsii-1s-s-wildberries",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "",
+    "name": "Модуль интеграции 1С с Wildberries"
+  },
+  {
+    "path": "/casemarketplace/tproduct/913805053-413216341712-modul-integratsii-1s-s-marketpleisami-oz",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "",
+    "name": "Модуль интеграции 1С с маркетплейсами (Озон+WB)"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-309886351302-1sfresh-1spredpriyatie-8-cherez-internet",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешКасса_СТ_12",
+    "name": "1С:Фреш-1С:Предприятие 8 через Интернет 1С:Касса. Стандартный на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-362429462692-1s-kassa-fresh-rasshirennii-na-12-mesyat",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешКасса_Р_12",
+    "name": "1С Касса Фреш Расширенный на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-855570129092-1s-roznitsa-fresh-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешРозн_12",
+    "name": "1С Розница Фреш на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-835362952022-1s-crm-prof-fresh-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешCRM_ПРОФ_12",
+    "name": "1С CRM ПРОФ Фреш на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-586969939312-1s-mdlp-fresh-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешМДЛП_12",
+    "name": "1С МДЛП Фреш на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-991858816912-1s-sadovod-fresh-ot-30-uchastkov-otchetn",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешСад_от30уч_ОТЧ_12",
+    "name": "1С Садовод Фреш от 30 участков + отчетность через Интернет на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-327350073772-1s-garazhi-fresh-ot-30-garazhei-otchetno",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешГар_от30уч_ОТЧ_12",
+    "name": "1С Гаражи Фреш (от 30 гаражей) + отчетность через Интернет на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-199348346522-1s-fresh-raschet-kvartplati-i-buhgalteri",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешЖКХ_ПРОФ_12",
+    "name": "1С Фреш Расчет квартплаты и бухгалтерия ЖКХ ПРОФ на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-945258692992-1s-fresh-upravlyayuschii-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешУпр_12",
+    "name": "1С Фреш Управляющий на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-890342167752-1s-buhgalteriya-selskohozyaistvennogo-pr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешБСХП_ПРОФ_12",
+    "name": "1С Бухгалтерия сельскохозяйственного предприятия Фреш ПРОФ на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-646024244662-1s-fresh-biznesstart-nulevka-na-12-mesya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешБС_Нул_12",
+    "name": "1С Фреш БизнесСтарт Нулевка на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-909487433562-1s-fresh-biznesstart-ip-bez-sotrudnikov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешБС_ИПбс_ОТЧ_12",
+    "name": "1С Фреш БизнесСтарт ИП без сотрудников на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-613459341382-1s-fresh-biznesstart-usn-i-patent-s-sotr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешБС_УСНиП_ОТЧ_12",
+    "name": "1С Фреш БизнесСтарт УСН и патент с сотрудниками на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-474723727002-1s-fresh-biznesstart-osn-bez-buhgaltera",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешБС_ОСН_ОТЧ_12",
+    "name": "1С Фреш БизнесСтарт ОСН без бухгалтера на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/946953291-687667458332-1s-analitika-na-1-seans-klienta-sistemi",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002286991",
+    "name": "1С Аналитика на 1 сеанс клиента системы аналитики ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-834143605142-1s-analitika-na-10-seansov-klientov-sist",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002156898",
+    "name": "1С Аналитика на 10 сеансов клиентов системы аналитики ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-704606722132-1s-dogovori-8-prof-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850926",
+    "name": "1С Договоры 8 ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-920860758832-1s-dogovori-8-na-5-polzovatelei-elektron",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850933",
+    "name": "1С Договоры 8 на 5 пользователей Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-763990776422-1s-predpriyatie-8-podryadchik-stroitelst",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159462",
+    "name": "1С Предприятие 8 Подрядчик строительства Управление строительным производством Э"
+  },
+  {
+    "path": "/products/tproduct/946953291-816446916262-1s-predpriyatie-8-fitnes-klub-elektronna",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546131669",
+    "name": "1С Предприятие 8 Фитнес клуб Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-178651045002-1s-predpriyatie-8-fitnes-klub-korp-elekt",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546131683",
+    "name": "1С Предприятие 8 Фитнес клуб КОРП Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/893974444-783722212882-1s-edo-na-200-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795270",
+    "name": "1С-ЭДО на 200 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-385645956962-1s-edo-na-500-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795287",
+    "name": "1С-ЭДО на 500 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-115073726132-1s-edo-na-1200-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795294",
+    "name": "1С-ЭДО на 1200 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-567656237982-1s-edo-na-3000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795300",
+    "name": "1С-ЭДО на 3000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-447146991952-1s-edo-na-5000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795317",
+    "name": "1С-ЭДО на 5000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-812154721302-1s-edo-na-6000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795324",
+    "name": "1С-ЭДО на 6000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-898902413062-1s-edo-na-8000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795331",
+    "name": "1С-ЭДО на 8000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-651628990402-1s-edo-na-10000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795348",
+    "name": "1С-ЭДО на 10000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-234908852752-1s-edo-na-12000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795355",
+    "name": "1С-ЭДО на 12000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-798004392312-1s-edo-na-15000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795362",
+    "name": "1С-ЭДО на 15000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-689321162302-1s-edo-na-20000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795379",
+    "name": "1С-ЭДО на 20000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-412888596802-1s-edo-na-30000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795386",
+    "name": "1С-ЭДО на 30000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-826603239812-1s-edo-na-50000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795393",
+    "name": "1С-ЭДО на 50000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-907764720732-1s-edo-na-100000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795409",
+    "name": "1С-ЭДО на 100000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-100197492672-1s-edo-na-300000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795416",
+    "name": "1С-ЭДО на 300000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-935507925752-1s-edo-na-600000-komplektov",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003795423",
+    "name": "1С-ЭДО на 600000 комплектов"
+  },
+  {
+    "path": "/products/tproduct/893974444-539458366902-1skontragent-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001691741",
+    "name": "1С:Контрагент на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-657412103522-1skontragent-bezlimitnii-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001691734",
+    "name": "1С:Контрагент безлимитный на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-421657057792-1s-tovari-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002141078",
+    "name": "1С-Товары на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-425454177482-1skabinet-sotrudnika-500-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002195804",
+    "name": "1С:Кабинет сотрудника 500 на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-692576405742-1skabinet-sotrudnika-100-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002195729",
+    "name": "1С:Кабинет сотрудника 100 на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-582530446842-litsenziya-agent-1slink-2-na-12-mesyatse",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001560023",
+    "name": "Лицензия Агент 1С:Линк 2 на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-591671583492-1soblachnii-arhiv-50gb-na-12-mesyatsev-a",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ОА50_12",
+    "name": "1С:Облачный архив 50Гб на 12 месяцев Агент резервного копирования"
+  },
+  {
+    "path": "/products/tproduct/946953291-913852404502-1s-predpriyatie-8-fotouslugi-i-suveniri",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002482621",
+    "name": "1С Предприятие 8 Фотоуслуги и сувениры Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-136066752982-1s-predpriyatie-8-tsifrovoe-zhivotnovods",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002085334",
+    "name": "1С Предприятие 8 Цифровое животноводство Оперативный учет и управление производс"
+  },
+  {
+    "path": "/products/tproduct/946953291-571365939032-1s-predpriyatie-8-ekologiya-ohrana-okruz",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002570168",
+    "name": "1С Предприятие 8 Экология Охрана окружающей среды КОРП Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-310290238052-1s-predpriyatie-8-energetika-upravlenie",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546097897",
+    "name": "1С Предприятие 8 Энергетика Управление сбытом и закупками электроэнергии"
+  },
+  {
+    "path": "/products/tproduct/946953291-573152840912-1s-predpriyatie-8-proizvodstvennaya-bezo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159325",
+    "name": "1С Предприятие 8 Производственная безопасность Комплексная Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-614846453552-1s-predpriyatie-8-proizvodstvennaya-bezo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159639",
+    "name": "1С Предприятие 8 Производственная безопасность Охрана окружающей среды Электронн"
+  },
+  {
+    "path": "/products/tproduct/946953291-157999786462-1s-predpriyatie-8-proizvodstvennaya-bezo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159394",
+    "name": "1С Предприятие 8 Производственная безопасность Охрана труда Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-725353126612-1s-predpriyatie-8-proizvodstvennaya-bezo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159820",
+    "name": "1С Предприятие 8 Производственная безопасность Пожарная безопасность Электронная"
+  },
+  {
+    "path": "/products/tproduct/946953291-241626506282-1s-predpriyatie-8-proizvodstvennaya-bezo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159738",
+    "name": "1С Предприятие 8 Производственная безопасность Промышленная безопасность Электро"
+  },
+  {
+    "path": "/its/tproduct/903464734-614123320362-1skp-gu-prof-na-12-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПГУПроф12",
+    "name": "1С:КП ГУ ПРОФ на 12 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-610064648722-1skp-upp-na-12-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002256680",
+    "name": "1С:КП УПП на 12 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-717296636422-1skp-meditsina-na-12-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПМед12",
+    "name": "1С:КП Медицина на 12 месяцев (ИТС)"
+  },
+  {
+    "path": "/its/tproduct/903464734-576701964812-1skp-gu-bazovii-na-12-mesyatsev-its",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "КПГУБаз12",
+    "name": "1С:КП ГУ Базовый на 12 месяцев (ИТС)"
+  },
+  {
+    "path": "/products/tproduct/893974444-453286671232-1spodpis-sertifikat-elektronnoi-podpisi",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001623575",
+    "name": "1С:Подпись - Сертификат электронной подписи"
+  },
+  {
+    "path": "/products/tproduct/893974444-641174572402-1s-finkontrol-8-litsenziya-na-12-mesyats",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001687119",
+    "name": "1С-Финконтроль 8 Лицензия на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-909552464272-1spark-riski-plyus-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001729949",
+    "name": "1СПАРК Риски Плюс на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-435691871672-1snomenklatura-10000-kartochek-na-12-mes",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001878906",
+    "name": "1С:Номенклатура 10000 карточек на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-927175889622-1sraspoznavanie-pervichnih-dokumentov-10",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002514766",
+    "name": "1С:Распознавание первичных документов 1000 страниц на 12 месяцев (1С:РПД)"
+  },
+  {
+    "path": "/products/tproduct/893974444-766593478992-1s-administrator100-na-12-mesyatsev",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002776874",
+    "name": "1С-Администратор100 на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-924351611392-1s-epd-elektronnie-perevozochnie-dokumen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002632743",
+    "name": "1С-ЭПД электронные перевозочные документы 600 на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/893974444-192042383772-1s-cheki-ofd-bazovii-1-kassa-na-12-mesya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003632827",
+    "name": "1С-Чеки ОФД Базовый 1 касса на 12 месяцев (Астрал.ОФД)"
+  },
+  {
+    "path": "/products/tproduct/893974444-902789595282-1s-etp-bazis-pp-astral-et",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ЭТП-Базис",
+    "name": "1С-ЭТП Базис (ПП \"Астрал-ЭТ\")"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-319369185482-1s-fresh-meditsina-bolnitsa-internet-ver",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешМедБ_12",
+    "name": "1С Фреш Медицина Больница Интернет-версия на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-731582980572-1s-fresh-meditsina-bolnichnaya-apteka-in",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешМедБА_12",
+    "name": "1С Фреш Медицина Больничная аптека Интернет-версия на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-518827401272-1s-fresh-meditsina-klinicheskaya-laborat",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешМедКЛ_12",
+    "name": "1С Фреш Медицина Клиническая лаборатория Интернет-версия на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-279806851102-1s-fresh-meditsina-dieticheskoe-pitanie",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешДиет_пит_12",
+    "name": "1С Фреш Медицина Диетическое питание Интернет-версия на 12 месяцев"
+  },
+  {
+    "path": "/1cfresh/tproduct/922254724-168562929962-1s-fresh-meditsina-region-internet-versi",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "ФрешМедРег_12",
+    "name": "1С Фреш Медицина Регион Интернет-версия для интеграции с ЕГИСЗ на 12 месяцев"
+  },
+  {
+    "path": "/products/tproduct/946953291-578419192742-1s-arhiv-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002634259",
+    "name": "1С Архив Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-752487631292-1s-byudzhetnaya-otchetnost-8-elektronnay",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002158007",
+    "name": "1С Бюджетная отчетность 8 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-281309577932-1s-doshkolnoe-uchrezhdenie",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546086389",
+    "name": "1С Дошкольное учреждение"
+  },
+  {
+    "path": "/products/tproduct/946953291-228848449232-1s-server-vzaimodeistviya-elektronnaya-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002107524",
+    "name": "1С Сервер взаимодействия Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-302299532962-1s-buhgalteriya-nekommercheskoi-organiza",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001963466",
+    "name": "1С Бухгалтерия некоммерческой организации 8 ПРОФ (НКО) Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-949032842022-1s-buhgalteriya-nekommercheskoi-organiza",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002088250",
+    "name": "1С Бухгалтерия некоммерческой организации 8 КОРП (НКО) Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-966149623062-1s-avtomatizirovannoe-sostavlenie-raspis",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001911153",
+    "name": "1С Автоматизированное составление расписания Колледж Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-246108058472-1s-avtomatizirovannoe-sostavlenie-raspis",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001911177",
+    "name": "1С Автоматизированное составление расписания Университет Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-351067594892-1s-biblioteka-prof-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002368246",
+    "name": "1С Библиотека ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-333118940052-1s-arenda-i-upravlenie-nedvizhimostyu-mo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159134",
+    "name": "1С Аренда и управление недвижимостью Модуль для 1С Бухгалтерия 8 Электронная пос"
+  },
+  {
+    "path": "/products/tproduct/946953291-573737433632-1s-doshkolnoe-pitanie-elektronnaya-posta",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002634259",
+    "name": "1С Дошкольное питание Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-625167402312-1s-kolledzh-prof-red-21-elektronnaya-pos",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002370430",
+    "name": "1С Колледж ПРОФ Ред 2.1 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-445619389042-1s-kombinat-planovogo-pitaniya-elektronn",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001838481",
+    "name": "1С Комбинат планового питания Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-431945068522-1s-metrologicheskaya-sluzhba-elektronnay",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002704754",
+    "name": "1С Метрологическая служба Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-501916055492-1s-muzei-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002169034",
+    "name": "1С Музей Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-356877800782-1s-muzeinii-katalog-elektronnaya-postavk",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002169041",
+    "name": "1С Музейный каталог Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-582823860392-1s-teatr-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002169058",
+    "name": "1С Театр Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-221407924162-1s-obscheobrazovatelnoe-uchrezhdenie-ele",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001796194",
+    "name": "1С Общеобразовательное учреждение Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-321355509022-1s-planovoe-pitanie-korp-elektronnaya-po",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002199819",
+    "name": "1С Плановое питание КОРП Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-881513341312-1s-predpriyatie-8-spa-salon-elektronnaya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002362138",
+    "name": "1С Предприятие 8 SPA-Салон Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-195069225132-1s-predpriyatie-8-avtoservis-elektronnay",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002653694",
+    "name": "1С Предприятие 8 Автосервис Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-712656526182-1s-predpriyatie-8-billing-elektronnaya-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002158380",
+    "name": "1С Предприятие 8 Биллинг Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-303712901722-1s-buhgalteriya-selskohozyaistvennogo-pr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002080759",
+    "name": "1С Бухгалтерия сельскохозяйственного предприятия КОРП Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-937388488572-1s-buhgalteriya-selskohozyaistvennogo-pr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001976930",
+    "name": "1С Бухгалтерия сельскохозяйственного предприятия Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-889199487282-1s-buhgalteriya-snt-elektronnaya-postavk",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001993944",
+    "name": "1С Бухгалтерия СНТ Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-677740245082-1s-buhgalteriya-stroitelnoi-organizatsii",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159271",
+    "name": "1С Бухгалтерия строительной организации Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-745933578072-1s-buhgalteriya-stroitelnoi-organizatsii",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001857857",
+    "name": "1С Бухгалтерия строительной организации КОРП Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-981214287762-1s-raschet-kvartplati-i-buhgalteriya-zhk",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001976299",
+    "name": "1С Расчет квартплаты и бухгалтерия ЖКХ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-139111358772-1s-restoran-front-ofis-elektronnaya-post",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002133974",
+    "name": "1С Ресторан Фронт-офис Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-994319049342-1s-rieltor-upravlenie-prodazhami-nedvizh",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002158991",
+    "name": "1С Риэлтор Управление продажами недвижимости Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-152955286512-1s-predpriyatie-8-salon-krasoti-elektron",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002362145",
+    "name": "1С Предприятие 8 Салон красоты Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-613412444142-1s-smeta-3-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002158991",
+    "name": "1С Смета 3 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-552191332642-1s-transportnaya-logistika-ekspedirovani",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003654812",
+    "name": "1С Транспортная логистика, экспедирование и управление автотранспортом КОРП Элек"
+  },
+  {
+    "path": "/products/tproduct/946953291-937984732492-1s-upravlenie-avtotransportom-prof-elekt",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003654829",
+    "name": "1С Управление Автотранспортом ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-782655073562-1s-upravlenie-aptechnoi-setyu-elektronna",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002160147",
+    "name": "1С Управление аптечной сетью Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-431237078612-1s-upravlenie-nashei-stroitelnoi-firmoi",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001911801",
+    "name": "1С Управление нашей строительной фирмой Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-664141843682-1s-upravlenie-po-tselyam-i-kpi",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001894074",
+    "name": "1С Управление по целям и KPI"
+  },
+  {
+    "path": "/products/tproduct/946953291-949636828362-1s-upravlenie-ritualnimi-uslugami-elektr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002158892",
+    "name": "1С Управление ритуальными услугами Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-210207563302-1s-upravlenie-servisnim-tsentrom-elektro",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002158991",
+    "name": "1С Управление сервисным центром Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-257692803132-1s-upravlenie-teplosetyu-2-elektronnaya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002077834",
+    "name": "1С Управление теплосетью 2 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-152132721462-1s-upravlenie-torgovlei-alkogolnoi-produ",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159905",
+    "name": "1С Управление торговлей алкогольной продукцией Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-370667619802-1s-upravlenie-torgovlei-i-vzaimootnoshen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546134004",
+    "name": "1С Управление торговлей и взаимоотношениями с клиентами (CRM) ПРОФ Электронная п"
+  },
+  {
+    "path": "/products/tproduct/946953291-255513968932-1s-upravlyayuschii-prof-elektronnaya-pos",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002161212",
+    "name": "1С Управляющий ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-711258914432-1s-uchet-v-upravlyayuschih-kompaniyah-zh",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001945905",
+    "name": "1С Учет в управляющих компаниях ЖКХ, ТСЖ и ЖСК Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-704854255372-1s-reestr-kadrov-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002172393",
+    "name": "1С Реестр кадров Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-295742557802-1s-roznitsa-8-apteka-elektronnaya-postav",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002653700",
+    "name": "1С Розница 8 Аптека Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-521016839062-1s-roznitsa-8-magazin-avtozapchastei-ele",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002653717",
+    "name": "1С Розница 8 Магазин автозапчастей Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-543038406372-1s-roznitsa-8-magazin-odezhdi-i-obuvi-el",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002653731",
+    "name": "1С Розница 8 Магазин одежды и обуви Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-491586015562-1s-roznitsa-8-salon-optiki-elektronnaya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002653748",
+    "name": "1С Розница 8 Салон оптики Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-794747579792-1s-roznitsa-8-yuvelirnii-magazin-elektro",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002653755",
+    "name": "1С Розница 8 Ювелирный магазин Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-409862281962-1s-universitet-prof-redaktsiya-22-elektr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002176148",
+    "name": "1С Университет ПРОФ редакция 2.2 Электронная поставка"
+  },
+  {
+    "path": "/upravlenie_nashei_firmoi/tproduct/382580675-467371090312-1s-unf-8-poligrafiya-2-elektronnaya-post",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001865128",
+    "name": "1С УНФ 8 Полиграфия 2 Электронная поставка"
+  },
+  {
+    "path": "/upravlenie_nashei_firmoi/tproduct/382580675-802458620722-1s-unf-8-upravlenie-predpriyatiem-obsche",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002181654",
+    "name": "1С УНФ 8 Управление предприятием общепита Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-341714394072-1s-upravlenie-uchebnim-tsentrom-elektron",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001842587",
+    "name": "1С Управление учебным центром Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-924564182112-1s-elektronnii-zhurnal-kolledzha-elektro",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002314663",
+    "name": "1С Электронный журнал колледжа Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-180536287462-1s-rarus-buhgalteriya-dlya-nekommerchesk",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001534062",
+    "name": "1С-Рарус Бухгалтерия для некоммерческой организации Электронная поставка"
+  },
+  {
+    "path": "/zup8/tproduct/382489805-858596440592-kamin-raschet-zarabotnoi-plati-versiya-3",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002177930",
+    "name": "КАМИН Расчет заработной платы Версия 3.0 Электронная поставка, включает платформ"
+  },
+  {
+    "path": "/dokumentooborot8/tproduct/382576916-779915425892-1s-dokumentooborot-gosudarstvennogo-uchr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850346",
+    "name": "1С Документооборот государственного учреждения 8 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-187188965252-1s-predpriyatie-8-tms-logistika-upravlen",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002160277",
+    "name": "1С Предприятие 8 TMS Логистика Управление перевозками Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-534459912112-1s-element-server-dlya-lokalnogo-ispolzo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003847856",
+    "name": "1С Элемент Сервер для локального использования на 12 месяцев Электронная поставк"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-708010868422-1s-buhgalteriya-gosudarstvennogo-uchrezh",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850308",
+    "name": "1С Бухгалтерия государственного учреждения 8 ПРОФ редакции 2.0 Электронная поста"
+  },
+  {
+    "path": "/products/tproduct/946953291-173937955872-1s-veschevoe-dovolstvie-8-elektronnaya-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002158014",
+    "name": "1С Вещевое довольствие 8 Электронная поставка"
+  },
+  {
+    "path": "/zup8/tproduct/382489805-295497589962-1s-zarplata-i-kadri-gosudarstvennogo-uch",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001892971",
+    "name": "1С Зарплата и кадры государственного учреждения 8 КОРП Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-117911484382-1s-avtomatizirovannoe-sostavlenie-raspis",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001773683",
+    "name": "1С Автоматизированное составление расписания Школа Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-257146429872-1s-meditsina-bolnitsa-redaktsiya-2-elekt",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001885423",
+    "name": "1С Медицина Больница Редакция 2 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-755881226492-1s-meditsina-bolnichnaya-apteka-elektron",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001752541",
+    "name": "1С Медицина Больничная аптека Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-172042464352-1s-meditsina-dieticheskoe-pitanie-redakt",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001747592",
+    "name": "1С Медицина Диетическое питание редакция 2.0 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-920046530932-1s-meditsina-klinicheskaya-laboratoriya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001908368",
+    "name": "1С Медицина Клиническая лаборатория Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-343618520602-1s-meditsina-poliklinika-redaktsiya-3-el",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001885362",
+    "name": "1С Медицина Поликлиника Редакция 3 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-339023223982-1s-meditsina-region-elektronnaya-postavk",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002090499",
+    "name": "1С Медицина Регион Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-864055322802-1s-meditsina-stomatologicheskaya-klinika",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001651233",
+    "name": "1С Медицина Стоматологическая клиника Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-734926603372-1s-buhgalteriya-molokozavoda-elektronnay",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001942614",
+    "name": "1С Бухгалтерия молокозавода Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-483860872182-1s-crm-korp-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "4601546126207",
+    "name": "1С CRM КОРП Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-355322099812-1s-ehs-kompleksnaya-proizvodstvennaya-be",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002570069",
+    "name": "1С EHS Комплексная производственная безопасность КОРП Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-462380446392-1s-itilium-service-desk-elektronnaya-pos",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003658933",
+    "name": "1С ITILIUM Service Desk Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-252308256232-1s-itilium-upravlenie-uslugami-prof-elek",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003658865",
+    "name": "1С ITILIUM Управление услугами ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-675606841132-1s-itilium-upravlenie-uslugami-korp-elek",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003658759",
+    "name": "1С ITILIUM Управление услугами КОРП Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-325390170002-1s-pm-upravlenie-proektami-prof-elektron",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159981",
+    "name": "1С PM Управление проектами ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-716039305662-1s-pm-upravlenie-proektami-korp-elektron",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002159998",
+    "name": "1С PM Управление проектами КОРП Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-632172878452-1s-buhgalteriya-nekreditnoi-finansovoi-o",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002160598",
+    "name": "1С Бухгалтерия некредитной финансовой организации КОРП Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-478715030942-1s-buhgalteriya-ptitsefabriki-elektronna",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001956970",
+    "name": "1С Бухгалтерия птицефабрики Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-815872349112-1s-buhgalteriya-hlebobulochnogo-i-kondit",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001876261",
+    "name": "1С Бухгалтерия хлебобулочного и кондитерского предприятия Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-397783389282-1s-buhgalteriya-elevatora-i-kombikormovo",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001988025",
+    "name": "1С Бухгалтерия элеватора и комбикормового завода Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-299210322692-1s-buhgalterskii-i-upravlencheskii-uchet",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002166378",
+    "name": "1С Бухгалтерский и управленческий учет дорожно-строительной организации КОРП Эле"
+  },
+  {
+    "path": "/products/tproduct/946953291-984927973132-1s-gornodobivayuschaya-promishlennost-2",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002015638",
+    "name": "1С Горнодобывающая промышленность 2 Оперативный учет Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-644949530632-1s-kadrovoe-agentstvo-elektronnaya-posta",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002551594",
+    "name": "1С Кадровое агентство Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-406668286462-1s-lombard-prof-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001946377",
+    "name": "1С Ломбард ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-437598463602-1s-otsenka-personala-elektronnaya-postav",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002551693",
+    "name": "1С Оценка персонала Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-644523442282-1s-strahovaya-kompaniya-8-korp-elektronn",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002161113",
+    "name": "1С Страховая компания 8 КОРП Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-527352287572-1s-unfrm-upravlenie-proektnoi-firmoi-ele",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002554793",
+    "name": "1С УНФ+РМ Управление проектной фирмой Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-252602001952-1s-upravlenie-vodokanalom-2-elektronnaya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002161113",
+    "name": "1С Управление водоканалом 2 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-729903995532-1s-upravlenie-teplovodokanalom-2-elektro",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001918633",
+    "name": "1С Управление тепловодоканалом 2 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-336424310852-1s-reestr-gosudarstvennogo-i-munitsipaln",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003714134",
+    "name": "1С Реестр государственного и муниципального имущества Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-287134507112-1s-roznitsa-8-magazin-stroitelnih-i-otde",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002653762",
+    "name": "1С Розница 8 Магазин строительных и отделочных материалов Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-803901797472-1s-upravlenie-obrazovaniya-elektronnaya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002176759",
+    "name": "1С Управление образования Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-390927425652-1s-shkolnoe-pitanie-elektronnaya-postavk",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001838474",
+    "name": "1С Школьное питание Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-681411046032-analit-uchet-meditsinskih-uslug-8-vklyuc",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002227574",
+    "name": "Аналит Учет медицинских услуг 8 Включает платформу 1С:Предприятие 8 Электронная "
+  },
+  {
+    "path": "/products/tproduct/946953291-560327231302-shtrih-m-torgovoe-predpriyatie-7-vklyuch",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002452303",
+    "name": "Штрих-М Торговое предприятие 7 Включает платформу 1С:Предприятие 8 Электронная п"
+  },
+  {
+    "path": "/products/tproduct/946953291-599820132332-1s-sistema-proektirovaniya-prikladnih-re",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003791999",
+    "name": "1С Система проектирования прикладных решений Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-845754822942-1s-roznitsa-8-prof-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850179",
+    "name": "1С Розница 8 ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/zup8/tproduct/382489805-586906051862-1s-zarplata-i-kadri-gosudarstvennogo-uch",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001729826",
+    "name": "1С Зарплата и кадры государственного учреждения 8 ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-167074837622-omega-upravlenie-fhd-vuza-vklyuchaet-pla",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001995917",
+    "name": "Омега Управление ФХД ВУЗа Включает платформу 1С:Предприятие 8 Электронная постав"
+  },
+  {
+    "path": "/products/tproduct/946953291-574406150212-shtrih-m-kassir-5-vklyuchaet-platformu-1",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002452266",
+    "name": "Штрих-М Кассир 5 Включает платформу 1С:Предприятие 8 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-262992862412-shtrih-m-kassir-5-bazovaya-versiya-elekt",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002452266",
+    "name": "Штрих-М Кассир 5 Базовая версия Электронная поставка"
+  },
+  {
+    "path": "/dokumentooborot8/tproduct/382576916-789113190672-1s-document-management-8-elektronnaya-po",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001850292",
+    "name": "1С Document Management 8 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-811672562152-1s-predpriyatie-oblachnaya-podsistema-fr",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002165678",
+    "name": "1С Предприятие Облачная подсистема Фреш Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-917267255692-1s-uchet-obraschenii-prof-elektronnaya-p",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900001803915",
+    "name": "1С Учет обращений ПРОФ Электронная поставка"
+  },
+  {
+    "path": "/buhv8/tproduct/379482785-381376737282-1s-buhgalteriya-nekommercheskoi-organiza",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002776362",
+    "name": "1С Бухгалтерия некоммерческой организации 8 Базовая версия Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-179132729352-1s-kolledzh-prof-dopolnitelnaya-litsenzi",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003781266",
+    "name": "1С Колледж ПРОФ Дополнительная лицензия на доступ из мобильных приложений и веб-"
+  },
+  {
+    "path": "/products/tproduct/946953291-122291786822-1s-uchet-i-upravlenie-dlya-professionaln",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002160680",
+    "name": "1С Учет и управление для профессиональных участников рынка ценных бумаг КОРП Эле"
+  },
+  {
+    "path": "/products/tproduct/946953291-139490170662-1s-upravlyayuschii-standart-elektronnaya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002161199",
+    "name": "1С Управляющий Стандарт Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-679167380962-1s-biblioteka-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002368239",
+    "name": "1С Библиотека Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-291350619052-1s-detskaya-shkola-iskusstv-elektronnaya",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002018936",
+    "name": "1С Детская школа искусств Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-691925473522-1s-kolledzh-prof-region-elektronnaya-pos",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900003612881",
+    "name": "1С Колледж ПРОФ Регион Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-704282208722-1s-kolledzh-red-21-elektronnaya-postavka",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002370492",
+    "name": "1С Колледж Ред 2.1 Электронная поставка"
+  },
+  {
+    "path": "/products/tproduct/946953291-318937335382-1s-administrativno-hozyaistvennaya-deyat",
+    "kind": "tproduct",
+    "st340_markup": false,
+    "head_script": true,
+    "sku": "2900002014259",
+    "name": "1С Административно-хозяйственная деятельность банка Электронная поставка"
+  }
+]

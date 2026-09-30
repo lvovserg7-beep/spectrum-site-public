@@ -1,0 +1,48 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://alsn.ru/vesii#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+        { "@type": "ListItem", "position": 2, "name": "Кейсы", "item": "https://alsn.ru/cases" },
+        { "@type": "ListItem", "position": 3, "name": "Кейс «РЭК»", "item": "https://alsn.ru/vesii" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://alsn.ru/vesii#webpage",
+      "url": "https://alsn.ru/vesii",
+      "name": "Автоматизация производственного учета и интеграция весового оборудования с 1С:УНФ для ООО «РЭК»",
+      "description": "Кейс ООО «РЭК»: подключили весы к 1С:УНФ. Взвешивание катушек, печать этикеток и выпуск продукции в 1С без ручного ввода. Обработка быстрее в 3 раза.",
+      "inLanguage": "ru-RU",
+      "isPartOf": { "@id": "https://alsn.ru/#website" },
+      "breadcrumb": { "@id": "https://alsn.ru/vesii#breadcrumb" },
+      "mainEntity": { "@id": "https://alsn.ru/vesii#article" }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://alsn.ru/vesii#article",
+      "headline": "Автоматизация производственного учета и интеграция весового оборудования с 1С:УНФ для ООО «РЭК»",
+      "description": "Кейс ООО «РЭК»: подключили весы к 1С:УНФ. Взвешивание катушек, печать этикеток и выпуск продукции в 1С без ручного ввода. Обработка быстрее в 3 раза.",
+      "url": "https://alsn.ru/vesii",
+      "mainEntityOfPage": { "@id": "https://alsn.ru/vesii#webpage" },
+      "inLanguage": "ru-RU",
+      "dateModified": "2026-09-29",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://static.tildacdn.com/lib/unsplash/1d7fbb63-e781-828e-4769-5b75cdb16048/photo.jpg"
+      },
+      "author": { "@id": "https://alsn.ru/#organization" },
+      "publisher": { "@id": "https://alsn.ru/#organization" },
+      "about": [
+        { "@type": "Organization", "name": "ООО «РЭК»", "description": "Производитель полимерных композитов для FDM-печати, Зеленоград" },
+        { "@id": "https://alsn.ru/development1c#service" }
+      ],
+      "keywords": "интеграция весов с 1С, 1С:УНФ, учет готовой продукции, печать этикеток, автоматизация производства"
+    }
+  ]
+}
+</script>

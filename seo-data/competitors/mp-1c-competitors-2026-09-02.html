@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Конкуренты: интеграция 1С ↔ маркетплейсы — 02.09.2026</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e2e2de;
+      --accent: #1f4b7a;
+      --accent-soft: #e8eef5;
+      --strong: #1b5e3b;
+      --strong-soft: #e8f5ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .wrap {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 8px; }
+    h2 { font-size: 1.25rem; margin: 36px 0 12px; }
+    p.lead { color: var(--muted); margin: 0 0 16px; max-width: 70ch; }
+    .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 20px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      background: var(--surface);
+    }
+    .pill.accent { background: var(--accent-soft); border-color: #c5d4e6; color: var(--accent); }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 800px) {
+      .stats { grid-template-columns: repeat(2, 1fr); }
+    }
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .stat b { display: block; font-size: 1.5rem; color: var(--accent); }
+    .stat span { font-size: 0.8rem; color: var(--muted); }
+    .callout {
+      background: var(--accent-soft);
+      border: 1px solid #c5d4e6;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 24px;
+    }
+    @media (max-width: 800px) {
+      .cards { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      min-width: 1100px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f0f0ec;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      white-space: nowrap;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr.ours td { background: var(--accent-soft); }
+    tr.highlight td:first-child { font-weight: 600; }
+    tr.highlight td { background: var(--strong-soft); }
+    .note { color: var(--muted); font-size: 0.8rem; margin: 8px 0 16px; }
+    footer { margin-top: 32px; color: var(--muted); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Конкуренты: интеграция 1С ↔ маркетплейсы</h1>
+    <p class="lead">
+      Обзор модулей и смежных решений для селлеров на Ozon / Wildberries.
+      Данные по открытым сайтам и обзорам. Цены и «галочки» — заявленные вендорами;
+      перед выбором нужен тест на своих сценариях.
+    </p>
+    <p class="meta">Проверка: 02.09.2026 · Фокус: модули внутри 1С (+ SaaS и типовой обмен)</p>
+
+    <div class="pills">
+      <span class="pill accent">ALLSUN vs рынок</span>
+      <span class="pill">8 решений</span>
+      <span class="pill">2 таблицы</span>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>8</b><span>Решений в обзоре</span></div>
+      <div class="stat"><b>6</b><span>Модулей в 1С</span></div>
+      <div class="stat"><b>1</b><span>SaaS-контур</span></div>
+      <div class="stat"><b>1</b><span>Бесплатный базовый</span></div>
+    </div>
+
+    <div class="callout">
+      ALLSUN выделяется управленческой аналитикой внутри модуля (маржа, кластеры, ДРР, AI)
+      при фокусе на Ozon+WB. RDV/Виктория сильнее как «операционный конвейер» и мультиплощадка.
+      MoscowSoft — самый дешёвый вход на длинном горизонте. SelSup конкурирует за операторов вне 1С.
+    </div>
+
+    <h2>Таблица 1. Сильные и слабые стороны</h2>
+    <p class="note">Источники: сайты вендоров, alsn.ru/casemarketplace, обзоры Teletype / Habr / pickTech (2025–2026).</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Решение</th>
+            <th>Тип</th>
+            <th>Площадки</th>
+            <th>Ориентир цены</th>
+            <th>Сильные стороны</th>
+            <th>Слабые стороны</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="ours">
+            <td>ALLSUN (наш модуль)<br><small>alsn.ru/casemarketplace</small></td>
+            <td>Модуль 1С</td>
+            <td>Ozon, Wildberries</td>
+            <td>от 40 700 ₽/год (1 МП); 69 990 ₽/год (Ozon+WB)</td>
+            <td>Юнит-экономика и ежедневная маржа; расчёт потребностей по кластерам; ДРР; AI-ответы на отзывы; бесплатное добавление функций по запросу клиентов; неограниченные кабинеты; перевыставление «последней мили» Ozon с НДС</td>
+            <td>Фокус на Ozon+WB (без Яндекс Маркет / МегаМаркет как ядра); часть функций WB в разработке (кластеры, ДРР, ЧЗ); слабее «конвейер FBS» vs RDV на сверхнагрузке</td>
+          </tr>
+          <tr>
+            <td>RDV Маркет<br><small>rdv-market.ru</small></td>
+            <td>Модуль 1С (+облачные элементы)</td>
+            <td>WB, Ozon, Яндекс Маркет, МегаМаркет</td>
+            <td>Подписка; калькулятор на сайте; один из самых дорогих</td>
+            <td>Сильный конвейер FBS на высокой нагрузке; маркировка ЧЗ; гибкая кастомизация; тестовый период ~21 день; бесплатное внедрение/обучение по позиционированию</td>
+            <td>Высокий TCO; финмодуль/юнит-экономика часто отдельно; контент-карточки слабее «витринных» решений; избыточен для малого селлера</td>
+          </tr>
+          <tr>
+            <td>Виктория (1С-Victory)<br><small>1c-victory.ru</small></td>
+            <td>Модуль 1С</td>
+            <td>Крупные МП (мультиплощадка)</td>
+            <td>32 930–98 790 ₽/площадка + сопровождение 18 300–54 890 ₽/год</td>
+            <td>Открытый прайс; глубокое сопоставление номенклатуры; «всё в 1С»; маркировка; аналитика/отчёты комиссионера; пробная версия; скидка на 3+ площадки</td>
+            <td>Стоимость растёт с числом площадок; ежегодное сопровождение обязательно для актуальности API; меньше публичного акцента на кластеры/ДРР</td>
+          </tr>
+          <tr>
+            <td>МС:Интеграция (MoscowSoft)<br><small>moscowsoft.com</small></td>
+            <td>Модуль 1С</td>
+            <td>WB, Ozon, Яндекс Маркет (+МегаМаркет)</td>
+            <td>39 950 ₽ разово (3 МП) / 59 950 ₽ (4 МП)</td>
+            <td>Бессрочная лицензия; низкий TCO на 2 года; аккуратные документы и логирование обмена; расширение без снятия с поддержки</td>
+            <td>Нет тестового периода; аналитика/юнит-экономика слабее лидеров; меньше «маркетинговых» фич (кластеры, ДРР, AI)</td>
+          </tr>
+          <tr>
+            <td>БИТ.Управление маркетплейсами<br><small>1cbit.ru / партнёры</small></td>
+            <td>Модуль 1С / облако</td>
+            <td>WB, Ozon и др. (через БИТ)</td>
+            <td>Коробка от ~54 700 ₽; облако от ~5–8 тыс. ₽/мес</td>
+            <td>Бренд крупного франчайзи; встройка в корпоративные процессы 1С; регулярные обновления; FBO/FBS в логике документов 1С</td>
+            <td>Часто нужны доработки под контур клиента; глубина «коробочной» аналитики зависит от проекта; цена внедрения может вырасти</td>
+          </tr>
+          <tr>
+            <td>ITC MarketBridge<br><small>market-bridge.ru / it-corp.ru</small></td>
+            <td>Модуль 1С</td>
+            <td>до 17–19 МП (РФ + СНГ)</td>
+            <td>от ~24–27 тыс. ₽/площадка; пакеты дешевле на объёме</td>
+            <td>Широкий охват площадок; FBS/FBO/DBS; этикетки; отчёты комиссионера; AI-описания/отзывы; Telegram-уведомления</td>
+            <td>Глубина по каждой площадке неравномерна; уступает RDV/Виктории на тяжёлом FBS и сложном учёте; поддержка нишевых МП может отличаться</td>
+          </tr>
+          <tr>
+            <td>SelSup<br><small>selsup.ru</small></td>
+            <td>SaaS + обмен с 1С</td>
+            <td>WB, Ozon, Яндекс, МегаМаркет, AliExpress и др.</td>
+            <td>от ~30 000 до ~108 000 ₽/год (по тарифу/лимитам)</td>
+            <td>Быстрый старт без программиста; удобный операционный UI; склад/этикетки/карточки; юнит-экономика в сервисе</td>
+            <td>Центр работы вне 1С; глубина учёта в 1С ограничена; другой класс продукта vs «модуль внутри 1С»</td>
+          </tr>
+          <tr>
+            <td>Типовой обмен 1С + модули площадок<br><small>1С УТ/УНФ; Ozon; Яндекс Маркет</small></td>
+            <td>Встроено / бесплатно</td>
+            <td>WB, Ozon, Яндекс (базово)</td>
+            <td>0 ₽</td>
+            <td>Бесплатно; достаточно для старта; официальная поддержка конфигурации/площадки</td>
+            <td>Обычно 1 юрлицо / 1 склад; мало настроек; нет сильной юнит-экономики/кластеров; WB без своего модуля — дыра для селлеров WB</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Таблица 2. Сравнение функционала</h2>
+    <p class="note">
+      «Нет*» у ALLSUN — не заявлено как ядро продукта (фокус Ozon+WB).
+      Зелёные строки — зоны, где ALLSUN публично сильнее большинства модулей.
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Функция</th>
+            <th>ALLSUN</th>
+            <th>RDV</th>
+            <th>Виктория</th>
+            <th>МС</th>
+            <th>БИТ</th>
+            <th>MarketBridge</th>
+            <th>SelSup</th>
+            <th>Типовой</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Тип решения</td>
+            <td>Модуль в 1С</td>
+            <td>Модуль (+облако)</td>
+            <td>Модуль в 1С</td>
+            <td>Модуль в 1С</td>
+            <td>Модуль/облако</td>
+            <td>Модуль в 1С</td>
+            <td>SaaS</td>
+            <td>Типовой</td>
+          </tr>
+          <tr>
+            <td>Ozon</td>
+            <td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td>
+          </tr>
+          <tr>
+            <td>Wildberries</td>
+            <td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да (базово)</td>
+          </tr>
+          <tr>
+            <td>Яндекс Маркет</td>
+            <td>Нет*</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td>
+          </tr>
+          <tr>
+            <td>МегаМаркет / др. МП</td>
+            <td>Нет*</td><td>Да</td><td>Частично</td><td>Да (опция)</td><td>Частично</td><td>Да (много)</td><td>Да</td><td>Частично</td>
+          </tr>
+          <tr>
+            <td>Остатки и цены</td>
+            <td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да (базово)</td>
+          </tr>
+          <tr>
+            <td>Заказы FBS / статусы</td>
+            <td>Да</td><td>Да (сильный конвейер)</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да (базово)</td>
+          </tr>
+          <tr>
+            <td>FBO: поставки / статусы</td>
+            <td>Частично</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Частично</td>
+          </tr>
+          <tr>
+            <td>Этикетки / отправления</td>
+            <td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Частично</td>
+          </tr>
+          <tr>
+            <td>Маркировка «Честный знак»</td>
+            <td>Да / WB в разработке</td><td>Да</td><td>Да</td><td>Частично / слабо</td><td>Да (часто)</td><td>Да (по площадкам)</td><td>Да</td><td>Частично</td>
+          </tr>
+          <tr>
+            <td>Отчёт комиссионера / финдоки</td>
+            <td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Частично</td>
+          </tr>
+          <tr class="highlight">
+            <td>Юнит-экономика / ежедневная маржа</td>
+            <td>Да (в модуле)</td><td>Да (часто отдельно)</td><td>Да (аналитика)</td><td>Слабо / базово</td><td>Зависит от контура</td><td>Слабее лидеров</td><td>Да (в SaaS)</td><td>Нет</td>
+          </tr>
+          <tr class="highlight">
+            <td>Потребности по кластерам / прогноз поставок</td>
+            <td>Да (Ozon; WB — в разр.)</td><td>Частично</td><td>Нет / слабо публично</td><td>Нет / слабо</td><td>Нет / слабо</td><td>Нет / слабо</td><td>Частично</td><td>Нет</td>
+          </tr>
+          <tr class="highlight">
+            <td>ДРР / рекламная аналитика</td>
+            <td>Да (Ozon; WB — в разр.)</td><td>Частично</td><td>Нет / слабо публично</td><td>Нет</td><td>Нет / слабо</td><td>Нет / слабо</td><td>Частично</td><td>Нет</td>
+          </tr>
+          <tr>
+            <td>AI: отзывы / SEO-описания</td>
+            <td>Да</td><td>Нет / слабо</td><td>Нет / слабо</td><td>Нет</td><td>Нет / слабо</td><td>Да</td><td>Частично</td><td>Нет</td>
+          </tr>
+          <tr>
+            <td>Мультиюрлица / много кабинетов</td>
+            <td>Да (безлимит)</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>По тарифу</td><td>Обычно ограничено</td>
+          </tr>
+          <tr>
+            <td>Конфигурации 1С</td>
+            <td>УТ, УНФ, КА, ERP</td><td>УТ, УНФ, КА, ERP</td><td>УТ/КА/ERP и др.</td><td>УТ, КА, ERP, УНФ</td><td>Широкий спектр</td><td>УТ, КА, ERP, УНФ, Розница…</td><td>Обмен с 1С</td><td>По версии 1С</td>
+          </tr>
+          <tr>
+            <td>Модель оплаты</td>
+            <td>Подписка/год</td><td>Подписка</td><td>Лицензия + сопровождение</td><td>Бессрочно</td><td>Коробка / подписка</td><td>Лицензия по площадкам</td><td>SaaS/год</td><td>Бесплатно</td>
+          </tr>
+          <tr>
+            <td>Тестовый доступ</td>
+            <td>Демо / консультация</td><td>Да (~21 день)</td><td>Да</td><td>Нет</td><td>Часто да</td><td>Часто да</td><td>Да</td><td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Где ALLSUN выигрывает</h3>
+        <p>
+          Ежедневная маржа и юнит-экономика «из коробки», расчёт потребностей по кластерам,
+          ДРР, AI-ответы/SEO, доработки функций для подписчиков без отдельной платы за типовые запросы.
+          Под ЦА «золотая середина»: уже болит ручной труд, важен контроль прибыли и поставок,
+          не обязательно 10k FBS/день.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Где уступают / риски</h3>
+        <p>
+          Узкий набор площадок vs MarketBridge/RDV; часть WB-функций ещё в разработке;
+          при сверхнагрузке FBS чаще смотрят RDV; при «только учёт документов» и разовой оплате — MoscowSoft.
+          Типовой обмен 1С остаётся главным «бесплатным» конкурентом на входе воронки.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      Сравнение по публичным заявлениям, не по независимому аудиту кода.
+      Функции «в разработке» на сайте ALLSUN учтены как частичные.
+      ИнфоСофт и мелкие решения Infostart отдельно не вынесены.
+      Источник: открытый веб · 02.09.2026
+    </footer>
+  </div>
+</body>
+</html>

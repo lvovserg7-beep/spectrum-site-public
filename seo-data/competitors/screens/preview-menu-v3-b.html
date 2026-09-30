@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Макет меню alsn.ru, вариант B: тёмная шапка и каскадные списки</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F8FA;--acc:#F55823;--ink:#212121;--line:#D7DADD;--soft:#FDE7DE;--mut:#6b7075}
+*{box-sizing:border-box}
+body{margin:0;font-family:Onest,system-ui,sans-serif;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}
+.in{max-width:1240px;margin:0 auto;padding:0 28px}
+.demo-note{background:var(--bg);border-bottom:1px solid var(--line);font-size:13px;color:var(--mut);padding:8px 0}
+.demo-note b{color:var(--ink)}
+.page{padding:28px 0 120px}
+.crumbs{font-size:14px;color:#8a8a8a;display:flex;gap:8px;align-items:center;margin-bottom:34px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:22px}
+.rails{display:flex;flex-direction:column;gap:4px}.rails i{display:block;height:2px;width:22px;background:var(--acc);border-radius:2px}
+.page h1{font-size:68px;line-height:1.02;font-weight:800;letter-spacing:-.03em;margin:0 0 22px;max-width:900px}
+.page h1 span{color:var(--acc)}
+.page .lead{font-size:20px;line-height:1.5;color:#3d4247;max-width:720px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:15px;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
+.btn.m{background:var(--acc);color:#fff}
+.btn.m:hover{background:#e04c1a}
+@media(max-width:1000px){.in{padding:0 18px}.page h1{font-size:44px}}
+
+.mh{position:sticky;top:0;z-index:100;background:#111214;color:#fff}
+.mh .bar{display:flex;align-items:center;gap:26px;height:80px}
+.mh .logo img{height:58px;width:auto;display:block}
+.mh nav{flex:1 1 auto}
+.mh .top{display:flex;gap:2px;margin:0;padding:0;list-style:none}
+.mh .top>li{position:relative}
+.mh .top>li>button,.mh .top>li>a{display:flex;align-items:center;gap:7px;height:80px;padding:0 14px;background:none;border:0;font:500 15.5px Onest,sans-serif;color:#e9eaec;cursor:pointer}
+.mh .top>li>button::after{content:"";width:6px;height:6px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:rotate(45deg) translateY(-3px);opacity:.7}
+.mh .top>li.open>button,.mh .top>li>button:hover{color:var(--acc)}
+.mh .tools{display:flex;align-items:center;gap:14px;flex:0 0 auto}
+.mh .ph{font-weight:600;font-size:15.5px;white-space:nowrap}
+.mh .ic{width:40px;height:40px;border-radius:12px;border:1px solid #3a3d42;display:grid;place-items:center;background:transparent;color:#fff;cursor:pointer}
+.mh .ic:hover{border-color:var(--acc);color:var(--acc)}
+.mh .ic svg{width:18px;height:18px}
+.mh .burger{display:none}
+.mh .dd{position:absolute;left:0;top:calc(100% - 8px);min-width:300px;background:#fff;color:var(--ink);border-radius:18px;padding:10px;box-shadow:0 22px 48px rgba(0,0,0,.28);opacity:0;visibility:hidden;transform:translateY(6px);transition:.16s}
+.mh li.open>.dd{opacity:1;visibility:visible;transform:none}
+.mh .dd{min-width:330px}
+.mh .dd>a,.mh .dd .row>a{display:block;position:relative;padding:11px 34px 11px 14px;border-radius:10px;font-size:15px;font-weight:600;line-height:1.3}
+.mh .dd>a:hover,.mh .dd .row:hover>a,.mh .dd .row.open>a{background:var(--bg);color:var(--acc)}
+.mh .dd .row{position:relative}
+.mh .dd .row.has>a::after{content:"";position:absolute;right:16px;top:50%;width:6px;height:6px;margin-top:-3px;border-right:1.6px solid var(--mut);border-top:1.6px solid var(--mut);transform:rotate(45deg)}
+.mh .dd .row>a span{display:block;font-size:12.5px;font-weight:400;color:var(--mut);margin-top:3px}
+.mh .dd .all{color:var(--acc);font-weight:600;border-bottom:1px solid var(--line);border-radius:10px 10px 0 0;margin-bottom:6px}
+.mh .sub{position:absolute;left:calc(100% + 6px);top:-10px;min-width:280px;background:#fff;border-radius:18px;padding:10px;box-shadow:0 22px 48px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateX(-4px);transition:.14s}
+.mh .row:hover>.sub,.mh .row.open>.sub{opacity:1;visibility:visible;transform:none}
+.mh .sub a{display:flex;justify-content:space-between;gap:10px;padding:9px 14px;border-radius:10px;font-size:14.5px;color:#3d4247}
+.mh .sub a:hover{background:var(--bg);color:var(--ink)}
+.mh .sub a.head{font-weight:700;color:var(--ink)}
+.mh .sub em{font-style:normal;font-size:12px;color:var(--mut)}
+.mh .sub em.new{color:var(--acc);background:var(--soft);border-radius:6px;padding:1px 7px}
+@media(max-width:1180px){.mh .top>li>button,.mh .top>li>a{padding:0 9px;font-size:15px}}
+@media(max-width:1000px){
+ .mh .bar{height:64px;gap:12px}.mh .logo img{height:46px}
+ .mh nav,.mh .tools .btn,.mh .ph{display:none}
+ .mh .tools{margin-left:auto}.mh .burger{display:grid}
+}
+.mm{position:fixed;inset:64px 0 0;background:#111214;color:#fff;z-index:120;overflow:auto;transform:translateX(100%);transition:transform .25s;padding:8px 18px 28px;display:flex;flex-direction:column}
+.mm.on{transform:none}
+.mm details{border-bottom:1px solid #2a2d31}
+.mm summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-weight:700;font-size:18px;cursor:pointer}
+.mm summary::-webkit-details-marker{display:none}
+.mm summary::after{content:"+";font-weight:400;font-size:24px;color:var(--acc);line-height:1}
+.mm details[open]>summary::after{content:"−"}
+.mm details details{border:0;margin-left:14px}
+.mm details details summary{font-size:16px;font-weight:600;padding:10px 0}
+.mm .lnk{display:block;padding:10px 0 10px 14px;font-size:15.5px;color:#cfd2d6}
+.mm .lnk.all{color:var(--acc);font-weight:600}
+.mm .foot{margin-top:auto;padding-top:22px;display:grid;gap:12px}
+.mm .foot .btn{justify-content:center;padding:15px}
+.mm .foot .ph{font-weight:700;font-size:18px;text-align:center}
+</style></head><body>
+<div class="demo-note"><div class="in"><b>Вариант B: тёмная шапка и каскадные списки.</b> Наведите на пункт меню или нажмите на него. На телефоне (уже 1000 px) - кнопка меню справа. Ссылки на новые страницы (/uslugi, /max1c и т.п.) заработают после их публикации. <a href="../mp-menu-design-options-2026-09-30.html" style="color:#F55823">Все варианты</a></div></div>
+<header class="mh" id="mh">
+<div class="in bar">
+ <a class="logo" href="https://alsn.ru/" aria-label="Аллсан Интеграция, на главную"><img src="https://static.tildacdn.com/tild6634-3863-4731-a232-653239393635/_5.png" alt="Аллсан"></a>
+ <nav aria-label="Основное меню"><ul class="top"><li><button type="button" aria-expanded="false">Услуги</button><div class="dd"><a href="/uslugi" class="all">Все услуги</a><div class="row has"><a href="/development1c">Внедрение 1С под ключ<span>Запуск учёта с нуля или переход на новую конфигурацию</span></a><div class="sub"><a href="/development1c" class="head">Внедрение 1С под ключ</a><a href="/erp-time-price">1С:ERP</a><a href="/upt8">1С:Управление торговлей</a><a href="/kompleksnaya_avtomatizaciya">1С:Комплексная автоматизация</a><a href="/buhv8">1С:Бухгалтерия</a><a href="/zup8">1С:ЗУП</a><a href="/upravlenie_nashei_firmoi">1С:УНФ</a></div></div><div class="row"><a href="/dorabotka-1c">Разработка и доработка 1С<span>Отчёты, печатные формы, обмены, исправление чужих правок</span></a></div><div class="row"><a href="/support1c">Техническая поддержка 1С<span>Внешний отдел 1С вместо штатного программиста</span></a></div><div class="row has"><a href="/bitrix24">Битрикс24<span>Готовые решения и быстрое внедрение</span></a><div class="sub"><a href="/bitrix24" class="head">Битрикс24</a><a href="/bitrix24">Внедрение Битрикс24</a><a href="/1cbitrix">Интеграция сайта с 1С и Битрикс24</a></div></div></div></li><li><button type="button" aria-expanded="false">Продукты</button><div class="dd"><a href="/produkty" class="all">Все продукты</a><div class="row has"><a href="/casemarketplace">Интеграция 1С с маркетплейсами<span>Остатки, заказы и финансы Ozon и WB в 1С</span></a><div class="sub"><a href="/casemarketplace" class="head">Интеграция 1С с маркетплейсами</a><a href="/1c-ozon">Ozon<em>FBO, FBS, rFBS, DBS</em></a><a href="/1c-wildberries">Wildberries<em>FBO, FBS, DBS</em></a></div></div><div class="row has"><a href="/ecom">Интеграция 1С с поставщиками B2B<span>Цены, остатки, резерв и заказы телеком и IT-поставщиков</span></a><div class="sub"><a href="/ecom" class="head">Интеграция 1С с поставщиками B2B</a><a href="/b2b-postavshiki">Все поставщики</a></div></div><div class="row has"><a href="/telegram1c">Чат-боты 1С для мессенджеров<span>Данные 1С в мессенджере сотрудника</span></a><div class="sub"><a href="/telegram1c" class="head">Чат-боты 1С для мессенджеров</a><a href="/telegram1c">Телеграм-бот 1С</a><a href="/max1c">Бот 1С для MAX<em class="new">новое</em></a></div></div></div></li><li><button type="button" aria-expanded="false">Лицензии</button><div class="dd"><a href="/licenzii" class="all">Все лицензии</a><div class="row has"><a href="/products">Программы 1С<span>Коробки, облако и договор поддержки</span></a><div class="sub"><a href="/products" class="head">Программы 1С</a><a href="/licenzii-1c-buhgalteriya">1С:Бухгалтерия</a><a href="/licenzii-1c-ut">1С:Управление торговлей</a><a href="/licenzii-1c-ka">1С:Комплексная автоматизация</a><a href="/licenzii-1c-zup">1С:ЗУП</a><a href="/licenzii-1c-unf">1С:УНФ</a><a href="/its">1С:КП (ИТС)</a><a href="/1cfresh">1С:Fresh</a><a href="/dokumentooborot8">1С:Документооборот</a><a href="/dopolnitelnie_licenzii">Лицензии 1С</a></div></div><div class="row"><a href="/bitrix24">Битрикс24<span>Лицензии и тарифы Битрикс24</span></a></div></div></li><li><button type="button" aria-expanded="false">Наш опыт</button><div class="dd"><div class="row"><a href="/cases">Кейсы<span>Задача, решение и результат по проектам</span></a></div><div class="row"><a href="/clients">Отзывы<span>Письма и видеоотзывы клиентов</span></a></div><div class="row"><a href="/publication">СМИ о нас<span>Публикации и интервью</span></a></div></div></li><li><button type="button" aria-expanded="false">О компании</button><div class="dd"><div class="row"><a href="/about_us">О компании</a></div><div class="row"><a href="/cra">Реальная автоматизация</a></div><div class="row"><a href="/persons">Команда</a></div><div class="row"><a href="/blog">Блог</a></div><div class="row"><a href="/vacancy">Вакансии</a></div><div class="row"><a href="/internship">Для стажёров</a></div><div class="row"><a href="/contacts">Контакты</a></div></div></li></ul></nav>
+ <div class="tools">
+  <a class="ph" href="tel:+74952600403">+7 495 260-04-03</a>
+  <a class="ic" href="#opensearch" aria-label="Поиск по сайту"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+  <a class="btn m" href="#popup:consult">Получить консультацию</a>
+  <button class="ic burger" type="button" aria-label="Открыть меню" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+ </div>
+</div>
+</header>
+<div class="mm" id="mm" aria-hidden="true"><details><summary>Услуги</summary><a href="/uslugi" class="lnk all">Все услуги</a><details><summary>Внедрение 1С под ключ</summary><a href="/development1c" class="lnk all">Обзор</a><a href="/erp-time-price" class="lnk">1С:ERP</a><a href="/upt8" class="lnk">1С:Управление торговлей</a><a href="/kompleksnaya_avtomatizaciya" class="lnk">1С:Комплексная автоматизация</a><a href="/buhv8" class="lnk">1С:Бухгалтерия</a><a href="/zup8" class="lnk">1С:ЗУП</a><a href="/upravlenie_nashei_firmoi" class="lnk">1С:УНФ</a></details><a href="/dorabotka-1c" class="lnk">Разработка и доработка 1С</a><a href="/support1c" class="lnk">Техническая поддержка 1С</a><details><summary>Битрикс24</summary><a href="/bitrix24" class="lnk all">Обзор</a><a href="/bitrix24" class="lnk">Внедрение Битрикс24</a><a href="/1cbitrix" class="lnk">Интеграция сайта с 1С и Битрикс24</a></details></details><details><summary>Продукты</summary><a href="/produkty" class="lnk all">Все продукты</a><details><summary>Интеграция 1С с маркетплейсами</summary><a href="/casemarketplace" class="lnk all">Обзор</a><a href="/1c-ozon" class="lnk">Ozon</a><a href="/1c-wildberries" class="lnk">Wildberries</a></details><details><summary>Интеграция 1С с поставщиками B2B</summary><a href="/ecom" class="lnk all">Обзор</a><a href="/b2b-postavshiki" class="lnk">Все поставщики</a></details><details><summary>Чат-боты 1С для мессенджеров</summary><a href="/telegram1c" class="lnk all">Обзор</a><a href="/telegram1c" class="lnk">Телеграм-бот 1С</a><a href="/max1c" class="lnk">Бот 1С для MAX</a></details></details><details><summary>Лицензии</summary><a href="/licenzii" class="lnk all">Все лицензии</a><details><summary>Программы 1С</summary><a href="/products" class="lnk all">Обзор</a><a href="/licenzii-1c-buhgalteriya" class="lnk">1С:Бухгалтерия</a><a href="/licenzii-1c-ut" class="lnk">1С:Управление торговлей</a><a href="/licenzii-1c-ka" class="lnk">1С:Комплексная автоматизация</a><a href="/licenzii-1c-zup" class="lnk">1С:ЗУП</a><a href="/licenzii-1c-unf" class="lnk">1С:УНФ</a><a href="/its" class="lnk">1С:КП (ИТС)</a><a href="/1cfresh" class="lnk">1С:Fresh</a><a href="/dokumentooborot8" class="lnk">1С:Документооборот</a><a href="/dopolnitelnie_licenzii" class="lnk">Лицензии 1С</a></details><a href="/bitrix24" class="lnk">Битрикс24</a></details><details><summary>Наш опыт</summary><a href="/cases" class="lnk">Кейсы</a><a href="/clients" class="lnk">Отзывы</a><a href="/publication" class="lnk">СМИ о нас</a></details><details><summary>О компании</summary><a href="/about_us" class="lnk">О компании</a><a href="/cra" class="lnk">Реальная автоматизация</a><a href="/persons" class="lnk">Команда</a><a href="/blog" class="lnk">Блог</a><a href="/vacancy" class="lnk">Вакансии</a><a href="/internship" class="lnk">Для стажёров</a><a href="/contacts" class="lnk">Контакты</a></details><div class="foot"><a class="ph" href="tel:+74952600403">+7 495 260-04-03</a><a class="btn m" href="#popup:consult">Получить консультацию</a></div></div>
+<main class="page"><div class="in">
+<div class="crumbs"><span>⌂</span>/<span>Продукты</span>/<span>Интеграция 1С с маркетплейсами</span>/<span style="color:#3d4247">Ozon</span></div>
+<div class="eyebrow"><span class="rails"><i></i><i></i><i></i></span>Модуль для селлеров</div>
+<h1>Интеграция 1С <span>с Ozon</span></h1>
+<p class="lead">Остатки, заказы и финансы Ozon в вашей 1С. Схемы FBO, FBS, rFBS и DBS. Страница-пример: так шапка выглядит над контентом в стиле v3.</p>
+</div></main>
+<script>
+(function(){
+ var mh=document.getElementById('mh'),shade=document.getElementById('mhShade'),mm=document.getElementById('mm');
+ var items=[].slice.call(mh.querySelectorAll('.top>li')),t=null,desk=matchMedia('(min-width:1001px)');
+ function close(){items.forEach(function(li){li.classList.remove('open');var b=li.querySelector('button');if(b)b.setAttribute('aria-expanded','false')});if(shade)shade.classList.remove('on')}
+ function open(li){close();li.classList.add('open');li.querySelector('button').setAttribute('aria-expanded','true');if(shade)shade.classList.add('on')}
+ items.forEach(function(li){
+  var b=li.querySelector('button');if(!b)return;
+  b.addEventListener('click',function(){li.classList.contains('open')?close():open(li)});
+  li.addEventListener('mouseenter',function(){if(!desk.matches)return;clearTimeout(t);t=setTimeout(function(){open(li)},120)});
+  li.addEventListener('mouseleave',function(){if(!desk.matches)return;clearTimeout(t);t=setTimeout(close,220)});
+ });
+ [].slice.call(mh.querySelectorAll('.row.has>a')).forEach(function(x){x.addEventListener('focus',function(){x.parentNode.classList.add('open')});x.parentNode.addEventListener('focusout',function(ev){if(!x.parentNode.contains(ev.relatedTarget))x.parentNode.classList.remove('open')})});
+ document.addEventListener('keydown',function(ev){if(ev.key==='Escape'){close();mm.classList.remove('on')}});
+ document.addEventListener('click',function(ev){if(!mh.contains(ev.target))close()});
+ if(shade)shade.addEventListener('click',close);
+ var bg=mh.querySelector('.burger');
+ bg.addEventListener('click',function(){mm.style.top=Math.max(0,mh.getBoundingClientRect().bottom)+'px';var on=mm.classList.toggle('on');bg.setAttribute('aria-expanded',on);mm.setAttribute('aria-hidden',!on);document.body.style.overflow=on?'hidden':''});
+})();
+</script>
+<script>/* только для макета: #open=N раскрывает раздел, #mobile открывает мобильное меню */
+(function(){var h=location.hash,m=h.match(/open=(\d)/),li=document.querySelectorAll('#mh .top>li');
+if(m&&li[m[1]])li[m[1]].querySelector('button').click();
+var r=h.match(/row=(\d)/);if(m&&r){var rows=li[m[1]].querySelectorAll('.row.has');if(rows[r[1]])rows[r[1]].classList.add('open')}
+if(h.indexOf('mobile')>-1){document.querySelector('#mh .burger').click();var d=document.querySelectorAll('#mm>details');if(d[1]){d[1].open=true;var dd=d[1].querySelector('details');if(dd)dd.open=true}}})();</script>
+</body></html>

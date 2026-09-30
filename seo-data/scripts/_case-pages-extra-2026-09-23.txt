@@ -1,0 +1,18 @@
+
+==== /caseecomsc ====
+  Все кейсы ctx: ...k-item t-name t-name_xs" href="https://alsn.ru/cases" data-menu-item-number="4">Все кейсы</a> </li> <li class="t-menusub__list-item t-name t-name_xs"> <a class="t-menusub__link-item t-name t-name_xs" href="htt...
+  LD#0 types=['Organization', 'ImageObject', 'ContactPoint', 'WebSite']
+  LD#1 types=['BreadcrumbList', 'ListItem', 'ListItem', 'ListItem', 'Article', 'WebPage', 'ImageObject', 'Organization', 'Organization', 'ImageObject', 'Service']
+    Article headline=Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»
+    Article url=https://alsn.ru/caseecomsc
+    Article desc=Обмен 1С с ЛК и API поставщиков: остатки, цены, резерв и заказы. Результаты проекта для ООО «СЦ».
+    BC items=[]
+
+==== /xitsadmarketplace ====
+  Все кейсы ctx: ...k-item t-name t-name_xs" href="https://alsn.ru/cases" data-menu-item-number="4">Все кейсы</a> </li> <li class="t-menusub__list-item t-name t-name_xs"> <a class="t-menusub__link-item t-name t-name_xs" href="htt...
+  LD#0 types=['Organization', 'ImageObject', 'ContactPoint', 'WebSite']
+  LD#1 types=['BreadcrumbList', 'ListItem', 'ListItem', 'ListItem', 'Article', 'WebPage', 'Organization', 'Organization', 'ImageObject', 'Service']
+    Article headline=Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»
+    Article url=https://alsn.ru/xitsadmarketplace
+    Article desc=Модуль 1С для Ozon и Wildberries: единое окно, рост продаж и снижение логистики. Результаты проекта для ООО «ХИТСАД».
+    BC items=[]

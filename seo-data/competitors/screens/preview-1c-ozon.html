@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>Превью 1c-ozon</title><style>
+.as{--bg:#F7F8FA;--acc:#F55823;--ink:#212121;--line:#D7DADD;--soft:#FDE7DE;--mut:#5f6368;font-family:'Roboto',Arial,sans-serif;color:var(--ink);background:var(--bg);padding:64px 20px;box-sizing:border-box}
+.as *{box-sizing:border-box}
+.as.w{background:#fff}
+.as.d{background:var(--ink);color:#fff}
+.as-in{max-width:1160px;margin:0 auto}
+.as-k{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin:0 0 12px}
+.as h1{font-family:inherit;font-size:48px;line-height:1.1;font-weight:700;margin:0 0 18px;color:var(--ink)}
+.as h2,.as .as-h2{font-family:inherit;font-size:34px;line-height:1.2;font-weight:700;margin:0 0 28px;color:inherit}
+.as h3{font-family:inherit;font-size:24px;line-height:1.25;font-weight:700;margin:0 0 10px;color:var(--ink)}
+.as-lead{font-size:19px;line-height:1.5;color:#3c4043;margin:0 0 22px;max-width:580px}
+.as-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.as-chips span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:14px}
+.as-price{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 16px;font-size:16px;margin:0 0 24px}
+.as-price b{color:var(--acc);font-size:20px}
+.as-btns{display:flex;flex-wrap:wrap;gap:12px}
+.as-btn{display:inline-block;padding:15px 26px;border-radius:10px;font-size:16px;font-weight:700;line-height:1.2;text-decoration:none!important;transition:background .2s}
+.as-btn.m{background:var(--acc);color:#fff!important}
+.as-btn.m:hover{background:#dd4a18}
+.as-btn.g{border:1.5px solid var(--ink);color:var(--ink)!important;background:transparent}
+.as-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.as-step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.as-step small{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin-bottom:6px}
+.as-step b{display:block;font-size:19px;margin-bottom:4px}
+.as-step span{font-size:14px;color:var(--mut)}
+.as-step.r{background:var(--ink);border-color:var(--ink);color:#fff}
+.as-step.r span{color:#cfcfcf}
+.as-arr{text-align:center;color:var(--acc);font-size:20px;line-height:30px}
+.as-note{font-size:15px;color:var(--mut);margin:20px 0 0}
+.as-note a{color:var(--ink)!important;text-decoration:underline}
+.as-grid{display:grid;gap:16px}
+.as-g3{grid-template-columns:repeat(3,1fr)}
+.as-g2{grid-template-columns:repeat(2,1fr)}
+.as-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+.as.w .as-card{background:var(--bg)}
+.as-card.a{border:2px solid var(--acc);background:#fff}
+.as-ico{width:38px;height:38px;border-radius:10px;background:var(--soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.as-ico i{display:block;width:16px;height:2px;background:var(--acc);box-shadow:0 -5px 0 var(--acc),0 5px 0 var(--acc)}
+.as-card b{display:block;font-size:18px;margin-bottom:6px}
+.as-card p{font-size:15px;line-height:1.45;color:var(--mut);margin:0}
+.as-row{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center;margin-bottom:44px}
+.as-row p{font-size:16px;line-height:1.55;color:#3c4043;margin:0}
+.as-shot{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;box-shadow:0 8px 24px rgba(33,33,33,.06)}
+.as-shot img{display:block;width:100%;height:auto;border-radius:8px}
+.as-shot.top img{aspect-ratio:1121/500;object-fit:cover;object-position:top}
+.as-strip{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:14px;padding:20px 24px;font-size:16px;line-height:1.5}
+.as-strip a{color:var(--acc)!important;font-weight:700;text-decoration:none!important;white-space:nowrap}
+.as-case{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}
+.as-big{font-size:56px;font-weight:700;line-height:1;margin-bottom:10px}
+.as-mini{font-size:15px;color:var(--mut);margin:0}
+.as-quote{border-left:4px solid var(--acc);background:var(--bg);border-radius:0 14px 14px 0;padding:22px 26px}
+.as-quote p{font-size:19px;line-height:1.5;margin:0 0 12px}
+.as-quote small{font-size:14px;color:var(--mut)}
+.as-quote a{display:inline-block;margin-top:12px;color:var(--acc)!important;font-weight:700;text-decoration:none!important}
+.as-pr{font-size:34px;font-weight:700;margin:12px 0 2px}
+.as-link{display:inline-block;margin-top:16px;color:var(--acc)!important;font-weight:700;text-decoration:none!important}
+.as-cta{display:flex;justify-content:space-between;align-items:center;gap:32px}
+.as-cta .as-btn{flex-shrink:0;white-space:nowrap}
+.as.d .as-h2{margin:0 0 8px;color:#fff}
+.as.d .as-lead{color:#cfcfcf;margin:0}
+@media (max-width:960px){.as-hero,.as-row,.as-case{grid-template-columns:1fr;gap:28px}.as-g3{grid-template-columns:1fr 1fr}.as h1{font-size:38px}.as-cta{flex-direction:column;align-items:flex-start}}
+@media (max-width:640px){.as{padding:44px 16px}.as-g3,.as-g2{grid-template-columns:1fr}.as h1{font-size:31px}.as h2,.as .as-h2{font-size:26px;margin-bottom:20px}.as-lead{font-size:17px}.as-btn,.as-cta .as-btn{width:100%;text-align:center;white-space:normal}.as-strip{flex-direction:column;align-items:flex-start}.as-big{font-size:44px}.as-row{margin-bottom:32px}}
+</style><style>body{margin:0}</style></head><body><div style="background:#000;color:#fff;font:14px Roboto,Arial,sans-serif;padding:18px 24px;display:flex;justify-content:space-between"><b style="color:#F55823">АЛЛСАН</b><span>Разработка · Техподдержка · Продукты 1С · Кейсы · О нас</span><span>+7 (495) 260-04-03</span></div>
+<div style="background:#F7F8FA;color:#8a8a8a;font:14px Roboto,Arial,sans-serif;padding:14px 20px"><div style="max-width:1160px;margin:0 auto">⌂ / Модуль 1С для маркетплейсов / Интеграция 1С с Ozon</div></div><section class="as">
+<div class="as-in as-hero">
+<div>
+<div class="as-k">Модуль для селлеров Ozon</div>
+<h1>Интеграция 1С с Ozon</h1>
+<p class="as-lead">Модуль Аллсан выгружает остатки и цены из вашей 1С в кабинет Ozon и забирает заказы обратно в 1С. Маржа по каждому товару считается в 1С каждый день.</p>
+<div class="as-chips"><span>FBS</span><span>rFBS</span><span>DBS</span><span>любое число кабинетов</span></div>
+<div class="as-price">от <b>40 700 ₽</b> в год · 1С:УТ, УНФ, КА, ERP</div>
+<div class="as-btns"><a class="as-btn m" href="#popup:konsultacia">Записаться на демонстрацию</a><a class="as-btn g" href="https://alsn.ru/casemarketplace/tproduct/913805053-713209120582-modul-integratsii-1s-s-ozon">Купить модуль</a></div>
+<p class="as-note">Работаете ещё и с Wildberries? Смотрите <a href="https://alsn.ru/casemarketplace">модуль интеграции 1С с маркетплейсами</a>.</p>
+</div>
+<div>
+<div class="as-step"><small>Кабинет Ozon Seller</small><b>Заказы, отчёты, реклама</b><span>все кабинеты и юрлица</span></div>
+<div class="as-arr">↓</div>
+<div class="as-step"><small>Модуль Аллсан</small><b>Обмен и расчёты в 1С</b><span>УТ · УНФ · КА · ERP</span></div>
+<div class="as-arr">↓</div>
+<div class="as-step r"><small>Результат</small><b>Товар в наличии на нужных складах</b><span>и видно, где реклама съедает маржу</span></div>
+</div>
+</div>
+</section>
+<section class="as w">
+<div class="as-in">
+<h2>Что синхронизируется с Ozon</h2>
+<div class="as-grid as-g3">
+<div class="as-card"><div class="as-ico"><i></i></div><b>Остатки и цены</b><p>Из 1С в кабинет Ozon, автоматически или вручную.</p></div>
+<div class="as-card"><div class="as-ico"><i></i></div><b>Заказы FBS</b><p>Создаются в 1С сами, без ручного ввода.</p></div>
+<div class="as-card"><div class="as-ico"><i></i></div><b>Отправления</b><p>Подготовка отправлений, этикетки и акты из 1С.</p></div>
+<div class="as-card"><div class="as-ico"><i></i></div><b>Финансовые отчёты</b><p>Отчёты Ozon приходят в 1С, маржа считается автоматически.</p></div>
+<div class="as-card"><div class="as-ico"><i></i></div><b>Реклама</b><p>Доля рекламных расходов по каждому товару каждый день.</p></div>
+<div class="as-card"><div class="as-ico"><i></i></div><b>Последняя миля</b><p>Перевыставление услуг последней мили Ozon с НДС.</p></div>
+</div>
+</div>
+</section>
+<section class="as">
+<div class="as-in">
+<h2>Что особенно важно на Ozon</h2>
+<div class="as-row">
+<div><div class="as-k">Кластеры</div><h3>Сколько и на какой склад отгрузить</h3><p>Модуль берёт остатки FBO с Ozon, продажи и сроки доставки по кластерам и подсказывает, сколько товара везти в каждый регион. Товар реже пропадает из наличия и выше стоит в выдаче.</p></div>
+<div class="as-shot"><img src="https://static.tildacdn.com/tild3563-6433-4535-a231-653461616463/noroot.png" alt="Расчёт потребностей по кластерам Ozon в 1С" loading="lazy" width="1153" height="463"></div>
+</div>
+<div class="as-row">
+<div><div class="as-k">Маржа</div><h3>Сколько вы заработали на каждом товаре</h3><p>Себестоимость, доставка Ozon, налог и эквайринг сведены в один отчёт. Прибыль видна по категориям и по каждому товару.</p></div>
+<div class="as-shot top"><img src="https://static.tildacdn.com/tild6161-6139-4730-b039-636631623135/___OZON_WB.jpg" alt="Отчёт по себестоимости и прибыли Ozon в 1С" loading="lazy" width="1121" height="1055"></div>
+</div>
+<div class="as-row">
+<div><div class="as-k">Реклама</div><h3>Какая реклама съедает маржу</h3><p>Модуль каждый день считает долю рекламных расходов по товарам, поиск и трафарет отдельно. Видно, где рекламу пора остановить.</p></div>
+<div class="as-shot"><img src="https://static.tildacdn.com/tild6233-3339-4062-b232-666133343034/noroot.png" alt="Расчёт доли рекламных расходов Ozon в 1С" loading="lazy" width="823" height="412"></div>
+</div>
+<div class="as-strip"><span><b>Последняя миля.</b> Услуги последней мили Ozon перевыставляются с НДС за три клика в 1С.</span><a href="https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s">Как это работает →</a></div>
+</div>
+</section>
+<section class="as w">
+<div class="as-in">
+<h2>Результат клиента</h2>
+<div class="as-case">
+<div><div class="as-big">20 млн ₽</div><p class="as-mini">выручки на Ozon за 6 месяцев с нуля, магазин EcoTide</p></div>
+<div class="as-quote"><p>«Мы начали наш бизнес на OZON совершенно с 0 и всего за полгода сделали выручку в 20 000 000 рублей. Благодаря правильной организации контроля и учёта в программе 1С наш товар поднялся в ТОПе на 2 место по всей РФ».</p><small>Елизавета, руководитель магазина EcoTide</small><br><a href="https://alsn.ru/casemarketplace#rec1108347471">Смотреть видеоотзыв →</a></div>
+</div>
+</div>
+</section>
+<section class="as">
+<div class="as-in">
+<h2>Кому подходит</h2>
+<p class="as-lead">Селлерам и компаниям, у которых учёт уже в 1С, а продажи идут или планируются на Ozon.</p>
+<div class="as-grid as-g3">
+<div class="as-card"><b>Остатки ведут вручную</b><p>и уже начались ошибки, отмены и штрафы.</p></div>
+<div class="as-card"><b>Несколько кабинетов</b><p>или несколько юрлиц на Ozon в одной 1С.</p></div>
+<div class="as-card"><b>Не видно прибыли</b><p>по товарам после комиссий, логистики и рекламы.</p></div>
+</div>
+</div>
+</section>
+<section class="as w" id="price">
+<div class="as-in">
+<h2>Сколько стоит</h2>
+<div class="as-grid as-g2">
+<div class="as-card"><b>Только Ozon</b><div class="as-pr">40 700 ₽</div><p>в год с НДС</p><a class="as-link" href="https://alsn.ru/casemarketplace/tproduct/913805053-713209120582-modul-integratsii-1s-s-ozon">Купить модуль 1С для Ozon →</a></div>
+<div class="as-card a"><b>Ozon и Wildberries</b><div class="as-pr">69 990 ₽</div><p>в год с НДС, один модуль на обе площадки</p><a class="as-link" href="https://alsn.ru/casemarketplace/tproduct/913805053-413216341712-modul-integratsii-1s-s-marketpleisami-oz">Купить модуль на обе площадки →</a></div>
+</div>
+<p class="as-note">Стоимость внедрения уточняем на звонке: она зависит от доработок вашей 1С. После окончания годовой подписки модуль продолжает работать, подписка даёт обновления*. При заказе внедрения, техподдержки или лицензий 1С от 100 тыс. ₽ - скидка 50% на первый год.</p>
+<p class="as-note">* Принимаем любые предложения по новым функциям модуля. Часть из них можем реализовать бесплатно, на своё усмотрение.</p>
+</div>
+</section>
+<section class="as d">
+<div class="as-in as-cta">
+<div><div class="as-h2">Покажем, как это работает с вашим кабинетом Ozon</div><p class="as-lead">Созвонимся по видеосвязи, покажем модуль и ответим, подойдёт ли он к вашей 1С.</p></div>
+<a class="as-btn m" href="#popup:konsultacia">Записаться на демонстрацию</a>
+</div>
+</section><div style="background:#fff;padding:40px 20px;text-align:center;font:700 28px Roboto,Arial,sans-serif;color:#212121">Наши клиенты</div></body></html>

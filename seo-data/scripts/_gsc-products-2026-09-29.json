@@ -1,0 +1,434 @@
+{
+  "25.08-12.09": {
+    "days": 19,
+    "meta": {
+      "site_url": "sc-domain:alsn.ru",
+      "start_date": "2026-08-25",
+      "end_date": "2026-09-12",
+      "dimensions": [
+        "page"
+      ],
+      "search_type": "web",
+      "total_rows": 307,
+      "row_limit": 1000,
+      "start_row": 0
+    },
+    "res": {
+      "_all_pages": {
+        "clicks": 71,
+        "shows": 10876
+      },
+      "mp": {
+        "clicks": 2,
+        "shows": 390,
+        "top": [
+          [
+            "/perevystavlenie-uslug-posledney-mili-ozon-v-1s",
+            2,
+            146,
+            9.7
+          ],
+          [
+            "/casemarketplace",
+            0,
+            105,
+            25.6
+          ],
+          [
+            "/casemarketplace/tproduct/913805053-553126495292-modul-integratsii-1s-s-wildberries",
+            0,
+            44,
+            24.8
+          ],
+          [
+            "/event-marketplaces",
+            0,
+            34,
+            18.9
+          ]
+        ]
+      },
+      "b2b": {
+        "clicks": 2,
+        "shows": 982,
+        "top": [
+          [
+            "/vtt",
+            0,
+            227,
+            7.6
+          ],
+          [
+            "/etm-ipro",
+            0,
+            192,
+            6.0
+          ],
+          [
+            "/marvel",
+            0,
+            130,
+            5.9
+          ],
+          [
+            "/ocs",
+            0,
+            88,
+            6.9
+          ]
+        ]
+      },
+      "impl": {
+        "clicks": 11,
+        "shows": 1276,
+        "top": [
+          [
+            "/erp-time-price",
+            0,
+            624,
+            22.2
+          ],
+          [
+            "/kompleksnaya_avtomatizaciya",
+            0,
+            153,
+            32.0
+          ],
+          [
+            "/perehod-s-ut-na-unf",
+            2,
+            150,
+            9.9
+          ],
+          [
+            "/development1c",
+            0,
+            127,
+            34.2
+          ]
+        ]
+      },
+      "support": {
+        "clicks": 0,
+        "shows": 191,
+        "top": [
+          [
+            "/support1c/tproduct/913413379-238064160262-tehpodderzhka-po-1s-na-30-chasov-2-mes",
+            0,
+            156,
+            28.3
+          ],
+          [
+            "/support1c/tproduct/913413379-628090982172-tehpodderzhka-po-1s-na-1-chas-1-mes",
+            0,
+            28,
+            28.8
+          ],
+          [
+            "/support1c",
+            0,
+            5,
+            13.4
+          ],
+          [
+            "/support1c/tproduct/913413379-226950278332-tehpodderzhka-po-1s-na-60-chasov-6-mes",
+            0,
+            1,
+            2
+          ]
+        ]
+      },
+      "lic": {
+        "clicks": 18,
+        "shows": 3091,
+        "top": [
+          [
+            "/its/tproduct/903464734-610064648722-1skp-upp-na-12-mesyatsev-its",
+            1,
+            282,
+            8.4
+          ],
+          [
+            "/zup8",
+            0,
+            280,
+            34.6
+          ],
+          [
+            "/upravlenie_nashei_firmoi",
+            0,
+            206,
+            35.8
+          ],
+          [
+            "/its",
+            1,
+            193,
+            42.3
+          ]
+        ]
+      },
+      "bitrix": {
+        "clicks": 2,
+        "shows": 1752,
+        "top": [
+          [
+            "/bitrix24",
+            2,
+            1732,
+            35.3
+          ],
+          [
+            "/1cbitrix",
+            0,
+            20,
+            16.5
+          ]
+        ]
+      },
+      "tg": {
+        "clicks": 20,
+        "shows": 1854,
+        "top": [
+          [
+            "/tbotdelprod",
+            3,
+            554,
+            14.8
+          ],
+          [
+            "/tbstroit",
+            2,
+            248,
+            5.1
+          ],
+          [
+            "/tbsotrudniki",
+            7,
+            181,
+            7.5
+          ],
+          [
+            "/telegram1c",
+            1,
+            136,
+            7.6
+          ]
+        ]
+      }
+    }
+  },
+  "13-20.09": {
+    "days": 8,
+    "meta": {
+      "site_url": "sc-domain:alsn.ru",
+      "start_date": "2026-09-13",
+      "end_date": "2026-09-20",
+      "dimensions": [
+        "page"
+      ],
+      "search_type": "web",
+      "total_rows": 245,
+      "row_limit": 1000,
+      "start_row": 0
+    },
+    "res": {
+      "_all_pages": {
+        "clicks": 34,
+        "shows": 3856
+      },
+      "mp": {
+        "clicks": 2,
+        "shows": 104,
+        "top": [
+          [
+            "/perevystavlenie-uslug-posledney-mili-ozon-v-1s",
+            0,
+            54,
+            9.5
+          ],
+          [
+            "/casemarketplace",
+            2,
+            15,
+            7.6
+          ],
+          [
+            "/event-marketplaces",
+            0,
+            15,
+            21.1
+          ],
+          [
+            "/casemarketplace/tproduct/913805053-713209120582-modul-integratsii-1s-s-ozon",
+            0,
+            10,
+            22.2
+          ]
+        ]
+      },
+      "b2b": {
+        "clicks": 1,
+        "shows": 289,
+        "top": [
+          [
+            "/etm-ipro",
+            0,
+            66,
+            5.5
+          ],
+          [
+            "/vtt",
+            0,
+            59,
+            8.1
+          ],
+          [
+            "/russkiy-svet",
+            1,
+            35,
+            5.0
+          ],
+          [
+            "/marvel",
+            0,
+            31,
+            6.2
+          ]
+        ]
+      },
+      "impl": {
+        "clicks": 2,
+        "shows": 469,
+        "top": [
+          [
+            "/erp-time-price",
+            0,
+            260,
+            23.9
+          ],
+          [
+            "/perehod-s-ut-na-unf",
+            0,
+            61,
+            8.6
+          ],
+          [
+            "/moy-sklad-perenos-v-1s",
+            2,
+            47,
+            30.9
+          ],
+          [
+            "/development1c",
+            0,
+            43,
+            25
+          ]
+        ]
+      },
+      "support": {
+        "clicks": 0,
+        "shows": 32,
+        "top": [
+          [
+            "/support1c/tproduct/913413379-238064160262-tehpodderzhka-po-1s-na-30-chasov-2-mes",
+            0,
+            24,
+            23.2
+          ],
+          [
+            "/support1c",
+            0,
+            6,
+            14.2
+          ],
+          [
+            "/support1c/tproduct/913413379-628090982172-tehpodderzhka-po-1s-na-1-chas-1-mes",
+            0,
+            2,
+            55.5
+          ]
+        ]
+      },
+      "lic": {
+        "clicks": 4,
+        "shows": 1076,
+        "top": [
+          [
+            "/zup8",
+            0,
+            201,
+            20.4
+          ],
+          [
+            "/1cfresh",
+            0,
+            86,
+            37.8
+          ],
+          [
+            "/its",
+            0,
+            70,
+            37.8
+          ],
+          [
+            "/its/tproduct/903464734-610064648722-1skp-upp-na-12-mesyatsev-its",
+            0,
+            56,
+            8.1
+          ]
+        ]
+      },
+      "bitrix": {
+        "clicks": 2,
+        "shows": 426,
+        "top": [
+          [
+            "/bitrix24",
+            2,
+            423,
+            29.4
+          ],
+          [
+            "/1cbitrix",
+            0,
+            3,
+            6
+          ]
+        ]
+      },
+      "tg": {
+        "clicks": 16,
+        "shows": 747,
+        "top": [
+          [
+            "/tbotdelprod",
+            0,
+            174,
+            14.3
+          ],
+          [
+            "/tbsotrudniki",
+            7,
+            161,
+            6.7
+          ],
+          [
+            "/tbstroit",
+            2,
+            75,
+            5.6
+          ],
+          [
+            "/telegram1c",
+            1,
+            57,
+            6.4
+          ]
+        ]
+      }
+    }
+  }
+}

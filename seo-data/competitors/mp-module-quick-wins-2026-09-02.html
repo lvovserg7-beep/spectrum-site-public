@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Быстрые доработки модуля МП — отстройка от конкурентов</title>
+  <style>
+    :root {
+      --bg: #f6f6f4;
+      --surface: #fff;
+      --text: #1a1a1a;
+      --muted: #5a5a5a;
+      --border: #e0e0dc;
+      --accent: #1f4b7a;
+      --soft: #e8eef5;
+      --hi: #e8f5ee;
+      --mid: #fff8e8;
+      --lo: #f5f5f3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 18px 56px; }
+    h1 { font-size: 1.55rem; margin: 0 0 8px; }
+    h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+    .lead { color: var(--muted); max-width: 75ch; margin: 0 0 14px; }
+    .meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 18px; }
+    .callout {
+      background: var(--soft);
+      border: 1px solid #c5d4e6;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      font-size: 0.95rem;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 1080px; }
+    th, td {
+      border-bottom: 1px solid var(--border);
+      padding: 10px 11px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #efefe9; font-weight: 600; white-space: nowrap; }
+    tr:last-child td { border-bottom: none; }
+    tr.p1 td { background: var(--hi); }
+    tr.p2 td { background: var(--mid); }
+    .score {
+      display: inline-block;
+      min-width: 2.2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .bar {
+      display: inline-block;
+      height: 8px;
+      border-radius: 4px;
+      background: #c5d4e6;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+    .note { color: var(--muted); font-size: 0.8rem; margin-top: 12px; }
+    ul.pack { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: 0.9rem; }
+    footer { margin-top: 28px; font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Что взять у конкурентов в модуль ALLSUN — малые ресурсы, максимальный отрыв</h1>
+    <p class="lead">
+      Не копируем «тяжёлый конвейер FBS как у RDV» и не раздуваем мультиплощадку до 19 МП.
+      Берём чужие преимущества, которые закрывают возражения продаж и усиливают уже сильные стороны
+      ALLSUN (маржа, кластеры, ДРР, AI) — с горизонтом недель/1–2 месяцев, не кварталов.
+    </p>
+    <p class="meta">Субъективная оценка влияния на конкуренцию: 1–10. Дата: 02.09.2026.</p>
+
+    <div class="callout">
+      Логика приоритета: сначала добить уникальные фичи на WB (чтобы УТП не «хромало» на половине рынка),
+      затем снять возражение «нет третьей площадки» (Яндекс Маркет — базовый контур), плюс быстрые
+      коммерческие рычаги (демо/пробник, открытый TCO). Зелёные строки — делать первыми.
+    </div>
+
+    <h2>Таблица: что реализовать</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Преимущество конкурента</th>
+            <th>У кого</th>
+            <th>Что сделать у нас</th>
+            <th>Ресурсы (оценка)</th>
+            <th>Срок</th>
+            <th>Влияние</th>
+            <th>Комментарий</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="p1">
+            <td>1</td>
+            <td>Полный паритет ключевых фич на WB (не «в разработке»)</td>
+            <td>RDV, Виктория, БИТ — стабильный WB</td>
+            <td>Довести на WB: кластеры/потребности, ДРР, «Честный знак», реестр продаж юрлицам — до статуса «работает», как на Ozon</td>
+            <td>1–2 разработчика 1С + аналитик МП; ~40–80 чел/час</td>
+            <td>3–6 недель</td>
+            <td><span class="score">9/10</span><span class="bar" style="width:90px"></span></td>
+            <td>Самый дешёвый способ «отстроиться»: УТП уже есть, но сейчас половина силы только на Ozon. Закрывает «а на WB у вас недоделка»</td>
+          </tr>
+          <tr class="p1">
+            <td>2</td>
+            <td>Третья крупная площадка в одном модуле</td>
+            <td>RDV, Виктория, МС, MarketBridge</td>
+            <td>Яндекс Маркет: MVP — остатки, цены, заказы FBS, этикетки/статусы, отчёт комиссионера. Без глубокой юнит-экономики в v1</td>
+            <td>1–2 разработчика; ~80–120 чел/час + тест на 1–2 кабинетах</td>
+            <td>6–10 недель</td>
+            <td><span class="score">8/10</span><span class="bar" style="width:80px"></span></td>
+            <td>Снимает главное возражение «только Ozon+WB». Не гонимся за 17 МП — одна площадка даёт 80% эффекта от «мульти»</td>
+          </tr>
+          <tr class="p1">
+            <td>3</td>
+            <td>Пробный доступ / тестовый период</td>
+            <td>RDV (~21 день), Виктория</td>
+            <td>Демо-база или пробник 14 дней на ограниченном кабинете + чек-лист сценариев (остаток=0, отмена, возврат, отчёт)</td>
+            <td>Менеджер + 0.5 разработчика; ~15–30 чел/час + регламент продаж</td>
+            <td>1–2 недели</td>
+            <td><span class="score">8/10</span><span class="bar" style="width:80px"></span></td>
+            <td>Мало кода — много конверсии. Конкуренты с тестом выигрывают сделки до сравнения фич</td>
+          </tr>
+          <tr class="p2">
+            <td>4</td>
+            <td>Открытый прайс и понятный TCO</td>
+            <td>Виктория (прозрачные тарифы)</td>
+            <td>На странице модуля: таблица «год 1 / год 2» vs подписка RDV/БИТ и разовая МС; калькулятор «N кабинетов»</td>
+            <td>Маркетинг/контент; 0–8 чел/час разработки</td>
+            <td>3–5 дней</td>
+            <td><span class="score">7/10</span><span class="bar" style="width:70px"></span></td>
+            <td>Не фича модуля, но снимает паритет «все одинаковые на лендинге». Дешёвый рычаг доверия</td>
+          </tr>
+          <tr class="p2">
+            <td>5</td>
+            <td>Уведомления о заказах/ошибках обмена в Telegram</td>
+            <td>MarketBridge</td>
+            <td>События: новый FBS, сбой выгрузки остатков, критичная ошибка API → Telegram-чат клиента (бот/вебхук)</td>
+            <td>0.5–1 разработчик; ~20–40 чел/час</td>
+            <td>2–3 недели</td>
+            <td><span class="score">6/10</span><span class="bar" style="width:60px"></span></td>
+            <td>Дешёвый «вау» для операторов. Не УТП ядра, но часто решает «удобство vs SelSup»</td>
+          </tr>
+          <tr class="p2">
+            <td>6</td>
+            <td>Прозрачный журнал обмена и контроль ошибок</td>
+            <td>MoscowSoft (инженерный акцент)</td>
+            <td>Экран «последние обмены»: успех/ошибка, тело ответа API, кнопка «повторить»; алерты по SLA</td>
+            <td>1 разработчик; ~30–50 чел/час</td>
+            <td>2–4 недели</td>
+            <td><span class="score">7/10</span><span class="bar" style="width:70px"></span></td>
+            <td>Закрывает страх ИТ/главбуха «сломается и не увидим». Усиливает продажу среднему+</td>
+          </tr>
+          <tr class="p2">
+            <td>7</td>
+            <td>Глубже FBO: поставки туда-обратно</td>
+            <td>RDV, Виктория, БИТ</td>
+            <td>Создание/синхронизация поставок FBO из 1С + статусы приёмки на складах МП (без полного WMS)</td>
+            <td>1 разработчик + аналитик; ~50–80 чел/час на Ozon, затем WB</td>
+            <td>4–7 недель (по площадке)</td>
+            <td><span class="score">7/10</span><span class="bar" style="width:70px"></span></td>
+            <td>Сейчас у вас FBO «частично». Дожать — меньше проигрыша RDV на смешанных схемах FBS+FBO</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Публичный пакет «добавим функцию бесплатно» как продукт</td>
+            <td>Уникально у вас, но слабо упаковано vs «коробки»</td>
+            <td>Регламент: 1 приоритетная доработка/квартал для активных подписчиков; витрина реализованных запросов на сайте</td>
+            <td>Продукт + контент; ~10–20 чел/час процесса</td>
+            <td>1–2 недели на запуск</td>
+            <td><span class="score">8/10</span><span class="bar" style="width:80px"></span></td>
+            <td>Это уже ваше преимущество — сделать видимым. Конкуренты продают «фиксированный модуль»; вы — «модуль, который растёт с клиентом»</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>МегаМаркет / «ещё 10 площадок»</td>
+            <td>MarketBridge, RDV</td>
+            <td>Не брать в ближайший горизонт. После Яндекса — только по 3+ запросам от платящих клиентов</td>
+            <td>Высокие</td>
+            <td>3+ мес. / площадка</td>
+            <td><span class="score">4/10</span><span class="bar" style="width:40px"></span></td>
+            <td>Дорогой паритет, слабый ROI для вашей ЦА (Ozon+WB «золотая середина»). Отстройка — не здесь</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Конвейер FBS на тысячи заказов/день</td>
+            <td>RDV</td>
+            <td>Не копировать целиком. Точечно: очередь сборки, печать пачки этикеток, статусы «в работе»</td>
+            <td>Средние→высокие (точечно 40–60 ч; полный RDV — месяцы)</td>
+            <td>Точечно 3–5 нед.; полный — нет</td>
+            <td><span class="score">5/10</span><span class="bar" style="width:50px"></span></td>
+            <td>Для вашей ЦА (50–500 заказов/день) полный конвейер избыточен. Точечные UX-улучшения — да</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Рекомендуемый пакет на 1 квартал (малые ресурсы)</h2>
+    <ul class="pack">
+      <li><b>Must:</b> #1 паритет WB по УТП + #3 пробник + #8 упаковка «бесплатных доработок»</li>
+      <li><b>Should:</b> #2 Яндекс Маркет MVP + #6 журнал обмена</li>
+      <li><b>Nice:</b> #4 открытый TCO + #5 Telegram-алерты</li>
+      <li><b>Later / не гнаться:</b> #9 мультиплощадка как у MarketBridge, #10 полный анти-RDV конвейер</li>
+    </ul>
+    <p class="note">
+      Оценки чел/часов — порядок величины для команды, уже знакомой с модулем и API площадок.
+      Влияние — субъективно под вашу ЦА (селлер среднего+, учёт в 1С, Ozon/WB), не под enterprise на 10k FBS.
+    </p>
+    <footer>
+      Не независимый аудит конкурентов; опора на публичные заявления и ваш текущий лендинг модуля.
+      Цель таблицы — приоритизация бэклога, а не обещание точных смет.
+    </footer>
+  </div>
+</body>
+</html>

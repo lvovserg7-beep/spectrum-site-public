@@ -1,0 +1,187 @@
+[
+  {
+    "path": "/its",
+    "style": "OTHER",
+    "h1": "Купить 1С:КП ПРОФ — комплект поддержки ИТС",
+    "title": "Купить 1С:КП ПРОФ — ИТС на 12 месяцев | Аллсан",
+    "last_vis": "1С:КП",
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#666;padding:8px 20px 0;\"> Главная → 1С:КП",
+    "bc_names": [
+      "Главная",
+      "1С:КП"
+    ],
+    "bc_ids": [
+      "https://alsn.ru/its#breadcrumb"
+    ],
+    "bc_invalid": false,
+    "bc_count": 1
+  },
+  {
+    "path": "/1cfresh",
+    "style": "OTHER",
+    "h1": "1С:Фреш — купить тариф в облаке",
+    "title": "Купить 1С:Фреш — тариф ПРОФ в облаке | Аллсан",
+    "last_vis": "1С:Фреш",
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#666;padding:8px 20px 0;\"> Главная → 1С:Фреш",
+    "bc_names": [
+      "Главная",
+      "1С:Фреш"
+    ],
+    "bc_ids": [
+      "https://alsn.ru/1cfresh#breadcrumb"
+    ],
+    "bc_invalid": false,
+    "bc_count": 1
+  },
+  {
+    "path": "/dopolnitelnie_licenzii",
+    "style": "OTHER",
+    "h1": "Купить лицензии 1С ПРОФ",
+    "title": "Купить лицензии 1С ПРОФ — клиентские и сервер | Аллсан",
+    "last_vis": "Лицензии 1С",
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#666;padding:8px 20px 0;\"> Главная → Лицензии 1С",
+    "bc_names": [
+      "Главная",
+      "Лицензии 1С"
+    ],
+    "bc_ids": [
+      "https://alsn.ru/dopolnitelnie_licenzii#breadcrumb"
+    ],
+    "bc_invalid": false,
+    "bc_count": 1
+  },
+  {
+    "path": "/cra",
+    "style": "NONE",
+    "h1": "Аллсан Интеграция - Центр Реальной Автоматизации в Зеленограде",
+    "title": "Центр Реальной Автоматизации в Зеленограде - Аллсан",
+    "last_vis": "",
+    "crumb": "",
+    "bc_names": [],
+    "bc_ids": [],
+    "bc_invalid": false,
+    "bc_count": 0
+  },
+  {
+    "path": "/publication",
+    "style": "NONE",
+    "h1": "Публикации в СМИ",
+    "title": "Публикации в СМИ о компании Аллсан Интеграция",
+    "last_vis": "",
+    "crumb": "",
+    "bc_names": [],
+    "bc_ids": [],
+    "bc_invalid": false,
+    "bc_count": 0
+  },
+  {
+    "path": "/integrationeco",
+    "style": "NONE",
+    "h1": "Интеграция 1С с экосистемой организации",
+    "title": "Интеграция 1С в экосистему организации - заказать в Аллсан Интеграция",
+    "last_vis": "",
+    "crumb": "",
+    "bc_names": [],
+    "bc_ids": [],
+    "bc_invalid": false,
+    "bc_count": 0
+  },
+  {
+    "path": "/blog",
+    "style": "NONE",
+    "h1": "Блог Аллсан: интеграция 1С с 2005 года",
+    "title": "Системная Интеграция 1С - Блог Системного Интегратора - Аллсан Интеграция",
+    "last_vis": "",
+    "crumb": "",
+    "bc_names": [],
+    "bc_ids": [],
+    "bc_invalid": false,
+    "bc_count": 0
+  },
+  {
+    "path": "/persons",
+    "style": "NONE",
+    "h1": "Встречайте нашу команду",
+    "title": "Команда ALLSUN Integration. Внедрение и интеграция 1С",
+    "last_vis": "",
+    "crumb": "",
+    "bc_names": [],
+    "bc_ids": [],
+    "bc_invalid": false,
+    "bc_count": 0
+  },
+  {
+    "path": "/outsorce_vs_inhouse",
+    "style": "NONE",
+    "h1": "Сотрудник в штате или команда программистов 1С на аутсорсе?",
+    "title": "Сотрудник в штате или команда разработчиков 1С на аутсорсе?",
+    "last_vis": "",
+    "crumb": "",
+    "bc_names": [],
+    "bc_ids": [],
+    "bc_invalid": false,
+    "bc_count": 0
+  },
+  {
+    "path": "/whatsapp",
+    "style": "NONE",
+    "h1": "WhatsApp-бот 1С для увеличения продаж и автоматизации бизнеса",
+    "title": "WhatsApp-бот 1C, интеграция WhatsApp c 1C - Аллсан Интеграция",
+    "last_vis": "",
+    "crumb": "",
+    "bc_names": [],
+    "bc_ids": [],
+    "bc_invalid": false,
+    "bc_count": 0
+  },
+  {
+    "path": "/crmfurniture",
+    "style": "NONE",
+    "h1": "Allsun 1С:CRM для мебельного бизнеса, мебельных магазинов, производства мебели",
+    "title": "Специализированная CRM для мебельного производства, бизнеса, мебельных магазинов - закажите демонстрацию!",
+    "last_vis": "",
+    "crumb": "",
+    "bc_names": [],
+    "bc_ids": [],
+    "bc_invalid": false,
+    "bc_count": 0
+  },
+  {
+    "path": "/constr",
+    "style": "NONE",
+    "h1": "Allsun для строителей",
+    "title": "Автоматизация строительного процесса - кейс Аллсан Интеграция",
+    "last_vis": "",
+    "crumb": "",
+    "bc_names": [],
+    "bc_ids": [],
+    "bc_invalid": false,
+    "bc_count": 0
+  },
+  {
+    "path": "/cases",
+    "style": "CANON",
+    "h1": "Кейсы Аллсан Интеграция по доработке и интеграции 1С",
+    "title": "Кейсы Аллсан Интеграция по доработке и интеграции 1С, портфолио",
+    "last_vis": "Кейсы",
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейсы",
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Интеграция 1С с поставщиками — ООО «СЦ»",
+      "Главная",
+      "Кейсы"
+    ],
+    "bc_ids": [
+      "https://alsn.ru/caseecom#breadcrumb",
+      "https://alsn.ru/cases#breadcrumb"
+    ],
+    "bc_invalid": false,
+    "bc_count": 2
+  },
+  {
+    "path": "/store",
+    "style": "ERR",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

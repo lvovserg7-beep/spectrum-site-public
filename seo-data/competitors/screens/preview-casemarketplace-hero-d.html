@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Модуль 1С для маркетплейсов - первый экран, вариант D: Фото в рамке, текст на фото</title>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F8FA;--acc:#F55823;--ink:#212121;--line:#D7DADD;--soft:#FDE7DE;--mut:#6b7075}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Onest',Arial,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.in{max-width:1240px;margin:0 auto;padding:0 28px}
+.mono{font-family:'JetBrains Mono',monospace}
+
+.head{background:#000;color:#fff;font-size:14px;padding:20px 0}
+.head .in{display:flex;justify-content:space-between;gap:20px}
+.crumb{font-size:14px;color:#8a8a8a;padding:16px 0}
+
+/* hero */
+.hero{padding:28px 0 0}
+.hero .in{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:end}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:22px}
+.eyebrow .rails{display:flex;flex-direction:column;gap:3px}
+.eyebrow .rails i{display:block;height:2px;width:22px;background:var(--acc);border-radius:2px}
+.eyebrow .rails i:nth-child(2){width:16px}.eyebrow .rails i:nth-child(3){width:10px}
+h1{font-size:68px;line-height:1.02;font-weight:800;letter-spacing:-.03em;margin:0 0 26px}
+h1 span{color:var(--acc)}
+.lead{font-size:20px;line-height:1.5;color:#3d4247;margin:0 0 34px;max-width:560px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 26px;border-radius:12px;font-weight:600;font-size:16px}
+.btn.m{background:var(--acc);color:#fff}
+.btn.g{background:var(--bg);border:1px solid var(--line)}
+.btn .ar{font-weight:800}
+.photo{position:relative;border-radius:28px;overflow:hidden;margin-bottom:44px}
+.photo img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 50%}
+.photo .tag{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.94);color:var(--mut);font-size:13px;line-height:1.35;padding:10px 16px 10px 14px;border-radius:12px;border-left:3px solid var(--acc);box-shadow:0 8px 20px rgba(33,33,33,.15)}
+.photo .tag b{display:block;color:var(--ink);font-size:15px;font-weight:600}
+
+/* day timeline */
+.day{padding:36px 0 0}
+.day .box{background:var(--bg);border-radius:24px;padding:26px 30px 28px}
+.day .lbl{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:20px}
+.day .track{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.day .track::before{content:"";position:absolute;left:8px;right:8px;top:8px;height:2px;background:linear-gradient(90deg,var(--line),var(--acc))}
+.day .it{position:relative;padding-top:30px;font-size:14.5px;line-height:1.45;color:var(--mut)}
+.day .it::before{content:"";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid var(--acc);box-sizing:border-box}
+.day .it:last-child::before{background:var(--acc)}
+.day .t{display:inline-block;font-size:12.5px;color:var(--acc);background:var(--soft);border-radius:6px;padding:3px 8px;margin-bottom:8px}
+.day .it b{display:block;color:var(--ink);font-weight:600;font-size:17px;margin-bottom:2px}
+.day .track{grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
+.day .it b{font-size:16px}
+.day .more{display:block;width:fit-content;margin-top:8px;color:var(--acc);font-weight:600;font-size:14px;text-decoration:none}
+.day .more:hover{text-decoration:underline}
+
+/* layout with passport */
+.body{padding:80px 0 40px}
+.body .in{display:grid;grid-template-columns:330px 1fr;gap:56px;align-items:start}
+.pass{position:sticky;top:24px;border:1px solid var(--line);border-radius:22px;padding:26px;background:#fff}
+.pass .ttl{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.pass .price{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.pass .per{color:var(--mut);font-size:14px;margin:6px 0 20px}
+.pass dl{margin:0 0 22px;display:grid;grid-template-columns:auto 1fr;gap:10px 14px;font-size:14px;border-top:1px solid var(--line);padding-top:18px}
+.pass dt{color:var(--mut)}
+.pass dd{margin:0;font-weight:500;text-align:right}
+.pass .btn{width:100%;justify-content:center;margin-bottom:10px}
+.pass .small{font-size:12.5px;color:var(--mut);line-height:1.45;margin-top:8px}
+.pass .trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.pass .trust span{font-size:12px;font-weight:600;background:var(--bg);border-radius:8px;padding:6px 9px}
+
+.sec{margin-bottom:96px}
+.num{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.num .n{font-family:'JetBrains Mono',monospace;color:var(--acc);font-size:14px}
+.num .ln{flex:1;height:1px;background:var(--line)}
+h2{font-size:42px;line-height:1.1;font-weight:800;letter-spacing:-.02em;margin:0 0 14px}
+.sub{font-size:18px;line-height:1.55;color:var(--mut);margin:0 0 34px;max-width:680px}
+
+/* questions panel */
+.qpanel{background:var(--ink);border-radius:28px;padding:34px;display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:14px}
+.q{background:#2c2c2c;border-radius:20px;padding:26px;color:#cfd2d6;font-size:15px;line-height:1.5;display:flex;flex-direction:column}
+.q b{display:block;color:#fff;font-size:23px;line-height:1.2;font-weight:700;margin-bottom:12px;letter-spacing:-.01em}
+.q .go{margin-top:auto;padding-top:18px;color:var(--acc);font-weight:600;font-size:14px;align-self:flex-start;border-bottom:1px solid transparent;transition:border-color .2s}
+.q .go:hover{border-bottom-color:currentColor}
+.q.big{grid-row:span 2;background:var(--acc);color:#fff}
+.q.big b{font-size:32px}
+.q.big .go{color:#fff}
+.q.big .mini{margin-top:22px;background:rgba(255,255,255,.14);border-radius:14px;padding:14px 16px;font-size:14px}
+.q.big .mini div{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.q.big .mini div:last-child{border:0;font-weight:700}
+
+/* route */
+.route{display:grid;grid-template-columns:1fr 96px 1fr 96px 1fr;align-items:stretch}
+.node{border:1px solid var(--line);border-radius:20px;padding:22px 20px;background:#fff}
+.node.mid{background:var(--bg);border-color:var(--bg)}
+.node .k{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+.node b{display:block;font-size:22px;margin-bottom:12px}
+.node ul{margin:0;padding:0;list-style:none;font-size:14.5px;line-height:1.5;color:#3d4247}
+.node li{padding:3px 0;display:flex;gap:9px;align-items:baseline}
+.node li::before{content:"";flex:0 0 10px;height:2px;background:var(--acc);transform:translateY(-4px)}
+.pipe{display:flex;flex-direction:column;justify-content:center;gap:14px;padding:0 8px}
+.pipe div{font-size:12.5px;color:var(--mut);text-align:center}
+.pipe div::before{content:"";display:block;height:2px;margin-bottom:6px;background:linear-gradient(90deg,var(--line),var(--acc))}
+.pipe div.back::before{background:linear-gradient(270deg,var(--line),var(--acc))}
+
+/* tabs */
+.tabs{display:flex;gap:6px;background:var(--bg);border-radius:14px;padding:6px;margin-bottom:18px;width:max-content;max-width:100%;flex-wrap:wrap}
+.tabs button{border:0;background:transparent;font:600 15px 'Onest',sans-serif;padding:11px 18px;border-radius:10px;cursor:pointer;color:var(--mut)}
+.tabs button.on{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(33,33,33,.08)}
+.pane{display:none;grid-template-columns:1fr 290px;gap:28px;align-items:start}
+.pane.on{display:grid}
+.pane .shot{border:1px solid var(--line);border-radius:18px;padding:10px;background:#fff}
+.pane .shot img{display:block;width:100%;border-radius:10px}
+.tabs+.pane .shot img{aspect-ratio:1121/515;object-fit:cover;object-position:top}
+.pane .txt b{display:block;font-size:22px;line-height:1.25;margin-bottom:12px}
+.pane .txt p{font-size:15.5px;line-height:1.6;color:#3d4247;margin:0 0 14px}
+.pane .txt .res{border-left:3px solid var(--acc);padding:4px 0 4px 14px;font-weight:600;font-size:15px}
+.extra-h{font-size:22px;font-weight:700;margin:44px 0 16px}
+.extra{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ex{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff}
+.ex .exshot{position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:16px}
+.ex .exshot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:left top;transition:transform .3s}
+.ex .exshot:hover img{transform:scale(1.02)}
+.ex .zoom{position:absolute;right:10px;bottom:10px;background:rgba(33,33,33,.86);color:#fff;font-size:13px;font-weight:600;padding:7px 10px;border-radius:8px}
+.ex b{display:block;font-size:18px;line-height:1.3;margin-bottom:8px}
+.ex p{font-size:15px;line-height:1.55;color:#3d4247;margin:0}
+.ex .need{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--acc);background:var(--soft);border-radius:6px;padding:5px 9px}
+@media(max-width:1000px){.extra{grid-template-columns:minmax(0,1fr)}}
+
+/* case */
+.case{display:grid;grid-template-columns:1fr 1fr;border-radius:28px;overflow:hidden;border:1px solid var(--line)}
+.case .l{background:var(--bg);padding:38px}
+.case .big{font-size:76px;font-weight:800;letter-spacing:-.04em;line-height:.95;white-space:nowrap}
+.case .big span{color:var(--acc)}
+.case .cap{font-size:16px;color:var(--mut);margin-top:10px}
+.case .l{display:flex;flex-direction:column}
+.case blockquote{margin:28px 0 0;font-size:19px;line-height:1.5;font-weight:500}
+.case .who{margin-top:auto;padding-top:22px;font-size:14px;color:var(--mut)}
+.case .who b{display:block;color:var(--ink);font-size:16px}
+.case .r{padding:24px;display:flex;flex-direction:column;justify-content:center;background:#fff}
+.video{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:16/9;background:#000;cursor:pointer}
+.video img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55))}
+.video .play{position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:var(--acc);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 12px rgba(245,88,35,.28);z-index:2;transition:transform .2s}
+.video .play svg{margin-left:4px}
+.video .vcap{position:absolute;left:18px;bottom:16px;color:#fff;font-weight:600;font-size:15px;z-index:2}
+.video:hover img{transform:scale(1.03)}
+.video:hover .play{transform:scale(1.08)}
+.vnote{font-size:14px;color:var(--mut);margin-top:12px}
+.vids{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.vids .ex{padding:14px 14px 18px}
+.vids .video{margin-bottom:14px}
+@media(max-width:1000px){.vids{grid-template-columns:minmax(0,1fr)}}
+.vids.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.prices.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.prices.three .p{font-size:40px}
+.cmpw{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.cmp{width:100%;border-collapse:collapse;font-size:14.5px}
+.cmp th{background:var(--bg);text-align:left;font-weight:600;padding:12px 16px;font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--mut)}
+.cmp td{padding:11px 16px;border-top:1px solid var(--line);color:#3d4247;line-height:1.45;vertical-align:top}
+.cmp th+th,.cmp td+td{width:92px;text-align:center}
+.cmp tr.g td{font-weight:700;color:var(--ink);background:#fff;padding-top:18px}
+.cmp .y{color:var(--acc);font-weight:800}
+.cmp .s{display:inline-block;font-size:12px;color:var(--mut);background:var(--bg);border-radius:6px;padding:3px 7px}
+.cmp .n{color:#b0b4b8}
+.cmp a{color:var(--acc);text-decoration:underline}
+.cmpmore{margin-top:12px}
+.cmpmore summary{cursor:pointer;list-style:none;font-weight:600;font-size:15px;color:var(--acc);padding:10px 0}
+.cmpmore summary::-webkit-details-marker{display:none}
+.cmpmore[open] summary{margin-bottom:8px}
+.cmpnote{font-size:13.5px;color:var(--mut);margin-top:12px}
+.team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.team .pp{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.team .pp img{display:block;width:100%;aspect-ratio:1/.95;object-fit:cover;object-position:top}
+.team .pp div{padding:12px 14px 16px;font-size:13px;line-height:1.4;color:var(--mut)}
+.team .pp b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:3px}
+@media(max-width:1000px){.team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.team .pp{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.team .pp img{display:block;width:100%;aspect-ratio:1/.95;object-fit:cover;object-position:top}
+.team .pp div{padding:12px 14px 16px;font-size:13px;line-height:1.4;color:var(--mut)}
+.team .pp b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:3px}
+@media(max-width:1000px){.team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1000px){.vids.c3,.prices.three{grid-template-columns:minmax(0,1fr)}.cmp td,.cmp th{padding:10px 10px}.cmp th+th,.cmp td+td{width:62px}}
+
+/* letter */
+.letter{display:grid;grid-template-columns:240px 1fr;gap:32px;margin-top:14px;border:1px solid var(--line);border-radius:28px;padding:28px;align-items:start}
+.scan{position:relative;display:block;border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 30px rgba(33,33,33,.10);transform:rotate(-2deg);transition:transform .2s;background:#fff}
+.scan img{display:block;width:100%}
+.scan .zoom{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(33,33,33,.86);color:#fff;font-size:13px;font-weight:600;text-align:center;padding:8px;border-radius:8px}
+.scan:hover{transform:rotate(0) scale(1.02)}
+.ltxt .lk{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.ltxt blockquote{margin:0;font-size:19px;line-height:1.55;font-weight:500}
+.ltxt mark{background:var(--soft);color:var(--ink);padding:0 3px;border-radius:4px}
+.ltxt .tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.ltxt .tags span{font-size:13px;background:var(--bg);border-radius:8px;padding:6px 10px}
+.ltxt .who{font-size:14px;color:var(--mut)}
+.ltxt .who b{display:block;color:var(--ink);font-size:16px}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;align-items:center;justify-content:center;z-index:50;cursor:zoom-out;padding:24px}
+.lb img{max-height:94vh;max-width:94vw;border-radius:8px;background:#fff}
+
+/* fit */
+.fit{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.fit div{border-top:3px solid var(--ink);padding-top:18px}
+.fit b{display:block;font-size:19px;margin-bottom:8px}
+.fit p{margin:0;font-size:15px;line-height:1.55;color:#3d4247}
+
+/* price */
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pc{border:1px solid var(--line);border-radius:22px;padding:28px}
+.pc.a{background:var(--ink);color:#fff;border-color:var(--ink);position:relative}
+.pc .badge{position:absolute;top:-13px;right:22px;background:var(--acc);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px}
+.pc .nm{font-size:18px;font-weight:600}
+.pc .p{font-size:46px;font-weight:800;letter-spacing:-.02em;margin:14px 0 2px}
+.pc .s{font-size:14px;color:var(--mut)}
+.pc.a .s{color:#b9bcc0}
+.pc ul{list-style:none;margin:20px 0 22px;padding:0;font-size:14.5px;line-height:1.5}
+.pc li{padding:5px 0;border-bottom:1px solid var(--line)}
+.pc.a li{border-color:#3a3a3a}
+.pc .btn{width:100%;justify-content:center}
+.pc.a .btn.g{background:#fff;color:var(--ink);border:0}
+.note{font-size:13.5px;color:var(--mut);line-height:1.55;margin-top:18px}
+
+/* faq */
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{font-size:19px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq summary::after{content:"+";color:var(--acc);font-size:24px;line-height:1}
+.faq details[open] summary::after{content:"-"}
+.faq p{margin:12px 0 0;font-size:15.5px;line-height:1.6;color:#3d4247;max-width:720px}
+
+/* final */
+.final{background:var(--bg);padding:70px 0}
+.final .in{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+.final h2{margin:0 0 10px}
+.final p{margin:0;color:var(--mut);font-size:17px}
+.final .ph{font-size:22px;font-weight:700;margin-top:12px;color:var(--ink)}
+
+@media(max-width:1000px){
+ h1{font-size:44px} h2{font-size:32px}
+ .hero .in,.body .in,.qpanel,.case,.prices,.fit,.pane.on{grid-template-columns:1fr}
+ .q.big{grid-row:auto}
+ .letter{grid-template-columns:1fr}.scan{max-width:240px}
+ .pass{position:static}
+ .day .track{grid-template-columns:1fr;gap:18px}.day .track::before{left:8px;right:auto;top:8px;bottom:8px;width:2px;height:auto;background:linear-gradient(180deg,var(--line),var(--acc))}.day .it{padding:0 0 0 32px}
+ .route{grid-template-columns:1fr}.pipe{flex-direction:row;padding:14px 0}.pipe div{flex:1}
+ .final .in{grid-template-columns:1fr}
+}
+.body .in>*,.hero .in>*,.pane>*,.case>*,.letter>*,.qpanel>*{min-width:0}
+@media(max-width:1000px){
+ .hero .in,.body .in,.qpanel,.case,.prices,.fit,.pane.on,.letter,.route,.final .in{grid-template-columns:minmax(0,1fr)}
+ .tabs{width:auto}.tabs button{padding:10px 12px;font-size:14px}
+ .case .big{font-size:56px}
+ .in{padding:0 18px}
+ .hero .in{gap:24px}.hero .in>div:first-child{padding-bottom:0!important}.photo{margin-bottom:0}
+}
+
+.pane a.shot{display:block;cursor:zoom-in}
+.tabs+.pane .shot img.full{aspect-ratio:auto;object-fit:contain}
+
+/* первый экран: фото на весь экран */
+.fh{position:relative;display:flex;align-items:center;min-height:calc(100vh - 110px);min-height:calc(100svh - 110px);overflow:hidden;background:#1b1b1b}
+.fh img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:68% 40%}
+.fh .veil{position:absolute;inset:0;pointer-events:none}
+.fh .in{position:relative;z-index:2;width:100%}
+.fh .txt{max-width:610px;padding:56px 0}
+.fh h1{margin-bottom:22px}
+.fh .lead{max-width:540px}
+.fh .btns{margin-bottom:0}
+.fh .who{position:absolute;z-index:3;right:28px;bottom:24px;font-size:12.5px;line-height:1.3;padding:7px 12px;border-radius:10px}
+.fh .who b{font-weight:600}
+.btn.w{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.45)}
+.btn.w:hover{background:rgba(255,255,255,.2)}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+.facts span{font-size:14px;padding:8px 12px;border-radius:10px}
+.facts b{font-weight:700}
+.crumb-bar .crumb{padding:14px 0}
+@media(max-width:1000px){
+ .fh{display:block;min-height:0}
+ .fh img.bg{position:relative;display:block;height:auto;aspect-ratio:1/.82;object-position:64% 30%}
+ .fh .veil{bottom:auto;height:82vw}
+ .fh .txt{padding:0 0 34px;margin-top:-56px}
+ .fh h1{font-size:44px}
+ .fh .lead{font-size:17px;margin-bottom:24px}
+ .fh .who{top:14px;right:14px;bottom:auto;font-size:11.5px}
+ .fh .btns .btn{width:100%;justify-content:center}
+}
+
+.fh.d{display:block;min-height:0;background:#161616;padding:6px 0 34px;overflow:visible}
+.fh.d .frame{position:relative;max-width:1184px;margin:0 auto;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:#0d0d0d;box-shadow:0 0 0 1px rgba(255,255,255,.08)}
+.fh.d img.bg{object-position:50% 0}
+.fh.d .veil{background:linear-gradient(180deg,rgba(0,0,0,.66) 0%,rgba(0,0,0,.3) 15%,rgba(0,0,0,0) 27%),radial-gradient(ellipse 48% 42% at 0% 100%,rgba(0,0,0,.88) 0%,rgba(0,0,0,.6) 50%,rgba(0,0,0,0) 100%)}
+.fh.d .top{position:absolute;left:0;top:0;z-index:2;padding:clamp(16px,2.6vw,32px) clamp(18px,3.4vw,40px)}
+.fh.d .top .eyebrow{margin-bottom:8px}
+.fh.d .top h1{font-size:clamp(28px,3.8vw,46px);white-space:nowrap;margin:0;color:#fff}
+.fh.d .bot{position:absolute;left:0;bottom:0;z-index:2;padding:0 clamp(18px,3.4vw,40px) clamp(18px,3vw,36px)}
+.fh.d .bot .lead{color:rgba(255,255,255,.9);font-size:clamp(14px,1.45vw,18px);max-width:clamp(260px,29vw,350px);margin:0 0 clamp(12px,1.6vw,20px)}
+.fh.d .bot .btn{padding:clamp(12px,1.3vw,16px) clamp(16px,1.9vw,24px);font-size:clamp(14px,1.3vw,16px)}
+.fh.d h1,.fh.d .lead{text-shadow:0 1px 14px rgba(0,0,0,.5)}
+.fh.d .who{top:auto;right:clamp(14px,2vw,22px);bottom:clamp(14px,2vw,22px);background:rgba(0,0,0,.5);color:#fff;backdrop-filter:blur(6px)}
+@media(max-width:1240px){.fh.d .in.wrap{padding:0 28px}}
+@media(max-width:1000px){
+ .fh.d{padding:0 0 30px}
+ .fh.d .in.wrap{padding:0}
+ .fh.d .frame{aspect-ratio:auto;border-radius:0;overflow:visible;background:none;box-shadow:none}
+ .fh.d img.bg{aspect-ratio:16/10;object-position:40% 25%}
+ .fh.d .veil{height:62.5vw;background:linear-gradient(180deg,rgba(22,22,22,0) 55%,#161616 100%)}
+ .fh.d .top,.fh.d .bot{position:static;padding:0 18px}
+ .fh.d .top{margin-top:-40px}
+ .fh.d .top h1{white-space:normal;font-size:40px;margin-bottom:16px}
+ .fh.d .bot .lead{max-width:none;font-size:17px}
+ .fh.d .bot .btn{padding:17px 26px;font-size:16px}
+ .fh.d .who{top:14px;bottom:auto;right:14px}
+}
+</style>
+</head>
+<body>
+
+<div class="head"><div class="in"><b style="color:#F55823">АЛЛСАН</b><span>Разработка · Техподдержка · Продукты 1С · Кейсы · О нас</span><span>+7 (495) 260-04-03</span></div></div>
+<div class="crumb-bar" style="background:#161616"><div class="in crumb" style="color:#cfcfcf">⌂ / Модуль 1С для маркетплейсов</div></div>
+
+<!-- HERO -->
+<section class="fh d"><div class="in wrap"><div class="frame"><img class="bg" src="../../brand-images/allsun-hero-mp-employee-module.jpg" alt="Сергей Никешин, ведущий разработчик модуля интеграции 1С с Ozon и Wildberries, за работой с отчётами модуля в 1С" fetchpriority="high"><div class="veil"></div><div class="top"><div class="eyebrow"><span class="rails"><i></i><i></i><i></i></span>Модуль Аллсан для селлеров</div><h1>Модуль 1С для <span>маркетплейсов</span></h1></div><div class="bot"><p class="lead">Остатки и цены уходят из вашей 1С на обе площадки, заказы приходят обратно. Утром в 1С уже посчитана маржа за вчера по каждому товару на Ozon и Wildberries.</p><div class="btns"><a class="btn m" href="#popup:konsultacia">Показать на моём кабинете <span class="ar">→</span></a><a class="btn w" href="#price">Цена от 40 700 ₽</a></div></div><div class="who"><b>Сергей Никешин</b> · ведущий разработчик модуля</div></div></div></section>
+
+<!-- DAY TIMELINE -->
+<div class="day">
+ <div class="in"><div class="box">
+  <div class="lbl">Как выглядит день с модулем</div>
+  <div class="track">
+   <div class="it"><span class="t mono">по расписанию</span><b>Остатки на вашем складе</b>и цены уходят из 1С на Ozon и Wildberries сами</div>
+   <div class="it"><span class="t mono">сразу</span><b>Новый заказ</b>появляется в 1С без ручного ввода</div>
+   <div class="it"><span class="t mono">утром</span><b>Маржа за вчера</b>по каждому товару на обеих площадках<a class="more" href="#reports" data-tab="0">Отчёт по марже →</a></div>
+   <div class="it"><span class="t mono">каждый день</span><b>Ответы на отзывы</b>ИИ готовит ответы, вы проверяете и отправляете<a class="more" href="#reports" data-tab="3">Автоответы →</a></div>
+   <div class="it"><span class="t mono">перед поставкой</span><b>Потребность по кластерам</b>сколько товара везти на каждый склад Ozon<a class="more" href="#reports" data-tab="1">Расчёт по кластерам →</a></div>
+  </div>
+ </div></div>
+</div>
+
+<!-- BODY -->
+<section class="body">
+ <div class="in">
+
+  <!-- passport -->
+  <aside class="pass">
+   <div class="ttl">Паспорт модуля</div>
+   <div class="price">40 700 ₽</div>
+   <div class="per">в год за одну площадку</div>
+   <dl>
+    <dt>Площадки</dt><dd>Ozon, Wildberries</dd>
+    <dt>Схемы Ozon</dt><dd>FBO, FBS, rFBS, DBS</dd>
+    <dt>Схемы WB</dt><dd>FBO, FBS, DBS</dd>
+    <dt>Конфигурации</dt><dd>УТ, УНФ, КА, ERP</dd>
+    <dt>Кабинеты</dt><dd>любое число</dd>
+    <dt>Код</dt><dd>открытый</dd>
+    <dt>После подписки</dt><dd>продолжает работать</dd>
+   </dl>
+   <a class="btn m" href="#popup:konsultacia">Записаться на демонстрацию</a>
+   <a class="btn g" href="#price">Купить модуль</a>
+   <div class="small">Ozon и Wildberries вместе - 69 990 ₽ в год.</div>
+   <div class="trust"><span>с 2015 года</span><span>ТОП 10 ЦРА</span><span>1С:Франчайзи</span></div>
+  </aside>
+
+  <div>
+   <!-- 01 questions -->
+   <div class="sec">
+    <div class="num"><span class="n">01</span><span class="ln"></span></div>
+    <h2>На какие вопросы отвечает модуль</h2>
+    <p class="sub">Вопросы, которые селлер задаёт каждую неделю. Ответы собираются в 1С без выгрузок в Excel.</p>
+    <div class="qpanel">
+     <div class="q big">
+      <b>Сколько я заработал вчера на каждом товаре?</b>
+      Модуль сводит отчёты Ozon и Wildberries с себестоимостью из 1С в один расчёт.
+      <div class="mini">
+       <div><span>Выручка</span><span>из отчёта площадки</span></div>
+       <div><span>Логистика и комиссия</span><span>из площадки</span></div>
+       <div><span>Реклама и штрафы</span><span>по товару</span></div>
+       <div><span>Себестоимость</span><span>из 1С</span></div>
+       <div><span>Маржа</span><span>за вчера</span></div>
+      </div>
+      <a class="go" href="#reports" data-tab="0">Отчёт по марже →</a>
+     </div>
+     <div class="q"><b>Куда и сколько везти на склады?</b>Модуль считает продажи и остатки по кластерам и подсказывает объём поставки в каждый регион.<a class="go" href="#reports" data-tab="1">Расчёт по кластерам →</a></div>
+     <div class="q"><b>Кто ответит на сотню отзывов?</b>ИИ читает отзыв и пишет ответ. Менеджер проверяет тексты и отправляет их одной кнопкой.<a class="go" href="#reports" data-tab="3">Автоответы →</a></div>
+    </div>
+   </div>
+
+   <!-- 02 route -->
+   <div class="sec">
+    <div class="num"><span class="n">02</span><span class="ln"></span></div>
+    <h2>Как идут данные</h2>
+    <p class="sub">Модуль стоит внутри вашей 1С и работает с площадками через официальный API. Руками ничего переносить не нужно.</p>
+    <div class="route">
+     <div class="node"><div class="k">Ваша 1С</div><b>Учёт</b><ul><li>номенклатура и цены</li><li>остатки складов</li><li>себестоимость</li></ul></div>
+     <div class="pipe"><div>остатки и цены</div><div class="back">заказы</div></div>
+     <div class="node mid"><div class="k">Модуль Аллсан</div><b>Обмен и расчёты</b><ul><li>заказы в 1С</li><li>отправления и этикетки</li><li>маржа, кластеры, отзывы</li></ul></div>
+     <div class="pipe"><div>выгрузка</div><div class="back">отчёты</div></div>
+     <div class="node"><div class="k">Кабинеты площадок</div><b>Ozon и Wildberries</b><ul><li>карточки и остатки</li><li>заказы по всем схемам</li><li>финансовые отчёты</li></ul></div>
+    </div>
+   </div>
+
+   <!-- 03 tabs + table -->
+   <div class="sec" id="reports">
+    <div class="num"><span class="n">03</span><span class="ln"></span></div>
+    <h2>Что умеет модуль</h2>
+    <p class="sub">Настоящие экраны модуля в 1С и полный список функций для каждой площадки.</p>
+    <div class="tabs">
+     <button class="on" data-t="0">Маржа по товарам</button>
+     <button data-t="1">Кластеры Ozon</button>
+     <button data-t="2">Реклама Ozon</button>
+     <button data-t="3">Отзывы с ИИ</button>
+     <button data-t="4">Прогноз закупок</button>
+    </div>
+    <div class="pane on">
+     <a class="shot" href="https://static.tildacdn.com/tild6161-6139-4730-b039-636631623135/___OZON_WB.jpg" data-zoom><img class="full" src="https://static.tildacdn.com/tild6161-6139-4730-b039-636631623135/___OZON_WB.jpg" alt="Отчёты по марже Ozon и Wildberries в 1С"></a>
+     <div class="txt"><b>Сколько вы заработали на каждом товаре</b><p>Себестоимость, логистика, комиссия, хранение, штрафы и налог в одном отчёте. Прибыль видна по категориям и по каждому товару, отдельно для Ozon и Wildberries.</p><div class="res">Видно, какие товары работают в минус</div></div>
+    </div>
+    <div class="pane">
+     <a class="shot" href="https://static.tildacdn.com/tild3563-6433-4535-a231-653461616463/noroot.png" data-zoom><img src="https://static.tildacdn.com/tild3563-6433-4535-a231-653461616463/noroot.png" alt="Расчёт потребностей по кластерам Ozon в 1С" loading="lazy"></a>
+     <div class="txt"><b>Сколько и на какой склад отгрузить</b><p>Модуль берёт остатки FBO, продажи и сроки доставки по кластерам и считает, сколько товара везти в каждый регион.</p><div class="res">Для Ozon, для Wildberries готовим</div></div>
+    </div>
+    <div class="pane">
+     <a class="shot" href="https://static.tildacdn.com/tild6233-3339-4062-b232-666133343034/noroot.png" data-zoom><img src="https://static.tildacdn.com/tild6233-3339-4062-b232-666133343034/noroot.png" alt="Расчёт доли рекламных расходов Ozon в 1С" loading="lazy"></a>
+     <div class="txt"><b>Какая реклама съедает маржу</b><p>Каждый день модуль считает долю рекламных расходов по товарам, поиск и трафарет отдельно.</p><div class="res">Для Ozon, для Wildberries готовим</div></div>
+    </div>
+    <div class="pane">
+     <a class="shot" href="https://static.tildacdn.com/tild3131-6336-4633-b430-376264643262/__.jpg" data-zoom><img src="https://static.tildacdn.com/tild3131-6336-4633-b430-376264643262/__.jpg" alt="Работа с отзывами в 1С: ответы, подготовленные ИИ" loading="lazy"></a>
+     <div class="txt"><b>Ответы на отзывы готовит ИИ</b><p>Модуль загружает отзывы, ИИ пишет ответ с учётом оценки и текста и может посоветовать другой ваш товар. Менеджер проверяет и отправляет ответы одной кнопкой.</p><div class="res">Нужен YandexGPT, для Ozon ещё подписка Premium Plus</div></div>
+    </div>
+    <div class="pane">
+     <a class="shot" href="https://static.tildacdn.com/tild3133-6532-4734-b437-653163333835/noroot.png" data-zoom><img src="https://static.tildacdn.com/tild3133-6532-4734-b437-653163333835/noroot.png" alt="Прогноз закупок в 1С для поставок на Ozon и Wildberries" loading="lazy"></a>
+     <div class="txt"><b>Сколько заказать у поставщика</b><p>Задайте суточный расход и срок планирования. Модуль учтёт остаток и то, что уже заказано, и покажет, сколько нужно докупить.</p><div class="res">Товар и упаковка не заканчиваются перед поставкой</div></div>
+    </div>
+
+    <div class="extra-h">Функции по площадкам</div>
+    <div class="cmpw"><table class="cmp"><thead><tr><th>Функция</th><th>Ozon</th><th>WB</th></tr></thead><tbody><tr class="g"><td colspan="3">Отчёты и помощники</td></tr><tr><td>Ежедневный отчёт по марже: реальная прибыль за каждый день</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Расчёт потребностей по кластерам: куда и сколько отгрузить</td><td><span class="y">✓</span></td><td><span class="s">скоро</span></td></tr><tr><td>Прогноз закупок: когда пополнять свой склад</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Ежедневный расчёт доли рекламных расходов</td><td><span class="y">✓</span></td><td><span class="s">скоро</span></td></tr><tr><td>Автоответы на отзывы с помощью ИИ</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>SEO-описания товаров с помощью ИИ</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Расчёт прибыли по менеджерам</td><td><span class="y">✓</span></td><td><span class="s">скоро</span></td></tr><tr><td>Штрихкоды с крупным названием товара</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Перевыставление услуг последней мили Ozon с НДС (<a href="https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s">подробнее</a>)</td><td><span class="y">✓</span></td><td><span class="n">нет</span></td></tr><tr><td>Реестр продаж юрлицам</td><td><span class="y">✓</span></td><td><span class="s">скоро</span></td></tr><tr class="g"><td colspan="3">Обмен с кабинетом</td></tr><tr><td>Любое число кабинетов на площадке</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Остатки из 1С в кабинет, автоматически и вручную</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Цены из 1С в кабинет, автоматически и вручную</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Заказы в 1С без ручного ввода</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Схемы продаж</td><td>FBO, FBS, rFBS, DBS</td><td>FBO, FBS, DBS</td></tr></tbody></table></div>
+    <details class="cmpmore"><summary>Показать все функции обмена</summary>
+    <div class="cmpw"><table class="cmp"><thead><tr><th>Функция</th><th>Ozon</th><th>WB</th></tr></thead><tbody><tr class="g"><td colspan="3">Товары</td></tr><tr><td>Добавление и редактирование товара</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Исключение товара из продажи</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Сопоставление уже созданных в кабинете товаров с 1С</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Список товаров с отбором по разным признакам</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Перенос товара в архив</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr class="g"><td colspan="3">Остатки</td></tr><tr><td>Ограничение выгружаемых остатков</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Учёт товаров в резерве</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Учёт плановых поставок в остатках</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Распределение остатков между складами</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr class="g"><td colspan="3">Заказы, отправления, возвраты</td></tr><tr><td>Подготовка отправлений: этикетки, акты, накладные</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Статусы и подробности заказов FBO</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Возвраты: информация и документ возврата в 1С</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr><tr><td>Передача маркировки «Честный знак»</td><td><span class="y">✓</span></td><td><span class="s">скоро</span></td></tr><tr><td>Обработка спорных заказов</td><td><span class="y">✓</span></td><td><span class="n">нет</span></td></tr><tr><td>Разбивка заказа на отправления</td><td><span class="y">✓</span></td><td><span class="n">нет</span></td></tr><tr class="g"><td colspan="3">Акции и финансы</td></tr><tr><td>Товары, цены и количество для участия в акциях</td><td><span class="y">✓</span></td><td><span class="n">нет</span></td></tr><tr><td>Запросы покупателей на скидку: согласование и шаблоны ответов</td><td><span class="y">✓</span></td><td><span class="n">нет</span></td></tr><tr><td>Загрузка отчёта комиссионера</td><td><span class="y">✓</span></td><td><span class="y">✓</span></td></tr></tbody></table></div>
+    </details>
+    <p class="cmpnote">«Скоро» - функция в разработке для этой площадки.</p>
+
+    <div class="extra-h">Отдельно про каждую площадку</div>
+    <div class="extra">
+     <div class="ex"><b>Интеграция 1С с Ozon</b><p>Схемы FBO, FBS, rFBS и DBS, кластеры, доля рекламы, перевыставление услуг последней мили.</p><a class="btn g" style="margin-top:14px" href="https://alsn.ru/1c-ozon">Смотреть решение</a></div>
+     <div class="ex"><b>Интеграция 1С с Wildberries</b><p>Схемы FBO, FBS и DBS, маржа с логистикой и хранением, ответы на отзывы, штрихкоды поставок.</p><a class="btn g" style="margin-top:14px" href="https://alsn.ru/1c-wildberries">Смотреть решение</a></div>
+    </div>
+   </div>
+
+   <!-- 04 case -->
+   <div class="sec">
+    <div class="num"><span class="n">04</span><span class="ln"></span></div>
+    <h2>Отзывы клиентов</h2>
+    <p class="sub">Видеоотзыв и благодарственное письмо от селлеров, которые работают с модулем.</p>
+    <div class="case">
+     <div class="l">
+      <div class="big">20<span> млн ₽</span></div>
+      <div class="cap">выручка магазина EcoTide на Ozon за полгода с нуля</div>
+      <blockquote>«Мы начали наш бизнес на OZON совершенно с 0 и всего за полгода сделали выручку в&nbsp;20&nbsp;000&nbsp;000&nbsp;рублей»</blockquote>
+      <div class="who"><b>Елизавета</b>руководитель магазина EcoTide</div>
+     </div>
+     <div class="r">
+      <a class="video" href="https://vkvideo.ru/video-181185386_456239037" target="_blank" rel="noopener" aria-label="Смотреть видеоотзыв EcoTide в новом окне">
+       <img src="https://optim.tildacdn.com/tild3363-3664-4966-b837-393439303735/-/resize/800x/-/format/webp/case-ecotide-video-c.jpg.webp" alt="Видеоотзыв Елизаветы, руководителя магазина EcoTide" loading="lazy">
+       <span class="play"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span>
+       <span class="vcap">Смотреть видеоотзыв</span>
+      </a>
+      <div class="vnote">Елизавета о запуске на Ozon и учёте в 1С</div>
+     </div>
+    </div>
+
+    <div class="letter">
+     <a class="scan" href="https://static.tildacdn.com/tild3461-3830-4564-a330-396237393635/----.jpg" data-zoom aria-label="Открыть благодарственное письмо СТГ ГВАРД">
+      <img src="https://static.tildacdn.com/tild3461-3830-4564-a330-396237393635/----.jpg" alt="Благодарственное письмо ООО «СТГ ГВАРД» компании Аллсан Интеграция" loading="lazy">
+      <span class="zoom">Открыть письмо</span>
+     </a>
+     <div class="ltxt">
+      <div class="lk">Благодарственное письмо · исх. № 547 от 02.07.2025</div>
+      <blockquote>«Благодаря модулю от «Аллсан Интеграции» в нашей 1С появилась функция удобного автоматического расчета прибыли продаж по каждому менеджеру, работающему с маркетплейсом. Расчет производится буквально в&nbsp;2&nbsp;клика. <mark>Мы фиксируем ежемесячный рост продаж</mark> от применения этих новых инструментов.»</blockquote>
+      <div class="tags"><span>1С:Управление торговлей</span><span>Ozon</span><span>прибыль по менеджерам</span><span>кластеры</span></div>
+      <div class="who"><b>Матюхин П.А.</b>генеральный директор ООО «СТГ ГВАРД»</div>
+     </div>
+    </div>
+
+    <div class="extra-h">Видеоинструкции</div>
+    <div class="vids c3">
+     <div class="ex">
+      <a class="video" href="https://vkvideo.ru/video-181185386_456239063" target="_blank" rel="noopener" aria-label="Смотреть видео об ежедневном отчёте по марже Ozon в новом окне">
+       <img src="https://static.tildacdn.com/tild6532-3031-4031-b665-336436353033/______Ozon____1___-0.png" alt="Видео: ежедневный отчёт по марже Ozon в 1С" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="vcap">Смотреть видео</span>
+      </a>
+      <b>Маржа Ozon каждый день</b>
+      <p>Как получать отчёт по марже ежедневно, а не раз в месяц.</p>
+     </div>
+     <div class="ex">
+      <a class="video" href="https://vkvideo.ru/video-181185386_456239072" target="_blank" rel="noopener" aria-label="Смотреть видео об автоответах на отзывы Wildberries в новом окне">
+       <img src="https://static.tildacdn.com/tild3530-3961-4365-b936-323035313561/__-____Wildberries__.jpg" alt="Видео: автоответы на отзывы Wildberries из 1С" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="vcap">Смотреть видео</span>
+      </a>
+      <b>Автоответы на отзывы</b>
+      <p>Как ИИ готовит ответы и как отправить их одной кнопкой.</p>
+     </div>
+     <div class="ex">
+      <a class="video" href="https://vkvideo.ru/video-181185386_456239062" target="_blank" rel="noopener" aria-label="Смотреть видео о печати штрихкодов Wildberries в новом окне">
+       <img src="https://static.tildacdn.com/tild3536-6565-4562-b435-383364353737/______Wildberries__1.jpg" alt="Видео: печать штрихкодов для поставок на Wildberries через 1С" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="vcap">Смотреть видео</span>
+      </a>
+      <b>Штрихкоды для поставок</b>
+      <p>Как напечатать штрихкоды для маркировки поставки прямо из 1С.</p>
+     </div>
+    </div>
+   </div>
+
+   <!-- 05 fit -->
+   <div class="sec">
+    <div class="num"><span class="n">05</span><span class="ln"></span></div>
+    <h2>Кому подходит</h2>
+    <div class="fit">
+     <div><b>Учёт уже в 1С</b><p>УТ, УНФ, КА или ERP. Модуль встраивается в вашу базу, переходить на другую программу не нужно.</p></div>
+     <div><b>Продаёте на двух площадках</b><p>Остатки, заказы и отчёты Ozon и Wildberries вручную сводить уже тяжело, появляются ошибки и штрафы.</p></div>
+     <div><b>Нужна реальная прибыль</b><p>Хочется видеть маржу по каждому товару на каждой площадке, а не только выручку в кабинетах.</p></div>
+    </div>
+    <p class="cmpnote">Нужен обмен с поставщиками телеком и IT-оборудования, а не с маркетплейсами? Это другой продукт: <a href="https://alsn.ru/ecom" style="color:var(--acc)">интеграция 1С с B2B-поставщиками</a>.</p>
+   </div>
+
+   <!-- 06 team -->
+   <div class="sec">
+    <div class="num"><span class="n">06</span><span class="ln"></span></div>
+    <h2>Кто внедряет модуль</h2>
+    <p class="sub">Аналитики, программисты 1С и руководители проектов Аллсан. Эти же люди отвечают на заявки в техподдержку.</p>
+    <div class="team">
+     <div class="pp"><img src="https://static.tildacdn.com/tild3433-6363-4436-b733-666266646164/Group_103.png" alt="Сергей Львов, основатель, управляющий партнёр, аналитик 1С, Аллсан Интеграция" loading="lazy"><div><b>Сергей Львов</b>основатель, управляющий партнёр, аналитик 1С</div></div>
+     <div class="pp"><img src="https://static.tildacdn.com/tild6535-3462-4235-a238-626561623233/Group_104.png" alt="Павел Агеев, программист 1С, руководитель проектов, техподдержка, Аллсан Интеграция" loading="lazy"><div><b>Павел Агеев</b>программист 1С, руководитель проектов, техподдержка</div></div>
+     <div class="pp"><img src="https://static.tildacdn.com/tild3735-6532-4732-a263-613661383062/Group_105.png" alt="Никита Соколов, программист 1С, Аллсан Интеграция" loading="lazy"><div><b>Никита Соколов</b>программист 1С</div></div>
+     <div class="pp"><img src="https://static.tildacdn.com/tild3362-3838-4938-a161-623235383761/Group_100.png" alt="Энрико Айвазян, программист 1С, руководитель проектов, Аллсан Интеграция" loading="lazy"><div><b>Энрико Айвазян</b>программист 1С, руководитель проектов</div></div>
+     <div class="pp"><img src="https://static.tildacdn.com/tild3138-6561-4865-b439-383366386535/Group_101.png" alt="Ирина Щеглова, руководитель проектов, аналитик, Аллсан Интеграция" loading="lazy"><div><b>Ирина Щеглова</b>руководитель проектов, аналитик</div></div>
+     <div class="pp"><img src="https://static.tildacdn.com/tild3537-6632-4736-b639-616236646639/Group_102.png" alt="Евгений Анастасьев, руководитель проектов, программист 1С, Аллсан Интеграция" loading="lazy"><div><b>Евгений Анастасьев</b>руководитель проектов, программист 1С</div></div>
+     <div class="pp"><img src="https://static.tildacdn.com/tild6131-3734-4132-a164-373364303931/Group_99.png" alt="Роман Заболотный, руководитель проектов, Аллсан Интеграция" loading="lazy"><div><b>Роман Заболотный</b>руководитель проектов</div></div>
+    </div>
+   </div>
+
+   <!-- 07 price -->
+   <div class="sec" id="price">
+    <div class="num"><span class="n">07</span><span class="ln"></span></div>
+    <h2>Сколько стоит</h2>
+    <p class="sub">Цены с НДС 5% за год. Стоимость внедрения уточняем на звонке: она зависит от доработок вашей 1С.</p>
+    <div class="prices three">
+     <div class="pc"><div class="nm">Только Ozon</div><div class="p">40 700 ₽</div><div class="s">в год</div>
+      <ul><li>Схемы FBO, FBS, rFBS, DBS</li><li>Маржа, кластеры, реклама</li><li>Техподдержка и обновления</li></ul>
+      <a class="btn g" href="#rec913805053">Купить для Ozon</a></div>
+     <div class="pc"><div class="nm">Только Wildberries</div><div class="p">40 700 ₽</div><div class="s">в год</div>
+      <ul><li>Схемы FBO, FBS, DBS</li><li>Маржа, отзывы, прогноз закупок</li><li>Техподдержка и обновления</li></ul>
+      <a class="btn g" href="#rec913805053">Купить для WB</a></div>
+     <div class="pc a"><span class="badge">Выгоднее на 11 410 ₽</span><div class="nm">Ozon и Wildberries</div><div class="p">69 990 ₽</div><div class="s">в год, один модуль на обе площадки</div>
+      <ul><li>Всё из двух тарифов</li><li>Маржа по обеим площадкам</li><li>Любое число кабинетов</li></ul>
+      <a class="btn m" href="#rec913805053">Купить на обе площадки</a></div>
+    </div>
+    <p class="note">После окончания годовой подписки модуль продолжает работать. Подписка даёт обновления*, продление стоит столько же, сколько покупка. При заказе внедрения, техподдержки или лицензий 1С от 100 тыс. ₽ скидка 50% на первый год на один модуль, от 200 тыс. ₽ на каждый модуль.<br>* Принимаем любые предложения по новым функциям модуля. Часть из них можем реализовать бесплатно, на своё усмотрение.</p>
+
+    <div class="extra-h">Техподдержка модуля</div>
+    <div class="extra">
+     <div class="ex"><b>Стандартная</b><p>Обновления под новые функции и изменения API площадок. Заявки по почте персональному менеджеру, ответ в течение суток.</p><span class="need">Входит в подписку</span></div>
+     <div class="ex"><b>Экспресс</b><p>Заявки в Telegram, реакция в течение часа. Специалист сам подключается к вашей базе и при необходимости связывается с поддержкой площадки или хостинга.</p><span class="need">На 1, 3, 6 или 12 месяцев</span><br><a class="btn g" style="margin-top:14px" href="#popup:konsultacia">Узнать цену</a></div>
+    </div>
+
+    <div class="extra-h">Ещё нет 1С? Тарифы «под ключ»</div>
+    <div class="extra">
+     <div class="ex"><b>СТАРТ</b><p>Для ИП, малого и среднего бизнеса: 1С:УНФ или 1С:УТ ПРОФ, 1С:КП ПРОФ на 12 месяцев по схеме 8+4, сервер МИНИ на 5 подключений, 5 клиентских лицензий, 15 часов техподдержки.</p><span class="need">Модуль Ozon и WB со скидкой 50%</span><br><a class="btn g" style="margin-top:14px" href="#popup:konsultacia">Узнать цену</a></div>
+     <div class="ex"><b>ПРОФИ</b><p>Для тех, кто дорос до 1С:Комплексная автоматизация: КА 8, 1С:КП ПРОФ на 12 месяцев по схеме 8+4, серверная лицензия ПРОФ, 10 клиентских лицензий, 100 часов техподдержки.</p><span class="need">Модуль Ozon и WB в подарок</span><br><a class="btn g" style="margin-top:14px" href="#popup:konsultacia">Узнать цену</a></div>
+    </div>
+   </div>
+
+   <!-- 08 faq -->
+   <div class="sec faq" style="margin-bottom:40px">
+    <div class="num"><span class="n">08</span><span class="ln"></span></div>
+    <h2>Частые вопросы</h2>
+    <details open><summary>С какими конфигурациями 1С работает модуль?</summary><p>С 1С:Управление торговлей, 1С:Управление нашей фирмой (1.6 и 3.0), 1С:Комплексная автоматизация и 1С:ERP. Подключение идёт через официальный API Ozon и Wildberries.</p></details>
+    <details><summary>Сколько стоит модуль?</summary><p>40 700 ₽ в год за одну площадку, Ozon или Wildberries, и 69 990 ₽ в год за обе. Цены с НДС 5%. Стоимость внедрения назовём после звонка: она зависит от доработок вашей 1С.</p></details>
+    <details><summary>Какие схемы продаж поддерживает модуль?</summary><p>Для Ozon: FBO, FBS, rFBS и DBS. Для Wildberries: FBO, FBS и DBS. Заказы приходят в 1С сами, этикетки и документы на отправления печатаются из 1С.</p></details>
+    <details><summary>Что будет, когда закончится подписка?</summary><p>Модуль продолжит работать. Подписка нужна для обновлений под изменения API площадок и новых функций. Продление стоит столько же, сколько покупка.</p></details>
+    <details><summary>Чем модуль отличается от типового обмена 1С с маркетплейсом?</summary><p>Кроме обмена остатками и заказами в модуле есть ежедневная маржа по товарам, расчёт по кластерам, прогноз закупок, доля рекламных расходов, ответы на отзывы и SEO-описания с помощью ИИ.</p></details>
+    <details><summary>Какая техподдержка входит в модуль?</summary><p>Стандартная поддержка входит в подписку: обновления под изменения API, заявки по почте персональному менеджеру, ответ в течение суток. Есть экспресс-поддержка на 1, 3, 6 или 12 месяцев: заявки в Telegram, реакция в течение часа, специалист сам подключается к вашей базе.</p></details>
+    <details><summary>Можно заказать новую функцию?</summary><p>Да. Принимаем любые предложения по новым функциям модуля. Часть из них можем реализовать бесплатно, на своё усмотрение.</p></details>
+    <details><summary>У нас ещё нет 1С. Что делать?</summary><p>Возьмите тариф «под ключ»: программа 1С, лицензии, техподдержка и модуль в одном заказе. В тарифе СТАРТ модуль Ozon и Wildberries со скидкой 50%, в тарифе ПРОФИ он в подарок.</p></details>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- SHOWCASE -->
+<div class="in" style="margin:0 auto 60px"><div style="border:2px dashed #D7DADD;border-radius:22px;padding:40px;text-align:center;color:#6b7075;font-size:15px">Здесь остаётся витрина Тильды «Цены на модули интеграции 1С с маркетплейсами» с тремя карточками и корзиной (блок rec913805053).<br>Кнопки «Купить» в разделе 07 прокручивают сюда.</div></div>
+<!-- /SHOWCASE -->
+
+<section class="final">
+ <div class="in">
+  <div><h2>Покажем модуль на вашем кабинете</h2><p>Созвонимся, посмотрим вашу 1С и скажем, что даст модуль на Ozon и Wildberries.</p><div class="ph">+7 (495) 260-04-03</div></div>
+  <a class="btn m" href="#popup:konsultacia">Записаться на демонстрацию <span class="ar">→</span></a>
+ </div>
+</section>
+
+<script>
+function showTab(i){
+ document.querySelectorAll('.tabs button').forEach(function(x,k){x.classList.toggle('on',k===i)});
+ document.querySelectorAll('.pane').forEach(function(x,k){x.classList.toggle('on',k===i)});
+}
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){showTab(+b.dataset.t)})});
+document.querySelectorAll('a[data-tab]').forEach(function(a){a.addEventListener('click',function(e){
+ e.preventDefault();e.stopPropagation();
+ showTab(+a.dataset.tab);
+ var t=document.getElementById('reports');
+ window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-20,behavior:'smooth'});
+})});
+document.querySelectorAll('[data-zoom]').forEach(function(a){a.addEventListener('click',function(e){
+ e.preventDefault();
+ var d=document.createElement('div');d.className='lb';d.innerHTML='<img src="'+a.getAttribute('href')+'" alt="">';
+ d.addEventListener('click',function(){d.remove()});document.body.appendChild(d);
+})});
+</script>
+</body>
+</html>

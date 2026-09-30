@@ -1,0 +1,14 @@
+dev canonical at 1048 'едование, настройка УТ, КА и ERP, обучение и запуск. Для торговли и производства от 500 млн ₽/год. Консультация - Аллсан." /> <meta property="og:type" content="website" /> <meta property="og:image" content="https://static.tildacdn.com/tild3931-6330-4237-a365-303564663563/allsun-og-vnedrenie.png" /> <link rel="canonical" href="https://alsn.ru/development1c"> <!--/metatextblock--> <meta name="format-detectio'
+dev canonical at 13575 '": "https://alsn.ru/#organization"\n  },\n  "areaServed": {\n    "@type": "Country",\n    "name": "RU"\n  },\n  "audience": {\n    "@type": "Audience",\n    "audienceType": "Торговые и производственные компании с выручкой от 500 млн рублей в год"\n  }\n}\n</script> <meta name="robots" content="index, follow"> <link rel="canonical" href="https://alsn.ru/development1c"> <script type="application/ld+json">\n{\n  "@context'
+dev offers: 0 price: 0
+dev ld blocks: 6 #organization: 3
+ka canonical at 1095 'д ключ: обследование, настройка, обучение и запуск. Для торговли и производства. Стоимость - после консультации. Аллсан." /> <meta property="og:type" content="website" /> <meta property="og:image" content="https://static.tildacdn.com/tild3937-3732-4661-b532-313633316639/allsun-og-vnedrenie-.png" /> <link rel="canonical" href="https://alsn.ru/kompleksnaya_avtomatizaciya"> <!--/metatextblock--> <meta name="format-detectio'
+ka offers: 0 price: 0
+ka ld blocks: 5 #organization: 3
+erp canonical at 1076 'зводственном предприятии: этапы, сроки и состав работ. Обследование, настройка, обучение, запуск. Консультация - Аллсан." /> <meta property="og:type" content="website" /> <meta property="og:image" content="https://static.tildacdn.com/tild6266-3035-4264-b436-613963643930/allsun-og-vnedrenie-.png" /> <link rel="canonical" href="https://alsn.ru/erp-time-price"> <!--/metatextblock--> <meta name="format-detectio'
+erp offers: 0 price: 0
+erp ld blocks: 6 #organization: 3
+sup canonical at 1036 '1С вместо штатного программиста: консультации, обновления, мелкие доработки. Реакция от 15 минут. Час от 3 400 ₽. Аллсан." /> <meta property="og:type" content="website" /> <meta property="og:image" content="https://static.tildacdn.com/tild3430-6335-4261-a638-373232626564/allsun-og-support1c.jpg" /> <link rel="canonical" href="https://alsn.ru/support1c"> <!--/metatextblock--> <meta name="format-detectio'
+sup offers: 0 price: 0
+sup ld blocks: 4 #organization: 3
+home LocalBusiness: 1 #organization: 2

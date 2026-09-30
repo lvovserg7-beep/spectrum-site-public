@@ -1,0 +1,19 @@
+{
+  "week": "2026-W34",
+  "week_start": "2026-08-17",
+  "engine": "yandex",
+  "date_from": "2026-08-18",
+  "date_to": "2026-08-24",
+  "pulled_at": "2026-08-26T09:59:47.142Z",
+  "row_count": 500,
+  "total_shows": 2377,
+  "total_clicks": 30,
+  "ctr": 0.012620950778291964,
+  "files": {
+    "csv": "yandex/2026-W34.csv",
+    "parquet": "yandex/2026-W34.parquet"
+  },
+  "source": "yandex-webmaster-mcp",
+  "host_id": "https:alsn.ru:443",
+  "note": "Первый снимок; период Tue–Sun (API-выгрузка). Далее лучше пн–вс через --last-week."
+}

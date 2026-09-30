@@ -1,0 +1,539 @@
+[
+  {
+    "path": "/",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/development1c",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/kompleksnaya_avtomatizaciya",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/erp-time-price",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/casemarketplace",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Модуль 1С для маркетплейсов"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Моду",
+    "last_vis": "Модуль 1С для маркетплейсов",
+    "last_ld": "Модуль 1С для маркетплейсов",
+    "name_match": true
+  },
+  {
+    "path": "/ecom",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/support1c",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Техподдержка 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> / Техп",
+    "last_vis": "Техподдержка 1С",
+    "last_ld": "Техподдержка 1С",
+    "name_match": true
+  },
+  {
+    "path": "/its",
+    "style": "OTHER",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:КП"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#666;padding:8px 20px 0;\"> Главная → 1С:КП",
+    "last_vis": "1С:КП",
+    "last_ld": "1С:КП",
+    "name_match": true
+  },
+  {
+    "path": "/1cfresh",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/dopolnitelnie_licenzii",
+    "style": "OTHER",
+    "bc_blocks": 2,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Лицензии 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#666;padding:8px 20px 0;\"> Главная → Лицензии 1С",
+    "last_vis": "Лицензии 1С",
+    "last_ld": "Лицензии 1С",
+    "name_match": true
+  },
+  {
+    "path": "/about_us",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/contacts",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/vacancy",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/cra",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/clients",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/publication",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/telegram1c",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/bitrix24",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/etm-ipro",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/merlion",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/ocs",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/marvel",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/treolan",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/3logic",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/caseecomsc",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:wrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейсы ",
+    "last_vis": "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»",
+    "last_ld": "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»",
+    "name_match": true
+  },
+  {
+    "path": "/xitsadmarketplace",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:wrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейсы ",
+    "last_vis": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+    "last_ld": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+    "name_match": true
+  },
+  {
+    "path": "/cases",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/products",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/1cbitrix",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/buhv8",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/zup8",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/upt8",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/upravlenie_nashei_firmoi",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/dokumentooborot8",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/perehod-s-upp-na-ka-unf-ut",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/integrationsite",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/integrationeco",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/blog",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/internship",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/persons",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/review",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/outsorce_vs_inhouse",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/store",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/amo_crm",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/whatsapp",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/crmfurniture",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/constr",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 403: Forbidden",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  }
+]

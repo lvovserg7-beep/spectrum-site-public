@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Инструкция: убрать demo.alsn.ru из поиска Яндекса — 15.09.2026</title>
+  <style>
+    :root {
+      --bg: #f4f3ef;
+      --card: #fff;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e2e2de;
+      --ok: #1a7f4b;
+      --ok-bg: #e8f6ee;
+      --warn: #9a6700;
+      --warn-bg: #fff6e0;
+      --danger: #b42318;
+      --danger-bg: #fdecea;
+      --info: #0b6e99;
+      --info-bg: #e8f4fa;
+      --code: #0f172a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 18px 72px; }
+    h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    p { margin: 0 0 8px; }
+    a { color: #0b5cad; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 650;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+    .pill.ok { color: var(--ok); background: var(--ok-bg); border-color: #c6e6d3; }
+    .pill.warn { color: var(--warn); background: var(--warn-bg); border-color: #f0dfa0; }
+    .pill.danger { color: var(--danger); background: var(--danger-bg); border-color: #f5c2c0; }
+    .pill.info { color: var(--info); background: var(--info-bg); border-color: #bddceb; }
+    .callout {
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 12px 0 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      font-size: 14px;
+    }
+    .callout.danger { background: var(--danger-bg); border-color: #f5c2c0; }
+    .callout.warn { background: var(--warn-bg); border-color: #f0dfa0; }
+    .callout.info { background: var(--info-bg); border-color: #bddceb; }
+    .callout.ok { background: var(--ok-bg); border-color: #c6e6d3; }
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 0 0 20px;
+    }
+    .toc ol { margin: 6px 0 0; padding-left: 22px; }
+    .toc li { margin: 3px 0; }
+    .toc a { text-decoration: none; }
+    .task {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px 18px;
+      margin: 0 0 18px;
+    }
+    .task .num {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--info);
+      margin-bottom: 4px;
+    }
+    .task h2 { margin-top: 0; }
+    ol.steps { margin: 8px 0 0; padding-left: 22px; }
+    ol.steps li { margin: 6px 0; }
+    .copy-block {
+      position: relative;
+      background: var(--code);
+      color: #e2e8f0;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 10px 0;
+      font: 13px/1.45 ui-monospace, Consolas, monospace;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      border: 0;
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      background: #334155;
+      color: #fff;
+    }
+    .copy-btn:hover { background: #475569; }
+    .copy-btn.done { background: var(--ok); }
+    ul.plain { margin: 6px 0 0; padding-left: 18px; }
+    ul.plain li { margin: 4px 0; }
+    code { font-family: ui-monospace, Consolas, monospace; font-size: 0.92em; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Убрать лишний домен demo.alsn.ru из поиска</h1>
+    <p class="muted">
+      Дата: 15.09.2026. Цель: снять диагностику Яндекса
+      <code>TOO_MANY_DOMAINS_ON_SEARCH</code> и убрать дефолтную страницу IIS из выдачи.
+      Это не Тильда и не основной <a href="https://alsn.ru/">alsn.ru</a> —
+      отдельный сервер (IIS) на поддомене.
+    </p>
+    <div class="pills">
+      <span class="pill danger">Лишний хост в поиске</span>
+      <span class="pill ok">robots.txt уже закрыт</span>
+      <span class="pill warn">Нужно удаление в Вебмастере</span>
+      <span class="pill info">Не трогать alsn.ru</span>
+    </div>
+
+    <div class="callout warn">
+      <strong>Что сейчас (проверка 15.09.2026)</strong><br />
+      В Яндексе по запросу <code>site:demo.alsn.ru</code> — <strong>1 результат</strong>:
+      «IIS Windows Server». Сайт живой (ответ 200). Файл
+      <a href="https://demo.alsn.ru/robots.txt">https://demo.alsn.ru/robots.txt</a>
+      уже запрещает весь хост (<code>Disallow: /</code>). Значит закрытие роботом
+      сделано, а страница из индекса ещё не вычищена — нужен шаг удаления в Вебмастере
+      (и желательно усилить ответ сервера).
+    </div>
+
+    <div class="toc">
+      <strong>Шаги</strong>
+      <ol>
+        <li><a href="#t1">Проверить robots.txt</a></li>
+        <li><a href="#t2">Добавить demo.alsn.ru в Яндекс.Вебмастер</a></li>
+        <li><a href="#t3">Удалить из поиска префиксом</a></li>
+        <li><a href="#t4">Усилить закрытие на IIS (желательно)</a></li>
+        <li><a href="#t5">Как проверить через 3–14 дней</a></li>
+      </ol>
+    </div>
+
+    <div class="callout danger">
+      <strong>Не делать</strong>
+      <ul class="plain">
+        <li>Не менять <code>robots.txt</code> на основном <strong>alsn.ru</strong> (Тильда его не даёт править).</li>
+        <li>Не удалять из поиска префикс <code>https://alsn.ru/</code> — снесёте основной сайт.</li>
+        <li>Не путать с почтой <code>mail.alsn.ru</code> — её не трогаем.</li>
+      </ul>
+    </div>
+
+    <!-- T1 -->
+    <div class="task" id="t1">
+      <div class="num">Шаг 1</div>
+      <h2>Проверить robots.txt</h2>
+      <p><strong>Что сделать.</strong> Убедиться, что поддомен закрыт для роботов.</p>
+      <p><strong>Зачем.</strong> Без запрета удаление из поиска Яндекс может снова вернуть страницу.</p>
+      <ol class="steps">
+        <li>Откройте в браузере: <a href="https://demo.alsn.ru/robots.txt">https://demo.alsn.ru/robots.txt</a></li>
+        <li>Должны быть строки <code>Disallow: /</code> для <code>User-Agent: *</code> и для Яндекса.</li>
+        <li>Если файла нет или он пустой — выложите на корень IIS файл ниже (путь обычно <code>C:\inetpub\wwwroot\robots.txt</code> или корень сайта demo в IIS).</li>
+      </ol>
+      <p class="muted">Готовый текст (уже лежит в репозитории <code>seo-data/robots-subdomains/robots.txt</code>):</p>
+      <div class="copy-block" id="c-robots"><button type="button" class="copy-btn" data-target="c-robots">Копировать</button>User-Agent: *
+Disallow: /
+
+User-Agent: Yandex
+Disallow: /
+
+User-Agent: Googlebot
+Disallow: /</div>
+      <div class="callout ok">
+        На 15.09.2026 файл на demo уже открывается с этим содержимым — шаг можно
+        отметить «проверено» и идти к удалению в Вебмастере.
+      </div>
+    </div>
+
+    <!-- T2 -->
+    <div class="task" id="t2">
+      <div class="num">Шаг 2</div>
+      <h2>Добавить demo.alsn.ru в Яндекс.Вебмастер</h2>
+      <p><strong>Что сделать.</strong> Подключить поддомен как отдельный сайт в том же аккаунте Вебмастера, где уже есть alsn.ru.</p>
+      <p><strong>Зачем.</strong> Удалять чужой хост из поиска можно только после подтверждения прав на него. С основного alsn.ru «кнопкой» demo не вычистить.</p>
+      <ol class="steps">
+        <li>Откройте <a href="https://webmaster.yandex.ru/" target="_blank" rel="noopener">webmaster.yandex.ru</a> под аккаунтом сайта.</li>
+        <li>«Добавить сайт» → укажите <code>https://demo.alsn.ru</code> (лучше именно HTTPS).</li>
+        <li>Подтвердите права удобным способом (HTML-файл в корень IIS, meta-тег или DNS TXT — что проще для вашего сервера).</li>
+        <li>Дождитесь статуса «Права подтверждены».</li>
+      </ol>
+      <div class="copy-block" id="c-url"><button type="button" class="copy-btn" data-target="c-url">Копировать</button>https://demo.alsn.ru</div>
+      <p class="muted">Справка Яндекса: <a href="https://yandex.ru/support/webmaster/ru/service/quick-start" target="_blank" rel="noopener">быстрый старт</a>, <a href="https://yandex.ru/support/webmaster/ru/yandex-indexing/subdomain" target="_blank" rel="noopener">поддомены</a>.</p>
+    </div>
+
+    <!-- T3 -->
+    <div class="task" id="t3">
+      <div class="num">Шаг 3 — главный</div>
+      <h2>Удалить из поиска префиксом</h2>
+      <p><strong>Что сделать.</strong> Попросить Яндекс убрать из выдачи весь поддомен.</p>
+      <p><strong>Зачем.</strong> Одна страница «IIS Windows Server» уже в индексе; robots сам по себе чистит медленно. Префиксное удаление ускоряет выход из поиска и помогает снять <code>TOO_MANY_DOMAINS_ON_SEARCH</code> на основном alsn.ru.</p>
+      <ol class="steps">
+        <li>В Вебмастере откройте сайт <strong>https://demo.alsn.ru</strong> (не alsn.ru).</li>
+        <li>Раздел вроде <strong>«Индексирование» → «Удаление страниц из поиска»</strong> (или «Инструменты» → удаление).</li>
+        <li>Тип: удаление по <strong>префиксу</strong> / адресу сайта.</li>
+        <li>Вставьте префикс строго так:</li>
+      </ol>
+      <div class="copy-block" id="c-prefix"><button type="button" class="copy-btn" data-target="c-prefix">Копировать</button>https://demo.alsn.ru/</div>
+      <ol class="steps" start="5">
+        <li>Отправьте заявку. Дождитесь статуса «удалено» / «обработано» (обычно от нескольких дней до ~2 недель).</li>
+        <li>Если доступен ещё <code>http://demo.alsn.ru/</code> без редиректа на HTTPS — отдельно удалите и его префикс:</li>
+      </ol>
+      <div class="copy-block" id="c-prefix-http"><button type="button" class="copy-btn" data-target="c-prefix-http">Копировать</button>http://demo.alsn.ru/</div>
+      <div class="callout warn">
+        Квота на удаления ограничена. Не тратьте её на основной alsn.ru.
+        Справка: <a href="https://yandex.ru/support/webmaster/ru/yandex-indexing/removing-from-index" target="_blank" rel="noopener">удаление страниц из поиска</a>.
+      </div>
+    </div>
+
+    <!-- T4 -->
+    <div class="task" id="t4">
+      <div class="num">Шаг 4 (желательно)</div>
+      <h2>Усилить закрытие на IIS</h2>
+      <p><strong>Что сделать.</strong> Чтобы робот не цеплял дефолтную страницу даже до переобхода robots.</p>
+      <p><strong>Зачем.</strong> Сейчас корень отдаёт 200 и HTML «IIS Windows Server» — это сигнал «живого» мусорного сайта.</p>
+
+      <p><strong>Вариант A — лучший, если demo больше не нужен</strong></p>
+      <ol class="steps">
+        <li>В IIS для сайта demo отключите дефолтную страницу / остановите сайт.</li>
+        <li>Либо настройте ответ <strong>410 Gone</strong> или <strong>404</strong> на все URL.</li>
+        <li>Либо уберите DNS-запись <code>demo</code> у регистратора (после удаления из поиска).</li>
+      </ol>
+
+      <p><strong>Вариант B — demo ещё нужен сотрудникам</strong></p>
+      <ol class="steps">
+        <li>Оставьте robots как есть.</li>
+        <li>Добавьте в ответ сервера заголовок запрета индексации (web.config IIS):</li>
+      </ol>
+      <div class="copy-block" id="c-webconfig"><button type="button" class="copy-btn" data-target="c-webconfig">Копировать</button>&lt;configuration&gt;
+  &lt;system.webServer&gt;
+    &lt;httpProtocol&gt;
+      &lt;customHeaders&gt;
+        &lt;add name="X-Robots-Tag" value="noindex, nofollow" /&gt;
+      &lt;/customHeaders&gt;
+    &lt;/httpProtocol&gt;
+  &lt;/system.webServer&gt;
+&lt;/configuration&gt;</div>
+      <p class="muted">Файл <code>web.config</code> — в корень сайта demo. Если файл уже есть, вставьте только блок <code>customHeaders</code> в существующий <code>system.webServer</code>.</p>
+      <ol class="steps" start="3">
+        <li>Закройте доступ снаружи паролем / VPN / firewall, если это внутренняя демка.</li>
+      </ol>
+    </div>
+
+    <!-- T5 -->
+    <div class="task" id="t5">
+      <div class="num">Шаг 5</div>
+      <h2>Проверка через 3–14 дней</h2>
+      <p><strong>Что сделать.</strong> Убедиться, что Яндекс больше не показывает demo.</p>
+      <ol class="steps">
+        <li>В поиске: <a href="https://yandex.ru/search/?text=site%3Ademo.alsn.ru&amp;lr=213" target="_blank" rel="noopener">site:demo.alsn.ru</a> — должно стать «ничего не найдено».</li>
+        <li>В Вебмастере на <strong>alsn.ru</strong> → Диагностика: статус <code>TOO_MANY_DOMAINS_ON_SEARCH</code> — «отсутствует» / снят (может задержаться на дни после очистки).</li>
+        <li>ИКС смотреть отдельно: отскок с 250 к 260 не гарантирован сразу, но фон риска уходит.</li>
+      </ol>
+      <div class="copy-block" id="c-check"><button type="button" class="copy-btn" data-target="c-check">Копировать</button>site:demo.alsn.ru</div>
+    </div>
+
+    <div class="callout info">
+      <strong>Краткий чеклист</strong>
+      <ul class="plain">
+        <li>□ robots.txt на demo закрывает всё (уже есть)</li>
+        <li>□ demo.alsn.ru добавлен и подтверждён в Вебмастере</li>
+        <li>□ Отправлено удаление префикса <code>https://demo.alsn.ru/</code></li>
+        <li>□ (Желательно) 410/404 или X-Robots-Tag / сайт остановлен</li>
+        <li>□ Через 1–2 недели: site: пусто, диагностика на alsn.ru снята</li>
+      </ul>
+    </div>
+
+    <p class="muted">
+      Файл инструкции: <code>seo-data/robots-subdomains/instrukciya-demo-alsn-ru-2026-09-15.html</code>.
+      Шаблон robots: <code>seo-data/robots-subdomains/robots.txt</code>.
+      Основной сайт alsn.ru и Тильду этой задачей не трогаем.
+    </p>
+  </div>
+
+  <script>
+    document.querySelectorAll(".copy-btn").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const id = btn.getAttribute("data-target");
+        const block = document.getElementById(id);
+        if (!block) return;
+        const text = block.innerText.replace(/^Копировать\n?/, "").trim();
+        try {
+          await navigator.clipboard.writeText(text);
+          btn.textContent = "Скопировано";
+          btn.classList.add("done");
+          setTimeout(() => {
+            btn.textContent = "Копировать";
+            btn.classList.remove("done");
+          }, 1600);
+        } catch (e) {
+          btn.textContent = "ошибка";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

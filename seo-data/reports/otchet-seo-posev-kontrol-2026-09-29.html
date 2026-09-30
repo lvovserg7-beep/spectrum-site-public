@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Отчёт: контроль посева SEO - alsn.ru - 29.09.2026</title>
+  <style>
+    :root {
+      --bg: #f7f7f5; --card: #fff; --text: #1a1a1a; --muted: #5c5c5c; --border: #e2e2de;
+      --ok: #1a7f4b; --ok-bg: #e8f6ee; --warn: #9a6700; --warn-bg: #fff6e0;
+      --info: #0b6e99; --info-bg: #e8f4fa; --danger: #b42318; --danger-bg: #fdecea;
+      --s1: #b9c3cc; --s2: #6f8fa8; --s3: #F55823;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: var(--bg); }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: 28px; margin: 0 0 8px; font-weight: 650; }
+    h2 { font-size: 20px; margin: 40px 0 12px; font-weight: 650; }
+    h3 { font-size: 16px; margin: 24px 0 10px; font-weight: 600; }
+    p { margin: 0 0 12px; }
+    .muted { color: var(--muted); }
+    .small { font-size: 13px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 20px; }
+    .pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; border: 1px solid var(--border); background: #fff; white-space: nowrap; }
+    .pill.ok { color: var(--ok); background: var(--ok-bg); border-color: #c6e6d3; }
+    .pill.warn { color: var(--warn); background: var(--warn-bg); border-color: #f0dfa0; }
+    .pill.info { color: var(--info); background: var(--info-bg); border-color: #bddceb; }
+    .pill.danger { color: var(--danger); background: var(--danger-bg); border-color: #f5c2c0; }
+    .callout { border-radius: 10px; padding: 14px 16px; margin: 16px 0; border: 1px solid #bddceb; background: var(--info-bg); }
+    .callout strong { display: block; margin-bottom: 4px; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 16px 0 8px; }
+    .stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+    .stat .v { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+    .stat .v.ok { color: var(--ok); } .stat .v.danger { color: var(--danger); }
+    .stat .l { font-size: 13px; color: var(--muted); }
+    .tw { overflow-x: auto; background: var(--card); border: 1px solid var(--border); border-radius: 10px; margin: 8px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+    th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+    th { background: #f1f1ee; font-weight: 600; font-size: 12.5px; }
+    tr:last-child td { border-bottom: 0; }
+    td.n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    tr.ok td:first-child { box-shadow: inset 3px 0 0 var(--ok); }
+    tr.warn td:first-child { box-shadow: inset 3px 0 0 #d9a300; }
+    tr.danger td:first-child { box-shadow: inset 3px 0 0 var(--danger); }
+    .chart { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px; margin: 8px 0; }
+    .chart svg { width: 100%; height: auto; display: block; }
+    .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+    .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+    .card h3 { margin: 0 0 12px; display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+    .ch { margin: 0 0 14px; } .ch:last-child { margin-bottom: 0; }
+    .ch .t { font-weight: 600; margin-bottom: 4px; }
+    .ch .d { font-size: 12px; color: var(--muted); font-weight: 500; margin-left: 6px; }
+    .ch p { font-size: 13.5px; margin: 0 0 4px; }
+    .ch .p b { color: var(--ok); } .ch .m b { color: var(--danger); }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0 0; }
+    @media (max-width: 800px) { .stats { grid-template-columns: repeat(2, 1fr); } .grid2 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Отчёт: контроль посева SEO на 29.09</h1>
+  <p class="muted">Сайт alsn.ru (Тильда). Все цифры в пересчёте на сутки, чтобы сравнивать периоды разной длины. Яндекс: 01-25.08 начало работ, 05-12.09 и 13-20.09 прошлые срезы, 21-27.09 новый срез (28-29.09 в Вебмастере ещё нули). Google: 25.08-12.09, 13-20.09 и 21-26.09 (дальше данных нет). Источники: Яндекс.Вебмастер, Google Search Console, Wordstat (API Яндекс Облака, 29.09), правки из чатов по продуктам.</p>
+  <div class="pills">
+    <span class="pill ok">Яндекс: лучшая неделя с начала работ</span>
+    <span class="pill">Google ровно, ~4 клика в сутки</span>
+    <span class="pill">Спрос в Wordstat не изменился</span>
+    <span class="pill warn">ИКС 240</span>
+    <span class="pill danger">Поддомены в выдаче с 28.09</span>
+  </div>
+
+  <div class="callout">
+    <strong>Коротко</strong>
+    Яндекс за 21-27.09 дал 13,9 клика и 776 показов в сутки против 8,9 и 653 неделей раньше. Спрос в Wordstat за это время не сдвинулся, значит рост наш, а не сезонный. Рост дали бренд, лицензии и длинный хвост мелких запросов. По главным продуктам картина смешанная: у модуля для маркетплейсов показы растут, а кликов в сутки стало вдвое меньше; у B2B клики вернулись к обычному уровню после всплеска; у внедрения в Google показы упали в два раза. Правки 28-29.09 (новое оформление страниц модуля, крошки, дубли title, «Опубликовать все страницы») в этот срез не попали, их смотрим на следующем контроле.
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="v ok">13,9</div><div class="l">кликов в сутки из Яндекса (было 8,9)</div></div>
+    <div class="stat"><div class="v ok">776</div><div class="l">показов в сутки из Яндекса (было 653)</div></div>
+    <div class="stat"><div class="v">4,0</div><div class="l">кликов в сутки из Google (было 4,3)</div></div>
+    <div class="stat"><div class="v danger">25</div><div class="l">показов в сутки у внедрения в Google (было 59)</div></div>
+  </div>
+
+  <h2>Сайт целиком в Яндексе</h2>
+  <div class="tw"><table>
+    <tr><th>Период</th><th>Показы в сутки</th><th>Клики в сутки</th></tr>
+    <tr><td>01-25.08, начало работ</td><td class="n">562</td><td class="n">8,6</td></tr>
+    <tr><td>26.08-04.09</td><td class="n">765</td><td class="n">8,4</td></tr>
+    <tr><td>05-12.09</td><td class="n">633</td><td class="n">9,0</td></tr>
+    <tr><td>13-20.09, срез 24.09</td><td class="n">653</td><td class="n">8,9</td></tr>
+    <tr class="ok"><td><b>21-27.09, срез 29.09</b></td><td class="n"><b>776</b></td><td class="n"><b>13,9</b></td></tr>
+  </table></div>
+  <div class="chart"><svg id="line" viewBox="0 0 1000 260"></svg>
+    <div class="legend"><span><i style="background:var(--s2)"></i>Показы</span><span><i style="background:var(--s3)"></i>Клики ×40</span></div>
+  </div>
+  <p class="small muted">Клики умножены на 40, чтобы уместить на одной шкале. Провалы - выходные. Источник: Яндекс.Вебмастер, отчёт trend. ИКС 240, в поиске 467 страниц.</p>
+
+  <h2>По продуктам: Яндекс</h2>
+  <div class="chart"><svg id="barY" viewBox="0 0 1000 260"></svg>
+    <div class="legend"><span><i style="background:var(--s1)"></i>01-25.08</span><span><i style="background:var(--s2)"></i>13-20.09</span><span><i style="background:var(--s3)"></i>21-27.09</span><span>Показы в сутки</span></div>
+  </div>
+  <div class="tw"><table>
+    <tr><th>Продукт</th><th>Показы/сут 01-25.08</th><th>Показы/сут 13-20.09</th><th>Показы/сут 21-27.09</th><th>Клики/сут 13-20.09</th><th>Клики/сут 21-27.09</th><th>CTR 21-27.09</th><th>Позиция 13-20 / 21-27</th></tr>
+    <tr class="warn"><td>Модуль для маркетплейсов</td><td class="n">68,7</td><td class="n">137</td><td class="n">152</td><td class="n">1,38</td><td class="n">0,71</td><td class="n">0,47%</td><td class="n">6,3 / 6,3</td></tr>
+    <tr class="warn"><td>Поставщики телеком и IT (B2B)</td><td class="n">155</td><td class="n">194</td><td class="n">200</td><td class="n">2,50</td><td class="n">1,14</td><td class="n">0,57%</td><td class="n">5,9 / 6,2</td></tr>
+    <tr class="warn"><td>Внедрение 1С</td><td class="n">61</td><td class="n">67</td><td class="n">85</td><td class="n">0,62</td><td class="n">0,43</td><td class="n">0,51%</td><td class="n">11,8 / 11,8</td></tr>
+    <tr><td>Техподдержка 1С</td><td class="n">4,4</td><td class="n">2,0</td><td class="n">2,6</td><td class="n">0</td><td class="n">0</td><td class="n">0%</td><td class="n">6,9 / 12,0</td></tr>
+    <tr class="ok"><td>Лицензии 1С</td><td class="n">39</td><td class="n">24</td><td class="n">42</td><td class="n">0,25</td><td class="n">1,00</td><td class="n">2,36%</td><td class="n">8,4 / 8,6</td></tr>
+    <tr class="ok"><td>Бренд Аллсан</td><td class="n">6,7</td><td class="n">7,2</td><td class="n">9,3</td><td class="n">1,25</td><td class="n">2,00</td><td class="n">21,5%</td><td class="n">2,0 / 2,1</td></tr>
+    <tr><td>Битрикс24</td><td class="n">1,1</td><td class="n">2,9</td><td class="n">1,7</td><td class="n">0</td><td class="n">0</td><td class="n">0%</td><td class="n">10,5 / 8,3</td></tr>
+    <tr><td>Telegram-боты (вне фокуса)</td><td class="n">4,3</td><td class="n">9,8</td><td class="n">14,4</td><td class="n">0</td><td class="n">0</td><td class="n">0%</td><td class="n">8,9 / 9,2</td></tr>
+  </table></div>
+  <p class="small muted">Считается по 500 самым показываемым запросам Вебмастера, одним и тем же правилом разбора по продуктам. В группу «прочее» за 21-27.09 попали 7 кликов по запросу про чужую компанию («интеграция сайта с 1с цена айсигрупп», 4 показа), это шум. Ещё 2 клика по «комплект поддержки 1С» по смыслу относятся к лицензиям, 2 по «marketplace module» к модулю.</p>
+
+  <h2>Контрольные запросы Яндекса и спрос Wordstat</h2>
+  <p class="small muted">Ячейка: показы / клики / средняя позиция за период. Wordstat - точная фраза в кавычках за ~30 дней.</p>
+  <div class="tw"><table>
+    <tr><th>Запрос</th><th>Продукт</th><th>01-25.08</th><th>13-20.09</th><th>21-27.09</th><th>Wordstat 24.09</th><th>Wordstat 29.09</th></tr>
+    <tr><td>модуль маркетплейсов 1с</td><td>МП</td><td class="n">281 / 0 / 7,5</td><td class="n">66 / 2 / 6,0</td><td class="n">55 / 0 / 4,5</td><td class="n">307</td><td class="n">319</td></tr>
+    <tr><td>модуль 1с для маркетплейсов</td><td>МП</td><td class="n">251 / 0 / 8,2</td><td class="n">70 / 3 / 5,8</td><td class="n">64 / 1 / 4,2</td><td class="n">119</td><td class="n">128</td></tr>
+    <tr><td>модули маркетплейсов для 1с</td><td>МП</td><td class="n">237 / 0 / 7,5</td><td class="n">62 / 1 / 5,0</td><td class="n">51 / 3 / 4,4</td><td class="n">58</td><td class="n">57</td></tr>
+    <tr><td>1с ут интеграция с маркетплейсами</td><td>МП</td><td class="n">182 / 0 / 9,4</td><td class="n">80 / 0 / 5,0</td><td class="n">56 / 0 / 5,2</td><td class="n">68</td><td class="n">73</td></tr>
+    <tr><td>интеграция с озон 1с ут</td><td>МП</td><td class="n">-</td><td class="n">-</td><td class="n">109 / 0 / 5,2</td><td class="n">-</td><td class="n">-</td></tr>
+    <tr><td>мерлион b2b</td><td>B2B</td><td class="n">408 / 3 / 3,8</td><td class="n">123 / 3 / 3,9</td><td class="n">76 / 2 / 4,0</td><td class="n">752</td><td class="n">750</td></tr>
+    <tr><td>ocs b2b</td><td>B2B</td><td class="n">314 / 3 / 5,2</td><td class="n">98 / 2 / 6,3</td><td class="n">101 / 0 / 5,9</td><td class="n">977</td><td class="n">975</td></tr>
+    <tr><td>втт b2b</td><td>B2B</td><td class="n">152 / 2 / 4,2</td><td class="n">63 / 1 / 3,9</td><td class="n">49 / 1 / 3,6</td><td class="n">338</td><td class="n">346</td></tr>
+    <tr><td>внедрение 1с комплексная автоматизация</td><td>Внедрение</td><td class="n">53 / 0 / 8,6</td><td class="n">22 / 0 / 12,1</td><td class="n">15 / 0 / 14,7</td><td class="n">58</td><td class="n">58</td></tr>
+    <tr><td>1с внедрение ка</td><td>Внедрение</td><td class="n">74 / 0 / 8,0</td><td class="n">7 / 0 / 10,4</td><td class="n">14 / 0 / 14,2</td><td class="n">39</td><td class="n">38</td></tr>
+    <tr><td>стоимость внедрения 1с erp</td><td>Внедрение</td><td class="n">71 / 0 / 10,9</td><td class="n">12 / 0 / 12,9</td><td class="n">26 / 2 / 11,3</td><td class="n">36</td><td class="n">35</td></tr>
+    <tr><td>сопровождение 1с</td><td>Поддержка</td><td class="n">5 / 0 / 8,4</td><td class="n">2 / 0 / 7,0</td><td class="n">3 / 0 / 11,0</td><td class="n">-</td><td class="n">4594</td></tr>
+    <tr><td>1с кп проф на 12 месяцев цена</td><td>Лицензии</td><td class="n">-</td><td class="n">-</td><td class="n">16 / 2 / 3,5</td><td class="n">-</td><td class="n">-</td></tr>
+    <tr><td>аллсан</td><td>Бренд</td><td class="n">37 / 10 / 1,4</td><td class="n">12 / 3 / 1,4</td><td class="n">11 / 3 / 1,5</td><td class="n">82</td><td class="n">89</td></tr>
+    <tr><td>алсан интеграция</td><td>Бренд</td><td class="n">6 / 1 / 2,0</td><td class="n">3 / 1 / 1,7</td><td class="n">13 / 3 / 2,4</td><td class="n">-</td><td class="n">-</td></tr>
+  </table></div>
+  <p class="small muted">Фон спроса ровный: «модуль маркетплейсов 1с» 307 и 319, «мерлион b2b» 752 и 750, «техподдержка 1с» 20 734 и 21 161, «1с кп» 4599, «купить лицензию 1с» 283. Изменения кликов в этом срезе объясняются сайтом и выдачей, а не сезоном.</p>
+
+  <h2>По продуктам: Google</h2>
+  <div class="chart"><svg id="barG" viewBox="0 0 1000 260"></svg>
+    <div class="legend"><span><i style="background:var(--s1)"></i>25.08-12.09</span><span><i style="background:var(--s2)"></i>13-20.09</span><span><i style="background:var(--s3)"></i>21-26.09</span><span>Показы в сутки</span></div>
+  </div>
+  <div class="tw"><table>
+    <tr><th>Продукт</th><th>Показы/сут 25.08-12.09</th><th>Показы/сут 13-20.09</th><th>Показы/сут 21-26.09</th><th>Клики 25.08-12.09</th><th>Клики 13-20.09</th><th>Клики 21-26.09</th><th>Главная страница продукта</th></tr>
+    <tr class="warn"><td>Модуль для маркетплейсов</td><td class="n">20,5</td><td class="n">13,0</td><td class="n">12,2</td><td class="n">2</td><td class="n">2</td><td class="n">2</td><td>/casemarketplace: 2 клика из 13 показов, позиция 7,6 стала 13,2</td></tr>
+    <tr><td>Поставщики телеком и IT (B2B)</td><td class="n">51,7</td><td class="n">36,1</td><td class="n">34,0</td><td class="n">2</td><td class="n">1</td><td class="n">1</td><td>/etm-ipro 1 клик, позиция 5,3; /ecom позиция 14,5</td></tr>
+    <tr class="danger"><td>Внедрение 1С</td><td class="n">67,2</td><td class="n">58,6</td><td class="n">25,5</td><td class="n">11</td><td class="n">2</td><td class="n">0</td><td>/erp-time-price: показов 260 за 8 дней, стало 41 за 6; позиция 29,5</td></tr>
+    <tr><td>Техподдержка 1С</td><td class="n">10,1</td><td class="n">4,0</td><td class="n">4,0</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td>/support1c: 2 показа, позиция 4</td></tr>
+    <tr class="ok"><td>Лицензии 1С</td><td class="n">163</td><td class="n">135</td><td class="n">147</td><td class="n">18</td><td class="n">4</td><td class="n">5</td><td>клики с карточек 1С:КП и каталога</td></tr>
+    <tr><td>Битрикс24</td><td class="n">92,2</td><td class="n">53,3</td><td class="n">57,8</td><td class="n">2</td><td class="n">2</td><td class="n">1</td><td>/bitrix24: 345 показов, позиция 32</td></tr>
+    <tr><td>Telegram-боты (вне фокуса)</td><td class="n">97,6</td><td class="n">93,4</td><td class="n">98,0</td><td class="n">20</td><td class="n">16</td><td class="n">10</td><td>/tbsotrudniki 4 клика, /tbotdelprod 3</td></tr>
+  </table></div>
+  <p class="small muted">Итог по сайту в Google: 13-20.09 34 клика и 3326 показов (4,3 клика в сутки), 21-26.09 24 клика и 2443 показа (4,0). Цифры по продуктам считаются по адресам страниц и включают запросы, которые Google прячет из списка запросов, поэтому они выше, чем в отчёте 24.09.</p>
+
+  <hr />
+  <h2>Правки SEO и их влияние по продуктам</h2>
+  <p class="small muted">Собрано из чатов по продуктам и сквозным задачам. У каждой правки дата и оценка: что могло поднять позиции и клики, что могло их опустить. Правки после 27.09 в цифры этого среза не попали.</p>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>Модуль для маркетплейсов <span class="pill warn">клики вниз</span></h3>
+      <div class="ch"><div class="t">T1 и T2 на /casemarketplace: title с «модулем», цена в описании, крошки, превью <span class="d">до 20.09</span></div>
+        <p class="p"><b>Плюс:</b> позиции контрольных «модуль …» 5-6 стали 4,2-4,5, лучшие за всё время.</p>
+        <p class="m"><b>Минус:</b> при лучших позициях кликов меньше: 1,38 в сутки стало 0,71, CTR 1,0% стал 0,47%.</p></div>
+      <div class="ch"><div class="t">T3: отдельные страницы /1c-ozon и /1c-wildberries, НДС 5%, FBO, сноска про новые функции <span class="d">23-27.09</span></div>
+        <p class="p"><b>Плюс:</b> новые запросы про Ozon в выдаче: «интеграция с озон 1с ут» 109 показов, позиция 5,2.</p>
+        <p class="m"><b>Минус:</b> по этим запросам 0 кликов; три страницы модуля могут делить одни и те же запросы. В Google /casemarketplace опустилась с 7,6 на 13,2.</p></div>
+      <div class="ch"><div class="t">T4: новое оформление всех трёх страниц, FAQ и служебная разметка в HEAD <span class="d">28.09</span></div>
+        <p class="p"><b>Плюс:</b> FAQ и цена могут дать расширенный сниппет и вернуть CTR.</p>
+        <p class="m"><b>Минус:</b> сильно сменился текст страниц, в первые 1-2 недели позиции могут качнуться. Зачёркнутая цена 79 000 ₽ в карточке «Ozon + WB» не совпадает с ценой в тексте.</p></div>
+    </div>
+
+    <div class="card">
+      <h3>Поставщики телеком и IT (B2B) <span class="pill">без новых правок</span></h3>
+      <div class="ch"><div class="t">T1 и T2 на /ecom и страницах партнёров: title, описания, крошки, разметка услуги <span class="d">до 15.09</span></div>
+        <p class="p"><b>Плюс:</b> показы держатся у 200 в сутки, позиции 4-6 по «мерлион / втт / ocs b2b».</p>
+        <p class="m"><b>Минус:</b> клики 2,5 в сутки стали 1,14: прошлый срез был всплеском. Запросы в основном про вход в кабинет поставщика («ipro» 200 показов, 0 кликов), а не про интеграцию с 1С.</p></div>
+      <p class="small muted">После 15.09 правок не было, T3 не начат. Колебания B2B в этом срезе - шум.</p>
+    </div>
+
+    <div class="card">
+      <h3>Внедрение 1С <span class="pill danger">Google просел</span></h3>
+      <div class="ch"><div class="t">T2: H1 и title без «сопровождения», тексты, превью, крошки, подписи коллажей <span class="d">18.09</span></div>
+        <p class="p"><b>Плюс:</b> в Яндексе показы 67 стали 85 в сутки; «стоимость внедрения 1с erp» дала первые 2 клика.</p>
+        <p class="m"><b>Минус:</b> позиции «1с внедрение ка» и «комплексная автоматизация» 10-12 стали 14-15. В Google показы упали с 59 до 25 в сутки, у /erp-time-price с 260 до 41 показа, позиция около 30.</p></div>
+      <div class="ch"><div class="t">T3 почти готов: нет H2 «Полезные страницы по внедрению 1С» на /development1c и /erp-time-price <span class="d">открыто</span></div>
+        <p class="p"><b>Плюс:</b> после внесения появятся перелинковка и текст под запросы про КА и ERP.</p>
+        <p class="m"><b>Минус:</b> пока блока нет, страницам внедрения не хватает внутренних ссылок.</p></div>
+    </div>
+
+    <div class="card">
+      <h3>Техподдержка 1С <span class="pill">малый объём</span></h3>
+      <div class="ch"><div class="t">T2 на /support1c: title без «Зеленограда», блок отличий от 1С:КП, крошки, подписи <span class="d">16.09</span></div>
+        <p class="p"><b>Плюс:</b> сниппет чище, страница не путается с договором 1С:КП.</p>
+        <p class="m"><b>Минус:</b> показов 2-3 в сутки, кликов нет, позиция в Яндексе 6,9 стала 12. Спрос большой (21 161 и 4594 в Wordstat), но страница в эти запросы почти не попадает.</p></div>
+    </div>
+
+    <div class="card">
+      <h3>Лицензии 1С и Битрикс24 <span class="pill ok">рост</span></h3>
+      <div class="ch"><div class="t">Служебная разметка каталога, подписи к картинкам 332 карточек, крошки витрин ИТС и Fresh <span class="d">15-28.09</span></div>
+        <p class="p"><b>Плюс:</b> в Яндексе показы 24 стали 42 в сутки, клики 0,25 стали 1,0, CTR 2,4%. Клики по «1с кп проф на 12 месяцев». В Google 5 кликов с карточек.</p>
+        <p class="m"><b>Минус:</b> часть кликов уходит на карточки, а не на витрину. Битрикс24 в Google на позиции 32, почти без кликов.</p></div>
+      <div class="ch"><div class="t">SEO-заголовки 17 карточек, закрыты дубли title в Вебмастере <span class="d">29.09</span></div>
+        <p class="p"><b>Плюс:</b> уникальные сниппеты карточек, меньше склейки в выдаче.</p>
+        <p class="m"><b>Минус:</b> в срез не попали, эффект через 1-3 недели.</p></div>
+    </div>
+
+    <div class="card">
+      <h3>Бренд и правки по всему сайту <span class="pill warn">есть риск</span></h3>
+      <div class="ch"><div class="t">Кейсы СЦ и ХИТСАД, одна разметка Organization, H1 главной <span class="d">18-23.09</span></div>
+        <p class="p"><b>Плюс:</b> бренд растёт: клики 1,25 стали 2,0 в сутки, CTR 21,5%; «аллсан интеграция» 5 кликов, «алсан интеграция» 3.</p>
+        <p class="m"><b>Минус:</b> нет.</p></div>
+      <div class="ch"><div class="t">Крошки (хвост и волна 2 из 6), noindex трёх вебинаров, дубли title и description, «Опубликовать все страницы» <span class="d">28-29.09</span></div>
+        <p class="p"><b>Плюс:</b> чистые крошки и уникальные сниппеты по сайту.</p>
+        <p class="m"><b>Минус:</b> после массовой переопубликации роботы переобходят весь сайт, 1-2 недели возможны колебания. Вебинары ушли из поиска вместе со своими показами, это ожидаемо.</p></div>
+      <div class="ch"><div class="t">Поддомены ip.alsn.ru и doc.alsn.ru в выдаче Яндекса (заглушка сервера, ошибка 502) <span class="d">найдено 28.09</span></div>
+        <p class="p"><b>Плюс:</b> нет.</p>
+        <p class="m"><b>Минус:</b> с 28.09 в Вебмастере активна проблема «слишком много доменов в выдаче». Может тянуть вниз ИКС и доверие к alsn.ru. Это не правка SEO, но риск для всех продуктов.</p></div>
+    </div>
+  </div>
+
+  <h2>Что могло поднять и что могло опустить</h2>
+  <div class="tw"><table>
+    <tr><th>Изменение</th><th>Продукт</th><th>Влияние</th><th>Что видно в цифрах</th></tr>
+    <tr class="ok"><td>Кейсы, Organization, H1 главной</td><td>Бренд</td><td>плюс</td><td>клики бренда 1,25 стали 2,0 в сутки</td></tr>
+    <tr class="ok"><td>Разметка и подписи каталога, крошки витрин</td><td>Лицензии</td><td>плюс</td><td>показы ×1,8, клики ×4 в Яндексе</td></tr>
+    <tr class="ok"><td>Title с «модулем» и цена в сниппете</td><td>МП</td><td>плюс по позициям</td><td>контрольные «модуль …» на позициях 4,2-4,5</td></tr>
+    <tr class="warn"><td>Три страницы модуля делят запросы</td><td>МП</td><td>минус</td><td>клики 1,38 стали 0,71; в Google /casemarketplace 7,6 стала 13,2</td></tr>
+    <tr class="danger"><td>Смена H1 и title внедрения</td><td>Внедрение</td><td>минус</td><td>Google показы 59 стали 25; «КА» и «комплексная» на 14-15 месте</td></tr>
+    <tr class="danger"><td>Поддомены ip и doc в выдаче</td><td>весь сайт</td><td>минус, риск</td><td>проблема в Вебмастере с 28.09, ИКС 240</td></tr>
+    <tr class="warn"><td>Новое оформление страниц модуля</td><td>МП</td><td>пока неясно</td><td>опубликовано 28.09, смотреть 06-08.10</td></tr>
+    <tr><td>Крошки, дубли title, переопубликация</td><td>весь сайт</td><td>плюс позже</td><td>опубликовано 28-29.09, смотреть 06-08.10</td></tr>
+  </table></div>
+
+  <h3>Следующий контроль: 06-08.10</h3>
+  <div class="tw"><table>
+    <tr><th>Продукт</th><th>Что смотрим</th><th>Хороший результат</th></tr>
+    <tr><td>Модуль для маркетплейсов</td><td>клики после нового оформления, какую из трёх страниц показывает поиск</td><td>клики 1,5 в сутки и выше, CTR 1% и выше; запросы про Ozon ведут на /1c-ozon</td></tr>
+    <tr><td>Внедрение 1С</td><td>показы в Google, позиции «КА» и «комплексная»</td><td>Google 50+ показов в сутки; позиции 10 и выше</td></tr>
+    <tr><td>B2B</td><td>запросы про интеграцию, а не про кабинет поставщика</td><td>появление «интеграция 1с с поставщиками» и похожих в топе</td></tr>
+    <tr><td>Лицензии</td><td>удержать рост после новых заголовков карточек</td><td>клики 1 в сутки и выше</td></tr>
+    <tr><td>Весь сайт</td><td>проблема с доменами в Вебмастере, ИКС</td><td>проблема снята, ИКС не ниже 240</td></tr>
+  </table></div>
+  <p class="small muted">Метод как 24.09: одно правило разбора запросов по продуктам, цифры на сутки, Wordstat как фон спроса. Скрипты: seo-data/scripts/_control_slice_2026_09_29.py, _gsc_products_0929.py, _wordstat_0929.mjs. Bing и Twitter вне работы.</p>
+
+</div>
+
+<script>
+(function () {
+  var NS = "http://www.w3.org/2000/svg";
+  function el(tag, attrs, text) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  var C1 = "#b9c3cc", C2 = "#6f8fa8", C3 = "#F55823", GRID = "#e2e2de", TXT = "#5c5c5c";
+
+  var shows = [468,419,864,812,825,881,613,245,284,635,574,624,614,537,251,210,606,537,695,689,714,322,269,661,712,839,992,880,438,348,973,739,921,764,755,292,288,793,883,981,879,688,260,269,848,850,875,944,743,337,359,847,994,1077,1042,717,359,399];
+  var clicks = [6,4,7,11,16,11,5,2,8,11,9,9,9,6,6,7,12,14,10,11,16,3,0,9,13,7,13,7,3,4,15,5,11,11,8,4,5,14,13,6,17,9,4,2,13,13,16,12,10,2,3,12,17,19,21,13,9,6];
+  var dates = [];
+  for (var d = 1; d <= 31; d++) dates.push((d < 10 ? "0" : "") + d + ".08");
+  for (d = 1; d <= 27; d++) dates.push((d < 10 ? "0" : "") + d + ".09");
+
+  function line() {
+    var svg = document.getElementById("line"), W = 1000, H = 260, L = 44, R = 10, T = 10, B = 30;
+    var max = 1200, n = shows.length, sx = (W - L - R) / (n - 1);
+    for (var v = 0; v <= max; v += 300) {
+      var y = T + (H - T - B) * (1 - v / max);
+      svg.appendChild(el("line", { x1: L, x2: W - R, y1: y, y2: y, stroke: GRID }));
+      svg.appendChild(el("text", { x: L - 6, y: y + 4, "text-anchor": "end", "font-size": 11, fill: TXT }, v));
+    }
+    var xStart = L + sx * 51;
+    svg.appendChild(el("rect", { x: xStart - sx / 2, y: T, width: sx * 7, height: H - T - B, fill: "#FDE7DE", opacity: 0.6 }));
+    function path(arr, mul, color) {
+      var p = arr.map(function (a, i) {
+        return (i ? "L" : "M") + (L + sx * i).toFixed(1) + " " + (T + (H - T - B) * (1 - a * mul / max)).toFixed(1);
+      }).join(" ");
+      svg.appendChild(el("path", { d: p, fill: "none", stroke: color, "stroke-width": 2 }));
+    }
+    path(shows, 1, C2);
+    path(clicks, 40, C3);
+    for (var i = 0; i < n; i += 7) {
+      svg.appendChild(el("text", { x: L + sx * i, y: H - 10, "text-anchor": "middle", "font-size": 11, fill: TXT }, dates[i]));
+    }
+  }
+
+  function bars(id, cats, series, colors) {
+    var svg = document.getElementById(id), W = 1000, H = 260, L = 44, R = 10, T = 10, B = 30;
+    var max = 0;
+    series.forEach(function (s) { s.forEach(function (v) { if (v > max) max = v; }); });
+    var step = max > 150 ? 50 : 25;
+    max = Math.ceil(max / step) * step;
+    for (var v = 0; v <= max; v += step) {
+      var y = T + (H - T - B) * (1 - v / max);
+      svg.appendChild(el("line", { x1: L, x2: W - R, y1: y, y2: y, stroke: GRID }));
+      svg.appendChild(el("text", { x: L - 6, y: y + 4, "text-anchor": "end", "font-size": 11, fill: TXT }, v));
+    }
+    var gw = (W - L - R) / cats.length, bw = Math.min(40, (gw - 24) / series.length);
+    cats.forEach(function (c, i) {
+      var x0 = L + gw * i + (gw - bw * series.length) / 2;
+      series.forEach(function (s, j) {
+        var h = (H - T - B) * s[i] / max, x = x0 + bw * j, y = H - B - h;
+        svg.appendChild(el("rect", { x: x, y: y, width: bw - 3, height: h, fill: colors[j], rx: 2 }));
+        svg.appendChild(el("text", { x: x + (bw - 3) / 2, y: y - 4, "text-anchor": "middle", "font-size": 10, fill: TXT }, String(s[i]).replace(".", ",")));
+      });
+      svg.appendChild(el("text", { x: L + gw * i + gw / 2, y: H - 10, "text-anchor": "middle", "font-size": 12, fill: "#1a1a1a" }, c));
+    });
+  }
+
+  line();
+  bars("barY", ["МП", "B2B", "Внедрение", "Лицензии", "Бренд", "Поддержка"],
+    [[68.7, 155.3, 61.0, 38.6, 6.7, 4.4], [137.4, 194.1, 67.0, 23.9, 7.2, 2.0], [152.4, 200.1, 84.7, 42.3, 9.3, 2.6]], [C1, C2, C3]);
+  bars("barG", ["МП", "B2B", "Внедрение", "Лицензии", "Битрикс24", "Поддержка"],
+    [[20.5, 51.7, 67.2, 162.7, 92.2, 10.1], [13.0, 36.1, 58.6, 134.5, 53.3, 4.0], [12.2, 34.0, 25.5, 147.0, 57.8, 4.0]], [C1, C2, C3]);
+})();
+</script>
+</body>
+</html>

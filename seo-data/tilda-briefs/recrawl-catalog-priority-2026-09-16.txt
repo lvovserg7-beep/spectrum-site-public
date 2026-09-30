@@ -1,0 +1,80 @@
+# Переобход после CSV title / description / price
+# Дата списка: 16.09.2026
+# Яндекс.Вебмастер alsn.ru: квота 960, остаток 960
+# Не слать: ?editionuid=  и 4 карточки T1 (уже DONE 15.09)
+# Bing / Twitter не трогать
+
+# Итого в буфер: 326 URL (12 витрин/разделов + 314 карточек)
+
+## 1. Витрины и разделы (обязательно)
+https://alsn.ru/dopolnitelnie_licenzii
+https://alsn.ru/its
+https://alsn.ru/1cfresh
+https://alsn.ru/buhv8
+https://alsn.ru/upt8
+https://alsn.ru/zup8
+https://alsn.ru/kompleksnaya_avtomatizaciya
+https://alsn.ru/upravlenie_nashei_firmoi
+https://alsn.ru/dokumentooborot8
+https://alsn.ru/products
+https://alsn.ru/casemarketplace
+https://alsn.ru/support1c
+
+## 2. Сменилась цена в CSV (36 шт.)
+https://alsn.ru/its/tproduct/903464734-873825167072-1skp-bazovii-na-8-mesyatsev-its
+https://alsn.ru/products/tproduct/946953291-571365939032-1s-predpriyatie-8-ekologiya-ohrana-okruz
+https://alsn.ru/products/tproduct/946953291-573152840912-1s-predpriyatie-8-proizvodstvennaya-bezo
+https://alsn.ru/its/tproduct/903464734-614123320362-1skp-gu-prof-na-12-mesyatsev-its
+https://alsn.ru/its/tproduct/903464734-717296636422-1skp-meditsina-na-12-mesyatsev-its
+https://alsn.ru/its/tproduct/903464734-576701964812-1skp-gu-bazovii-na-12-mesyatsev-its
+https://alsn.ru/products/tproduct/893974444-909552464272-1spark-riski-plyus-na-12-mesyatsev
+https://alsn.ru/products/tproduct/893974444-902789595282-1s-etp-bazis-pp-astral-et
+https://alsn.ru/1cfresh/tproduct/922254724-319369185482-1s-fresh-meditsina-bolnitsa-internet-ver
+https://alsn.ru/1cfresh/tproduct/922254724-731582980572-1s-fresh-meditsina-bolnichnaya-apteka-in
+https://alsn.ru/1cfresh/tproduct/922254724-518827401272-1s-fresh-meditsina-klinicheskaya-laborat
+https://alsn.ru/1cfresh/tproduct/922254724-279806851102-1s-fresh-meditsina-dieticheskoe-pitanie
+https://alsn.ru/1cfresh/tproduct/922254724-168562929962-1s-fresh-meditsina-region-internet-versi
+https://alsn.ru/products/tproduct/946953291-625167402312-1s-kolledzh-prof-red-21-elektronnaya-pos
+https://alsn.ru/products/tproduct/946953291-712656526182-1s-predpriyatie-8-billing-elektronnaya-p
+https://alsn.ru/buhv8/tproduct/379482785-677740245082-1s-buhgalteriya-stroitelnoi-organizatsii
+https://alsn.ru/products/tproduct/946953291-257692803132-1s-upravlenie-teplosetyu-2-elektronnaya
+https://alsn.ru/products/tproduct/946953291-370667619802-1s-upravlenie-torgovlei-i-vzaimootnoshen
+https://alsn.ru/upravlenie_nashei_firmoi/tproduct/382580675-467371090312-1s-unf-8-poligrafiya-2-elektronnaya-post
+https://alsn.ru/zup8/tproduct/382489805-295497589962-1s-zarplata-i-kadri-gosudarstvennogo-uch
+https://alsn.ru/products/tproduct/946953291-483860872182-1s-crm-korp-elektronnaya-postavka
+https://alsn.ru/products/tproduct/946953291-355322099812-1s-ehs-kompleksnaya-proizvodstvennaya-be
+https://alsn.ru/products/tproduct/946953291-462380446392-1s-itilium-service-desk-elektronnaya-pos
+https://alsn.ru/products/tproduct/946953291-252308256232-1s-itilium-upravlenie-uslugami-prof-elek
+https://alsn.ru/products/tproduct/946953291-675606841132-1s-itilium-upravlenie-uslugami-korp-elek
+https://alsn.ru/products/tproduct/946953291-716039305662-1s-pm-upravlenie-proektami-korp-elektron
+https://alsn.ru/products/tproduct/946953291-984927973132-1s-gornodobivayuschaya-promishlennost-2
+https://alsn.ru/products/tproduct/946953291-729903995532-1s-upravlenie-teplovodokanalom-2-elektro
+https://alsn.ru/products/tproduct/946953291-599820132332-1s-sistema-proektirovaniya-prikladnih-re
+https://alsn.ru/zup8/tproduct/382489805-586906051862-1s-zarplata-i-kadri-gosudarstvennogo-uch
+https://alsn.ru/products/tproduct/946953291-811672562152-1s-predpriyatie-oblachnaya-podsistema-fr
+https://alsn.ru/products/tproduct/946953291-179132729352-1s-kolledzh-prof-dopolnitelnaya-litsenzi
+https://alsn.ru/products/tproduct/946953291-122291786822-1s-uchet-i-upravlenie-dlya-professionaln
+https://alsn.ru/products/tproduct/946953291-691925473522-1s-kolledzh-prof-region-elektronnaya-pos
+https://alsn.ru/products/tproduct/946953291-704282208722-1s-kolledzh-red-21-elektronnaya-postavka
+https://alsn.ru/products/tproduct/946953291-318937335382-1s-administrativno-hozyaistvennaya-deyat
+
+## 3. Коммерческий приоритет (КП / БП), если ещё нет в п.2
+https://alsn.ru/its/tproduct/903464734-496608730882-1skp-prof-na-12-mesyatsev-its
+https://alsn.ru/its/tproduct/903464734-756476542422-1skp-prof-na-12-mesyatsev-lgotnaya-tsena
+https://alsn.ru/its/tproduct/903464734-882776022392-1skp-bazovii-na-12-mesyatsev-its
+https://alsn.ru/its/tproduct/903464734-105132092072-1skp-bazovii-na-12-mesyatsev-lgotnaya-ts
+https://alsn.ru/its/tproduct/903464734-980641273672-1skp-prof-na-6-mesyatsev-its
+https://alsn.ru/its/tproduct/903464734-499614778042-1skp-prof-na-3-mesyatsa-its
+https://alsn.ru/its/tproduct/903464734-870212032332-1skp-bazovii-na-6-mesyatsev-its
+https://alsn.ru/its/tproduct/903464734-610064648722-1skp-upp-na-12-mesyatsev-its
+https://alsn.ru/its/tproduct/903464734-865515246452-1skp-prof-na-12-mesyatsev-po-sheme-84-4
+https://alsn.ru/buhv8/tproduct/379482785-590525180281-1sbuhgalteriya-8-prof-korobochnaya-posta
+https://alsn.ru/buhv8/tproduct/379482785-948239768351-1s-buhgalteriya-8-prof-elektronnaya-post
+https://alsn.ru/buhv8/tproduct/379482785-472094879401-1sbuhgalteriya-8-korp-korobochnaya-posta
+https://alsn.ru/buhv8/tproduct/379482785-385791130041-1s-buhgalteriya-8-korp-elektronnaya-post
+
+## Не слать (уже переобход 15.09.2026 15:31, title KEEP)
+https://alsn.ru/dopolnitelnie_licenzii/tproduct/1231123726-368525678472-1s-predpriyatie-8-prof-klientskaya-litse
+https://alsn.ru/dopolnitelnie_licenzii/tproduct/1231123726-359060596292-1s-predpriyatie-8-prof-klientskaya-litse
+https://alsn.ru/dopolnitelnie_licenzii/tproduct/1231123726-729293580752-1s-predpriyatie-8-prof-klientskaya-litse
+https://alsn.ru/dopolnitelnie_licenzii/tproduct/1231123726-905369310501-1s-predpriyatie-83-prof-litsenziya-na-se

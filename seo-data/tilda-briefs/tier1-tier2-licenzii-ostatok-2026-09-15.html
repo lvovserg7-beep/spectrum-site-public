@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Лицензии 1С - все задачи выполнены, образец пункта D - 29.09.2026</title>
+  <style>
+    :root {
+      --bg: #f4f3ef; --card: #fff; --text: #1a1a1a; --muted: #5c5c5c;
+      --border: #e2e2de; --ok: #1a7f4b; --ok-bg: #e8f6ee; --warn: #9a6700;
+      --warn-bg: #fff6e0; --danger: #b42318; --danger-bg: #fdecea;
+      --info: #0b6e99; --info-bg: #e8f4fa; --code: #0f172a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: var(--bg); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 18px 72px; }
+    h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    h3 { font-size: 16px; margin: 16px 0 8px; }
+    p { margin: 0 0 8px; }
+    a { color: #0b5cad; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
+    .pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 650; border: 1px solid var(--border); background: #fff; }
+    .pill.ok { color: var(--ok); background: var(--ok-bg); border-color: #c6e6d3; }
+    .pill.warn { color: var(--warn); background: var(--warn-bg); border-color: #f0dfa0; }
+    .pill.danger { color: var(--danger); background: var(--danger-bg); border-color: #f5c2c0; }
+    .callout { border-radius: 10px; padding: 12px 14px; margin: 12px 0 18px; border: 1px solid var(--border); background: var(--card); font-size: 14px; }
+    .callout.danger { background: var(--danger-bg); border-color: #f5c2c0; }
+    .callout.warn { background: var(--warn-bg); border-color: #f0dfa0; }
+    .callout.info { background: var(--info-bg); border-color: #bddceb; }
+    .toc { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; margin: 0 0 20px; }
+    .toc ol { margin: 6px 0 0; padding-left: 22px; }
+    .toc li { margin: 3px 0; }
+    .toc a { text-decoration: none; }
+    .task { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px 18px; margin: 0 0 18px; }
+    .task .num { display: inline-block; background: #111; color: #fff; border-radius: 999px; font-size: 12px; font-weight: 700; padding: 2px 10px; margin-right: 6px; }
+    .lbl { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 14px 0 4px; }
+    .lbl:first-of-type { margin-top: 8px; }
+    ol.steps { margin: 4px 0 0; padding-left: 22px; }
+    ol.steps > li { margin: 6px 0; }
+    .path { font-family: ui-monospace, Consolas, monospace; font-size: 12.5px; background: #111; color: #f5f5f4; border-radius: 8px; padding: 8px 10px; margin: 6px 0 8px; overflow-x: auto; }
+    .copybox { position: relative; margin: 6px 0 10px; }
+    .copybox pre { margin: 0; background: var(--code); color: #e5e7eb; border-radius: 10px; padding: 12px 12px 40px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; font: 13px/1.4 ui-monospace, Consolas, monospace; }
+    .copybox button, button.inline-copy { background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 4px 10px; font-size: 12px; font-weight: 650; cursor: pointer; }
+    .copybox button { position: absolute; right: 8px; bottom: 8px; }
+    .copybox button:hover, button.inline-copy:hover { background: #f3f4f6; }
+    .copybox.ok button, button.inline-copy.ok { background: var(--ok-bg); }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 6px 0 0; background: #fff; }
+    th, td { border: 1px solid var(--border); padding: 7px 9px; text-align: left; vertical-align: top; }
+    th { background: #fafaf8; font-weight: 650; }
+    code { font-family: ui-monospace, Consolas, monospace; font-size: 13px; }
+    @media print { body { background: #fff; } .copybox button, button.inline-copy { display: none; } .task, .toc, .callout { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Лицензии 1С: T1 и T2 закрыты</h1>
+    <p class="callout warn"><strong>Все задачи выполнены 29.09.2026. Файл оставлен как образец оформления.</strong> Пункт D ниже - эталон служебного пути для карточек Каталога (правило <code>tilda-catalog-jsonld.mdc</code>).</p>
+    <p class="muted">Контроль alsn.ru: <strong>15.09.2026, 15:36 МСК</strong>, повторная сверка <strong>29.09.2026</strong> · только Тильда</p>
+    <div class="pills">
+      <span class="pill ok">T1 закрыт</span>
+      <span class="pill ok">T2 закрыт</span>
+      <span class="pill danger">Bing / Twitter — SKIP</span>
+      <span class="pill danger">script в «Текст» карточки — нельзя</span>
+    </div>
+
+    <div class="callout info">
+      Живой сайт сверен. Новых шагов в Тильде по этому тиру нет. На alsn.ru этот файл не заливать.
+    </div>
+
+    <section class="task">
+      <h2>Что проверено</h2>
+      <table>
+        <tr><th>Пункт</th><th>Живой результат</th></tr>
+        <tr><td>T1 title/description трёх витрин и 4 карточек</td><td>Короткие title с «купить» и Аллсан. H1 товаров не сокращали</td></tr>
+        <tr><td>T2 H1 и лид трёх витрин</td><td>Хаб / ИТС / Фреш совпадают с каноном</td></tr>
+        <tr><td>OG-картинка 1200×630</td><td><code>allsun-og-licenses.png</code> на трёх витринах, без 504 px, Twitter пустой</td></tr>
+        <tr><td>og:site_name</td><td>«Аллсан Интеграция» в HEAD сайта, по одному тегу (главная, кейс МП, внедрение, три витрины)</td></tr>
+        <tr><td>WebPage хаба + скрипт D</td><td>В HEAD витрины есть <code>alsn-bc-jsonld</code>; JSON в «Текст» карточки не светится</td></tr>
+        <tr><td>Alt ИТС и caption 4 фото</td><td>download.svg и описания SKU на месте</td></tr>
+        <tr><td>G переобход</td><td>Яндекс 15.09.2026, 15:31: 4 карточки в очереди (5 мест и сервер — DONE, 10 и 20 — IN_PROGRESS). GSC из API не читается — принято по слову исполнителя</td></tr>
+      </table>
+    </section>
+
+    <section class="task" id="d">
+      <h2><span class="num">D</span> Служебный путь для карточек Каталога (образец)</h2>
+      <span class="lbl">Что сделано</span>
+      <p>В HEAD страницы витрины «Лицензии 1С» (<a href="https://alsn.ru/dopolnitelnie_licenzii">https://alsn.ru/dopolnitelnie_licenzii</a>) стоит один универсальный скрипт. На каждой карточке товара (<code>/tproduct/</code>) он сам собирает служебную навигацию: «Главная», звенья из видимых крошек ST340 и имя товара из заголовка. На самой витрине скрипт ничего не делает. Новые товары покрываются без правок.</p>
+      <span class="lbl">Зачем</span>
+      <p>У карточки Каталога нет своего HEAD, а Тильда копирует HEAD витрины на все её карточки. Поэтому один скрипт вместо списка товаров: Яндекс и Google видят путь «Главная / Лицензии 1С / товар», как гость видит его над заголовком.</p>
+      <span class="lbl">Как в Тильде (для новой витрины)</span>
+      <ol class="steps">
+        <li>Открыть страницу витрины → шестерёнка «Настройки страницы» → <strong>Дополнительно</strong> (или «Вставка кода»).</li>
+        <li>Поле «HTML-код для вставки внутрь HEAD» → курсор <strong>в самый конец</strong>, ничего не стирать.</li>
+        <li>Вставить код ниже как есть → <strong>Сохранить</strong> → <strong>Опубликовать</strong> страницу витрины.</li>
+        <li>У карточек включить крошки: блок ST340 → вкладка «Хлебные крошки» → «Над заголовком».</li>
+      </ol>
+      <div class="copybox"><pre id="c-d-script">&lt;script&gt;
+(function () {
+  if (!/\/tproduct\//.test(location.pathname || "")) return;
+  if (document.getElementById("alsn-bc-jsonld")) return;
+
+  function txt(el) {
+    return (el &amp;&amp; (el.textContent || "")).replace(/\s+/g, " ").trim();
+  }
+  function abs(href) {
+    try { return new URL(href, location.origin).href.split("?")[0]; } catch (e) { return href; }
+  }
+  function pageUrl() {
+    var c = document.querySelector('link[rel="canonical"]');
+    var u = (c &amp;&amp; c.href) || (location.origin + location.pathname);
+    return u.split("?")[0];
+  }
+  function productName() {
+    return txt(document.querySelector("h1")) ||
+      txt(document.querySelector('[itemprop="name"]')) ||
+      txt(document.querySelector(".js-store-prod-name, .t-store__prod-popup__name")) ||
+      (document.title || "").split("|")[0].trim();
+  }
+  function catalogUrl() {
+    var p = (location.pathname || "").replace(/\/tproduct\/.*$/, "") || "/";
+    if (p.length &gt; 1 &amp;&amp; p.charAt(p.length - 1) === "/") p = p.slice(0, -1);
+    return location.origin + p;
+  }
+  function visCrumbs() {
+    var root = document.querySelector(".t-catalog__breadcrumbs");
+    if (!root) return [];
+    var nodes = root.querySelectorAll("a, span");
+    var out = [];
+    for (var i = 0; i &lt; nodes.length; i++) {
+      var el = nodes[i];
+      var name = txt(el);
+      if (!name) continue;
+      var href = el.tagName === "A" ? el.getAttribute("href") : "";
+      out.push({ name: name, item: href ? abs(href) : "" });
+    }
+    return out;
+  }
+  function build() {
+    if (document.getElementById("alsn-bc-jsonld")) return true;
+    var name = productName();
+    if (!name) return false;
+    var vis = visCrumbs();
+    var list = [{ name: "Главная", item: location.origin + "/" }];
+    var seen = { "Главная": true };
+    var i, row;
+    for (i = 0; i &lt; vis.length; i++) {
+      row = vis[i];
+      if (!row.name || seen[row.name]) continue;
+      seen[row.name] = true;
+      list.push(row);
+    }
+    if (list.length === 1) {
+      list.push({ name: "Каталог", item: catalogUrl() });
+    }
+    if (list[1] &amp;&amp; !list[1].item) list[1].item = catalogUrl();
+    if (list[list.length - 1].name !== name) {
+      list.push({ name: name, item: pageUrl() });
+    } else {
+      list[list.length - 1].item = pageUrl();
+    }
+    var els = [];
+    for (i = 0; i &lt; list.length; i++) {
+      els.push({ "@type": "ListItem", position: i + 1, name: list[i].name, item: list[i].item });
+    }
+    var s = document.createElement("script");
+    s.type = "application/ld+json";
+    s.id = "alsn-bc-jsonld";
+    s.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": pageUrl() + "#breadcrumb",
+      itemListElement: els
+    });
+    document.head.appendChild(s);
+    return true;
+  }
+  function start() {
+    var n = 0;
+    function tick() {
+      n++;
+      var hasNav = !!document.querySelector(".t-catalog__breadcrumbs");
+      var hasName = !!productName();
+      if ((hasNav &amp;&amp; hasName) || n &gt; 40) {
+        build();
+        return;
+      }
+      setTimeout(tick, 250);
+    }
+    tick();
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
+})();
+&lt;/script&gt;</pre><button type="button" data-copy="c-d-script">Копировать</button></div>
+      <p class="muted">Код сверен с живым HEAD витрины 29.09.2026: на карточках 5, 10, 20 мест и сервер x86-64 появляется <code>script#alsn-bc-jsonld</code>. Не класть этот код в поле «Текст» карточки, во вкладку SEO товара и в HEAD сайта.</p>
+    </section>
+
+    <section class="task">
+      <h2>Уже сделано - не трогать</h2>
+      <p>HEAD сайта (Organization / WebSite / site_name). Скрипт D в HEAD витрины. H1 товаров. Крошки ST340. Telegram-бот. robots.txt. Коробочные 5/10/20 и сервер МИНИ. <code>/bitrix24</code>. FAQ. Второй <code>og:site_name</code> на страницах.</p>
+      <ul>
+        <li>T1 и T2 лицензий (витрины, 4 карточки, OG, WebPage хаба, скрипт D) - проверено на сайте 29.09.2026</li>
+        <li>Подписи картинок 25 карточек Каталога (17.09.2026) - проверено на сайте 29.09.2026</li>
+        <li>SEO-заголовки 17 карточек и дубли title/description - закрыто 29.09.2026</li>
+      </ul>
+    </section>
+
+    <section class="task" id="skip">
+      <h2>Не делать</h2>
+      <table>
+        <tr><th>Пункт</th><th>Почему</th></tr>
+        <tr><td>Скрипт / JSON-LD в поле «Текст» карточки</td><td>Тильда показывает гостю как абзац</td></tr>
+        <tr><td>Twitter, Bing, robots.txt</td><td>Ограничения проекта</td></tr>
+        <tr><td>Четыре новые посадочные вместо tproduct</td><td>Сменит URL, снимет авторазметку товара</td></tr>
+        <tr><td>Блок «5 место ЦРА» на <code>/1cfresh</code></td><td>Не этот тир; канон ЦРА — ТОП 10</td></tr>
+      </table>
+    </section>
+
+    <p class="muted">Файл: <code>seo-data/tilda-briefs/tier1-tier2-licenzii-ostatok-2026-09-15.html</code> - образец оформления и эталон пункта D, не очередь задач.</p>
+  </div>
+  <script>
+    document.querySelectorAll('[data-copy]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var el = document.getElementById(btn.getAttribute('data-copy'));
+        if (!el) return;
+        navigator.clipboard.writeText(el.innerText).then(function () {
+          var t = btn.textContent;
+          btn.textContent = 'Скопировано';
+          btn.parentElement.classList.add('ok');
+          setTimeout(function () { btn.textContent = t; btn.parentElement.classList.remove('ok'); }, 1500);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

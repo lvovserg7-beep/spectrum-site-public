@@ -1,0 +1,12 @@
+{
+  "name": "alsn-seo-snapshots",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "apache-arrow": "^18.1.0",
+    "parquet-wasm": "^0.6.1"
+  }
+}

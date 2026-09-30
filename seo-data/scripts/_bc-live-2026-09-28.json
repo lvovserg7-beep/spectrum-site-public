@@ -1,0 +1,660 @@
+[
+  {
+    "path": "/",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/development1c",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Внедрение 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Внед",
+    "last_vis": "Внедрение 1С",
+    "last_ld": "Внедрение 1С",
+    "name_match": true
+  },
+  {
+    "path": "/kompleksnaya_avtomatizaciya",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Внедрение 1С",
+      "1С:Комплексная автоматизация"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Внед",
+    "last_vis": "1С:Комплексная автоматизация",
+    "last_ld": "1С:Комплексная автоматизация",
+    "name_match": true
+  },
+  {
+    "path": "/erp-time-price",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Внедрение 1С",
+      "Стоимость 1С:ERP"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> / Внед",
+    "last_vis": "Стоимость 1С:ERP",
+    "last_ld": "Стоимость 1С:ERP",
+    "name_match": true
+  },
+  {
+    "path": "/casemarketplace",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Модуль 1С для маркетплейсов"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Моду",
+    "last_vis": "Модуль 1С для маркетплейсов",
+    "last_ld": "Модуль 1С для маркетплейсов",
+    "name_match": true
+  },
+  {
+    "path": "/ecom",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Интеграция с поставщиками",
+    "last_ld": "Интеграция с поставщиками",
+    "name_match": true
+  },
+  {
+    "path": "/support1c",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Техподдержка 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> / Техп",
+    "last_vis": "Техподдержка 1С",
+    "last_ld": "Техподдержка 1С",
+    "name_match": true
+  },
+  {
+    "path": "/its",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:КП"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:К",
+    "last_vis": "1С:КП",
+    "last_ld": "1С:КП",
+    "name_match": true
+  },
+  {
+    "path": "/1cfresh",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:Фреш"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:Ф",
+    "last_vis": "1С:Фреш",
+    "last_ld": "1С:Фреш",
+    "name_match": true
+  },
+  {
+    "path": "/dopolnitelnie_licenzii",
+    "style": "OTHER",
+    "bc_blocks": 2,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Лицензии 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#666;padding:8px 20px 0;\"> Главная → Лицензии 1С",
+    "last_vis": "Лицензии 1С",
+    "last_ld": "Лицензии 1С",
+    "name_match": true
+  },
+  {
+    "path": "/about_us",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "О компании"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / О ко",
+    "last_vis": "О компании",
+    "last_ld": "О компании",
+    "name_match": true
+  },
+  {
+    "path": "/contacts",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Контакты"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Конт",
+    "last_vis": "Контакты",
+    "last_ld": "Контакты",
+    "name_match": true
+  },
+  {
+    "path": "/vacancy",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Вакансии"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Вака",
+    "last_vis": "Вакансии",
+    "last_ld": "Вакансии",
+    "name_match": true
+  },
+  {
+    "path": "/cra",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "ЦРА"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / ЦРА",
+    "last_vis": "ЦРА",
+    "last_ld": "ЦРА",
+    "name_match": true
+  },
+  {
+    "path": "/clients",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Клиенты"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Клие",
+    "last_vis": "Клиенты",
+    "last_ld": "Клиенты",
+    "name_match": true
+  },
+  {
+    "path": "/publication",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/telegram1c",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Telegram-бот 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Tele",
+    "last_vis": "Telegram-бот 1С",
+    "last_ld": "Telegram-бот 1С",
+    "name_match": true
+  },
+  {
+    "path": "/bitrix24",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Битрикс24"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Битр",
+    "last_vis": "Битрикс24",
+    "last_ld": "Битрикс24",
+    "name_match": true
+  },
+  {
+    "path": "/etm-ipro",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "ЭТМ iPRO"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "ЭТМ iPRO",
+    "last_ld": "ЭТМ iPRO",
+    "name_match": true
+  },
+  {
+    "path": "/merlion",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "Мерлион"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Мерлион",
+    "last_ld": "Мерлион",
+    "name_match": true
+  },
+  {
+    "path": "/ocs",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "OCS"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "OCS",
+    "last_ld": "OCS",
+    "name_match": true
+  },
+  {
+    "path": "/marvel",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "Марвел"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Марвел",
+    "last_ld": "Марвел",
+    "name_match": true
+  },
+  {
+    "path": "/treolan",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "Treolan"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Treolan",
+    "last_ld": "Treolan",
+    "name_match": true
+  },
+  {
+    "path": "/3logic",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с поставщиками",
+      "3logic"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "3logic",
+    "last_ld": "3logic",
+    "name_match": true
+  },
+  {
+    "path": "/caseecomsc",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:wrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейсы ",
+    "last_vis": "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»",
+    "last_ld": "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»",
+    "name_match": true
+  },
+  {
+    "path": "/xitsadmarketplace",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:wrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейсы ",
+    "last_vis": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+    "last_ld": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+    "name_match": true
+  },
+  {
+    "path": "/cases",
+    "style": "CANON",
+    "bc_blocks": 2,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Интеграция 1С с поставщиками — ООО «СЦ»",
+      "Главная",
+      "Кейсы"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейс",
+    "last_vis": "Кейсы",
+    "last_ld": "Кейсы",
+    "name_match": true
+  },
+  {
+    "path": "/products",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Продукты"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Прод",
+    "last_vis": "Продукты",
+    "last_ld": "Продукты",
+    "name_match": true
+  },
+  {
+    "path": "/1cbitrix",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция Битрикс24 и 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Интеграция Битрикс24 и 1С",
+    "last_ld": "Интеграция Битрикс24 и 1С",
+    "name_match": true
+  },
+  {
+    "path": "/buhv8",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:Бухгалтерия"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:Б",
+    "last_vis": "1С:Бухгалтерия",
+    "last_ld": "1С:Бухгалтерия",
+    "name_match": true
+  },
+  {
+    "path": "/zup8",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:ЗУП"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:З",
+    "last_vis": "1С:ЗУП",
+    "last_ld": "1С:ЗУП",
+    "name_match": true
+  },
+  {
+    "path": "/upt8",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:УТ"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:У",
+    "last_vis": "1С:УТ",
+    "last_ld": "1С:УТ",
+    "name_match": true
+  },
+  {
+    "path": "/upravlenie_nashei_firmoi",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:УНФ"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:У",
+    "last_vis": "1С:УНФ",
+    "last_ld": "1С:УНФ",
+    "name_match": true
+  },
+  {
+    "path": "/dokumentooborot8",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "1С:Документооборот"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / 1С:Д",
+    "last_vis": "1С:Документооборот",
+    "last_ld": "1С:Документооборот",
+    "name_match": true
+  },
+  {
+    "path": "/perehod-s-upp-na-ka-unf-ut",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Внедрение 1С",
+      "Переход с УПП"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Внед",
+    "last_vis": "Переход с УПП",
+    "last_ld": "Переход с УПП",
+    "name_match": true
+  },
+  {
+    "path": "/integrationsite",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с сайтом"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Интеграция с сайтом",
+    "last_ld": "Интеграция с сайтом",
+    "name_match": true
+  },
+  {
+    "path": "/integrationeco",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Интеграция с экосистемой"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Инте",
+    "last_vis": "Интеграция с экосистемой",
+    "last_ld": "Интеграция с экосистемой",
+    "name_match": true
+  },
+  {
+    "path": "/blog",
+    "style": "NONE",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/internship",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Стажировка"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Стаж",
+    "last_vis": "Стажировка",
+    "last_ld": "Стажировка",
+    "name_match": true
+  },
+  {
+    "path": "/persons",
+    "style": "CANON",
+    "bc_blocks": 0,
+    "bc_ok": true,
+    "bc_names": [],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кома",
+    "last_vis": "Команда",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/review",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Отзывы"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Отзы",
+    "last_vis": "Отзывы",
+    "last_ld": "Отзывы",
+    "name_match": true
+  },
+  {
+    "path": "/outsorce_vs_inhouse",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Аутсорс или штат"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Аутс",
+    "last_vis": "Аутсорс или штат",
+    "last_ld": "Аутсорс или штат",
+    "name_match": true
+  },
+  {
+    "path": "/store",
+    "style": "ERR",
+    "bc_blocks": 0,
+    "bc_ok": false,
+    "bc_names": [],
+    "crumb": "HTTP Error 404: Not Found",
+    "last_vis": "",
+    "last_ld": "",
+    "name_match": false
+  },
+  {
+    "path": "/amo_crm",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "amoCRM"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / amoC",
+    "last_vis": "amoCRM",
+    "last_ld": "amoCRM",
+    "name_match": true
+  },
+  {
+    "path": "/whatsapp",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "WhatsApp-бот 1С"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / What",
+    "last_vis": "WhatsApp-бот 1С",
+    "last_ld": "WhatsApp-бот 1С",
+    "name_match": true
+  },
+  {
+    "path": "/crmfurniture",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "CRM для мебели"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / CRM ",
+    "last_vis": "CRM для мебели",
+    "last_ld": "CRM для мебели",
+    "name_match": true
+  },
+  {
+    "path": "/constr",
+    "style": "CANON",
+    "bc_blocks": 1,
+    "bc_ok": true,
+    "bc_names": [
+      "Главная",
+      "Кейсы",
+      "Allsun для строителей"
+    ],
+    "crumb": "aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> / Кейс",
+    "last_vis": "Allsun для строителей",
+    "last_ld": "Allsun для строителей",
+    "name_match": true
+  }
+]

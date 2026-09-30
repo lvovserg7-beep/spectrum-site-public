@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Тильда — как поставить Alt у картинки — 11.09.2026</title>
+  <style>
+    :root {
+      --bg: #f4f3ef; --card: #fff; --text: #1a1a1a; --muted: #5c5c5c;
+      --border: #e2e2de; --ok: #1a7f4b; --ok-bg: #e8f6ee; --info: #0b6e99;
+      --info-bg: #e8f4fa; --warn: #9a6700; --warn-bg: #fff6e0; --code: #0f172a;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: var(--bg); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 18px 72px; }
+    h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    p { margin: 0 0 8px; }
+    a { color: #0b5cad; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .callout { border-radius: 10px; padding: 12px 14px; margin: 12px 0 18px; border: 1px solid var(--border); background: var(--card); font-size: 14px; }
+    .callout.info { background: var(--info-bg); border-color: #bddceb; }
+    .callout.warn { background: var(--warn-bg); border-color: #f0dfa0; }
+    .toc { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; margin: 0 0 20px; }
+    .toc ol { margin: 6px 0 0; padding-left: 22px; }
+    .toc a { text-decoration: none; }
+    .task { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px 18px; margin: 0 0 18px; }
+    .task .num { display: inline-block; background: #111; color: #fff; border-radius: 999px; font-size: 12px; font-weight: 700; padding: 2px 10px; margin-right: 6px; }
+    .lbl { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 14px 0 4px; }
+    .lbl:first-of-type { margin-top: 8px; }
+    ol.steps { margin: 4px 0 0; padding-left: 22px; }
+    ol.steps > li { margin: 6px 0; }
+    .path { font-family: ui-monospace, Consolas, monospace; font-size: 12.5px; background: #111; color: #f5f5f4; border-radius: 8px; padding: 8px 10px; margin: 6px 0 8px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 6px 0 0; background: #fff; }
+    th, td { border: 1px solid var(--border); padding: 7px 9px; text-align: left; vertical-align: top; }
+    th { background: #fafaf8; font-weight: 650; }
+    .refs { font-size: 13px; margin-top: 8px; }
+    .refs li { margin: 3px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Как в Тильде поставить Alt у картинки</h1>
+    <p class="muted">Дата: 11.09.2026. По официальной справке Тильды. Для страницы модуля: <a href="https://alsn.ru/casemarketplace">/casemarketplace</a> (задача T2-4).</p>
+
+    <div class="callout info">
+      <strong>Простыми словами.</strong> Alt — короткая подпись к картинке. Её не видно на красивой странице, но она нужна, если картинка не загрузилась, и её читают программы для незрячих и поисковики. В Тильде Alt <strong>не</strong> пишут в HTML-коде страницы вручную — его задают в настройках картинки в блоке.
+    </div>
+
+    <div class="toc">
+      <strong>Содержание</strong>
+      <ol>
+        <li><a href="#what">Что такое Alt</a></li>
+        <li><a href="#a">Способ A — обычные блоки (основной)</a></li>
+        <li><a href="#b">Способ B — галереи</a></li>
+        <li><a href="#c">Способ C — Zero Block</a></li>
+        <li><a href="#rules">Как писать текст</a></li>
+        <li><a href="#casemarketplace">Готовые тексты для /casemarketplace</a></li>
+        <li><a href="#skip">Когда Alt не ставят</a></li>
+      </ol>
+    </div>
+
+    <section class="task" id="what">
+      <h2><span class="num">0</span> Что такое Alt</h2>
+      <span class="lbl">Что сделать</span>
+      <p>Понять, куда в Тильде вписывается подпись к картинке.</p>
+      <span class="lbl">Зачем</span>
+      <p>Чтобы не искать поле «в коде сайта» — его там править не нужно.</p>
+      <span class="lbl">Как устроено</span>
+      <ol class="steps">
+        <li>Открываете страницу в редакторе Тильды.</li>
+        <li>Открываете <strong>Контент</strong> нужного блока (не «Настройки сайта»).</li>
+        <li>Находите нужную картинку в списке загрузок блока.</li>
+        <li>В зависимости от типа блока — многоточие, ссылка «Текст» или поле ALT в Zero Block (ниже три способа).</li>
+        <li>В конце: <strong>Сохранить</strong> страницу → <strong>Опубликовать</strong>.</li>
+      </ol>
+    </section>
+
+    <section class="task" id="a">
+      <h2><span class="num">A</span> Обычные блоки — «Контент» → многоточие</h2>
+      <span class="lbl">Что сделать</span>
+      <p>Прописать Alt для картинки в обычном блоке с фото/иллюстрацией (не галерея и не Zero).</p>
+      <span class="lbl">Зачем</span>
+      <p>Так устроены большинство блоков на лендинге модуля.</p>
+      <span class="lbl">Как в Тильде</span>
+      <ol class="steps">
+        <li>Список страниц → нужная страница → <strong>карандаш</strong> (редактор).</li>
+        <li>Наведите на блок с картинкой → кнопка <strong>«Контент»</strong> (иногда иконка текста / Content).</li>
+        <li>В окне контента найдите загруженное изображение (превью / имя файла).</li>
+        <li>Напротив картинки нажмите знак <strong>многоточия «…»</strong>.</li>
+        <li>В появившемся поле <strong>«SEO: alt-текст для изображения»</strong> вставьте текст.</li>
+        <li>Закройте окно / подтвердите → вверху редактора <strong>Сохранить</strong> → <strong>Опубликовать</strong>.</li>
+      </ol>
+      <div class="path">Редактор → блок → Контент → … напротив картинки → «SEO: alt-текст для изображения» → Сохранить → Опубликовать</div>
+      <p class="refs">Источник: <a href="https://help-ru.tilda.cc/search-engine">Гид по SEO Тильды</a> · <a href="https://help-ru.tilda.cc/accessibility">Цифровая доступность</a></p>
+    </section>
+
+    <section class="task" id="b">
+      <h2><span class="num">B</span> Блоки «Галереи» — ссылка «Текст»</h2>
+      <span class="lbl">Что сделать</span>
+      <p>Прописать Alt для фото в блоке из категории «Галереи».</p>
+      <span class="lbl">Зачем</span>
+      <p>В галереях другое меню: многоточия может не быть, вместо него — «Текст».</p>
+      <span class="lbl">Как в Тильде</span>
+      <ol class="steps">
+        <li>Редактор → блок галереи → <strong>«Контент»</strong>.</li>
+        <li>Напротив нужной картинки нажмите ссылку <strong>«Текст»</strong>.</li>
+        <li>В поле <strong>Image alt for SEO</strong> (alt-текст для SEO) впишите описание.</li>
+        <li>При необходимости заполните заголовок/описание слайда — это <strong>не</strong> то же самое, что Alt (заголовок может показываться на экране).</li>
+        <li><strong>Сохранить</strong> → <strong>Опубликовать</strong>.</li>
+      </ol>
+      <div class="path">Контент галереи → Текст → Image alt for SEO → Сохранить → Опубликовать</div>
+      <p class="refs">Источник: <a href="https://help-ru.tilda.cc/search-engine">Гид по SEO</a> · <a href="https://help-ru.tilda.cc/gallery">Галереи</a></p>
+    </section>
+
+    <section class="task" id="c">
+      <h2><span class="num">C</span> Zero Block — поле ALT у элемента</h2>
+      <span class="lbl">Что сделать</span>
+      <p>Прописать Alt у картинки внутри Zero Block.</p>
+      <span class="lbl">Зачем</span>
+      <p>В Zero картинки — отдельные элементы; путь через «Контент → …» часто не подходит.</p>
+      <span class="lbl">Как в Тильде</span>
+      <ol class="steps">
+        <li>Редактор → блок Zero → войти в редактирование Zero (двойной клик / «Редактировать Zero»).</li>
+        <li>Кликните по нужному изображению на холсте.</li>
+        <li>Справа в панели настроек элемента найдите поле <strong>ALT</strong> / альтернативный текст.</li>
+        <li>Вставьте текст → сохраните Zero → сохраните страницу → <strong>Опубликовать</strong>.</li>
+      </ol>
+      <div class="path">Zero Block → клик по картинке → панель справа → ALT → Сохранить → Опубликовать</div>
+      <p class="refs">Источник: <a href="https://blog.tilda.cc/tpost/718d5y1m71-zachem-izobrazheniyam-nuzhen-alt-tekst">Блог Тильды про alt</a> · <a href="https://help-ru.tilda.cc/zero">Zero Block</a></p>
+    </section>
+
+    <section class="task" id="rules">
+      <h2><span class="num">!</span> Как писать текст в Alt</h2>
+      <span class="lbl">Что сделать</span>
+      <p>Писать коротко и по сути картинки.</p>
+      <span class="lbl">Зачем</span>
+      <p>Длинный набор ключей поисковики могут воспринять как спам; пустой смысл бесполезен людям.</p>
+      <span class="lbl">Правила (по Тильде)</span>
+      <ol class="steps">
+        <li>Опишите, <strong>что на картинке</strong>, своими словами — как будто рассказываете по телефону.</li>
+        <li>Рекомендуемая длина — до <strong>~125 символов</strong>.</li>
+        <li>Не начинайте со слов «картинка», «изображение», «фото».</li>
+        <li>Не набивайте ключи подряд.</li>
+        <li>Текст должен совпадать с темой страницы (для модуля — 1С, Ozon, Wildberries, функции модуля).</li>
+      </ol>
+      <table>
+        <tr><th>Плохо</th><th>Нормально</th></tr>
+        <tr><td>картинка</td><td>Модуль интеграции 1С с Ozon и Wildberries</td></tr>
+        <tr><td>1с озон вайлдберриз модуль купить цена</td><td>Юнит-экономика и маржа Ozon и Wildberries в 1С</td></tr>
+      </table>
+      <p class="refs">Источник: <a href="https://blog.tilda.cc/tpost/718d5y1m71-zachem-izobrazheniyam-nuzhen-alt-tekst">Блог Тильды</a> · <a href="https://help-ru.tilda.cc/accessibility">Доступность</a></p>
+    </section>
+
+    <section class="task" id="casemarketplace">
+      <h2><span class="num">T2-4</span> Готовые Alt для /casemarketplace</h2>
+      <span class="lbl">Что сделать</span>
+      <p>Для каждой смысловой картинки на странице модуля вставить текст из таблицы способом A (или B/C, если блок другой).</p>
+      <span class="lbl">Зачем</span>
+      <p>Сейчас у большинства картинок модуля Alt пустой.</p>
+      <span class="lbl">Что куда</span>
+      <table>
+        <tr><th>Где на странице</th><th>Вставить в Alt</th></tr>
+        <tr><td>Логотип в шапке</td><td>Аллсан</td></tr>
+        <tr><td>Картинка у главного заголовка</td><td>Модуль интеграции 1С с Ozon и Wildberries</td></tr>
+        <tr><td>«Расчёт потребностей по кластерам»</td><td>Расчёт потребностей по кластерам Ozon и Wildberries в 1С</td></tr>
+        <tr><td>«Расчёт маржи и юнит-экономики»</td><td>Юнит-экономика и маржа Ozon и Wildberries в 1С</td></tr>
+        <tr><td>«Ежедневный расчет ДРР»</td><td>Расчёт ДРР Ozon в модуле 1С Аллсан</td></tr>
+        <tr><td>«Автоответы на отзывы»</td><td>Автоответы на отзывы маркетплейсов из 1С</td></tr>
+        <tr><td>«Прогноз закупок»</td><td>Прогноз закупок для поставок на Ozon и Wildberries</td></tr>
+        <tr><td>«Кастомизация штрихкодов»</td><td>Штрихкоды товаров для Ozon и Wildberries из 1С</td></tr>
+        <tr><td>«Наши клиенты» (общий футер всех страниц)</td><td>Клиенты Аллсан</td></tr>
+        <tr><td>Логотип в подвале</td><td>Уже «Аллсан Интеграция» — не менять</td></tr>
+      </table>
+    </section>
+
+    <section class="task" id="skip">
+      <h2>Когда Alt не ставят</h2>
+      <table>
+        <tr><th>Случай</th><th>Что делать</th></tr>
+        <tr><td>Картинка — <strong>фон</strong> блока</td><td>Alt не задаётся (так пишет справка Тильды)</td></tr>
+        <tr><td>Декоративная иконка / разделитель без смысла</td><td>Оставить пустым</td></tr>
+        <tr><td>Счётчики, служебные картинки</td><td>Не трогать</td></tr>
+      </table>
+    </section>
+
+    <p class="muted">Файл: <code>seo-data/tilda-briefs/tilda-how-to-alt-2026-09-11.html</code>. На alsn.ru не заливать.</p>
+  </div>
+</body>
+</html>

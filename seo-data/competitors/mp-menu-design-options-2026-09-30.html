@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Верхнее меню alsn.ru: варианты оформления, 30.09.2026</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F8FA;--acc:#F55823;--ink:#212121;--line:#D7DADD;--soft:#FDE7DE;--mut:#6b7075}
+*{box-sizing:border-box}
+body{margin:0;font-family:Onest,system-ui,sans-serif;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}
+.in{max-width:1240px;margin:0 auto;padding:0 28px}
+.demo-note{background:var(--bg);border-bottom:1px solid var(--line);font-size:13px;color:var(--mut);padding:8px 0}
+.demo-note b{color:var(--ink)}
+.page{padding:28px 0 120px}
+.crumbs{font-size:14px;color:#8a8a8a;display:flex;gap:8px;align-items:center;margin-bottom:34px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:22px}
+.rails{display:flex;flex-direction:column;gap:4px}.rails i{display:block;height:2px;width:22px;background:var(--acc);border-radius:2px}
+.page h1{font-size:68px;line-height:1.02;font-weight:800;letter-spacing:-.03em;margin:0 0 22px;max-width:900px}
+.page h1 span{color:var(--acc)}
+.page .lead{font-size:20px;line-height:1.5;color:#3d4247;max-width:720px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:15px;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
+.btn.m{background:var(--acc);color:#fff}
+.btn.m:hover{background:#e04c1a}
+@media(max-width:1000px){.in{padding:0 18px}.page h1{font-size:44px}}
+
+.w{max-width:1040px;margin:0 auto;padding:40px 28px 80px}
+h1{font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 10px}
+.sub{font-size:18px;color:var(--mut);margin:0 0 30px}
+.g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.c{border:1px solid var(--line);border-radius:22px;padding:26px;background:#fff;display:flex;flex-direction:column;gap:10px}
+.c .k{font-family:monospace;color:var(--acc);font-size:14px}
+.c h2{margin:0;font-size:24px}
+.c ul{margin:0;padding-left:18px;color:#3d4247;line-height:1.6}
+.c .btn{align-self:flex-start;margin-top:8px}
+.box{margin-top:28px;background:var(--bg);border-radius:22px;padding:24px 26px;line-height:1.6;color:#3d4247}
+.box b{color:var(--ink)}
+@media(max-width:800px){.g{grid-template-columns:minmax(0,1fr)}}
+</style></head><body><div class="w">
+<h1>Верхнее меню кодом: два варианта</h1>
+<p class="sub">Структура одна и та же: Услуги, Продукты, Лицензии, Наш опыт, О компании, до третьего уровня. Отличается только подача.</p>
+<div class="g">
+<div class="c"><span class="k">A</span><h2>Светлая шапка и мега-панель</h2>
+<ul><li>Белая полоса в тон страницам v3, логотип с тёмным текстом.</li>
+<li>По наведению раскрывается широкая панель: 2-й уровень заголовками с описанием, 3-й уровень ссылками, справа карточка с предложением раздела.</li>
+<li>Все пункты раздела видны сразу, не надо вести мышь по цепочке.</li>
+<li>Затемнение страницы под панелью, ссылка «Все услуги» внизу панели.</li></ul>
+<a class="btn m" href="screens/preview-menu-v3-a.html">Открыть вариант A</a></div>
+<div class="c"><span class="k">B</span><h2>Тёмная шапка и каскадные списки</h2>
+<ul><li>Чёрная полоса, как на сайте сейчас: привычно для постоянных клиентов.</li>
+<li>Белые карточки-списки со скруглением 18 px, 3-й уровень выезжает вправо.</li>
+<li>Компактнее, но до 3-го уровня нужно вести мышь по цепочке.</li></ul>
+<a class="btn m" href="screens/preview-menu-v3-b.html">Открыть вариант B</a></div>
+</div>
+<div class="box"><b>Как это встанет в Тильду.</b> Шапка - один блок T123 на странице Header (вместо текущего T228, его выключаем, не удаляем).
+Стили с префиксом, чтобы не задеть страницы. Поиск открывает стандартный поиск Тильды, кнопка «Получить консультацию» - существующую всплывающую форму.
+На телефоне своя кнопка меню и раскрывающиеся списки. Перед боевой шапкой - проверка на копии Header.<br><br>
+<b>Мой выбор - A.</b> Он продолжает дизайн новых страниц, третий уровень в нём виден без «охоты» мышью, а карточка справа продаёт главный продукт раздела.</div>
+</div></body></html>

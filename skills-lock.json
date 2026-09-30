@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "indexlift-seo-auditor": {
+      "source": "Horosheff/google-yandex-seo-skill",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/indexlift-seo-auditor/SKILL.md",
+      "computedHash": "f78c0e47b238cd7f22268b7c009975d143270c15fffcee77a93f692bf4e0e36b"
+    }
+  }
+}

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Поиск фотоконтента для главной — Битрикс / Аспро — 17.09.2026</title>
+  <style>
+    :root {
+      --bg: #f4f3ef;
+      --card: #fff;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e2e2de;
+      --ok: #1a7f4b;
+      --ok-bg: #e8f6ee;
+      --warn: #9a6700;
+      --warn-bg: #fff6e0;
+      --danger: #b42318;
+      --danger-bg: #fdecea;
+      --info: #0b6e99;
+      --info-bg: #e8f4fa;
+      --code: #0f172a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 18px 72px; }
+    h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    p { margin: 0 0 8px; }
+    a { color: #0b5cad; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 650;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+    .pill.ok { color: var(--ok); background: var(--ok-bg); border-color: #c6e6d3; }
+    .pill.warn { color: var(--warn); background: var(--warn-bg); border-color: #f0dfa0; }
+    .pill.danger { color: var(--danger); background: var(--danger-bg); border-color: #f5c2c0; }
+    .pill.info { color: var(--info); background: var(--info-bg); border-color: #bddceb; }
+    .callout {
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 12px 0 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      font-size: 14px;
+    }
+    .callout.danger { background: var(--danger-bg); border-color: #f5c2c0; }
+    .callout.warn { background: var(--warn-bg); border-color: #f0dfa0; }
+    .callout.info { background: var(--info-bg); border-color: #bddceb; }
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 0 0 20px;
+    }
+    .toc ol { margin: 6px 0 0; padding-left: 22px; }
+    .toc li { margin: 3px 0; }
+    .toc a { text-decoration: none; }
+    .task {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px 18px;
+      margin: 0 0 18px;
+    }
+    .task .num {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 10px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .lbl {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 14px 0 4px;
+    }
+    .lbl:first-of-type { margin-top: 8px; }
+    ol.steps { margin: 4px 0 0; padding-left: 22px; }
+    ol.steps > li { margin: 6px 0; }
+    .path {
+      font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+      font-size: 12.5px;
+      background: #111;
+      color: #f5f5f4;
+      border-radius: 8px;
+      padding: 8px 10px;
+      margin: 6px 0 8px;
+      overflow-x: auto;
+    }
+    .copybox { position: relative; margin: 6px 0 10px; }
+    .copybox pre {
+      margin: 0;
+      background: var(--code);
+      color: #e5e7eb;
+      border-radius: 10px;
+      padding: 12px 12px 40px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font: 13px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace;
+    }
+    .copybox button {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    .copybox button:hover { background: #f3f4f6; }
+    .copybox.ok button { background: var(--ok-bg); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      margin: 6px 0 0;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 7px 9px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #fafaf8; font-weight: 650; }
+    ul.tight { margin: 4px 0 0; padding-left: 18px; }
+    ul.tight li { margin: 3px 0; }
+    @media print {
+      body { background: #fff; }
+      .copybox button { display: none; }
+      .task, .toc, .callout { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Поиск фотоконтента для главной</h1>
+    <p class="muted">
+      Новый сайт: Битрикс + «Аспро: Приорити 2.0» · дата: 17.09.2026 ·
+      не Тильда, не правки alsn.ru
+    </p>
+    <div class="pills">
+      <span class="pill info">Битрикс / Аспро</span>
+      <span class="pill">главная</span>
+      <span class="pill ok">Excel + ТЗ + iqdev1.ru</span>
+      <span class="pill warn">сток «офис» — нет</span>
+      <span class="pill danger">Telegram-бот на баннерах — нет</span>
+    </div>
+
+    <div class="callout info">
+      <strong>Зачем этот файл.</strong> По фотоархиву Аллсан отобрать кадры под слоты главной,
+      чтобы они подходили к блокам шаблона
+      <a href="https://iqdev1.ru/" target="_blank" rel="noopener">iqdev1.ru</a>
+      и к ТЗ дизайна (реальные люди и интерфейсы, без стока «люди в офисе»).
+    </div>
+
+    <div class="callout warn">
+      <strong>Источники требований:</strong>
+      лист «Запрос на фотоконтент» в Excel ответов;
+      ТЗ дизайна главной;
+      замеры демо Аспро 17.09.2026;
+      стиль «Контур управления».
+      На демо шаблона часто lifestyle-сток - <strong>форму слота копируем, смысл фото - нет</strong>.
+    </div>
+
+    <div class="toc">
+      <strong>Задачи</strong>
+      <ol>
+        <li><a href="#rules">Правила отбора (прочитать до поиска)</a></li>
+        <li><a href="#sizes">Размеры слотов как в шаблоне</a></li>
+        <li><a href="#f1">F1. Первый экран - 3 баннера</a></li>
+        <li><a href="#f2">F2. Кейсы - обложки</a></li>
+        <li><a href="#f3">F3. О компании - 3 кадра</a></li>
+        <li><a href="#f4">F4. Сотрудники</a></li>
+        <li><a href="#f5">F5. Статьи / СМИ</a></li>
+        <li><a href="#f6">F6. Фон формы</a></li>
+        <li><a href="#extra">Дополнительно: лицензии и видео</a></li>
+        <li><a href="#checklist">Чеклист и сдача папки</a></li>
+      </ol>
+    </div>
+
+    <!-- ========== RULES ========== -->
+    <div class="task" id="rules">
+      <h2><span class="num">0</span> Правила отбора</h2>
+
+      <span class="lbl">Что сделать</span>
+      <p>Перед поиском зафиксировать приоритеты и запреты. Ими руководствоваться по всему архиву.</p>
+
+      <span class="lbl">Зачем</span>
+      <p>Чтобы не набрать красивый сток, который ТЗ прямо запрещает, и не отдать подрядчику чужие картинки с демо Аспро.</p>
+
+      <span class="lbl">Брать в первую очередь</span>
+      <ol class="steps">
+        <li>Реальные фото команды и сотрудников.</li>
+        <li>Реальные интерфейсы решений и модулей.</li>
+        <li>Скриншоты 1С.</li>
+        <li>Логотипы платформ (1С, Ozon, Wildberries, Битрикс24) - только официальные файлы.</li>
+        <li>Своя IT-графика и схемы (брендборд, концепты).</li>
+        <li>Сток - только если своего нет, и не «люди в офисе с ноутбуком».</li>
+      </ol>
+
+      <span class="lbl">Не брать</span>
+      <ul class="tight">
+        <li>Сток: улыбчивые менеджеры, open space, рукопожатие, VR-очки.</li>
+        <li>AI-портреты, неон, киберпанк, фиолетовый glow.</li>
+        <li>Размытые и пережатые JPEG из мессенджеров.</li>
+        <li>Чужие лого клиентов без разрешения (исключение: Danaher - лого можно).</li>
+        <li>Любые картинки с сайта демо <a href="https://iqdev1.ru/" target="_blank" rel="noopener">iqdev1.ru</a>.</li>
+      </ul>
+
+      <span class="lbl">Имена файлов (копировать как шаблон)</span>
+      <div class="copybox">
+        <pre>hero-mp.jpg
+hero-b2b.jpg
+hero-services.jpg
+case-spektr.jpg
+case-b2b.jpg
+case-elektroprom.jpg
+case-danaher.jpg
+about-team-group.jpg
+about-work.jpg
+about-office-zel.jpg
+team-fio.jpg
+smi-indpages-cover.jpg
+smi-indpages-logo.png
+form-bg.jpg</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+    </div>
+
+    <!-- ========== SIZES ========== -->
+    <div class="task" id="sizes">
+      <h2><span class="num">0b</span> Размеры слотов как в шаблоне</h2>
+
+      <span class="lbl">Что сделать</span>
+      <p>Ориентироваться на эти размеры при отборе. Главный объект не у самого края - оставить 10-15% воздуха под кроп на телефоне.</p>
+
+      <span class="lbl">Зачем</span>
+      <p>Подрядчик натягивает сайт на Аспро. Если кадр квадратный вместо широкого - в блоке кейса он разъедется или обрежется.</p>
+
+      <span class="lbl">Сводная таблица (Excel + шаблон)</span>
+      <table>
+        <thead>
+          <tr>
+            <th>Слот</th>
+            <th>Сколько</th>
+            <th>Соотношение</th>
+            <th>Мин. исходник</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Баннеры первого экрана</td>
+            <td>3 (+запас)</td>
+            <td>~2:1</td>
+            <td>≥1920×900, лучше 2400×1170</td>
+          </tr>
+          <tr>
+            <td>Кейсы (обложки)</td>
+            <td>4</td>
+            <td>~3:1</td>
+            <td>≥1500×510, лучше 1800×612</td>
+          </tr>
+          <tr>
+            <td>О компании</td>
+            <td>3</td>
+            <td>~3:2 или 4:3</td>
+            <td>≥1600 по длинной стороне</td>
+          </tr>
+          <tr>
+            <td>Сотрудники</td>
+            <td>3–6</td>
+            <td>~3:4 или квадрат</td>
+            <td>≥1000×1300 или ≥1200×1200</td>
+          </tr>
+          <tr>
+            <td>СМИ / статьи</td>
+            <td>1+</td>
+            <td>~3:2</td>
+            <td>≥1200×800</td>
+          </tr>
+          <tr>
+            <td>Фон формы</td>
+            <td>1</td>
+            <td>~3:2</td>
+            <td>≥1440×960</td>
+          </tr>
+          <tr>
+            <td>Лицензии (обложки)</td>
+            <td>до 6</td>
+            <td>1:1</td>
+            <td>≥800×800</td>
+          </tr>
+          <tr>
+            <td>Обложки видеоотзывов</td>
+            <td>4</td>
+            <td>16:9</td>
+            <td>≥1280×720</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <span class="lbl">Как на демо iqdev1.ru (замер 17.09.2026)</span>
+      <ul class="tight">
+        <li>Большой баннер: фон ~1914×844, исходник часто <strong>1920×936</strong>. Текст слева - смысл кадра справа.</li>
+        <li>Кейсы / проекты: карточка ~1500×510 (~2.94).</li>
+        <li>Сотрудники: на экране ~375×512; исходник часто квадрат с кропом.</li>
+        <li>Фон формы: исходник демо 960×640.</li>
+        <li>Витрина товаров: квадрат 700–900.</li>
+      </ul>
+    </div>
+
+    <!-- ========== F1 ========== -->
+    <div class="task" id="f1">
+      <h2><span class="num">F1</span> Первый экран - 3 баннера</h2>
+
+      <span class="lbl">Что сделать</span>
+      <p>Найти или собрать 3 широких кадра под баннеры МП, B2B и услуги.</p>
+
+      <span class="lbl">Зачем</span>
+      <p>Это первый экран сайта. Посетитель за секунды должен увидеть маркетплейсы, телеком-поставщиков и внедрение/поддержку - без стоковых «консультантов».</p>
+
+      <span class="lbl">Как искать в фотобазе</span>
+      <ol class="steps">
+        <li>Открыть папки: модуль МП, B2B/поставщики, внедрение, офис, скрины 1С, бренд-графика.</li>
+        <li>Отобрать кадры с соотношением около 2:1 и шириной от 1920 px.</li>
+        <li>Проверить композицию: <strong>слева свободное поле</strong> под заголовок и кнопку, справа - смысл (экран, схема, сцена).</li>
+        <li>Сохранить под именами ниже.</li>
+      </ol>
+
+      <span class="lbl">Что искать по файлам</span>
+      <table>
+        <thead>
+          <tr><th>Имя файла</th><th>Тема</th><th>Что искать</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>hero-mp.jpg</code></td>
+            <td>Ozon + WB + 1С, юнит-экономика</td>
+            <td>Скрин модуля МП, рабочий стол 1С+МП, схема остатков/заказов, склад селлера без чужих лиц крупно</td>
+          </tr>
+          <tr>
+            <td><code>hero-b2b.jpg</code></td>
+            <td>Телеком/IT поставщики в 1С</td>
+            <td>Скрин обмена с ЛК, коммутаторы/серверное (наши), схема «ЛК → 1С»</td>
+          </tr>
+          <tr>
+            <td><code>hero-services.jpg</code></td>
+            <td>Внедрение и поддержка</td>
+            <td>Переговорка Аллсан, экран с 1С, руки своих сотрудников за работой</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <span class="lbl">Не искать</span>
+      <p>Сток-консультант, рукопожатие, VR-очки (как на демо шаблона).</p>
+
+      <span class="lbl">Если фото нет</span>
+      <p>Собрать баннер из скрина + фирменной графики (брендборд / концепты). Это допустимо по ТЗ.</p>
+
+      <span class="lbl">Имена файлов</span>
+      <div class="copybox">
+        <pre>hero-mp.jpg
+hero-b2b.jpg
+hero-services.jpg</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+    </div>
+
+    <!-- ========== F2 ========== -->
+    <div class="task" id="f2">
+      <h2><span class="num">F2</span> Кейсы - обложки</h2>
+
+      <span class="lbl">Что сделать</span>
+      <p>Подобрать 4 очень широких кадра (или лого + пометку «плашка») под кейсы Спектр, B2B, Электропром, Danaher.</p>
+
+      <span class="lbl">Зачем</span>
+      <p>В Аспро карточка проекта почти панорамная. Квадрат из архива туда не подходит без переделки.</p>
+
+      <span class="lbl">Как искать</span>
+      <ol class="steps">
+        <li>Искать кадры ~3:1, от 1500×510.</li>
+        <li>Если есть только квадрат - не растягивать. Положить в <code>_rejected</code> или пометить «нужен кроп/сборка».</li>
+        <li>Нет фото - положить лого (где можно) и в readme написать: «без фото, плашка».</li>
+      </ol>
+
+      <span class="lbl">Список</span>
+      <table>
+        <thead>
+          <tr><th>Имя файла</th><th>Кейс</th><th>Что искать</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>case-spektr.jpg</code></td>
+            <td>МП - Спектр</td>
+            <td>Склад / поставки МП / экран заказов; чужой бренд в кадре - только с разрешением</td>
+          </tr>
+          <tr>
+            <td><code>case-b2b.jpg</code></td>
+            <td>B2B-поставщики</td>
+            <td>Кадр с <a href="https://alsn.ru/caseecomsc" target="_blank" rel="noopener">alsn.ru/caseecomsc</a> или похожий процесс; телеком-железо</td>
+          </tr>
+          <tr>
+            <td><code>case-elektroprom.jpg</code></td>
+            <td>Услуги - Электропром</td>
+            <td>Производство / учёт / монитор с 1С из архива проекта</td>
+          </tr>
+          <tr>
+            <td><code>case-danaher.jpg</code></td>
+            <td>Лицензии - Danaher</td>
+            <td>Нейтральный фон + место под лого <strong>или</strong> логотип PNG (лого использовать можно)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="copybox">
+        <pre>case-spektr.jpg
+case-b2b.jpg
+case-elektroprom.jpg
+case-danaher.jpg</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+    </div>
+
+    <!-- ========== F3 ========== -->
+    <div class="task" id="f3">
+      <h2><span class="num">F3</span> О компании - 3 кадра</h2>
+
+      <span class="lbl">Что сделать</span>
+      <p>Найти три фото: группа, работа/встреча, офис в Зеленограде. Один стиль обработки на все три.</p>
+
+      <span class="lbl">Зачем</span>
+      <p>Так просил Excel. Блок «О компании» в ТЗ - текст + фото + цифры. Живые свои кадры сильнее стока.</p>
+
+      <span class="lbl">Как искать</span>
+      <ol class="steps">
+        <li>Папки: корпоратив, офис, совещания, Зеленоград / Юности 8.</li>
+        <li>Размер от 1600 px по длинной стороне, соотношение 3:2 или 4:3.</li>
+        <li>Без чужих посетителей крупным планом.</li>
+      </ol>
+
+      <table>
+        <thead>
+          <tr><th>Имя файла</th><th>Сюжет</th><th>Что искать</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>about-team-group.jpg</code></td>
+            <td>Группа</td>
+            <td>Общая фотосессия, корпоратив, совещание - много своих людей в фокусе</td>
+          </tr>
+          <tr>
+            <td><code>about-work.jpg</code></td>
+            <td>За работой</td>
+            <td>2–5 человек у монитора, переговорка, обсуждение проекта</td>
+          </tr>
+          <tr>
+            <td><code>about-office-zel.jpg</code></td>
+            <td>Офис Зеленоград</td>
+            <td>Вход / этаж 5 / open space офиса Аллсан</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="copybox">
+        <pre>about-team-group.jpg
+about-work.jpg
+about-office-zel.jpg</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+    </div>
+
+    <!-- ========== F4 ========== -->
+    <div class="task" id="f4">
+      <h2><span class="num">F4</span> Сотрудники</h2>
+
+      <span class="lbl">Что сделать</span>
+      <p>Собрать 3–6 портретов для блока «Команда». Сначала исходники тех, кто уже на <a href="https://alsn.ru/vacancy" target="_blank" rel="noopener">alsn.ru/vacancy</a>.</p>
+
+      <span class="lbl">Зачем</span>
+      <p>В Excel вопрос: брать с vacancy или новые. Для поиска: сначала найти качественные исходники тех же людей; если нет - взять с сайта и пометить «нужна пересъёмка».</p>
+
+      <span class="lbl">Как искать</span>
+      <ol class="steps">
+        <li>Открыть <a href="https://alsn.ru/vacancy" target="_blank" rel="noopener">https://alsn.ru/vacancy</a> - список людей на главную.</li>
+        <li>В архиве найти RAW/JPG тех же сотрудников (до сжатия Тильды).</li>
+        <li>Кадр: плечи + голова, спокойный фон, запас сверху (Аспро кропает в портрет ~3:4).</li>
+        <li>Выровнять яркость и обрез на всех карточках.</li>
+        <li>Телефоны в карточках не обязательны.</li>
+      </ol>
+
+      <span class="lbl">Имя файла</span>
+      <div class="copybox">
+        <pre>team-ivanov.jpg
+team-petrova.jpg</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+      <p class="muted">Подставьте реальные фамилии латиницей.</p>
+    </div>
+
+    <!-- ========== F5 ========== -->
+    <div class="task" id="f5">
+      <h2><span class="num">F5</span> Статьи / СМИ</h2>
+
+      <span class="lbl">Что сделать</span>
+      <p>Найти обложку (или скрин) и лого к публикации в журнале «Промышленные страницы».</p>
+
+      <span class="lbl">Зачем</span>
+      <p>В Excel на главную выбран этот материал. Карточка СМИ в шаблоне - горизонтальная ~3:2.</p>
+
+      <span class="lbl">Ссылки</span>
+      <div class="path">https://indpages.ru/auto/avtomatizacziya-proeezvodstva-vybor-bez-vybora/</div>
+      <div class="path">https://alsn.ru/publication</div>
+
+      <div class="copybox">
+        <pre>smi-indpages-cover.jpg
+smi-indpages-logo.png</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+    </div>
+
+    <!-- ========== F6 ========== -->
+    <div class="task" id="f6">
+      <h2><span class="num">F6</span> Фон формы обратной связи</h2>
+
+      <span class="lbl">Что сделать</span>
+      <p>Найти один спокойный широкий кадр под фон блока формы (~3:2, от 1440×960).</p>
+
+      <span class="lbl">Зачем</span>
+      <p>На демо Аспро слева фото, справа форма. Яркие лица крупно перебьют форму; нужен нейтральный фон.</p>
+
+      <span class="lbl">Как искать</span>
+      <ol class="steps">
+        <li>Офис Аллсан, команда вдалеке, коридор Зеленограда, рабочая зона.</li>
+        <li>Темнее / нейтральнее лучше (часто поверх фото тёмный оверлей).</li>
+        <li>Не брать яркий сток и крупные портреты.</li>
+      </ol>
+
+      <div class="copybox">
+        <pre>form-bg.jpg</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+    </div>
+
+    <!-- ========== EXTRA ========== -->
+    <div class="task" id="extra">
+      <h2><span class="num">+</span> Дополнительно (нет в листе Excel, но нужно под Аспро)</h2>
+
+      <span class="lbl">Лицензии - квадратные обложки</span>
+      <p>До 6 файлов 1:1, ≥800×800: Бухгалтерия, УТ, КА, ЗУП, 1С:КП/ИТС, Битрикс24 облако. Только официальные обложки продуктов.</p>
+      <div class="copybox">
+        <pre>lic-buh.jpg
+lic-ut.jpg
+lic-ka.jpg
+lic-zup.jpg
+lic-its.jpg
+lic-b24.jpg</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+
+      <span class="lbl">Видеоотзывы - стоп-кадры</span>
+      <p>4 кадра 16:9 ≥1280×720: Игорь Роганков (X-COM), Роман Быков (СОФТВИДЕО), Максим Кривов (АРТИС), Елизавета / EcoTide. Брать с главной alsn.ru или из роликов.</p>
+      <div class="copybox">
+        <pre>video-xcom.jpg
+video-softvideo.jpg
+video-artis.jpg
+video-ecotide.jpg</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+    </div>
+
+    <!-- ========== CHECKLIST ========== -->
+    <div class="task" id="checklist">
+      <h2><span class="num">Итог</span> Чеклист и сдача папки</h2>
+
+      <span class="lbl">Что сделать</span>
+      <p>Перед передачей подрядчику прогнать каждый файл по чеклисту и собрать папку на Я.Диске.</p>
+
+      <span class="lbl">Зачем</span>
+      <p>Подрядчик получит готовый набор под слоты, без переписки «это сток / мало пикселей / не тот сюжет».</p>
+
+      <span class="lbl">Чеклист на каждый файл</span>
+      <ul class="tight">
+        <li>Сюжет из таблицы слота, не «просто красиво».</li>
+        <li>Соотношение близко к таблице (не квадрат вместо 3:1 для кейса).</li>
+        <li>Разрешение не ниже минимума.</li>
+        <li>Главный объект не у края (запас под мобильный кроп).</li>
+        <li>Нет сток-офиса и AI-лиц.</li>
+        <li>Нет чужих лого без разрешения.</li>
+        <li>Имя файла по слоту, латиницей.</li>
+        <li>Для людей - можно публиковать (сотрудники ок; клиенты - проверить).</li>
+      </ul>
+
+      <span class="lbl">Структура папки</span>
+      <div class="copybox">
+        <pre>fotokontent-glavnaya-2026-09/
+  00-readme.txt
+  A-hero/
+  B-cases/
+  C-about/
+  D-staff/
+  E-smi/
+  F-form/
+  G-licenses/
+  H-video-covers/
+  _rejected/</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+
+      <span class="lbl">Строка в 00-readme.txt</span>
+      <div class="copybox">
+        <pre>hero-mp.jpg | архив 2024 / папка МП | автор Иван | можно публиковать</pre>
+        <button type="button" onclick="copyPre(this)">Копировать</button>
+      </div>
+
+      <span class="lbl">Фото не должно спорить с текстом</span>
+      <ul class="tight">
+        <li>Баннер 1 - маркетплейсы, не «аудит».</li>
+        <li>Баннер 2 - телеком/IT поставщики, не «любой B2B».</li>
+        <li>Баннер 3 - внедрение и поддержка 1С.</li>
+        <li>Telegram-бот на баннерах не использовать.</li>
+      </ul>
+
+      <div class="callout warn">
+        <strong>Открытые вопросы (поиск не блокируют):</strong>
+        оставляем портреты с vacancy или новая съёмка;
+        есть ли разрешённые кадры Спектр / Электропром;
+        есть ли свежее групповое фото;
+        лежат ли у маркетинга официальные обложки 1С.
+      </div>
+    </div>
+
+    <p class="muted">
+      Файл: <code>Предложеная структура/instrukciya-poisk-fotokontenta-glavnaya-2026-09-17.html</code>
+      · контур Битрикс · Markdown-черновик: <code>INSTRUKCIYA-poisk-fotokontenta-glavnaya-2026-09-17.md</code>
+    </p>
+  </div>
+
+  <script>
+    function copyPre(btn) {
+      var box = btn.closest(".copybox");
+      var pre = box.querySelector("pre");
+      var text = pre.innerText;
+      function ok() {
+        box.classList.add("ok");
+        btn.textContent = "Скопировано";
+        setTimeout(function () {
+          box.classList.remove("ok");
+          btn.textContent = "Копировать";
+        }, 1500);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(ok).catch(function () {
+          fallback();
+        });
+      } else {
+        fallback();
+      }
+      function fallback() {
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); ok(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+    }
+  </script>
+</body>
+</html>

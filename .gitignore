@@ -1,8 +1,14 @@
-﻿.env
+.env
 .env.*
 !.env.example
+node_modules/
+seo-data/scripts/node_modules/
+seo-data/scripts/_raw*.json
 Thumbs.db
 Desktop.ini
 .DS_Store
 *.bak
 ~$*
+_tmp_*
+__pycache__/
+*.pyc

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Отчёт: контроль посева SEO — alsn.ru — 15.09.2026</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #fff;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e2e2de;
+      --ok: #1a7f4b;
+      --ok-bg: #e8f6ee;
+      --warn: #9a6700;
+      --warn-bg: #fff6e0;
+      --info: #0b6e99;
+      --info-bg: #e8f4fa;
+      --danger: #b42318;
+      --danger-bg: #fdecea;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: 28px; margin: 0 0 8px; font-weight: 650; }
+    h2 { font-size: 20px; margin: 36px 0 12px; font-weight: 650; }
+    h3 { font-size: 16px; margin: 20px 0 10px; font-weight: 600; }
+    p { margin: 0 0 12px; }
+    .muted { color: var(--muted); }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 20px; }
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+    .pill.ok { color: var(--ok); background: var(--ok-bg); border-color: #c6e6d3; }
+    .pill.warn { color: var(--warn); background: var(--warn-bg); border-color: #f0dfa0; }
+    .pill.info { color: var(--info); background: var(--info-bg); border-color: #bddceb; }
+    .pill.danger { color: var(--danger); background: var(--danger-bg); border-color: #f5c2c0; }
+    .callout {
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .callout.ok { background: var(--ok-bg); border-color: #c6e6d3; }
+    .callout.warn { background: var(--warn-bg); border-color: #f0dfa0; }
+    .callout.info { background: var(--info-bg); border-color: #bddceb; }
+    .callout strong { display: block; margin-bottom: 4px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 16px 0 8px;
+    }
+    @media (max-width: 800px) {
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .two { grid-template-columns: 1fr !important; }
+    }
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+    }
+    .stat .v { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+    .stat .v.ok { color: var(--ok); }
+    .stat .v.warn { color: var(--warn); }
+    .stat .v.danger { color: var(--danger); }
+    .stat .v.info { color: var(--info); }
+    .stat .l { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 13px;
+      margin: 10px 0 16px;
+    }
+    th, td {
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f0f0ec; font-weight: 600; white-space: nowrap; }
+    tr:last-child td { border-bottom: 0; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tr.row-ok td { background: #f3faf6; }
+    tr.row-warn td { background: #fffaf0; }
+    tr.row-danger td { background: #fdf2f1; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin: 0 0 14px;
+      overflow: hidden;
+    }
+    .card-h {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 650;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .card-b { padding: 12px 16px 14px; font-size: 14px; }
+    .card-b p { margin: 0 0 8px; }
+    .card-b p:last-child { margin-bottom: 0; }
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .chart {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      margin: 10px 0 16px;
+    }
+    .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; margin-bottom: 8px; }
+    .legend span::before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 3px;
+      margin-right: 6px;
+      vertical-align: middle;
+      border-radius: 2px;
+    }
+    .legend .shows::before { background: #0b6e99; }
+    .legend .clicks::before { background: #1a7f4b; }
+    .legend .b0::before { background: #94a3b8; height: 10px; width: 10px; border-radius: 2px; }
+    .legend .b1::before { background: #0b6e99; height: 10px; width: 10px; border-radius: 2px; }
+    .legend .b2::before { background: #1a7f4b; height: 10px; width: 10px; border-radius: 2px; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 28px 0; }
+    ul.plain { margin: 0; padding-left: 18px; }
+    ul.plain li { margin: 4px 0; }
+    .foot { font-size: 12px; color: var(--muted); margin-top: 28px; }
+    @media print {
+      body { background: #fff; }
+      .wrap { max-width: none; padding: 0; }
+      .card, .callout, .stat, table, .chart { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Отчёт: контроль посева SEO</h1>
+    <p class="muted">
+      Дата отчёта: 15.09.2026. Сайт alsn.ru. Три периода в сутки (не в сумме):
+      начало работ 01–25.08 (25 дн.) → окно 1 26.08–04.09 (10 дн.) → текущий
+      срез 05–12.09 (8 дн., лаг Вебмастера; 13–14.09 ещё неполные). Источники:
+      Яндекс.Вебмастер, Google Search Console (sc-domain:alsn.ru), Wordstat Cloud 15.09,
+      живые страницы, SEO-чаты по продуктам.
+    </p>
+    <div class="pills">
+      <span class="pill ok">МП: эффект держится</span>
+      <span class="pill warn">B2B: клики просели</span>
+      <span class="pill info">Google: 0 кликов на фокус</span>
+      <span class="pill warn">ИКС 260→250</span>
+      <span class="pill warn">TOO_MANY_DOMAINS</span>
+    </div>
+
+    <div class="callout warn">
+      <strong>Вердикт текущего среза 15.09</strong>
+      Посев на модуле маркетплейсов не «откатился»: относительно начала работ
+      показы/сутки всё ещё ≈×1,9, клики/сутки выросли до ≈1,25, CTR кластера
+      0,94% (было 0,17% в начале работ и 0,57% в окне 1). Пик показов с окна 1
+      (26.08–04.09) остыл (175→133/сутки) — нормально после всплеска переобхода.
+      B2B-поставщики: показы стабильны, но клики/сутки 1,4→0,63 и CTR
+      0,75%→0,33% — минус на навигационных «мерлион/ocs b2b». Внедрение 1С: клики
+      кластера подросли, но контрольные «КА» ухудшили позицию. Поддержка: первые
+      клики при крошечном объёме. Google по целевым URL по-прежнему 0 кликов.
+      ИКС: 260→250 (падение зафиксировано к 07.09, на 15.09 без отскока).
+      С 06–10.09 в Вебмастере активна диагностика TOO_MANY_DOMAINS_ON_SEARCH —
+      наиболее правдоподобный фон для просадки ИКС и риск для всего домена.
+      T2 МП (/casemarketplace) закрыт.
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="v ok">×1,9</div><div class="l">МП: показы/сутки vs начало работ</div></div>
+      <div class="stat"><div class="v ok">1,25</div><div class="l">МП: клики/сутки (было 0,12)</div></div>
+      <div class="stat"><div class="v ok">0,94%</div><div class="l">МП CTR в текущем срезе</div></div>
+      <div class="stat"><div class="v warn">260→250</div><div class="l">ИКС Яндекс (хост)</div></div>
+    </div>
+
+    <h2>ИКС — индекс качества сайта</h2>
+    <p class="muted">
+      Источник: Яндекс.Вебмастер · сводка хоста https:alsn.ru:443. ИКС — оценка
+      «полезности» сайта, не прямой KPI посева title/meta. Меняется ступенями.
+    </p>
+    <div class="stats">
+      <div class="stat"><div class="v info">260</div><div class="l">Конец августа / ~01.09</div></div>
+      <div class="stat"><div class="v warn">250</div><div class="l">07.09 и 15.09.2026</div></div>
+      <div class="stat"><div class="v danger">−10</div><div class="l">Изменение (~4%)</div></div>
+      <div class="stat"><div class="v info">467</div><div class="l">Страниц в поиске (было ~464)</div></div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Дата среза</th>
+          <th class="num">ИКС</th>
+          <th class="num">В поиске</th>
+          <th class="num">Исключено</th>
+          <th>Диагностика</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Конец августа (чат SEO МП / общее)</td>
+          <td class="num">260</td>
+          <td class="num">464</td>
+          <td class="num">15</td>
+          <td>Активных проблем нет</td>
+        </tr>
+        <tr class="row-warn">
+          <td>07.09.2026 (разбор падения ИКС)</td>
+          <td class="num">250</td>
+          <td class="num">465</td>
+          <td class="num">—</td>
+          <td>TOO_MANY_DOMAINS с 06.09</td>
+        </tr>
+        <tr class="row-warn">
+          <td>15.09.2026 (текущий срез)</td>
+          <td class="num">250</td>
+          <td class="num">467</td>
+          <td class="num">8</td>
+          <td>POSSIBLE_PROBLEM: TOO_MANY_DOMAINS</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="callout info">
+      <strong>Как читать падение ИКС</strong>
+      Падение небольшое (−10), индекс страниц не обвалился (464→467). Скорее
+      связано с поддоменами в поиске (главный подтверждённый — <code>demo.alsn.ru</code>,
+      плюс риск www) и диагностикой TOO_MANY_DOMAINS, а не с одним title МП.
+      На клики/позиции по продуктам ИКС сам по себе почти не объясняет динамику.
+      Прямой рычаг: закрыть/склеить лишние поддомены (инструкция по demo —
+      <code>seo-data/robots-subdomains/instrukciya-demo-alsn-ru-2026-09-15.html</code>).
+    </div>
+
+    <h2>Тренд сайта — Яндекс</h2>
+    <p class="muted">
+      Вебмастер · report=trend · 01.08–13.09.2026. Клики ×50 на графике.
+      Начало посева 26.08; текущий срез с 05.09.
+    </p>
+    <div class="chart">
+      <div class="legend">
+        <span class="shows">Показы</span>
+        <span class="clicks">Клики ×50</span>
+      </div>
+      <svg id="trend" viewBox="0 0 900 260" role="img" aria-label="Тренд показов и кликов Яндекс"></svg>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Период</th>
+          <th class="num">Ср. показы/день</th>
+          <th class="num">Ср. клики/день</th>
+          <th>Комментарий</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Начало работ 01–25.08</td><td class="num">~562</td><td class="num">~8,6</td><td>До посева meta</td></tr>
+        <tr><td>Окно 1 26.08–04.09</td><td class="num">~765</td><td class="num">~8,4</td><td>Пик показов после meta</td></tr>
+        <tr><td>Текущий срез 05–13.09</td><td class="num">~593</td><td class="num">~8,2</td><td>Остывание к началу работ; клики стабильны</td></tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <h2>По продуктам — Яндекс (норма на сутки)</h2>
+    <p class="muted">
+      Классификация top-500 запросов Вебмастера (один классификатор на все периоды).
+      Сравнение: начало работ → окно 1 → текущий срез.
+    </p>
+    <div class="chart">
+      <div class="legend">
+        <span class="b0">Начало работ · показы/сутки</span>
+        <span class="b1">Окно 1 · показы/сутки</span>
+        <span class="b2">Текущий срез · показы/сутки</span>
+      </div>
+      <svg id="bars" viewBox="0 0 900 280" role="img" aria-label="Показы по продуктам"></svg>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Продукт</th>
+          <th class="num">Показы/д начало→окно 1→срез</th>
+          <th class="num">Клики/д</th>
+          <th class="num">CTR %</th>
+          <th class="num">Поз.</th>
+          <th>Оценка</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-ok">
+          <td>МП Ozon/WB</td>
+          <td class="num">69 → 175 → 133</td>
+          <td class="num">0,12 → 1,0 → 1,25</td>
+          <td class="num">0,17 → 0,57 → 0,94</td>
+          <td class="num">9,3 → 6,6 → 6,5</td>
+          <td>Сильный плюс держится</td>
+        </tr>
+        <tr class="row-danger">
+          <td>B2B телеком</td>
+          <td class="num">155 → 186 → 191</td>
+          <td class="num">1,12 → 1,4 → 0,63</td>
+          <td class="num">0,72 → 0,75 → 0,33</td>
+          <td class="num">5,6 → 5,5 → 5,9</td>
+          <td>Показы ок, клики −</td>
+        </tr>
+        <tr class="row-warn">
+          <td>Внедрение 1С</td>
+          <td class="num">61 → 60 → 66</td>
+          <td class="num">0,64 → 0,30 → 1,0</td>
+          <td class="num">1,05 → 0,50 → 1,53</td>
+          <td class="num">11,3 → 11,3 → 10,7</td>
+          <td>Смешано / шум</td>
+        </tr>
+        <tr>
+          <td>Техподдержка</td>
+          <td class="num">4,4 → 5,9 → 2,9</td>
+          <td class="num">0 → 0 → 0,25</td>
+          <td class="num">0 → 0 → 8,7</td>
+          <td class="num">8,8 → 9,4 → 8,9</td>
+          <td>Первые клики, объём мал</td>
+        </tr>
+        <tr>
+          <td>Лицензии</td>
+          <td class="num">14 → 17 → 11</td>
+          <td class="num">0,08 → 0,2 → 0,38</td>
+          <td class="num">0,6 → 1,2 → 3,6</td>
+          <td class="num">9,5 → 8,7 → 9,2</td>
+          <td>Без посева T1/T2</td>
+        </tr>
+        <tr class="row-ok">
+          <td>Бренд</td>
+          <td class="num">6,7 → 5,7 → 6,1</td>
+          <td class="num">0,92 → 0,8 → 1,25</td>
+          <td class="num">14 → 14 → 20</td>
+          <td class="num">2,2 → 2,1 → 1,9</td>
+          <td>CTR бренда ↑</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Контрольные запросы Яндекс + Wordstat</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Запрос</th>
+          <th>Продукт</th>
+          <th class="num">Начало работ пок/кл/поз</th>
+          <th class="num">Окно 1 26.08–04.09</th>
+          <th class="num">Текущий срез 05–12.09</th>
+          <th class="num">Wordstat 15.09</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>модуль маркетплейсов 1с</td><td>МП</td><td class="num">281 / 0 / 7,5</td><td class="num">104 / 1 / 4,7</td><td class="num">61 / 0 / 6,3</td><td class="num">266 (− vs 315)</td></tr>
+        <tr><td>модуль 1с для маркетплейсов</td><td>МП</td><td class="num">251 / 0 / 8,2</td><td class="num">123 / 3 / 4,9</td><td class="num">75 / 2 / 4,8</td><td class="num">103 (− vs 126)</td></tr>
+        <tr><td>модули маркетплейсов для 1с</td><td>МП</td><td class="num">237 / 0 / 7,5</td><td class="num">100 / 2 / 4,1</td><td class="num">73 / 3 / 5,0</td><td class="num">54</td></tr>
+        <tr><td>1с ут интеграция с маркетплейсами</td><td>МП</td><td class="num">182 / 0 / 9,4</td><td class="num">93 / 0 / 5,6</td><td class="num">74 / 0 / 5,1</td><td class="num">83</td></tr>
+        <tr><td>интеграция с озон 1с ут</td><td>МП</td><td class="num">32 / 0 / 10,1</td><td class="num">114 / 0 / 4,0</td><td class="num">93 / 0 / 4,4</td><td class="num">39</td></tr>
+        <tr><td>мерлион b2b</td><td>B2B</td><td class="num">408 / 3 / 3,8</td><td class="num">168 / 2 / 3,6</td><td class="num">108 / 0 / 3,5</td><td class="num">643</td></tr>
+        <tr><td>ocs b2b</td><td>B2B</td><td class="num">314 / 3 / 5,2</td><td class="num">142 / 2 / 4,6</td><td class="num">107 / 0 / 6,1</td><td class="num">846</td></tr>
+        <tr><td>внедрение 1с комплексная автоматизация</td><td>Внедрение</td><td class="num">53 / 0 / 8,6</td><td class="num">38 / 0 / 9,0</td><td class="num">15 / 0 / 12,7</td><td class="num">4</td></tr>
+        <tr><td>1с внедрение ка</td><td>Внедрение</td><td class="num">74 / 0 / 8,0</td><td class="num">34 / 0 / 8,3</td><td class="num">11 / 0 / 14,7</td><td class="num">25</td></tr>
+        <tr><td>стоимость внедрения 1с erp…</td><td>Внедрение</td><td class="num">71 / 0 / 10,9</td><td class="num">14 / 0 / 9,0</td><td class="num">48 / 0 / 6,8</td><td class="num">34</td></tr>
+        <tr><td>аллсан интеграция</td><td>Бренд</td><td class="num">34 / 8 / 1,5</td><td class="num">5 / 0 / 1,6</td><td class="num">5 / 2 / 1,6</td><td class="num">34</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">
+      Wordstat: точная фраза, Cloud API, 15.09.2026 (~30 дн.). Спрос чуть ниже, чем
+      07.09 — сезонный фон, не эффект посева. «мерлион/ocs b2b» по-прежнему ЛК-интент.
+    </p>
+
+    <hr />
+
+    <h2>Google Search Console</h2>
+    <div class="callout warn">
+      <strong>Google всё ещё слабый канал на фокусе</strong>
+      Окно 1 (26.08–04.09) vs текущий срез (05–14.09) по целевым URL: кликов 0. Показы
+      посадочных упали, у МП средняя позиция улучшилась. Сайтовый тренд GSC:
+      ~3–4 клика/день, основная масса — не фокус-продукты (Bitrix24, боты, ITS).
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>URL</th>
+          <th class="num">Окно 1 26.08–04.09 пок/кл/поз</th>
+          <th class="num">Текущий срез 05–14.09 пок/кл/поз</th>
+          <th>Комментарий</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>/casemarketplace (+карточки)</td><td class="num">159 / 0 / ~27</td><td class="num">44 / 0 / ~15</td><td>Показы ↓, позиция лучше</td></tr>
+        <tr><td>/ecom</td><td class="num">36 / 0 / 12,4</td><td class="num">15 / 0 / 12,3</td><td>T2 свежий (11–14.09)</td></tr>
+        <tr><td>/development1c</td><td class="num">83 / 0 / 35,1</td><td class="num">37 / 0 / 31,5</td><td>Позиция чуть лучше</td></tr>
+        <tr><td>/kompleksnaya_avtomatizaciya</td><td class="num">88 / 0 / 30,6</td><td class="num">60 / 0 / 35,1</td><td>Позиция хуже</td></tr>
+        <tr><td>/support1c (+пакеты)</td><td class="num">~108 / 0 / ~29</td><td class="num">~72 / 0 / ~25</td><td>Показы есть, кликов 0</td></tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <h2>Что изменили (по продуктам) и влияние на позиции/клики</h2>
+
+    <div class="two">
+      <div class="card">
+        <div class="card-h">1. МП — /casemarketplace <span class="pill ok">T1 + T2 закрыт</span></div>
+        <div class="card-b">
+          <p>T1: title «Модуль 1С для маркетплейсов…», description с ценой от 40 700 ₽/год, коммерческий абзац, снят TG-виджет. T2 опубликован полностью (чат SEO маркетплейсы): og:site_name, своя OG-картинка, видимые крошки, BreadcrumbList, alt, hero — по брифу 11.09.</p>
+          <p><strong>Влияние.</strong> Плюс: ключ «модуль» + цена → позиции 7–9→~5 и CTR 0,94%; T2 усиливает сниппет/GEO. Риск только шума: пик показов остыл — не путать с потерей эффекта.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">2. B2B — /ecom <span class="pill ok">T1 + T2 закрыт</span></div>
+        <div class="card-b">
+          <p>T1 meta/schema ранее. T2-1…T2-5 на сайте. T2-6 закрыт как N/A (16.09): на хабе таблица поставщиков текстом, логотипов нет. Живой title: «Интеграция 1С с поставщиками — телеком и IT».</p>
+          <p><strong>Влияние.</strong> Плюс ожидаем от H1/крошек. Минус сейчас: клики по «мерлион/ocs b2b» = 0 при топ-позициях — интент ЛК.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">3. Внедрение — /development1c, КА, ERP <span class="pill info">T1</span></div>
+        <div class="card-b">
+          <p>T1 meta/H1/Service опубликованы. T2 не стартовал.</p>
+          <p><strong>Влияние.</strong> Плюс: снят смешанный сниппет. Минус: контрольные «КА / комплексная» ухудшили позицию (8→12–15); ERP-стоимость чуть лучше.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">4. Поддержка — /support1c <span class="pill warn">T2 хвост</span></div>
+        <div class="card-b">
+          <p>T1 закрыт 10.09 (title «программист на час» - ок). T2 16.09: OG, WebPage, крошки, блок «не КП» на сайте. Хвост: колонка тарифов «Пакет часов…», ссылки на /its и внедрение, alt мобильной картинки клиентов. Бриф: tier2-support1c-ostatok-2026-09-16.html.</p>
+          <p><strong>Влияние.</strong> Первые клики в кластере (0,25/сутки), объём мал.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">5. Лицензии <span class="pill ok">T1 + T2 закрыт</span></div>
+        <div class="card-b">
+          <p>Закрыто 15.09.2026, 15:36: title/H1/лид трёх витрин, SEO 4 карточек, OG 1200×630, site_name в HEAD сайта, крошки, скрипт D, alt. Переобход 4 tproduct в Яндексе 15:31.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">6. Бренд — главная <span class="pill info">Частично</span></div>
+        <div class="card-b">
+          <p>Живой title/description с Аллсан / ALLSUN / alsn.ru. Хвосты T2/T3 не закрыты.</p>
+          <p><strong>Влияние.</strong> CTR бренда ~20%, позиция ~1,9. Не путать с коммерцией.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h">Сквозные факторы домена</div>
+      <div class="card-b">
+        <p>GSC: рабочие sitemap; feeds/apps сняты ранее. robots.txt Тильды не правим. ИКС: 260→250 (без отскока к 15.09). С 06–10.09 Вебмастер: TOO_MANY_DOMAINS_ON_SEARCH — поддомены/зеркала (подтверждён в выдаче <code>demo.alsn.ru</code>), не title продукта.</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>Плюс / минус: что могло сдвинуть позиции и клики</h2>
+    <div class="two">
+      <div class="card">
+        <div class="card-h">Скорее положительно <span class="pill ok">+</span></div>
+        <div class="card-b">
+          <ul class="plain">
+            <li>Title МП с «модуль» + Ozon/WB → удержание топ-5–7 и рост CTR</li>
+            <li>Цена в description/абзаце → коммерческий сниппет Яндекса</li>
+            <li>Снятие TG-виджета с МП</li>
+            <li>T2 МП закрыт: OG, крошки, BreadcrumbList, alt, hero</li>
+            <li>Title/H1 внедрения без смеси с поддержкой</li>
+            <li>T2 /ecom: H1, OG, крошки, BreadcrumbList</li>
+            <li>Schema Organization / Service / WebPage где уже стоит</li>
+            <li>Бренд в title главной → выше CTR брендовых</li>
+            <li>Переобход Вебмастера после T1</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">Скорее отрицательно / риск <span class="pill warn">риск</span></div>
+        <div class="card-b">
+          <ul class="plain">
+            <li>ИКС 260→250 (−10); фон — TOO_MANY_DOMAINS / demo.alsn.ru</li>
+            <li>TOO_MANY_DOMAINS_ON_SEARCH с 06–10.09</li>
+            <li>Смена title на КА/внедрении → качок позиций</li>
+            <li>B2B-сниппет на навигации «вход в ЛК»</li>
+            <li>Риск URL кейса без 301 на старте (выровняли позже)</li>
+            <li>Показы GSC по фокусу ↓</li>
+            <li>Wordstat чуть ниже 07.09</li>
+            <li>Лицензии: T1/T2 на сайте закрыты 15.09, в выдаче посев ещё не отразился; поддержка без T2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>Следующий срез</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Когда</th>
+          <th>На что смотреть</th>
+          <th>Критерий</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>+7–10 дней (~22–25.09)</td><td>МП CTR и клики/сутки</td><td>CTR кластера ≥1% или клики ≥1,5/сутки</td></tr>
+        <tr><td>+7–10 дней</td><td>/ecom после T2-6 + переобход</td><td>≥1 клик/нед. не по «* b2b» ЛК</td></tr>
+        <tr><td>+2 недели</td><td>Внедрение: «КА» / ERP стоимость</td><td>Позиция КА обратно &lt;10; клик по ERP</td></tr>
+        <tr><td>Сразу</td><td>ИКС + TOO_MANY_DOMAINS (demo)</td><td>Диагностика снята; ИКС не ниже 250 / отскок к 260</td></tr>
+        <tr><td>По готовности</td><td>Закрыть T2-6 /ecom и T2 поддержки</td><td>Alt на /ecom; бриф поддержки опубликован</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">
+      Метод: всегда норма на сутки; одинаковый классификатор кластеров; Wordstat —
+      контекст спроса, не KPI посева. Bing / Twitter — вне контура.
+    </p>
+
+    <p class="foot">
+      Чаты-источники: SEO общее, SEO маркетплейсы, SEO поставщики, SEO Внедрение 1С,
+      SEO поддержка 1с, SEO Лицензии, SEO брендовые.<br />
+      Файл выгружен 15.09.2026 из канваса «Отчёт: контроль посева SEO».
+    </p>
+  </div>
+
+  <script>
+    const DATES = [
+      "01.08","02.08","03.08","04.08","05.08","06.08","07.08","08.08",
+      "09.08","10.08","11.08","12.08","13.08","14.08","15.08","16.08",
+      "17.08","18.08","19.08","20.08","21.08","22.08","23.08","24.08",
+      "25.08","26.08","27.08","28.08","29.08","30.08","31.08","01.09",
+      "02.09","03.09","04.09","05.09","06.09","07.09","08.09","09.09",
+      "10.09","11.09","12.09","13.09"
+    ];
+    const SHOWS = [468,419,864,812,825,881,613,245,284,635,574,624,614,537,251,210,606,537,695,689,714,322,269,661,712,839,992,880,438,348,973,739,921,764,755,292,288,793,883,981,879,688,260,269];
+    const CLICKS = [6,4,7,11,16,11,5,2,8,11,9,9,9,6,6,7,12,14,10,11,16,3,0,9,13,7,13,7,3,4,15,5,11,11,8,4,5,14,13,6,17,9,4,2];
+
+    function polyline(svg, values, color, maxY, pad) {
+      const w = 900, h = 260;
+      const left = pad.l, right = pad.r, top = pad.t, bottom = pad.b;
+      const iw = w - left - right, ih = h - top - bottom;
+      const pts = values.map((v, i) => {
+        const x = left + (i / (values.length - 1)) * iw;
+        const y = top + ih - (v / maxY) * ih;
+        return x.toFixed(1) + "," + y.toFixed(1);
+      }).join(" ");
+      const p = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+      p.setAttribute("fill", "none");
+      p.setAttribute("stroke", color);
+      p.setAttribute("stroke-width", "2");
+      p.setAttribute("points", pts);
+      svg.appendChild(p);
+    }
+
+    function vline(svg, index, label, color, pad) {
+      const x = pad.l + (index / (DATES.length - 1)) * (900 - pad.l - pad.r);
+      const cut = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      cut.setAttribute("x1", x);
+      cut.setAttribute("x2", x);
+      cut.setAttribute("y1", pad.t);
+      cut.setAttribute("y2", 260 - pad.b);
+      cut.setAttribute("stroke", color);
+      cut.setAttribute("stroke-dasharray", "4 3");
+      svg.appendChild(cut);
+      const cutLab = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      cutLab.setAttribute("x", x + 4);
+      cutLab.setAttribute("y", pad.t + 10);
+      cutLab.setAttribute("font-size", "10");
+      cutLab.setAttribute("fill", color);
+      cutLab.textContent = label;
+      svg.appendChild(cutLab);
+    }
+
+    (function drawTrend() {
+      const svg = document.getElementById("trend");
+      const pad = { l: 40, r: 16, t: 16, b: 36 };
+      const maxY = 1100;
+      const clicksScaled = CLICKS.map(c => c * 50);
+      for (let i = 0; i <= 4; i++) {
+        const y = pad.t + ((260 - pad.t - pad.b) * i) / 4;
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", pad.l);
+        line.setAttribute("x2", 900 - pad.r);
+        line.setAttribute("y1", y);
+        line.setAttribute("y2", y);
+        line.setAttribute("stroke", "#e8e8e4");
+        svg.appendChild(line);
+        const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        t.setAttribute("x", 4);
+        t.setAttribute("y", y + 4);
+        t.setAttribute("font-size", "10");
+        t.setAttribute("fill", "#888");
+        t.textContent = String(Math.round(maxY * (1 - i / 4)));
+        svg.appendChild(t);
+      }
+      vline(svg, 25, "посев 26.08", "#9a6700", pad);
+      vline(svg, 35, "текущий срез 05.09", "#0b6e99", pad);
+      polyline(svg, SHOWS, "#0b6e99", maxY, pad);
+      polyline(svg, clicksScaled, "#1a7f4b", maxY, pad);
+      DATES.forEach((d, i) => {
+        if (i % 5 !== 0 && i !== DATES.length - 1) return;
+        const x = pad.l + (i / (DATES.length - 1)) * (900 - pad.l - pad.r);
+        const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        t.setAttribute("x", x);
+        t.setAttribute("y", 252);
+        t.setAttribute("text-anchor", "middle");
+        t.setAttribute("font-size", "10");
+        t.setAttribute("fill", "#888");
+        t.textContent = d;
+        svg.appendChild(t);
+      });
+    })();
+
+    (function drawBars() {
+      const svg = document.getElementById("bars");
+      const cats = ["МП", "B2B", "Внедрение", "Поддержка", "Лицензии", "Бренд"];
+      const p0 = [68.7, 155.3, 61, 4.4, 14.4, 6.7];
+      const p1 = [174.9, 185.6, 59.5, 5.9, 16.7, 5.7];
+      const p2 = [132.5, 191, 65.5, 2.9, 10.5, 6.1];
+      const pad = { l: 100, r: 24, t: 10, b: 24 };
+      const maxX = 210;
+      const rowH = 42;
+      const barH = 8;
+      cats.forEach((c, i) => {
+        const y = pad.t + i * rowH;
+        const lab = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        lab.setAttribute("x", pad.l - 8);
+        lab.setAttribute("y", y + 22);
+        lab.setAttribute("text-anchor", "end");
+        lab.setAttribute("font-size", "12");
+        lab.setAttribute("fill", "#333");
+        lab.textContent = c;
+        svg.appendChild(lab);
+        [[p0[i], "#94a3b8", 0], [p1[i], "#0b6e99", 1], [p2[i], "#1a7f4b", 2]].forEach(([v, color, k]) => {
+          const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+          const w = (v / maxX) * (900 - pad.l - pad.r);
+          rect.setAttribute("x", pad.l);
+          rect.setAttribute("y", y + 4 + k * (barH + 2));
+          rect.setAttribute("width", Math.max(1, w));
+          rect.setAttribute("height", barH);
+          rect.setAttribute("fill", color);
+          rect.setAttribute("rx", "2");
+          svg.appendChild(rect);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

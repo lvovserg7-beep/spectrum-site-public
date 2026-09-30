@@ -1,0 +1,90 @@
+[
+  {
+    "url": "https://alsn.ru/dopolnitelnie_licenzii",
+    "status": 200,
+    "len": 331335,
+    "head": {
+      "webpage_id": false,
+      "breadcrumb_id": false,
+      "WebPage": false,
+      "BreadcrumbList": false
+    },
+    "body": {
+      "webpage_id": true,
+      "breadcrumb_id": true,
+      "WebPage": true,
+      "BreadcrumbList": true
+    },
+    "ld": {
+      "types": [
+        "head:Organization",
+        "head:WebSite",
+        "body:WebPage",
+        "body:BreadcrumbList"
+      ],
+      "ids": [
+        "head:https://alsn.ru/#organization",
+        "head:https://alsn.ru/#website",
+        "body:https://alsn.ru/dopolnitelnie_licenzii#webpage",
+        "body:https://alsn.ru/dopolnitelnie_licenzii#breadcrumb"
+      ]
+    },
+    "visHubCrumbs": true
+  },
+  {
+    "url": "https://alsn.ru/dopolnitelnie_licenzii/tproduct/1231123726-368525678472-1s-predpriyatie-8-prof-klientskaya-litse",
+    "status": 200,
+    "len": 317947,
+    "head": {
+      "webpage_id": false,
+      "breadcrumb_id": false,
+      "WebPage": false,
+      "BreadcrumbList": false
+    },
+    "body": {
+      "webpage_id": false,
+      "breadcrumb_id": false,
+      "WebPage": false,
+      "BreadcrumbList": false
+    },
+    "ld": {
+      "types": [
+        "head:Organization",
+        "head:WebSite"
+      ],
+      "ids": [
+        "head:https://alsn.ru/#organization",
+        "head:https://alsn.ru/#website"
+      ]
+    },
+    "visHubCrumbs": false
+  },
+  {
+    "url": "https://alsn.ru/dopolnitelnie_licenzii/tproduct/1231123726-905369310501-1s-predpriyatie-83-prof-litsenziya-na-se",
+    "status": 200,
+    "len": 320246,
+    "head": {
+      "webpage_id": false,
+      "breadcrumb_id": false,
+      "WebPage": false,
+      "BreadcrumbList": false
+    },
+    "body": {
+      "webpage_id": false,
+      "breadcrumb_id": false,
+      "WebPage": false,
+      "BreadcrumbList": false
+    },
+    "ld": {
+      "types": [
+        "head:Organization",
+        "head:WebSite"
+      ],
+      "ids": [
+        "head:https://alsn.ru/#organization",
+        "head:https://alsn.ru/#website"
+      ]
+    },
+    "visHubCrumbs": false
+  }
+]

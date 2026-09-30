@@ -1,0 +1,47 @@
+﻿NONE|0|/|
+CANON|1|/development1c|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/kompleksnaya_avtomatizaciya|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/erp-time-price|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/casemarketplace|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/ecom|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/support1c|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+OTHER|1|/its|aria-label="Хлебные крошки" style="font-size:14px;line-height:1.4;color:#666;padding:8px 20px 0;"> Г
+OTHER|1|/1cfresh|aria-label="Хлебные крошки" style="font-size:14px;line-height:1.4;color:#666;padding:8px 20px 0;"> Г
+OTHER|2|/dopolnitelnie_licenzii|aria-label="Хлебные крошки" style="font-size:14px;line-height:1.4;color:#666;padding:8px 20px 0;"> Г
+CANON|1|/about_us|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/contacts|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/vacancy|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+NONE|0|/cra|
+CANON|1|/clients|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+NONE|0|/publication|
+CANON|1|/telegram1c|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/bitrix24|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/etm-ipro|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/merlion|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/ocs|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/marvel|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/treolan|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/3logic|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/caseecomsc|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:wrap;font-size:14px;lin
+CANON|1|/xitsadmarketplace|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:wrap;font-size:14px;lin
+CANON|2|/cases|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/products|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/1cbitrix|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/buhv8|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/zup8|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/upt8|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/upravlenie_nashei_firmoi|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/dokumentooborot8|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/perehod-s-upp-na-ka-unf-ut|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+CANON|1|/integrationsite|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+NONE|0|/integrationeco|
+NONE|0|/blog|
+CANON|1|/internship|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+NONE|0|/persons|
+CANON|1|/review|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+NONE|0|/outsorce_vs_inhouse|
+ERR|0|/store|Запрос был прерван: Соединение было неожиданно закрыто.
+CANON|1|/amo_crm|aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;l
+NONE|0|/whatsapp|
+NONE|0|/crmfurniture|
+NONE|0|/constr|

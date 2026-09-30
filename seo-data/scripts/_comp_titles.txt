@@ -1,0 +1,62 @@
+https://rarus.ru/1c8/1c8-lic5-elektronnaya-postavka/
+TITLE: Купить 1С:Предприятие 8 ПРОФ. Клиентская лицензия на 5 рабочих мест. Электронная поставка
+H1: 1С:Предприятие 8 ПРОФ. Клиентская лицензия на 5 рабочих мест. Электронная поставка
+DESC: 
+SKU in title: False
+SKU in h1: False
+SKU in desc: False
+---
+https://rarus.ru/1c8/1c8-lic5/
+TITLE: Купить 1С:Предприятие 8 ПРОФ. Клиентская лицензия на 5 рабочих мест. Коробочная поставка
+H1: 1С:Предприятие 8 ПРОФ. Клиентская лицензия на 5 рабочих мест. Коробочная поставка
+DESC: 
+SKU in title: False
+SKU in h1: False
+SKU in desc: False
+---
+https://rarus.ru/1c8/1c8-lic/
+TITLE: Купить Лицензии 1С:Предприятие 8
+H1: Лицензии 1С:Предприятие 8
+DESC: Лицензии клиентские и серверные на программы 1С Предприятие
+SKU in title: False
+SKU in h1: False
+SKU in desc: False
+---
+https://axioma-soft.ru/products/klientskie-litsenzii-1s/1s-predpriyatie-8-klientskaya-litsenziya-na-1-r-m/
+TITLE: 1С:Предприятие 8. Клиентская лицензия на 1 р.м.
+H1: Лицензии 1С Предприятия. 1С:Предприятие 8 ПРОФ. Клиентская лицензия на 1 р.м.
+DESC: 1С:Предприятие 8. Клиентская лицензия на 1 р.м.
+SKU in title: False
+SKU in h1: False
+SKU in desc: False
+---
+https://axioma-soft.ru/products/klientskie-litsenzii-1s/1s-predpriyatie-8-korp-klientskaya-litsenziya-na-5-r-m/
+TITLE: 1С:Предприятие 8 КОРП. Клиентская лицензия на 5 р.м.
+H1: Лицензии 1С Предприятия. 1С:Предприятие 8 КОРП. Клиентская лицензия на 5 р.м.
+DESC: 1С:Предприятие 8 КОРП. Клиентская лицензия на 5 р.м.
+SKU in title: False
+SKU in h1: False
+SKU in desc: False
+---
+https://axioma-soft.ru/products/litsenzii-1s/
+TITLE: Цены на лицензии 1С
+H1: Цены на «1С:Предприятие», клиентские лицензии «1С»
+DESC: Лицензии 1С которые Вы можете купить в компании Аксиома-Софт
+SKU in title: False
+SKU in h1: False
+SKU in desc: False
+---
+ERR https://stupino.1cbit.ru/1csoft/litsenzii-1s-predpriyatie/
+<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>
+
+ERR https://moscow.1cbit.ru/1csoft/litsenzii-1s-predpriyatie/
+<urlopen error [Errno 11001] getaddrinfo failed>
+
+ERR https://www.1cbit.ru/1csoft/litsenzii-1s-predpriyatie/
+<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>
+
+ERR https://novoros.1cbit.ru/1csoft/1s-predpriyatie-8-komplekt-prikladnykh-resheniy-na-5-328/
+<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>
+
+ERR https://orenburg.1cbit.ru/1csoft/1s-bukhgalteriya-8-red-3-0/
+<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>

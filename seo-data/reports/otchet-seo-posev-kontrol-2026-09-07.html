@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Отчёт: контроль посева SEO — alsn.ru — 07.09.2026</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #fff;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e2e2de;
+      --ok: #1a7f4b;
+      --ok-bg: #e8f6ee;
+      --warn: #9a6700;
+      --warn-bg: #fff6e0;
+      --info: #0b6e99;
+      --info-bg: #e8f4fa;
+      --neutral: #666;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: 28px; margin: 0 0 8px; font-weight: 650; }
+    h2 { font-size: 20px; margin: 36px 0 12px; font-weight: 650; }
+    h3 { font-size: 16px; margin: 20px 0 10px; font-weight: 600; }
+    p { margin: 0 0 12px; }
+    .muted { color: var(--muted); }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 20px; }
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+    .pill.ok { color: var(--ok); background: var(--ok-bg); border-color: #c6e6d3; }
+    .pill.warn { color: var(--warn); background: var(--warn-bg); border-color: #f0dfa0; }
+    .pill.info { color: var(--info); background: var(--info-bg); border-color: #bddceb; }
+    .callout {
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .callout.ok { background: var(--ok-bg); border-color: #c6e6d3; }
+    .callout.warn { background: var(--warn-bg); border-color: #f0dfa0; }
+    .callout strong { display: block; margin-bottom: 4px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 16px 0 8px;
+    }
+    @media (max-width: 800px) {
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .two { grid-template-columns: 1fr !important; }
+    }
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+    }
+    .stat .v { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+    .stat .v.ok { color: var(--ok); }
+    .stat .v.warn { color: var(--warn); }
+    .stat .l { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 13px;
+      margin: 10px 0 16px;
+    }
+    th, td {
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f0f0ec; font-weight: 600; white-space: nowrap; }
+    tr:last-child td { border-bottom: 0; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tr.row-ok td { background: #f3faf6; }
+    tr.row-warn td { background: #fffaf0; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin: 12px 0;
+      overflow: hidden;
+    }
+    .card-h {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 600;
+      background: #fafaf8;
+    }
+    .card-b { padding: 12px 14px; }
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .chart {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 8px 8px;
+      margin: 10px 0 16px;
+      overflow-x: auto;
+    }
+    .chart svg { display: block; width: 100%; height: auto; min-width: 640px; }
+    .legend { display: flex; gap: 16px; font-size: 12px; color: var(--muted); margin: 0 8px 8px; }
+    .legend span::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      margin-right: 6px;
+      vertical-align: -1px;
+    }
+    .legend .shows::before { background: #0b6e99; }
+    .legend .clicks::before { background: #1a7f4b; }
+    .legend .before::before { background: #999; }
+    .legend .after::before { background: #0b6e99; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 28px 0; }
+    .foot { font-size: 12px; color: var(--muted); margin-top: 28px; }
+    ul.plain { margin: 0; padding-left: 18px; }
+    ul.plain li { margin: 4px 0; }
+    @media print {
+      body { background: #fff; }
+      .wrap { max-width: none; padding: 0; }
+      .card, .callout, .stat, table, .chart { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Отчёт: контроль посева SEO</h1>
+    <p class="muted">
+      Дата отчёта: 07.09.2026. Сайт alsn.ru. База «до»: 01–25.08 (25 дн.).
+      Окно «после»: 26.08–04.09 (10 дн., лаг Вебмастера). Сравнение в сутки, не в сумме.
+      Источники: Яндекс.Вебмастер, Google Search Console (sc-domain:alsn.ru),
+      Wordstat Cloud (точная фраза, ~30 дн.), живой HTML 07.09.2026, чаты SEO по продуктам.
+    </p>
+    <div class="pills">
+      <span class="pill ok">Яндекс: главный канал</span>
+      <span class="pill warn">Google: мало кликов</span>
+      <span class="pill info">Норма на сутки</span>
+    </div>
+
+    <div class="callout ok">
+      <strong>Вердикт</strong>
+      Посев сработал сильнее всего на модуле маркетплейсов: в Яндексе показы/сутки ×2,4,
+      клики/сутки с ~0 до ~1, CTR с 0,06% до 0,65%, средняя позиция с 9,2 до 6,5.
+      B2B-поставщики — лёгкий плюс. Внедрение 1С — meta опубликованы, но кликов мало;
+      поддержка и лицензии в посеве почти не тронуты. Google вырос по показам страниц,
+      но CTR по целевым URL всё ещё ~0%.
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="v ok">×2,4</div><div class="l">МП: показы/сутки Яндекс</div></div>
+      <div class="stat"><div class="v ok">×25</div><div class="l">МП: клики/сутки Яндекс</div></div>
+      <div class="stat"><div class="v warn">0,65%</div><div class="l">МП CTR после (было 0,06%)</div></div>
+      <div class="stat"><div class="v ok">6,5</div><div class="l">МП ср. позиция после (было 9,2)</div></div>
+    </div>
+
+    <h2>Тренд сайта — Яндекс</h2>
+    <p class="muted">
+      Источник: Вебмастер · report=trend · 01.08–05.09.2026. Окно после посева с 26.08.
+      Клики на графике умножены на 50, чтобы видеть динамику рядом с показами.
+    </p>
+    <h3>Показы и клики ×50 по дням</h3>
+    <div class="chart">
+      <div class="legend">
+        <span class="shows">Показы</span>
+        <span class="clicks">Клики ×50</span>
+      </div>
+      <svg id="trend" viewBox="0 0 900 260" role="img" aria-label="Тренд показов и кликов Яндекс"></svg>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Окно</th>
+          <th class="num">Ср. показы/день</th>
+          <th class="num">Ср. клики/день</th>
+          <th class="num">Ср. позиция (ориентир)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>До (01–25.08)</td>
+          <td class="num">~560</td>
+          <td class="num">~8,6</td>
+          <td class="num">~8,5–9</td>
+        </tr>
+        <tr>
+          <td>После (26.08–04.09)</td>
+          <td class="num">~720</td>
+          <td class="num">~8,4</td>
+          <td class="num">~7,7–8,3</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">
+      Показы сайта выросли; клики в среднем почти те же. Рост кликов сидит в кластере МП,
+      а не «размазан» по всему сайту.
+    </p>
+
+    <hr />
+
+    <h2>По продуктам — Яндекс (норма на сутки)</h2>
+    <h3>Показы в сутки: до vs после</h3>
+    <div class="chart">
+      <div class="legend">
+        <span class="before">До (показы/сутки)</span>
+        <span class="after">После (показы/сутки)</span>
+      </div>
+      <svg id="bars" viewBox="0 0 900 300" role="img" aria-label="Показы по продуктам"></svg>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Продукт</th>
+          <th class="num">Показы/д до→после</th>
+          <th class="num">Клики/д до→после</th>
+          <th class="num">CTR до→после</th>
+          <th class="num">Поз. до→после</th>
+          <th>Оценка</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-ok">
+          <td>МП Ozon/WB</td>
+          <td class="num">63 → 154</td>
+          <td class="num">0,04 → 1,0</td>
+          <td class="num">0,06% → 0,65%</td>
+          <td class="num">9,2 → 6,5</td>
+          <td>Сильный плюс</td>
+        </tr>
+        <tr class="row-ok">
+          <td>B2B телеком</td>
+          <td class="num">141 → 170</td>
+          <td class="num">1,04 → 1,3</td>
+          <td class="num">0,74% → 0,77%</td>
+          <td class="num">5,4 → 5,5</td>
+          <td>Лёгкий плюс</td>
+        </tr>
+        <tr class="row-warn">
+          <td>Внедрение 1С</td>
+          <td class="num">49 → 41</td>
+          <td class="num">0,12 → 0,20</td>
+          <td class="num">0,25% → 0,49%</td>
+          <td class="num">10,8 → 11,3</td>
+          <td>Рано / шум</td>
+        </tr>
+        <tr>
+          <td>Техподдержка</td>
+          <td class="num">2,2 → 4</td>
+          <td class="num">0 → 0</td>
+          <td class="num">0% → 0%</td>
+          <td class="num">8,5 → 8,1</td>
+          <td>Meta не сеяли</td>
+        </tr>
+        <tr>
+          <td>Лицензии</td>
+          <td class="num">7,6 → 7,5</td>
+          <td class="num">0,04 → 0,1</td>
+          <td class="num">0,5% → 1,3%</td>
+          <td class="num">8,6 → 8,1</td>
+          <td>Без посева</td>
+        </tr>
+        <tr>
+          <td>Бренд</td>
+          <td class="num">5,1 → 3,2</td>
+          <td class="num">0,8 → 0,5</td>
+          <td class="num">~16%</td>
+          <td class="num">1,7 → 2,1</td>
+          <td>Стабильно</td>
+        </tr>
+        <tr>
+          <td>Доработка</td>
+          <td class="num">0 → 0</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td>Нет запросов</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Контрольные запросы Яндекс</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Запрос</th>
+          <th>Продукт</th>
+          <th class="num">До: пок/кл/поз</th>
+          <th class="num">После: пок/кл/поз</th>
+          <th class="num">Wordstat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>модуль маркетплейсов 1с</td><td>МП</td><td class="num">281 / 0 / 7,5</td><td class="num">104 / 1 / 4,7</td><td class="num">315</td></tr>
+        <tr><td>модуль 1с для маркетплейсов</td><td>МП</td><td class="num">251 / 0 / 8,2</td><td class="num">123 / 3 / 4,9</td><td class="num">126</td></tr>
+        <tr><td>модули маркетплейсов для 1с</td><td>МП</td><td class="num">237 / 0 / 7,5</td><td class="num">100 / 2 / 4,1</td><td class="num">56</td></tr>
+        <tr><td>1с ут интеграция с маркетплейсами</td><td>МП</td><td class="num">182 / 0 / 9,4</td><td class="num">93 / 0 / 5,6</td><td class="num">90</td></tr>
+        <tr><td>интеграция с озон 1с ут</td><td>МП</td><td class="num">32 / 0 / 10,1</td><td class="num">114 / 0 / 4,0</td><td class="num">54</td></tr>
+        <tr><td>мерлион b2b</td><td>B2B</td><td class="num">408 / 3 / 3,8</td><td class="num">168 / 2 / 3,6</td><td class="num">677</td></tr>
+        <tr><td>ocs b2b</td><td>B2B</td><td class="num">314 / 3 / 5,2</td><td class="num">142 / 2 / 4,6</td><td class="num">881</td></tr>
+        <tr><td>внедрение 1с комплексная автоматизация</td><td>Внедрение</td><td class="num">53 / 0 / 8,6</td><td class="num">38 / 0 / 9,0</td><td class="num">55</td></tr>
+        <tr><td>1с внедрение ка</td><td>Внедрение</td><td class="num">74 / 0 / 8,0</td><td class="num">34 / 0 / 8,3</td><td class="num">26</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">
+      Wordstat: точная фраза в кавычках, Cloud API, съём 07.09.2026 (~30 дн.).
+      У МП спрос есть (56–315), у навигации B2B спрос огромный (677–881), у коммерции
+      «интеграция с поставщиком» почти нет (1–2). CTR B2B ~1% — интент «вход в ЛК», не «купить обмен».
+    </p>
+
+    <hr />
+
+    <h2>Google Search Console</h2>
+    <div class="callout warn">
+      <strong>Google всё ещё слабый канал</strong>
+      До посева (01–25.08) по страницам почти не было кликов (единицы). После (26.08–05.09)
+      выросли показы посадочных, но целевые URL МП и внедрения — 0 кликов. Много трафика
+      ушло в боковые страницы (bitrix24, telegram-боты, ITS).
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>URL / кластер</th>
+          <th class="num">До: пок / кл / поз</th>
+          <th class="num">После: пок / кл / поз</th>
+          <th>Комментарий</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>/casemarketplace (МП)</td><td class="num">4 / 0 / 8,5</td><td class="num">80 / 0 / 29,1</td><td>Показы ↑, позиция в Google хуже</td></tr>
+        <tr><td>/development1c</td><td class="num">7 / 0 / 37,7</td><td class="num">83 / 0 / 35,1</td><td>Видимость ↑, кликов 0</td></tr>
+        <tr><td>/ecom</td><td class="num">2 / 0 / 3,5</td><td class="num">— в топ-100 мало</td><td>Слабый объём</td></tr>
+        <tr><td>Главная /</td><td class="num">11 / 0 / 20,6</td><td class="num">135 / 5 / 11,3</td><td>Единственный заметный рост кликов</td></tr>
+        <tr><td>/bitrix24</td><td class="num">105 / 0 / 37,7</td><td class="num">1035 / 2 / 35,2</td><td>Не фокус-продукт, размывает картину</td></tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <h2>Что изменили в посеве (по продуктам)</h2>
+
+    <div class="card">
+      <div class="card-h">1. Модуль МП — /casemarketplace <span class="pill ok">Опубликовано</span></div>
+      <div class="card-b">
+        <p>Title: «Модуль 1С для маркетплейсов Ozon и Wildberries | Аллсан». Description с ценой от 40 700 ₽/год. Коммерческий абзац под H1. Снят сквозной виджет Telegram (T825/BF905) с Header. Переобход в Вебмастере.</p>
+        <p><strong>Влияние на позиции/клики</strong></p>
+        <p>Плюс: ключ «модуль» в title → рост позиций и CTR; цена в тексте → Яндекс тянет сниппет со страницы; снятие TG → меньше интент-шума. Минус/риск: meta description Яндекс часто игнорирует; CTR всё ещё ниже бенчмарка 2–5% на поз. 4–10.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h">2. B2B поставщики — /ecom, /etm-ipro, кейс <span class="pill ok">Опубликовано</span></div>
+      <div class="card-b">
+        <p>Title/description /ecom и /etm-ipro. Organization + WebSite (сайт) + Service на /ecom. Кейс → /caseecomsc с новым title/desc, H1 и schema.</p>
+        <p><strong>Влияние</strong></p>
+        <p>Плюс: коммерческий сниппет и schema для GEO. Минус: основной спрос Wordstat — «мерлион/ocs b2b» (вход в ЛК), не «интеграция с поставщиком»; CTR почти не сдвинулся. Риск смены URL кейса без 301 на старте (позже выровняли).</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h">3. Внедрение 1С — /development1c, /kompleksnaya_avtomatizaciya <span class="pill ok">Опубликовано</span></div>
+      <div class="card-b">
+        <p>Живой HTML 07.09: title/H1 «Внедрение 1С под ключ — УТ, КА, ERP»; на КА — title/H1 про внедрение КА; Service schema есть.</p>
+        <p><strong>Влияние</strong></p>
+        <p>Плюс: снят смешанный сниппет «купить + поддержка». Минус/риск: смена title на уже ранжируемой КА-странице могла дать краткий качок позиции (в брифе риск 1–3 недели); в окне «после» кликов по контрольным ключам ещё 0.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h">4–6. Поддержка · Лицензии · Главная · Доработка <span class="pill warn">Не посеяно / план</span></div>
+      <div class="card-b">
+        <p>/support1c — только EPR, meta на живом сайте не меняли. Лицензии — бриф начат ~31.08, публикация не подтверждена. Главная — разбор структуры без смены title. Доработка — в топе Вебмастера нет запросов. На метрики посева эти продукты почти не влияют.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h">Сквозные действия <span class="pill info">Кабинеты</span></div>
+      <div class="card-b">
+        <p>GSC: оставлены рабочие sitemap, feeds/apps сняты. Удалены битые внешние ссылки на /publication. robots.txt на Тильде не правился (ограничение платформы).</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>Плюс / минус: что могло сдвинуть позиции и клики</h2>
+    <div class="two">
+      <div class="card">
+        <div class="card-h">Скорее положительно</div>
+        <div class="card-b">
+          <ul class="plain">
+            <li>Title МП с ключом «модуль» + Ozon/WB</li>
+            <li>Цена и коммерческий абзац (сниппет Яндекса)</li>
+            <li>Рост позиций МП 7–9 → 4–5 → больше кликов</li>
+            <li>Снятие TG-виджета (продукт снят с продажи)</li>
+            <li>Title/H1 внедрения без смеси с поддержкой</li>
+            <li>Schema Organization / Service</li>
+            <li>Переобход Вебмастера + чистка sitemap в GSC</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">Скорее отрицательно / риск</div>
+        <div class="card-b">
+          <ul class="plain">
+            <li>Meta description почти не в сниппете Яндекса</li>
+            <li>CTR МП 0,65% всё ещё ниже нормы 2–5%</li>
+            <li>Смена title КА — краткая турбулентность</li>
+            <li>B2B: трафик навигации в ЛК, не коммерция</li>
+            <li>Google: /casemarketplace поз. ~29 при росте показов</li>
+            <li>Старые TG/Bitrix-страницы оттягивают Google</li>
+            <li>Поддержка/лицензии без посева = нет эффекта</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>Wordstat — спрос (контекст, не эффект посева)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Фраза</th>
+          <th class="num">Частота ~30 дн.</th>
+          <th>Продукт</th>
+          <th>Смысл для контроля</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>модуль маркетплейсов 1с</td><td class="num">315</td><td>МП</td><td>Ядро посева — спрос есть</td></tr>
+        <tr><td>модуль 1с для маркетплейсов</td><td class="num">126</td><td>МП</td><td>Уже даёт клики</td></tr>
+        <tr><td>интеграция с маркетплейсами</td><td class="num">1288</td><td>МП</td><td>Широкий спрос, слабее ключ</td></tr>
+        <tr><td>мерлион b2b</td><td class="num">677</td><td>B2B</td><td>Навигация, не интеграция</td></tr>
+        <tr><td>ocs b2b</td><td class="num">881</td><td>B2B</td><td>Навигация</td></tr>
+        <tr><td>втт b2b</td><td class="num">335</td><td>B2B</td><td>Навигация</td></tr>
+        <tr><td>внедрение 1с комплексная автоматизация</td><td class="num">55</td><td>Внедрение</td><td>Мало, но целевой</td></tr>
+        <tr><td>1с внедрение ка</td><td class="num">26</td><td>Внедрение</td><td>Узкий ключ</td></tr>
+        <tr><td>интеграция с поставщиком</td><td class="num">1</td><td>B2B</td><td>Коммерции почти нет</td></tr>
+        <tr><td>техподдержка 1с</td><td class="num">15939</td><td>Поддержка</td><td>Спрос огромный, страница не сеялась</td></tr>
+        <tr><td>доработка 1с</td><td class="num">3276</td><td>Доработка</td><td>Спрос есть, в Вебмастере пусто</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Следующий контроль</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Когда</th>
+          <th>Что смотреть</th>
+          <th>Критерий успеха</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>+2 недели (~21.09)</td><td>МП: CTR по топ-5 фразам</td><td>CTR ≥ 1,5–2% при поз. ≤5</td></tr>
+        <tr><td>+2 недели</td><td>Внедрение: клики по КА/ERP</td><td>≥1 клик/нед. на контрольных</td></tr>
+        <tr><td>Очередь работ</td><td>Title/desc /support1c</td><td>Появление показов по «техподдержка 1с»</td></tr>
+        <tr><td>Очередь работ</td><td>B2B: коммерческие тексты, не ЛК</td><td>Рост запросов «интеграция/API», не только «b2b»</td></tr>
+        <tr><td>Google</td><td>/casemarketplace позиция</td><td>Средняя поз. &lt; 15 и первые клики</td></tr>
+      </tbody>
+    </table>
+
+    <p class="foot">
+      Чаты-источники правок: SEO общее, SEO маркетплейсы, SEO поставщики, SEO Внедрение 1С,
+      SEO поддержка 1с, SEO Лицензии. Bing вне контура.<br />
+      Файл выгружен 07.09.2026 из канваса «Отчёт: контроль посева SEO».
+    </p>
+  </div>
+
+  <script>
+    const DATES = [
+      "01.08","02.08","03.08","04.08","05.08","06.08","07.08","08.08",
+      "09.08","10.08","11.08","12.08","13.08","14.08","15.08","16.08",
+      "17.08","18.08","19.08","20.08","21.08","22.08","23.08","24.08",
+      "25.08","26.08","27.08","28.08","29.08","30.08","31.08","01.09",
+      "02.09","03.09","04.09","05.09"
+    ];
+    const SHOWS = [468,419,864,812,825,881,613,245,284,635,574,624,614,537,251,210,606,537,695,689,714,322,269,661,712,839,992,880,438,348,973,739,921,764,755,292];
+    const CLICKS = [6,4,7,11,16,11,5,2,8,11,9,9,9,6,6,7,12,14,10,11,16,3,0,9,13,7,13,7,3,4,15,5,11,11,8,4];
+
+    function polyline(svg, values, color, maxY, pad) {
+      const w = 900, h = 260;
+      const left = pad.l, right = pad.r, top = pad.t, bottom = pad.b;
+      const iw = w - left - right, ih = h - top - bottom;
+      const pts = values.map((v, i) => {
+        const x = left + (i / (values.length - 1)) * iw;
+        const y = top + ih - (v / maxY) * ih;
+        return x.toFixed(1) + "," + y.toFixed(1);
+      }).join(" ");
+      const p = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+      p.setAttribute("fill", "none");
+      p.setAttribute("stroke", color);
+      p.setAttribute("stroke-width", "2");
+      p.setAttribute("points", pts);
+      svg.appendChild(p);
+    }
+
+    (function drawTrend() {
+      const svg = document.getElementById("trend");
+      const pad = { l: 40, r: 16, t: 16, b: 36 };
+      const maxY = 1100;
+      const clicksScaled = CLICKS.map(c => c * 50);
+      // grid
+      for (let i = 0; i <= 4; i++) {
+        const y = pad.t + ((260 - pad.t - pad.b) * i) / 4;
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", pad.l);
+        line.setAttribute("x2", 900 - pad.r);
+        line.setAttribute("y1", y);
+        line.setAttribute("y2", y);
+        line.setAttribute("stroke", "#e8e8e4");
+        svg.appendChild(line);
+        const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        t.setAttribute("x", 4);
+        t.setAttribute("y", y + 4);
+        t.setAttribute("font-size", "10");
+        t.setAttribute("fill", "#888");
+        t.textContent = String(Math.round(maxY * (1 - i / 4)));
+        svg.appendChild(t);
+      }
+      // cutoff after 25.08 (index 25)
+      const xCut = pad.l + (25 / (DATES.length - 1)) * (900 - pad.l - pad.r);
+      const cut = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      cut.setAttribute("x1", xCut);
+      cut.setAttribute("x2", xCut);
+      cut.setAttribute("y1", pad.t);
+      cut.setAttribute("y2", 260 - pad.b);
+      cut.setAttribute("stroke", "#c9a227");
+      cut.setAttribute("stroke-dasharray", "4 3");
+      svg.appendChild(cut);
+      const cutLab = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      cutLab.setAttribute("x", xCut + 4);
+      cutLab.setAttribute("y", pad.t + 10);
+      cutLab.setAttribute("font-size", "10");
+      cutLab.setAttribute("fill", "#9a6700");
+      cutLab.textContent = "после 26.08";
+      svg.appendChild(cutLab);
+
+      polyline(svg, SHOWS, "#0b6e99", maxY, pad);
+      polyline(svg, clicksScaled, "#1a7f4b", maxY, pad);
+
+      DATES.forEach((d, i) => {
+        if (i % 5 !== 0 && i !== DATES.length - 1) return;
+        const x = pad.l + (i / (DATES.length - 1)) * (900 - pad.l - pad.r);
+        const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        t.setAttribute("x", x);
+        t.setAttribute("y", 252);
+        t.setAttribute("text-anchor", "middle");
+        t.setAttribute("font-size", "10");
+        t.setAttribute("fill", "#888");
+        t.textContent = d;
+        svg.appendChild(t);
+      });
+    })();
+
+    (function drawBars() {
+      const svg = document.getElementById("bars");
+      const cats = ["МП Ozon/WB","B2B поставщики","Внедрение 1С","Лицензии","Бренд","Техподдержка","Прочее"];
+      const before = [63.2, 141, 48.6, 7.6, 5.1, 2.2, 48.6];
+      const after = [154, 169.7, 40.9, 7.5, 3.2, 4, 51.1];
+      const pad = { l: 140, r: 24, t: 10, b: 24 };
+      const maxX = 180;
+      const rowH = 36;
+      cats.forEach((c, i) => {
+        const y = pad.t + i * rowH;
+        const lab = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        lab.setAttribute("x", pad.l - 8);
+        lab.setAttribute("y", y + 18);
+        lab.setAttribute("text-anchor", "end");
+        lab.setAttribute("font-size", "12");
+        lab.setAttribute("fill", "#333");
+        lab.textContent = c;
+        svg.appendChild(lab);
+
+        const w1 = (before[i] / maxX) * (900 - pad.l - pad.r);
+        const w2 = (after[i] / maxX) * (900 - pad.l - pad.r);
+        const r1 = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        r1.setAttribute("x", pad.l);
+        r1.setAttribute("y", y + 4);
+        r1.setAttribute("width", Math.max(1, w1));
+        r1.setAttribute("height", 10);
+        r1.setAttribute("fill", "#999");
+        r1.setAttribute("rx", "2");
+        svg.appendChild(r1);
+        const r2 = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        r2.setAttribute("x", pad.l);
+        r2.setAttribute("y", y + 16);
+        r2.setAttribute("width", Math.max(1, w2));
+        r2.setAttribute("height", 10);
+        r2.setAttribute("fill", "#0b6e99");
+        r2.setAttribute("rx", "2");
+        svg.appendChild(r2);
+      });
+    })();
+  </script>
+</body>
+</html>

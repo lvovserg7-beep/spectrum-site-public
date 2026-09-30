@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TIER 2 - Хлебные крошки: «Кейсы Telegram-ботов» - инструкция Тильда - 29.09.2026</title>
+  <style>
+    :root {
+      --bg: #f4f3ef;
+      --card: #fff;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e2e2de;
+      --ok: #1a7f4b;
+      --ok-bg: #e8f6ee;
+      --warn: #9a6700;
+      --warn-bg: #fff6e0;
+      --danger: #b42318;
+      --danger-bg: #fdecea;
+      --info: #0b6e99;
+      --info-bg: #e8f4fa;
+      --code: #0f172a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 24px 18px 72px; }
+    h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    h3 { font-size: 16px; margin: 14px 0 6px; }
+    p { margin: 0 0 8px; }
+    a { color: #0b5cad; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 650;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+    .pill.ok { color: var(--ok); background: var(--ok-bg); border-color: #c6e6d3; }
+    .pill.warn { color: var(--warn); background: var(--warn-bg); border-color: #f0dfa0; }
+    .pill.danger { color: var(--danger); background: var(--danger-bg); border-color: #f5c2c0; }
+    .pill.info { color: var(--info); background: var(--info-bg); border-color: #bddceb; }
+    .callout {
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 12px 0 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      font-size: 14px;
+    }
+    .callout.danger { background: var(--danger-bg); border-color: #f5c2c0; }
+    .callout.warn { background: var(--warn-bg); border-color: #f0dfa0; }
+    .callout.info { background: var(--info-bg); border-color: #bddceb; }
+    .callout.ok { background: var(--ok-bg); border-color: #c6e6d3; }
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 0 0 20px;
+    }
+    .toc ol { margin: 6px 0 0; padding-left: 22px; }
+    .toc li { margin: 3px 0; }
+    .toc a { text-decoration: none; }
+    .task {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px 18px;
+      margin: 0 0 18px;
+    }
+    .task .num {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 10px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .lbl {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 14px 0 4px;
+    }
+    .lbl:first-of-type { margin-top: 8px; }
+    ol.steps { margin: 4px 0 0; padding-left: 22px; }
+    ol.steps > li { margin: 6px 0; }
+    .path {
+      font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+      font-size: 12.5px;
+      background: #111;
+      color: #f5f5f4;
+      border-radius: 8px;
+      padding: 8px 10px;
+      margin: 6px 0 8px;
+      overflow-x: auto;
+    }
+    .copybox { position: relative; margin: 6px 0 10px; }
+    .copybox pre {
+      margin: 0;
+      background: var(--code);
+      color: #e5e7eb;
+      border-radius: 10px;
+      padding: 12px 12px 40px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font: 13px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace;
+    }
+    .copybox button {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    .copybox button:hover { background: #f3f4f6; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      margin: 6px 0 0;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 7px 9px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #fafaf8; font-size: 12px; }
+    code { font-size: 12.5px; background: #f0f0ec; padding: 1px 5px; border-radius: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .tag.ok { background: var(--ok-bg); color: var(--ok); }
+    .tag.warn { background: var(--warn-bg); color: var(--warn); }
+    .tag.danger { background: var(--danger-bg); color: var(--danger); }
+    .tag.info { background: var(--info-bg); color: var(--info); }
+    button.inline-copy {
+      display: inline-block;
+      margin: 0 4px 2px 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 650;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    footer.note {
+      margin-top: 28px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Хлебные крошки по сайту alsn.ru</h1>
+    <p class="muted">Тильда · живой сайт · первая версия 18.09.2026, сверка с сайтом 29.09.2026 · только обычные страницы (не карточки Каталога)</p>
+    <div class="pills">
+      <span class="pill info">TIER 2</span>
+      <span class="pill warn">дом + /</span>
+      <span class="pill danger">осталась 1 страница</span>
+    </div>
+
+    <div class="callout info">
+      <strong>Как работать.</strong> Каждый шаг - отдельно. Перед кликом, вставкой и «Опубликовать» - письменное «да» в чате.
+      «Опубликовать» в конце - тоже отдельный шаг.
+    </div>
+
+    <div class="callout warn">
+      <strong>Канон вида.</strong> Как на карточке Каталога: иконка дома (ссылка на главную), слэш <code>/</code>, имя страницы.
+      На экране не писать «Главная» и не ставить стрелку. В служебном коде первое имя по-прежнему «Главная». Имя текущей страницы на экране = имя в коде буква в букву.
+    </div>
+
+    <div class="callout ok">
+      <strong>Уже сделано - не трогать</strong>
+      <ul style="margin:6px 0 0;padding-left:18px;">
+        <li>T1: дом и <code>/</code> вместо «Главная →» на страницах «Техподдержка 1С», «Интеграция с поставщиками», «Модуль 1С для маркетплейсов», «Лицензии 1С», «1С:КП», «1С:Фреш» - проверено на сайте 29.09.2026.</li>
+        <li>T2, волна A: «О компании», «Контакты», «Вакансии», «ЦРА», «Клиенты», «Битрикс24», «Telegram-бот 1С», «Кейсы» - крошки и служебный путь стоят, проверено на сайте 29.09.2026.</li>
+        <li>T2, волна B: ЭТМ iPRO, Мерлион, OCS, Марвел, Treolan, 3logic - новые крошки стоят, проверено на сайте 29.09.2026. Старый блок со стрелкой на них убирается по задаче В-6 - перенесено в <code>tier2-breadcrumbs-wave-2026-09-28.html</code>.</li>
+        <li>T2, кейс СЦ (<code>/caseecomsc</code>) - проверено на сайте 29.09.2026.</li>
+        <li>T2, волна C: «Продукты», «Интеграция Битрикс24 и 1С», 1С:Бухгалтерия, 1С:ЗУП, 1С:УТ, 1С:УНФ, 1С:Документооборот, «Переход с УПП», «Интеграция с сайтом», «Интеграция с экосистемой», «Блог», «Стажировка», «Команда», «Отзывы», amoCRM, WhatsApp-бот 1С, «CRM для мебели», «Аутсорс или штат» - проверено на сайте 29.09.2026.</li>
+        <li>T2, «Переход с МойСклад» и «Перевыставление Озон» - перенесено в <code>tier2-breadcrumbs-wave-2026-09-28.html</code> (задача В-8).</li>
+        <li>T0, T3, T4 (как подобрать фон, запасные шаблоны) - справка к закрытым страницам, убрана. Канон вида и фона: правило <code>tilda-breadcrumbs.mdc</code>.</li>
+      </ul>
+    </div>
+
+    <div class="callout danger">
+      <strong>Не трогать.</strong> Главную <code>/</code> (крошки не нужны). Карточки Каталога <code>/…/tproduct/…</code> (там ST340).
+      <code>robots.txt</code>, Twitter/X, Bing. Блоки Telegram-бота на сайте не снимать.
+      HEAD <strong>сайта</strong> не открывать - только HEAD конкретной страницы.
+    </div>
+
+    <section class="task" id="t2">
+      <h2><span class="num">T2</span> «Кейсы Telegram-ботов»: добавить крошки</h2>
+      <p class="muted">Страница «Кейсы Telegram-ботов» · <a href="https://alsn.ru/case_telegram_bot">https://alsn.ru/case_telegram_bot</a> · адрес в Тильде <code>case_telegram_bot</code></p>
+      <span class="lbl">Что сделать</span>
+      <p>Поставить над первым экраном блок крошек «дом / Кейсы / Кейсы Telegram-ботов» и добавить служебный путь в HEAD страницы. На 29.09.2026 новых крошек нет, под меню стоит старый блок со стрелкой.</p>
+      <span class="lbl">Зачем</span>
+      <p>Гость видит, что страница лежит в разделе «Кейсы», и может одним кликом туда вернуться. Поиск понимает место страницы в структуре сайта.</p>
+      <span class="lbl">Как в Тильде</span>
+      <ol class="steps">
+        <li>Список страниц → <code>case_telegram_bot</code> → <strong>Редактировать</strong>.</li>
+        <li>Если сразу под меню стоит блок со стрелкой <code>→</code> (старый T758) - навести → корзина / «Удалить».</li>
+        <li>Навести на первый экран с заголовком → <strong>«+»</strong> сверху → Библиотека блоков → <strong>Другое</strong> → <strong>T123 «HTML-код»</strong>.</li>
+        <li>Контент T123 → вставить блок «На экран».</li>
+        <li>Настройки T123 → «Цвет фона»: то, что видно у верхнего края первого экрана ниже (заливка или картинка). Светлый экран - <code>#ffffff</code> и код ниже как есть. Тёмный экран или тёмное фото - <code>#000000</code> и в коде заменить <code>color:#8a8a8a</code> на <code>color:#cfcfcf</code>. Отступы сверху и снизу 0. <strong>Сохранить</strong>.</li>
+        <li>Список страниц → страница → <strong>Настройки</strong> (шестерёнка) → <strong>Дополнительно</strong> → «HTML-код для вставки внутрь head» → в конец, ничего не стирая, вставить блок «В HEAD». <strong>Сохранить</strong>.</li>
+        <li><strong>Опубликовать</strong> страницу (отдельное «да»).</li>
+      </ol>
+      <p class="muted"><strong>На экран (T123)</strong></p>
+      <div class="copybox"><pre id="c-html-case-telegram-bot">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/cases" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Кейсы&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Кейсы Telegram-ботов&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="c-html-case-telegram-bot">Копировать</button></div>
+      <p class="muted"><strong>В HEAD (BreadcrumbList)</strong></p>
+      <div class="copybox"><pre id="c-bc-case-telegram-bot">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/case_telegram_bot#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Кейсы", "item": "https://alsn.ru/cases" },
+    { "@type": "ListItem", "position": 3, "name": "Кейсы Telegram-ботов", "item": "https://alsn.ru/case_telegram_bot" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="c-bc-case-telegram-bot">Копировать</button></div>
+    </section>
+
+    <section class="task" id="skip">
+      <h2>Не трогать / отложить</h2>
+      <table>
+        <tr><th>Что</th><th>Почему</th></tr>
+        <tr><td>Главная <code>/</code></td><td>Крошки на корне не ставим</td></tr>
+        <tr><td>Карточки <code>/…/tproduct/…</code></td><td>ST340, в этой инструкции не разбираем</td></tr>
+        <tr><td><code>/policy</code>, <code>/privacy</code>, <code>/soglashenie</code>, <code>/uslovia-vozvrata</code>, <code>/sitemap</code></td><td>Служебные, по желанию позже</td></tr>
+        <tr><td><code>/event-2025-*</code></td><td>Разовые лендинги</td></tr>
+        <tr><td>robots.txt</td><td>Тильда не даёт править</td></tr>
+        <tr><td>Twitter / Bing</td><td>Вне контура</td></tr>
+      </table>
+    </section>
+
+    <footer class="note">
+      Файл: <code>seo-data/tilda-briefs/tier2-breadcrumbs-sitewide-2026-09-18.html</code> ·
+      на alsn.ru не заливать · правки только в кабинете Тильды по шагам с «да».
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      function copyText(text, btn) {
+        function ok() {
+          if (!btn) return;
+          var prev = btn.textContent;
+          btn.textContent = "Скопировано";
+          btn.classList && btn.classList.add("ok");
+          setTimeout(function () {
+            btn.textContent = prev;
+            btn.classList && btn.classList.remove("ok");
+          }, 1400);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(ok).catch(function () {
+            fallback(text, ok);
+          });
+        } else {
+          fallback(text, ok);
+        }
+      }
+      function fallback(text, ok) {
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); ok(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+      document.querySelectorAll("[data-copy]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var id = btn.getAttribute("data-copy");
+          var el = document.getElementById(id);
+          if (!el) return;
+          copyText(el.textContent, btn);
+        });
+      });
+      document.querySelectorAll("button.inline-copy").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          copyText(btn.getAttribute("data-text") || "", btn);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

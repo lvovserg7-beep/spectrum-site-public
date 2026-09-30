@@ -1,0 +1,948 @@
+{
+  "/cracasesoftvideo": {
+    "title": "Кейс Внедрение CRM системы в ООО \"Софтвидео\" - Аллсан Интеграция",
+    "h1": "Кейс «Внедрение CRM системы в ООО \"Софтвидео\"»",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/cracasesoftvideo"
+    ],
+    "nav_rec": "4021692001",
+    "nav_html": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">ЦРА</span> </nav>",
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      },
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "BreadcrumbList",
+          "ListItem",
+          "ListItem"
+        ],
+        "ids": [
+          "https://alsn.ru/cra#breadcrumb"
+        ],
+        "is_bc": true
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "4021692001",
+        "type": "131",
+        "bg": "#000000",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "/ ЦРА"
+      },
+      {
+        "rec": "880832647",
+        "type": "205",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "height:700px;background-color: #000000;opacity: 0.5;",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Кейс «Внедрение CRM системы в ООО \"Софтвидео\"» Команда профессиональных программистов 1С по цене 1 вашего сотрудника Сэк"
+      }
+    ]
+  },
+  "/persons/interw_lvov": {
+    "title": "Сергей Львов - интервью с основателем Allsun Integration",
+    "h1": "Интеграция 1С. Как услуга стала отдельным бизнесом?",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/persons/interw_lvov"
+    ],
+    "nav_rec": "4022534201",
+    "nav_html": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Команда</span> </nav>",
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      },
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "BreadcrumbList",
+          "ListItem",
+          "ListItem"
+        ],
+        "ids": [
+          "https://alsn.ru/persons#breadcrumb"
+        ],
+        "is_bc": true
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "4022534201",
+        "type": "131",
+        "bg": "#000000",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "/ Команда"
+      },
+      {
+        "rec": "168992077",
+        "type": "18",
+        "bg": "#000000",
+        "artboard_bg": "",
+        "filter": "height:60vh;background-image: linear-gradient(to bottom, rgba(0,0,0,0.40), rgba(0,0,0,0.40));",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Интеграция 1С. Как услуга стала отдельным бизнесом? Интервью с основателем и управляющим партнером Allsun Integration Се"
+      }
+    ]
+  },
+  "/1c-ozon-old": {
+    "err": "HTTP Error 404: Not Found"
+  },
+  "/vtt": {
+    "title": "Интеграция 1С с ВТТ B2B по API недорого, прямой доступ к личному кабинету VTT B2B - Аллсан",
+    "h1": "Интеграция 1C с ВТТ B2B по API",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/vtt"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1131768631",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → ВТТ"
+      },
+      {
+        "rec": "1131768636",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Однократная оплата без ежегодного продления! Интеграция 1C с ВТТ B2B по API Возможности: Загрузка остатков товаров Загру"
+      }
+    ]
+  },
+  "/dssl": {
+    "title": "Интеграция 1С с ДССЛ B2B по API недорого, прямой доступ порталу DSSL B2B - Аллсан",
+    "h1": "Интеграция 1C с ДССЛ B2B по API",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/dssl"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1131775441",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → DSSL"
+      },
+      {
+        "rec": "1131775451",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Однократная оплата без ежегодного продления! Интеграция 1C с ДССЛ B2B по API Возможности: Загрузка остатков товаров Загр"
+      }
+    ]
+  },
+  "/elko": {
+    "title": "Интеграция 1С с ELKO B2B по API недорого, прямой доступ к порталу ЭЛКО Рус B2B - Аллсан",
+    "h1": "Интеграция 1C с ELKO Rus B2B по API",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/elko"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1131790481",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Элко Рус"
+      },
+      {
+        "rec": "1131790486",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Однократная оплата без ежегодного продления! Интеграция 1C с ELKO Rus B2B по API Возможности: Загрузка остатков товаров "
+      }
+    ]
+  },
+  "/digis": {
+    "title": "Интеграция 1С с DIGIS B2B по API недорого, прямой доступ к личному кабинету DIGIS B2B - Аллсан",
+    "h1": "Интеграция 1C с DIGIS B2B по API",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/digis"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1131426891",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → DIGIS"
+      },
+      {
+        "rec": "1131426896",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Однократная оплата без ежегодного продления! Интеграция 1C с DIGIS B2B по API Возможности: Загрузка остатков товаров Заг"
+      }
+    ]
+  },
+  "/auvix": {
+    "title": "Интеграция 1С с AUVIX B2B по API недорого, прямой доступ порталу AUVIX B2B - Аллсан",
+    "h1": "Интеграция 1C с AUVIX B2B по API",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/auvix"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1131674231",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → AUVIX"
+      },
+      {
+        "rec": "1131674236",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Однократная оплата без ежегодного продления! Интеграция 1C с AUVIX B2B по API Возможности: Загрузка остатков товаров Заг"
+      }
+    ]
+  },
+  "/resurs-media": {
+    "title": "Интеграция 1С с Ресурс-Медиа B2B по API недорого, прямой доступ к порталу Ресурс-Медиа B2B - Аллсан",
+    "h1": "Интеграция 1C с Ресурс-Медиа B2B по API",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/resurs-media"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1131163126",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Ресурс-Медиа"
+      },
+      {
+        "rec": "1131163131",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Однократная оплата без ежегодного продления! Интеграция 1C с Ресурс-Медиа B2B по API Возможности: Загрузка остатков това"
+      }
+    ]
+  },
+  "/russkiy-svet": {
+    "title": "Интеграция 1С с Русский Свет B2B по API недорого, прямой доступ к личному кабинету юридических лиц Русский Свет B2B - Аллсан",
+    "h1": "Интеграция 1C с Русский Свет B2B по API",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/russkiy-svet"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1131270696",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Русский Свет"
+      },
+      {
+        "rec": "1131270701",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Однократная оплата без ежегодного продления! Интеграция 1C с Русский Свет B2B по API Возможности: Загрузка остатков това"
+      }
+    ]
+  },
+  "/perehod-s-ut-na-unf": {
+    "title": "Переход с УТ 10.3 и 11 на УНФ 1С от 1 дня, перенос данных легко и недорого - Аллсан Интеграция",
+    "h1": "Переход с УТ 10.3 и 11 на УНФ 3.0 от 1 дня",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/perehod-s-ut-na-unf"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1268391961",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Сопровождение 1С → Перенос данных из УТ 10.3 и 11 в УНФ"
+      },
+      {
+        "rec": "1266450781",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Быстро и легко Переход с УТ 10.3 и 11 на УНФ 3.0 от 1 дня Переход из 1С:УТ (10.3, 11.х) в УНФ 3.0 с переносом данных от "
+      }
+    ]
+  },
+  "/perehod-s-dokumentooborota-2-1-na-3-0": {
+    "title": "Переход с Документооборота 2.1 на 3.0 за 1 день, миграция на 1С ДО 3.0 недорого - Аллсан Интеграция",
+    "h1": "Переход с 1С:Документооборот 2.1 на 3.0",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/perehod-s-dokumentooborota-2-1-na-3-0"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1268458041",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Сопровождение 1С → Миграция с 1С:Документооборот 2.1 на 3.0"
+      },
+      {
+        "rec": "1264069001",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Быстро и легко Переход с 1С:Документооборот 2.1 на 3.0 Переход на Документооборот 3.0 от 1 дня Стоимость: от 99,000₽ Сох"
+      }
+    ]
+  },
+  "/perehod-s-ut-10-3": {
+    "title": "Переход с УТ 10.3 на 11.5 за 1 день, перенос документов легко и недорого - Аллсан Интеграция",
+    "h1": "Переход с УТ 10.3 на 11.5 от 1 дня",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/perehod-s-ut-10-3"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1268461181",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Сопровождение 1С → Перенос документов из УТ 10.3 в 11.5"
+      },
+      {
+        "rec": "1256793311",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Быстро и легко Переход с УТ 10.3 на 11.5 от 1 дня Переход из УТ 10.3 на 11.5 от 1 дня Стоимость: от 99,000₽ Сохраним и п"
+      }
+    ]
+  },
+  "/moy-sklad-perenos-v-1s": {
+    "title": "Переход с МойСклад в 1С за 3 дня, заказать перенос данных с Мой Склад в 1С - Аллсан Зеленоград",
+    "h1": "Переход с МойСклад на 1С за 3 дня",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/moy-sklad-perenos-v-1s"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1009652306",
+        "type": "179",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "height:100vh;background-image: linear-gradient(to bottom, rgba(0,0,0,0.70), rgba(0,0,0,0.70));",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Переход с МойСклад на 1С за 3 дня Быстро и безболезненно переведем вас из сервиса Мой Склад в 1С, перенесем данные, наст"
+      },
+      {
+        "rec": "1009652401",
+        "type": "576",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Этапы работ по переносу Мой Склад в 1С Ваше обращение. Изучение целей и задач. Анализ потребностей по доработке и интегр"
+      }
+    ]
+  },
+  "/sinhronizaciya-bp-i-bp": {
+    "title": "Синхронизация БП и БП 3.0 от 1 дня, синхронизация между базами 1С Бухгалтерия - Аллсан Интеграция",
+    "h1": "Синхронизация БП и БП от 1 дня",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/sinhronizaciya-bp-i-bp"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1286198551",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Сопровождение 1С → Синхронизация между базами 1С БП"
+      },
+      {
+        "rec": "1286198561",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Быстро и легко Синхронизация БП и БП от 1 дня Настроим синхронизацию БП 3.0 и БП 3.0, а также между любыми другими верси"
+      }
+    ]
+  },
+  "/sinhronizaciya-mezhdu-zup-i-zup": {
+    "title": "Синхронизация между ЗУП и ЗУП от 1 дня, автоматический обмен данными между 1С ЗУП - Аллсан Интеграция",
+    "h1": "Синхронизация между ЗУП и ЗУП от 1 дня",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/sinhronizaciya-mezhdu-zup-i-zup"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1290154861",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Сопровождение 1С → Синхронизация и обмен между ЗУП и ЗУП"
+      },
+      {
+        "rec": "1290154871",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Быстро и легко Синхронизация между ЗУП и ЗУП от 1 дня Настроим автоматическую и ручную синхронизацию между базами 1C ЗУП"
+      }
+    ]
+  },
+  "/sinhronizaciya-mezhdu-ut-i-ut": {
+    "title": "Синхронизация между УТ 11 и УТ 11 от 1 дня, автоматический обмен данными между 1С УТ - Аллсан Интеграция",
+    "h1": "Синхронизация между 1С: УТ и УТ от 1 дня",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/sinhronizaciya-mezhdu-ut-i-ut"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1293893281",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Сопровождение 1С → Синхронизация и обмен между УТ 11 и УТ 11"
+      },
+      {
+        "rec": "1293893291",
+        "type": "180",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Быстро и легко Синхронизация между 1С: УТ и УТ от 1 дня Настроим синхронизацию данных между 1C: УТ 11 и УТ 11 (а также л"
+      }
+    ]
+  },
+  "/perevystavlenie-uslug-posledney-mili-ozon-v-1s": {
+    "title": "Перевыставление услуг последней мили ОЗОН с НДС в 1С в три клика - Аллсан Интеграция",
+    "h1": "Перевыставление услуг последней мили ОЗОН с НДС за три клика в 1С",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "939556931",
+        "type": "1065",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "height:70vh;background-image: linear-gradient(to bottom, rgba(0,0,0,0.90), rgba(0,0,0,0.70));",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Перевыставление услуг последней мили ОЗОН с НДС за три клика в 1С Услуги последней мили ОЗОН больше не проблема для орга"
+      },
+      {
+        "rec": "939672831",
+        "type": "60",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Почему услуга \"Последней мили\" ОЗОН – кошмар организаций - плательщиков НДС? В 2025 году OZON начал перевыставлять услуг"
+      }
+    ]
+  },
+  "/1_obschepit_fastfood": {
+    "title": "1C:Предприятие 8 Фастфуд и Общепит купить, внедрение, техподдержка - Аллсан Зеленоград",
+    "h1": "1C:Предприятие 8. Фастфуд и Общепит",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/1_obschepit_fastfood"
+    ],
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      }
+    ],
+    "head_has_tproduct_script": false,
+    "first_blocks": [
+      {
+        "rec": "889903597",
+        "type": "1065",
+        "bg": "#212121",
+        "artboard_bg": "",
+        "filter": "height:100vh;background-color: unset;opacity: 0.4;",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "1C:Предприятие 8. Фастфуд и Общепит 1C:Фастфуд и Общепит - это решения для автоматизации учета и управления на предприят"
+      },
+      {
+        "rec": "419919972",
+        "type": "316",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Заказать обратный звонок Отправить запрос Спасибо! В ближайшее время я с Вами свяжусь. С уважением, Александр. +7 495 26"
+      }
+    ]
+  },
+  "/merlion": {
+    "title": "Интеграция 1С с Merlion B2B по API недорого, прямой доступ к личному кабинету Мерлион B2B - Аллсан",
+    "h1": "Интеграция 1C с Merlion B2B по API",
+    "robots": [],
+    "canonical": [
+      "https://alsn.ru/merlion"
+    ],
+    "nav_rec": "4022017101",
+    "nav_html": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/ecom\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Интеграция с поставщиками</a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Мерлион</span> </nav>",
+    "lds": [
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ContactPoint"
+        ],
+        "ids": [
+          "https://alsn.ru/#organization",
+          "https://alsn.ru/#website",
+          "https://alsn.ru/#organization"
+        ],
+        "is_bc": false
+      },
+      {
+        "where": "HEAD",
+        "rec": "",
+        "types": [
+          "BreadcrumbList",
+          "ListItem",
+          "ListItem"
+        ],
+        "ids": [
+          "https://alsn.ru/merlion#breadcrumb"
+        ],
+        "is_bc": true
+      }
+    ],
+    "first_blocks": [
+      {
+        "rec": "1123068641",
+        "type": "758",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Merlion"
+      },
+      {
+        "rec": "4022017101",
+        "type": "131",
+        "bg": "",
+        "artboard_bg": "",
+        "filter": "",
+        "bg_image": "",
+        "bg_image_top": "",
+        "text": "/ Интеграция с поставщиками / Мерлион"
+      }
+    ]
+  },
+  "_showcase_script": {
+    "from": "/dopolnitelnie_licenzii",
+    "code": "<script>\n(function () {\n  if (!/\\/tproduct\\//.test(location.pathname || \"\")) return;\n  if (document.getElementById(\"alsn-bc-jsonld\")) return;\n\n  function txt(el) {\n    return (el && (el.textContent || \"\")).replace(/\\s+/g, \" \").trim();\n  }\n  function abs(href) {\n    try { return new URL(href, location.origin).href.split(\"?\")[0]; } catch (e) { return href; }\n  }\n  function pageUrl() {\n    var c = document.querySelector('link[rel=\"canonical\"]');\n    var u = (c && c.href) || (location.origin + location.pathname);\n    return u.split(\"?\")[0];\n  }\n  function productName() {\n    return txt(document.querySelector(\"h1\")) ||\n      txt(document.querySelector('[itemprop=\"name\"]')) ||\n      txt(document.querySelector(\".js-store-prod-name, .t-store__prod-popup__name\")) ||\n      (document.title || \"\").split(\"|\")[0].trim();\n  }\n  function catalogUrl() {\n    var p = (location.pathname || \"\").replace(/\\/tproduct\\/.*$/, \"\") || \"/\";\n    if (p.length > 1 && p.charAt(p.length - 1) === \"/\") p = p.slice(0, -1);\n    return location.origin + p;\n  }\n  function visCrumbs() {\n    var root = document.querySelector(\".t-catalog__breadcrumbs\");\n    if (!root) return [];\n    var nodes = root.querySelectorAll(\"a, span\");\n    var out = [];\n    for (var i = 0; i < nodes.length; i++) {\n      var el = nodes[i];\n      var name = txt(el);\n      if (!name) continue;\n      var href = el.tagName === \"A\" ? el.getAttribute(\"href\") : \"\";\n      out.push({ name: name, item: href ? abs(href) : \"\" });\n    }\n    return out;\n  }\n  function build() {\n    if (document.getElementById(\"alsn-bc-jsonld\")) return true;\n    var name = productName();\n    if (!name) return false;\n    var vis = visCrumbs();\n    var list = [{ name: \"Главная\", item: location.origin + \"/\" }];\n    var seen = { \"Главная\": true };\n    var i, row;\n    for (i = 0; i < vis.length; i++) {\n      row = vis[i];\n      if (!row.name || seen[row.name]) continue;\n      seen[row.name] = true;\n      list.push(row);\n    }\n    if (list.length === 1) {\n      list.push({ name: \"Каталог\", item: catalogUrl() });\n    }\n    if (list[1] && !list[1].item) list[1].item = catalogUrl();\n    if (list[list.length - 1].name !== name) {\n      list.push({ name: name, item: pageUrl() });\n    } else {\n      list[list.length - 1].item = pageUrl();\n    }\n    var els = [];\n    for (i = 0; i < list.length; i++) {\n      els.push({ \"@type\": \"ListItem\", position: i + 1, name: list[i].name, item: list[i].item });\n    }\n    var s = document.createElement(\"script\");\n    s.type = \"application/ld+json\";\n    s.id = \"alsn-bc-jsonld\";\n    s.text = JSON.stringify({\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"@id\": pageUrl() + \"#breadcrumb\",\n      itemListElement: els\n    });\n    document.head.appendChild(s);\n    return true;\n  }\n  function start() {\n    var n = 0;\n    function tick() {\n      n++;\n      var hasNav = !!document.querySelector(\".t-catalog__breadcrumbs\");\n      var hasName = !!productName();\n      if ((hasNav && hasName) || n > 40) {\n        build();\n        return;\n      }\n      setTimeout(tick, 250);\n    }\n    tick();\n  }\n  if (document.readyState === \"loading\") document.addEventListener(\"DOMContentLoaded\", start);\n  else start();\n})();\n</script>"
+  }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Этап 0. Карта структуры alsn.ru по схеме подрядчика - 30.09.2026</title>
+<style>
+:root{--bg:#f4f3ef;--card:#fff;--text:#1a1a1a;--muted:#5c5c5c;--border:#e2e2de;
+--ok:#1a7f4b;--ok-bg:#e8f6ee;--warn:#9a6700;--warn-bg:#fff6e0;--danger:#b42318;--danger-bg:#fdecea;--info:#0b6e99;--info-bg:#e8f4fa}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--bg)}
+.wrap{max-width:1320px;margin:0 auto;padding:24px 18px 72px}
+h1{font-size:26px;margin:0 0 6px;letter-spacing:-.02em}
+h2{font-size:20px;margin:34px 0 10px}
+p{margin:0 0 8px} a{color:#0b5cad}
+.muted{color:var(--muted)} .sm{font-size:13px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin:12px 0}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:650;border:1px solid var(--border);background:#fff;white-space:nowrap}
+.pill.ok{color:var(--ok);background:var(--ok-bg);border-color:#c6e6d3}
+.pill.warn{color:var(--warn);background:var(--warn-bg);border-color:#f0dfa0}
+.pill.danger{color:var(--danger);background:var(--danger-bg);border-color:#f5c2c0}
+.pill.info{color:var(--info);background:var(--info-bg);border-color:#bddceb}
+.pill.muted{color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.stat{background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px 14px;min-width:150px}
+.stat b{display:block;font-size:24px}
+.tw{overflow-x:auto;background:#fff;border:1px solid var(--border);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:900px}
+th,td{text-align:left;vertical-align:top;padding:7px 8px;border-bottom:1px solid var(--border)}
+th{background:#fafaf7;font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);position:sticky;top:0}
+tr.l1 td{background:#fbfaf6}
+code{font:12.5px/1.4 ui-monospace,Consolas,monospace;background:#f1f1ee;padding:1px 5px;border-radius:5px}
+pre{background:#0f172a;color:#e2e8f0;border-radius:12px;padding:16px;overflow:auto;font:13px/1.55 ui-monospace,Consolas,monospace}
+.q{background:#fff;border:1px solid var(--border);border-left:4px solid #F55823;border-radius:10px;padding:12px 14px;margin:10px 0}
+.qn{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+ul{margin:6px 0 0 18px;padding:0}
+</style>
+</head>
+<body><div class="wrap">
+<h1>Этап 0. Карта структуры alsn.ru по схеме подрядчика</h1>
+<p class="muted">30.09.2026. Разделы «Услуги», «Продукты», «Лицензии». Источник схемы: <code>Предложеная структура/Схема_структуры_сайта_Аллсан_с_правками.xlsx</code>.
+Живые страницы: срез alsn.ru от 29.09.2026 (138 страниц), карта сайта от 30.09.2026.</p>
+
+<div class="card">
+<b>Что это за документ.</b> Каждая строка схемы подрядчика сопоставлена со страницей живого сайта: есть она или нужна новая, где будет в меню и какой будет путь в хлебных крошках.
+Это только карта, в Тильде по ней ничего не меняем. После вашего согласования (и ответов на вопросы внизу) идём на этап 1 - разводящие страницы.
+<ul>
+<li>Адреса существующих страниц не меняем, редиректов нет.</li>
+<li>Все новые страницы - сразу в дизайне v3, как «Интеграция 1С с Ozon».</li>
+<li>Меню - с 3-м уровнем, стандартными блоками Тильды (T228 или ME601B), без кода.</li>
+</ul>
+</div>
+
+<div class="stats">
+<div class="stat"><b>24</b>строк схемы уже есть на сайте</div>
+<div class="stat"><b>19</b>новых страниц в разделах</div>
+<div class="stat"><b>13</b>страниц поставщиков есть</div>
+<div class="stat"><b>32</b>поставщиков - новые страницы</div>
+<div class="stat"><b>26</b>страниц вне схемы с решением</div>
+</div>
+
+<h2>1. Меню после перестройки</h2>
+<p class="muted">Пункт, у которого есть подменю, в Тильде сам не кликается. Поэтому первая строка каждого списка ведёт на страницу самого пункта.
+Пункты на новые страницы включаем только после их публикации.</p>
+<pre>Услуги
+  Все услуги  -&gt;  /uslugi                      (новая)
+  Внедрение 1С под ключ
+    Внедрение 1С под ключ  -&gt;  /development1c
+    1С:ERP  -&gt;  /erp-time-price
+    1С:Управление торговлей  -&gt;  /upt8
+    1С:Комплексная автоматизация  -&gt;  /kompleksnaya_avtomatizaciya
+    1С:Бухгалтерия  -&gt;  /buhv8
+    1С:ЗУП  -&gt;  /zup8
+    1С:УНФ  -&gt;  /upravlenie_nashei_firmoi      (вопрос 3)
+  Разработка и доработка 1С  -&gt;  /dorabotka-1c (новая)
+  Техническая поддержка 1С  -&gt;  /support1c
+  Внедрение Битрикс24  -&gt;  /bitrix24
+  Интеграция сайта с 1С и Битрикс24  -&gt;  /1cbitrix
+
+Продукты
+  Все продукты  -&gt;  /produkty                  (новая)
+  Интеграция 1С с маркетплейсами
+    Модуль для маркетплейсов  -&gt;  /casemarketplace
+    Ozon  -&gt;  /1c-ozon
+    Wildberries  -&gt;  /1c-wildberries
+  Интеграция 1С с поставщиками B2B
+    Интеграция с поставщиками  -&gt;  /ecom
+    Все поставщики  -&gt;  /b2b-postavshiki       (новая)
+  Чат-боты 1С для мессенджеров
+    Телеграм-бот 1С  -&gt;  /telegram1c
+    Бот 1С для MAX  -&gt;  /max1c                 (новая)
+
+Лицензии
+  Все лицензии  -&gt;  /licenzii                  (новая)
+  Программы 1С
+    Все программы 1С  -&gt;  /products
+    1С:Бухгалтерия  -&gt;  /licenzii-1c-buhgalteriya   (новая витрина)
+    1С:Управление торговлей  -&gt;  /licenzii-1c-ut    (новая витрина)
+    1С:Комплексная автоматизация  -&gt;  /licenzii-1c-ka   (новая витрина)
+    1С:ЗУП  -&gt;  /licenzii-1c-zup                    (новая витрина)
+    1С:УНФ  -&gt;  /licenzii-1c-unf                    (новая витрина)
+    1С:КП (ИТС)  -&gt;  /its
+    1С:Fresh  -&gt;  /1cfresh
+    1С:Документооборот  -&gt;  /dokumentooborot8
+    Лицензии 1С  -&gt;  /dopolnitelnie_licenzii   (было «Дополнительные лицензии»)
+  Битрикс24  -&gt;  /bitrix24, блок «Цены на лицензии Битрикс24»   (вопрос 7)
+
+Наш опыт      (2 уровня, пункты из текущего меню: Кейсы, Отзывы)
+О компании    (2 уровня, пункты из текущего меню)</pre>
+
+<h2>2. Схема подрядчика и страницы сайта</h2>
+<p class="muted">«Путь в крошках» - какой он будет. «Крошки сейчас» - что стоит на странице по срезу 29.09 («нет» - крошек нет).</p>
+<div class="tw"><table>
+<thead><tr><th>Строка схемы</th><th>Адрес</th><th>H1 сейчас</th><th>Статус</th><th>Путь в крошках</th><th>В меню</th><th>Крошки сейчас</th><th>Примечание</th></tr></thead>
+<tbody>
+<tr class="l1"><td style="padding-left:8px;font-weight:700">Услуги</td><td><code>/uslugi</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная</td><td class="sm">1 уровень, первая строка списка «Все услуги»</td><td class="sm"><span class=muted>-</span></td><td class="sm">Разводящая страница в дизайне v3. Адрес предлагаемый.</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Внедрение 1С под ключ</td><td><a href="https://alsn.ru/development1c" target="_blank" rel="noopener"><code>/development1c</code></a></td><td class="sm">Внедрение 1С под ключ - УТ, КА, ERP</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Услуги</td><td class="sm">2 уровень</td><td class="sm">Главная / Внедрение 1С</td><td class="sm">Первая строка его подсписка - сама страница.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:ERP</td><td><a href="https://alsn.ru/erp-time-price" target="_blank" rel="noopener"><code>/erp-time-price</code></a></td><td class="sm">Стоимость внедрения 1С:ERP на производственном предприятии</td><td><span class="pill warn">есть, доработать</span></td><td class="sm">Главная / Услуги / Внедрение 1С под ключ</td><td class="sm">3 уровень</td><td class="sm">Главная / Внедрение 1С / Стоимость 1С:ERP</td><td class="sm">H1 про стоимость. Страницу оставляем, расширение до «Внедрение 1С:ERP» - отдельной задачей.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:Управление торговлей</td><td><a href="https://alsn.ru/upt8" target="_blank" rel="noopener"><code>/upt8</code></a></td><td class="sm">1С:Управление торговлей 8 ред 11: внедрение, техподдержка, лицензии</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Услуги / Внедрение 1С под ключ</td><td class="sm">3 уровень</td><td class="sm">Главная / 1С:УТ</td><td class="sm">На странице и услуга, и витрина (4 товара). См. вопрос 1.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:Комплексная автоматизация</td><td><a href="https://alsn.ru/kompleksnaya_avtomatizaciya" target="_blank" rel="noopener"><code>/kompleksnaya_avtomatizaciya</code></a></td><td class="sm">Внедрение 1С:Комплексная автоматизация под ключ</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Услуги / Внедрение 1С под ключ</td><td class="sm">3 уровень</td><td class="sm">Главная / Внедрение 1С / 1С:Комплексная автоматизация</td><td class="sm">Плюс 4 товара витрины.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:Бухгалтерия</td><td><a href="https://alsn.ru/buhv8" target="_blank" rel="noopener"><code>/buhv8</code></a></td><td class="sm">1С:Бухгалтерия: внедрение, сопровождение, обслуживание</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Услуги / Внедрение 1С под ключ</td><td class="sm">3 уровень</td><td class="sm">Главная / 1С:Бухгалтерия</td><td class="sm">Плюс витрина 22 товара. См. вопрос 1.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:Зарплата и управление персоналом</td><td><a href="https://alsn.ru/zup8" target="_blank" rel="noopener"><code>/zup8</code></a></td><td class="sm">1С ЗУП 8: внедрение, техподдержка, сопровождение</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Услуги / Внедрение 1С под ключ</td><td class="sm">3 уровень</td><td class="sm">Главная / 1С:ЗУП</td><td class="sm">Плюс витрина 8 товаров.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:УНФ (нет в схеме)</td><td><a href="https://alsn.ru/upravlenie_nashei_firmoi" target="_blank" rel="noopener"><code>/upravlenie_nashei_firmoi</code></a></td><td class="sm">1С:Управление нашей фирмой (1С УНФ): внедрение, техподдержка, лицензии</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Услуги / Внедрение 1С под ключ</td><td class="sm">3 уровень</td><td class="sm">Главная / 1С:УНФ</td><td class="sm">Предлагаем добавить: УНФ есть в ЦА внедрения. См. вопрос 3.</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Разработка и доработка 1С</td><td><code>/dorabotka-1c</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная / Услуги</td><td class="sm">2 уровень</td><td class="sm"><span class=muted>-</span></td><td class="sm">Новая страница v3. Сейчас доработка описана внутри /development1c.</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Техническая поддержка 1С</td><td><a href="https://alsn.ru/support1c" target="_blank" rel="noopener"><code>/support1c</code></a></td><td class="sm">Техническая поддержка 1С — программист на час</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Услуги</td><td class="sm">2 уровень</td><td class="sm">Главная / Техподдержка 1С</td><td class="sm"></td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Внедрение Битрикс24 и интеграция с 1С</td><td><a href="https://alsn.ru/bitrix24" target="_blank" rel="noopener"><code>/bitrix24</code></a></td><td class="sm">Внедрение CRM Битрикс24: тарифы и цены</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Услуги</td><td class="sm">2 уровень</td><td class="sm">Главная / Битрикс24</td><td class="sm">В схеме одна строка, на сайте две страницы. В меню обе, объединение не в этом плане.</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Интеграция сайта с 1С и Битрикс24</td><td><a href="https://alsn.ru/1cbitrix" target="_blank" rel="noopener"><code>/1cbitrix</code></a></td><td class="sm">Интеграция Битрикс24 и 1С для интернет-магазина (сайта)</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Услуги</td><td class="sm">2 уровень</td><td class="sm">Главная / Интеграция Битрикс24 и 1С</td><td class="sm">Вторая страница Битрикс24.</td></tr>
+<tr class="l1"><td style="padding-left:8px;font-weight:700">Продукты</td><td><code>/produkty</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная</td><td class="sm">1 уровень, первая строка «Все продукты»</td><td class="sm"><span class=muted>-</span></td><td class="sm">Разводящая страница v3.</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Интеграция 1С с маркетплейсами</td><td><a href="https://alsn.ru/casemarketplace" target="_blank" rel="noopener"><code>/casemarketplace</code></a></td><td class="sm">Модуль 1С для маркетплейсов</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Продукты</td><td class="sm">2 уровень</td><td class="sm">Главная / Модуль 1С для маркетплейсов</td><td class="sm"></td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">Ozon</td><td><a href="https://alsn.ru/1c-ozon" target="_blank" rel="noopener"><code>/1c-ozon</code></a></td><td class="sm">Интеграция 1С с&amp;nbsp; Ozon</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Продукты / Интеграция 1С с маркетплейсами</td><td class="sm">3 уровень</td><td class="sm">Главная / Модуль 1С для маркетплейсов / Интеграция 1С с Ozon</td><td class="sm"></td></tr>
+<tr class="l4"><td style="padding-left:62px;font-weight:400">Ozon + 1С:УТ</td><td><code>/1c-ozon-ut</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">... / Ozon</td><td class="sm">нет, ссылка со страницы Ozon</td><td class="sm"><span class=muted>-</span></td><td class="sm">Нужны факты по конфигурации.</td></tr>
+<tr class="l4"><td style="padding-left:62px;font-weight:400">Ozon + 1С:КА</td><td><code>/1c-ozon-ka</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">... / Ozon</td><td class="sm">нет</td><td class="sm"><span class=muted>-</span></td><td class="sm"></td></tr>
+<tr class="l4"><td style="padding-left:62px;font-weight:400">Ozon + 1С:ERP</td><td><code>/1c-ozon-erp</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">... / Ozon</td><td class="sm">нет</td><td class="sm"><span class=muted>-</span></td><td class="sm"></td></tr>
+<tr class="l4"><td style="padding-left:62px;font-weight:400">Ozon + 1С:Бухгалтерия</td><td><code>/1c-ozon-buh</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">... / Ozon</td><td class="sm">нет</td><td class="sm"><span class=muted>-</span></td><td class="sm">Подтвердить, что модуль работает в БП.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">Wildberries</td><td><a href="https://alsn.ru/1c-wildberries" target="_blank" rel="noopener"><code>/1c-wildberries</code></a></td><td class="sm">Интеграция 1С с&amp;nbsp; Wildberries</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Продукты / Интеграция 1С с маркетплейсами</td><td class="sm">3 уровень</td><td class="sm">Главная / Модуль 1С для маркетплейсов / Интеграция 1С с Wildberries</td><td class="sm"></td></tr>
+<tr class="l4"><td style="padding-left:62px;font-weight:400">Wildberries + 1С:УТ</td><td><code>/1c-wildberries-ut</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">... / Wildberries</td><td class="sm">нет, ссылка со страницы WB</td><td class="sm"><span class=muted>-</span></td><td class="sm"></td></tr>
+<tr class="l4"><td style="padding-left:62px;font-weight:400">Wildberries + 1С:КА</td><td><code>/1c-wildberries-ka</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">... / Wildberries</td><td class="sm">нет</td><td class="sm"><span class=muted>-</span></td><td class="sm"></td></tr>
+<tr class="l4"><td style="padding-left:62px;font-weight:400">Wildberries + 1С:ERP</td><td><code>/1c-wildberries-erp</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">... / Wildberries</td><td class="sm">нет</td><td class="sm"><span class=muted>-</span></td><td class="sm"></td></tr>
+<tr class="l4"><td style="padding-left:62px;font-weight:400">Wildberries + 1С:Бухгалтерия</td><td><code>/1c-wildberries-buh</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">... / Wildberries</td><td class="sm">нет</td><td class="sm"><span class=muted>-</span></td><td class="sm"></td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Интеграция 1С с поставщиками B2B</td><td><a href="https://alsn.ru/ecom" target="_blank" rel="noopener"><code>/ecom</code></a></td><td class="sm">Интеграция 1С с поставщиками телеком- и IT-оборудования</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Продукты</td><td class="sm">2 уровень</td><td class="sm">Главная / Интеграция с поставщиками</td><td class="sm"></td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">Все поставщики</td><td><code>/b2b-postavshiki</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная / Продукты / Интеграция 1С с поставщиками B2B</td><td class="sm">3 уровень</td><td class="sm"><span class=muted>-</span></td><td class="sm">Каталог карточек. Сейчас список 57 имён блоком на /ecom.</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Чат-боты 1С для мессенджеров (нет в схеме)</td><td>-</td><td class="sm"><span class=muted>-</span></td><td><span class="pill muted">заголовок меню</span></td><td class="sm"></td><td class="sm">2 уровень, заголовок списка</td><td class="sm"><span class=muted>-</span></td><td class="sm">Решение 30.09: боты остаются в «Продуктах» на Тильде. Пункт-заголовок без своей страницы.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">Телеграм-бот 1С</td><td><a href="https://alsn.ru/telegram1c" target="_blank" rel="noopener"><code>/telegram1c</code></a></td><td class="sm">Telegram-бот 1С для увеличения продаж и автоматизации бизнеса</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Продукты / Телеграм-бот 1С</td><td class="sm">3 уровень</td><td class="sm">Главная / Telegram-бот 1С</td><td class="sm">Переезжает из «Разработки» в «Продукты». Отраслевые /tb* встают под него.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">Бот 1С для MAX</td><td><code>/max1c</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная / Продукты / Бот 1С для MAX</td><td class="sm">3 уровень</td><td class="sm"><span class=muted>-</span></td><td class="sm">Решение 30.09: новая страница v3, бот уже работает. Адрес предлагаемый. Для текста нужны функции и цена, см. вопрос 8.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">WhatsApp-бот 1С</td><td><a href="https://alsn.ru/whatsapp" target="_blank" rel="noopener"><code>/whatsapp</code></a></td><td class="sm">WhatsApp-бот 1С для увеличения продаж и автоматизации бизнеса</td><td><span class="pill danger">убрать</span></td><td class="sm"></td><td class="sm">нет</td><td class="sm">Главная / WhatsApp-бот 1С</td><td class="sm">Решение 30.09: страницу убираем. Снять с публикации, затем 301 /whatsapp -&gt; /telegram1c, после выхода /max1c перевести на /max1c. См. раздел 5.</td></tr>
+<tr class="l1"><td style="padding-left:8px;font-weight:700">Лицензии</td><td><code>/licenzii</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная</td><td class="sm">1 уровень, первая строка «Все лицензии»</td><td class="sm"><span class=muted>-</span></td><td class="sm">Разводящая страница v3.</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Программы 1С</td><td><a href="https://alsn.ru/products" target="_blank" rel="noopener"><code>/products</code></a></td><td class="sm">1С Предприятие 8: программы, лицензии, внедрение, разработка</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Лицензии</td><td class="sm">2 уровень</td><td class="sm">Главная / Продукты</td><td class="sm">113 товаров.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:КП (ИТС)</td><td><a href="https://alsn.ru/its" target="_blank" rel="noopener"><code>/its</code></a></td><td class="sm">Купить 1С:КП ПРОФ — комплект поддержки ИТС</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">3 уровень</td><td class="sm">Главная / 1С:КП</td><td class="sm">65 товаров.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:Fresh</td><td><a href="https://alsn.ru/1cfresh" target="_blank" rel="noopener"><code>/1cfresh</code></a></td><td class="sm">1С:Фреш — купить тариф в облаке</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">3 уровень</td><td class="sm">Главная / 1С:Фреш</td><td class="sm">27 товаров.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:Документооборот</td><td><a href="https://alsn.ru/dokumentooborot8" target="_blank" rel="noopener"><code>/dokumentooborot8</code></a></td><td class="sm">1С:Документооборот 8: внедрение, техподдержка, лицензии</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">3 уровень</td><td class="sm">Главная / 1С:Документооборот</td><td class="sm">5 товаров.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">Фастфуд и общепит</td><td><a href="https://alsn.ru/1_obschepit_fastfood" target="_blank" rel="noopener"><code>/1_obschepit_fastfood</code></a></td><td class="sm">1C:Предприятие 8. Фастфуд и Общепит</td><td><span class="pill ok">есть</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">нет</td><td class="sm">нет</td><td class="sm">10 товаров.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:Бухгалтерия - лицензии</td><td><code>/licenzii-1c-buhgalteriya</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">3 уровень</td><td class="sm"><span class=muted>-</span></td><td class="sm">Решение 30.09: отдельная витрина v3. Товары сейчас на /buhv8 (22). См. вопрос 1.</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:Управление торговлей - лицензии</td><td><code>/licenzii-1c-ut</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">3 уровень</td><td class="sm"><span class=muted>-</span></td><td class="sm">Товары сейчас на /upt8 (4).</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:Комплексная автоматизация - лицензии</td><td><code>/licenzii-1c-ka</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">3 уровень</td><td class="sm"><span class=muted>-</span></td><td class="sm">Товары сейчас на /kompleksnaya_avtomatizaciya (4).</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:ЗУП - лицензии</td><td><code>/licenzii-1c-zup</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">3 уровень</td><td class="sm"><span class=muted>-</span></td><td class="sm">Товары сейчас на /zup8 (8).</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">1С:УНФ - лицензии</td><td><code>/licenzii-1c-unf</code></td><td class="sm"><span class=muted>-</span></td><td><span class="pill info">новая</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">3 уровень</td><td class="sm"><span class=muted>-</span></td><td class="sm">Товары сейчас на /upravlenie_nashei_firmoi (6).</td></tr>
+<tr class="l3"><td style="padding-left:44px;font-weight:400">Лицензии 1С (было «Дополнительные лицензии»)</td><td><a href="https://alsn.ru/dopolnitelnie_licenzii" target="_blank" rel="noopener"><code>/dopolnitelnie_licenzii</code></a></td><td class="sm">Купить лицензии 1С ПРОФ</td><td><span class="pill warn">есть, доработать</span></td><td class="sm">Главная / Лицензии / Программы 1С</td><td class="sm">3 уровень</td><td class="sm">Главная / Лицензии 1С</td><td class="sm">Решение 30.09: переименовать и увести в иерархию 1С. Адрес не меняем, 22 товара. Имя в крошках и меню - «Лицензии 1С».</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Битрикс24</td><td><a href="https://alsn.ru/bitrix24" target="_blank" rel="noopener"><code>/bitrix24</code></a></td><td class="sm">Внедрение CRM Битрикс24: тарифы и цены</td><td><span class="pill warn">есть, доработать</span></td><td class="sm">Главная / Лицензии</td><td class="sm">2 уровень</td><td class="sm">Главная / Битрикс24</td><td class="sm">Решение 30.09: Битрикс24 в «Лицензиях». Своей витрины нет, пункт ведёт к блоку «Цены на лицензии Битрикс24» на /bitrix24. См. вопрос 7.</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Карточки товаров</td><td>/…/tproduct/…</td><td class="sm"><span class=muted>-</span></td><td><span class="pill ok">есть</span></td><td class="sm">ST340 карточки</td><td class="sm">нет</td><td class="sm"><span class=muted>-</span></td><td class="sm">295 карточек, крошки ST340 уже по канону.</td></tr>
+<tr class="l2"><td style="padding-left:26px;font-weight:600">Корзина / оформление</td><td>-</td><td class="sm"><span class=muted>-</span></td><td><span class="pill ok">есть</span></td><td class="sm"></td><td class="sm">иконка</td><td class="sm"><span class=muted>-</span></td><td class="sm">Всплывающая корзина Тильды (T706), отдельного адреса нет.</td></tr>
+</tbody></table></div>
+
+<h2>3. Страницы сайта, которых нет в схеме</h2>
+<p class="muted">Схема подрядчика не учитывает переходы, синхронизации и часть посадочных с трафиком. Чтобы их не потерять, ставим их в иерархию через хлебные крошки и ссылки с родителя. В меню их нет.</p>
+<div class="tw"><table>
+<thead><tr><th>Адрес</th><th>H1 сейчас</th><th>Родитель</th><th>Решение</th></tr></thead>
+<tbody>
+<tr><td><a href="https://alsn.ru/perehod-s-upp-na-ka-unf-ut" target="_blank" rel="noopener"><code>/perehod-s-upp-na-ka-unf-ut</code></a></td><td class="sm">Переход с 1С УПП на КА, УНФ, УТ от 3 дней</td><td class="sm">Внедрение 1С под ключ</td><td class="sm">3 уровень в крошках, в меню нет</td></tr>
+<tr><td><a href="https://alsn.ru/perehod-s-ut-10-3" target="_blank" rel="noopener"><code>/perehod-s-ut-10-3</code></a></td><td class="sm">Переход с УТ 10.3 на 11.5 от 1 дня</td><td class="sm">Внедрение 1С под ключ</td><td class="sm">в крошках под внедрением</td></tr>
+<tr><td><a href="https://alsn.ru/perehod-s-ut-na-unf" target="_blank" rel="noopener"><code>/perehod-s-ut-na-unf</code></a></td><td class="sm">Переход с УТ 10.3 и 11 на УНФ 3.0 от 1 дня</td><td class="sm">Внедрение 1С под ключ</td><td class="sm">в крошках под внедрением</td></tr>
+<tr><td><a href="https://alsn.ru/moy-sklad-perenos-v-1s" target="_blank" rel="noopener"><code>/moy-sklad-perenos-v-1s</code></a></td><td class="sm">Переход с МойСклад на 1С за 3 дня</td><td class="sm">Внедрение 1С под ключ</td><td class="sm">в крошках под внедрением</td></tr>
+<tr><td><a href="https://alsn.ru/perehod-s-dokumentooborota-2-1-na-3-0" target="_blank" rel="noopener"><code>/perehod-s-dokumentooborota-2-1-na-3-0</code></a></td><td class="sm">Переход с 1С:Документооборот 2.1 на 3.0</td><td class="sm">Внедрение 1С под ключ</td><td class="sm">в крошках под внедрением</td></tr>
+<tr><td><a href="https://alsn.ru/sinhronizaciya-bp-i-bp" target="_blank" rel="noopener"><code>/sinhronizaciya-bp-i-bp</code></a></td><td class="sm">Синхронизация БП и БП от 1 дня</td><td class="sm">Разработка и доработка 1С</td><td class="sm">после публикации страницы доработки</td></tr>
+<tr><td><a href="https://alsn.ru/sinhronizaciya-mezhdu-ut-i-ut" target="_blank" rel="noopener"><code>/sinhronizaciya-mezhdu-ut-i-ut</code></a></td><td class="sm">Синхронизация между 1С: УТ и УТ от 1 дня</td><td class="sm">Разработка и доработка 1С</td><td class="sm">после публикации страницы доработки</td></tr>
+<tr><td><a href="https://alsn.ru/sinhronizaciya-mezhdu-zup-i-zup" target="_blank" rel="noopener"><code>/sinhronizaciya-mezhdu-zup-i-zup</code></a></td><td class="sm">Синхронизация между ЗУП и ЗУП от 1 дня</td><td class="sm">Разработка и доработка 1С</td><td class="sm">после публикации страницы доработки</td></tr>
+<tr><td><a href="https://alsn.ru/integrationeco" target="_blank" rel="noopener"><code>/integrationeco</code></a></td><td class="sm">Интеграция 1С с экосистемой организации</td><td class="sm">Разработка и доработка 1С</td><td class="sm">после публикации страницы доработки</td></tr>
+<tr><td><a href="https://alsn.ru/integrationsite" target="_blank" rel="noopener"><code>/integrationsite</code></a></td><td class="sm">Интеграция с CMS сайта от 25 000 рублей</td><td class="sm">Интеграция сайта с 1С и Битрикс24</td><td class="sm">родитель /1cbitrix</td></tr>
+<tr><td><a href="https://alsn.ru/utp" target="_blank" rel="noopener"><code>/utp</code></a></td><td class="sm">Подберём и установим 1С за 1 день, техзадание напишем бесплатно</td><td class="sm">Все лицензии</td><td class="sm">подбор и установка 1С за день</td></tr>
+<tr><td><a href="https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s" target="_blank" rel="noopener"><code>/perevystavlenie-uslug-posledney-mili-ozon-v-1s</code></a></td><td class="sm">Перевыставление услуг последней мили ОЗОН с НДС за три клика в 1С</td><td class="sm">Ozon</td><td class="sm">функция модуля Ozon</td></tr>
+<tr><td><a href="https://alsn.ru/integraciya-1c-dlya-prodavcov-kompyuternoy-tehniki" target="_blank" rel="noopener"><code>/integraciya-1c-dlya-prodavcov-kompyuternoy-tehniki</code></a></td><td class="sm">Интеграция 1C для продавцов компьютерной техники</td><td class="sm">Интеграция 1С с поставщиками B2B</td><td class="sm">та же тема, что /ecom</td></tr>
+<tr><td><a href="https://alsn.ru/crmfurniture" target="_blank" rel="noopener"><code>/crmfurniture</code></a></td><td class="sm">Allsun 1С:CRM для мебельного бизнеса, мебельных магазинов, производства мебели</td><td class="sm">не переносим</td><td class="sm">вне шести продуктов, оставляем как есть</td></tr>
+<tr><td><a href="https://alsn.ru/amo_crm" target="_blank" rel="noopener"><code>/amo_crm</code></a></td><td class="sm">«Аллсан Интеграция» — официальный партнер amoCRM</td><td class="sm">не переносим</td><td class="sm">вне шести продуктов, оставляем как есть</td></tr>
+<tr><td><a href="https://alsn.ru/tbstroit" target="_blank" rel="noopener"><code>/tbstroit</code></a></td><td class="sm">Telegram-bot для строительной компании</td><td class="sm">Телеграм-бот 1С</td><td class="sm">отраслевая страница бота, в крошках под /telegram1c</td></tr>
+<tr><td><a href="https://alsn.ru/tbtehpod" target="_blank" rel="noopener"><code>/tbtehpod</code></a></td><td class="sm">Телеграм-бот 1С для технической поддержки клиентов</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+<tr><td><a href="https://alsn.ru/tbintmag" target="_blank" rel="noopener"><code>/tbintmag</code></a></td><td class="sm">Телеграм-бот 1С для интернет-магазина</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+<tr><td><a href="https://alsn.ru/tbavtoservis" target="_blank" rel="noopener"><code>/tbavtoservis</code></a></td><td class="sm">Telegram-bot для сервисной компании</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+<tr><td><a href="https://alsn.ru/tbhr" target="_blank" rel="noopener"><code>/tbhr</code></a></td><td class="sm">Телеграм бот для кадровой службы HR</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+<tr><td><a href="https://alsn.ru/tbdokument" target="_blank" rel="noopener"><code>/tbdokument</code></a></td><td class="sm">Telegram-бот для документооборота</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+<tr><td><a href="https://alsn.ru/tbotdelprod" target="_blank" rel="noopener"><code>/tbotdelprod</code></a></td><td class="sm">Телеграм-бот 1С для продажи товаров и услуг</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+<tr><td><a href="https://alsn.ru/tbsotrudniki" target="_blank" rel="noopener"><code>/tbsotrudniki</code></a></td><td class="sm">Телеграм-бот 1С для контроля переписки менеджеров с клиентами</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+<tr><td><a href="https://alsn.ru/tbfiksasotrud" target="_blank" rel="noopener"><code>/tbfiksasotrud</code></a></td><td class="sm">Telegram-bot для фиксации выхода сотрудников на работу</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+<tr><td><a href="https://alsn.ru/tbbot-parkovka-parking-garazh-stoyanka" target="_blank" rel="noopener"><code>/tbbot-parkovka-parking-garazh-stoyanka</code></a></td><td class="sm">Телеграм-бот 1С для парковки, паркинга, гаражей, стоянки</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+<tr><td><a href="https://alsn.ru/tbbot-restoran-kafe-kofeynya-bar" target="_blank" rel="noopener"><code>/tbbot-restoran-kafe-kofeynya-bar</code></a></td><td class="sm">1С чат-бот ресторана, кафе, кофейни, бара и другого общепита!</td><td class="sm">Телеграм-бот 1С</td><td class="sm">то же</td></tr>
+</tbody></table></div>
+<p class="muted sm">Не входят в этот план и остаются как есть: «Наш опыт», «О компании», блог, СМИ, служебные страницы.</p>
+
+<h2>4. Поставщики B2B (57 из схемы)</h2>
+<p class="muted">Есть страница: 13. Новые: 32. Убрать: 5. Уточнить профиль: 7. Все страницы поставщиков встают под «Все поставщики».</p>
+<div class="tw"><table style="min-width:640px">
+<thead><tr><th>№</th><th>Поставщик</th><th>Страница</th><th>Решение</th><th>Крошки сейчас</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Ак Системс</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>2</td><td>Асбис</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>3</td><td>AUVIX</td><td><a href="https://alsn.ru/auvix" target="_blank" rel="noopener"><code>/auvix</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">нет, старый блок со стрелкой</td></tr>
+<tr><td>4</td><td>BION</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>5</td><td>Вектор (Металлообработка)</td><td><span class=muted>-</span></td><td><span class="pill danger">убрать (не телеком и IT)</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>6</td><td>ВИМАРКЕТ</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>7</td><td>ВТТ</td><td><a href="https://alsn.ru/vtt" target="_blank" rel="noopener"><code>/vtt</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">нет, старый блок со стрелкой</td></tr>
+<tr><td>8</td><td>ГК НОВЫЕ ТЕХНОЛОГИИ</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>9</td><td>Делия (Стоматологическая компания)</td><td><span class=muted>-</span></td><td><span class="pill danger">убрать (не телеком и IT)</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>10</td><td>diHouse</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>11</td><td>Distribution Center</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>12</td><td>DKC.MARKET</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>13</td><td>DIGIS</td><td><a href="https://alsn.ru/digis" target="_blank" rel="noopener"><code>/digis</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">нет, старый блок со стрелкой</td></tr>
+<tr><td>14</td><td>ДССЛ</td><td><a href="https://alsn.ru/dssl" target="_blank" rel="noopener"><code>/dssl</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">нет, старый блок со стрелкой</td></tr>
+<tr><td>15</td><td>Emilink</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>16</td><td>ENERGON</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>17</td><td>ergolux</td><td><span class=muted>-</span></td><td><span class="pill warn">уточнить профиль</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>18</td><td>F5it</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>19</td><td>Форум электро</td><td><span class=muted>-</span></td><td><span class="pill warn">уточнить профиль</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>20</td><td>Hyperline</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>21</td><td>IT PROEKT</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>22</td><td>KARIN</td><td><span class=muted>-</span></td><td><span class="pill warn">уточнить профиль</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>23</td><td>Клавторг</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>24</td><td>КОМПЭЛ</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>25</td><td>KVK</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>26</td><td>Landata</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>27</td><td>legion project</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>28</td><td>Макспрофит</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>29</td><td>Марвел</td><td><a href="https://alsn.ru/marvel" target="_blank" rel="noopener"><code>/marvel</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">Главная / Интеграция с поставщиками / Марвел, плюс старый блок со стрелкой</td></tr>
+<tr><td>30</td><td>Мерлион</td><td><a href="https://alsn.ru/merlion" target="_blank" rel="noopener"><code>/merlion</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">Главная / Интеграция с поставщиками / Мерлион, плюс старый блок со стрелкой</td></tr>
+<tr><td>31</td><td>MICS distribution company</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>32</td><td>MONT</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>33</td><td>НАГ</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>34</td><td>НДК (наладочно-диагностическая компания)</td><td><span class=muted>-</span></td><td><span class="pill warn">уточнить профиль</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>35</td><td>Ниеншанц-Автоматика</td><td><span class=muted>-</span></td><td><span class="pill warn">уточнить профиль</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>36</td><td>Office kit (офисное оборудование)</td><td><span class=muted>-</span></td><td><span class="pill warn">уточнить профиль</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>37</td><td>OCS Distribution</td><td><a href="https://alsn.ru/ocs" target="_blank" rel="noopener"><code>/ocs</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">Главная / Интеграция с поставщиками / OCS, плюс старый блок со стрелкой</td></tr>
+<tr><td>38</td><td>ProWay</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>39</td><td>Ресурс-Медиа</td><td><a href="https://alsn.ru/resurs-media" target="_blank" rel="noopener"><code>/resurs-media</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">нет, старый блок со стрелкой</td></tr>
+<tr><td>40</td><td>RM-Company</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>41</td><td>Русклимат</td><td><span class=muted>-</span></td><td><span class="pill warn">уточнить профиль</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>42</td><td>Русский Свет</td><td><a href="https://alsn.ru/russkiy-svet" target="_blank" rel="noopener"><code>/russkiy-svet</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">нет, старый блок со стрелкой</td></tr>
+<tr><td>43</td><td>Русско-Китайский Центр Содействия Бизнесу</td><td><span class=muted>-</span></td><td><span class="pill danger">убрать (не телеком и IT)</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>44</td><td>СвязьКомплект</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>45</td><td>SDS LLC</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>46</td><td>Superwave group</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>47</td><td>Тайле</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>48</td><td>Тайпит-Мебель</td><td><span class=muted>-</span></td><td><span class="pill danger">убрать (не телеком и IT)</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>49</td><td>ТД В1 Электроникс</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>50</td><td>TFN (ТФН)</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>51</td><td>Treolan</td><td><a href="https://alsn.ru/treolan" target="_blank" rel="noopener"><code>/treolan</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">Главная / Интеграция с поставщиками / Treolan, плюс старый блок со стрелкой</td></tr>
+<tr><td>52</td><td>Учебный центр ЭМИЛИНК МСК</td><td><span class=muted>-</span></td><td><span class="pill danger">убрать (не телеком и IT)</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>53</td><td>ЭЛКО Рус</td><td><a href="https://alsn.ru/elko" target="_blank" rel="noopener"><code>/elko</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">нет, старый блок со стрелкой</td></tr>
+<tr><td>54</td><td>ЭТМ iPRO</td><td><a href="https://alsn.ru/etm-ipro" target="_blank" rel="noopener"><code>/etm-ipro</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">Главная / Интеграция с поставщиками / ЭТМ iPRO, плюс старый блок со стрелкой</td></tr>
+<tr><td>55</td><td>ЮМП (ЮНИТ МАРК ПРО)</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+<tr><td>56</td><td>3logic group</td><td><a href="https://alsn.ru/3logic" target="_blank" rel="noopener"><code>/3logic</code></a></td><td><span class="pill ok">есть страница</span></td><td class="sm">Главная / Интеграция с поставщиками / 3logic, плюс старый блок со стрелкой</td></tr>
+<tr><td>57</td><td>Zitrek</td><td><span class=muted>-</span></td><td><span class="pill info">новая страница</span></td><td class="sm"><span class=muted>-</span></td></tr>
+</tbody></table></div>
+
+<h2>5. Что убираем</h2>
+<div class="card">
+<b>Убрать страницу «WhatsApp-бот 1С» (/whatsapp).</b> Решение 30.09.2026. Это отдельные шаги в Тильде, каждый после вашего «да».
+<ol>
+<li>Убрать ссылки на /whatsapp с других страниц, из меню и подвала (список ссылок соберём перед шагом).</li>
+<li>Снять страницу с публикации в Тильде (страницу в кабинете не удаляем - останется копия текста).</li>
+<li>Настройки сайта → SEO → «Редиректы страниц (Code 301)»: старый адрес <code>/whatsapp</code>, новый <code>/telegram1c</code>. Сохранить, «Опубликовать все страницы».
+По <a href="https://help-ru.tilda.cc/search-engine" target="_blank" rel="noopener">справке Тильды</a> 301 работает только с адреса, которого нет, поэтому сначала шаг 2.</li>
+<li>Когда выйдет страница «Бот 1С для MAX», поменять цель редиректа на <code>/max1c</code>.</li>
+<li>Отправить /whatsapp на переобход в Яндекс.Вебмастере, чтобы поиск быстрее увидел редирект.</li>
+</ol>
+</div>
+
+<h2>6. Что нужно решить до этапа 1</h2>
+<div class="q"><div class="qn">Вопрос 1</div><b>Отдельные витрины Бухгалтерии, УТ, КА, ЗУП, УНФ: что с товарами на старых страницах</b><p>Решение 30.09: делаем 5 новых витрин лицензий в дизайне v3, старые /buhv8, /upt8, /kompleksnaya_avtomatizaciya, /zup8, /upravlenie_nashei_firmoi остаются страницами внедрения. Риск: у Тильды адрес карточки товара строится от страницы с блоком каталога (/buhv8/tproduct/...). Если блок товаров со старой страницы убрать, старые адреса карточек перестанут открываться, а они в индексе и в Товарном фиде. Предложение: на старых страницах блок товаров пока оставить ниже по странице (или свернуть) и перевести карточки на новые витрины отдельным шагом, когда новые адреса проиндексируются. Согласны?</p></div>
+<div class="q"><div class="qn">Вопрос 2</div><b>Адреса новых страниц</b><p>/uslugi, /produkty, /licenzii, /dorabotka-1c, /b2b-postavshiki, /1c-ozon-ut, /1c-ozon-ka, /1c-ozon-erp, /1c-ozon-buh и такие же для Wildberries (/1c-wildberries-ut и т.д.). Если нужны другие - поправим до этапа 1.</p></div>
+<div class="q"><div class="qn">Вопрос 3</div><b>УНФ во «Внедрении»</b><p>В схеме подрядчика 1С:УНФ нет, но она есть в ЦА внедрения и на сайте есть страница. Предложение: 6-й пункт под «Внедрением 1С под ключ».</p></div>
+<div class="q"><div class="qn">Вопрос 4</div><b>Список поставщиков</b><p>Из 57 имён схемы убрать 5 явно не телеком и IT (красные). Ещё 7 (жёлтые) - уточнить, продаёте ли им интеграцию. Остальные 32 - новые страницы волнами по 10.</p></div>
+<div class="q"><div class="qn">Вопрос 5</div><b>Страницы конфигураций маркетплейсов</b><p>Нужны факты: работает ли модуль в 1С:Бухгалтерии и чем отличается работа в УТ, КА и ERP (документы, схема, настройки). Без них 8 страниц будут копиями /1c-ozon и /1c-wildberries.</p></div>
+<div class="q"><div class="qn">Вопрос 6</div><b>1С:ERP</b><p>Место ERP в схеме занимает /erp-time-price «Стоимость внедрения 1С:ERP…». Пока ставим его как есть, а расширение до полноценной страницы «Внедрение 1С:ERP» (со старым адресом) - отдельной задачей после структуры. Согласны?</p></div>
+<div class="q"><div class="qn">Вопрос 7</div><b>Битрикс24 в «Лицензиях»</b><p>Товаров Битрикс24 в каталоге Тильды нет, цены лицензий стоят блоком на /bitrix24 (там же внедрение). Вариант А: пункт меню ведёт к этому блоку, ничего нового не делаем. Вариант Б: отдельная витрина «Лицензии Битрикс24» в каталоге (карточки тарифов, корзина) на новой странице, например /bitrix24-licenzii, в дизайне v3. Какой берём?</p></div>
+<div class="q"><div class="qn">Вопрос 8</div><b>Бот 1С для MAX: что писать на странице</b><p>Бот уже работает (ответ 30.09). Для текста осталось: что он умеет - те же сценарии, что Telegram-бот на /telegram1c (заказы, остатки, документы, уведомления, отраслевые варианты) или другой набор; цена и условия; есть ли клиент, скриншоты или видео. Если функции совпадают с Telegram-ботом, скажите «как у Telegram» - возьмём список оттуда. Выдумывать не будем.</p></div>
+
+<h2>7. Дальше</h2>
+<div class="card">
+<ul>
+<li><b>Этап 1.</b> Макеты разводящих страниц «Услуги», «Продукты», «Лицензии» в дизайне v3, потом перенос в Тильду по шагам.</li>
+<li><b>Этап 2.</b> Меню с 3-м уровнем на копии шапки, проверка на компьютере и телефоне, затем боевая шапка и подвал.</li>
+<li><b>Этапы 3-5.</b> «Разработка и доработка 1С», 8 страниц конфигураций маркетплейсов, «Все поставщики» и страницы поставщиков.</li>
+<li><b>Этап 6.</b> Хлебные крошки по путям из таблицы выше.</li>
+</ul>
+</div>
+</div></body></html>

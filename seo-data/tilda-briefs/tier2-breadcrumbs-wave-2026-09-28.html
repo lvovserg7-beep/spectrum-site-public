@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Хлебные крошки: вторая волна - alsn.ru - 28.09.2026</title>
+  <style>
+    :root {
+      --bg: #f4f3ef; --card: #fff; --text: #1a1a1a; --muted: #5c5c5c; --border: #e2e2de;
+      --ok: #1a7f4b; --ok-bg: #e8f6ee; --warn: #9a6700; --warn-bg: #fff6e0;
+      --danger: #b42318; --danger-bg: #fdecea; --info: #0b6e99; --info-bg: #e8f4fa; --code: #0f172a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: var(--bg); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 18px 72px; }
+    h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    h3 { font-size: 16px; margin: 18px 0 6px; }
+    p { margin: 0 0 8px; }
+    a { color: #0b5cad; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
+    .pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 650; border: 1px solid var(--border); background: #fff; }
+    .pill.ok { color: var(--ok); background: var(--ok-bg); border-color: #c6e6d3; }
+    .pill.warn { color: var(--warn); background: var(--warn-bg); border-color: #f0dfa0; }
+    .pill.danger { color: var(--danger); background: var(--danger-bg); border-color: #f5c2c0; }
+    .pill.info { color: var(--info); background: var(--info-bg); border-color: #bddceb; }
+    .callout { border-radius: 10px; padding: 12px 14px; margin: 12px 0 18px; border: 1px solid var(--border); background: var(--card); font-size: 14px; }
+    .callout.danger { background: var(--danger-bg); border-color: #f5c2c0; }
+    .callout.warn { background: var(--warn-bg); border-color: #f0dfa0; }
+    .callout.info { background: var(--info-bg); border-color: #bddceb; }
+    .callout.ok { background: var(--ok-bg); border-color: #c6e6d3; }
+    .toc { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; margin: 0 0 20px; }
+    .toc ol { margin: 6px 0 0; padding-left: 22px; }
+    .toc li { margin: 3px 0; }
+    .toc a { text-decoration: none; }
+    .task { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px 18px; margin: 0 0 18px; }
+    .task .num { display: inline-block; background: #111; color: #fff; border-radius: 999px; font-size: 12px; font-weight: 700; padding: 2px 10px; margin-right: 6px; vertical-align: middle; }
+    .lbl { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 14px 0 4px; }
+    .lbl:first-of-type { margin-top: 8px; }
+    ol.steps { margin: 4px 0 0; padding-left: 22px; }
+    ol.steps > li { margin: 6px 0; }
+    .path { font-family: ui-monospace, Consolas, monospace; font-size: 12.5px; background: #111; color: #f5f5f4; border-radius: 8px; padding: 8px 10px; margin: 6px 0 8px; overflow-x: auto; }
+    .copybox { position: relative; margin: 6px 0 10px; }
+    .copybox pre { margin: 0; background: var(--code); color: #e5e7eb; border-radius: 10px; padding: 12px 12px 40px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; font: 13px/1.4 ui-monospace, Consolas, monospace; }
+    .copybox button { position: absolute; right: 8px; bottom: 8px; background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 4px 10px; font-size: 12px; font-weight: 650; cursor: pointer; }
+    .copybox button:hover { background: #f3f4f6; }
+    .copybox.ok button { background: var(--ok-bg); }
+    .cap { font-size: 13px; font-weight: 700; margin: 10px 0 2px; }
+    .cap.find { color: var(--danger); }
+    .cap.put { color: var(--ok); }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 6px 0 0; background: #fff; }
+    th, td { border: 1px solid var(--border); padding: 7px 9px; text-align: left; vertical-align: top; }
+    th { background: #fafaf8; font-weight: 650; }
+    ul.tight { margin: 4px 0 0; padding-left: 18px; }
+    ul.tight li { margin: 3px 0; }
+    .tag { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+    .tag.ok { background: var(--ok-bg); color: var(--ok); }
+    .tag.warn { background: var(--warn-bg); color: var(--warn); }
+    .tag.danger { background: var(--danger-bg); color: var(--danger); }
+    .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; border: 1px solid #bbb; vertical-align: -2px; margin-right: 4px; }
+    @media print { body { background: #fff; } .copybox button { display: none; } .task, .toc, .callout { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+<h1>Хлебные крошки: вторая волна</h1>
+<p class="muted">Первая версия 28.09.2026, сверка с живым alsn.ru 29.09.2026 · только Тильда, не Битрикс · вид как в каталоге: иконка дома и <code>/</code></p>
+<div class="pills"><span class="pill warn">2 страницы с чужими крошками</span><span class="pill warn">1 витрина без служебного пути</span><span class="pill warn">12 страниц с двойными крошками</span><span class="pill danger">15 страниц без новых крошек</span></div>
+<div class="callout danger">Каждый шаг - только после письменного «да». «Опубликовать» - отдельным шагом по каждой странице. robots.txt, Twitter и Bing не трогаем. HEAD сайта (Organization, WebSite) не трогаем.</div>
+<div class="callout ok"><strong>Уже готово, не трогать:</strong> «Лицензии 1С», «Команда», «Публикации в СМИ», «Блог» из прошлого хвоста; внедрение 1С, КА, ERP, модуль маркетплейсов, «Интеграция с поставщиками» и страницы партнёров с новыми крошками, поддержка, 1С:КП, ЦРА, отзывы и остальные страницы с видом «дом /».</div>
+<div class="callout ok"><strong>Уже сделано - не трогать</strong><ul style="margin:6px 0 0;padding-left:18px;"><li>В-1: из HEAD страницы «Кейсы» (<code>/cases</code>) удалён чужой код кейса СЦ со старым адресом <code>/caseecom</code>, остался один путь «Главная / Кейсы» - проверено на сайте 29.09.2026.</li><li>В-2: из HEAD кейса РЭК (<code>/vesii</code>) убран сломанный код кейса СЦ, служебный путь теперь «Кейс «РЭК»» - проверено на сайте 29.09.2026 (делали по Д-1б из <code>tier2-dubli-title-description-2026-09-29.html</code>).</li></ul></div>
+<div class="callout info"><strong>Старый блок крошек.</strong> На многих страницах первым под меню стоит старый блок Тильды T758: строка со стрелкой, например «Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Merlion». Его убираем и ставим новый T123 с домом и <code>/</code>. Кейсы, статьи блога и страницы Telegram-бота (ещё 61 страница со старым блоком) - третьей волной, в эту пачку не входят. Страница <code>/1c-ozon-old</code> отдаёт 404, её больше нет: пункт закрыт.</div>
+<div class="toc"><strong>Задачи</strong><ol><li><a href="#v3">В-3. Кейс «Софтвидео»: исправить крошки</a></li><li><a href="#v4">В-4. Интервью Сергея Львова: исправить крошки</a></li><li><a href="#v5">В-5. Витрина «Фастфуд и Общепит»: служебный путь для карточек</a></li><li><a href="#v6">В-6. Удалить старый блок там, где новые крошки уже есть (12 страниц)</a></li><li><a href="#v7">В-7. Поставщики B2B: заменить старые крошки (7 страниц)</a></li><li><a href="#v8">В-8. Переходы и синхронизации: заменить старые крошки (8 страниц)</a></li><li><a href="#pub">Опубликовать</a></li><li><a href="#skip">Что не делать</a></li></ol></div>
+<section class="task" id="v3"><h2><span class="num">В-3</span> Кейс «Софтвидео»: исправить крошки</h2>
+<p class="muted">Страница «Кейс «Внедрение CRM системы в ООО "Софтвидео"»» · <a href="https://alsn.ru/cracasesoftvideo">https://alsn.ru/cracasesoftvideo</a> · адрес в Тильде <code>cracasesoftvideo</code></p>
+<span class="lbl">Что сделать</span><p>Крошки на странице кейса показывают «дом / ЦРА», как будто это сама страница ЦРА. Сделать «дом / ЦРА / Кейс «Софтвидео»», где «ЦРА» - ссылка. Служебный путь в HEAD заменить на такой же. Старый блок со стрелкой «Все кейсы → …» удалить.</p>
+<span class="lbl">Зачем</span><p>Сейчас поисковик думает, что этот адрес и есть страница ЦРА: путь в коде ведёт на <code>/cra</code>. Две страницы спорят за одно место в выдаче.</p>
+<span class="lbl">Где</span><p>Самый верх, под меню. Первым идёт новый HTML-блок T123 (фон <span class="swatch" style="background:#000000"></span><code>#000000</code>, номер <code>rec4021692001</code>) со строкой «/ ЦРА». Ниже старый блок T758 «Все кейсы → Кейс "Внедрение CRM системы в ООО "Софтвидео"». Дальше первый экран T205 на фото с тёмной вуалью, заголовок «Кейс «Внедрение CRM системы в ООО "Софтвидео"»».</p>
+<span class="lbl">Как в Тильде: на экране</span><ol class="steps"><li>Список страниц → <code>cracasesoftvideo</code> → <strong>Редактировать</strong>.</li><li>Первый блок под меню (T123, строка «/ ЦРА») → <strong>Контент</strong> → найти:</li></ol>
+<p class="cap find">Найти</p><div class="copybox"><pre id="v3-3">&lt;span style="opacity:.75;white-space:nowrap;"&gt;ЦРА&lt;/span&gt;</pre><button type="button" data-copy="v3-3">Копировать</button></div>
+<p class="cap put">Заменить на</p><div class="copybox"><pre id="v3-4">&lt;a href="https://alsn.ru/cra" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;ЦРА&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Кейс «Софтвидео»&lt;/span&gt;</pre><button type="button" data-copy="v3-4">Копировать</button></div>
+<ol class="steps" start="3"><li>Фон T123 не менять: <code>#000000</code> совпадает с тёмным фото ниже. <strong>Сохранить</strong>.</li><li>Следующий блок со стрелкой «Все кейсы → …» (T758): навести → в правом верхнем углу блока иконка корзины / «Удалить» → подтвердить.</li></ol>
+<span class="lbl">Как в Тильде: в HEAD</span><ol class="steps"><li>Список страниц → страница → <strong>Настройки</strong> (шестерёнка) → <strong>Дополнительно</strong> → поле «HTML-код для вставки внутрь head» (<code>cracasesoftvideo</code>).</li><li>Найти (Ctrl+F):</li></ol>
+<p class="cap find">Найти</p><div class="copybox"><pre id="v3-5">https://alsn.ru/cra#breadcrumb</pre><button type="button" data-copy="v3-5">Копировать</button></div>
+<ol class="steps" start="3"><li>Выделить весь этот блок от <code>&lt;script type="application/ld+json"&gt;</code> до <code>&lt;/script&gt;</code> (путь «Главная / ЦРА») и заменить на:</li></ol>
+<p class="cap put">Заменить на</p><div class="copybox"><pre id="v3-6">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/cracasesoftvideo#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "ЦРА", "item": "https://alsn.ru/cra" },
+    { "@type": "ListItem", "position": 3, "name": "Кейс «Софтвидео»", "item": "https://alsn.ru/cracasesoftvideo" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="v3-6">Копировать</button></div>
+<ol class="steps" start="4"><li><strong>Сохранить</strong>.</li></ol></section>
+<section class="task" id="v4"><h2><span class="num">В-4</span> Интервью Сергея Львова: исправить крошки</h2>
+<p class="muted">Страница «Интеграция 1С. Как услуга стала отдельным бизнесом?» · <a href="https://alsn.ru/persons/interw_lvov">https://alsn.ru/persons/interw_lvov</a> · адрес в Тильде <code>persons/interw_lvov</code></p>
+<span class="lbl">Что сделать</span><p>Сейчас на экране «дом / Команда», будто это страница команды. Сделать «дом / Команда / Интервью Сергея Львова», где «Команда» - ссылка на <code>/persons</code>. Служебный путь заменить. Старый блок «Блог → Интервью с основателем ALLSUN» удалить.</p>
+<span class="lbl">Зачем</span><p>Путь в коде сейчас ведёт на <code>/persons</code>, и поисковик считает интервью копией страницы команды.</p>
+<span class="lbl">Где</span><p>Самый верх, под меню. Первым идёт T123 (фон <span class="swatch" style="background:#000000"></span><code>#000000</code>, <code>rec4022534201</code>) со строкой «/ Команда». Ниже старый T758 «Блог → Интервью с основателем ALLSUN». Дальше первый экран T18 на тёмном фото, заголовок «Интеграция 1С. Как услуга стала отдельным бизнесом?».</p>
+<span class="lbl">Как в Тильде: на экране</span><ol class="steps"><li>Список страниц → <code>persons/interw_lvov</code> (или поиск по «interw») → <strong>Редактировать</strong>.</li><li>Первый блок под меню (T123, «/ Команда») → <strong>Контент</strong> → найти:</li></ol>
+<p class="cap find">Найти</p><div class="copybox"><pre id="v4-7">&lt;span style="opacity:.75;white-space:nowrap;"&gt;Команда&lt;/span&gt;</pre><button type="button" data-copy="v4-7">Копировать</button></div>
+<p class="cap put">Заменить на</p><div class="copybox"><pre id="v4-8">&lt;a href="https://alsn.ru/persons" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Команда&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Интервью Сергея Львова&lt;/span&gt;</pre><button type="button" data-copy="v4-8">Копировать</button></div>
+<ol class="steps" start="3"><li>Фон T123 оставить <code>#000000</code>. <strong>Сохранить</strong>.</li><li>Блок со стрелкой «Блог → Интервью с основателем ALLSUN» (T758) удалить: навести → корзина / «Удалить».</li></ol>
+<span class="lbl">Как в Тильде: в HEAD</span><ol class="steps"><li>Список страниц → страница → <strong>Настройки</strong> (шестерёнка) → <strong>Дополнительно</strong> → поле «HTML-код для вставки внутрь head» (<code>persons/interw_lvov</code>).</li><li>Найти (Ctrl+F):</li></ol>
+<p class="cap find">Найти</p><div class="copybox"><pre id="v4-9">https://alsn.ru/persons#breadcrumb</pre><button type="button" data-copy="v4-9">Копировать</button></div>
+<ol class="steps" start="3"><li>Выделить весь этот блок от <code>&lt;script type="application/ld+json"&gt;</code> до <code>&lt;/script&gt;</code> и заменить на:</li></ol>
+<p class="cap put">Заменить на</p><div class="copybox"><pre id="v4-10">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/persons/interw_lvov#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Команда", "item": "https://alsn.ru/persons" },
+    { "@type": "ListItem", "position": 3, "name": "Интервью Сергея Львова", "item": "https://alsn.ru/persons/interw_lvov" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="v4-10">Копировать</button></div>
+<ol class="steps" start="4"><li><strong>Сохранить</strong>.</li></ol></section>
+<section class="task" id="v5"><h2><span class="num">В-5</span> Витрина «Фастфуд и Общепит»: служебный путь для карточек</h2>
+<p class="muted">Страница «1C:Предприятие 8. Фастфуд и Общепит» · <a href="https://alsn.ru/1_obschepit_fastfood">https://alsn.ru/1_obschepit_fastfood</a> · адрес в Тильде <code>1_obschepit_fastfood</code></p>
+<span class="lbl">Что сделать</span><p>Вставить в HEAD витрины тот же универсальный скрипт, что уже работает на «Лицензиях 1С». Он сам собирает путь для каждой карточки товара этой витрины.</p>
+<span class="lbl">Зачем</span><p>На карточках товаров этой витрины поисковик сейчас не видит путь «Главная / раздел / товар». На других витринах он уже есть. Скрипт один на витрину, новые товары подхватываются сами.</p>
+<span class="lbl">Как в Тильде</span><ol class="steps"><li>Список страниц → страница → <strong>Настройки</strong> (шестерёнка) → <strong>Дополнительно</strong> → поле «HTML-код для вставки внутрь head» (<code>1_obschepit_fastfood</code>). Это настройки <strong>страницы витрины</strong>, не HEAD сайта.</li><li>Встать <strong>в конец</strong> поля, ничего не стирая, вставить:</li></ol>
+<div class="copybox"><pre id="v5-11">&lt;script&gt;
+(function () {
+  if (!/\/tproduct\//.test(location.pathname || "")) return;
+  if (document.getElementById("alsn-bc-jsonld")) return;
+
+  function txt(el) {
+    return (el &amp;&amp; (el.textContent || "")).replace(/\s+/g, " ").trim();
+  }
+  function abs(href) {
+    try { return new URL(href, location.origin).href.split("?")[0]; } catch (e) { return href; }
+  }
+  function pageUrl() {
+    var c = document.querySelector('link[rel="canonical"]');
+    var u = (c &amp;&amp; c.href) || (location.origin + location.pathname);
+    return u.split("?")[0];
+  }
+  function productName() {
+    return txt(document.querySelector("h1")) ||
+      txt(document.querySelector('[itemprop="name"]')) ||
+      txt(document.querySelector(".js-store-prod-name, .t-store__prod-popup__name")) ||
+      (document.title || "").split("|")[0].trim();
+  }
+  function catalogUrl() {
+    var p = (location.pathname || "").replace(/\/tproduct\/.*$/, "") || "/";
+    if (p.length &gt; 1 &amp;&amp; p.charAt(p.length - 1) === "/") p = p.slice(0, -1);
+    return location.origin + p;
+  }
+  function visCrumbs() {
+    var root = document.querySelector(".t-catalog__breadcrumbs");
+    if (!root) return [];
+    var nodes = root.querySelectorAll("a, span");
+    var out = [];
+    for (var i = 0; i &lt; nodes.length; i++) {
+      var el = nodes[i];
+      var name = txt(el);
+      if (!name) continue;
+      var href = el.tagName === "A" ? el.getAttribute("href") : "";
+      out.push({ name: name, item: href ? abs(href) : "" });
+    }
+    return out;
+  }
+  function build() {
+    if (document.getElementById("alsn-bc-jsonld")) return true;
+    var name = productName();
+    if (!name) return false;
+    var vis = visCrumbs();
+    var list = [{ name: "Главная", item: location.origin + "/" }];
+    var seen = { "Главная": true };
+    var i, row;
+    for (i = 0; i &lt; vis.length; i++) {
+      row = vis[i];
+      if (!row.name || seen[row.name]) continue;
+      seen[row.name] = true;
+      list.push(row);
+    }
+    if (list.length === 1) {
+      list.push({ name: "Каталог", item: catalogUrl() });
+    }
+    if (list[1] &amp;&amp; !list[1].item) list[1].item = catalogUrl();
+    if (list[list.length - 1].name !== name) {
+      list.push({ name: name, item: pageUrl() });
+    } else {
+      list[list.length - 1].item = pageUrl();
+    }
+    var els = [];
+    for (i = 0; i &lt; list.length; i++) {
+      els.push({ "@type": "ListItem", position: i + 1, name: list[i].name, item: list[i].item });
+    }
+    var s = document.createElement("script");
+    s.type = "application/ld+json";
+    s.id = "alsn-bc-jsonld";
+    s.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": pageUrl() + "#breadcrumb",
+      itemListElement: els
+    });
+    document.head.appendChild(s);
+    return true;
+  }
+  function start() {
+    var n = 0;
+    function tick() {
+      n++;
+      var hasNav = !!document.querySelector(".t-catalog__breadcrumbs");
+      var hasName = !!productName();
+      if ((hasNav &amp;&amp; hasName) || n &gt; 40) {
+        build();
+        return;
+      }
+      setTimeout(tick, 250);
+    }
+    tick();
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
+})();
+&lt;/script&gt;</pre><button type="button" data-copy="v5-11">Копировать</button></div>
+<ol class="steps" start="3"><li><strong>Сохранить</strong>.</li><li>Видимые крошки на карточках дают блоки каталога ST340: в блоке каталога на витрине → Контент → вкладка «Хлебные крошки» → «Над заголовком». Если уже включено, не трогать.</li></ol>
+<p class="cap">Карточки, которые покроет скрипт (для сверки: Товары → поиск → вставить артикул)</p>
+<table><tr><th>Товар</th><th>Артикул</th><th>Копировать</th></tr><tr><td>1С Предприятие 8 Общепит Электронная поставка</td><td><code>2900002156812</code></td><td><div class="copybox"><pre id="sku-12">2900002156812</pre><button type="button" data-copy="sku-12">Копировать</button></div></td></tr><tr><td>1С:Предприятие 8. Общепит</td><td><code>4601546118998</code></td><td><div class="copybox"><pre id="sku-13">4601546118998</pre><button type="button" data-copy="sku-13">Копировать</button></div></td></tr><tr><td>1С Предприятие 8 Общепит Комплект для 5 пользователей Электронная поставка</td><td><code>2900002156829</code></td><td><div class="copybox"><pre id="sku-14">2900002156829</pre><button type="button" data-copy="sku-14">Копировать</button></div></td></tr><tr><td>1С:Предприятие 8. Общепит. Комплект для 5 пользователей</td><td><code>4601546119001</code></td><td><div class="copybox"><pre id="sku-15">4601546119001</pre><button type="button" data-copy="sku-15">Копировать</button></div></td></tr><tr><td>1С Предприятие 8 Фастфуд Фронт-офис Электронная поставка</td><td><code>2900001901932</code></td><td><div class="copybox"><pre id="sku-16">2900001901932</pre><button type="button" data-copy="sku-16">Копировать</button></div></td></tr><tr><td>1С Общепит Клиентские лицензии на рабочие места Электронная поставка</td><td><code>2900002156850</code></td><td><div class="copybox"><pre id="sku-17">2900002156850</pre><button type="button" data-copy="sku-17">Копировать</button></div></td></tr><tr><td>1С:Общепит. Клиентские лицензии на рабочие места</td><td><code>4601546119032</code></td><td><div class="copybox"><pre id="sku-18">4601546119032</pre><button type="button" data-copy="sku-18">Копировать</button></div></td></tr><tr><td>1С Фастфуд и Ресторан Клиентские лицензии на рабочие места Электронная поставка</td><td><code>2900001901963</code></td><td><div class="copybox"><pre id="sku-19">2900001901963</pre><button type="button" data-copy="sku-19">Копировать</button></div></td></tr><tr><td>1С:Фастфуд и Ресторан. Клиентские лицензии на рабочие места</td><td><code>4601546136718</code></td><td><div class="copybox"><pre id="sku-20">4601546136718</pre><button type="button" data-copy="sku-20">Копировать</button></div></td></tr></table>
+<p class="muted">В карточки ничего вставлять не нужно. Код в поле «Текст» или во вкладку SEO товара не класть.</p></section>
+<section class="task" id="v6"><h2><span class="num">В-6</span> Удалить старый блок там, где новые крошки уже есть</h2>
+<span class="lbl">Что сделать</span><p>На этих страницах крошки стоят дважды: сверху новый блок «дом / …», под ним старый со стрелкой. Старый блок T758 удалить. Новый T123 и HEAD не трогать.</p>
+<span class="lbl">Зачем</span><p>Гость видит две строки пути подряд, одна со старыми названиями. Выглядит как ошибка вёрстки.</p>
+<span class="lbl">Как в Тильде (на каждой странице)</span><ol class="steps"><li>Список страниц → адрес из таблицы → <strong>Редактировать</strong>.</li><li>Сразу под меню: сначала новый блок крошек (T123, иконка дома), под ним блок с текстом из колонки «Старый блок» со стрелкой <code>→</code>.</li><li>Навести на старый блок → корзина / «Удалить» → подтвердить. Новый блок над ним оставить.</li><li><strong>Сохранить</strong>.</li></ol>
+<table><tr><th>Страница</th><th>Адрес в Тильде</th><th>Старый блок (удалить)</th></tr><tr><td>Сотрудник в штате или команда программистов 1С на аутсорсе?<br><a href="https://alsn.ru/outsorce_vs_inhouse">https://alsn.ru/outsorce_vs_inhouse</a></td><td><code>outsorce_vs_inhouse</code></td><td>Главная → Блог → Сотрудник в штате или команда на аутсорсе?<br><span class="muted">rec172724378</span></td></tr><tr><td>Отзывы о сотрудничестве с командой Allsun Integration<br><a href="https://alsn.ru/review">https://alsn.ru/review</a></td><td><code>review</code></td><td>Кейсы → Отзывы клиентов<br><span class="muted">rec318429245</span></td></tr><tr><td>Интеграция 1C с Merlion B2B по API<br><a href="https://alsn.ru/merlion">https://alsn.ru/merlion</a></td><td><code>merlion</code></td><td>Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Merlion<br><span class="muted">rec1123068641</span></td></tr><tr><td>Интеграция 1C с OCS B2B по API<br><a href="https://alsn.ru/ocs">https://alsn.ru/ocs</a></td><td><code>ocs</code></td><td>Интеграция 1C по API с B2B поставщиками и дистрибьютерами → OCS Distribution<br><span class="muted">rec1129314396</span></td></tr><tr><td>Интеграция 1C с Marvel B2B по API<br><a href="https://alsn.ru/marvel">https://alsn.ru/marvel</a></td><td><code>marvel</code></td><td>Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Марвел<br><span class="muted">rec1129465941</span></td></tr><tr><td>Интеграция 1C с Treolan B2B по API<br><a href="https://alsn.ru/treolan">https://alsn.ru/treolan</a></td><td><code>treolan</code></td><td>Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Treolan<br><span class="muted">rec1129548101</span></td></tr><tr><td>Интеграция 1C с 3Logic B2B по API<br><a href="https://alsn.ru/3logic">https://alsn.ru/3logic</a></td><td><code>3logic</code></td><td>Интеграция 1C по API с B2B поставщиками и дистрибьютерами → 3logic<br><span class="muted">rec1131049611</span></td></tr><tr><td>Allsun для строителей<br><a href="https://alsn.ru/constr">https://alsn.ru/constr</a></td><td><code>constr</code></td><td>Главная → Автоматизация деятельности строительных компаний<br><span class="muted">rec172799565</span></td></tr><tr><td>Кейс «Внедрение CRM системы в ООО "Софтвидео"» <span class="tag warn">входит в В-3 / В-4</span><br><a href="https://alsn.ru/cracasesoftvideo">https://alsn.ru/cracasesoftvideo</a></td><td><code>cracasesoftvideo</code></td><td>Все кейсы → Кейс "Внедрение CRM системы в ООО "Софтвидео"<br><span class="muted">rec880828237</span></td></tr><tr><td>Интеграция 1С. Как услуга стала отдельным бизнесом? <span class="tag warn">входит в В-3 / В-4</span><br><a href="https://alsn.ru/persons/interw_lvov">https://alsn.ru/persons/interw_lvov</a></td><td><code>persons/interw_lvov</code></td><td>Блог → Интервью с основателем ALLSUN<br><span class="muted">rec172724016</span></td></tr><tr><td>Интеграция 1C с ЭТМ iPRO по API<br><a href="https://alsn.ru/etm-ipro">https://alsn.ru/etm-ipro</a></td><td><code>etm-ipro</code></td><td>Интеграция 1C по API с B2B поставщиками и дистрибьютерами → ЭТМ iPRO<br><span class="muted">rec1131539066</span></td></tr><tr><td>Переход с 1С УПП на КА, УНФ, УТ от 3 дней<br><a href="https://alsn.ru/perehod-s-upp-na-ka-unf-ut">https://alsn.ru/perehod-s-upp-na-ka-unf-ut</a></td><td><code>perehod-s-upp-na-ka-unf-ut</code></td><td>Сопровождение 1С → Перенос данных из 1С УПП в КА, УНФ, УТ<br><span class="muted">rec1271843691</span></td></tr></table></section>
+<section class="task" id="v7"><h2><span class="num">В-7</span> Поставщики B2B: заменить старые крошки</h2>
+<span class="lbl">Что сделать</span><p>Убрать старую строку «Интеграция 1C по API с B2B поставщиками и дистрибьютерами → …» и поставить крошки «дом / Интеграция с поставщиками / Имя поставщика», как уже сделано на странице Мерлион. Добавить служебный путь в HEAD.</p><span class="lbl">Зачем</span><p>Это страницы продукта «Интеграция с B2B-поставщиками телеком-оборудования». Новые крошки ведут гостя на общую страницу продукта, а поисковик видит, что все партнёры - часть одного раздела. Эталон на сайте: <a href="https://alsn.ru/merlion">https://alsn.ru/merlion</a>.</p><span class="lbl">Где</span><p>Сразу под меню стоит старый блок со стрелкой, под ним баннер T180 «Однократная оплата без ежегодного продления! Интеграция 1C с …». Верх баннера светлый, поэтому крошки серые на белом.</p>
+<span class="lbl">Как в Тильде (на каждой странице)</span><ol class="steps"><li>Список страниц → адрес страницы → <strong>Редактировать</strong>.</li><li>Если под меню есть блок со стрелкой <code>→</code> (T758) - навести → корзина / «Удалить».</li><li>Навести на первый экран с заголовком → «+» <strong>сверху</strong> → Библиотека блоков → <strong>Другое</strong> → <strong>T123 «HTML-код»</strong>.</li><li>Контент T123 → вставить код «На экран» этой страницы.</li><li>Настройки T123 → цвет фона из карточки страницы, отступы сверху и снизу 0. <strong>Сохранить</strong>.</li><li>Список страниц → страница → <strong>Настройки</strong> (шестерёнка) → <strong>Дополнительно</strong> → поле «HTML-код для вставки внутрь head» → в конец, ничего не стирая, вставить код «В HEAD». <strong>Сохранить</strong>.</li></ol>
+<h3>Интеграция 1C с ВТТ B2B по API</h3>
+<p class="muted"><a href="https://alsn.ru/vtt">https://alsn.ru/vtt</a> · адрес в Тильде <code>vtt</code> · на экране: дом / Интеграция с поставщиками / ВТТ</p>
+<p>Старый блок удалить: «Интеграция 1C по API с B2B поставщиками и дистрибьютерами → ВТТ» (rec1131768631). Первый экран: баннер T180 «Однократная оплата без ежегодного продления!» на светлом фоне. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-21">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/ecom" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Интеграция с поставщиками&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;ВТТ&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-21">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-22">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/vtt#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Интеграция с поставщиками", "item": "https://alsn.ru/ecom" },
+    { "@type": "ListItem", "position": 3, "name": "ВТТ", "item": "https://alsn.ru/vtt" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-22">Копировать</button></div>
+<h3>Интеграция 1C с ДССЛ B2B по API</h3>
+<p class="muted"><a href="https://alsn.ru/dssl">https://alsn.ru/dssl</a> · адрес в Тильде <code>dssl</code> · на экране: дом / Интеграция с поставщиками / DSSL</p>
+<p>Старый блок удалить: «Интеграция 1C по API с B2B поставщиками и дистрибьютерами → DSSL» (rec1131775441). Первый экран: баннер T180 «Однократная оплата без ежегодного продления!» на светлом фоне. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-23">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/ecom" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Интеграция с поставщиками&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;DSSL&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-23">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-24">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/dssl#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Интеграция с поставщиками", "item": "https://alsn.ru/ecom" },
+    { "@type": "ListItem", "position": 3, "name": "DSSL", "item": "https://alsn.ru/dssl" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-24">Копировать</button></div>
+<h3>Интеграция 1C с ELKO Rus B2B по API</h3>
+<p class="muted"><a href="https://alsn.ru/elko">https://alsn.ru/elko</a> · адрес в Тильде <code>elko</code> · на экране: дом / Интеграция с поставщиками / Элко Рус</p>
+<p>Старый блок удалить: «Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Элко Рус» (rec1131790481). Первый экран: баннер T180 «Однократная оплата без ежегодного продления!» на светлом фоне. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-25">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/ecom" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Интеграция с поставщиками&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Элко Рус&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-25">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-26">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/elko#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Интеграция с поставщиками", "item": "https://alsn.ru/ecom" },
+    { "@type": "ListItem", "position": 3, "name": "Элко Рус", "item": "https://alsn.ru/elko" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-26">Копировать</button></div>
+<h3>Интеграция 1C с DIGIS B2B по API</h3>
+<p class="muted"><a href="https://alsn.ru/digis">https://alsn.ru/digis</a> · адрес в Тильде <code>digis</code> · на экране: дом / Интеграция с поставщиками / DIGIS</p>
+<p>Старый блок удалить: «Интеграция 1C по API с B2B поставщиками и дистрибьютерами → DIGIS» (rec1131426891). Первый экран: баннер T180 «Однократная оплата без ежегодного продления!» на светлом фоне. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-27">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/ecom" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Интеграция с поставщиками&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;DIGIS&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-27">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-28">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/digis#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Интеграция с поставщиками", "item": "https://alsn.ru/ecom" },
+    { "@type": "ListItem", "position": 3, "name": "DIGIS", "item": "https://alsn.ru/digis" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-28">Копировать</button></div>
+<h3>Интеграция 1C с AUVIX B2B по API</h3>
+<p class="muted"><a href="https://alsn.ru/auvix">https://alsn.ru/auvix</a> · адрес в Тильде <code>auvix</code> · на экране: дом / Интеграция с поставщиками / AUVIX</p>
+<p>Старый блок удалить: «Интеграция 1C по API с B2B поставщиками и дистрибьютерами → AUVIX» (rec1131674231). Первый экран: баннер T180 «Однократная оплата без ежегодного продления!» на светлом фоне. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-29">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/ecom" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Интеграция с поставщиками&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;AUVIX&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-29">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-30">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/auvix#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Интеграция с поставщиками", "item": "https://alsn.ru/ecom" },
+    { "@type": "ListItem", "position": 3, "name": "AUVIX", "item": "https://alsn.ru/auvix" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-30">Копировать</button></div>
+<h3>Интеграция 1C с Ресурс-Медиа B2B по API</h3>
+<p class="muted"><a href="https://alsn.ru/resurs-media">https://alsn.ru/resurs-media</a> · адрес в Тильде <code>resurs-media</code> · на экране: дом / Интеграция с поставщиками / Ресурс-Медиа</p>
+<p>Старый блок удалить: «Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Ресурс-Медиа» (rec1131163126). Первый экран: баннер T180 «Однократная оплата без ежегодного продления!» на светлом фоне. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-31">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/ecom" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Интеграция с поставщиками&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Ресурс-Медиа&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-31">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-32">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/resurs-media#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Интеграция с поставщиками", "item": "https://alsn.ru/ecom" },
+    { "@type": "ListItem", "position": 3, "name": "Ресурс-Медиа", "item": "https://alsn.ru/resurs-media" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-32">Копировать</button></div>
+<h3>Интеграция 1C с Русский Свет B2B по API</h3>
+<p class="muted"><a href="https://alsn.ru/russkiy-svet">https://alsn.ru/russkiy-svet</a> · адрес в Тильде <code>russkiy-svet</code> · на экране: дом / Интеграция с поставщиками / Русский Свет</p>
+<p>Старый блок удалить: «Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Русский Свет» (rec1131270696). Первый экран: баннер T180 «Однократная оплата без ежегодного продления!» на светлом фоне. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-33">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/ecom" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Интеграция с поставщиками&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Русский Свет&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-33">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-34">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/russkiy-svet#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Интеграция с поставщиками", "item": "https://alsn.ru/ecom" },
+    { "@type": "ListItem", "position": 3, "name": "Русский Свет", "item": "https://alsn.ru/russkiy-svet" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-34">Копировать</button></div>
+</section>
+<section class="task" id="v8"><h2><span class="num">В-8</span> Переходы и синхронизации: заменить старые крошки</h2>
+<span class="lbl">Что сделать</span><p>Убрать старую строку «Сопровождение 1С → …» и поставить крошки «дом / раздел / короткое имя». Переходы на новую конфигурацию - в разделе «Внедрение 1С», как уже сделано на странице перехода с УПП. Синхронизации баз - в разделе «Техподдержка 1С». Перевыставление последней мили - в разделе «Модуль 1С для маркетплейсов». Добавить служебный путь в HEAD.</p><span class="lbl">Зачем</span><p>Старая строка ведёт на «Внедрение 1С» с подписью «Сопровождение 1С», это путает гостя. Новый путь честно показывает раздел, а поисковик связывает страницу с нужной услугой. Эталон: <a href="https://alsn.ru/perehod-s-upp-na-ka-unf-ut">https://alsn.ru/perehod-s-upp-na-ka-unf-ut</a>.</p><span class="lbl">Где</span><p>На шести страницах под меню старый блок со стрелкой, под ним баннер T180 на белом фоне: крошки серые, фон белый. На «Переход с МойСклад» и «Последняя миля Ozon» старого блока нет, первый экран - фото с тёмной вуалью: крошки светло-серые, фон T123 чёрный. Если раздел для синхронизаций хотите другой (например «Внедрение 1С»), скажите до вставки.</p>
+<span class="lbl">Как в Тильде (на каждой странице)</span><ol class="steps"><li>Список страниц → адрес страницы → <strong>Редактировать</strong>.</li><li>Если под меню есть блок со стрелкой <code>→</code> (T758) - навести → корзина / «Удалить».</li><li>Навести на первый экран с заголовком → «+» <strong>сверху</strong> → Библиотека блоков → <strong>Другое</strong> → <strong>T123 «HTML-код»</strong>.</li><li>Контент T123 → вставить код «На экран» этой страницы.</li><li>Настройки T123 → цвет фона из карточки страницы, отступы сверху и снизу 0. <strong>Сохранить</strong>.</li><li>Список страниц → страница → <strong>Настройки</strong> (шестерёнка) → <strong>Дополнительно</strong> → поле «HTML-код для вставки внутрь head» → в конец, ничего не стирая, вставить код «В HEAD». <strong>Сохранить</strong>.</li></ol>
+<h3>Переход с УТ 10.3 и 11 на УНФ 3.0 от 1 дня</h3>
+<p class="muted"><a href="https://alsn.ru/perehod-s-ut-na-unf">https://alsn.ru/perehod-s-ut-na-unf</a> · адрес в Тильде <code>perehod-s-ut-na-unf</code> · на экране: дом / Внедрение 1С / Переход с УТ на УНФ</p>
+<p>Старый блок удалить: «Сопровождение 1С → Перенос данных из УТ 10.3 и 11 в УНФ» (rec1268391961). Первый экран: баннер T180 «Быстро и легко» на белом фоне, картинка справа. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-35">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/development1c" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Внедрение 1С&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Переход с УТ на УНФ&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-35">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-36">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/perehod-s-ut-na-unf#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Внедрение 1С", "item": "https://alsn.ru/development1c" },
+    { "@type": "ListItem", "position": 3, "name": "Переход с УТ на УНФ", "item": "https://alsn.ru/perehod-s-ut-na-unf" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-36">Копировать</button></div>
+<h3>Переход с 1С:Документооборот 2.1 на 3.0</h3>
+<p class="muted"><a href="https://alsn.ru/perehod-s-dokumentooborota-2-1-na-3-0">https://alsn.ru/perehod-s-dokumentooborota-2-1-na-3-0</a> · адрес в Тильде <code>perehod-s-dokumentooborota-2-1-na-3-0</code> · на экране: дом / Внедрение 1С / Переход на Документооборот 3.0</p>
+<p>Старый блок удалить: «Сопровождение 1С → Миграция с 1С:Документооборот 2.1 на 3.0» (rec1268458041). Первый экран: баннер T180 «Быстро и легко» на белом фоне, картинка справа. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-37">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/development1c" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Внедрение 1С&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Переход на Документооборот 3.0&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-37">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-38">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/perehod-s-dokumentooborota-2-1-na-3-0#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Внедрение 1С", "item": "https://alsn.ru/development1c" },
+    { "@type": "ListItem", "position": 3, "name": "Переход на Документооборот 3.0", "item": "https://alsn.ru/perehod-s-dokumentooborota-2-1-na-3-0" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-38">Копировать</button></div>
+<h3>Переход с УТ 10.3 на 11.5 от 1 дня</h3>
+<p class="muted"><a href="https://alsn.ru/perehod-s-ut-10-3">https://alsn.ru/perehod-s-ut-10-3</a> · адрес в Тильде <code>perehod-s-ut-10-3</code> · на экране: дом / Внедрение 1С / Переход с УТ 10.3 на 11.5</p>
+<p>Старый блок удалить: «Сопровождение 1С → Перенос документов из УТ 10.3 в 11.5» (rec1268461181). Первый экран: баннер T180 «Быстро и легко» на белом фоне, картинка справа. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-39">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/development1c" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Внедрение 1С&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Переход с УТ 10.3 на 11.5&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-39">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-40">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/perehod-s-ut-10-3#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Внедрение 1С", "item": "https://alsn.ru/development1c" },
+    { "@type": "ListItem", "position": 3, "name": "Переход с УТ 10.3 на 11.5", "item": "https://alsn.ru/perehod-s-ut-10-3" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-40">Копировать</button></div>
+<h3>Переход с МойСклад на 1С за 3 дня</h3>
+<p class="muted"><a href="https://alsn.ru/moy-sklad-perenos-v-1s">https://alsn.ru/moy-sklad-perenos-v-1s</a> · адрес в Тильде <code>moy-sklad-perenos-v-1s</code> · на экране: дом / Внедрение 1С / Переход с МойСклад на 1С</p>
+<p>Старого блока со стрелкой нет. Первый экран: обложка T179 на фото с тёмной вуалью 70%. Фон T123: <span class="swatch" style="background:#000000"></span><code>#000000</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-41">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/development1c" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Внедрение 1С&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Переход с МойСклад на 1С&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-41">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-42">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/moy-sklad-perenos-v-1s#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Внедрение 1С", "item": "https://alsn.ru/development1c" },
+    { "@type": "ListItem", "position": 3, "name": "Переход с МойСклад на 1С", "item": "https://alsn.ru/moy-sklad-perenos-v-1s" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-42">Копировать</button></div>
+<h3>Синхронизация БП и БП от 1 дня</h3>
+<p class="muted"><a href="https://alsn.ru/sinhronizaciya-bp-i-bp">https://alsn.ru/sinhronizaciya-bp-i-bp</a> · адрес в Тильде <code>sinhronizaciya-bp-i-bp</code> · на экране: дом / Техподдержка 1С / Синхронизация БП и БП</p>
+<p>Старый блок удалить: «Сопровождение 1С → Синхронизация между базами 1С БП» (rec1286198551). Первый экран: баннер T180 «Быстро и легко» на белом фоне, картинка справа. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-43">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/support1c" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Техподдержка 1С&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Синхронизация БП и БП&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-43">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-44">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/sinhronizaciya-bp-i-bp#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Техподдержка 1С", "item": "https://alsn.ru/support1c" },
+    { "@type": "ListItem", "position": 3, "name": "Синхронизация БП и БП", "item": "https://alsn.ru/sinhronizaciya-bp-i-bp" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-44">Копировать</button></div>
+<h3>Синхронизация между ЗУП и ЗУП от 1 дня</h3>
+<p class="muted"><a href="https://alsn.ru/sinhronizaciya-mezhdu-zup-i-zup">https://alsn.ru/sinhronizaciya-mezhdu-zup-i-zup</a> · адрес в Тильде <code>sinhronizaciya-mezhdu-zup-i-zup</code> · на экране: дом / Техподдержка 1С / Синхронизация ЗУП и ЗУП</p>
+<p>Старый блок удалить: «Сопровождение 1С → Синхронизация и обмен между ЗУП и ЗУП» (rec1290154861). Первый экран: баннер T180 «Быстро и легко» на белом фоне, картинка справа. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-45">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/support1c" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Техподдержка 1С&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Синхронизация ЗУП и ЗУП&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-45">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-46">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/sinhronizaciya-mezhdu-zup-i-zup#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Техподдержка 1С", "item": "https://alsn.ru/support1c" },
+    { "@type": "ListItem", "position": 3, "name": "Синхронизация ЗУП и ЗУП", "item": "https://alsn.ru/sinhronizaciya-mezhdu-zup-i-zup" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-46">Копировать</button></div>
+<h3>Синхронизация между 1С: УТ и УТ от 1 дня</h3>
+<p class="muted"><a href="https://alsn.ru/sinhronizaciya-mezhdu-ut-i-ut">https://alsn.ru/sinhronizaciya-mezhdu-ut-i-ut</a> · адрес в Тильде <code>sinhronizaciya-mezhdu-ut-i-ut</code> · на экране: дом / Техподдержка 1С / Синхронизация УТ и УТ</p>
+<p>Старый блок удалить: «Сопровождение 1С → Синхронизация и обмен между УТ 11 и УТ 11» (rec1293893281). Первый экран: баннер T180 «Быстро и легко» на белом фоне, картинка справа. Фон T123: <span class="swatch" style="background:#ffffff"></span><code>#ffffff</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-47">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/support1c" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Техподдержка 1С&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Синхронизация УТ и УТ&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-47">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-48">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/sinhronizaciya-mezhdu-ut-i-ut#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Техподдержка 1С", "item": "https://alsn.ru/support1c" },
+    { "@type": "ListItem", "position": 3, "name": "Синхронизация УТ и УТ", "item": "https://alsn.ru/sinhronizaciya-mezhdu-ut-i-ut" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-48">Копировать</button></div>
+<h3>Перевыставление услуг последней мили ОЗОН с НДС за три клика в 1С</h3>
+<p class="muted"><a href="https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s">https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s</a> · адрес в Тильде <code>perevystavlenie-uslug-posledney-mili-ozon-v-1s</code> · на экране: дом / Модуль 1С для маркетплейсов / Последняя миля Ozon</p>
+<p>Старого блока со стрелкой нет. Первый экран: обложка T1065 на фото с тёмной вуалью. Фон T123: <span class="swatch" style="background:#000000"></span><code>#000000</code>.</p>
+<p class="cap put">На экран (T123)</p><div class="copybox"><pre id="w-49">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;"&gt;
+  &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;a href="https://alsn.ru/casemarketplace" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Модуль 1С для маркетплейсов&lt;/a&gt;
+  &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt;
+  &lt;span style="opacity:.75;white-space:nowrap;"&gt;Последняя миля Ozon&lt;/span&gt;
+&lt;/nav&gt;</pre><button type="button" data-copy="w-49">Копировать</button></div>
+<p class="cap put">В HEAD страницы</p><div class="copybox"><pre id="w-50">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Модуль 1С для маркетплейсов", "item": "https://alsn.ru/casemarketplace" },
+    { "@type": "ListItem", "position": 3, "name": "Последняя миля Ozon", "item": "https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="w-50">Копировать</button></div>
+</section>
+<section class="task" id="pub"><h2><span class="num">P</span> Опубликовать</h2><ol class="steps"><li>После «да» по задаче нажать <strong>«Опубликовать»</strong> на каждой затронутой странице: <code>cracasesoftvideo</code>, <code>persons/interw_lvov</code>, <code>1_obschepit_fastfood</code>, <code>outsorce_vs_inhouse</code>, <code>review</code>, <code>merlion</code>, <code>ocs</code>, <code>marvel</code>, <code>treolan</code>, <code>3logic</code>, <code>constr</code>, <code>etm-ipro</code>, <code>perehod-s-upp-na-ka-unf-ut</code>, <code>vtt</code>, <code>dssl</code>, <code>elko</code>, <code>digis</code>, <code>auvix</code>, <code>resurs-media</code>, <code>russkiy-svet</code>, <code>perehod-s-ut-na-unf</code>, <code>perehod-s-dokumentooborota-2-1-na-3-0</code>, <code>perehod-s-ut-10-3</code>, <code>moy-sklad-perenos-v-1s</code>, <code>sinhronizaciya-bp-i-bp</code>, <code>sinhronizaciya-mezhdu-zup-i-zup</code>, <code>sinhronizaciya-mezhdu-ut-i-ut</code>, <code>perevystavlenie-uslug-posledney-mili-ozon-v-1s</code>.</li><li>«Опубликовать все страницы» не нужно: HEAD сайта не меняли.</li></ol></section>
+<section class="task" id="skip"><h2>Что не делать</h2><ul class="tight"><li>Не трогать страницы из зелёного блока вверху.</li><li>Не удалять новый блок крошек (с иконкой дома) на страницах из В-6: удаляем только блок со стрелкой.</li><li>Не трогать кейсы, статьи блога и страницы Telegram-бота со старым блоком: они в третьей волне. Telegram-бот на сайте не снимаем.</li><li>Не ставить второй служебный путь, если свой уже есть. Не класть его в HEAD сайта.</li><li>Не вставлять скрипт витрины в карточки товаров, во вкладку SEO товара и в HEAD сайта.</li><li>Не писать на экране «Главная →». Только иконка дома и <code>/</code>.</li><li>Не править robots.txt, Twitter, Bing. Не смешивать с Битрикс.</li></ul></section>
+<p class="muted">Файл: <code>seo-data/tilda-briefs/tier2-breadcrumbs-wave-2026-09-28.html</code> · прошлый хвост: <code>tier2-breadcrumbs-tail-2026-09-28.html</code> · проверка: <code>seo-data/scripts/_bc-all-2026-09-28.json</code>, <code>_bc-t758-2026-09-28.json</code></p>
+  </div>
+  <script>
+    function flash(btn) {
+      btn.classList.add("ok");
+      const t = btn.textContent;
+      btn.textContent = "Скопировано";
+      setTimeout(() => { btn.textContent = t; btn.classList.remove("ok"); }, 1200);
+    }
+    document.querySelectorAll(".copybox button[data-copy]").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const pre = document.getElementById(btn.getAttribute("data-copy"));
+        if (!pre) return;
+        await navigator.clipboard.writeText(pre.textContent);
+        flash(btn);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+&lt;script&gt;
+(function () {
+  if (!/\/tproduct\//.test(location.pathname || "")) return;
+  if (document.getElementById("alsn-bc-jsonld")) return;
+
+  function txt(el) {
+    return (el &amp;&amp; (el.textContent || "")).replace(/\s+/g, " ").trim();
+  }
+  function abs(href) {
+    try { return new URL(href, location.origin).href.split("?")[0]; } catch (e) { return href; }
+  }
+  function pageUrl() {
+    var c = document.querySelector('link[rel="canonical"]');
+    var u = (c &amp;&amp; c.href) || (location.origin + location.pathname);
+    return u.split("?")[0];
+  }
+  function productName() {
+    return txt(document.querySelector("h1")) ||
+      txt(document.querySelector('[itemprop="name"]')) ||
+      txt(document.querySelector(".js-store-prod-name, .t-store__prod-popup__name")) ||
+      (document.title || "").split("|")[0].trim();
+  }
+  function catalogUrl() {
+    var p = (location.pathname || "").replace(/\/tproduct\/.*$/, "") || "/";
+    if (p.length &gt; 1 &amp;&amp; p.charAt(p.length - 1) === "/") p = p.slice(0, -1);
+    return location.origin + p;
+  }
+  function visCrumbs() {
+    var root = document.querySelector(".t-catalog__breadcrumbs");
+    if (!root) return [];
+    var nodes = root.querySelectorAll("a, span");
+    var out = [];
+    for (var i = 0; i &lt; nodes.length; i++) {
+      var el = nodes[i];
+      var name = txt(el);
+      if (!name) continue;
+      var href = el.tagName === "A" ? el.getAttribute("href") : "";
+      out.push({ name: name, item: href ? abs(href) : "" });
+    }
+    return out;
+  }
+  function build() {
+    if (document.getElementById("alsn-bc-jsonld")) return true;
+    var name = productName();
+    if (!name) return false;
+    var vis = visCrumbs();
+    var list = [{ name: "Главная", item: location.origin + "/" }];
+    var seen = { "Главная": true };
+    var i, row;
+    for (i = 0; i &lt; vis.length; i++) {
+      row = vis[i];
+      if (!row.name || seen[row.name]) continue;
+      seen[row.name] = true;
+      list.push(row);
+    }
+    if (list.length === 1) {
+      list.push({ name: "Каталог", item: catalogUrl() });
+    }
+    if (list[1] &amp;&amp; !list[1].item) list[1].item = catalogUrl();
+    if (list[list.length - 1].name !== name) {
+      list.push({ name: name, item: pageUrl() });
+    } else {
+      list[list.length - 1].item = pageUrl();
+    }
+    var els = [];
+    for (i = 0; i &lt; list.length; i++) {
+      els.push({ "@type": "ListItem", position: i + 1, name: list[i].name, item: list[i].item });
+    }
+    var s = document.createElement("script");
+    s.type = "application/ld+json";
+    s.id = "alsn-bc-jsonld";
+    s.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": pageUrl() + "#breadcrumb",
+      itemListElement: els
+    });
+    document.head.appendChild(s);
+    return true;
+  }
+  function start() {
+    var n = 0;
+    function tick() {
+      n++;
+      var hasNav = !!document.querySelector(".t-catalog__breadcrumbs");
+      var hasName = !!productName();
+      if ((hasNav &amp;&amp; hasName) || n &gt; 40) {
+        build();
+        return;
+      }
+      setTimeout(tick, 250);
+    }
+    tick();
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
+})();
+&lt;/script&gt;

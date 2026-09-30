@@ -1,0 +1,87 @@
+[
+  {
+    "path": "/caseecomsc",
+    "url": "https://alsn.ru/caseecomsc",
+    "title": "Кейс: интеграция 1С с поставщиками телеком и IT | Аллсан",
+    "title_ok": true,
+    "description": "Кейс ООО «СЦ»: обмен 1С с ЛК и API поставщиков - остатки, цены, резерв и заказы онлайн. Производительность менеджеров выросла в 3 раза, трудозатраты -40%. Аллсан.",
+    "desc_ok": true,
+    "h1": "Кейс: интеграция 1С с поставщиками телеком- и IT-оборудования для ООО «СЦ»",
+    "h1_ok": true,
+    "og_title": "Кейс: интеграция 1С с поставщиками телеком и IT | Аллсан",
+    "og_desc": "Мы автоматизировали 1С через API с B2B-поставщиками: загрузка цен, резервирование, заказы онлайн. Производительность выросла в 3 раза, трудозатраты упали на 40%",
+    "og_image": "https://static.tildacdn.com/tild3566-3733-4163-b435-303964663638/seo-databrand-images.jpg",
+    "og_image_bad_resize504": false,
+    "canonical": "https://alsn.ru/caseecomsc",
+    "crumbs": "CANON",
+    "ld_breadcrumb": 1,
+    "ld_webpage": 1,
+    "ld_article": 1,
+    "must_contain": [
+      {
+        "phrase": "ООО «СЦ»",
+        "ok": true
+      },
+      {
+        "phrase": "поставщик",
+        "ok": true
+      }
+    ],
+    "must_not_contain_hits": [
+      "маркетплейс"
+    ],
+    "empty_alts": [
+      {
+        "file": "noroot.png",
+        "alt": "",
+        "src": "https://thb.tildacdn.com/tild3264-3135-4533-a130-346331373161/-/empty/noroot.png"
+      },
+      {
+        "file": "noroot.png",
+        "alt": "",
+        "src": "https://thb.tildacdn.com/tild3737-3566-4064-a635-396266346466/-/empty/noroot.png"
+      }
+    ],
+    "empty_alts_n": 2,
+    "lead_snip": "Для ООО «СЦ» мы настроили обмен 1С с личными кабинетами и API поставщиков телеком- и IT-оборудования: остатки и цены подтягиваются автоматически, резерв и заказы уходят поставщику из 1С без ручной выгрузки прайсов в Excel. Ниже - задача кли"
+  },
+  {
+    "path": "/xitsadmarketplace",
+    "url": "https://alsn.ru/xitsadmarketplace",
+    "title": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД» | Аллсан",
+    "title_ok": true,
+    "description": "Кейс ООО «ХИТСАД»: модуль 1С для Ozon и Wildberries - единое окно, рост продаж до x4, логистика по России -70%. Аллсан.",
+    "desc_ok": true,
+    "h1": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+    "h1_ok": true,
+    "og_title": "Кейс: интеграция 1С с маркетплейсами для ООО «ХИТСАД»",
+    "og_desc": "Для ООО «ХИТСАД» настроили модуль 1С с Ozon и Wildberries: остатки, заказы, поставки и юнит-экономика в одном окне. Рост продаж до x4.",
+    "og_image": "https://static.tildacdn.com/tild3038-3863-4433-a331-333863363261/casemarketplace-og-1.png",
+    "og_image_bad_resize504": false,
+    "canonical": "https://alsn.ru/xitsadmarketplace",
+    "crumbs": "CANON",
+    "ld_breadcrumb": 1,
+    "ld_webpage": 1,
+    "ld_article": 1,
+    "must_contain": [
+      {
+        "phrase": "ХИТСАД",
+        "ok": true
+      },
+      {
+        "phrase": "маркетплейс",
+        "ok": true
+      }
+    ],
+    "must_not_contain_hits": [],
+    "empty_alts": [
+      {
+        "file": "noroot.png",
+        "alt": "",
+        "src": "https://thb.tildacdn.com/tild3264-3135-4533-a130-346331373161/-/empty/noroot.png"
+      }
+    ],
+    "empty_alts_n": 1,
+    "lead_snip": "Для ООО «ХИТСАД» мы автоматизировали работу с Ozon и Wildberries через модуль 1С: единое окно управления, меньше ручной нагрузки и кратный рост продаж. ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ #rec3991682801 .t-btnflex.t-btnflex_type_button{color:#ffffff;back"
+  }
+]
