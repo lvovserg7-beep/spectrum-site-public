@@ -12,3 +12,15 @@ Desktop.ini
 _tmp_*
 __pycache__/
 *.pyc
+
+# Конфиденциальное: договоры, переговоры, анкеты, опросники, финансы, дилерский прайс
+Договора/
+КП и переговоры/
+ответы на опросник/
+Ответы на вопросы.docx
+Предложеная структура/_extract/anketa-sheet.txt
+Предложеная структура/_extract/google-sheet-export.csv
+Предложеная структура/_extract/Ответы на вопросы.txt
+Предложеная структура/*Анкета*
+seo-data/prices/price_1c.xls
+.cursor/rules/focus-services.mdc
