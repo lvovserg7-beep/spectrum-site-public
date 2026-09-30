@@ -1,0 +1,150 @@
+---
+description: Верхнее меню alsn.ru кодом - чёрная шапка и белая мега-панель (вариант C, 30.09.2026)
+alwaysApply: true
+---
+
+# Верхнее меню alsn.ru - чёрная шапка и белая мега-панель
+
+Решение 30.09.2026. Шапку живого сайта делаем **кодом**: один блок T123 на странице Header (id 10070650) вместо стандартного T228 (rec172603117). T228 выключить, не удалять. Оформление - **вариант C**: чёрная полоса шапки и белая мега-панель на всю ширину. Другие виды меню (каскадные списки, светлая полоса) не предлагать.
+
+Контур - **Тильда / alsn.ru** (`two-site-contours.mdc`). Любой шаг в Тильде - по `tilda-step-approval.mdc`.
+
+## Источники (копировать отсюда, не писать заново)
+
+- Макет: `seo-data/competitors/screens/preview-menu-v3-c.html`.
+- Сборщик: `seo-data/scripts/build_menu_preview_0930.py`, вариант `"c"`: `CSS_A` + `CSS_C`, разметка `header_a(LOGO_WHITE_TEXT)` + `panel_a()` + `mobile()`, скрипт `JS`, данные меню `MENU`.
+- Скриншоты для сверки: `seo-data/competitors/screens/_menu-c-{services,products,licenses,mobile}.png` (`_menu_shots_0930.py`).
+- Структура пунктов - карта `seo-data/tilda-briefs/struktura-karta-2026-09-30.html`. Состав меню меняется в `MENU`, оформление не трогать.
+
+## Шрифт и токены
+
+- **Onest** 400/500/600/700/800 с Google Fonts:
+  `<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">`
+- Токены как на страницах v3 (`tilda-page-style-v3.mdc`): `--bg:#F7F8FA; --acc:#F55823; --ink:#212121; --line:#D7DADD; --soft:#FDE7DE; --mut:#6b7075`.
+- Цвета шапки: полоса `#111214`, пункты `#e9eaec`, подпись часов `#9aa0a6`, рамка иконок `#3a3d42`, разделители на тёмном `#2a2d31`, ссылки мобильного меню `#cfd2d6`.
+- Логотип - белый текст: `https://static.tildacdn.com/tild6634-3863-4731-a232-653239393635/_5.png`, высота 54 px (телефон 44 px). Тёмный `Аллсан_6.png` на чёрной полосе не ставить.
+
+## Как выглядит
+
+**Полоса (76 px, липкая):** логотип · пункты «Услуги», «Продукты», «Лицензии», «Наш опыт», «О компании» с галочкой · справа телефон `+7 495 260-04-03` с часами «Пн-Пт 9:00-18:00», квадратная кнопка поиска 40×40 в рамке, оранжевая кнопка «Получить консультацию». Открытый пункт - оранжевый текст и оранжевая черта 2 px снизу.
+
+**Мега-панель (белая, на всю ширину под полосой):**
+- сетка: колонки слева, промо-карточка 300 px справа, внутри `max-width:1240px`;
+- колонка = страница 2-го уровня: заголовок 16/700 с оранжевой чертой 14 px слева, под ним серая подпись 13.5 px, ниже ссылки 3-го уровня 14.5 px (подсветка `--bg` при наведении);
+- пометки справа от ссылки серым мелким (схемы «FBO, FBS, rFBS, DBS»), новинка - плашка «новое» (`--soft` фон, оранжевый текст);
+- внизу через линию оранжевая ссылка «Все услуги →» / «Все продукты →» / «Все лицензии →»;
+- промо-карточка: фон `--bg`, рамка `--line`, радиус 22, надпись раздела капсом оранжевым, заголовок 20 px, текст, оранжевая кнопка;
+- разделы без промо («Наш опыт», «О компании») - простая сетка в 4 колонки: название 15/600 + подпись 13 px;
+- под панелью затемнение страницы `rgba(17,18,20,.35)`, клик по нему закрывает.
+
+**Телефон (до 1000 px):** полоса 64 px, остаются логотип, поиск и бургер. Меню выезжает справа тёмным (`#111214`) прямо под шапкой. Разделы на `details`: оранжевый «+»/«−», первая строка раздела «Все ...», у вложенного списка первая строка «Обзор» (пункт с подменю сам не кликается). Внизу телефон и кнопка «Получить консультацию» во всю ширину.
+
+## Поведение
+
+- Десктоп (от 1001 px): открытие по наведению с задержкой 120 мс, закрытие через 220 мс; клик по пункту тоже открывает/закрывает.
+- Закрывать по Esc, клику вне шапки и по затемнению. `aria-expanded` у кнопок, `aria-controls` на панель.
+- Бургер ставит `top` мобильного меню по нижнему краю шапки и блокирует прокрутку страницы.
+- Без внешних библиотек, один скрипт в том же T123.
+
+## CSS (канон, не менять значения)
+
+В Тильде все селекторы держать под `.mh` / `.mm` / `.mh-shade`, чтобы не задеть блоки страниц. Кнопка `.btn.m` - как в v3.
+
+```css
+:root{--bg:#F7F8FA;--acc:#F55823;--ink:#212121;--line:#D7DADD;--soft:#FDE7DE;--mut:#6b7075}
+.mh,.mm{font-family:Onest,system-ui,sans-serif}
+.mh a,.mm a{color:inherit;text-decoration:none}
+.mh .in{max-width:1240px;margin:0 auto;padding:0 28px}
+.mh .btn,.mm .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:15px;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
+.mh .btn.m,.mm .btn.m{background:var(--acc);color:#fff}
+.mh .btn.m:hover,.mm .btn.m:hover{background:#e04c1a}
+/* полоса */
+.mh{position:sticky;top:0;z-index:100;background:#111214;color:#fff}
+.mh .bar{display:flex;align-items:center;gap:28px;height:76px}
+.mh .logo{display:flex;align-items:center;flex:0 0 auto}
+.mh .logo img{height:54px;width:auto;display:block}
+.mh nav{flex:1 1 auto}
+.mh .top{display:flex;gap:4px;margin:0;padding:0;list-style:none}
+.mh .top>li>button,.mh .top>li>a{display:flex;align-items:center;gap:7px;height:76px;padding:0 14px;background:none;border:0;font:500 15.5px Onest,sans-serif;color:#e9eaec;cursor:pointer;position:relative}
+.mh .top>li>button::after{content:"";width:7px;height:7px;border-right:1.8px solid currentColor;border-bottom:1.8px solid currentColor;transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.mh .top>li>button::before{content:"";position:absolute;left:14px;right:14px;bottom:0;height:2px;background:var(--acc);transform:scaleX(0);transition:transform .2s}
+.mh .top>li.open>button,.mh .top>li>button:hover{color:var(--acc)}
+.mh .top>li.open>button::before{transform:scaleX(1)}
+.mh .top>li.open>button::after{transform:rotate(-135deg) translateY(-1px)}
+.mh .tools{display:flex;align-items:center;gap:14px;flex:0 0 auto}
+.mh .ph{font-weight:700;font-size:15.5px;white-space:nowrap;color:#fff}
+.mh .ph small{display:block;font-weight:400;font-size:12px;color:#9aa0a6}
+.mh .ic{width:40px;height:40px;border-radius:12px;border:1px solid #3a3d42;display:grid;place-items:center;background:transparent;color:#fff;cursor:pointer}
+.mh .ic:hover{border-color:var(--acc);color:var(--acc)}
+.mh .ic svg{width:18px;height:18px}
+.mh .burger{display:none}
+/* мега-панель */
+.mh .panel{position:absolute;left:0;right:0;top:100%;background:#fff;color:var(--ink);border-top:1px solid #2a2d31;border-bottom:1px solid var(--line);box-shadow:0 24px 48px rgba(33,33,33,.10);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s}
+.mh li.open>.panel{opacity:1;visibility:visible;transform:none}
+.mh .pin{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;padding:32px 28px 36px;max-width:1240px;margin:0 auto}
+.mh .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;align-content:start}
+.mh .cols.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mh .cols.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.mh .col h4{margin:0 0 4px;font-size:16px;font-weight:700;line-height:1.3;color:var(--ink)}
+.mh .col h4 a{display:inline-flex;gap:8px;align-items:baseline;color:var(--ink)}
+.mh .col h4 a:hover{color:var(--acc)}
+.mh .col h4 a::before{content:"";flex:0 0 14px;height:2px;background:var(--acc);transform:translateY(-4px)}
+.mh .col p{margin:0 0 12px 22px;font-size:13.5px;line-height:1.45;color:var(--mut)}
+.mh .col ul{list-style:none;margin:0 0 0 22px;padding:0;display:grid;gap:2px}
+.mh .col ul a{display:flex;justify-content:space-between;gap:10px;padding:6px 10px;margin-left:-10px;border-radius:8px;font-size:14.5px;color:#3d4247}
+.mh .col ul a:hover{background:var(--bg);color:var(--ink)}
+.mh .col ul em{font-style:normal;font-size:12px;color:var(--mut);white-space:nowrap}
+.mh .col ul em.new{color:var(--acc);background:var(--soft);border-radius:6px;padding:1px 7px}
+.mh .all{grid-column:1/-1;display:flex;align-items:center;gap:10px;padding-top:18px;border-top:1px solid var(--line);font-weight:600;font-size:14.5px;color:var(--acc)}
+.mh .all::after{content:"→"}
+.mh .promo{align-self:start;background:var(--bg);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:10px;border:1px solid var(--line)}
+.mh .promo .k{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc)}
+.mh .promo b{font-size:20px;line-height:1.25;color:var(--ink)}
+.mh .promo p{margin:0;font-size:14px;line-height:1.5;color:#3d4247}
+.mh .promo .btn{margin-top:auto;align-self:flex-start}
+.mh .simple{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px 24px;padding:24px 28px 28px;max-width:1240px;margin:0 auto}
+.mh .simple a{padding:10px 12px;border-radius:10px;font-weight:600;font-size:15px}
+.mh .simple a span{display:block;font-weight:400;font-size:13px;color:var(--mut);margin-top:2px}
+.mh .simple a:hover{background:var(--bg);color:var(--acc)}
+.mh-shade{position:fixed;inset:76px 0 0;background:rgba(17,18,20,.35);opacity:0;visibility:hidden;transition:.18s;z-index:90}
+.mh-shade.on{opacity:1;visibility:visible}
+@media(max-width:1180px){.mh .ph small{display:none}.mh .top>li>button,.mh .top>li>a{padding:0 10px;font-size:15px}}
+@media(max-width:1000px){
+ .mh .in{padding:0 18px}
+ .mh .bar{height:64px;gap:12px}.mh .logo img{height:44px}
+ .mh nav,.mh .tools .btn,.mh .ph{display:none}
+ .mh .tools{margin-left:auto}
+ .mh .burger{display:grid}
+ .mh-shade{display:none}
+}
+/* мобильное меню */
+.mm{position:fixed;inset:64px 0 0;background:#111214;color:#fff;z-index:120;overflow:auto;transform:translateX(100%);transition:transform .25s;padding:8px 18px 28px;display:flex;flex-direction:column}
+.mm.on{transform:none}
+.mm details{border-bottom:1px solid #2a2d31}
+.mm summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-weight:700;font-size:18px;cursor:pointer}
+.mm summary::-webkit-details-marker{display:none}
+.mm summary::after{content:"+";font-weight:400;font-size:24px;color:var(--acc);line-height:1}
+.mm details[open]>summary::after{content:"−"}
+.mm details details{border:0;margin-left:14px}
+.mm details details summary{font-size:16px;font-weight:600;padding:10px 0}
+.mm .lnk{display:block;padding:10px 0 10px 14px;font-size:15.5px;color:#cfd2d6}
+.mm .lnk.all{color:var(--acc);font-weight:600}
+.mm .foot{margin-top:auto;padding-top:22px;display:grid;gap:12px}
+.mm .foot .btn{justify-content:center;padding:15px}
+.mm .foot .ph{font-weight:700;font-size:18px;text-align:center}
+```
+
+## Тексты в меню
+
+- Названия страниц - как на сайте (H1 / имя страницы), без «хаб», «кластер».
+- Промо только с разрешёнными фактами (`focus-services.mdc`): «Реакция от 15 минут»; «40 700 ₽ за площадку, 69 990 ₽ за обе, с НДС 5%»; «Официальный партнёр 1С, ТОП 10 ЦРА». Без длинного тире (`human-copy.mdc`).
+- Кнопки действием: «Получить консультацию», «Смотреть решение», «Подобрать лицензию».
+- Telegram-бот остаётся в «Продуктах» (`focus-services.mdc`), WhatsApp в меню не возвращать.
+
+## Не делать
+
+- Не менять палитру, шрифт, высоту полосы, радиусы и отступы панели «под раздел».
+- Не делать выпадающие списки узкими каскадами и светлую полосу шапки - это отклонённые варианты A и B.
+- Не ставить тёмный логотип на чёрную полосу и белую панель на тёмный фон.
+- Не держать стили меню в HEAD страниц контента: всё меню (стили, разметка, скрипт) - в одном T123 на странице Header.
+- Не удалять T228 до проверки нового меню на сайте; «Опубликовать» - отдельный шаг.
