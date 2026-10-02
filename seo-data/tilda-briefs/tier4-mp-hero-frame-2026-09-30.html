@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Новый первый экран на трёх страницах модуля для маркетплейсов - 30.09.2026</title>
+<style>
+:root{--bg:#f4f3ef;--card:#fff;--text:#1a1a1a;--muted:#5c5c5c;--border:#e2e2de;--ok:#1a7f4b;--ok-bg:#e8f6ee;--warn:#9a6700;--warn-bg:#fff6e0;--danger:#b42318;--danger-bg:#fdecea;--code:#0f172a}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--bg)}
+.wrap{max-width:960px;margin:0 auto;padding:24px 18px 72px}
+h1{font-size:26px;margin:0 0 6px;letter-spacing:-.02em}
+h2{font-size:20px;margin:0 0 10px}
+p{margin:0 0 8px}
+a{color:#0b5cad}
+.muted{color:var(--muted);font-size:14px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:650;border:1px solid var(--border);background:#fff}
+.pill.ok{color:var(--ok);background:var(--ok-bg);border-color:#c6e6d3}
+.pill.warn{color:var(--warn);background:var(--warn-bg);border-color:#f0dfa0}
+.callout{border-radius:10px;padding:12px 14px;margin:12px 0 18px;border:1px solid var(--border);background:var(--card);font-size:14px}
+.callout.danger{background:var(--danger-bg);border-color:#f5c2c0}
+.callout.warn{background:var(--warn-bg);border-color:#f0dfa0}
+.callout.ok{background:var(--ok-bg);border-color:#c6e6d3}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;margin:0 0 20px}
+.toc ol{margin:6px 0 0;padding-left:22px}
+.toc a{text-decoration:none}
+.task{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px 18px;margin:0 0 18px}
+.task .num{display:inline-block;background:#111;color:#fff;border-radius:999px;font-size:12px;font-weight:700;padding:2px 10px;margin-right:6px}
+.lbl{display:block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+ol.steps{margin:4px 0 0;padding-left:22px}
+ol.steps>li{margin:6px 0}
+.where{background:#fafaf8;border:1px dashed var(--border);border-radius:8px;padding:10px 12px;margin:8px 0 10px;font-size:14px}
+.copybox{position:relative;margin:6px 0 10px}
+.copybox pre{margin:0;background:var(--code);color:#e5e7eb;border-radius:10px;padding:12px 12px 40px;overflow-x:auto;white-space:pre-wrap;word-break:break-word;font:12.5px/1.4 ui-monospace,Consolas,monospace;max-height:340px}
+.copybox button{position:absolute;right:8px;bottom:8px;background:#fff;border:1px solid #ccc;border-radius:8px;padding:4px 10px;font-size:12px;font-weight:650;cursor:pointer}
+.copybox button.ok{background:var(--ok-bg)}
+.pair-label{font-size:12px;font-weight:700;color:var(--muted);margin:8px 0 2px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0 0;background:#fff}
+th,td{border:1px solid var(--border);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:#fafaf8;font-weight:650}
+code{font-size:13px}
+.order{font-size:14px;margin:6px 0 0;padding-left:22px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Новый первый экран на трёх страницах модуля для маркетплейсов</h1>
+<p class="muted">Страницы: <a href="https://alsn.ru/casemarketplace">«Модуль 1С для маркетплейсов»</a>, <a href="https://alsn.ru/1c-ozon">«Интеграция 1С с Ozon»</a>, <a href="https://alsn.ru/1c-wildberries">«Интеграция 1С с Wildberries»</a> · код собран с живых страниц 30.09.2026 · каждый шаг после письменного «да» · «Опубликовать» один раз в конце</p>
+<div class="callout">Все задачи выполнены 30.09.2026 (проверено на живых страницах). Файл оставлен как образец оформления: по нему переносить первый экран «в рамке» на новые страницы.</div>
+<div class="pills"><span class="pill ok">выполнено 30.09.2026</span><span class="pill warn">8 шагов</span></div>
+
+<div class="callout">Как выглядит результат: <a href="../competitors/screens/preview-casemarketplace-hero-e.html">макет первого экрана</a> (открыть в браузере). На каждой странице два действия: дописать стили в HEAD страницы и заменить код одного блока. Картинки загружать не надо, фото уже на сайте. Хлебные крошки, карточка модуля, разделы, витрина, меню и подвал не меняются.</div>
+
+<div class="callout danger">HEAD <strong>сайта</strong> (Настройки сайта → Вставка кода) не трогать. В HEAD страницы ничего не стирать, только дописать строки перед последней <code>&lt;/style&gt;</code>. robots.txt, Bing, Twitter не трогаем.</div>
+
+<div class="toc"><strong>Шаги</strong><ol>
+<li><a href="#p1">П-1. «Модуль 1С для маркетплейсов»: стили первого экрана в HEAD страницы</a></li>
+<li><a href="#p2">П-2. «Модуль 1С для маркетплейсов»: новый код первого экрана</a></li>
+<li><a href="#p3">П-3. «Модуль 1С для маркетплейсов»: белый фон у хлебных крошек</a></li>
+<li><a href="#p4">П-4. «Интеграция 1С с Ozon»: стили первого экрана в HEAD страницы</a></li>
+<li><a href="#p5">П-5. «Интеграция 1С с Ozon»: новый код первого экрана</a></li>
+<li><a href="#p6">П-6. «Интеграция 1С с Wildberries»: стили первого экрана в HEAD страницы</a></li>
+<li><a href="#p7">П-7. «Интеграция 1С с Wildberries»: новый код первого экрана</a></li>
+<li><a href="#p8">П-8. Опубликовать три страницы</a></li>
+</ol></div>
+
+<section class="task" id="p1">
+<h2><span class="num">П-1</span> «Модуль 1С для маркетплейсов»: стили первого экрана в HEAD страницы</h2>
+<span class="lbl">Что сделать</span><p>Дописать в конец стилей страницы оформление нового первого экрана. Больше в HEAD ничего не менять.</p>
+<span class="lbl">Зачем</span><p>Без этих строк новый первый экран из следующего шага развалится: фото не встанет справа, текст не уйдёт влево. Все строки начинаются с <code>.v3 .hf</code> и касаются только первого экрана.</p>
+<span class="lbl">Как в Тильде</span>
+<ol class="steps">
+<li>Страница «Модуль 1С для маркетплейсов» (<a href="https://alsn.ru/casemarketplace">https://alsn.ru/casemarketplace</a>, в списке Тильды <code>casemarketplace</code>) → «Настройки» (шестерёнка) → «Дополнительно» → «HTML-код для вставки внутрь HEAD».</li>
+<li>Скопируйте всё содержимое поля в блокнот (Ctrl+A, Ctrl+C). Это откат.</li>
+<li>Прокрутите поле в самый конец. Последняя строка там <code>&lt;/style&gt;</code>. Поставьте курсор <strong>перед</strong> ней, в начало этой строки, нажмите Enter.</li>
+<li>В пустую строку над <code>&lt;/style&gt;</code> вставьте код ниже. Строка <code>&lt;/style&gt;</code> должна остаться последней → «Сохранить изменения».</li>
+</ol>
+<div class="copybox"><pre id="p1css">/* первый экран в рамке (.hf) */
+.v3 .hf{padding:8px 0 0;--h:clamp(400px,36vw,460px)}
+.v3 .hf .frame{position:relative;height:var(--h);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
+.v3 .hf .txt{position:relative;z-index:2;width:calc(100% - var(--h)*16/9*.95);height:100%;padding:36px 8px 36px 40px;display:flex;flex-direction:column;box-sizing:border-box}
+.v3 .hf .eyebrow{margin-bottom:16px}
+.v3 .hf h1{font-size:clamp(38px,3.3vw,48px);line-height:1.05;margin:0 0 16px}
+.v3 .hf .lead{font-size:16px;line-height:1.5;margin:0 0 20px;max-width:none}
+.v3 .hf .btns{margin:auto 0 0;gap:10px;flex-wrap:wrap}
+.v3 .hf .btns .btn{padding:14px 18px;font-size:15px;white-space:nowrap}
+.v3 .hf .ph{position:absolute;top:0;right:0;bottom:0;aspect-ratio:16/9}
+.v3 .hf .ph img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.v3 .hf .veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#fff 0%,#fff 5%,rgba(255,255,255,.7) 6.5%,rgba(255,255,255,.3) 8%,rgba(255,255,255,0) 9.5%)}
+.v3 .hf .who{position:absolute;z-index:3;right:16px;bottom:16px;font-size:12.5px;line-height:1.3;padding:7px 12px;border-radius:10px;background:rgba(255,255,255,.92);color:var(--ink);border:1px solid var(--line)}
+.v3 .hf .who b{font-weight:600}
+@media(min-width:1001px) and (max-width:1240px){.v3 .hf .txt{padding:26px 8px 26px 32px}.v3 .hf h1{font-size:36px;margin-bottom:12px}.v3 .hf .eyebrow{margin-bottom:12px}.v3 .hf .lead{font-size:15px;line-height:1.45;margin-bottom:14px}.v3 .hf .btns{gap:8px}.v3 .hf .btns .btn{padding:12px 16px}}
+@media(min-width:1001px) and (max-width:1140px){.v3 .hf .txt{width:340px}.v3 .hf .ph{aspect-ratio:auto;width:calc(100% - 318px)}.v3 .hf .ph img{object-position:100% 50%}.v3 .hf .veil{background:linear-gradient(90deg,#fff 0%,#fff 3%,rgba(255,255,255,.5) 4.5%,rgba(255,255,255,0) 6%)}.v3 .hf .eyebrow{font-size:12px}}
+@media(max-width:1000px){
+.v3 .hf .frame{display:flex;flex-direction:column;height:auto}
+.v3 .hf .txt{width:auto;height:auto;padding:0 20px 24px;margin-top:-6px}
+.v3 .hf .ph{position:relative;order:-1;aspect-ratio:16/10}
+.v3 .hf .ph img{object-position:40% 25%}
+.v3 .hf .veil{background:linear-gradient(180deg,rgba(255,255,255,0) 60%,#fff 100%)}
+.v3 .hf h1{font-size:44px}
+.v3 .hf .lead{font-size:17px}
+.v3 .hf .who{top:12px;bottom:auto;right:12px;font-size:11.5px}
+.v3 .hf .btns .btn{width:100%;justify-content:center}
+}</pre><button type="button" data-copy="p1css">Копировать</button></div>
+</section>
+<section class="task" id="p2">
+<h2><span class="num">П-2</span> «Модуль 1С для маркетплейсов»: новый код первого экрана</h2>
+<span class="lbl">Что сделать</span><p>Заменить код в блоке первого экрана целиком. Заголовок «Модуль 1С для маркетплейсов», абзац, кнопки и лента «Как выглядит день с модулем» остаются теми же словами, меняется только расположение: текст слева на белом, фото Сергея Никешина справа на всю высоту рамки.</p>
+<span class="lbl">Зачем</span><p>Первый экран становится одной рамкой по ширине сайта, как карточка модуля ниже. Фото видно целиком со всеми мониторами, текст его не перекрывает.</p>
+<span class="lbl">Как в Тильде</span>
+<div class="where"><strong>Где.</strong> Страница «Модуль 1С для маркетплейсов» (<a href="https://alsn.ru/casemarketplace">https://alsn.ru/casemarketplace</a>). Самый верх холста: меню, под ним блок T123 со строкой «дом / Модуль 1С для маркетплейсов». Сразу под ним блок T123 с заголовком «Модуль 1С для маркетплейсов» и кнопкой «Показать на моём кабинете», внизу этого же блока лента «Как выглядит день с модулем». Номер блока на сайте <code>rec4293738201</code>.</div>
+<ol class="steps">
+<li>Навести мышь на этот блок → «Контент».</li>
+<li>Скопируйте старый код в блокнот (Ctrl+A, Ctrl+C). Это откат.</li>
+<li>В поле: Ctrl+A → Delete → вставить код ниже целиком → «Сохранить и закрыть».</li>
+<li>Отступы блока не трогать (0 сверху и снизу).</li>
+</ol>
+<div class="copybox"><pre id="p2b1">&lt;div class="v3"&gt; &lt;!-- HERO --&gt; &lt;section class="hf"&gt;&lt;div class="in"&gt;&lt;div class="frame"&gt;&lt;div class="txt"&gt;&lt;div class="eyebrow"&gt;&lt;span class="rails"&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;Модуль Аллсан для селлеров&lt;/div&gt;&lt;h1&gt;Модуль 1С для &lt;br&gt;&lt;span&gt;маркетплейсов&lt;/span&gt;&lt;/h1&gt;&lt;p class="lead"&gt;Остатки и цены уходят из вашей 1С на обе площадки, заказы приходят обратно. Утром в 1С уже посчитана маржа за вчера по каждому товару на Ozon и Wildberries.&lt;/p&gt;&lt;div class="btns"&gt; &lt;a class="btn m" href="#popup:konsultacia"&gt;Показать на моём кабинете &lt;span class="ar"&gt;→&lt;/span&gt;&lt;/a&gt; &lt;a class="btn g" href="#price"&gt;Цена от 40 700 ₽&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&lt;div class="ph"&gt;&lt;img src="https://optim.tildacdn.com/tild3632-3333-4139-b730-663861323430/-/format/webp/allsun-hero-mp-emplo.jpg.webp" alt="Сергей Никешин, ведущий разработчик модуля интеграции 1С с Ozon и Wildberries, Аллсан Интеграция" fetchpriority="high"&gt;&lt;div class="veil"&gt;&lt;/div&gt;&lt;div class="who"&gt;&lt;b&gt;Сергей Никешин&lt;/b&gt; · ведущий разработчик модуля&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt; &lt;!-- DAY TIMELINE --&gt; &lt;div class="day"&gt; &lt;div class="in"&gt;&lt;div class="box"&gt; &lt;div class="lbl"&gt;Как выглядит день с модулем&lt;/div&gt; &lt;div class="track"&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;по расписанию&lt;/span&gt;&lt;b&gt;Остатки на вашем складе&lt;/b&gt;и цены уходят из 1С на Ozon и Wildberries сами&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;сразу&lt;/span&gt;&lt;b&gt;Новый заказ&lt;/b&gt;появляется в 1С без ручного ввода&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;утром&lt;/span&gt;&lt;b&gt;Маржа за вчера&lt;/b&gt;по каждому товару на обеих площадках&lt;a class="more" href="#reports" data-tab="0"&gt;Отчёт по марже →&lt;/a&gt;&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;каждый день&lt;/span&gt;&lt;b&gt;Ответы на отзывы&lt;/b&gt;ИИ готовит ответы, вы проверяете и отправляете&lt;a class="more" href="#reports" data-tab="3"&gt;Автоответы →&lt;/a&gt;&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;перед поставкой&lt;/span&gt;&lt;b&gt;Потребность по кластерам&lt;/b&gt;сколько товара везти на каждый склад Ozon&lt;a class="more" href="#reports" data-tab="1"&gt;Расчёт по кластерам →&lt;/a&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</pre><button type="button" data-copy="p2b1">Копировать</button></div>
+</section>
+<section class="task" id="p3">
+<h2><span class="num">П-3</span> «Модуль 1С для маркетплейсов»: белый фон у хлебных крошек</h2>
+<span class="lbl">Что сделать</span><p>Сменить цвет фона блока с хлебными крошками с тёмного <code>#070200</code> на белый <code>#ffffff</code>. Код блока не трогать.</p>
+<span class="lbl">Зачем</span><p>Фон остался от старой тёмной обложки. Под крошками теперь белый первый экран, и тёмная полоса между меню и рамкой выглядит как ошибка вёрстки. Серый текст крошек на белом читается как на страницах Ozon и Wildberries.</p>
+<span class="lbl">Как в Тильде</span>
+<div class="where"><strong>Где.</strong> Страница «Модуль 1С для маркетплейсов» (<a href="https://alsn.ru/casemarketplace">https://alsn.ru/casemarketplace</a>). Первый блок под меню: T123 со строкой «дом / Модуль 1С для маркетплейсов», номер на сайте <code>rec3798528101</code>.</div>
+<ol class="steps">
+<li>Навести мышь на блок → «Настройки».</li>
+<li>Поле «Цвет фона»: стереть <code>#070200</code>, вставить значение ниже → «Сохранить и закрыть».</li>
+</ol>
+<div class="copybox"><pre id="p3bg">#ffffff</pre><button type="button" data-copy="p3bg">Копировать</button></div>
+</section>
+<section class="task" id="p4">
+<h2><span class="num">П-4</span> «Интеграция 1С с Ozon»: стили первого экрана в HEAD страницы</h2>
+<span class="lbl">Что сделать</span><p>Дописать в конец стилей страницы оформление нового первого экрана. Больше в HEAD ничего не менять.</p>
+<span class="lbl">Зачем</span><p>Без этих строк новый первый экран из следующего шага развалится: фото не встанет справа, текст не уйдёт влево. Все строки начинаются с <code>.v3 .hf</code> и касаются только первого экрана.</p>
+<span class="lbl">Как в Тильде</span>
+<ol class="steps">
+<li>Страница «Интеграция 1С с Ozon» (<a href="https://alsn.ru/1c-ozon">https://alsn.ru/1c-ozon</a>, в списке Тильды <code>1c-ozon</code>) → «Настройки» (шестерёнка) → «Дополнительно» → «HTML-код для вставки внутрь HEAD».</li>
+<li>Скопируйте всё содержимое поля в блокнот (Ctrl+A, Ctrl+C). Это откат.</li>
+<li>Прокрутите поле в самый конец. Последняя строка там <code>&lt;/style&gt;</code>. Поставьте курсор <strong>перед</strong> ней, в начало этой строки, нажмите Enter.</li>
+<li>В пустую строку над <code>&lt;/style&gt;</code> вставьте код ниже. Строка <code>&lt;/style&gt;</code> должна остаться последней → «Сохранить изменения».</li>
+</ol>
+<div class="copybox"><pre id="p4css">/* первый экран в рамке (.hf) */
+.v3 .hf{padding:8px 0 0;--h:clamp(400px,36vw,460px)}
+.v3 .hf .frame{position:relative;height:var(--h);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
+.v3 .hf .txt{position:relative;z-index:2;width:calc(100% - var(--h)*16/9*.95);height:100%;padding:36px 8px 36px 40px;display:flex;flex-direction:column;box-sizing:border-box}
+.v3 .hf .eyebrow{margin-bottom:16px}
+.v3 .hf h1{font-size:clamp(38px,3.3vw,48px);line-height:1.05;margin:0 0 16px}
+.v3 .hf .lead{font-size:16px;line-height:1.5;margin:0 0 20px;max-width:none}
+.v3 .hf .btns{margin:auto 0 0;gap:10px;flex-wrap:wrap}
+.v3 .hf .btns .btn{padding:14px 18px;font-size:15px;white-space:nowrap}
+.v3 .hf .ph{position:absolute;top:0;right:0;bottom:0;aspect-ratio:16/9}
+.v3 .hf .ph img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.v3 .hf .veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#fff 0%,#fff 5%,rgba(255,255,255,.7) 6.5%,rgba(255,255,255,.3) 8%,rgba(255,255,255,0) 9.5%)}
+.v3 .hf .who{position:absolute;z-index:3;right:16px;bottom:16px;font-size:12.5px;line-height:1.3;padding:7px 12px;border-radius:10px;background:rgba(255,255,255,.92);color:var(--ink);border:1px solid var(--line)}
+.v3 .hf .who b{font-weight:600}
+@media(min-width:1001px) and (max-width:1240px){.v3 .hf .txt{padding:26px 8px 26px 32px}.v3 .hf h1{font-size:36px;margin-bottom:12px}.v3 .hf .eyebrow{margin-bottom:12px}.v3 .hf .lead{font-size:15px;line-height:1.45;margin-bottom:14px}.v3 .hf .btns{gap:8px}.v3 .hf .btns .btn{padding:12px 16px}}
+@media(min-width:1001px) and (max-width:1140px){.v3 .hf .txt{width:340px}.v3 .hf .ph{aspect-ratio:auto;width:calc(100% - 318px)}.v3 .hf .ph img{object-position:100% 50%}.v3 .hf .veil{background:linear-gradient(90deg,#fff 0%,#fff 3%,rgba(255,255,255,.5) 4.5%,rgba(255,255,255,0) 6%)}.v3 .hf .eyebrow{font-size:12px}}
+@media(max-width:1000px){
+.v3 .hf .frame{display:flex;flex-direction:column;height:auto}
+.v3 .hf .txt{width:auto;height:auto;padding:0 20px 24px;margin-top:-6px}
+.v3 .hf .ph{position:relative;order:-1;aspect-ratio:16/10}
+.v3 .hf .ph img{object-position:40% 25%}
+.v3 .hf .veil{background:linear-gradient(180deg,rgba(255,255,255,0) 60%,#fff 100%)}
+.v3 .hf h1{font-size:44px}
+.v3 .hf .lead{font-size:17px}
+.v3 .hf .who{top:12px;bottom:auto;right:12px;font-size:11.5px}
+.v3 .hf .btns .btn{width:100%;justify-content:center}
+}</pre><button type="button" data-copy="p4css">Копировать</button></div>
+</section>
+<section class="task" id="p5">
+<h2><span class="num">П-5</span> «Интеграция 1С с Ozon»: новый код первого экрана</h2>
+<span class="lbl">Что сделать</span><p>Заменить код в блоке первого экрана целиком. Заголовок «Интеграция 1С с Ozon», абзац, кнопки и лента «Как выглядит день с модулем» остаются теми же словами, меняется только расположение: текст слева на белом, фото Сергея Никешина справа на всю высоту рамки.</p>
+<span class="lbl">Зачем</span><p>Первый экран становится одной рамкой по ширине сайта, как карточка модуля ниже. Фото видно целиком со всеми мониторами, текст его не перекрывает.</p>
+<span class="lbl">Как в Тильде</span>
+<div class="where"><strong>Где.</strong> Страница «Интеграция 1С с Ozon» (<a href="https://alsn.ru/1c-ozon">https://alsn.ru/1c-ozon</a>). Самый верх холста: меню, под ним блок T123 со строкой «дом / Интеграция 1С с Ozon». Сразу под ним блок T123 с заголовком «Интеграция 1С с Ozon» и кнопкой «Показать на моём кабинете», внизу этого же блока лента «Как выглядит день с модулем». Номер блока на сайте <code>rec4274734601</code>.</div>
+<ol class="steps">
+<li>Навести мышь на этот блок → «Контент».</li>
+<li>Скопируйте старый код в блокнот (Ctrl+A, Ctrl+C). Это откат.</li>
+<li>В поле: Ctrl+A → Delete → вставить код ниже целиком → «Сохранить и закрыть».</li>
+<li>Отступы блока не трогать (0 сверху и снизу).</li>
+</ol>
+<div class="copybox"><pre id="p5b1">&lt;div class="v3"&gt; &lt;!-- HERO --&gt; &lt;section class="hf"&gt;&lt;div class="in"&gt;&lt;div class="frame"&gt;&lt;div class="txt"&gt;&lt;div class="eyebrow"&gt;&lt;span class="rails"&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;Модуль Аллсан для селлеров&lt;/div&gt;&lt;h1&gt;Интеграция 1С &lt;br&gt;с&amp;nbsp;&lt;span&gt;Ozon&lt;/span&gt;&lt;/h1&gt;&lt;p class="lead"&gt;Остатки и цены уходят из вашей 1С в кабинет Ozon, заказы приходят обратно. Утром в 1С уже посчитана маржа за вчера по каждому товару.&lt;/p&gt;&lt;div class="btns"&gt; &lt;a class="btn m" href="#popup:konsultacia"&gt;Показать на моём кабинете &lt;span class="ar"&gt;→&lt;/span&gt;&lt;/a&gt; &lt;a class="btn g" href="#price"&gt;Цена от 40 700 ₽&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&lt;div class="ph"&gt;&lt;img src="https://optim.tildacdn.com/tild3632-3333-4139-b730-663861323430/-/format/webp/allsun-hero-mp-emplo.jpg.webp" alt="Сергей Никешин, ведущий разработчик модуля интеграции 1С с Ozon, Аллсан Интеграция" fetchpriority="high"&gt;&lt;div class="veil"&gt;&lt;/div&gt;&lt;div class="who"&gt;&lt;b&gt;Сергей Никешин&lt;/b&gt; · ведущий разработчик модуля&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt; &lt;!-- DAY TIMELINE --&gt; &lt;div class="day"&gt; &lt;div class="in"&gt;&lt;div class="box"&gt; &lt;div class="lbl"&gt;Как выглядит день с модулем&lt;/div&gt; &lt;div class="track"&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;по расписанию&lt;/span&gt;&lt;b&gt;Остатки на вашем складе&lt;/b&gt;и цены уходят из 1С в Ozon сами&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;сразу&lt;/span&gt;&lt;b&gt;Новый заказ FBS&lt;/b&gt;появляется в 1С без ручного ввода&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;утром&lt;/span&gt;&lt;b&gt;Маржа за вчера&lt;/b&gt;по каждому товару с учётом рекламы&lt;a class="more" href="#reports" data-tab="0"&gt;Отчёт по марже →&lt;/a&gt;&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;каждый день&lt;/span&gt;&lt;b&gt;ДРР по товарам&lt;/b&gt;доля рекламы, поиск и трафарет отдельно&lt;a class="more" href="#reports" data-tab="2"&gt;Расчёт ДРР →&lt;/a&gt;&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;перед поставкой&lt;/span&gt;&lt;b&gt;Потребность по кластерам&lt;/b&gt;сколько товара везти на каждый склад FBO&lt;a class="more" href="#reports" data-tab="1"&gt;Расчёт по кластерам →&lt;/a&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</pre><button type="button" data-copy="p5b1">Копировать</button></div>
+</section>
+<section class="task" id="p6">
+<h2><span class="num">П-6</span> «Интеграция 1С с Wildberries»: стили первого экрана в HEAD страницы</h2>
+<span class="lbl">Что сделать</span><p>Дописать в конец стилей страницы оформление нового первого экрана. Больше в HEAD ничего не менять.</p>
+<span class="lbl">Зачем</span><p>Без этих строк новый первый экран из следующего шага развалится: фото не встанет справа, текст не уйдёт влево. Все строки начинаются с <code>.v3 .hf</code> и касаются только первого экрана.</p>
+<span class="lbl">Как в Тильде</span>
+<ol class="steps">
+<li>Страница «Интеграция 1С с Wildberries» (<a href="https://alsn.ru/1c-wildberries">https://alsn.ru/1c-wildberries</a>, в списке Тильды <code>1c-wildberries</code>) → «Настройки» (шестерёнка) → «Дополнительно» → «HTML-код для вставки внутрь HEAD».</li>
+<li>Скопируйте всё содержимое поля в блокнот (Ctrl+A, Ctrl+C). Это откат.</li>
+<li>Прокрутите поле в самый конец. Последняя строка там <code>&lt;/style&gt;</code>. Поставьте курсор <strong>перед</strong> ней, в начало этой строки, нажмите Enter.</li>
+<li>В пустую строку над <code>&lt;/style&gt;</code> вставьте код ниже. Строка <code>&lt;/style&gt;</code> должна остаться последней → «Сохранить изменения».</li>
+</ol>
+<div class="copybox"><pre id="p6css">/* первый экран в рамке (.hf) */
+.v3 .hf{padding:8px 0 0;--h:clamp(400px,36vw,460px)}
+.v3 .hf .frame{position:relative;height:var(--h);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
+.v3 .hf .txt{position:relative;z-index:2;width:calc(100% - var(--h)*16/9*.95);height:100%;padding:36px 8px 36px 40px;display:flex;flex-direction:column;box-sizing:border-box}
+.v3 .hf .eyebrow{margin-bottom:16px}
+.v3 .hf h1{font-size:clamp(38px,3.3vw,48px);line-height:1.05;margin:0 0 16px}
+.v3 .hf .lead{font-size:16px;line-height:1.5;margin:0 0 20px;max-width:none}
+.v3 .hf .btns{margin:auto 0 0;gap:10px;flex-wrap:wrap}
+.v3 .hf .btns .btn{padding:14px 18px;font-size:15px;white-space:nowrap}
+.v3 .hf .ph{position:absolute;top:0;right:0;bottom:0;aspect-ratio:16/9}
+.v3 .hf .ph img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.v3 .hf .veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#fff 0%,#fff 5%,rgba(255,255,255,.7) 6.5%,rgba(255,255,255,.3) 8%,rgba(255,255,255,0) 9.5%)}
+.v3 .hf .who{position:absolute;z-index:3;right:16px;bottom:16px;font-size:12.5px;line-height:1.3;padding:7px 12px;border-radius:10px;background:rgba(255,255,255,.92);color:var(--ink);border:1px solid var(--line)}
+.v3 .hf .who b{font-weight:600}
+@media(min-width:1001px) and (max-width:1240px){.v3 .hf .txt{padding:26px 8px 26px 32px}.v3 .hf h1{font-size:36px;margin-bottom:12px}.v3 .hf .eyebrow{margin-bottom:12px}.v3 .hf .lead{font-size:15px;line-height:1.45;margin-bottom:14px}.v3 .hf .btns{gap:8px}.v3 .hf .btns .btn{padding:12px 16px}}
+@media(min-width:1001px) and (max-width:1140px){.v3 .hf .txt{width:340px}.v3 .hf .ph{aspect-ratio:auto;width:calc(100% - 318px)}.v3 .hf .ph img{object-position:100% 50%}.v3 .hf .veil{background:linear-gradient(90deg,#fff 0%,#fff 3%,rgba(255,255,255,.5) 4.5%,rgba(255,255,255,0) 6%)}.v3 .hf .eyebrow{font-size:12px}}
+@media(max-width:1000px){
+.v3 .hf .frame{display:flex;flex-direction:column;height:auto}
+.v3 .hf .txt{width:auto;height:auto;padding:0 20px 24px;margin-top:-6px}
+.v3 .hf .ph{position:relative;order:-1;aspect-ratio:16/10}
+.v3 .hf .ph img{object-position:40% 25%}
+.v3 .hf .veil{background:linear-gradient(180deg,rgba(255,255,255,0) 60%,#fff 100%)}
+.v3 .hf h1{font-size:44px}
+.v3 .hf .lead{font-size:17px}
+.v3 .hf .who{top:12px;bottom:auto;right:12px;font-size:11.5px}
+.v3 .hf .btns .btn{width:100%;justify-content:center}
+}</pre><button type="button" data-copy="p6css">Копировать</button></div>
+</section>
+<section class="task" id="p7">
+<h2><span class="num">П-7</span> «Интеграция 1С с Wildberries»: новый код первого экрана</h2>
+<span class="lbl">Что сделать</span><p>Заменить код в блоке первого экрана целиком. Заголовок «Интеграция 1С с Wildberries», абзац, кнопки и лента «Как выглядит день с модулем» остаются теми же словами, меняется только расположение: текст слева на белом, фото Сергея Никешина справа на всю высоту рамки.</p>
+<span class="lbl">Зачем</span><p>Первый экран становится одной рамкой по ширине сайта, как карточка модуля ниже. Фото видно целиком со всеми мониторами, текст его не перекрывает.</p>
+<span class="lbl">Как в Тильде</span>
+<div class="where"><strong>Где.</strong> Страница «Интеграция 1С с Wildberries» (<a href="https://alsn.ru/1c-wildberries">https://alsn.ru/1c-wildberries</a>). Самый верх холста: меню, под ним блок T123 со строкой «дом / Интеграция 1С с Wildberries». Сразу под ним блок T123 с заголовком «Интеграция 1С с Wildberries» и кнопкой «Показать на моём кабинете», внизу этого же блока лента «Как выглядит день с модулем». Номер блока на сайте <code>rec4292357101</code>.</div>
+<ol class="steps">
+<li>Навести мышь на этот блок → «Контент».</li>
+<li>Скопируйте старый код в блокнот (Ctrl+A, Ctrl+C). Это откат.</li>
+<li>В поле: Ctrl+A → Delete → вставить код ниже целиком → «Сохранить и закрыть».</li>
+<li>Отступы блока не трогать (0 сверху и снизу).</li>
+</ol>
+<div class="copybox"><pre id="p7b1">&lt;div class="v3"&gt; &lt;!-- HERO --&gt; &lt;section class="hf"&gt;&lt;div class="in"&gt;&lt;div class="frame"&gt;&lt;div class="txt"&gt;&lt;div class="eyebrow"&gt;&lt;span class="rails"&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;Модуль Аллсан для селлеров&lt;/div&gt;&lt;h1&gt;Интеграция 1С &lt;br&gt;с&amp;nbsp;&lt;span&gt;Wildberries&lt;/span&gt;&lt;/h1&gt;&lt;p class="lead"&gt;Остатки и цены уходят из вашей 1С в кабинет Wildberries, заказы приходят обратно. Утром уже посчитана маржа за вчера с логистикой, хранением и штрафами WB.&lt;/p&gt;&lt;div class="btns"&gt; &lt;a class="btn m" href="#popup:konsultacia"&gt;Показать на моём кабинете &lt;span class="ar"&gt;→&lt;/span&gt;&lt;/a&gt; &lt;a class="btn g" href="#price"&gt;Цена от 40 700 ₽&lt;/a&gt; &lt;/div&gt;&lt;/div&gt;&lt;div class="ph"&gt;&lt;img src="https://optim.tildacdn.com/tild3632-3333-4139-b730-663861323430/-/format/webp/allsun-hero-mp-emplo.jpg.webp" alt="Сергей Никешин, ведущий разработчик модуля интеграции 1С с Wildberries, Аллсан Интеграция" fetchpriority="high"&gt;&lt;div class="veil"&gt;&lt;/div&gt;&lt;div class="who"&gt;&lt;b&gt;Сергей Никешин&lt;/b&gt; · ведущий разработчик модуля&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt; &lt;!-- DAY TIMELINE --&gt; &lt;div class="day"&gt; &lt;div class="in"&gt;&lt;div class="box"&gt; &lt;div class="lbl"&gt;Как выглядит день с модулем&lt;/div&gt; &lt;div class="track"&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;по расписанию&lt;/span&gt;&lt;b&gt;Остатки на вашем складе&lt;/b&gt;и цены уходят из 1С в Wildberries сами&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;сразу&lt;/span&gt;&lt;b&gt;Новый заказ FBS&lt;/b&gt;появляется в 1С сам, этикетки печатаются из 1С&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;утром&lt;/span&gt;&lt;b&gt;Маржа за вчера&lt;/b&gt;с логистикой, хранением и штрафами WB&lt;a class="more" href="#reports" data-tab="0"&gt;Отчёт по марже →&lt;/a&gt;&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;каждый день&lt;/span&gt;&lt;b&gt;Ответы на отзывы&lt;/b&gt;ИИ готовит ответы, вы проверяете и отправляете&lt;a class="more" href="#reports" data-tab="1"&gt;Автоответы →&lt;/a&gt;&lt;/div&gt; &lt;div class="it"&gt;&lt;span class="t mono"&gt;перед закупкой&lt;/span&gt;&lt;b&gt;Прогноз закупок&lt;/b&gt;сколько товара заказать у поставщика&lt;a class="more" href="#reports" data-tab="2"&gt;Прогноз закупок →&lt;/a&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</pre><button type="button" data-copy="p7b1">Копировать</button></div>
+</section>
+<section class="task" id="p8">
+<h2><span class="num">П-8</span> Опубликовать три страницы</h2>
+<span class="lbl">Что сделать</span><p>Опубликовать «Модуль 1С для маркетплейсов», «Интеграция 1С с Ozon» и «Интеграция 1С с Wildberries».</p>
+<span class="lbl">Как в Тильде</span>
+<ol class="steps">
+<li>На каждой из трёх страниц вверху редактора → «Опубликовать».</li>
+<li>Написать в чат «опубликовано»: проверю первый экран на компьютере и телефоне.</li>
+</ol>
+</section>
+
+<p class="muted">Файл: <code>seo-data/tilda-briefs/tier4-mp-hero-frame-2026-09-30.html</code> · собирает <code>seo-data/scripts/build_mp_hero_frame_brief.py</code>, стили и разметка в <code>seo-data/scripts/mp_hero_frame.py</code> · правило <code>.cursor/rules/tilda-hero-frame.mdc</code></p>
+</div>
+<script>
+document.querySelectorAll(".copybox button[data-copy]").forEach(function(btn){
+  btn.addEventListener("click", async function(){
+    var pre=document.getElementById(btn.getAttribute("data-copy"));
+    if(!pre) return;
+    await navigator.clipboard.writeText(pre.textContent);
+    var t=btn.textContent; btn.textContent="Скопировано"; btn.classList.add("ok");
+    setTimeout(function(){btn.textContent=t; btn.classList.remove("ok");},1200);
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,2376 @@
+{
+ "date": "2026-09-30",
+ "summary": {
+  "sitewide": {
+   "OPEN": 99,
+   "GONE": 13,
+   "DONE": 5
+  },
+  "tail": {
+   "OPEN": 52
+  }
+ },
+ "items": [
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 1,
+   "file": "----01.jpg",
+   "url": "https://alsn.ru/dopolnitelnie_licenzii",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ],
+   "other_pages": {
+    "/buhv8": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/its": "OPEN",
+    "/telegram1c": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 2,
+   "file": "0001_1.jpg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 3,
+   "file": "5e82004a227a092f3923.png",
+   "url": "https://alsn.ru/caseecomsc",
+   "status": "DONE",
+   "alts": [
+    "Логотип партнёра Аллсан"
+   ],
+   "other_pages": {
+    "/case_telegram_bot": "DONE",
+    "/caseecomsc": "DONE",
+    "/telegram1c": "DONE",
+    "/whatsapp": "DONE",
+    "/xitsadmarketplace": "DONE"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 4,
+   "file": "GoodWood.jpg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 5,
+   "file": "Image_5_page-0001.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 6,
+   "file": "Tatneft-Logosvg.png",
+   "url": "https://alsn.ru/caseecomsc",
+   "status": "DONE",
+   "alts": [
+    "Логотип Татнефть"
+   ],
+   "other_pages": {
+    "/case_telegram_bot": "DONE",
+    "/caseecomsc": "DONE",
+    "/telegram1c": "DONE",
+    "/whatsapp": "DONE",
+    "/xitsadmarketplace": "DONE"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 7,
+   "file": "X-Com.jpeg",
+   "url": "https://alsn.ru/whatsapp",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ],
+   "other_pages": {
+    "/whatsapp": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 8,
+   "file": "Xcom.jpg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 9,
+   "file": "_.jpeg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 10,
+   "file": "_.jpg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 11,
+   "file": "_.png",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 12,
+   "file": "__1.jpg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 13,
+   "file": "__2.jpg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 14,
+   "file": "_______1_page-0001.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 15,
+   "file": "__page-0001.jpg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 16,
+   "file": "__pdf_page-0001.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 17,
+   "file": "c8561e493ab77c8933fc.png",
+   "url": "https://alsn.ru/caseecomsc",
+   "status": "DONE",
+   "alts": [
+    "Логотип GoodWood"
+   ],
+   "other_pages": {
+    "/case_telegram_bot": "DONE",
+    "/caseecomsc": "DONE",
+    "/telegram1c": "DONE",
+    "/whatsapp": "DONE",
+    "/xitsadmarketplace": "DONE"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 18,
+   "file": "logo.png",
+   "url": "https://alsn.ru/caseecomsc",
+   "status": "DONE",
+   "alts": [
+    "Логотип X-com"
+   ],
+   "other_pages": {
+    "/case_telegram_bot": "DONE",
+    "/caseecomsc": "DONE",
+    "/telegram1c": "DONE",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "DONE"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 19,
+   "file": "maxresdefault1-Photo.png",
+   "url": "https://alsn.ru/dopolnitelnie_licenzii",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "other_pages": {
+    "/buhv8": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/its": "OPEN",
+    "/telegram1c": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 20,
+   "file": "noroot.jpg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 21,
+   "file": "noroot.png",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/bitrix24": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/xitsadmarketplace": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 22,
+   "file": "photo.jpg",
+   "url": "https://alsn.ru/development1c",
+   "status": "GONE",
+   "alts": [],
+   "other_pages": {
+    "/1cbitrix": "OPEN",
+    "/1cfresh": "OPEN",
+    "/3logic": "OPEN",
+    "/about_us": "OPEN",
+    "/amo_crm": "OPEN",
+    "/bitrix24": "OPEN",
+    "/buhv8": "OPEN",
+    "/case_telegram_bot": "OPEN",
+    "/caseecomsc": "OPEN",
+    "/clients": "OPEN",
+    "/cra": "OPEN",
+    "/dokumentooborot8": "OPEN",
+    "/dopolnitelnie_licenzii": "OPEN",
+    "/etm-ipro": "OPEN",
+    "/its": "OPEN",
+    "/kompleksnaya_avtomatizaciya": "OPEN",
+    "/marvel": "OPEN",
+    "/merlion": "OPEN",
+    "/ocs": "OPEN",
+    "/products": "OPEN",
+    "/telegram1c": "OPEN",
+    "/treolan": "OPEN",
+    "/upravlenie_nashei_firmoi": "OPEN",
+    "/upt8": "OPEN",
+    "/whatsapp": "OPEN",
+    "/xitsadmarketplace": "OPEN",
+    "/zup8": "OPEN"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 2,
+   "n": 23,
+   "file": "thumb_6478_participa.png",
+   "url": "https://alsn.ru/caseecomsc",
+   "status": "DONE",
+   "alts": [
+    "Логотип Мерлион"
+   ],
+   "other_pages": {
+    "/case_telegram_bot": "DONE",
+    "/caseecomsc": "DONE",
+    "/telegram1c": "DONE",
+    "/whatsapp": "DONE",
+    "/xitsadmarketplace": "DONE"
+   }
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 1,
+   "file": "kak-sformirovat-plat.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 2,
+   "file": "1s-ka-zakaz-na-proiz.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 3,
+   "file": "1s-kompleksnaya-avto.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 4,
+   "file": "interkampani-v-1s-ka.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 5,
+   "file": "kak-v-kompleksnoy-av.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 6,
+   "file": "gde-v-kompleksnoy-av.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 7,
+   "file": "nachislenie-enp-v-1s.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 8,
+   "file": "korrektirovka-dolga-.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 9,
+   "file": "stati-rashoda-v-1s-k.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 10,
+   "file": "byudzhetirovanie-v-1.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 11,
+   "file": "zakrytie-mesyaca-v-1.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 12,
+   "file": "inventarizaciya-v-1s.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 13,
+   "file": "proizvodstvo-bez-zak.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 14,
+   "file": "korrektirovka-priobr.jpg",
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 15,
+   "file": "integraciya-1c-po-ap.jpg",
+   "url": "https://alsn.ru/ecom",
+   "status": "GONE",
+   "alts": []
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 16,
+   "file": "__1__-01.jpg",
+   "url": "https://alsn.ru/dopolnitelnie_licenzii",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 17,
+   "file": "freestocks-I_pOqP6kC.jpg",
+   "url": "https://alsn.ru/dopolnitelnie_licenzii",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 18,
+   "file": "freestocks-I_pOqP6kC.jpg",
+   "url": "https://alsn.ru/its",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 19,
+   "file": "__1__-01.jpg",
+   "url": "https://alsn.ru/its",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 20,
+   "file": "1313.jpg",
+   "url": "https://alsn.ru/1cfresh",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 21,
+   "file": "______82.png",
+   "url": "https://alsn.ru/bitrix24",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 22,
+   "file": "--.jpg",
+   "url": "https://alsn.ru/bitrix24",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "Клиенты Аллсан: Татнефть, X-Com, Артис, Merlion, Норникель, ЛАНИТ, GoodWood, ПЭК, Импульс Телеком, Сокол, Атомспецтранс, Армтек, Brigo, Simon, Rapart"
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 23,
+   "file": "Group_1_1.png",
+   "url": "https://alsn.ru/bitrix24",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 24,
+   "file": "Group_1_2.png",
+   "url": "https://alsn.ru/bitrix24",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 25,
+   "file": "Group_1_3.png",
+   "url": "https://alsn.ru/bitrix24",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 26,
+   "file": "Group_1_4.png",
+   "url": "https://alsn.ru/bitrix24",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 27,
+   "file": "Group_1_5.png",
+   "url": "https://alsn.ru/bitrix24",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 28,
+   "file": "Group_1_6.png",
+   "url": "https://alsn.ru/bitrix24",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 29,
+   "file": "Group_1_7.png",
+   "url": "https://alsn.ru/bitrix24",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 30,
+   "file": "-3.jpg",
+   "url": "https://alsn.ru/about_us",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 31,
+   "file": "8t73pwk20ftagchrgjww.png",
+   "url": "https://alsn.ru/cra",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 32,
+   "file": "Merlion-API-01.jpg",
+   "url": "https://alsn.ru/etm-ipro",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 33,
+   "file": "Merlion-API-01.jpg",
+   "url": "https://alsn.ru/merlion",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 34,
+   "file": "Merlion-API-01.jpg",
+   "url": "https://alsn.ru/ocs",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 35,
+   "file": "Merlion-API-01.jpg",
+   "url": "https://alsn.ru/marvel",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 36,
+   "file": "Merlion-API-01.jpg",
+   "url": "https://alsn.ru/treolan",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 37,
+   "file": "Merlion-API-01.jpg",
+   "url": "https://alsn.ru/3logic",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 38,
+   "file": "-2.jpg",
+   "url": "https://alsn.ru/vacancy",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 39,
+   "file": "freestocks-I_pOqP6kC.jpg",
+   "url": "https://alsn.ru/products",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 40,
+   "file": "1C--.png",
+   "url": "https://alsn.ru/buhv8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 41,
+   "file": "--.jpg",
+   "url": "https://alsn.ru/buhv8",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "Клиенты Аллсан: Татнефть, X-Com, Артис, Merlion, Норникель, ЛАНИТ, GoodWood, ПЭК, Импульс Телеком, Сокол, Атомспецтранс, Армтек, Brigo, Simon, Rapart"
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 42,
+   "file": "alsn-clients-vertica.jpg",
+   "url": "https://alsn.ru/buhv8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 43,
+   "file": "__1__-01.jpg",
+   "url": "https://alsn.ru/buhv8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 44,
+   "file": "1C__.webp",
+   "url": "https://alsn.ru/buhv8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 45,
+   "file": "1s-buhgalteriya-01.jpg",
+   "url": "https://alsn.ru/buhv8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 46,
+   "file": "1s-zarplata-i-upravl.jpg",
+   "url": "https://alsn.ru/buhv8",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 47,
+   "file": "freestocks-I_pOqP6kC.jpg",
+   "url": "https://alsn.ru/buhv8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 48,
+   "file": "__1__-01.jpg",
+   "url": "https://alsn.ru/zup8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 49,
+   "file": "1____.png",
+   "url": "https://alsn.ru/zup8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 50,
+   "file": "1s-zarplata-i-upravl.jpg",
+   "url": "https://alsn.ru/zup8",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 51,
+   "file": "freestocks-I_pOqP6kC.jpg",
+   "url": "https://alsn.ru/zup8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 52,
+   "file": "1___8_-_02.jpg",
+   "url": "https://alsn.ru/upt8",
+   "status": "OPEN",
+   "alts": [
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 53,
+   "file": "__1__-01.jpg",
+   "url": "https://alsn.ru/upt8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 54,
+   "file": "1s-upravlenie-torgov.jpg",
+   "url": "https://alsn.ru/upt8",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 55,
+   "file": "kompleksnaya-avtomat.jpg",
+   "url": "https://alsn.ru/upt8",
+   "status": "OPEN",
+   "alts": [
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 56,
+   "file": "freestocks-I_pOqP6kC.jpg",
+   "url": "https://alsn.ru/upt8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 57,
+   "file": "__1__-01.jpg",
+   "url": "https://alsn.ru/upravlenie_nashei_firmoi",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 58,
+   "file": "1____8_-_01.jpg",
+   "url": "https://alsn.ru/upravlenie_nashei_firmoi",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 59,
+   "file": "1s-upravlenie-nashey.jpg",
+   "url": "https://alsn.ru/upravlenie_nashei_firmoi",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 60,
+   "file": "freestocks-I_pOqP6kC.jpg",
+   "url": "https://alsn.ru/upravlenie_nashei_firmoi",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 61,
+   "file": "__1__-01.jpg",
+   "url": "https://alsn.ru/dokumentooborot8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 62,
+   "file": "1__8-02.jpg",
+   "url": "https://alsn.ru/dokumentooborot8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 63,
+   "file": "1s-dokumentooborot-0.jpg",
+   "url": "https://alsn.ru/dokumentooborot8",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 64,
+   "file": "1s-dokumentooborot-1.jpg",
+   "url": "https://alsn.ru/dokumentooborot8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 65,
+   "file": "freestocks-I_pOqP6kC.jpg",
+   "url": "https://alsn.ru/dokumentooborot8",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 66,
+   "file": "Light_1_1.png",
+   "url": "https://alsn.ru/telegram1c",
+   "status": "OPEN",
+   "alts": [
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 67,
+   "file": "speech-balloon_1f4ac.png",
+   "url": "https://alsn.ru/telegram1c",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 68,
+   "file": "Group_1.png",
+   "url": "https://alsn.ru/1cbitrix",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 69,
+   "file": "boy-dynamic-color.png",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 70,
+   "file": "copy-dynamic-color.png",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 71,
+   "file": "phone-only-dynamic-c.png",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 72,
+   "file": "location-dynamic-col.png",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 73,
+   "file": "file-text-dynamic-co.png",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 74,
+   "file": "calender-dynamic-col.png",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 75,
+   "file": "IMG_9660.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 76,
+   "file": "IMG_9654.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 77,
+   "file": "IMG_9688.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 78,
+   "file": "IMG_5672.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 79,
+   "file": "IMG_5681.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 80,
+   "file": "IMG_5685.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 81,
+   "file": "IMG_5689.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 82,
+   "file": "IMG_5658.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 83,
+   "file": "IMG_5655.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 84,
+   "file": "IMG_5656.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 85,
+   "file": "IMG_5683.JPG",
+   "url": "https://alsn.ru/internship",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 86,
+   "file": "Silver_MacBook_in_fr.png",
+   "url": "https://alsn.ru/amo_crm",
+   "status": "OPEN",
+   "alts": [
+    "",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 87,
+   "file": "__-_2021-06-09T20121.png",
+   "url": "https://alsn.ru/whatsapp",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 88,
+   "file": "__-_2021-06-10T07240.png",
+   "url": "https://alsn.ru/whatsapp",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 89,
+   "file": "photo.png",
+   "url": "https://alsn.ru/whatsapp",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 90,
+   "file": "Light_1_1.png",
+   "url": "https://alsn.ru/whatsapp",
+   "status": "OPEN",
+   "alts": [
+    "",
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 91,
+   "file": "speech-balloon_1f4ac.png",
+   "url": "https://alsn.ru/whatsapp",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 92,
+   "file": "__-_2021-06-10T07412.png",
+   "url": "https://alsn.ru/whatsapp",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 93,
+   "file": "ozon-x4-2.jpg",
+   "url": "https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "sitewide",
+   "wave": 3,
+   "n": 94,
+   "file": "image_17.png",
+   "url": "https://alsn.ru/case_telegram_bot",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-1",
+   "file": "Xcom.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384892901",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-2",
+   "file": "GoodWood.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384892901",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-3",
+   "file": "_.png",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384893001",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-4",
+   "file": "__2.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384892801",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-5",
+   "file": "0001_1.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384892801",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-6",
+   "file": "__1.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384892801",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-7",
+   "file": "_.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384892801",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-8",
+   "file": "__page-0001.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384893001",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-9",
+   "file": "_.jpeg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384893001",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-10",
+   "file": "__page-0001.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384893101",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-11",
+   "file": "Image_5_page-0001.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384893101",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-12",
+   "file": "__pdf_page-0001.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384893101",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-13",
+   "file": "_______1_page-0001.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384893101",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-14",
+   "file": "noroot.png",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384890501",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-15",
+   "file": "noroot.png",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384892301",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-16",
+   "file": "noroot.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384892901",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-17",
+   "file": "photo.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384892901",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-18",
+   "file": "photo.jpg",
+   "url": "https://alsn.ru/caseecomsc",
+   "rec": "rec3384893001",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-19",
+   "file": "Xcom.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685601",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-20",
+   "file": "GoodWood.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685601",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-21",
+   "file": "_.png",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685701",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-22",
+   "file": "__2.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685501",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-23",
+   "file": "0001_1.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685501",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-24",
+   "file": "__1.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685501",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-25",
+   "file": "_.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685501",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-26",
+   "file": "__page-0001.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685701",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-27",
+   "file": "_.jpeg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685701",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-28",
+   "file": "__page-0001.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685801",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-29",
+   "file": "Image_5_page-0001.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685801",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-30",
+   "file": "__pdf_page-0001.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685801",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-31",
+   "file": "_______1_page-0001.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685801",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-32",
+   "file": "noroot.png",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991683101",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-33",
+   "file": "noroot.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685601",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-34",
+   "file": "photo.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685601",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-35",
+   "file": "photo.jpg",
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "rec": "rec3991685701",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-36",
+   "file": "Xcom.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec338559220",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-37",
+   "file": "GoodWood.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec338559220",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-38",
+   "file": "_.png",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec829026310",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-39",
+   "file": "__2.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec338559166",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-40",
+   "file": "0001_1.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec338559166",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-41",
+   "file": "__1.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec338559166",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-42",
+   "file": "_.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec338559166",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-43",
+   "file": "__page-0001.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec829026310",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-44",
+   "file": "_.jpeg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec829026310",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-45",
+   "file": "__page-0001.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec829026719",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-46",
+   "file": "Image_5_page-0001.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec829026719",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-47",
+   "file": "__pdf_page-0001.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec829026719",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-48",
+   "file": "_______1_page-0001.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec829026719",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-49",
+   "file": "noroot.png",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec185747303",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-50",
+   "file": "noroot.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec338559220",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-51",
+   "file": "photo.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec338559220",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  },
+  {
+   "brief": "tail",
+   "id": "alt-52",
+   "file": "photo.jpg",
+   "url": "https://alsn.ru/clients",
+   "rec": "rec829026310",
+   "status": "OPEN",
+   "alts": [
+    ""
+   ]
+  }
+ ]
+}

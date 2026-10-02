@@ -149,33 +149,38 @@ VARIANTS = {
         "day": True,
     },
     "e": {
-        "name": "По эскизу: белое поле с текстом, фото справа, в рамке",
-        "about": "Первый экран в рамке, как паспорт модуля, по ширине сайта. Слева на белом заголовок, текст и кнопки. Справа фото с мониторами и Сергеем, левый край фото плавно уходит в белый. Лента дня отдельным блоком ниже.",
+        "name": "По эскизу: текст слева, фото справа, в рамке",
+        "about": "Первый экран в рамке, как паспорт модуля, по ширине сайта. Шрифты как на странице сейчас. Слева заголовок, текст и кнопки, справа фото с мониторами и Сергеем, край фото плавно уходит в белый. Лента дня отдельным блоком ниже.",
         "crumb_bg": "#ffffff", "crumb_fg": "#8a8a8a",
         "css": """
-.fh.e{display:block;min-height:0;background:#fff;overflow:visible;padding:4px 0 0}
-.fh.e .frame{position:relative;height:clamp(400px,38vw,470px);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
-.fh.e img.bg{left:auto;right:0;width:60%;height:100%;object-fit:cover;object-position:62% 0}
-.fh.e .veil{left:auto;right:0;width:60%;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.6) 3%,rgba(255,255,255,0) 7%)}
-.fh.e .txt{position:relative;z-index:2;height:100%;width:40%;max-width:none;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column}
-.fh.e h1{font-size:clamp(30px,3.1vw,42px);margin-bottom:14px}
-.fh.e .lead{font-size:clamp(14.5px,1.3vw,17px);margin-bottom:20px;max-width:none}
-.fh.e .btns{margin-top:auto;flex-wrap:nowrap;gap:10px}
-.fh.e .btns .btn{padding:13px 16px;font-size:14.5px;white-space:nowrap}
+.fh.e{display:block;min-height:0;background:#fff;overflow:visible;padding:4px 0 0;--h:clamp(400px,36vw,460px)}
+.fh.e .frame{position:relative;height:var(--h);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
+.fh.e .txt{position:relative;z-index:2;width:calc(100% - var(--h)*16/9*.95);max-width:none;height:100%;padding:36px 8px 36px 40px;display:flex;flex-direction:column;box-sizing:border-box}
+.fh.e .eyebrow{margin-bottom:16px}
+.fh.e h1{font-size:clamp(38px,3.3vw,48px);line-height:1.05;margin-bottom:16px}
+.fh.e .lead{font-size:16px;line-height:1.5;margin-bottom:20px}
+.fh.e .btns{margin-top:auto;gap:10px;flex-wrap:wrap}
+.fh.e .btns .btn{padding:14px 18px;font-size:15px;white-space:nowrap}
+.fh.e .ph{position:absolute;top:0;right:0;bottom:0;aspect-ratio:16/9}
+.fh.e .ph img.bg{object-position:50% 50%}
+.fh.e .ph .veil{background:linear-gradient(90deg,#fff 0%,#fff 5%,rgba(255,255,255,.7) 6.5%,rgba(255,255,255,.3) 8%,rgba(255,255,255,0) 9.5%)}
 .fh.e .who{background:rgba(255,255,255,.92);color:var(--ink);border:1px solid var(--line);right:16px;bottom:16px}
-@media(min-width:1001px) and (max-width:1200px){.fh.e .btns{flex-wrap:wrap}.fh.e .txt{width:43%}.fh.e img.bg,.fh.e .veil{width:57%}}
+@media(min-width:1001px) and (max-width:1240px){.fh.e .txt{padding:26px 8px 26px 32px}.fh.e h1{font-size:36px;margin-bottom:12px}.fh.e .eyebrow{margin-bottom:12px}.fh.e .lead{font-size:15px;line-height:1.45;margin-bottom:14px}.fh.e .btns{gap:8px}.fh.e .btns .btn{padding:12px 16px}}
+@media(min-width:1001px) and (max-width:1140px){.fh.e .txt{width:340px}.fh.e .ph{aspect-ratio:auto;width:calc(100% - 318px)}.fh.e .ph img.bg{object-position:100% 50%}.fh.e .ph .veil{background:linear-gradient(90deg,#fff 0%,#fff 3%,rgba(255,255,255,.5) 4.5%,rgba(255,255,255,0) 6%)}.fh.e .eyebrow{font-size:12px}}
 @media(max-width:1000px){
- .fh.e .frame{height:auto}
- .fh.e img.bg{width:100%;height:auto;aspect-ratio:16/10;object-position:40% 25%}
- .fh.e .veil{left:0;width:100%;height:auto;aspect-ratio:16/10;bottom:auto;background:linear-gradient(180deg,rgba(255,255,255,0) 60%,#fff 100%)}
- .fh.e .txt{width:auto;height:auto;padding:0 20px 24px;margin-top:-10px}
- .fh.e h1{font-size:38px}
- .fh.e .btns{flex-wrap:wrap}.fh.e .btns .btn{padding:17px 26px;font-size:16px}
+ .fh.e .frame{display:flex;flex-direction:column;height:auto}.fh.e .txt{width:auto;height:auto}.fh.e .ph{position:relative;width:auto;aspect-ratio:auto}
+ .fh.e .ph{order:-1}
+ .fh.e .ph img.bg{position:relative;width:100%;height:auto;aspect-ratio:16/10;object-position:40% 25%}
+ .fh.e .ph .veil{background:linear-gradient(180deg,rgba(255,255,255,0) 60%,#fff 100%);height:auto;bottom:0}
+ .fh.e .txt{padding:0 20px 24px;margin-top:-6px}
+ .fh.e h1{font-size:44px}
+ .fh.e .btns{flex-wrap:wrap}
  .fh.e .who{top:12px;bottom:auto;right:12px}
 }
 """,
-        "hero": lambda: (f'<section class="fh e"><div class="in"><div class="frame">{IMG}<div class="veil"></div><div class="txt">{EYEBROW}'
-                         f'<h1>Модуль 1С <br>для <span>маркетплейсов</span></h1>{LEAD}{btns("g")}</div>{WHO}</div></div></section>'),
+        "hero": lambda: (f'<section class="fh e"><div class="in"><div class="frame"><div class="txt">{EYEBROW}'
+                         f'<h1>Модуль 1С для <br><span>маркетплейсов</span></h1>{LEAD}{btns("g")}</div>'
+                         f'<div class="ph">{IMG}<div class="veil"></div>{WHO}</div></div></div></section>'),
         "day": True,
     },
 }

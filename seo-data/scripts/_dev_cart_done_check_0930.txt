@@ -1,0 +1,85 @@
+=== development1c ===
+HEAD: строк эталона 436, нет в живом <head>: 0
+  FAQPage в head: True; '.v3 .hf' в head: True; <style> в head: 1
+  вопрос в head=True на экране=True: Что если я оплачу, а решение меня не устроит?
+  вопрос в head=True на экране=True: Вдруг после вас в 1С появятся проблемы?
+  вопрос в head=True на экране=True: Мы в разных регионах. Как будем решать сложности?
+  вопрос в head=True на экране=True: Как вы защищаете данные клиента?
+  вопрос в head=True на экране=True: Какие конфигурации 1С внедряете?
+  вопрос в head=True на экране=True: Сколько стоит внедрение?
+  вопрос в head=True на экране=True: Чем внедрение отличается от доработки?
+  вопрос в head=True на экране=True: Сколько длится проект?
+  Д-3 рамка hf: 1
+  Д-3 H1: 1
+  Д-3 лента: 1
+  Д-3 подпись Софьи: 1
+  Д-4 паспорт .pass: 1
+  Д-4 #route: 1
+  Д-4 #cfgs: 1
+  Д-4 #price: 1
+  Д-4 консультационное: 6
+  Д-4 agile: 6
+  Д-5 финал: 1
+  Д-0 фото Софьи: ['https://optim.tildacdn.com/tild3830-3363-4031-a461-393231623362/-/format/webp/allsun-hero-vnedreni.jpg.webp']
+  заглушка ВСТАВЬТЕ в HTML: False
+  h1 на странице: 1
+  Д-2 крошки rec3989707201: <div id="rec3989707201" class="r t-rec" style="background-color:#ffffff; " data-animationappear="off" data-record-type="131" data-bg-color="#ffffff">
+  всего t-rec: 12
+    rec4350962801 T131 bg=-
+    rec901639906 T985 bg=-
+    rec201559064 T217 bg=-
+    rec3989707201 T131 bg=#ffffff
+    rec4363614001 T131 bg=-
+    rec4363615101 T131 bg=-
+    rec4363616501 T131 bg=-
+    rec4363360101 T131 bg=-
+    rec855302703 T702 bg=-
+    rec855355208 T702 bg=-
+    rec855366805 T702 bg=-
+    rec1086000871 T702 bg=-
+  Д-6 старые фразы в теле:
+    0 · Без головной боли и стресса
+    0 · Внедрение 1С под ключ на платформе 1С:Предприятие
+    0 · Сергея Львова
+    0 · Особенности тарифа
+    0 · индивидуальная скидка
+    0 · Над вашим проектом работают три специалиста
+    0 · Благодарности за внедрение
+    0 · Почему выбирают
+    0 · Более 15 лет
+    0 · Этапы внедрения 1С
+    0 · Личный Кабинет
+    0 · Примеры работ по сопровождению 1С
+    0 · Переход с УТ 10.3
+    0 · Экономим до 50%
+    0 · Что если, я оплачу
+    1 · Полезные страницы по внедрению 1С
+    0 · Отправьте заявку на расчет
+    0 · Какие конфигурации 1С внедряем
+    0 · Внедрение и сопровождение 1С Документооборот 8
+
+=== карточки модуля ===
+--- OZON https://alsn.ru/casemarketplace/tproduct/913805053-713209120582-modul-integratsii-1s-s-ozon
+  +300%: 2; 'БЕСПЛАТНО': 2; 'подскажет, куда и сколько': 0; 'на своё усмотрение': 1
+  sku itemprop: []
+  sku текст: []
+  price_old: ['\n                                                                ', '\n    \n\n', '\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\t\t', '\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\t\t']
+  priceold в json: ['44000', '44 000.00']
+  sku в json: ['']
+  44 000/79 000: 1/0; 44000/79000: 2/0
+--- WB https://alsn.ru/casemarketplace/tproduct/913805053-553126495292-modul-integratsii-1s-s-wildberries
+  +300%: 0; 'БЕСПЛАТНО': 0; 'подскажет, куда и сколько': 0; 'на своё усмотрение': 1
+  sku itemprop: []
+  sku текст: []
+  price_old: ['\n                                                                ', '\n    \n\n', '\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\t\t', '\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\t\t']
+  priceold в json: ['44000', '44 000.00']
+  sku в json: ['']
+  44 000/79 000: 1/0; 44000/79000: 2/0
+--- OZON+WB https://alsn.ru/casemarketplace/tproduct/913805053-413216341712-modul-integratsii-1s-s-marketpleisami-oz
+  +300%: 0; 'БЕСПЛАТНО': 0; 'подскажет, куда и сколько': 0; 'на своё усмотрение': 1
+  sku itemprop: []
+  sku текст: []
+  price_old: ['\n                                                                ', '\n    \n\n', '\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\t\t', '\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\n\n\n\n\n\n\n\n\n\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t \n\n\t\t\n\t\t\t\t\n\t\t\t']
+  priceold в json: ['79000', '79 000.00']
+  sku в json: ['']
+  44 000/79 000: 0/1; 44000/79000: 0/2

@@ -102,6 +102,8 @@ alwaysApply: true
 .mh .promo b{font-size:20px;line-height:1.25;color:var(--ink)}
 .mh .promo p{margin:0;font-size:14px;line-height:1.5;color:#3d4247}
 .mh .promo .btn{margin-top:auto;align-self:flex-start}
+.mh .promo p a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.mh .promo p a:hover{color:var(--acc);text-decoration-color:var(--acc)}
 .mh .simple{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px 24px;padding:24px 28px 28px;max-width:1240px;margin:0 auto}
 .mh .simple a{padding:10px 12px;border-radius:10px;font-weight:600;font-size:15px}
 .mh .simple a span{display:block;font-weight:400;font-size:13px;color:var(--mut);margin-top:2px}
@@ -137,7 +139,7 @@ alwaysApply: true
 ## Тексты в меню
 
 - Названия страниц - как на сайте (H1 / имя страницы), без «хаб», «кластер».
-- Промо только с разрешёнными фактами (`focus-services.mdc`): «Реакция от 15 минут»; «40 700 ₽ за площадку, 69 990 ₽ за обе, с НДС 5%»; «Официальный партнёр 1С, ТОП 10 ЦРА». Без длинного тире (`human-copy.mdc`).
+- Промо только с разрешёнными фактами (`focus-services.mdc`): «Реакция от 15 минут»; «40 700 ₽ за площадку, 69 990 ₽ за обе, с НДС 5%»; «Официальный партнёр 1С, ТОП 10 ЦРА». «ТОП 10 ЦРА» в промо - ссылка на `/cra` (`focus-services.mdc`). Без длинного тире (`human-copy.mdc`).
 - Кнопки действием: «Получить консультацию», «Смотреть решение», «Подобрать лицензию».
 - Telegram-бот остаётся в «Продуктах» (`focus-services.mdc`), WhatsApp в меню не возвращать.
 

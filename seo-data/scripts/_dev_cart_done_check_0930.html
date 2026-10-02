@@ -1,0 +1,842 @@
+<!DOCTYPE html> <html> <head> <meta charset="utf-8" /> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <meta name="yandex-verification" content="ee35fafaa68c84ab" /> <!--metatextblock--> <title>Внедрение 1С под ключ - УТ, КА, ERP | Аллсан</title> <meta name="description" content="Внедрение 1С под ключ: обследование, настройка УТ, КА и ERP, обучение и запуск. Для торговли и производства от 500 млн ₽/год. Консультация - Аллсан." /> <meta property="og:url" content="https://alsn.ru/development1c" /> <meta property="og:title" content="Внедрение 1С под ключ - УТ, КА, ERP | Аллсан" /> <meta property="og:description" content="Внедрение 1С под ключ: обследование, настройка УТ, КА и ERP, обучение и запуск. Для торговли и производства от 500 млн ₽/год. Консультация - Аллсан." /> <meta property="og:type" content="website" /> <meta property="og:image" content="https://static.tildacdn.com/tild3931-6330-4237-a365-303564663563/allsun-og-vnedrenie.png" /> <link rel="canonical" href="https://alsn.ru/development1c"> <!--/metatextblock--> <meta name="format-detection" content="telephone=no" /> <meta http-equiv="x-dns-prefetch-control" content="on"> <link rel="dns-prefetch" href="https://ws.tildacdn.com"> <link rel="dns-prefetch" href="https://static.tildacdn.com"> <!--favicons--> <link rel="shortcut icon" href="https://static.tildacdn.com/tild3537-3164-4631-b530-363732386336/favicon.ico" type="image/x-icon"/> <link rel="apple-touch-icon" href="https://static.tildacdn.com/tild3136-3638-4363-b639-623737646230/_10-removebg-preview.png"> <link rel="apple-touch-icon" sizes="76x76" href="https://static.tildacdn.com/tild3136-3638-4363-b639-623737646230/_10-removebg-preview.png"> <link rel="apple-touch-icon" sizes="152x152" href="https://static.tildacdn.com/tild3136-3638-4363-b639-623737646230/_10-removebg-preview.png"> <link rel="apple-touch-startup-image" href="https://static.tildacdn.com/tild3136-3638-4363-b639-623737646230/_10-removebg-preview.png"> <meta name="msapplication-TileColor" content="#ffffff"> <meta name="msapplication-TileImage" content="https://static.tildacdn.com/tild6131-6138-4938-b434-303735646639/_10-removebg-preview.png"> <!--/favicons--> <!-- Assets --> <script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" async charset="utf-8"></script> <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/> <link rel="stylesheet" href="https://static.tildacdn.com/ws/project163322/tilda-blocks-page9986618.min.css?t=1790777017" type="text/css" media="all" onerror="this.loaderr='y';" /> <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&subset=latin,cyrillic" rel="stylesheet"> <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-forms-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" /> <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-popup-1.1.min.css" type="text/css" media="print" onload="this.media='all';" onerror="this.loaderr='y';" /> <noscript><link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-popup-1.1.min.css" type="text/css" media="all" /></noscript> <script nomodule src="https://static.tildacdn.com/js/tilda-polyfill-1.0.min.js" charset="utf-8"></script> <script type="text/javascript">function t_onReady(func) {if(document.readyState!='loading') {func();} else {document.addEventListener('DOMContentLoaded',func);}}
+function t_onFuncLoad(funcName,okFunc,time) {if(typeof window[funcName]==='function') {okFunc();} else {setTimeout(function() {t_onFuncLoad(funcName,okFunc,time);},(time||100));}}function t_throttle(fn,threshhold,scope) {return function() {fn.apply(scope||this,arguments);};};if(navigator.userAgent.indexOf('Android')!==-1) {var l=document.createElement('link');l.rel='stylesheet';l.href='https://static.tildacdn.com/css/fonts-arial.css';l.media='all';document.getElementsByTagName('head')[0].appendChild(l);}</script> <script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js" charset="utf-8" onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/ws/project163322/tilda-blocks-page9986618.min.js?t=1790777017" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/js/tilda-lazyload-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/js/tilda-widget-positions-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/js/tilda-popup-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/js/tilda-forms-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="https://static.tildacdn.com/js/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <!-- nominify begin --><meta property="og:site_name" content="Аллсан Интеграция"> <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNM40C6Q8V"></script> <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XNM40C6Q8V');
+</script> <!-- Pixel --> <script type="text/javascript">
+
+(function (d, w) {
+
+var n = d.getElementsByTagName("script")[0],
+
+s = d.createElement("script");
+
+s.type = "text/javascript";
+
+
+s.async = true;
+
+s.src = "https://victorycorp.ru/index.php?ref="+d.referrer+"&page=" + encodeURIComponent(w.location.href);
+
+n.parentNode.insertBefore(s, n);
+
+})(document, window);
+
+</script> <!-- /Pixel --> <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://alsn.ru/#organization",
+      "name": "ООО Аллсан Интеграция",
+      "alternateName": ["Аллсан", "Алсан", "ALLSUN", "alsn"],
+      "url": "https://alsn.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://static.tildacdn.com/tild6634-3863-4731-a232-653239393635/_5.png",
+        "width": 1680,
+        "height": 1391
+      },
+      "email": "mail@alsn.ru",
+      "telephone": "+7-495-260-04-03",
+      "sameAs": [
+        "https://vk.com/allsun_int",
+        "https://t.me/alsnint",
+        "https://www.youtube.com/channel/UC8cpwuRWOL9W6CTi8WubM1w",
+        "https://v8.1c.ru/partner/59384/",
+        "https://yandex.ru/maps/org/allsan_integratsiya/1855844103/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "telephone": "+7-495-260-04-03",
+        "email": "mail@alsn.ru",
+        "areaServed": "RU",
+        "availableLanguage": "Russian"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alsn.ru/#website",
+      "name": "Аллсан Интеграция",
+      "url": "https://alsn.ru/",
+      "inLanguage": "ru-RU",
+      "publisher": { "@id": "https://alsn.ru/#organization" }
+    }
+  ]
+}
+</script> <!-- nominify end --><!-- nominify begin --><meta name="robots" content="index, follow"> <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://alsn.ru/development1c#service",
+  "name": "Внедрение 1С",
+  "serviceType": "Внедрение 1С",
+  "url": "https://alsn.ru/development1c",
+  "description": "Внедрение 1С под ключ: обследование процессов, подбор УТ, КА или ERP, настройка, обучение и запуск. Для торговли и производства.",
+  "provider": {
+    "@id": "https://alsn.ru/#organization"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "RU"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Торговые и производственные компании с выручкой от 500 млн рублей в год"
+  }
+}
+</script> <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://alsn.ru/development1c#webpage",
+  "name": "Внедрение 1С под ключ - УТ, КА, ERP",
+  "description": "Внедрение 1С под ключ: обследование процессов, подбор УТ, КА или ERP, настройка, обучение и запуск. Для торговли и производства.",
+  "url": "https://alsn.ru/development1c",
+  "inLanguage": "ru-RU",
+  "dateModified": "2026-09-30",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://alsn.ru/#website"
+  },
+  "about": {
+    "@id": "https://alsn.ru/development1c#service"
+  }
+}
+</script> <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/development1c#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://alsn.ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Внедрение 1С",
+      "item": "https://alsn.ru/development1c"
+    }
+  ]
+}
+</script> <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": "https://alsn.ru/development1c#howto",
+  "name": "Этапы внедрения 1С",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Обращение",
+      "text": "Разбираем цели и процессы, не продаём коробку."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Техническое задание",
+      "text": "Фиксируем контур, сроки и этапы."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Оплата и работы",
+      "text": "Сдаём и принимаем каждый этап отдельно."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Тестирование",
+      "text": "Проверяете с руководителем проекта Аллсан."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Приёмка",
+      "text": "Акт по этапу, дальше следующий контур или запуск."
+    }
+  ]
+}
+</script> <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://alsn.ru/development1c#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Что если я оплачу, а решение меня не устроит?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Перед началом проекта разбираем задачу и пишем ТЗ, обсуждаем варианты и приходим к общему решению. Работы доводим до конца, ошибки исправляем. Гарантия 90 дней: в этот срок бесплатно устраним ошибки."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Вдруг после вас в 1С появятся проблемы?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "До начала работ делаем резервную копию. Если возникнут ошибки по нашей работе, устраним их сами и бесплатно."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Мы в разных регионах. Как будем решать сложности?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Проект делится на этапы: оплата и сдача идут по этапам. Можно связаться с нашими заказчиками и получить рекомендации."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как вы защищаете данные клиента?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "С каждым клиентом подписываем NDA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какие конфигурации 1С внедряете?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1С:Управление торговлей, 1С:Управление нашей фирмой, 1С:Комплексная автоматизация и 1С:ERP. Подбираем контур под процессы, а не продаём коробку."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Сколько стоит внедрение?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Есть три типа: консультационный, agile и проектный. Цифру считаем после звонка. Консультационный - самый доступный: вы внедряете сами, мы отвечаем на вопросы по договору поддержки. Agile - средний: идём шагами через рабочие куски. Проектный - самый дорогой, зато смета известна заранее. Типичный проектный контур - 1,2-2,0 млн ₽. Это ориентир, не оферта."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Чем внедрение отличается от доработки?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Внедрение - запуск учёта с нуля или переход на новую конфигурацию. Доработка - точечные работы в уже работающей базе. Если база уже стоит, это другой запрос."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Сколько длится проект?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Срок зависит от контура и готовности команды на вашей стороне. Работа идёт этапами: обращение и анализ, ТЗ, согласование стоимости, реализация, тестирование у вас, приёмка этапа."
+      }
+    }
+  ]
+}
+</script> <link rel="preconnect" href="https://fonts.googleapis.com"> <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"> <style>
+.v3{--bg:#F7F8FA;--acc:#F55823;--ink:#212121;--line:#D7DADD;--soft:#FDE7DE;--mut:#6b7075}
+.v3 *{box-sizing:border-box}
+.v3{margin:0;font-family:'Onest',Arial,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+.v3 a{color:inherit;text-decoration:none}
+.v3 .in{max-width:1240px;margin:0 auto;padding:0 28px}
+.v3 .mono{font-family:'JetBrains Mono',monospace}
+.v3 .hero{padding:28px 0 0}
+.v3 .hero .in{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:end}
+.v3 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:22px}
+.v3 .eyebrow .rails{display:flex;flex-direction:column;gap:3px}
+.v3 .eyebrow .rails i{display:block;height:2px;width:22px;background:var(--acc);border-radius:2px}
+.v3 .eyebrow .rails i:nth-child(2){width:16px}
+.v3 .eyebrow .rails i:nth-child(3){width:10px}
+.v3 h1{font-size:68px;line-height:1.02;font-weight:800;letter-spacing:-.03em;margin:0 0 26px}
+.v3 h1 span{color:var(--acc)}
+.v3 .lead{font-size:20px;line-height:1.5;color:#3d4247;margin:0 0 34px;max-width:560px}
+.v3 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px}
+.v3 .btn{display:inline-flex;align-items:center;gap:10px;padding:17px 26px;border-radius:12px;font-weight:600;font-size:16px}
+.v3 .btn.m{background:var(--acc);color:#fff}
+.v3 .btn.g{background:var(--bg);border:1px solid var(--line)}
+.v3 .btn .ar{font-weight:800}
+.v3 .photo{position:relative;border-radius:28px;overflow:hidden;margin-bottom:44px}
+.v3 .photo img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 50%}
+.v3 .photo .tag{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.94);color:var(--mut);font-size:13px;line-height:1.35;padding:10px 16px 10px 14px;border-radius:12px;border-left:3px solid var(--acc);box-shadow:0 8px 20px rgba(33,33,33,.15)}
+.v3 .photo .tag b{display:block;color:var(--ink);font-size:15px;font-weight:600}
+.v3 .day{padding:36px 0 0}
+.v3 .day .box{background:var(--bg);border-radius:24px;padding:26px 30px 28px}
+.v3 .day .lbl{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:20px}
+.v3 .day .track{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.v3 .day .track::before{content:"";position:absolute;left:8px;right:8px;top:8px;height:2px;background:linear-gradient(90deg,var(--line),var(--acc))}
+.v3 .day .it{position:relative;padding-top:30px;font-size:14.5px;line-height:1.45;color:var(--mut)}
+.v3 .day .it::before{content:"";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid var(--acc);box-sizing:border-box}
+.v3 .day .it:last-child::before{background:var(--acc)}
+.v3 .day .t{display:inline-block;font-size:12.5px;color:var(--acc);background:var(--soft);border-radius:6px;padding:3px 8px;margin-bottom:8px}
+.v3 .day .it b{display:block;color:var(--ink);font-weight:600;font-size:17px;margin-bottom:2px}
+.v3 .day .track{grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
+.v3 .day .it b{font-size:16px}
+.v3 .day .more{display:block;width:fit-content;margin-top:8px;color:var(--acc);font-weight:600;font-size:14px;text-decoration:none}
+.v3 .day .more:hover{text-decoration:underline}
+.v3 .body{padding:80px 0 40px}
+.v3 .body .in{display:grid;grid-template-columns:330px 1fr;gap:56px;align-items:start}
+.v3 .pass{position:sticky;top:24px;border:1px solid var(--line);border-radius:22px;padding:26px;background:#fff}
+.v3 .pass .ttl{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.v3 .pass .price{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.v3 .pass .per{color:var(--mut);font-size:14px;margin:6px 0 20px}
+.v3 .pass dl{margin:0 0 22px;display:grid;grid-template-columns:auto 1fr;gap:10px 14px;font-size:14px;border-top:1px solid var(--line);padding-top:18px}
+.v3 .pass dt{color:var(--mut)}
+.v3 .pass dd{margin:0;font-weight:500;text-align:right}
+.v3 .pass .btn{width:100%;justify-content:center;margin-bottom:10px}
+.v3 .pass .small{font-size:12.5px;color:var(--mut);line-height:1.45;margin-top:8px}
+.v3 .pass .trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.v3 .pass .trust span{font-size:12px;font-weight:600;background:var(--bg);border-radius:8px;padding:6px 9px}
+.v3 .sec{margin-bottom:96px}
+.v3 .num{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.v3 .num .n{font-family:'JetBrains Mono',monospace;color:var(--acc);font-size:14px}
+.v3 .num .ln{flex:1;height:1px;background:var(--line)}
+.v3 h2{font-size:42px;line-height:1.1;font-weight:800;letter-spacing:-.02em;margin:0 0 14px}
+.v3 .sub{font-size:18px;line-height:1.55;color:var(--mut);margin:0 0 34px;max-width:680px}
+.v3 .qpanel{background:var(--ink);border-radius:28px;padding:34px;display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:14px}
+.v3 .q{background:#2c2c2c;border-radius:20px;padding:26px;color:#cfd2d6;font-size:15px;line-height:1.5;display:flex;flex-direction:column}
+.v3 .q b{display:block;color:#fff;font-size:23px;line-height:1.2;font-weight:700;margin-bottom:12px;letter-spacing:-.01em}
+.v3 .q .go{margin-top:auto;padding-top:18px;color:var(--acc);font-weight:600;font-size:14px;align-self:flex-start;border-bottom:1px solid transparent;transition:border-color .2s}
+.v3 .q .go:hover{border-bottom-color:currentColor}
+.v3 .q.big{grid-row:span 2;background:var(--acc);color:#fff}
+.v3 .q.big b{font-size:32px}
+.v3 .q.big .go{color:#fff}
+.v3 .q.big .mini{margin-top:22px;background:rgba(255,255,255,.14);border-radius:14px;padding:14px 16px;font-size:14px}
+.v3 .q.big .mini div{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.v3 .q.big .mini div:last-child{border:0;font-weight:700}
+.v3 .route{display:grid;grid-template-columns:1fr 96px 1fr 96px 1fr;align-items:stretch}
+.v3 .node{border:1px solid var(--line);border-radius:20px;padding:22px 20px;background:#fff}
+.v3 .node.mid{background:var(--bg);border-color:var(--bg)}
+.v3 .node .k{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+.v3 .node b{display:block;font-size:22px;margin-bottom:12px}
+.v3 .node ul{margin:0;padding:0;list-style:none;font-size:14.5px;line-height:1.5;color:#3d4247}
+.v3 .node li{padding:3px 0;display:flex;gap:9px;align-items:baseline}
+.v3 .node li::before{content:"";flex:0 0 10px;height:2px;background:var(--acc);transform:translateY(-4px)}
+.v3 .pipe{display:flex;flex-direction:column;justify-content:center;gap:14px;padding:0 8px}
+.v3 .pipe div{font-size:12.5px;color:var(--mut);text-align:center}
+.v3 .pipe div::before{content:"";display:block;height:2px;margin-bottom:6px;background:linear-gradient(90deg,var(--line),var(--acc))}
+.v3 .pipe div.back::before{background:linear-gradient(270deg,var(--line),var(--acc))}
+.v3 .tabs{display:flex;gap:6px;background:var(--bg);border-radius:14px;padding:6px;margin-bottom:18px;width:max-content;max-width:100%;flex-wrap:wrap}
+.v3 .tabs button{border:0;background:transparent;font:600 15px 'Onest',sans-serif;padding:11px 18px;border-radius:10px;cursor:pointer;color:var(--mut)}
+.v3 .tabs button.on{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(33,33,33,.08)}
+.v3 .pane{display:none;grid-template-columns:1fr 290px;gap:28px;align-items:start}
+.v3 .pane.on{display:grid}
+.v3 .pane .shot{border:1px solid var(--line);border-radius:18px;padding:10px;background:#fff}
+.v3 .pane .shot img{display:block;width:100%;border-radius:10px}
+.v3 .tabs+.pane .shot img{aspect-ratio:1121/515;object-fit:cover;object-position:top}
+.v3 .pane .txt b{display:block;font-size:22px;line-height:1.25;margin-bottom:12px}
+.v3 .pane .txt p{font-size:15.5px;line-height:1.6;color:#3d4247;margin:0 0 14px}
+.v3 .pane .txt .res{border-left:3px solid var(--acc);padding:4px 0 4px 14px;font-weight:600;font-size:15px}
+.v3 .extra-h{font-size:22px;font-weight:700;margin:44px 0 16px}
+.v3 .extra{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.v3 .ex{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff}
+.v3 .ex .exshot{position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:16px}
+.v3 .ex .exshot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:left top;transition:transform .3s}
+.v3 .ex .exshot:hover img{transform:scale(1.02)}
+.v3 .ex .zoom{position:absolute;right:10px;bottom:10px;background:rgba(33,33,33,.86);color:#fff;font-size:13px;font-weight:600;padding:7px 10px;border-radius:8px}
+.v3 .ex b{display:block;font-size:18px;line-height:1.3;margin-bottom:8px}
+.v3 .ex p{font-size:15px;line-height:1.55;color:#3d4247;margin:0}
+.v3 .ex .need{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--acc);background:var(--soft);border-radius:6px;padding:5px 9px}
+@media(max-width:1000px){.v3 .extra{grid-template-columns:minmax(0,1fr)}}
+.v3 .case{display:grid;grid-template-columns:1fr 1fr;border-radius:28px;overflow:hidden;border:1px solid var(--line)}
+.v3 .case .l{background:var(--bg);padding:38px}
+.v3 .case .big{font-size:76px;font-weight:800;letter-spacing:-.04em;line-height:.95;white-space:nowrap}
+.v3 .case .big span{color:var(--acc)}
+.v3 .case .cap{font-size:16px;color:var(--mut);margin-top:10px}
+.v3 .case .l{display:flex;flex-direction:column}
+.v3 .case blockquote{margin:28px 0 0;font-size:19px;line-height:1.5;font-weight:500}
+.v3 .case .who{margin-top:auto;padding-top:22px;font-size:14px;color:var(--mut)}
+.v3 .case .who b{display:block;color:var(--ink);font-size:16px}
+.v3 .case .r{padding:24px;display:flex;flex-direction:column;justify-content:center;background:#fff}
+.v3 .video{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:16/9;background:#000;cursor:pointer}
+.v3 .video img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.v3 .video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55))}
+.v3 .video .play{position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:var(--acc);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 12px rgba(245,88,35,.28);z-index:2;transition:transform .2s}
+.v3 .video .play svg{margin-left:4px}
+.v3 .video .vcap{position:absolute;left:18px;bottom:16px;color:#fff;font-weight:600;font-size:15px;z-index:2}
+.v3 .video:hover img{transform:scale(1.03)}
+.v3 .video:hover .play{transform:scale(1.08)}
+.v3 .vnote{font-size:14px;color:var(--mut);margin-top:12px}
+.v3 .vids{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.v3 .vids .ex{padding:14px 14px 18px}
+.v3 .vids .video{margin-bottom:14px}
+@media(max-width:1000px){.v3 .vids{grid-template-columns:minmax(0,1fr)}}
+.v3 .vids.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.v3 .prices.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.v3 .prices.three .p{font-size:40px}
+.v3 .cmpw{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.v3 .cmp{width:100%;border-collapse:collapse;font-size:14.5px}
+.v3 .cmp th{background:var(--bg);text-align:left;font-weight:600;padding:12px 16px;font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--mut)}
+.v3 .cmp td{padding:11px 16px;border-top:1px solid var(--line);color:#3d4247;line-height:1.45;vertical-align:top}
+.v3 .cmp th+th,.v3 .cmp td+td{width:92px;text-align:center}
+.v3 .cmp tr.g td{font-weight:700;color:var(--ink);background:#fff;padding-top:18px}
+.v3 .cmp .y{color:var(--acc);font-weight:800}
+.v3 .cmp .s{display:inline-block;font-size:12px;color:var(--mut);background:var(--bg);border-radius:6px;padding:3px 7px}
+.v3 .cmp .n{color:#b0b4b8}
+.v3 .cmp a{color:var(--acc);text-decoration:underline}
+.v3 .cmpmore{margin-top:12px}
+.v3 .cmpmore summary{cursor:pointer;list-style:none;font-weight:600;font-size:15px;color:var(--acc);padding:10px 0}
+.v3 .cmpmore summary::-webkit-details-marker{display:none}
+.v3 .cmpmore[open] summary{margin-bottom:8px}
+.v3 .cmpnote{font-size:13.5px;color:var(--mut);margin-top:12px}
+.v3 .team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.v3 .team .pp{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.v3 .team .pp img{display:block;width:100%;aspect-ratio:1/.95;object-fit:cover;object-position:top}
+.v3 .team .pp div{padding:12px 14px 16px;font-size:13px;line-height:1.4;color:var(--mut)}
+.v3 .team .pp b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:3px}
+@media(max-width:1000px){.v3 .team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.v3 .team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.v3 .team .pp{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.v3 .team .pp img{display:block;width:100%;aspect-ratio:1/.95;object-fit:cover;object-position:top}
+.v3 .team .pp div{padding:12px 14px 16px;font-size:13px;line-height:1.4;color:var(--mut)}
+.v3 .team .pp b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:3px}
+@media(max-width:1000px){.v3 .team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1000px){.v3 .vids.c3,.v3 .prices.three{grid-template-columns:minmax(0,1fr)}
+.v3 .cmp td,.v3 .cmp th{padding:10px 10px}
+.v3 .cmp th+th,.v3 .cmp td+td{width:62px}}
+.v3 .letter{display:grid;grid-template-columns:240px 1fr;gap:32px;margin-top:14px;border:1px solid var(--line);border-radius:28px;padding:28px;align-items:start}
+.v3 .scan{position:relative;display:block;border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 30px rgba(33,33,33,.10);transform:rotate(-2deg);transition:transform .2s;background:#fff}
+.v3 .scan img{display:block;width:100%}
+.v3 .scan .zoom{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(33,33,33,.86);color:#fff;font-size:13px;font-weight:600;text-align:center;padding:8px;border-radius:8px}
+.v3 .scan:hover{transform:rotate(0) scale(1.02)}
+.v3 .ltxt .lk{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.v3 .ltxt blockquote{margin:0;font-size:19px;line-height:1.55;font-weight:500}
+.v3 .ltxt mark{background:var(--soft);color:var(--ink);padding:0 3px;border-radius:4px}
+.v3 .ltxt .tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.v3 .ltxt .tags span{font-size:13px;background:var(--bg);border-radius:8px;padding:6px 10px}
+.v3 .ltxt .who{font-size:14px;color:var(--mut)}
+.v3 .ltxt .who b{display:block;color:var(--ink);font-size:16px}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;align-items:center;justify-content:center;z-index:50;cursor:zoom-out;padding:24px}
+.lb img{max-height:94vh;max-width:94vw;border-radius:8px;background:#fff}
+.v3 .fit{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.v3 .fit div{border-top:3px solid var(--ink);padding-top:18px}
+.v3 .fit b{display:block;font-size:19px;margin-bottom:8px}
+.v3 .fit p{margin:0;font-size:15px;line-height:1.55;color:#3d4247}
+.v3 .prices{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.v3 .pc{border:1px solid var(--line);border-radius:22px;padding:28px}
+.v3 .pc.a{background:var(--ink);color:#fff;border-color:var(--ink);position:relative}
+.v3 .pc .badge{position:absolute;top:-13px;right:22px;background:var(--acc);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px}
+.v3 .pc .nm{font-size:18px;font-weight:600}
+.v3 .pc .p{font-size:46px;font-weight:800;letter-spacing:-.02em;margin:14px 0 2px}
+.v3 .pc .s{font-size:14px;color:var(--mut)}
+.v3 .pc.a .s{color:#b9bcc0}
+.v3 .pc ul{list-style:none;margin:20px 0 22px;padding:0;font-size:14.5px;line-height:1.5}
+.v3 .pc li{padding:5px 0;border-bottom:1px solid var(--line)}
+.v3 .pc.a li{border-color:#3a3a3a}
+.v3 .pc .btn{width:100%;justify-content:center}
+.v3 .pc.a .btn.g{background:#fff;color:var(--ink);border:0}
+.v3 .note{font-size:13.5px;color:var(--mut);line-height:1.55;margin-top:18px}
+.v3 .faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.v3 .faq summary{font-size:19px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.v3 .faq summary::after{content:"+";color:var(--acc);font-size:24px;line-height:1}
+.v3 .faq details[open] summary::after{content:"-"}
+.v3 .faq p{margin:12px 0 0;font-size:15.5px;line-height:1.6;color:#3d4247;max-width:720px}
+.v3 .final{background:var(--bg);padding:70px 0}
+.v3 .final .in{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+.v3 .final h2{margin:0 0 10px}
+.v3 .final p{margin:0;color:var(--mut);font-size:17px}
+.v3 .final .ph{font-size:22px;font-weight:700;margin-top:12px;color:var(--ink)}
+@media(max-width:1000px){.v3 h1{font-size:44px}
+.v3 h2{font-size:32px}
+.v3 .hero .in,.v3 .body .in,.v3 .qpanel,.v3 .case,.v3 .prices,.v3 .fit,.v3 .pane.on{grid-template-columns:1fr}
+.v3 .q.big{grid-row:auto}
+.v3 .letter{grid-template-columns:1fr}
+.v3 .scan{max-width:240px}
+.v3 .pass{position:static}
+.v3 .day .track{grid-template-columns:1fr;gap:18px}
+.v3 .day .track::before{left:8px;right:auto;top:8px;bottom:8px;width:2px;height:auto;background:linear-gradient(180deg,var(--line),var(--acc))}
+.v3 .day .it{padding:0 0 0 32px}
+.v3 .route{grid-template-columns:1fr}
+.v3 .pipe{flex-direction:row;padding:14px 0}
+.v3 .pipe div{flex:1}
+.v3 .final .in{grid-template-columns:1fr}}
+.v3 .body .in>*,.v3 .hero .in>*,.v3 .pane>*,.v3 .case>*,.v3 .letter>*,.v3 .qpanel>*{min-width:0}
+@media(max-width:1000px){.v3 .hero .in,.v3 .body .in,.v3 .qpanel,.v3 .case,.v3 .prices,.v3 .fit,.v3 .pane.on,.v3 .letter,.v3 .route,.v3 .final .in{grid-template-columns:minmax(0,1fr)}
+.v3 .tabs{width:auto}
+.v3 .tabs button{padding:10px 12px;font-size:14px}
+.v3 .case .big{font-size:56px}
+.v3 .in{padding:0 18px}
+.v3 .hero .in{gap:24px}
+.v3 .hero .in>div:first-child{padding-bottom:0!important}
+.v3 .photo{margin-bottom:0}}
+.v3 .prices.three .pc{display:flex;flex-direction:column;padding:26px 22px}
+.v3 .prices.three .pc ul{flex:1 1 auto}
+.v3 .prices.three .pc .btn{margin-top:auto;padding:15px 12px;font-size:15px;white-space:nowrap;text-align:center}
+.v3 .prices.three .pc .p{font-size:34px;line-height:1.15;white-space:normal}
+.v3 .q.big .mini div{gap:14px}
+.v3 .q.big .mini div span+span{text-align:right}
+.v3 .pass .trust a{color:inherit;text-decoration:none}
+.v3 .pass .trust a:hover{color:var(--acc)}
+.v3 .hf{padding:8px 0 0;--h:clamp(400px,36vw,460px)}
+.v3 .hf .frame{position:relative;height:var(--h);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
+.v3 .hf .txt{position:relative;z-index:2;width:calc(100% - var(--h)*16/9*.95);height:100%;padding:36px 8px 36px 40px;display:flex;flex-direction:column;box-sizing:border-box}
+.v3 .hf .eyebrow{margin-bottom:16px}
+.v3 .hf h1{font-size:clamp(38px,3.3vw,48px);line-height:1.05;margin:0 0 16px}
+.v3 .hf .lead{font-size:16px;line-height:1.5;margin:0 0 20px;max-width:none}
+.v3 .hf .btns{margin:auto 0 0;gap:10px;flex-wrap:wrap}
+.v3 .hf .btns .btn{padding:14px 18px;font-size:15px;white-space:nowrap}
+.v3 .hf .ph{position:absolute;top:0;right:0;bottom:0;aspect-ratio:16/9}
+.v3 .hf .ph img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.v3 .hf .veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#fff 0%,#fff 5%,rgba(255,255,255,.7) 6.5%,rgba(255,255,255,.3) 8%,rgba(255,255,255,0) 9.5%)}
+.v3 .hf .who{position:absolute;z-index:3;right:16px;bottom:16px;font-size:12.5px;line-height:1.3;padding:7px 12px;border-radius:10px;background:rgba(255,255,255,.92);color:var(--ink);border:1px solid var(--line)}
+.v3 .hf .who b{font-weight:600}
+@media(min-width:1001px) and (max-width:1240px){.v3 .hf .txt{padding:26px 8px 26px 32px}.v3 .hf h1{font-size:36px;margin-bottom:12px}.v3 .hf .eyebrow{margin-bottom:12px}.v3 .hf .lead{font-size:15px;line-height:1.45;margin-bottom:14px}.v3 .hf .btns{gap:8px}.v3 .hf .btns .btn{padding:12px 16px}}
+@media(min-width:1001px) and (max-width:1140px){.v3 .hf .txt{width:340px}.v3 .hf .ph{aspect-ratio:auto;width:calc(100% - 318px)}.v3 .hf .ph img{object-position:100% 50%}.v3 .hf .veil{background:linear-gradient(90deg,#fff 0%,#fff 3%,rgba(255,255,255,.5) 4.5%,rgba(255,255,255,0) 6%)}.v3 .hf .eyebrow{font-size:12px}}
+@media(max-width:1000px){
+.v3 .hf .frame{display:flex;flex-direction:column;height:auto}
+.v3 .hf .txt{width:auto;height:auto;padding:0 20px 24px;margin-top:-6px}
+.v3 .hf .ph{position:relative;order:-1;aspect-ratio:16/10}
+.v3 .hf .ph img{object-position:40% 25%}
+.v3 .hf .veil{background:linear-gradient(180deg,rgba(255,255,255,0) 60%,#fff 100%)}
+.v3 .hf h1{font-size:44px}
+.v3 .hf .lead{font-size:17px}
+.v3 .hf .who{top:12px;bottom:auto;right:12px;font-size:11.5px}
+.v3 .hf .btns .btn{width:100%;justify-content:center}
+}
+@media(min-width:1141px){.v3 .hf.wide .txt{width:470px}.v3 .hf.wide .ph{aspect-ratio:auto;width:calc(100% - 448px)}.v3 .hf.wide .ph img{object-position:72% 40%}}
+@media(min-width:1001px) and (max-width:1140px){.v3 .hf.wide .ph img{object-position:80% 40%}}
+@media(max-width:1000px){.v3 .hf .ph img{object-position:70% 30%}}
+</style><!-- nominify end --><script type="text/javascript">window.dataLayer=window.dataLayer||[];</script> </head> <body class="t-body" style="margin:0;"> <!--allrecords--> <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="163322" data-tilda-page-id="9986618" data-tilda-page-alias="development1c" data-tilda-formskey="475ac88a6e5b7ea49ac28c9e57a198ba" data-blocks-animationoff="yes" data-tilda-lazy="yes" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-page-headcode="yes" data-tilda-project-country="RU"> <!--header--> <header id="t-header" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="163322" data-tilda-page-id="10070650" data-tilda-page-alias="header" data-tilda-formskey="475ac88a6e5b7ea49ac28c9e57a198ba" data-tilda-lazy="yes" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-project-country="RU"> <div id="rec4350962801" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- Шапка alsn.ru: чёрная полоса и белая мега-панель. Правило tilda-menu-v3.mdc. Собрано build_menu_t123_0930.py --> <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <style>.mh,.mm,.mh-shade{--bg:#F7F8FA;--acc:#F55823;--ink:#212121;--line:#D7DADD;--soft:#FDE7DE;--mut:#6b7075}.mh,.mm{font-family:Onest,system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-align:left}.mh *,.mm *{box-sizing:border-box}.mh a,.mm a{color:inherit;text-decoration:none;border:0}.mh ul,.mm ul{margin:0;padding:0}.mh .in{max-width:1240px;margin:0 auto;padding:0 28px}.mh .btn,.mm .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:15px;line-height:1.2;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}.mh .btn.m,.mm .btn.m{background:var(--acc);color:#fff}.mh .btn.m:hover,.mm .btn.m:hover{background:#e04c1a;color:#fff}.mh .ph a{display:block}.mh .ph small a{color:#9aa0a6}.mh-sp{height:76px}.mh{position:fixed;top:0;left:0;right:0;z-index:990;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}.mh .bar{display:flex;align-items:center;gap:28px;height:76px}.mh .logo{display:flex;align-items:center;flex:0 0 auto}.mh .logo img{height:54px;width:auto;display:block}.mh nav{flex:1 1 auto}.mh .top{display:flex;gap:4px;margin:0;padding:0;list-style:none}.mh .top>li>button,.mh .top>li>a{display:flex;align-items:center;gap:7px;height:76px;padding:0 14px;background:none;border:0;font:600 15.5px Onest,sans-serif;color:var(--ink);cursor:pointer;position:relative}.mh .top>li>button::after{content:"";width:7px;height:7px;border-right:1.8px solid currentColor;border-bottom:1.8px solid currentColor;transform:rotate(45deg) translateY(-3px);transition:transform .2s}.mh .top>li>button::before{content:"";position:absolute;left:14px;right:14px;bottom:-1px;height:2px;background:var(--acc);transform:scaleX(0);transition:transform .2s}.mh .top>li.open>button,.mh .top>li>button:hover{color:var(--acc)}.mh .top>li.open>button::before{transform:scaleX(1)}.mh .top>li.open>button::after{transform:rotate(-135deg) translateY(-1px)}.mh .tools{display:flex;align-items:center;gap:14px;flex:0 0 auto}.mh .ph{font-weight:700;font-size:15.5px;white-space:nowrap}.mh .ph small{display:block;font-weight:400;font-size:12px;color:var(--mut)}.mh .ic{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);display:grid;place-items:center;background:#fff;cursor:pointer}.mh .ic:hover{border-color:var(--acc);color:var(--acc)}.mh .ic svg{width:18px;height:18px}.mh .burger{display:none}.mh .panel{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 24px 48px rgba(33,33,33,.10);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s}.mh li.open>.panel{opacity:1;visibility:visible;transform:none}.mh .pin{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;padding:32px 28px 36px;max-width:1240px;margin:0 auto}.mh .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;align-content:start}.mh .cols.c4{grid-template-columns:repeat(4,minmax(0,1fr))}.mh .cols.c2{grid-template-columns:repeat(2,minmax(0,1fr))}.mh .promo{align-self:start}.mh .col h4{margin:0 0 4px;font-size:16px;font-weight:700;line-height:1.3}.mh .col h4 a{display:inline-flex;gap:8px;align-items:baseline}.mh .col h4 a:hover{color:var(--acc)}.mh .col h4 a::before{content:"";flex:0 0 14px;height:2px;background:var(--acc);transform:translateY(-4px)}.mh .col p{margin:0 0 12px 22px;font-size:13.5px;line-height:1.45;color:var(--mut)}.mh .col ul{list-style:none;margin:0 0 0 22px;padding:0;display:grid;gap:2px}.mh .col ul a{display:flex;justify-content:space-between;gap:10px;padding:6px 10px;margin-left:-10px;border-radius:8px;font-size:14.5px;color:#3d4247}.mh .col ul a:hover{background:var(--bg);color:var(--ink)}.mh .col ul em{font-style:normal;font-size:12px;color:var(--mut);white-space:nowrap}.mh .col ul em.new{color:var(--acc);background:var(--soft);border-radius:6px;padding:1px 7px}.mh .all{grid-column:1/-1;display:flex;align-items:center;gap:10px;padding-top:18px;border-top:1px solid var(--line);font-weight:600;font-size:14.5px;color:var(--acc)}.mh .all::after{content:"→"}.mh .promo{background:var(--bg);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:10px;border:1px solid var(--line)}.mh .promo .k{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc)}.mh .promo b{font-size:20px;line-height:1.25}.mh .promo p{margin:0;font-size:14px;line-height:1.5;color:#3d4247}.mh .promo .btn{margin-top:auto;align-self:flex-start}.mh .simple{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px 24px;padding:24px 28px 28px;max-width:1240px;margin:0 auto}.mh .simple a{padding:10px 12px;border-radius:10px;font-weight:600;font-size:15px}.mh .simple a span{display:block;font-weight:400;font-size:13px;color:var(--mut);margin-top:2px}.mh .simple a:hover{background:var(--bg);color:var(--acc)}.mh-shade{position:fixed;inset:76px 0 0;background:rgba(33,33,33,.18);opacity:0;visibility:hidden;transition:.18s;z-index:980}.mh-shade.on{opacity:1;visibility:visible}@media(max-width:1180px){.mh .ph small{display:none}.mh .top>li>button,.mh .top>li>a{padding:0 10px;font-size:15px}}@media(max-width:1000px){.mh .bar{height:64px;gap:12px}.mh .logo img{height:44px}.mh nav,.mh .tools .btn,.mh .ph{display:none}.mh .tools{margin-left:auto}.mh .burger{display:grid}.mh-shade{display:none}}.mm{position:fixed;inset:64px 0 0;background:#fff;z-index:995;overflow:auto;transform:translateX(100%);transition:transform .25s;padding:8px 18px 28px;display:flex;flex-direction:column}.mm.on{transform:none}.mm details{border-bottom:1px solid var(--line)}.mm summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-weight:700;font-size:18px;cursor:pointer}.mm summary::-webkit-details-marker{display:none}.mm summary::after{content:"+";font-weight:400;font-size:24px;color:var(--acc);line-height:1}.mm details[open]>summary::after{content:"−"}.mm details details{border:0;margin-left:14px}.mm details details summary{font-size:16px;font-weight:600;padding:10px 0}.mm .lnk{display:block;padding:10px 0 10px 14px;font-size:15.5px;color:#3d4247}.mm .lnk.all{color:var(--acc);font-weight:600}.mm .foot{margin-top:auto;padding-top:22px;display:grid;gap:12px}.mm .foot .btn{justify-content:center;padding:15px}.mm .foot .ph{font-weight:700;font-size:18px;text-align:center}.mh{position:fixed;top:0;left:0;right:0;z-index:990;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}.mh .bar{display:flex;align-items:center;gap:28px;height:76px}.mh .logo{display:flex;align-items:center;flex:0 0 auto}.mh .logo img{height:54px;width:auto;display:block}.mh nav{flex:1 1 auto}.mh .top{display:flex;gap:4px;margin:0;padding:0;list-style:none}.mh .top>li>button,.mh .top>li>a{display:flex;align-items:center;gap:7px;height:76px;padding:0 14px;background:none;border:0;font:600 15.5px Onest,sans-serif;color:var(--ink);cursor:pointer;position:relative}.mh .top>li>button::after{content:"";width:7px;height:7px;border-right:1.8px solid currentColor;border-bottom:1.8px solid currentColor;transform:rotate(45deg) translateY(-3px);transition:transform .2s}.mh .top>li>button::before{content:"";position:absolute;left:14px;right:14px;bottom:-1px;height:2px;background:var(--acc);transform:scaleX(0);transition:transform .2s}.mh .top>li.open>button,.mh .top>li>button:hover{color:var(--acc)}.mh .top>li.open>button::before{transform:scaleX(1)}.mh .top>li.open>button::after{transform:rotate(-135deg) translateY(-1px)}.mh .tools{display:flex;align-items:center;gap:14px;flex:0 0 auto}.mh .ph{font-weight:700;font-size:15.5px;white-space:nowrap}.mh .ph small{display:block;font-weight:400;font-size:12px;color:var(--mut)}.mh .ic{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);display:grid;place-items:center;background:#fff;cursor:pointer}.mh .ic:hover{border-color:var(--acc);color:var(--acc)}.mh .ic svg{width:18px;height:18px}.mh .burger{display:none}.mh .panel{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 24px 48px rgba(33,33,33,.10);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s}.mh li.open>.panel{opacity:1;visibility:visible;transform:none}.mh .pin{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;padding:32px 28px 36px;max-width:1240px;margin:0 auto}.mh .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;align-content:start}.mh .cols.c4{grid-template-columns:repeat(4,minmax(0,1fr))}.mh .cols.c2{grid-template-columns:repeat(2,minmax(0,1fr))}.mh .promo{align-self:start}.mh .col h4{margin:0 0 4px;font-size:16px;font-weight:700;line-height:1.3}.mh .col h4 a{display:inline-flex;gap:8px;align-items:baseline}.mh .col h4 a:hover{color:var(--acc)}.mh .col h4 a::before{content:"";flex:0 0 14px;height:2px;background:var(--acc);transform:translateY(-4px)}.mh .col p{margin:0 0 12px 22px;font-size:13.5px;line-height:1.45;color:var(--mut)}.mh .col ul{list-style:none;margin:0 0 0 22px;padding:0;display:grid;gap:2px}.mh .col ul a{display:flex;justify-content:space-between;gap:10px;padding:6px 10px;margin-left:-10px;border-radius:8px;font-size:14.5px;color:#3d4247}.mh .col ul a:hover{background:var(--bg);color:var(--ink)}.mh .col ul em{font-style:normal;font-size:12px;color:var(--mut);white-space:nowrap}.mh .col ul em.new{color:var(--acc);background:var(--soft);border-radius:6px;padding:1px 7px}.mh .all{grid-column:1/-1;display:flex;align-items:center;gap:10px;padding-top:18px;border-top:1px solid var(--line);font-weight:600;font-size:14.5px;color:var(--acc)}.mh .all::after{content:"→"}.mh .promo{background:var(--bg);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:10px;border:1px solid var(--line)}.mh .promo .k{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc)}.mh .promo b{font-size:20px;line-height:1.25}.mh .promo p{margin:0;font-size:14px;line-height:1.5;color:#3d4247}.mh .promo .btn{margin-top:auto;align-self:flex-start}.mh .simple{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px 24px;padding:24px 28px 28px;max-width:1240px;margin:0 auto}.mh .simple a{padding:10px 12px;border-radius:10px;font-weight:600;font-size:15px}.mh .simple a span{display:block;font-weight:400;font-size:13px;color:var(--mut);margin-top:2px}.mh .simple a:hover{background:var(--bg);color:var(--acc)}.mh-shade{position:fixed;inset:76px 0 0;background:rgba(33,33,33,.18);opacity:0;visibility:hidden;transition:.18s;z-index:980}.mh-shade.on{opacity:1;visibility:visible}@media(max-width:1180px){.mh .ph small{display:none}.mh .top>li>button,.mh .top>li>a{padding:0 10px;font-size:15px}}@media(max-width:1000px){.mh .bar{height:64px;gap:12px}.mh .logo img{height:44px}.mh nav,.mh .tools .btn,.mh .ph{display:none}.mh .tools{margin-left:auto}.mh .burger{display:grid}.mh-shade{display:none}}.mm{position:fixed;inset:64px 0 0;background:#fff;z-index:995;overflow:auto;transform:translateX(100%);transition:transform .25s;padding:8px 18px 28px;display:flex;flex-direction:column}.mm.on{transform:none}.mm details{border-bottom:1px solid var(--line)}.mm summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-weight:700;font-size:18px;cursor:pointer}.mm summary::-webkit-details-marker{display:none}.mm summary::after{content:"+";font-weight:400;font-size:24px;color:var(--acc);line-height:1}.mm details[open]>summary::after{content:"−"}.mm details details{border:0;margin-left:14px}.mm details details summary{font-size:16px;font-weight:600;padding:10px 0}.mm .lnk{display:block;padding:10px 0 10px 14px;font-size:15.5px;color:#3d4247}.mm .lnk.all{color:var(--acc);font-weight:600}.mm .foot{margin-top:auto;padding-top:22px;display:grid;gap:12px}.mm .foot .btn{justify-content:center;padding:15px}.mm .foot .ph{font-weight:700;font-size:18px;text-align:center}.mh{background:#111214;border-bottom:0;backdrop-filter:none;color:#fff}.mh .top>li>button,.mh .top>li>a{color:#e9eaec;font-weight:500}.mh .top>li.open>button,.mh .top>li>button:hover{color:var(--acc)}.mh .top>li>button::before{bottom:0}.mh .ph{color:#fff}.mh .ph small{color:#9aa0a6}.mh .ic{background:transparent;border-color:#3a3d42;color:#fff}.mh .ic:hover{border-color:var(--acc);color:var(--acc)}.mh .panel{border-top:1px solid #2a2d31;color:var(--ink)}.mh .panel h4,.mh .panel h4 a,.mh .panel .promo b,.mh .panel .promo h3,.mh .panel .promo strong{color:var(--ink)}.mh-shade{background:rgba(17,18,20,.35)}.mm{background:#111214;color:#fff}.mm details{border-bottom:1px solid #2a2d31}.mm .lnk{color:#cfd2d6}@media(max-width:1000px){.mh .in{padding:0 18px}.mh-sp{height:64px}}</style> <header class="mh" id="alsnMh"> <div class="in bar"> <a class="logo" href="/" aria-label="Аллсан Интеграция, на главную"><img src="https://static.tildacdn.com/tild6634-3863-4731-a232-653239393635/_5.png" alt="Аллсан Интеграция" width="120" height="54"></a> <nav aria-label="Основное меню"><ul class="top"><li><button type="button" aria-expanded="false" aria-controls="alsnP0">Услуги</button><div id="alsnP0" class="panel" role="region" aria-label="Услуги"><div class="pin"><div class="cols c3"><div class="col"><h4><a href="/development1c">Внедрение 1С под ключ</a></h4><p>Запуск учёта с нуля или переход на новую конфигурацию</p><ul><li><a href="/erp-time-price">1С:ERP</a></li><li><a href="/upt8">1С:Управление торговлей</a></li><li><a href="/kompleksnaya_avtomatizaciya">1С:Комплексная автоматизация</a></li><li><a href="/buhv8">1С:Бухгалтерия</a></li><li><a href="/zup8">1С:ЗУП</a></li><li><a href="/upravlenie_nashei_firmoi">1С:УНФ</a></li></ul></div><div class="col"><h4><a href="/support1c">Техническая поддержка 1С</a></h4><p>Внешний отдел 1С вместо штатного программиста</p></div><div class="col"><h4><a href="/bitrix24">Битрикс24</a></h4><p>Готовые решения и быстрое внедрение</p><ul><li><a href="/bitrix24">Внедрение Битрикс24</a></li><li><a href="/1cbitrix">Интеграция сайта с 1С и Битрикс24</a></li></ul></div></div><aside class="promo"><span class="k">Услуги</span><b>Реакция от 15 минут</b><p>Программист, аналитик и руководитель проекта на связи по вашей 1С.</p><a href="#popup:konsultacia" class="btn m">Получить консультацию</a></aside></div></div></li><li><button type="button" aria-expanded="false" aria-controls="alsnP1">Продукты</button><div id="alsnP1" class="panel" role="region" aria-label="Продукты"><div class="pin"><div class="cols c3"><div class="col"><h4><a href="/casemarketplace">Интеграция 1С с маркетплейсами</a></h4><p>Остатки, заказы и финансы Ozon и WB в 1С</p><ul><li><a href="/1c-ozon">Ozon<em>FBO, FBS, rFBS, DBS</em></a></li><li><a href="/1c-wildberries">Wildberries<em>FBO, FBS, DBS</em></a></li></ul></div><div class="col"><h4><a href="/ecom">Интеграция 1С с поставщиками B2B</a></h4><p>Цены, остатки, резерв и заказы телеком и IT-поставщиков</p></div><div class="col"><h4><a href="/telegram1c">Чат-боты 1С для мессенджеров</a></h4><p>Данные 1С в мессенджере сотрудника</p></div></div><aside class="promo"><span class="k">Продукты</span><b>Модуль 1С для Ozon и WB</b><p>40 700 ₽ за площадку, 69 990 ₽ за обе, с НДС 5%. Остатки, заказы и юнит-экономика в вашей 1С.</p><a href="/casemarketplace" class="btn m">Смотреть решение</a></aside></div></div></li><li><button type="button" aria-expanded="false" aria-controls="alsnP2">Лицензии</button><div id="alsnP2" class="panel" role="region" aria-label="Лицензии"><div class="pin"><div class="cols c2"><div class="col"><h4><a href="/products">Программы 1С</a></h4><p>Коробки, облако и договор поддержки</p><ul><li><a href="/buhv8">1С:Бухгалтерия</a></li><li><a href="/upt8">1С:Управление торговлей</a></li><li><a href="/kompleksnaya_avtomatizaciya">1С:Комплексная автоматизация</a></li><li><a href="/zup8">1С:ЗУП</a></li><li><a href="/upravlenie_nashei_firmoi">1С:УНФ</a></li><li><a href="/its">1С:КП (ИТС)</a></li><li><a href="/1cfresh">1С:Fresh</a></li><li><a href="/dokumentooborot8">1С:Документооборот</a></li><li><a href="/dopolnitelnie_licenzii">Лицензии 1С</a></li></ul></div><div class="col"><h4><a href="/bitrix24">Битрикс24</a></h4><p>Лицензии и тарифы Битрикс24</p></div></div><aside class="promo"><span class="k">Лицензии</span><b>Официальный партнёр 1С</b><p>ТОП 10 ЦРА. Подберём лицензию под задачу и сразу поможем с установкой и внедрением.</p><a href="/products" class="btn m">Подобрать лицензию</a></aside></div></div></li><li><button type="button" aria-expanded="false" aria-controls="alsnP3">Наш опыт</button><div id="alsnP3" class="panel" role="region" aria-label="Наш опыт"><div class="simple"><a href="/cases">Кейсы<span>Задача, решение и результат по проектам</span></a><a href="/clients">Отзывы<span>Письма и видеоотзывы клиентов</span></a><a href="/publication">СМИ о нас<span>Публикации и интервью</span></a></div></div></li><li><button type="button" aria-expanded="false" aria-controls="alsnP4">О компании</button><div id="alsnP4" class="panel" role="region" aria-label="О компании"><div class="simple"><a href="/about_us">О компании</a><a href="/cra">Реальная автоматизация</a><a href="/persons">Команда</a><a href="/blog">Блог</a><a href="/vacancy">Вакансии</a><a href="/internship">Для стажёров</a><a href="/contacts">Контакты</a></div></div></li></ul></nav> <div class="tools"> <div class="ph"><a href="tel:+74952600403">+7 (495) 260-04-03</a><small><a href="mailto:mail@alsn.ru">mail@alsn.ru</a></small></div> <a class="ic" href="#opensearch" aria-label="Поиск по сайту"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a> <a class="btn m" href="#popup:konsultacia">Получить консультацию</a> <button class="ic burger" type="button" aria-label="Открыть меню" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button> </div> </div> </header> <div class="mh-sp" aria-hidden="true"></div> <div class="mh-shade" id="alsnShade"></div> <div class="mm" id="alsnMm" aria-hidden="true"><details><summary>Услуги</summary><details><summary>Внедрение 1С под ключ</summary><a href="/development1c" class="lnk all">Обзор</a><a href="/erp-time-price" class="lnk">1С:ERP</a><a href="/upt8" class="lnk">1С:Управление торговлей</a><a href="/kompleksnaya_avtomatizaciya" class="lnk">1С:Комплексная автоматизация</a><a href="/buhv8" class="lnk">1С:Бухгалтерия</a><a href="/zup8" class="lnk">1С:ЗУП</a><a href="/upravlenie_nashei_firmoi" class="lnk">1С:УНФ</a></details><a href="/support1c" class="lnk">Техническая поддержка 1С</a><details><summary>Битрикс24</summary><a href="/bitrix24" class="lnk all">Обзор</a><a href="/bitrix24" class="lnk">Внедрение Битрикс24</a><a href="/1cbitrix" class="lnk">Интеграция сайта с 1С и Битрикс24</a></details></details><details><summary>Продукты</summary><details><summary>Интеграция 1С с маркетплейсами</summary><a href="/casemarketplace" class="lnk all">Обзор</a><a href="/1c-ozon" class="lnk">Ozon</a><a href="/1c-wildberries" class="lnk">Wildberries</a></details><a href="/ecom" class="lnk">Интеграция 1С с поставщиками B2B</a><a href="/telegram1c" class="lnk">Чат-боты 1С для мессенджеров</a></details><details><summary>Лицензии</summary><details><summary>Программы 1С</summary><a href="/products" class="lnk all">Обзор</a><a href="/buhv8" class="lnk">1С:Бухгалтерия</a><a href="/upt8" class="lnk">1С:Управление торговлей</a><a href="/kompleksnaya_avtomatizaciya" class="lnk">1С:Комплексная автоматизация</a><a href="/zup8" class="lnk">1С:ЗУП</a><a href="/upravlenie_nashei_firmoi" class="lnk">1С:УНФ</a><a href="/its" class="lnk">1С:КП (ИТС)</a><a href="/1cfresh" class="lnk">1С:Fresh</a><a href="/dokumentooborot8" class="lnk">1С:Документооборот</a><a href="/dopolnitelnie_licenzii" class="lnk">Лицензии 1С</a></details><a href="/bitrix24" class="lnk">Битрикс24</a></details><details><summary>Наш опыт</summary><a href="/cases" class="lnk">Кейсы</a><a href="/clients" class="lnk">Отзывы</a><a href="/publication" class="lnk">СМИ о нас</a></details><details><summary>О компании</summary><a href="/about_us" class="lnk">О компании</a><a href="/cra" class="lnk">Реальная автоматизация</a><a href="/persons" class="lnk">Команда</a><a href="/blog" class="lnk">Блог</a><a href="/vacancy" class="lnk">Вакансии</a><a href="/internship" class="lnk">Для стажёров</a><a href="/contacts" class="lnk">Контакты</a></details><div class="foot"><a class="ph" href="tel:+74952600403">+7 (495) 260-04-03</a><a class="btn m" href="#popup:konsultacia">Получить консультацию</a></div></div> <script>(function(){
+ var mh=document.getElementById('alsnMh'),shade=document.getElementById('alsnShade'),mm=document.getElementById('alsnMm');
+ var items=[].slice.call(mh.querySelectorAll('.top>li')),t=null,desk=matchMedia('(min-width:1001px)');
+ function close(){items.forEach(function(li){li.classList.remove('open');var b=li.querySelector('button');if(b)b.setAttribute('aria-expanded','false')});if(shade)shade.classList.remove('on')}
+ function open(li){close();li.classList.add('open');li.querySelector('button').setAttribute('aria-expanded','true');if(shade)shade.classList.add('on')}
+ items.forEach(function(li){
+  var b=li.querySelector('button');if(!b)return;
+  b.addEventListener('click',function(){li.classList.contains('open')?close():open(li)});
+  li.addEventListener('mouseenter',function(){if(!desk.matches)return;clearTimeout(t);t=setTimeout(function(){open(li)},120)});
+  li.addEventListener('mouseleave',function(){if(!desk.matches)return;clearTimeout(t);t=setTimeout(close,220)});
+ });
+ [].slice.call(mh.querySelectorAll('.row.has>a')).forEach(function(x){x.addEventListener('focus',function(){x.parentNode.classList.add('open')});x.parentNode.addEventListener('focusout',function(ev){if(!x.parentNode.contains(ev.relatedTarget))x.parentNode.classList.remove('open')})});
+ document.addEventListener('keydown',function(ev){if(ev.key==='Escape'){close();mm.classList.remove('on')}});
+ document.addEventListener('click',function(ev){if(!mh.contains(ev.target))close()});
+ if(shade)shade.addEventListener('click',close);
+ var bg=mh.querySelector('.burger');
+ bg.addEventListener('click',function(){mm.style.top=Math.max(0,mh.getBoundingClientRect().bottom)+'px';var on=mm.classList.toggle('on');bg.setAttribute('aria-expanded',on);mm.setAttribute('aria-hidden',!on);document.body.style.overflow=on?'hidden':''});
+})();</script> <!-- nominify end --> </div> </div> </div> </div> <div id="rec901639906" class="r t-rec" style=" " data-animationappear="off" data-record-type="985"> <!--tsearch-widget---> <!-- @classes: t-name t-name_xs t-descr t-descr_xs t-text t-input t-btn t-btn_sm --> <div class="t985" data-search-showby="20"> <div class="t985__overlay t-search-widget__overlay"> <div class="t985__widgetheader t-search-widget__header"> <div class="t985__inputcontainer t-container"> <div class="t-search-widget__inputcontainer t-col t-col_8 t-prefix_2"> <div class="t985__blockinput t-search-widget__blockinput" style=" "> <input type="text" class="t985__input t-search-widget__input t-input" placeholder="Поиск по товарам" data-search-target="s" style=""> <svg role="presentation" class="t985__search-icon t-search-widget__search-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle r="7.93388" transform="matrix(0.715639 0.698471 -0.715639 0.698471 18.5859 11.7816)" stroke-width="1.0" stroke="#b6b6b6"/> <line y1="-0.5" x2="9.17531" y2="-0.5" transform="matrix(-0.715635 0.698474 -0.715635 -0.698474 12.75 16.9609)" stroke-width="1.0" stroke="#b6b6b6"/> </svg> <div class="t985__loading-icon t-search-widget__loading"> <svg role="presentation" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M5.12544 3.27734C2.57644 5.34 0.75 8.49358 0.75 12.028C0.75 17.3825 4.49041 21.8634 9.50089 23.0004" stroke="#b6b6b6"/> <path d="M2 2.02734L5.75038 2.65241L5.12532 6.40279" stroke="#b6b6b6"/> <path d="M18.8785 20.5C21.4275 18.4373 23.2539 15.2838 23.2539 11.7493C23.2539 6.39481 19.5135 1.91392 14.503 0.776984" stroke="#b6b6b6"/> <path d="M22.0039 21.75L18.2534 21.1249L18.8785 17.3746" stroke="#b6b6b6"/> </svg> </div> <div class="t985__clear-icon t-search-widget__clear-icon"> <svg role="presentation" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.00004 10.9659L10.9999 0.999962" stroke="#565656"/> <path d="M10.9883 10.9986L1.00214 1.02924" stroke="#565656"/> </svg> </div> </div> </div> <div class="t985__close-icon t-search-widget__close-icon"> <svg role="presentation" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"/> <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"/> </svg> </div> </div> </div> </div> </div> <script>t_onReady(function() {var tildaSearchWidgetJs='https://static.tildacdn.com/js/tilda-searchwidget-';if(!document.querySelector('script[src^="https://search.tildacdn.com/static/tilda-searchwidget-"]')&&!document.querySelector('script[src^="' + tildaSearchWidgetJs + '"]')) {var script=document.createElement('script');script.src=tildaSearchWidgetJs + '1.0.min.js';script.type='text/javascript';document.body.appendChild(script);}
+var tildaSearchWidgetCss='https://static.tildacdn.com/css/tilda-searchwidget-';if(!document.querySelector('link[href^="https://search.tildacdn.com/static/tilda-searchwidget-"]')&&!document.querySelector('link[href^="' + tildaSearchWidgetCss + '"]')) {var link=document.createElement('link');link.href=tildaSearchWidgetCss + '1.0.min.css';link.rel='stylesheet';link.media='screen';document.body.appendChild(link);}});</script> <!--/tsearch-widget---> </div> <div id="rec201559064" class="r t-rec" style=" " data-animationappear="off" data-record-type="217"> <!-- t190 --> <div class="t190"> <button type="button"
+class="t190__button t190__button_circle"
+aria-label="Вернуться к началу страницы"> <svg role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="50px" height="50px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"> <g> <path style="fill:#f55823;" d="M24,3.125c11.511,0,20.875,9.364,20.875,20.875S35.511,44.875,24,44.875S3.125,35.511,3.125,24S12.489,3.125,24,3.125
+M24,0.125C10.814,0.125,0.125,10.814,0.125,24S10.814,47.875,24,47.875S47.875,37.186,47.875,24S37.186,0.125,24,0.125L24,0.125z"/> </g> <path style="fill:#f55823;" d="M25.5,36.033c0,0.828-0.671,1.5-1.5,1.5s-1.5-0.672-1.5-1.5V16.87l-7.028,7.061c-0.293,0.294-0.678,0.442-1.063,0.442
+c-0.383,0-0.766-0.146-1.058-0.437c-0.587-0.584-0.589-1.534-0.005-2.121l9.591-9.637c0.281-0.283,0.664-0.442,1.063-0.442
+c0,0,0.001,0,0.001,0c0.399,0,0.783,0.16,1.063,0.443l9.562,9.637c0.584,0.588,0.58,1.538-0.008,2.122
+c-0.589,0.583-1.538,0.58-2.121-0.008l-6.994-7.049L25.5,36.033z" /> </svg> </button> </div> <style>#rec201559064 .t190{bottom:100px;}</style> <script>t_onReady(function() {var rec=document.querySelector('#rec201559064');if(!rec) return;var wrapperBlock=rec.querySelector('.t190');if(!wrapperBlock) return;wrapperBlock.style.display='none';window.addEventListener('scroll',t_throttle(function() {if(window.pageYOffset>window.innerHeight) {if(wrapperBlock.style.display==='none') wrapperBlock.style.display='block';} else {if(wrapperBlock.style.display==='block') wrapperBlock.style.display='none';}}));t_onFuncLoad('t190_init',function() {t190_init(201559064);});});</script> </div> </header> <!--/header--> <div id="rec3989707201" class="r t-rec" style="background-color:#ffffff; " data-animationappear="off" data-record-type="131" data-bg-color="#ffffff"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"> <a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/></svg> </a> <span style="margin:0 6px;opacity:.45;" aria-hidden="true">/</span> <span style="opacity:.75;white-space:nowrap;">Внедрение 1С</span> </nav> <!-- nominify end --> </div> </div> </div> </div> <div id="rec4363614001" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <div class="v3"> <section class="hf wide"><div class="in"><div class="frame"><div class="txt"><div class="eyebrow"><span class="rails"><i></i><i></i><i></i></span>Услуга Аллсан · учёт под процессы</div><h1>Внедрение 1С <br>под <span>ключ</span></h1><p class="lead">Запускаем учёт с нуля или переводим компанию на новую конфигурацию. Обследование, настройка, обучение и запуск. Это не техподдержка и не продажа коробки.</p><div class="btns"><a class="btn m" href="#popup:konsultacia">Записаться на консультацию <span class="ar">→</span></a><a class="btn g" href="#price">Стоимость после звонка</a></div></div><div class="ph"><img src="https://optim.tildacdn.com/tild3830-3363-4031-a461-393231623362/-/format/webp/allsun-hero-vnedreni.jpg.webp" alt="Софья Мазницына, координатор департамента разработки и интеграции информационных систем, Аллсан Интеграция" fetchpriority="high"><div class="veil"></div><div class="who"><b>Софья Мазницына</b> · координатор департамента разработки и интеграции</div></div></div></div></section> <div class="day"> <div class="in"><div class="box"> <div class="lbl">Как идёт внедрение</div> <div class="track"> <div class="it"><span class="t mono">старт</span><b>Обращение</b>разбираем цели и процессы, не продаём коробку</div> <div class="it"><span class="t mono">затем</span><b>Техническое задание</b>фиксируем контур, сроки и этапы</div> <div class="it"><span class="t mono">по этапам</span><b>Оплата и работы</b>сдаём и принимаем каждый этап отдельно</div> <div class="it"><span class="t mono">у вас</span><b>Тестирование</b>проверяете с руководителем проекта Аллсан</div> <div class="it"><span class="t mono">финал этапа</span><b>Приёмка</b>акт по этапу, дальше следующий контур или запуск</div> </div> </div></div> </div> </div> <!-- nominify end --> </div> </div> </div> </div> <div id="rec4363615101" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <div class="v3"> <section class="body"> <div class="in"> <aside class="pass"> <div class="ttl">Паспорт услуги</div> <div class="price">после звонка</div> <div class="per">стоимость зависит от типа внедрения</div> <dl> <dt>Что это</dt><dd>запуск учёта под ваши процессы</dd> <dt>Конфигурации</dt><dd>УТ, УНФ, КА, ERP</dd> <dt>Для кого</dt><dd>торговля и производство</dd> <dt>Команда</dt><dd>аналитик, программист, РП</dd> <dt>Гарантия</dt><dd>90 дней</dd> <dt>География</dt><dd>вся Россия</dd> </dl> <a class="btn m" href="#popup:konsultacia">Записаться на консультацию</a> <a class="btn g" href="#price">Три типа внедрения</a> <div class="small">Проектный контур обычно 1,2-2,0 млн ₽. Консультационный и agile дешевле. Ориентир, не цена «от».</div> <div class="trust"><span>с 2015 года</span><span><a href="/cra">ТОП 10 ЦРА</a></span><span>1С:Франчайзи</span></div> </aside> <div> <div class="sec"> <div class="num"><span class="n">01</span><span class="ln"></span></div> <h2>На какие вопросы отвечает внедрение</h2> <p class="sub">Это запуск учёта, а не коробка с диска и не разовая доработка уже живой базы.</p> <div class="qpanel"> <div class="q big"> <b>Какую 1С выбрать и что будет в проекте?</b>
+      Подбираем УТ, УНФ, КА или ERP под ваши процессы. В проект входят обследование, настройка, обучение и запуск.
+      <div class="mini"> <div><span>Обследование</span><span>процессы и контур</span></div> <div><span>Настройка</span><span>под вашу торговлю или производство</span></div> <div><span>Обучение</span><span>команда начинает работать в 1С</span></div> <div><span>Запуск</span><span>учёт идёт в новой базе</span></div> <div><span>Гарантия</span><span>90 дней</span></div> </div> <a class="go" href="#cfgs">Какие конфигурации →</a> </div> <div class="q"><b>Сколько займёт и из чего цена?</b>Зависит от типа: консультационный, agile или проектный. Разберём на звонке, какой вам подходит.<a class="go" href="#price">Три типа внедрения →</a></div> <div class="q"><b>Как не остаться с недоделанной базой?</b>Сдача по этапам, резервная копия до старта, гарантия 90 дней. Ошибки по нашей работе закрываем сами.<a class="go" href="#route">Этапы →</a></div> </div> </div> <div class="sec" id="route"> <div class="num"><span class="n">02</span><span class="ln"></span></div> <h2>Как идут работы</h2> <p class="sub">Три узла проекта. Между ними нет «коробки в подарок»: сначала процессы, потом настройка, потом запуск.</p> <div class="route"> <div class="node"><div class="k">Вы</div><b>Задачи бизнеса</b><ul><li>торговля или производство</li><li>сейчас нет единой 1С</li><li>или переход на новый контур</li></ul></div> <div class="pipe"><div>обследование</div><div class="back">ТЗ и оценка</div></div> <div class="node mid"><div class="k">Команда Аллсан</div><b>Внедрение</b><ul><li>аналитик</li><li>программист 1С</li><li>руководитель проекта</li></ul></div> <div class="pipe"><div>настройка</div><div class="back">обучение</div></div> <div class="node"><div class="k">Ваша 1С</div><b>Запуск</b><ul><li>учёт в одной базе</li><li>отчёты без ручных сводов</li><li>команда работает в системе</li></ul></div> </div> </div> <div class="sec" id="cfgs"> <div class="num"><span class="n">03</span><span class="ln"></span></div> <h2>Какие конфигурации внедряем</h2> <p class="sub">Отдельные страницы - у КА и ERP. УТ и УНФ разбираем на консультации, отдельный лендинг под них не плодим.</p> <div class="extra"> <div class="ex"><b>1С:Управление торговлей и УНФ</b><p>Торговый контур: склады, заказы, цены. Если этого достаточно, не тащим компанию в ERP.</p></div> <div class="ex"><b>1С:Комплексная автоматизация</b><p>Когда нужны финансы, склад, упрощённое производство и регламентированный учёт в одном контуре.</p><a class="btn g" style="margin-top:14px" href="https://alsn.ru/kompleksnaya_avtomatizaciya">Смотреть решение</a></div> <div class="ex"><b>1С:ERP</b><p>Производство и сложные процессы. Стоимость и шесть этапов проекта - на отдельной странице.</p><a class="btn g" style="margin-top:14px" href="https://alsn.ru/erp-time-price">Смотреть стоимость ERP</a></div> </div> </div> <div class="sec"> <div class="num"><span class="n">04</span><span class="ln"></span></div> <h2>Как принимаем работу</h2> <p class="sub">Без чужих цифр и чужих видео. Здесь то, что уже закреплено на странице внедрения.</p> <div class="fit"> <div><b>Оплата по этапам</b><p>Не просим закрыть весь проект заранее. Сдача и оплата идут по согласованным этапам.</p></div> <div><b>Резервная копия и гарантия</b><p>До работ снимаем копию базы. Гарантия 90 дней: ошибки по нашей работе чиним бесплатно.</p></div> <div><b>NDA</b><p>Данные клиента не «на честном слове». С каждым договором подписываем соглашение о неразглашении.</p></div> </div> <p class="cmpnote">Примеры работ и письма клиентов - на странице <a href="https://alsn.ru/cases" style="color:var(--acc)">кейсов</a>.</p> </div> <div class="sec"> <div class="num"><span class="n">05</span><span class="ln"></span></div> <h2>Кому подходит</h2> <div class="fit"> <div><b>Торговля и производство</b><p>Юрлица с выручкой от 500 млн ₽ в год. Нужна одна 1С вместо разрозненного учёта.</p></div> <div><b>Переход на новый контур</b><p>УТ, КА или ERP вместо старой базы или нескольких программ. Коробку «как есть» не ставим.</p></div> <div><b>Нужны отчёты без ручной сводки</b><p>Собственник, финдиректор, главбух или ИТ-директор хотят видеть прибыль и остатки без Excel.</p></div> </div> <p class="cmpnote">База уже работает и нужна точечная доработка? Это другой запрос, не этот проект. После запуска учёта сопровождение - на странице <a href="https://alsn.ru/support1c" style="color:var(--acc)">техподдержки 1С</a>.</p> </div> <div class="sec"> <div class="num"><span class="n">06</span><span class="ln"></span></div> <h2>Кто внедряет 1С</h2> <p class="sub">Координатор проекта, аналитики, программисты 1С и руководители проектов Аллсан.</p> <div class="team"> <div class="pp"><img src="https://static.tildacdn.com/tild3433-6363-4436-b733-666266646164/Group_103.png" alt="Сергей Львов, основатель, управляющий партнёр, аналитик 1С, Аллсан Интеграция" loading="lazy"><div><b>Сергей Львов</b>основатель, управляющий партнёр, аналитик 1С</div></div> <div class="pp"><img src="https://static.tildacdn.com/tild6535-3462-4235-a238-626561623233/Group_104.png" alt="Павел Агеев, программист 1С, руководитель проектов, техподдержка, Аллсан Интеграция" loading="lazy"><div><b>Павел Агеев</b>программист 1С, руководитель проектов, техподдержка</div></div> <div class="pp"><img src="https://static.tildacdn.com/tild3735-6532-4732-a263-613661383062/Group_105.png" alt="Никита Соколов, программист 1С, Аллсан Интеграция" loading="lazy"><div><b>Никита Соколов</b>программист 1С</div></div> <div class="pp"><img src="https://static.tildacdn.com/tild3362-3838-4938-a161-623235383761/Group_100.png" alt="Энрико Айвазян, программист 1С, руководитель проектов, Аллсан Интеграция" loading="lazy"><div><b>Энрико Айвазян</b>программист 1С, руководитель проектов</div></div> <div class="pp"><img src="https://static.tildacdn.com/tild3138-6561-4865-b439-383366386535/Group_101.png" alt="Ирина Щеглова, руководитель проектов, аналитик, Аллсан Интеграция" loading="lazy"><div><b>Ирина Щеглова</b>руководитель проектов, аналитик</div></div> <div class="pp"><img src="https://static.tildacdn.com/tild3537-6632-4736-b639-616236646639/Group_102.png" alt="Евгений Анастасьев, руководитель проектов, программист 1С, Аллсан Интеграция" loading="lazy"><div><b>Евгений Анастасьев</b>руководитель проектов, программист 1С</div></div> <div class="pp"><img src="https://static.tildacdn.com/tild6131-3734-4132-a164-373364303931/Group_99.png" alt="Роман Заболотный, руководитель проектов, Аллсан Интеграция" loading="lazy"><div><b>Роман Заболотный</b>руководитель проектов</div></div> </div> </div> <div class="sec" id="price"> <div class="num"><span class="n">07</span><span class="ln"></span></div> <h2>Три типа внедрения</h2> <p class="sub">От самого доступного к самому предсказуемому. Какой подойдёт и сколько это будет стоить - скажем после звонка.</p> <div class="prices three"> <div class="pc"><div class="nm">Консультационное</div><div class="p">доступный</div><div class="s">самый недорогой тип</div> <ul><li>Вы сами внедряете нужную 1С</li><li>Покупаете у нас техподдержку</li><li>Вопросы задаёте по ходу, мы отвечаем быстро</li></ul> <a class="btn g" href="https://alsn.ru/support1c">Смотреть техподдержку</a></div> <div class="pc"><div class="nm">Agile</div><div class="p">средний</div><div class="s">шагами, через MVP</div> <ul><li>Каждый раз делаем рабочий кусок, который уже можно запускать</li><li>По этому куску внедряем и делаем следующий шаг</li><li>Система растёт итерациями, без одного огромного ТЗ сразу</li></ul> <a class="btn g" href="#popup:konsultacia">Записаться на консультацию</a></div> <div class="pc a"><span class="badge">предсказуемый</span><div class="nm">Проектное</div><div class="p">по смете</div><div class="s">самый дорогой тип</div> <ul><li>Сначала пишем один большой проект</li><li>Потом внедряем строго по нему</li><li>Стоимость известна заранее, сюрпризов меньше</li></ul> <a class="btn m" href="#popup:konsultacia">Записаться на консультацию</a></div> </div> <p class="note">Проектный контур обычно 1,2-2,0 млн ₽. Это средний чек проектного внедрения, не цена консультационного или agile и не цена «от».</p> <div class="extra-h">Полезные страницы по внедрению 1С</div> <div class="extra"><div class="ex"><b>Внедрение 1С:Комплексная автоматизация</b><p>Отдельная страница по КА: состав, вопросы и сравнение с ERP.</p><a class="btn g" style="margin-top:14px" href="https://alsn.ru/kompleksnaya_avtomatizaciya">Открыть страницу</a></div><div class="ex"><b>Стоимость и этапы внедрения 1С:ERP</b><p>Шесть этапов проекта и из чего складывается стоимость.</p><a class="btn g" style="margin-top:14px" href="https://alsn.ru/erp-time-price">Открыть страницу</a></div><div class="ex"><b>Техподдержка 1С после запуска</b><p>Когда учёт уже идёт и нужен внешний отдел, а не новый проект.</p><a class="btn g" style="margin-top:14px" href="https://alsn.ru/support1c">Открыть страницу</a></div><div class="ex"><b>1С:КП - подписка на сопровождение от 1С</b><p>Официальная подписка 1С, отдельно от внедрения.</p><a class="btn g" style="margin-top:14px" href="https://alsn.ru/its">Открыть страницу</a></div><div class="ex"><b>Кейсы внедрения и автоматизации</b><p>Письма и примеры работ, без чужих цифр на этой странице.</p><a class="btn g" style="margin-top:14px" href="https://alsn.ru/cases">Открыть страницу</a></div></div> </div> <div class="sec faq" style="margin-bottom:40px"> <div class="num"><span class="n">08</span><span class="ln"></span></div> <h2>Частые вопросы</h2> <details open><summary>Что если я оплачу, а решение меня не устроит?</summary><p>Перед началом проекта разбираем задачу и пишем ТЗ, обсуждаем варианты и приходим к общему решению. Работы доводим до конца, ошибки исправляем. Гарантия 90 дней: в этот срок бесплатно устраним ошибки.</p></details> <details><summary>Вдруг после вас в 1С появятся проблемы?</summary><p>До начала работ делаем резервную копию. Если возникнут ошибки по нашей работе, устраним их сами и бесплатно.</p></details> <details><summary>Мы в разных регионах. Как будем решать сложности?</summary><p>Проект делится на этапы: оплата и сдача идут по этапам. Можно связаться с нашими заказчиками и получить рекомендации.</p></details> <details><summary>Как вы защищаете данные клиента?</summary><p>С каждым клиентом подписываем NDA.</p></details> <details><summary>Какие конфигурации 1С внедряете?</summary><p>1С:Управление торговлей, 1С:Управление нашей фирмой, 1С:Комплексная автоматизация и 1С:ERP. Подбираем контур под процессы, а не продаём коробку.</p></details> <details><summary>Сколько стоит внедрение?</summary><p>Есть три типа: консультационный, agile и проектный. Цифру считаем после звонка. Консультационный - самый доступный: вы внедряете сами, мы отвечаем на вопросы по договору поддержки. Agile - средний: идём шагами через рабочие куски. Проектный - самый дорогой, зато смета известна заранее. Типичный проектный контур - 1,2-2,0 млн ₽. Это ориентир, не оферта.</p></details> <details><summary>Чем внедрение отличается от доработки?</summary><p>Внедрение - запуск учёта с нуля или переход на новую конфигурацию. Доработка - точечные работы в уже работающей базе. Если база уже стоит, это другой запрос.</p></details> <details><summary>Сколько длится проект?</summary><p>Срок зависит от контура и готовности команды на вашей стороне. Работа идёт этапами: обращение и анализ, ТЗ, согласование стоимости, реализация, тестирование у вас, приёмка этапа.</p></details> </div> </div> </div> </section> </div> <script>
+(function(){
+function showTab(i){
+ document.querySelectorAll('.v3 .tabs button').forEach(function(x,k){x.classList.toggle('on',k===i)});
+ document.querySelectorAll('.v3 .pane').forEach(function(x,k){x.classList.toggle('on',k===i)});
+}
+document.querySelectorAll('.v3 .tabs button').forEach(function(b){b.addEventListener('click',function(){showTab(+b.dataset.t)})});
+document.querySelectorAll('.v3 a[data-tab]').forEach(function(a){a.addEventListener('click',function(e){
+ e.preventDefault();e.stopPropagation();
+ showTab(+a.dataset.tab);
+ var t=document.getElementById('reports');
+ window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-20,behavior:'smooth'});
+})});
+document.querySelectorAll('.v3 [data-zoom]').forEach(function(a){a.addEventListener('click',function(e){
+ e.preventDefault();
+ var d=document.createElement('div');d.className='lb';d.innerHTML='<img src="'+a.getAttribute('href')+'" alt="">';
+ d.addEventListener('click',function(){d.remove()});document.body.appendChild(d);
+})});
+})();
+</script> <!-- nominify end --> </div> </div> </div> </div> <div id="rec4363616501" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <div class="v3"> <section class="final"> <div class="in"> <div><h2>Разберём, какой контур 1С вам нужен</h2><p>Созвонимся, посмотрим процессы и скажем, это УТ, КА или ERP и из чего сложится проект.</p><div class="ph">+7 495 260-04-03</div></div> <a class="btn m" href="#popup:konsultacia">Записаться на консультацию <span class="ar">→</span></a> </div> </section> </div> <!-- nominify end --> </div> </div> </div> </div> <!--footer--> <footer id="t-footer" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="163322" data-tilda-page-id="7759938" data-tilda-page-alias="footer" data-tilda-formskey="475ac88a6e5b7ea49ac28c9e57a198ba" data-tilda-lazy="yes" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-project-country="RU"> <div id="rec4363360101" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- alsn.ru: общий подвал v3 (tilda-footer-v3). Всё в одном T123 на странице Footer. --> <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <style>.mf{--bg:#F7F8FA;--acc:#F55823;--ink:#212121;--line:#D7DADD;--mut:#6b7075;font-family:Onest,system-ui,sans-serif;background:#111214;color:#cfd2d6}.mf,.mf *{box-sizing:border-box}.mf a{color:inherit;text-decoration:none}.mf .in{max-width:1240px;margin:0 auto;padding:0 28px}.mf .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:15px;white-space:nowrap;border:0;cursor:pointer;font-family:inherit;background:var(--acc);color:#fff}.mf .btn:hover{background:#e04c1a}.mf .top{display:grid;grid-template-columns:300px minmax(0,1fr);gap:56px;padding:64px 0 48px}.mf .brand img{height:54px;width:auto;display:block;margin-bottom:18px}.mf .brand p{margin:0 0 20px;font-size:14.5px;line-height:1.55;color:#9aa0a6;max-width:280px}.mf .ph{display:block;font-weight:700;font-size:22px;color:#fff;margin-bottom:4px}.mf .ml{display:inline-block;font-size:15px;color:#e9eaec;margin-bottom:12px}.mf .ml:hover,.mf .ph:hover{color:var(--acc)}.mf address{font-style:normal;font-size:14px;line-height:1.5;color:#9aa0a6;margin-bottom:22px}.mf .brand .btn{margin-bottom:24px}.mf .soc{display:flex;flex-wrap:wrap;gap:8px}.mf .soc a{padding:7px 12px;border:1px solid #3a3d42;border-radius:10px;font-size:13.5px;font-weight:500;color:#e9eaec}.mf .soc a:hover{border-color:var(--acc);color:var(--acc)}.mf .cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}.mf .col h3{margin:0 0 16px;display:flex;align-items:center;gap:8px;font-size:15px;font-weight:700;color:#fff}.mf .col h3::before{content:"";width:14px;height:2px;background:var(--acc)}.mf .col ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}.mf .col li a{font-size:14.5px;line-height:1.4;color:#cfd2d6}.mf .col li a:hover{color:var(--acc)}.mf .col li.all a{color:var(--acc);font-weight:600}.mf .trust{display:flex;flex-wrap:wrap;gap:10px;padding:22px 0;border-top:1px solid #2a2d31}.mf .trust span{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:#e9eaec}.mf .trust span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--acc)}.mf .trust span+span{margin-left:14px}.mf .trust a{text-decoration:underline;text-decoration-color:#3a3d42;text-underline-offset:3px}.mf .trust a:hover{color:var(--acc);text-decoration-color:var(--acc)}.mf .bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px;padding:20px 0 28px;border-top:1px solid #2a2d31;font-size:13px;color:#8a8f95}.mf .bot nav{display:flex;flex-wrap:wrap;gap:8px 24px}.mf .bot a:hover{color:#fff}.mf .right{min-width:0}.mf .rq{border-top:1px solid #2a2d31;padding:14px 0}.mf .rq summary{list-style:none;display:flex;align-items:center;gap:8px 18px;flex-wrap:wrap;cursor:pointer;font-size:13.5px;color:#9aa0a6}.mf .rq summary::-webkit-details-marker{display:none}.mf .rq .sh{font-variant-numeric:tabular-nums}.mf .rq .tg{display:inline-flex;align-items:center;gap:6px;color:var(--acc);font-weight:600}.mf .rq .tg::after{content:"";width:6px;height:6px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s}.mf .rq[open] .tg::after{transform:rotate(-135deg) translateY(-1px)}.mf .cp{margin-left:auto;padding:6px 12px;border-radius:9px;border:1px solid #3a3d42;background:transparent;color:#e9eaec;font:500 13px Onest,sans-serif;cursor:pointer}.mf .cp:hover,.mf .cp.ok{border-color:var(--acc);color:var(--acc)}.mf .rq dl{margin:14px 0 4px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px 24px}.mf .rq dl>div{min-width:0}.mf .rq dl>div.w{grid-column:span 2}.mf .rq dt{font-size:12px;color:#8a8f95;margin-bottom:2px}.mf .rq dd{margin:0;font-size:13px;line-height:1.4;color:#e9eaec;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.mf .req{padding:0 0 28px;font-size:12.5px;line-height:1.55;color:#6f757b;max-width:980px}.mf .req a:hover{color:#fff}.mf .srch{display:flex;align-items:center;gap:12px;height:52px;padding:0 8px 0 18px;margin:0 0 8px;border:1px solid #3a3d42;border-radius:14px;color:#9aa0a6;font-size:15px;margin-bottom:32px}.mf .srch svg{width:18px;height:18px;flex:0 0 auto}.mf .srch span{flex:1 1 auto}.mf .srch b{padding:9px 16px;border-radius:10px;background:#1d1f22;color:#e9eaec;font-weight:600;font-size:14px}.mf .srch:hover{border-color:var(--acc)}.mf .srch:hover b{background:var(--acc);color:#fff}.mf .band{background:#fff;color:var(--ink);border-top:1px solid var(--line)}.mf .band .grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:40px;padding:64px 0}.mf .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}.mf .rails{display:flex;flex-direction:column;gap:4px}.mf .rails i{display:block;height:2px;width:22px;background:var(--acc);border-radius:2px}.mf .band h2{margin:0 0 24px;font-size:32px;line-height:1.15;font-weight:800;letter-spacing:-.02em;color:var(--ink)}.mf .logos{border:1px solid var(--line);border-radius:22px;padding:20px 24px;background:#fff}.mf .logos img{display:block;width:100%;height:auto}.mf .more{display:inline-flex;gap:8px;margin-top:16px;font-weight:600;font-size:15px;color:var(--acc)}.mf .more::after{content:"→"}.mf .certs{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:14px}.mf .certs h3{margin:0;font-size:20px;line-height:1.25;font-weight:800;color:var(--ink)}.mf .certs p{margin:0;font-size:14px;line-height:1.5;color:#3d4247}.mf .scans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.mf .scan{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px;position:relative}.mf .scan img{display:block;width:100%;height:auto;border-radius:6px}.mf .scan span{display:block;margin-top:8px;font-size:12.5px;font-weight:600;color:var(--ink);text-align:center}.mf .scan:hover{border-color:var(--acc)}.mf .certs .small{font-size:12.5px;color:var(--mut)}.mf-lb{position:fixed;inset:0;z-index:1000;background:rgba(17,18,20,.88);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}.mf-lb.on{display:flex}.mf-lb img{max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.4)}.mf-lb button{position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:12px;border:1px solid #3a3d42;background:#111214;color:#fff;font-size:22px;cursor:pointer}@media(max-width:1180px){.mf .band .grid{grid-template-columns:minmax(0,1fr) 320px}}@media(max-width:1180px){.mf .top{grid-template-columns:260px minmax(0,1fr);gap:40px}.mf .cols{gap:24px}}@media(max-width:1000px){.mf .in{padding:0 18px}.mf .top{grid-template-columns:minmax(0,1fr);gap:8px;padding:44px 0 24px}.mf .brand{padding-bottom:28px;border-bottom:1px solid #2a2d31}.mf .brand img{height:44px}.mf .brand .btn{display:flex;justify-content:center;width:100%;padding:15px}.mf .cols{grid-template-columns:minmax(0,1fr);gap:0}.mf .col{border-bottom:1px solid #2a2d31;min-width:0}.mf .col details summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:16px 0;cursor:pointer}.mf .col details summary::-webkit-details-marker{display:none}.mf .col details summary::after{content:"+";font-size:24px;line-height:1;color:var(--acc)}.mf .col details[open] summary::after{content:"−"}.mf .col h3{margin:0;font-size:17px}.mf .col ul{padding:0 0 18px 22px}.mf .trust{flex-direction:column;gap:10px}.mf .trust span+span{margin-left:0}.mf .bot{flex-direction:column}.mf .band .grid{grid-template-columns:minmax(0,1fr);gap:28px;padding:44px 0}.mf .band h2{font-size:26px}.mf .logos{padding:14px}.mf .srch b{display:none}.mf .rq{padding:14px 0}.mf .rq .sh{flex:1 1 100%}.mf .rq dl{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px}}@media(min-width:1001px){.mf .col details>summary{pointer-events:none;list-style:none}.mf .col details>summary::-webkit-details-marker{display:none}}</style> <footer class="mf" id="alsnMf"> <div class="band"><div class="in grid"> <div class="cl"> <div class="eyebrow"><span class="rails"><i></i><i></i><i></i></span>Наши клиенты</div> <h2>С нами работают торговые, производственные и IT-компании</h2> <div class="logos"><picture><source media="(max-width:480px)" srcset="https://static.tildacdn.com/tild3364-3436-4061-b165-623335386363/alsn-clients-vertica.jpg"> <img src="https://static.tildacdn.com/tild6137-6133-4463-b034-623136346261/--.jpg" alt="Клиенты Аллсан: Татнефть, X-Com, Артис, Merlion, Норникель, ЛАНИТ, GoodWood, ПЭК, Импульс Телеком, Сокол, Атомспецтранс, Армтек, Brigo, Simon, Rapart" width="1680" height="525" loading="lazy"></picture></div> <a class="more" href="/clients">Отзывы клиентов</a> </div> <aside class="certs"> <div class="eyebrow" style="margin:0"><span class="rails"><i></i><i></i><i></i></span>Сертификаты</div> <h3>Сертификат ISO 27001</h3> <p>ГОСТ Р ИСО/МЭК 27001-2021 (ISO/IEC 27001:2013), разработка компьютерного программного обеспечения.</p> <div class="scans"><a class="scan" href="https://static.tildacdn.com/tild3735-3836-4238-b866-616161303866/---ISO_pages-to-jpg-.jpg" data-zoom><img src="https://thb.tildacdn.com/tild3735-3836-4238-b866-616161303866/-/resize/360x/---ISO_pages-to-jpg-.jpg" alt="Сертификат соответствия ГОСТ Р ИСО/МЭК 27001-2021 ООО «Аллсан Интеграция», № РОСС RU.32001.04ИБФ1.ОС44.73354" width="360" height="509" loading="lazy"><span>Сертификат соответствия</span></a><a class="scan" href="https://static.tildacdn.com/tild3135-3535-4039-b633-363130313362/---ISO_pages-to-jpg-.jpg" data-zoom><img src="https://thb.tildacdn.com/tild3135-3535-4039-b633-363130313362/-/resize/360x/---ISO_pages-to-jpg-.jpg" alt="Разрешение на применение знака соответствия «ПромТехСтандарт» ООО «Аллсан Интеграция», № РОСС RU.32001.04ИБФ1.ОС44.73354Р" width="360" height="509" loading="lazy"><span>Разрешение на знак</span></a></div> <span class="small">Действует до 30.03.2028. Нажмите, чтобы открыть скан.</span> </aside> </div></div> <div class="in"> <div class="top"> <div class="brand"> <a href="/" aria-label="Аллсан Интеграция, на главную"><img src="https://static.tildacdn.com/tild6634-3863-4731-a232-653239393635/_5.png" alt="Аллсан Интеграция" width="120" height="54"></a> <p>Внедряем, дорабатываем и сопровождаем 1С. Делаем свои модули для Ozon, Wildberries и поставщиков телеком и IT.</p> <a class="ph" href="tel:+74952600403">+7 (495) 260-04-03</a> <a class="ml" href="mailto:mail@alsn.ru">mail@alsn.ru</a> <address>Москва, Зеленоград, ул. Юности, д. 8, комната 503</address> <a class="btn" href="#popup:konsultacia">Получить консультацию</a> <div class="soc"><a href="https://vk.com/allsun_int" target="_blank" rel="noopener">VK</a><a href="https://t.me/alsnint" target="_blank" rel="noopener">Telegram</a><a href="https://www.youtube.com/channel/UC8cpwuRWOL9W6CTi8WubM1w" target="_blank" rel="noopener">YouTube</a></div> </div> <div class="right"><a class="srch" href="#opensearch" aria-label="Поиск по сайту"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Поиск по сайту</span><b>Найти</b></a> <nav class="cols" aria-label="Разделы сайта"><div class="col"><details open><summary><h3>Услуги</h3></summary><ul><li><a href="/development1c">Внедрение 1С</a></li><li><a href="/support1c">Техническая поддержка 1С</a></li><li><a href="/bitrix24">Битрикс24</a></li><li><a href="/1cbitrix">Интеграция сайта с 1С и Битрикс24</a></li></ul></details></div><div class="col"><details open><summary><h3>Продукты</h3></summary><ul><li><a href="/casemarketplace">Модуль 1С для маркетплейсов</a></li><li><a href="/1c-ozon">Интеграция 1С с Ozon</a></li><li><a href="/1c-wildberries">Интеграция 1С с Wildberries</a></li><li><a href="/ecom">Интеграция с поставщиками</a></li><li><a href="/telegram1c">Чат-боты 1С</a></li></ul></details></div><div class="col"><details open><summary><h3>Лицензии</h3></summary><ul><li><a href="/products">Программы 1С</a></li><li><a href="/its">1С:КП (ИТС)</a></li><li><a href="/1cfresh">1С:Fresh</a></li><li><a href="/dokumentooborot8">1С:Документооборот</a></li><li><a href="/dopolnitelnie_licenzii">Лицензии 1С</a></li><li><a href="/bitrix24">Битрикс24</a></li></ul></details></div><div class="col"><details open><summary><h3>Компания</h3></summary><ul><li><a href="/about_us">О компании</a></li><li><a href="/cases">Кейсы</a></li><li><a href="/clients">Отзывы</a></li><li><a href="/persons">Команда</a></li><li><a href="/cra">Реальная автоматизация, ТОП 10 ЦРА</a></li><li><a href="/publication">СМИ о нас</a></li><li><a href="/blog">Блог</a></li><li><a href="/vacancy">Вакансии</a></li><li><a href="/internship">Для стажёров</a></li><li><a href="/contacts">Контакты</a></li></ul></details></div></nav></div> </div> <details class="rq"><summary><span class="sh">ООО «Аллсан Интеграция» · ОГРН 1187746742611 · ИНН 7735178314 · КПП 773501001</span><span class="tg">Все реквизиты</span><button type="button" class="cp" data-copy="Компания: ООО «Аллсан Интеграция»
+Генеральный директор: Львов С. А.
+ОГРН: 1187746742611
+ИНН: 7735178314
+КПП: 773501001
+Юридический адрес: 124536, г. Москва, вн. тер. г. муниципальный округ Савелки, г. Зеленоград, ул. Юности, д. 8, помещ. 1/5
+Банк: Московский филиал АО КБ «Модульбанк»
+БИК: 044525092
+Корр. счёт: 30101810645250000092
+Расчётный счёт: 40702810170010086510">Скопировать</button></summary><dl><div class=""><dt>Компания</dt><dd>ООО «Аллсан Интеграция»</dd></div><div class=""><dt>Генеральный директор</dt><dd>Львов С. А.</dd></div><div class=""><dt>ОГРН</dt><dd>1187746742611</dd></div><div class=""><dt>ИНН</dt><dd>7735178314</dd></div><div class=""><dt>КПП</dt><dd>773501001</dd></div><div class="w"><dt>Юридический адрес</dt><dd>124536, г. Москва, вн. тер. г. муниципальный округ Савелки, г. Зеленоград, ул. Юности, д. 8, помещ. 1/5</dd></div><div class=""><dt>Банк</dt><dd>Московский филиал АО КБ «Модульбанк»</dd></div><div class=""><dt>БИК</dt><dd>044525092</dd></div><div class=""><dt>Корр. счёт</dt><dd>30101810645250000092</dd></div><div class=""><dt>Расчётный счёт</dt><dd>40702810170010086510</dd></div></dl></details> <div class="trust"><span>Работаем с 2015 года</span><span><a href="/cra">ТОП 10 ЦРА</a></span><span>1С:Франчайзи</span></div> <div class="bot"><span>© 2015-2026 ООО «Аллсан Интеграция»</span><nav aria-label="Документы"><a href="/privacy">Политика обработки персональных данных</a><a href="/sitemap">Карта сайта</a></nav></div> <p class="req">Телефон для регионов <a href="tel:88002600403">8 (800) 260-04-03</a>. Информация на сайте носит справочный характер и не является публичной офертой. Использование материалов сайта запрещено.</p> </div> <div class="mf-lb" id="alsnMfLb" role="dialog" aria-label="Скан сертификата"><button type="button" aria-label="Закрыть">×</button><img alt=""></div> </footer> <script>(function(){var q=window.matchMedia('(min-width:1001px)');
+function sync(){document.querySelectorAll('#alsnMf .col details').forEach(function(d){d.open=q.matches;});}
+sync();(q.addEventListener?q.addEventListener('change',sync):q.addListener(sync));
+var lb=document.getElementById('alsnMfLb'),im=lb.querySelector('img');
+function close(){lb.classList.remove('on');im.removeAttribute('src');}
+document.querySelectorAll('#alsnMf [data-zoom]').forEach(function(a){a.addEventListener('click',function(ev){
+ev.preventDefault();im.src=a.href;im.alt=a.querySelector('img').alt;lb.classList.add('on');});});
+lb.addEventListener('click',close);
+document.querySelectorAll('#alsnMf .cp').forEach(function(b){b.addEventListener('click',function(ev){
+ev.preventDefault();ev.stopPropagation();var t=b.getAttribute('data-copy'),l=b.textContent;
+function done(){b.textContent='Скопировано';b.classList.add('ok');setTimeout(function(){b.textContent=l;b.classList.remove('ok');},1800);}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done);}
+else{var x=document.createElement('textarea');x.value=t;document.body.appendChild(x);x.select();document.execCommand('copy');x.remove();done();}});});
+document.addEventListener('keydown',function(ev){if(ev.key==='Escape')close();});})();</script> <!-- nominify end --> </div> </div> </div> </div> <div id="rec855302703" class="r t-rec" style=" " data-animationappear="off" data-record-type="702"> <!-- T702 --> <div class="t702"> <div
+class="t-popup" data-tooltip-hook="#popup:call" data-track-popup='/tilda/popup/rec855302703/opened' role="dialog"
+aria-modal="true"
+tabindex="-1"
+aria-label="Оставьте свой телефон"> <div class="t-popup__close t-popup__block-close"> <button
+type="button"
+class="t-popup__close-wrapper t-popup__block-close-button"
+aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg> </button> </div> <style>@media screen and (max-width:560px){#rec855302703 .t-popup__close-icon g{fill:#ffffff !important;}}</style> <div class="t-popup__container t-width t-width_6" data-popup-type="702"> <div class="t702__wrapper"> <div class="t702__text-wrapper t-align_center"> <div class="t702__title t-title t-title_xxs" id="popuptitle_855302703">Оставьте свой телефон</div> </div> <form
+id="form855302703" name='form855302703' role="form" action='' method='POST' data-formactiontype="2" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_3 t-form_bbonly" data-success-callback="t702_onSuccess"> <input type="hidden" name="formservices[]" value="eddabc9b2ce97bcfae61ece84354f875" class="js-formaction-services"> <input type="hidden" name="formservices[]" value="0844a0c441050bee0f51501e119cb813" class="js-formaction-services"> <input type="hidden" name="formservices[]" value="cdda4ce390a885a9d9296a7464015f88" class="js-formaction-services"> <input type="hidden" name="tildaspec-formname" tabindex="-1" value="#popup:call"> <!-- @classes t-title t-text t-btn --> <div class="js-successbox t-form__successbox t-text t-text_md"
+aria-live="polite"
+style="display:none;"></div> <div
+class="t-form__inputsbox
+t-form__inputsbox_vertical-form t-form__inputsbox_inrow
+"> <div
+class="t-input-group t-input-group_nm " data-input-lid="1495810359387" data-field-type="nm" data-field-name="Name"> <div class="t-input-block "> <input
+type="text"
+autocomplete="name"
+name="Name"
+id="input_1495810359387"
+class="t-input js-tilda-rule t-input_bbonly"
+value=""
+placeholder="Ваше имя" data-tilda-req="1" aria-required="true" data-tilda-rule="name"
+aria-describedby="error_1495810359387"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> </div> <div class="t-input-error" aria-live="polite" id="error_1495810359387"></div> </div> <div
+class="t-input-group t-input-group_ph " data-input-lid="1495810354468" data-field-async="true" data-field-type="ph" data-field-name="Phone"> <div class="t-input-block "> <input
+type="tel"
+autocomplete="tel"
+name="Phone"
+id="input_1495810354468" data-phonemask-init="no" data-phonemask-id="855302703" data-phonemask-lid="1495810354468" data-phonemask-maskcountry="RU" class="t-input js-phonemask-input js-tilda-rule t-input_bbonly"
+value=""
+placeholder="+1(000)000-0000" data-tilda-req="1" aria-required="true" aria-describedby="error_1495810354468"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> <script type="text/javascript">t_onReady(function() {t_onFuncLoad('t_loadJsFile',function() {t_loadJsFile('https://static.tildacdn.com/js/tilda-phone-mask-1.1.min.js',function() {t_onFuncLoad('t_form_phonemask_load',function() {var phoneMasks=document.querySelectorAll('#rec855302703 [data-phonemask-lid="1495810354468"]');t_form_phonemask_load(phoneMasks);});})})});</script> </div> <div class="t-input-error" aria-live="polite" id="error_1495810354468"></div> </div> <div
+class="t-input-group t-input-group_em " data-input-lid="1761987379621" data-field-type="em" data-field-name="Email"> <label
+for='input_1761987379621'
+class="t-input-title t-descr t-descr_md"
+id="field-title_1761987379621" data-redactor-toolbar="no"
+field="li_title__1761987379621"
+style="color:;">Email* (если вдруг не дозвонимся)</label> <div class="t-input-block "> <input
+type="email"
+autocomplete="email"
+name="Email"
+id="input_1761987379621"
+class="t-input js-tilda-rule t-input_bbonly"
+value="" data-tilda-req="1" aria-required="true" data-tilda-rule="email"
+aria-describedby="error_1761987379621"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> </div> <div class="t-input-error" aria-live="polite" id="error_1761987379621"></div> </div> <div class="t-form__errorbox-middle"> <!--noindex--> <div
+class="js-errorbox-all t-form__errorbox-wrapper"
+style="display:none;" data-nosnippet
+tabindex="-1"
+aria-label="Ошибки при заполнении формы"> <ul
+role="list"
+class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> <div class="t-form__submit"> <button
+class="t-submit t-btnflex t-btnflex_type_submit t-btnflex_md"
+type="submit"><span class="t-btnflex__text">Отправить</span> <style>#rec855302703 .t-btnflex.t-btnflex_type_submit{color:#ffffff;background-color:#f55823;--border-width:0px;border-style:none !important;border-radius:3px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;}</style></button> </div> </div> <div class="t-form__errorbox-bottom"> <!--noindex--> <div
+class="js-errorbox-all t-form__errorbox-wrapper"
+style="display:none;" data-nosnippet
+tabindex="-1"
+aria-label="Ошибки при заполнении формы"> <ul
+role="list"
+class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> </form> <style>#rec855302703 input::-webkit-input-placeholder{color:#000000;opacity:0.5;}#rec855302703 input::-moz-placeholder{color:#000000;opacity:0.5;}#rec855302703 input:-moz-placeholder{color:#000000;opacity:0.5;}#rec855302703 input:-ms-input-placeholder{color:#000000;opacity:0.5;}#rec855302703 textarea::-webkit-input-placeholder{color:#000000;opacity:0.5;}#rec855302703 textarea::-moz-placeholder{color:#000000;opacity:0.5;}#rec855302703 textarea:-moz-placeholder{color:#000000;opacity:0.5;}#rec855302703 textarea:-ms-input-placeholder{color:#000000;opacity:0.5;}</style> <div class="t702__form-bottom-text t-text t-text_xs t-align_center">Нажимая на кнопку, вы даете согласие на <a href="https://alsn.ru/privacy" target="_blank" rel="noreferrer noopener">обработку персональных данных</a>.</div> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t702_initPopup',function() {t702_initPopup('855302703');});});</script> <style>#rec855302703 .t702__title{color:#f55823;}</style> </div> <div id="rec855355208" class="r t-rec" style=" " data-animationappear="off" data-record-type="702"> <!-- T702 --> <div class="t702"> <div
+class="t-popup" data-tooltip-hook="#popup:zvonok" data-track-popup='/tilda/popup/rec855355208/opened' role="dialog"
+aria-modal="true"
+tabindex="-1"
+aria-label=" Для заказа звонка оставьте ваши контакты, и наш менеджер свяжется с вами в ближайшее время "> <div class="t-popup__close t-popup__block-close"> <button
+type="button"
+class="t-popup__close-wrapper t-popup__block-close-button"
+aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg> </button> </div> <style>@media screen and (max-width:560px){#rec855355208 .t-popup__close-icon g{fill:#ffffff !important;}}</style> <div class="t-popup__container t-width t-width_6" data-popup-type="702"> <div class="t702__wrapper"> <div class="t702__text-wrapper t-align_center"> <div class="t702__title t-title t-title_xxs" id="popuptitle_855355208"><div style="color:#f55823;" data-customstyle="yes">Для заказа звонка оставьте ваши контакты, и наш менеджер свяжется с вами в ближайшее время</div></div> </div> <form
+id="form855355208" name='form855355208' role="form" action='' method='POST' data-formactiontype="2" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_3 " data-success-callback="t702_onSuccess"> <input type="hidden" name="formservices[]" value="0844a0c441050bee0f51501e119cb813" class="js-formaction-services"> <input type="hidden" name="formservices[]" value="cdda4ce390a885a9d9296a7464015f88" class="js-formaction-services"> <input type="hidden" name="tildaspec-formname" tabindex="-1" value="#popup:zvonok"> <!-- @classes t-title t-text t-btn --> <div class="js-successbox t-form__successbox t-text t-text_md"
+aria-live="polite"
+style="display:none;"></div> <div
+class="t-form__inputsbox
+t-form__inputsbox_vertical-form t-form__inputsbox_inrow
+"> <div
+class="t-input-group t-input-group_nm " data-input-lid="1495810354468" data-field-type="nm" data-field-name="Name"> <label
+for='input_1495810354468'
+class="t-input-title t-descr t-descr_md"
+id="field-title_1495810354468" data-redactor-toolbar="no"
+field="li_title__1495810354468"
+style="color:;">Ваше имя</label> <div class="t-input-block " style="border-radius:5px;"> <input
+type="text"
+autocomplete="name"
+name="Name"
+id="input_1495810354468"
+class="t-input js-tilda-rule"
+value="" data-tilda-rule="name"
+aria-describedby="error_1495810354468"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> </div> <div class="t-input-error" aria-live="polite" id="error_1495810354468"></div> </div> <div
+class="t-input-group t-input-group_ph " data-input-lid="1495810359387" data-field-async="true" data-field-type="ph" data-field-name="Phone"> <label
+for='input_1495810359387'
+class="t-input-title t-descr t-descr_md"
+id="field-title_1495810359387" data-redactor-toolbar="no"
+field="li_title__1495810359387"
+style="color:;">Телефон *</label> <div class="t-input-block " style="border-radius:5px;"> <input
+type="tel"
+autocomplete="tel"
+name="Phone"
+id="input_1495810359387" data-phonemask-init="no" data-phonemask-id="855355208" data-phonemask-lid="1495810359387" data-phonemask-maskcountry="RU" class="t-input js-phonemask-input js-tilda-rule"
+value=""
+placeholder="+1(000)000-0000" data-tilda-req="1" aria-required="true" aria-describedby="error_1495810359387"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> <script type="text/javascript">t_onReady(function() {t_onFuncLoad('t_loadJsFile',function() {t_loadJsFile('https://static.tildacdn.com/js/tilda-phone-mask-1.1.min.js',function() {t_onFuncLoad('t_form_phonemask_load',function() {var phoneMasks=document.querySelectorAll('#rec855355208 [data-phonemask-lid="1495810359387"]');t_form_phonemask_load(phoneMasks);});})})});</script> </div> <div class="t-input-error" aria-live="polite" id="error_1495810359387"></div> </div> <div
+class="t-input-group t-input-group_em " data-input-lid="1761987482286" data-field-type="em" data-field-name="Email"> <label
+for='input_1761987482286'
+class="t-input-title t-descr t-descr_md"
+id="field-title_1761987482286" data-redactor-toolbar="no"
+field="li_title__1761987482286"
+style="color:;">Email* (если вдруг не дозвонимся)</label> <div class="t-input-block " style="border-radius:5px;"> <input
+type="email"
+autocomplete="email"
+name="Email"
+id="input_1761987482286"
+class="t-input js-tilda-rule"
+value="" data-tilda-rule="email"
+aria-describedby="error_1761987482286"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> </div> <div class="t-input-error" aria-live="polite" id="error_1761987482286"></div> </div> <div class="t-form__errorbox-middle"> <!--noindex--> <div
+class="js-errorbox-all t-form__errorbox-wrapper"
+style="display:none;" data-nosnippet
+tabindex="-1"
+aria-label="Ошибки при заполнении формы"> <ul
+role="list"
+class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> <div class="t-form__submit"> <button
+class="t-submit t-btnflex t-btnflex_type_submit t-btnflex_md"
+type="submit"><span class="t-btnflex__text">Заказать звонок</span><span class="t-btn_wrap-effects"><span class="t-btn_inner-effects"><span class="t-btn_effects"></span></span></span> <style>#rec855355208 .t-btnflex.t-btnflex_type_submit{color:#ffffff;background-color:#f55823;--border-width:0px;border-style:none !important;border-radius:10px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;}</style><style>#rec855355208 .t-btnflex.t-btnflex_type_submit{position:relative;}#rec855355208 .t-btnflex.t-btnflex_type_submit .t-btn_wrap-effects{position:absolute;top:0;left:0;display:block;width:100%;height:100%;overflow:hidden;isolation:isolate;container-type:inline-size;container-name:button-effects;}#rec855355208 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects{position:absolute;top:0;left:0;display:block;width:100%;height:100%;transform:translateX(-85px);animation:3s linear infinite flash;}@container button-effects (min-width:230px){#rec855355208 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects{animation-name:flash-md;}}@container button-effects (min-width:750px){#rec855355208 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects{animation-name:flash-lg;}}#rec855355208 .t-btnflex.t-btnflex_type_submit .t-btn_effects{position:absolute;top:0;left:30px;display:block;width:45px;height:100%;background-image:linear-gradient(90deg,rgba(255,255,255,.1),rgba(255,255,255,.4));transform:skewX(-45deg);}@keyframes flash{20%{transform:translateX(100%);}100%{transform:translateX(100%);}}@keyframes flash-md{30%{transform:translateX(100%);}100%{transform:translateX(100%);}}@keyframes flash-lg{40%{transform:translateX(100%);}100%{transform:translateX(100%);}}</style></button> </div> </div> <div class="t-form__errorbox-bottom"> <!--noindex--> <div
+class="js-errorbox-all t-form__errorbox-wrapper"
+style="display:none;" data-nosnippet
+tabindex="-1"
+aria-label="Ошибки при заполнении формы"> <ul
+role="list"
+class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> </form> <style>#rec855355208 input::-webkit-input-placeholder{color:#000000;opacity:0.5;}#rec855355208 input::-moz-placeholder{color:#000000;opacity:0.5;}#rec855355208 input:-moz-placeholder{color:#000000;opacity:0.5;}#rec855355208 input:-ms-input-placeholder{color:#000000;opacity:0.5;}#rec855355208 textarea::-webkit-input-placeholder{color:#000000;opacity:0.5;}#rec855355208 textarea::-moz-placeholder{color:#000000;opacity:0.5;}#rec855355208 textarea:-moz-placeholder{color:#000000;opacity:0.5;}#rec855355208 textarea:-ms-input-placeholder{color:#000000;opacity:0.5;}</style> <div class="t702__form-bottom-text t-text t-text_xs t-align_center">Нажимая на кнопку, вы даете согласие на <a href="https://alsn.ru/privacy" target="_blank" rel="noreferrer noopener">обработку персональных данных</a>.</div> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t702_initPopup',function() {t702_initPopup('855355208');});});</script> </div> <div id="rec855366805" class="r t-rec" style=" " data-animationappear="off" data-record-type="702"> <!-- T702 --> <div class="t702"> <div
+class="t-popup" data-tooltip-hook="#popup:konsultacia" data-track-popup='/tilda/popup/rec855366805/opened' role="dialog"
+aria-modal="true"
+tabindex="-1"
+aria-label=" Наберём Вам сразу, как получим заявку! "> <div class="t-popup__close t-popup__block-close"> <button
+type="button"
+class="t-popup__close-wrapper t-popup__block-close-button"
+aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg> </button> </div> <style>@media screen and (max-width:560px){#rec855366805 .t-popup__close-icon g{fill:#ffffff !important;}}</style> <div class="t-popup__container t-width t-width_6" data-popup-type="702"> <div class="t702__wrapper"> <div class="t702__text-wrapper t-align_center"> <div class="t702__title t-title t-title_xxs" id="popuptitle_855366805"><div style="color: rgb(245, 88, 35);" data-customstyle="yes">Наберём Вам сразу, как получим заявку!</div></div> </div> <form
+id="form855366805" name='form855366805' role="form" action='' method='POST' data-formactiontype="2" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_4 " data-success-callback="t702_onSuccess"> <input type="hidden" name="formservices[]" value="0844a0c441050bee0f51501e119cb813" class="js-formaction-services"> <input type="hidden" name="formservices[]" value="cdda4ce390a885a9d9296a7464015f88" class="js-formaction-services"> <input type="hidden" name="tildaspec-formname" tabindex="-1" value="#popup:konsultacia"> <!-- @classes t-title t-text t-btn --> <div class="js-successbox t-form__successbox t-text t-text_md"
+aria-live="polite"
+style="display:none;"></div> <div
+class="t-form__inputsbox
+t-form__inputsbox_vertical-form t-form__inputsbox_inrow
+"> <div
+class="t-input-group t-input-group_nm " data-input-lid="7218553552080" data-field-type="nm" data-field-name="Name"> <label
+for='input_7218553552080'
+class="t-input-title t-descr t-descr_md"
+id="field-title_7218553552080" data-redactor-toolbar="no"
+field="li_title__7218553552080"
+style="color:;">Ваше имя</label> <div class="t-input-block " style="border-radius:5px;"> <input
+type="text"
+autocomplete="name"
+name="Name"
+id="input_7218553552080"
+class="t-input js-tilda-rule"
+value="" data-tilda-rule="name"
+aria-describedby="error_7218553552080"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> </div> <div class="t-input-error" aria-live="polite" id="error_7218553552080"></div> </div> <div
+class="t-input-group t-input-group_ph " data-input-lid="7218553552081" data-field-async="true" data-field-type="ph" data-field-name="Phone"> <label
+for='input_7218553552081'
+class="t-input-title t-descr t-descr_md"
+id="field-title_7218553552081" data-redactor-toolbar="no"
+field="li_title__7218553552081"
+style="color:;">Телефон *</label> <div class="t-input-block " style="border-radius:5px;"> <input
+type="tel"
+autocomplete="tel"
+name="Phone"
+id="input_7218553552081" data-phonemask-init="no" data-phonemask-id="855366805" data-phonemask-lid="7218553552081" data-phonemask-maskcountry="RU" class="t-input js-phonemask-input js-tilda-rule"
+value=""
+placeholder="+1(000)000-0000" data-tilda-req="1" aria-required="true" aria-describedby="error_7218553552081"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> <script type="text/javascript">t_onReady(function() {t_onFuncLoad('t_loadJsFile',function() {t_loadJsFile('https://static.tildacdn.com/js/tilda-phone-mask-1.1.min.js',function() {t_onFuncLoad('t_form_phonemask_load',function() {var phoneMasks=document.querySelectorAll('#rec855366805 [data-phonemask-lid="7218553552081"]');t_form_phonemask_load(phoneMasks);});})})});</script> </div> <div class="t-input-error" aria-live="polite" id="error_7218553552081"></div> </div> <div
+class="t-input-group t-input-group_em " data-input-lid="1761987346186" data-field-type="em" data-field-name="Email"> <label
+for='input_1761987346186'
+class="t-input-title t-descr t-descr_md"
+id="field-title_1761987346186" data-redactor-toolbar="no"
+field="li_title__1761987346186"
+style="color:;">Email* (если вдруг не дозвонимся)</label> <div class="t-input-block " style="border-radius:5px;"> <input
+type="email"
+autocomplete="email"
+name="Email"
+id="input_1761987346186"
+class="t-input js-tilda-rule"
+value="" data-tilda-req="1" aria-required="true" data-tilda-rule="email"
+aria-describedby="error_1761987346186"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> </div> <div class="t-input-error" aria-live="polite" id="error_1761987346186"></div> </div> <div
+class="t-input-group t-input-group_ta " data-input-lid="1775129487326" data-field-type="ta" data-field-name="Комментарий"> <label
+for='input_1775129487326'
+class="t-input-title t-descr t-descr_md"
+id="field-title_1775129487326" data-redactor-toolbar="no"
+field="li_title__1775129487326"
+style="color:;">Комментарий</label> <div class="t-input-block " style="border-radius:5px;"> <textarea
+name="Комментарий"
+id="input_1775129487326"
+class="t-input js-tilda-rule"
+aria-describedby="error_1775129487326"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;height:102px;"
+rows="3"></textarea> </div> <div class="t-input-error" aria-live="polite" id="error_1775129487326"></div> </div> <div class="t-form__errorbox-middle"> <!--noindex--> <div
+class="js-errorbox-all t-form__errorbox-wrapper"
+style="display:none;" data-nosnippet
+tabindex="-1"
+aria-label="Ошибки при заполнении формы"> <ul
+role="list"
+class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> <div class="t-form__submit"> <button
+class="t-submit t-btnflex t-btnflex_type_submit t-btnflex_md"
+type="submit"><span class="t-btnflex__text">Отправить</span><span class="t-btn_wrap-effects"><span class="t-btn_inner-effects"><span class="t-btn_effects"></span></span></span> <style>#rec855366805 .t-btnflex.t-btnflex_type_submit{color:#ffffff;background-color:#f55823;--border-width:0px;border-style:none !important;border-radius:10px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;}</style><style>#rec855366805 .t-btnflex.t-btnflex_type_submit{position:relative;}#rec855366805 .t-btnflex.t-btnflex_type_submit .t-btn_wrap-effects{position:absolute;top:0;left:0;display:block;width:100%;height:100%;overflow:hidden;isolation:isolate;container-type:inline-size;container-name:button-effects;}#rec855366805 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects{position:absolute;top:0;left:0;display:block;width:100%;height:100%;transform:translateX(-85px);animation:3s linear infinite flash;}@container button-effects (min-width:230px){#rec855366805 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects{animation-name:flash-md;}}@container button-effects (min-width:750px){#rec855366805 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects{animation-name:flash-lg;}}#rec855366805 .t-btnflex.t-btnflex_type_submit .t-btn_effects{position:absolute;top:0;left:30px;display:block;width:45px;height:100%;background-image:linear-gradient(90deg,rgba(255,255,255,.1),rgba(255,255,255,.4));transform:skewX(-45deg);}@keyframes flash{20%{transform:translateX(100%);}100%{transform:translateX(100%);}}@keyframes flash-md{30%{transform:translateX(100%);}100%{transform:translateX(100%);}}@keyframes flash-lg{40%{transform:translateX(100%);}100%{transform:translateX(100%);}}</style></button> </div> </div> <div class="t-form__errorbox-bottom"> <!--noindex--> <div
+class="js-errorbox-all t-form__errorbox-wrapper"
+style="display:none;" data-nosnippet
+tabindex="-1"
+aria-label="Ошибки при заполнении формы"> <ul
+role="list"
+class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> </form> <style>#rec855366805 input::-webkit-input-placeholder{color:#000000;opacity:0.5;}#rec855366805 input::-moz-placeholder{color:#000000;opacity:0.5;}#rec855366805 input:-moz-placeholder{color:#000000;opacity:0.5;}#rec855366805 input:-ms-input-placeholder{color:#000000;opacity:0.5;}#rec855366805 textarea::-webkit-input-placeholder{color:#000000;opacity:0.5;}#rec855366805 textarea::-moz-placeholder{color:#000000;opacity:0.5;}#rec855366805 textarea:-moz-placeholder{color:#000000;opacity:0.5;}#rec855366805 textarea:-ms-input-placeholder{color:#000000;opacity:0.5;}</style> <div class="t702__form-bottom-text t-text t-text_xs t-align_center">Нажимая на кнопку, вы даете согласие на <a href="https://alsn.ru/privacy" target="_blank" rel="noreferrer noopener">обработку персональных данных</a>.</div> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t702_initPopup',function() {t702_initPopup('855366805');});});</script> </div> <div id="rec1086000871" class="r t-rec" style=" " data-animationappear="off" data-record-type="702"> <!-- T702 --> <div class="t702"> <div
+class="t-popup" data-tooltip-hook="#popup:emailphone" data-track-popup='/tilda/popup/rec1086000871/opened' role="dialog"
+aria-modal="true"
+tabindex="-1"
+aria-label=" Оставьте контакты и мы свяжемся с вами в ближайшее время "> <div class="t-popup__close t-popup__block-close"> <button
+type="button"
+class="t-popup__close-wrapper t-popup__block-close-button"
+aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg> </button> </div> <style>@media screen and (max-width:560px){#rec1086000871 .t-popup__close-icon g{fill:#ffffff !important;}}</style> <div class="t-popup__container t-width t-width_6" data-popup-type="702"> <div class="t702__wrapper"> <div class="t702__text-wrapper t-align_center"> <div class="t702__title t-title t-title_xxs" id="popuptitle_1086000871"><div style="color: rgb(245, 88, 35);" data-customstyle="yes">Оставьте контакты и мы свяжемся с вами в ближайшее время</div></div> </div> <form
+id="form1086000871" name='form1086000871' role="form" action='' method='POST' data-formactiontype="2" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_3 " data-success-callback="t702_onSuccess"> <input type="hidden" name="formservices[]" value="0844a0c441050bee0f51501e119cb813" class="js-formaction-services"> <input type="hidden" name="formservices[]" value="cdda4ce390a885a9d9296a7464015f88" class="js-formaction-services"> <input type="hidden" name="tildaspec-formname" tabindex="-1" value="#popup:emailphone"> <!-- @classes t-title t-text t-btn --> <div class="js-successbox t-form__successbox t-text t-text_md"
+aria-live="polite"
+style="display:none;"></div> <div
+class="t-form__inputsbox
+t-form__inputsbox_vertical-form t-form__inputsbox_inrow
+"> <div
+class="t-input-group t-input-group_nm " data-input-lid="8338553668050" data-field-type="nm" data-field-name="Name"> <label
+for='input_8338553668050'
+class="t-input-title t-descr t-descr_md"
+id="field-title_8338553668050" data-redactor-toolbar="no"
+field="li_title__8338553668050"
+style="color:;">Ваше имя</label> <div class="t-input-block " style="border-radius:5px;"> <input
+type="text"
+autocomplete="name"
+name="Name"
+id="input_8338553668050"
+class="t-input js-tilda-rule"
+value="" data-tilda-rule="name"
+aria-describedby="error_8338553668050"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> </div> <div class="t-input-error" aria-live="polite" id="error_8338553668050"></div> </div> <div
+class="t-input-group t-input-group_ph " data-input-lid="8338553668051" data-field-async="true" data-field-type="ph" data-field-name="Phone"> <label
+for='input_8338553668051'
+class="t-input-title t-descr t-descr_md"
+id="field-title_8338553668051" data-redactor-toolbar="no"
+field="li_title__8338553668051"
+style="color:;">Телефон *</label> <div class="t-input-block " style="border-radius:5px;"> <input
+type="tel"
+autocomplete="tel"
+name="Phone"
+id="input_8338553668051" data-phonemask-init="no" data-phonemask-id="1086000871" data-phonemask-lid="8338553668051" data-phonemask-maskcountry="RU" class="t-input js-phonemask-input js-tilda-rule"
+value=""
+placeholder="+1(000)000-0000" data-tilda-req="1" aria-required="true" aria-describedby="error_8338553668051"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> <script type="text/javascript">t_onReady(function() {t_onFuncLoad('t_loadJsFile',function() {t_loadJsFile('https://static.tildacdn.com/js/tilda-phone-mask-1.1.min.js',function() {t_onFuncLoad('t_form_phonemask_load',function() {var phoneMasks=document.querySelectorAll('#rec1086000871 [data-phonemask-lid="8338553668051"]');t_form_phonemask_load(phoneMasks);});})})});</script> </div> <div class="t-input-error" aria-live="polite" id="error_8338553668051"></div> </div> <div
+class="t-input-group t-input-group_em " data-input-lid="1749211132416" data-field-type="em" data-field-name="Email"> <label
+for='input_1749211132416'
+class="t-input-title t-descr t-descr_md"
+id="field-title_1749211132416" data-redactor-toolbar="no"
+field="li_title__1749211132416"
+style="color:;">Email* (если вдруг не дозвонимся)</label> <div class="t-input-block " style="border-radius:5px;"> <input
+type="email"
+autocomplete="email"
+name="Email"
+id="input_1749211132416"
+class="t-input js-tilda-rule"
+value="" data-tilda-req="1" aria-required="true" data-tilda-rule="email"
+aria-describedby="error_1749211132416"
+style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;"> </div> <div class="t-input-error" aria-live="polite" id="error_1749211132416"></div> </div> <div class="t-form__errorbox-middle"> <!--noindex--> <div
+class="js-errorbox-all t-form__errorbox-wrapper"
+style="display:none;" data-nosnippet
+tabindex="-1"
+aria-label="Ошибки при заполнении формы"> <ul
+role="list"
+class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> <div class="t-form__submit"> <button
+class="t-submit t-btnflex t-btnflex_type_submit t-btnflex_md"
+type="submit"><span class="t-btnflex__text">Отправить</span><span class="t-btn_wrap-effects"><span class="t-btn_inner-effects"><span class="t-btn_effects"></span></span></span> <style>#rec1086000871 .t-btnflex.t-btnflex_type_submit{color:#ffffff;background-color:#f55823;--border-width:0px;border-style:none !important;border-radius:10px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;}</style><style>#rec1086000871 .t-btnflex.t-btnflex_type_submit{position:relative;}#rec1086000871 .t-btnflex.t-btnflex_type_submit .t-btn_wrap-effects{position:absolute;top:0;left:0;display:block;width:100%;height:100%;overflow:hidden;isolation:isolate;container-type:inline-size;container-name:button-effects;}#rec1086000871 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects{position:absolute;top:0;left:0;display:block;width:100%;height:100%;transform:translateX(-85px);animation:3s linear infinite flash;}@container button-effects (min-width:230px){#rec1086000871 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects{animation-name:flash-md;}}@container button-effects (min-width:750px){#rec1086000871 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects{animation-name:flash-lg;}}#rec1086000871 .t-btnflex.t-btnflex_type_submit .t-btn_effects{position:absolute;top:0;left:30px;display:block;width:45px;height:100%;background-image:linear-gradient(90deg,rgba(255,255,255,.1),rgba(255,255,255,.4));transform:skewX(-45deg);}@keyframes flash{20%{transform:translateX(100%);}100%{transform:translateX(100%);}}@keyframes flash-md{30%{transform:translateX(100%);}100%{transform:translateX(100%);}}@keyframes flash-lg{40%{transform:translateX(100%);}100%{transform:translateX(100%);}}</style></button> </div> </div> <div class="t-form__errorbox-bottom"> <!--noindex--> <div
+class="js-errorbox-all t-form__errorbox-wrapper"
+style="display:none;" data-nosnippet
+tabindex="-1"
+aria-label="Ошибки при заполнении формы"> <ul
+role="list"
+class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> </form> <style>#rec1086000871 input::-webkit-input-placeholder{color:#000000;opacity:0.5;}#rec1086000871 input::-moz-placeholder{color:#000000;opacity:0.5;}#rec1086000871 input:-moz-placeholder{color:#000000;opacity:0.5;}#rec1086000871 input:-ms-input-placeholder{color:#000000;opacity:0.5;}#rec1086000871 textarea::-webkit-input-placeholder{color:#000000;opacity:0.5;}#rec1086000871 textarea::-moz-placeholder{color:#000000;opacity:0.5;}#rec1086000871 textarea:-moz-placeholder{color:#000000;opacity:0.5;}#rec1086000871 textarea:-ms-input-placeholder{color:#000000;opacity:0.5;}</style> <div class="t702__form-bottom-text t-text t-text_xs t-align_center">Нажимая на кнопку, вы даете согласие на <a href="https://alsn.ru/privacy" target="_blank" rel="noreferrer noopener">обработку персональных данных</a>.</div> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t702_initPopup',function() {t702_initPopup('1086000871');});});</script> </div> </footer> <!--/footer--> </div> <!--/allrecords--> <!-- Stat --> <!-- Yandex.Metrika counter 29557530 --> <script type="text/javascript" data-tilda-cookie-type="analytics">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");window.mainMetrikaId='29557530';ym(window.mainMetrikaId,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,params:{__ym:{"ymCms":{"cms":"tilda","cmsVersion":"1.0","cmsCatalog":"1"}}},ecommerce:"dataLayer"});</script> <noscript><div><img src="https://mc.yandex.ru/watch/29557530" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'8c6bf2c79a0d13feddeb7e00e6439dd9','script','https://static.tildacdn.com/js/tilda-stat-1.0.min.js');</script> <!-- Rating Mail.ru counter --> <script type="text/javascript" data-tilda-cookie-type="analytics">var _tmr=window._tmr||(window._tmr=[]);_tmr.push({id:"3607153",type:"pageView",start:(new Date()).getTime()});window.mainMailruId='3607153';(function(d,w,id) {if(d.getElementById(id)) {return;}
+var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=id;ts.src="https://top-fwz1.mail.ru/js/code.js";var f=function() {var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(ts,s);};if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,"topmailru-code");</script> <noscript><img src="https://top-fwz1.mail.ru/counter?id=3607153;js=na" style="border:0;position:absolute;left:-9999px;width:1px;height:1px" alt="Top.Mail.Ru" /></noscript> <!-- //Rating Mail.ru counter --> </body> </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Хлебные крошки под новую структуру - alsn.ru - остаток</title>
+  <style>
+    :root {
+      --bg: #f4f3ef; --card: #fff; --text: #1a1a1a; --muted: #5c5c5c; --border: #e2e2de;
+      --ok: #1a7f4b; --ok-bg: #e8f6ee; --warn: #9a6700; --warn-bg: #fff6e0;
+      --danger: #b42318; --danger-bg: #fdecea; --info: #0b6e99; --info-bg: #e8f4fa; --code: #0f172a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: var(--bg); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 18px 72px; }
+    h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    h3 { font-size: 16px; margin: 18px 0 6px; }
+    p { margin: 0 0 8px; }
+    a { color: #0b5cad; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
+    .pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 650; border: 1px solid var(--border); background: #fff; }
+    .pill.ok { color: var(--ok); background: var(--ok-bg); border-color: #c6e6d3; }
+    .pill.warn { color: var(--warn); background: var(--warn-bg); border-color: #f0dfa0; }
+    .pill.danger { color: var(--danger); background: var(--danger-bg); border-color: #f5c2c0; }
+    .pill.info { color: var(--info); background: var(--info-bg); border-color: #bddceb; }
+    .callout { border-radius: 10px; padding: 12px 14px; margin: 12px 0 18px; border: 1px solid var(--border); background: var(--card); font-size: 14px; }
+    .callout.danger { background: var(--danger-bg); border-color: #f5c2c0; }
+    .callout.warn { background: var(--warn-bg); border-color: #f0dfa0; }
+    .callout.info { background: var(--info-bg); border-color: #bddceb; }
+    .callout.ok { background: var(--ok-bg); border-color: #c6e6d3; }
+    .toc { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; margin: 0 0 20px; }
+    .toc ol { margin: 6px 0 0; padding-left: 22px; }
+    .toc li { margin: 3px 0; }
+    .toc a { text-decoration: none; }
+    .task { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px 18px; margin: 0 0 18px; }
+    .task .num { display: inline-block; background: #111; color: #fff; border-radius: 999px; font-size: 12px; font-weight: 700; padding: 2px 10px; margin-right: 6px; vertical-align: middle; }
+    .lbl { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 14px 0 4px; }
+    .lbl:first-of-type { margin-top: 8px; }
+    ol.steps { margin: 4px 0 0; padding-left: 22px; }
+    ol.steps > li { margin: 6px 0; }
+    .path { font-family: ui-monospace, Consolas, monospace; font-size: 12.5px; background: #111; color: #f5f5f4; border-radius: 8px; padding: 8px 10px; margin: 6px 0 8px; overflow-x: auto; }
+    .copybox { position: relative; margin: 6px 0 10px; }
+    .copybox pre { margin: 0; background: var(--code); color: #e5e7eb; border-radius: 10px; padding: 12px 12px 40px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; font: 13px/1.4 ui-monospace, Consolas, monospace; }
+    .copybox button { position: absolute; right: 8px; bottom: 8px; background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 4px 10px; font-size: 12px; font-weight: 650; cursor: pointer; }
+    .copybox button:hover { background: #f3f4f6; }
+    .copybox.ok button { background: var(--ok-bg); }
+    .cap { font-size: 13px; font-weight: 700; margin: 10px 0 2px; }
+    .cap.find { color: var(--danger); }
+    .cap.put { color: var(--ok); }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 6px 0 0; background: #fff; }
+    th, td { border: 1px solid var(--border); padding: 7px 9px; text-align: left; vertical-align: top; }
+    th { background: #fafaf8; font-weight: 650; }
+    ul.tight { margin: 4px 0 0; padding-left: 18px; }
+    ul.tight li { margin: 3px 0; }
+    .tag { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+    .tag.ok { background: var(--ok-bg); color: var(--ok); }
+    .tag.warn { background: var(--warn-bg); color: var(--warn); }
+    .tag.danger { background: var(--danger-bg); color: var(--danger); }
+    .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; border: 1px solid #bbb; vertical-align: -2px; margin-right: 4px; }
+    @media print { body { background: #fff; } .copybox button { display: none; } .task, .toc, .callout { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+<h1>Хлебные крошки под новую структуру сайта: что осталось</h1>
+<p class="muted">Сверка с живым alsn.ru 30.09.2026, 17:10 · только Тильда, не Битрикс · структура: <code>struktura-karta-2026-09-30.html</code></p>
+<div class="pills"><span class="pill warn">1С:КП: два поля целиком</span><span class="pill info">1 проверка в каталоге</span></div>
+<div class="callout danger">Каждый шаг - только после письменного «да». «Опубликовать» - отдельным шагом. robots.txt, Twitter и Bing не трогаем. HEAD сайта (Organization, WebSite) не трогаем. Адреса страниц не меняем.</div>
+<div class="callout warn"><strong>Что сейчас не так.</strong> Осталась одна витрина «1С:КП». Крошки на экране правильные, но поисковик видит старый путь «Главная / 1С:КП» из HEAD страницы, а гость «Программы 1С / 1С:КП». Старый путь и описание страницы из HEAD Тильда копирует на все карточки товаров этой витрины (проверено 30.09.2026 17:10).</div>
+<section class="task" id="done"><h2>Уже сделано - не трогать</h2><ul class="tight"><li>30.09.2026: видимые крошки по новой структуре на всех 13 страницах (С-1 - С-4), фон блоков верный.</li><li>30.09.2026: «Лицензии 1С» - один верный путь, старый из блока крошек убран (бывшая задача С-6).</li><li>30.09.2026 17:10: С-5 на 7 витринах (1С:УТ, 1С:Бухгалтерия, 1С:ЗУП, 1С:УНФ, Программы 1С, 1С:Фреш, 1С:Документооборот) - HEAD страницы без путей, новый путь в блоке крошек, карточки товаров чистые.</li><li>30.09.2026: «Фастфуд и Общепит», «Интеграция с сайтом», «Для продавцов компьютерной техники», «Последняя миля Ozon» - полностью готовы.</li></ul></section>
+<div class="toc"><strong>Задачи</strong><ol><li><a href="#s1">С-5. 1С:КП: заменить HEAD страницы и блок крошек целиком</a></li><li><a href="#s3">С-7. Проверить имя в крошках карточек «Программы 1С»</a></li><li><a href="#pub">Опубликовать</a></li></ol></div>
+<section class="task" id="s1"><h2><span class="num">С-5</span> 1С:КП: заменить HEAD страницы и блок крошек целиком</h2>
+<span class="lbl">Что сделать</span><p>На каждой витрине два поля. Ничего в них не искать: скопировать готовый код и вставить поверх старого целиком. В HEAD страницы остаётся только то, что можно показывать и карточкам товаров. Путь для поисковика и описание страницы живут в блоке крошек.</p>
+<span class="lbl">Зачем</span><p>Сейчас поисковик видит старый путь, а гость новый. Старый путь из HEAD витрины Тильда ещё и копирует на все карточки товаров. После замены у витрины один верный путь, как на экране, а карточки перестанут выдавать себя за витрину.</p>
+<div class="callout warn"><strong>Как вставлять.</strong> В поле: Ctrl+A → Delete → вставить скопированное → «Сохранить». Перед этим скопируйте старое содержимое поля в блокнот, чтобы можно было откатить. HEAD сайта (Настройки сайта → Вставка кода) не трогать.</div>
+<span class="lbl">Как в Тильде</span>
+<h3>Купить 1С:КП ПРОФ - комплект поддержки ИТС</h3>
+<p class="muted"><a href="https://alsn.ru/its">https://alsn.ru/its</a> · адрес в Тильде <code>its</code> · путь для поисковика станет «Главная / Программы 1С / 1С:КП»</p>
+<p><strong>Поле 1. HEAD страницы.</strong></p><ol class="steps"><li>Список страниц → страница → <strong>Настройки</strong> (шестерёнка) → <strong>Дополнительно</strong> → поле «HTML-код для вставки внутрь head» (<code>its</code>).</li>
+<li>Ctrl+A → Delete → вставить код ниже → <strong>Сохранить изменения</strong>.</li></ol>
+<p class="cap put">HEAD страницы целиком</p><div class="copybox"><pre id="p-44">&lt;meta name="robots" content="index, follow"&gt;</pre><button type="button" data-copy="p-44">Копировать</button></div>
+<p><strong>Поле 2. Блок крошек</strong> (самый верх холста, сразу под меню, T123 <code>rec3907239301</code>).</p><ol class="steps"><li>Список страниц → <code>its</code> → <strong>Редактировать</strong> → блок крошек → <strong>Контент</strong>.</li><li>Ctrl+A → Delete → вставить код ниже → <strong>Сохранить и закрыть</strong>.</li></ol>
+<p class="cap put">Блок крошек целиком</p><div class="copybox"><pre id="p-45">&lt;nav aria-label="Хлебные крошки" style="display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;"&gt; &lt;a href="https://alsn.ru/" aria-label="Главная" title="Главная" style="display:inline-flex;color:inherit;text-decoration:none;"&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"&gt;&lt;path d="M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z"/&gt;&lt;/svg&gt; &lt;/a&gt; &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt; &lt;a href="https://alsn.ru/products" style="color:inherit;text-decoration:none;white-space:nowrap;"&gt;Программы 1С&lt;/a&gt; &lt;span style="margin:0 6px;opacity:.45;" aria-hidden="true"&gt;/&lt;/span&gt; &lt;span style="opacity:.75;white-space:nowrap;"&gt;1С:КП&lt;/span&gt; &lt;/nav&gt;
+&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://alsn.ru/its#webpage",
+  "name": "Купить 1С:КП ПРОФ - комплект поддержки ИТС",
+  "description": "Купить 1С:КП ПРОФ (ИТС) на 12 месяцев: обновления программ, сервисы и консультации. Официальный партнёр 1С.",
+  "url": "https://alsn.ru/its",
+  "inLanguage": "ru-RU",
+  "dateModified": "2026-09-15",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://alsn.ru/#website"
+  }
+}
+&lt;/script&gt;
+&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://alsn.ru/its#breadcrumb",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alsn.ru/" },
+    { "@type": "ListItem", "position": 2, "name": "Программы 1С", "item": "https://alsn.ru/products" },
+    { "@type": "ListItem", "position": 3, "name": "1С:КП", "item": "https://alsn.ru/its" }
+  ]
+}
+&lt;/script&gt;</pre><button type="button" data-copy="p-45">Копировать</button></div>
+</section>
+<section class="task" id="s3"><h2><span class="num">С-7</span> Проверить имя в крошках карточек «Программы 1С»</h2>
+<span class="lbl">Что сделать</span><p>Посмотреть, какое имя витрины стоит в крошках карточек товаров на <code>/products</code>. Нужно «Программы 1С», как на самой витрине.</p>
+<span class="lbl">Зачем</span><p>На витрине уже «Программы 1С». Если на карточке осталось «Продукты», гость увидит два разных имени одной страницы.</p>
+<span class="lbl">Как в Тильде</span><ol class="steps"><li>Список страниц → <code>products</code> → <strong>Редактировать</strong>.</li><li>Клик по блоку каталога → <strong>Контент</strong> → вкладка «Хлебные крошки».</li><li>Если там вручную написано «Продукты» - заменить на «Программы 1С» и <strong>Сохранить</strong>. Если имя берётся само и поля нет - ничего не делать, пункт закрыт.</li></ol>
+</section>
+<section class="task" id="pub"><h2><span class="num">P</span> Опубликовать</h2><ol class="steps"><li>После «да» по задаче нажать <strong>«Опубликовать»</strong> на каждой затронутой странице: <code>its</code>.</li><li>«Опубликовать все страницы» не нужно: HEAD сайта не меняли.</li></ol></section>
+<section class="task" id="wait"><h2>Ждут новых страниц - сейчас не трогать</h2><p>Звенья «Услуги», «Продукты», «Лицензии», «Разработка и доработка 1С» добавим отдельной волной после выхода <code>/uslugi</code>, <code>/produkty</code>, <code>/licenzii</code>, <code>/dorabotka-1c</code>. Пока их нет, в крошки не вставлять: ссылка вела бы на 404.</p></section>
+<p class="muted">Файл: <code>seo-data/tilda-briefs/tier2-breadcrumbs-struktura-2026-09-30.html</code> · сборщик: <code>seo-data/scripts/build_bc_struktura_rest_0930.py</code> · сверка: <code>seo-data/scripts/_bc_struct_verify_0930.py</code></p>
+  </div>
+  <script>
+    function flash(btn) {
+      btn.classList.add("ok");
+      const t = btn.textContent;
+      btn.textContent = "Скопировано";
+      setTimeout(() => { btn.textContent = t; btn.classList.remove("ok"); }, 1200);
+    }
+    document.querySelectorAll(".copybox button[data-copy]").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const pre = document.getElementById(btn.getAttribute("data-copy"));
+        if (!pre) return;
+        await navigator.clipboard.writeText(pre.textContent);
+        flash(btn);
+      });
+    });
+  </script>
+</body>
+</html>

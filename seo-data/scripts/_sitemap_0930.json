@@ -1,0 +1,879 @@
+{
+ "urls": [
+  "https://alsn.ru/",
+  "https://alsn.ru/1_obschepit_fastfood",
+  "https://alsn.ru/1c-ozon",
+  "https://alsn.ru/1c-wildberries",
+  "https://alsn.ru/1cbitrix",
+  "https://alsn.ru/1cfresh",
+  "https://alsn.ru/3logic",
+  "https://alsn.ru/about_us",
+  "https://alsn.ru/amo_crm",
+  "https://alsn.ru/article_digital-report",
+  "https://alsn.ru/auvix",
+  "https://alsn.ru/avtomaticheskaya_zagruzka_prays-listov_it-kholdinga_lanit",
+  "https://alsn.ru/avtomatizaciya-biznes-processov-kompanii-simon-elektrik-keys",
+  "https://alsn.ru/avtomatizatsiya_tekhpodderzhki",
+  "https://alsn.ru/bbit",
+  "https://alsn.ru/bitrix24",
+  "https://alsn.ru/blog",
+  "https://alsn.ru/blog/erp",
+  "https://alsn.ru/blog/integration",
+  "https://alsn.ru/buhv8",
+  "https://alsn.ru/business0",
+  "https://alsn.ru/case-tehnokomp",
+  "https://alsn.ru/case_telegram_bot",
+  "https://alsn.ru/caseecomsc",
+  "https://alsn.ru/casemarketplace",
+  "https://alsn.ru/cases",
+  "https://alsn.ru/cases/114bitrix",
+  "https://alsn.ru/cases/artis",
+  "https://alsn.ru/cases/autobuild",
+  "https://alsn.ru/cases/business_pro",
+  "https://alsn.ru/cases/gwd",
+  "https://alsn.ru/cases/kidzintagration",
+  "https://alsn.ru/cases/onlinetrade",
+  "https://alsn.ru/cases/pek",
+  "https://alsn.ru/cases/trello_integration",
+  "https://alsn.ru/cases/xcom",
+  "https://alsn.ru/clients",
+  "https://alsn.ru/constr",
+  "https://alsn.ru/contacts",
+  "https://alsn.ru/cra",
+  "https://alsn.ru/cracasesoftvideo",
+  "https://alsn.ru/crmfurniture",
+  "https://alsn.ru/development1c",
+  "https://alsn.ru/digis",
+  "https://alsn.ru/dokumentooborot8",
+  "https://alsn.ru/dopolnitelnie_licenzii",
+  "https://alsn.ru/dssl",
+  "https://alsn.ru/ecom",
+  "https://alsn.ru/elko",
+  "https://alsn.ru/erp-time-price",
+  "https://alsn.ru/etm-ipro",
+  "https://alsn.ru/event-2025-05",
+  "https://alsn.ru/gd",
+  "https://alsn.ru/https/keys_po_rfidmetki",
+  "https://alsn.ru/integraciya-1c-dlya-prodavcov-kompyuternoy-tehniki",
+  "https://alsn.ru/integrationeco",
+  "https://alsn.ru/integrationsite",
+  "https://alsn.ru/integratsiya_sap_hcm_i_1c_erp_2",
+  "https://alsn.ru/internship",
+  "https://alsn.ru/interview_hr",
+  "https://alsn.ru/its",
+  "https://alsn.ru/keys-perehod-s-sistemy-1szup-na-sap-hcm",
+  "https://alsn.ru/keys_integratsiya_s_korporativnymi_prilozheniyami",
+  "https://alsn.ru/keys_integratsiya_s_powerbi",
+  "https://alsn.ru/keys_na_uskorenie",
+  "https://alsn.ru/keys_po_byudzhetam",
+  "https://alsn.ru/keys_po_integratsii_s_bitriks24",
+  "https://alsn.ru/keys_po_integratsii_s_crm_megaplan",
+  "https://alsn.ru/keys_po_integratsii_s_messendzherom_telegram",
+  "https://alsn.ru/keys_po_integratsii_s_saytom",
+  "https://alsn.ru/keys_po_integratsii_zup_erp",
+  "https://alsn.ru/keys_po_kartam_google",
+  "https://alsn.ru/keys_po_lk",
+  "https://alsn.ru/keys_po_lk2",
+  "https://alsn.ru/keys_po_mobilnym_prilozheniyam",
+  "https://alsn.ru/keys_po_telegram",
+  "https://alsn.ru/keys_po_upravlencheskomu_uchetu",
+  "https://alsn.ru/keys_po_vnedreniyu_modulya_diadok",
+  "https://alsn.ru/keys_po_vnedreniyu_ut_11_3",
+  "https://alsn.ru/keys_po_vnedrenyu_klassifikatsii_klientov",
+  "https://alsn.ru/keys_rezervirovaniyatovarov",
+  "https://alsn.ru/komersant",
+  "https://alsn.ru/kompleksnaya_avtomatizaciya",
+  "https://alsn.ru/marvel",
+  "https://alsn.ru/merlion",
+  "https://alsn.ru/moy-sklad-perenos-v-1s",
+  "https://alsn.ru/ocs",
+  "https://alsn.ru/outsorce_vs_inhouse",
+  "https://alsn.ru/page187317109.html",
+  "https://alsn.ru/perehod-s-dokumentooborota-2-1-na-3-0",
+  "https://alsn.ru/perehod-s-upp-na-ka-unf-ut",
+  "https://alsn.ru/perehod-s-ut-10-3",
+  "https://alsn.ru/perehod-s-ut-na-unf",
+  "https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s",
+  "https://alsn.ru/persons",
+  "https://alsn.ru/persons/interw_lvov",
+  "https://alsn.ru/policy",
+  "https://alsn.ru/privacy",
+  "https://alsn.ru/products",
+  "https://alsn.ru/publication",
+  "https://alsn.ru/rbc_pro",
+  "https://alsn.ru/remotework",
+  "https://alsn.ru/resurs-media",
+  "https://alsn.ru/review",
+  "https://alsn.ru/russkiy-svet",
+  "https://alsn.ru/sinhronizaciya-bp-i-bp",
+  "https://alsn.ru/sinhronizaciya-mezhdu-ut-i-ut",
+  "https://alsn.ru/sinhronizaciya-mezhdu-zup-i-zup",
+  "https://alsn.ru/sitemap",
+  "https://alsn.ru/sklad",
+  "https://alsn.ru/soglashenie",
+  "https://alsn.ru/support1c",
+  "https://alsn.ru/tbavtoservis",
+  "https://alsn.ru/tbbot-parkovka-parking-garazh-stoyanka",
+  "https://alsn.ru/tbbot-restoran-kafe-kofeynya-bar",
+  "https://alsn.ru/tbdokument",
+  "https://alsn.ru/tbfiksasotrud",
+  "https://alsn.ru/tbhr",
+  "https://alsn.ru/tbintmag",
+  "https://alsn.ru/tbotdelprod",
+  "https://alsn.ru/tbsotrudniki",
+  "https://alsn.ru/tbstroit",
+  "https://alsn.ru/tbtehpod",
+  "https://alsn.ru/telegram-bot-1s-dlya-sdachi-v-arendu-avtomobiley-i-tehniki-s-voditelyami",
+  "https://alsn.ru/telegram-bot-1s-dlya-soglasovaniya-i-podpisaniya-dokumentov-po-edo",
+  "https://alsn.ru/telegram1c",
+  "https://alsn.ru/treolan",
+  "https://alsn.ru/upravlenie_nashei_firmoi",
+  "https://alsn.ru/upt8",
+  "https://alsn.ru/uslovia-vozvrata",
+  "https://alsn.ru/utp",
+  "https://alsn.ru/vacancy",
+  "https://alsn.ru/vesii",
+  "https://alsn.ru/vnedrenie_mobilnoy_1c_kassy",
+  "https://alsn.ru/vtt",
+  "https://alsn.ru/whatsapp",
+  "https://alsn.ru/xitsadmarketplace",
+  "https://alsn.ru/zup8"
+ ],
+ "res": [
+  {
+   "url": "https://alsn.ru/",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/1_obschepit_fastfood",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/1c-ozon",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/1c-wildberries",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/1cbitrix",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/1cfresh",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/3logic",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/about_us",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/amo_crm",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/article_digital-report",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/auvix",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/avtomaticheskaya_zagruzka_prays-listov_it-kholdinga_lanit",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/avtomatizaciya-biznes-processov-kompanii-simon-elektrik-keys",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/avtomatizatsiya_tekhpodderzhki",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/bbit",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/bitrix24",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/blog",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/blog/erp",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/blog/integration",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/buhv8",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/business0",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/case-tehnokomp",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/case_telegram_bot",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/caseecomsc",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/casemarketplace",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/114bitrix",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/artis",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/autobuild",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/business_pro",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/gwd",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/kidzintagration",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/onlinetrade",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/pek",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/trello_integration",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cases/xcom",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/clients",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/constr",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/contacts",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cra",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/cracasesoftvideo",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/crmfurniture",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/development1c",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/digis",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/dokumentooborot8",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/dopolnitelnie_licenzii",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/dssl",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/ecom",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/elko",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/erp-time-price",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/etm-ipro",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/event-2025-05",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/gd",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/https/keys_po_rfidmetki",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/integraciya-1c-dlya-prodavcov-kompyuternoy-tehniki",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/integrationeco",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/integrationsite",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/integratsiya_sap_hcm_i_1c_erp_2",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/internship",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/interview_hr",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/its",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys-perehod-s-sistemy-1szup-na-sap-hcm",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_integratsiya_s_korporativnymi_prilozheniyami",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_integratsiya_s_powerbi",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_na_uskorenie",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_byudzhetam",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_integratsii_s_bitriks24",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_integratsii_s_crm_megaplan",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_integratsii_s_messendzherom_telegram",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_integratsii_s_saytom",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_integratsii_zup_erp",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_kartam_google",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_lk",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_lk2",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_mobilnym_prilozheniyam",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_telegram",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_upravlencheskomu_uchetu",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_vnedreniyu_modulya_diadok",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_vnedreniyu_ut_11_3",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_po_vnedrenyu_klassifikatsii_klientov",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/keys_rezervirovaniyatovarov",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/komersant",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/kompleksnaya_avtomatizaciya",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/marvel",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/merlion",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/moy-sklad-perenos-v-1s",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/ocs",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/outsorce_vs_inhouse",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/page187317109.html",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/perehod-s-dokumentooborota-2-1-na-3-0",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/perehod-s-upp-na-ka-unf-ut",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/perehod-s-ut-10-3",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/perehod-s-ut-na-unf",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/perevystavlenie-uslug-posledney-mili-ozon-v-1s",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/persons",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/persons/interw_lvov",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/policy",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/privacy",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/products",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/publication",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/rbc_pro",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/remotework",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/resurs-media",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/review",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/russkiy-svet",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/sinhronizaciya-bp-i-bp",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/sinhronizaciya-mezhdu-ut-i-ut",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/sinhronizaciya-mezhdu-zup-i-zup",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/sitemap",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/sklad",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/soglashenie",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/support1c",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbavtoservis",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbbot-parkovka-parking-garazh-stoyanka",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbbot-restoran-kafe-kofeynya-bar",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbdokument",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbfiksasotrud",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbhr",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbintmag",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbotdelprod",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbsotrudniki",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbstroit",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/tbtehpod",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/telegram-bot-1s-dlya-sdachi-v-arendu-avtomobiley-i-tehniki-s-voditelyami",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/telegram-bot-1s-dlya-soglasovaniya-i-podpisaniya-dokumentov-po-edo",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/telegram1c",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/treolan",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/upravlenie_nashei_firmoi",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/upt8",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/uslovia-vozvrata",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/utp",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/vacancy",
+   "status": 200,
+   "noindex": true
+  },
+  {
+   "url": "https://alsn.ru/vesii",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/vnedrenie_mobilnoy_1c_kassy",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/vtt",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/whatsapp",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/xitsadmarketplace",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/zup8",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/whatsapp",
+   "status": 200,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/uslugi",
+   "status": 404,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/produkty",
+   "status": 404,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/licenzii",
+   "status": 404,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/dorabotka-1c",
+   "status": 404,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/max1c",
+   "status": 404,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/b2b-postavshiki",
+   "status": 404,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/licenzii-1c-ut",
+   "status": 404,
+   "noindex": false
+  },
+  {
+   "url": "https://alsn.ru/test-menu",
+   "status": 404,
+   "noindex": false
+  }
+ ]
+}

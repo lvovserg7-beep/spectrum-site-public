@@ -1,0 +1,1699 @@
+[
+ {
+  "path": "/uslugi",
+  "status": 404
+ },
+ {
+  "path": "/development1c",
+  "status": 200,
+  "h1": "Внедрение 1С под ключ - УТ, КА, ERP",
+  "navs": [
+   {
+    "rec": "3989707201",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Внедрение 1С"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Внедрение 1С</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"@id\": \"https://alsn.ru/development1c#breadcrumb\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Главная\",\n      \"item\": \"https://alsn.ru/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Внедрение 1С\",\n      \"item\": \"https://alsn.ru/development1c\"\n    }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/development1c#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Внедрение 1С",
+      "https://alsn.ru/development1c"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/erp-time-price",
+  "status": 200,
+  "h1": "Стоимость внедрения 1С:ERP на производственном предприятии",
+  "navs": [
+   {
+    "rec": "3989547301",
+    "bg": "#000000",
+    "color": "#cfcfcf",
+    "names": [
+     "Внедрение 1С",
+     "Стоимость 1С:ERP"
+    ],
+    "links": [
+     "https://alsn.ru/development1c",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.55;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/development1c\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Внедрение 1С</a> <span style=\"margin:0 6px;opacity:.55;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.85;white-space:nowrap;\">Стоимость 1С:ERP</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"@id\": \"https://alsn.ru/erp-time-price#breadcrumb\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Главная\",\n      \"item\": \"https://alsn.ru/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Внедрение 1С\",\n      \"item\": \"https://alsn.ru/development1c\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 3,\n      \"name\": \"Стоимость 1С:ERP\",\n      \"item\": \"https://alsn.ru/erp-time-price\"\n    }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/erp-time-price#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Внедрение 1С",
+      "https://alsn.ru/development1c"
+     ],
+     [
+      "Стоимость 1С:ERP",
+      "https://alsn.ru/erp-time-price"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/upt8",
+  "status": 200,
+  "h1": "1С:Управление торговлей 8 ред 11: внедрение, техподдержка, лицензии",
+  "navs": [
+   {
+    "rec": "4022308501",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "1С:УТ"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">1С:УТ</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/upt8#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"1С:УТ\", \"item\": \"https://alsn.ru/upt8\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/upt8#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "1С:УТ",
+      "https://alsn.ru/upt8"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/kompleksnaya_avtomatizaciya",
+  "status": 200,
+  "h1": "Внедрение 1С:Комплексная автоматизация под ключ",
+  "navs": [
+   {
+    "rec": "3989671401",
+    "bg": "#f5e889",
+    "color": "#8a8a8a",
+    "names": [
+     "Внедрение 1С",
+     "1С:Комплексная автоматизация"
+    ],
+    "links": [
+     "https://alsn.ru/development1c",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/development1c\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Внедрение 1С</a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">1С:Комплексная автоматизация</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"@id\": \"https://alsn.ru/kompleksnaya_avtomatizaciya#breadcrumb\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Главная\",\n      \"item\": \"https://alsn.ru/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Внедрение 1С\",\n      \"item\": \"https://alsn.ru/development1c\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 3,\n      \"name\": \"1С:Комплексная автоматизация\",\n      \"item\": \"https://alsn.ru/kompleksnaya_avtomatizaciya\"\n    }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/kompleksnaya_avtomatizaciya#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Внедрение 1С",
+      "https://alsn.ru/development1c"
+     ],
+     [
+      "1С:Комплексная автоматизация",
+      "https://alsn.ru/kompleksnaya_avtomatizaciya"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/buhv8",
+  "status": 200,
+  "h1": "1С:Бухгалтерия: внедрение, сопровождение, обслуживание",
+  "navs": [
+   {
+    "rec": "4022201301",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "1С:Бухгалтерия"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">1С:Бухгалтерия</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/buhv8#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"1С:Бухгалтерия\", \"item\": \"https://alsn.ru/buhv8\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/buhv8#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "1С:Бухгалтерия",
+      "https://alsn.ru/buhv8"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/zup8",
+  "status": 200,
+  "h1": "1С ЗУП 8: внедрение, техподдержка, сопровождение",
+  "navs": [
+   {
+    "rec": "4022218001",
+    "bg": "#212121",
+    "color": "#8a8a8a",
+    "names": [
+     "1С:ЗУП"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">1С:ЗУП</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/zup8#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"1С:ЗУП\", \"item\": \"https://alsn.ru/zup8\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/zup8#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "1С:ЗУП",
+      "https://alsn.ru/zup8"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/upravlenie_nashei_firmoi",
+  "status": 200,
+  "h1": "1С:Управление нашей фирмой (1С УНФ): внедрение, техподдержка, лицензии",
+  "navs": [
+   {
+    "rec": "4022330301",
+    "bg": "#212121",
+    "color": "#8a8a8a",
+    "names": [
+     "1С:УНФ"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">1С:УНФ</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/upravlenie_nashei_firmoi#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"1С:УНФ\", \"item\": \"https://alsn.ru/upravlenie_nashei_firmoi\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/upravlenie_nashei_firmoi#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "1С:УНФ",
+      "https://alsn.ru/upravlenie_nashei_firmoi"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/dorabotka-1c",
+  "status": 404
+ },
+ {
+  "path": "/support1c",
+  "status": 200,
+  "h1": "Техническая поддержка 1С — программист на час",
+  "navs": [
+   {
+    "rec": "3938252201",
+    "bg": "#000000",
+    "color": "#cfcfcf",
+    "names": [
+     "Техподдержка 1С"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.55;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.85;white-space:nowrap;\">Техподдержка 1С</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"@id\": \"https://alsn.ru/support1c#breadcrumb\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Главная\",\n      \"item\": \"https://alsn.ru/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Техподдержка 1С\",\n      \"item\": \"https://alsn.ru/support1c\"\n    }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/support1c#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Техподдержка 1С",
+      "https://alsn.ru/support1c"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/bitrix24",
+  "status": 200,
+  "h1": "Внедрение CRM Битрикс24: тарифы и цены",
+  "navs": [
+   {
+    "rec": "4021866201",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Битрикс24"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Битрикс24</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/bitrix24#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Битрикс24\", \"item\": \"https://alsn.ru/bitrix24\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/bitrix24#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Битрикс24",
+      "https://alsn.ru/bitrix24"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/1cbitrix",
+  "status": 200,
+  "h1": "Интеграция Битрикс24 и 1С для интернет-магазина (сайта)",
+  "navs": [
+   {
+    "rec": "4022163701",
+    "bg": "#000000",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция Битрикс24 и 1С"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Интеграция Битрикс24 и 1С</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/1cbitrix#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Интеграция Битрикс24 и 1С\", \"item\": \"https://alsn.ru/1cbitrix\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/1cbitrix#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция Битрикс24 и 1С",
+      "https://alsn.ru/1cbitrix"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/produkty",
+  "status": 404
+ },
+ {
+  "path": "/casemarketplace",
+  "status": 200,
+  "h1": "Модуль 1С для маркетплейсов",
+  "navs": [
+   {
+    "rec": "3798528101",
+    "bg": "#ffffff",
+    "color": "#8a8a8a",
+    "names": [
+     "Модуль 1С для маркетплейсов"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Модуль 1С для маркетплейсов</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Главная\",\n      \"item\": \"https://alsn.ru/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Модуль 1С для маркетплейсов\",\n      \"item\": \"https://alsn.ru/casemarketplace\"\n    }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Модуль 1С для маркетплейсов",
+      "https://alsn.ru/casemarketplace"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/1c-ozon",
+  "status": 200,
+  "h1": "Интеграция 1С с Ozon",
+  "navs": [
+   {
+    "rec": "4275671101",
+    "bg": "#ffffff",
+    "color": "#8a8a8a",
+    "names": [
+     "Модуль 1С для маркетплейсов",
+     "Интеграция 1С с Ozon"
+    ],
+    "links": [
+     "https://alsn.ru/casemarketplace",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#8a8a8a;padding:8px 20px 0;\"> <a href=\"https://alsn.ru/\" style=\"color:#8a8a8a;text-decoration:none;\" aria-label=\"Главная\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z\"/></svg> </a> <span style=\"margin:0 6px;\">/</span> <a href=\"https://alsn.ru/casemarketplace\" style=\"color:#8a8a8a;text-decoration:none;\">Модуль 1С для маркетплейсов</a> <span style=\"margin:0 6px;\">/</span> <span style=\"color:#555;\">Интеграция 1С с Ozon</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Главная\",\n      \"item\": \"https://alsn.ru/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Модуль 1С для маркетплейсов\",\n      \"item\": \"https://alsn.ru/casemarketplace\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 3,\n      \"name\": \"Интеграция 1С с Ozon\",\n      \"item\": \"https://alsn.ru/1c-ozon\"\n    }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Модуль 1С для маркетплейсов",
+      "https://alsn.ru/casemarketplace"
+     ],
+     [
+      "Интеграция 1С с Ozon",
+      "https://alsn.ru/1c-ozon"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/1c-ozon-ut",
+  "status": 404
+ },
+ {
+  "path": "/1c-ozon-ka",
+  "status": 404
+ },
+ {
+  "path": "/1c-ozon-erp",
+  "status": 404
+ },
+ {
+  "path": "/1c-ozon-buh",
+  "status": 404
+ },
+ {
+  "path": "/1c-wildberries",
+  "status": 200,
+  "h1": "Интеграция 1С с Wildberries",
+  "navs": [
+   {
+    "rec": "4211206001",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Модуль 1С для маркетплейсов",
+     "Интеграция 1С с Wildberries"
+    ],
+    "links": [
+     "https://alsn.ru/casemarketplace",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"font-size:14px;line-height:1.4;color:#8a8a8a;padding:8px 20px 0;\"> <a href=\"https://alsn.ru/\" style=\"color:#8a8a8a;text-decoration:none;\" aria-label=\"Главная\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z\"/></svg> </a> <span style=\"margin:0 6px;\">/</span> <a href=\"https://alsn.ru/casemarketplace\" style=\"color:#8a8a8a;text-decoration:none;\">Модуль 1С для маркетплейсов</a> <span style=\"margin:0 6px;\">/</span> <span style=\"color:#555;\">Интеграция 1С с Wildberries</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Главная\",\n      \"item\": \"https://alsn.ru/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Модуль 1С для маркетплейсов\",\n      \"item\": \"https://alsn.ru/casemarketplace\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 3,\n      \"name\": \"Интеграция 1С с Wildberries\",\n      \"item\": \"https://alsn.ru/1c-wildberries\"\n    }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Модуль 1С для маркетплейсов",
+      "https://alsn.ru/casemarketplace"
+     ],
+     [
+      "Интеграция 1С с Wildberries",
+      "https://alsn.ru/1c-wildberries"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/1c-wildberries-ut",
+  "status": 404
+ },
+ {
+  "path": "/1c-wildberries-ka",
+  "status": 404
+ },
+ {
+  "path": "/1c-wildberries-erp",
+  "status": 404
+ },
+ {
+  "path": "/1c-wildberries-buh",
+  "status": 404
+ },
+ {
+  "path": "/ecom",
+  "status": 200,
+  "h1": "Интеграция 1С с поставщиками телеком- и IT-оборудования",
+  "navs": [
+   {
+    "rec": "3879160001",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция с поставщиками"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Интеграция с поставщиками</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"@id\": \"https://alsn.ru/ecom#breadcrumb\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Главная\",\n      \"item\": \"https://alsn.ru/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Интеграция с поставщиками\",\n      \"item\": \"https://alsn.ru/ecom\"\n    }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/ecom#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция с поставщиками",
+      "https://alsn.ru/ecom"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/b2b-postavshiki",
+  "status": 404
+ },
+ {
+  "path": "/telegram1c",
+  "status": 200,
+  "h1": "Telegram-бот 1С для увеличения продаж и автоматизации бизнеса",
+  "navs": [
+   {
+    "rec": "4021905601",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Telegram-бот 1С"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Telegram-бот 1С</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/telegram1c#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Telegram-бот 1С\", \"item\": \"https://alsn.ru/telegram1c\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/telegram1c#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Telegram-бот 1С",
+      "https://alsn.ru/telegram1c"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/max1c",
+  "status": 404
+ },
+ {
+  "path": "/whatsapp",
+  "status": 200,
+  "h1": "WhatsApp-бот 1С для увеличения продаж и автоматизации бизнеса",
+  "navs": [
+   {
+    "rec": "4158186701",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "WhatsApp-бот 1С"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">WhatsApp-бот 1С</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/whatsapp#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"WhatsApp-бот 1С\", \"item\": \"https://alsn.ru/whatsapp\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/whatsapp#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "WhatsApp-бот 1С",
+      "https://alsn.ru/whatsapp"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/licenzii",
+  "status": 404
+ },
+ {
+  "path": "/products",
+  "status": 200,
+  "h1": "1С Предприятие 8: программы, лицензии, внедрение, разработка",
+  "navs": [
+   {
+    "rec": "4022146301",
+    "bg": "#000000",
+    "color": "#8a8a8a",
+    "names": [
+     "Продукты"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Продукты</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/products#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Продукты\", \"item\": \"https://alsn.ru/products\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/products#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Продукты",
+      "https://alsn.ru/products"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/its",
+  "status": 200,
+  "h1": "Купить 1С:КП ПРОФ — комплект поддержки ИТС",
+  "navs": [
+   {
+    "rec": "3907239301",
+    "bg": "#212121",
+    "color": "#8a8a8a",
+    "names": [
+     "1С:КП"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">1С:КП</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"@id\": \"https://alsn.ru/its#breadcrumb\",\n  \"itemListElement\": [\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"1С:КП\", \"item\": \"https://alsn.ru/its\" }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/its#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "1С:КП",
+      "https://alsn.ru/its"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/1cfresh",
+  "status": 200,
+  "h1": "1С:Фреш — купить тариф в облаке",
+  "navs": [
+   {
+    "rec": "3907276301",
+    "bg": "#000000",
+    "color": "#8a8a8a",
+    "names": [
+     "1С:Фреш"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">1С:Фреш</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"@id\": \"https://alsn.ru/1cfresh#breadcrumb\",\n  \"itemListElement\": [\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"1С:Фреш\", \"item\": \"https://alsn.ru/1cfresh\" }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/1cfresh#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "1С:Фреш",
+      "https://alsn.ru/1cfresh"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/dokumentooborot8",
+  "status": 200,
+  "h1": "1С:Документооборот 8: внедрение, техподдержка, лицензии",
+  "navs": [
+   {
+    "rec": "4022368001",
+    "bg": "#212121",
+    "color": "#8a8a8a",
+    "names": [
+     "1С:Документооборот"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">1С:Документооборот</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/dokumentooborot8#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"1С:Документооборот\", \"item\": \"https://alsn.ru/dokumentooborot8\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/dokumentooborot8#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "1С:Документооборот",
+      "https://alsn.ru/dokumentooborot8"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/1_obschepit_fastfood",
+  "status": 200,
+  "h1": "1C:Предприятие 8. Фастфуд и Общепит",
+  "navs": [],
+  "t758": [],
+  "lds": []
+ },
+ {
+  "path": "/licenzii-1c-buhgalteriya",
+  "status": 404
+ },
+ {
+  "path": "/licenzii-1c-ut",
+  "status": 404
+ },
+ {
+  "path": "/licenzii-1c-ka",
+  "status": 404
+ },
+ {
+  "path": "/licenzii-1c-zup",
+  "status": 404
+ },
+ {
+  "path": "/licenzii-1c-unf",
+  "status": 404
+ },
+ {
+  "path": "/dopolnitelnie_licenzii",
+  "status": 200,
+  "h1": "Купить лицензии 1С ПРОФ",
+  "navs": [
+   {
+    "rec": "3907172601",
+    "bg": "#212121",
+    "color": "#cfcfcf",
+    "names": [
+     "Лицензии 1С"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#cfcfcf;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Лицензии 1С</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": []
+ },
+ {
+  "path": "/perehod-s-upp-na-ka-unf-ut",
+  "status": 200,
+  "h1": "Переход с 1С УПП на КА, УНФ, УТ от 3 дней",
+  "navs": [
+   {
+    "rec": "4022406201",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Внедрение 1С",
+     "Переход с УПП"
+    ],
+    "links": [
+     "https://alsn.ru/development1c",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/development1c\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Внедрение 1С</a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Переход с УПП</span> </nav>"
+   }
+  ],
+  "t758": [
+   {
+    "rec": "1271843691",
+    "text": "Сопровождение 1С → Перенос данных из 1С УПП в КА, УНФ, УТ #rec1271843691 .t758__link-item_active{color:#858585 !important;} #rec1271843691 .t758__breadcrumb-divider{color:#bdb9b9;} #rec1271843691 .t75"
+   }
+  ],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/perehod-s-upp-na-ka-unf-ut#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Внедрение 1С\", \"item\": \"https://alsn.ru/development1c\" },\r\n    { \"@type\": \"ListItem\", \"position\": 3, \"name\": \"Переход с УПП\", \"item\": \"https://alsn.ru/perehod-s-upp-na-ka-unf-ut\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/perehod-s-upp-na-ka-unf-ut#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Внедрение 1С",
+      "https://alsn.ru/development1c"
+     ],
+     [
+      "Переход с УПП",
+      "https://alsn.ru/perehod-s-upp-na-ka-unf-ut"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/perehod-s-ut-10-3",
+  "status": 200,
+  "h1": "Переход с УТ 10.3 на 11.5 от 1 дня",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1268461181",
+    "text": "Сопровождение 1С → Перенос документов из УТ 10.3 в 11.5 #rec1268461181 .t758__link-item_active{color:#858585 !important;} #rec1268461181 .t758__breadcrumb-divider{color:#bdb9b9;} #rec1268461181 .t758 "
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/perehod-s-ut-na-unf",
+  "status": 200,
+  "h1": "Переход с УТ 10.3 и 11 на УНФ 3.0 от 1 дня",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1268391961",
+    "text": "Сопровождение 1С → Перенос данных из УТ 10.3 и 11 в УНФ #rec1268391961 .t758__link-item_active{color:#858585 !important;} #rec1268391961 .t758__breadcrumb-divider{color:#bdb9b9;} #rec1268391961 .t758 "
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/moy-sklad-perenos-v-1s",
+  "status": 200,
+  "h1": "Переход с МойСклад на 1С за 3 дня",
+  "navs": [],
+  "t758": [],
+  "lds": []
+ },
+ {
+  "path": "/perehod-s-dokumentooborota-2-1-na-3-0",
+  "status": 200,
+  "h1": "Переход с 1С:Документооборот 2.1 на 3.0",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1268458041",
+    "text": "Сопровождение 1С → Миграция с 1С:Документооборот 2.1 на 3.0 #rec1268458041 .t758__link-item_active{color:#858585 !important;} #rec1268458041 .t758__breadcrumb-divider{color:#bdb9b9;} #rec1268458041 .t"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/sinhronizaciya-bp-i-bp",
+  "status": 200,
+  "h1": "Синхронизация БП и БП от 1 дня",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1286198551",
+    "text": "Сопровождение 1С → Синхронизация между базами 1С БП #rec1286198551 .t758__link-item_active{color:#858585 !important;} #rec1286198551 .t758__breadcrumb-divider{color:#bdb9b9;} #rec1286198551 .t758 .t-m"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/sinhronizaciya-mezhdu-ut-i-ut",
+  "status": 200,
+  "h1": "Синхронизация между 1С: УТ и УТ от 1 дня",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1293893281",
+    "text": "Сопровождение 1С → Синхронизация и обмен между УТ 11 и УТ 11 #rec1293893281 .t758__link-item_active{color:#858585 !important;} #rec1293893281 .t758__breadcrumb-divider{color:#bdb9b9;} #rec1293893281 ."
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/sinhronizaciya-mezhdu-zup-i-zup",
+  "status": 200,
+  "h1": "Синхронизация между ЗУП и ЗУП от 1 дня",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1290154861",
+    "text": "Сопровождение 1С → Синхронизация и обмен между ЗУП и ЗУП #rec1290154861 .t758__link-item_active{color:#858585 !important;} #rec1290154861 .t758__breadcrumb-divider{color:#bdb9b9;} #rec1290154861 .t758"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/integrationeco",
+  "status": 200,
+  "h1": "Интеграция 1С с экосистемой организации",
+  "navs": [
+   {
+    "rec": "4149511901",
+    "bg": "#000000",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция с экосистемой"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Интеграция с экосистемой</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/integrationeco#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Интеграция с экосистемой\", \"item\": \"https://alsn.ru/integrationeco\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/integrationeco#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция с экосистемой",
+      "https://alsn.ru/integrationeco"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/integrationsite",
+  "status": 200,
+  "h1": "Интеграция с CMS сайта от 25 000 рублей",
+  "navs": [
+   {
+    "rec": "4022438301",
+    "bg": "#000000",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция с сайтом"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Интеграция с сайтом</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/integrationsite#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Интеграция с сайтом\", \"item\": \"https://alsn.ru/integrationsite\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/integrationsite#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция с сайтом",
+      "https://alsn.ru/integrationsite"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/utp",
+  "status": 200,
+  "h1": "Подберём и установим 1С за 1 день, техзадание напишем бесплатно",
+  "navs": [],
+  "t758": [],
+  "lds": []
+ },
+ {
+  "path": "/perevystavlenie-uslug-posledney-mili-ozon-v-1s",
+  "status": 200,
+  "h1": "Перевыставление услуг последней мили ОЗОН с НДС за три клика в 1С",
+  "navs": [],
+  "t758": [],
+  "lds": []
+ },
+ {
+  "path": "/integraciya-1c-dlya-prodavcov-kompyuternoy-tehniki",
+  "status": 200,
+  "h1": "Интеграция 1C для продавцов компьютерной техники",
+  "navs": [],
+  "t758": [],
+  "lds": []
+ },
+ {
+  "path": "/crmfurniture",
+  "status": 200,
+  "h1": "Allsun 1С:CRM для мебельного бизнеса, мебельных магазинов, производства мебели",
+  "navs": [
+   {
+    "rec": "4158263301",
+    "bg": "#212121",
+    "color": "#8a8a8a",
+    "names": [
+     "CRM для мебели"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">CRM для мебели</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/crmfurniture#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"CRM для мебели\", \"item\": \"https://alsn.ru/crmfurniture\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/crmfurniture#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "CRM для мебели",
+      "https://alsn.ru/crmfurniture"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/amo_crm",
+  "status": 200,
+  "h1": "«Аллсан Интеграция» — официальный партнер amoCRM",
+  "navs": [
+   {
+    "rec": "4022608901",
+    "bg": "#000000",
+    "color": "#8a8a8a",
+    "names": [
+     "amoCRM"
+    ],
+    "links": [
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">amoCRM</span> </nav>"
+   }
+  ],
+  "t758": [],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/amo_crm#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"amoCRM\", \"item\": \"https://alsn.ru/amo_crm\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/amo_crm#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "amoCRM",
+      "https://alsn.ru/amo_crm"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/tbstroit",
+  "status": 200,
+  "h1": "Telegram-bot для строительной компании",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "865807418",
+    "text": "Примеры внедрения Телеграм-бота → Для строительной компании #rec865807418 .t758__breadcrumb-divider{color:#858585;} #rec865807418 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-out,opa"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbtehpod",
+  "status": 200,
+  "h1": "Телеграм-бот 1С для технической поддержки клиентов",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "865807793",
+    "text": "Примеры внедрения Телеграм-бота → Чат-бот техподдержки #rec865807793 .t758__breadcrumb-divider{color:#858585;} #rec865807793 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-out,opacity "
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbintmag",
+  "status": 200,
+  "h1": "Телеграм-бот 1С для интернет-магазина",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "865836936",
+    "text": "Примеры внедрения Телеграм-бота → Для интернет-магазина #rec865836936 .t758__breadcrumb-divider{color:#858585;} #rec865836936 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-out,opacity"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbavtoservis",
+  "status": 200,
+  "h1": "Telegram-bot для сервисной компании",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "865801795",
+    "text": "Примеры внедрения Телеграм-бота → Для сервисной компании #rec865801795 .t758__breadcrumb-divider{color:#858585;} #rec865801795 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-out,opacit"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbhr",
+  "status": 200,
+  "h1": "Телеграм бот для кадровой службы HR",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "865803699",
+    "text": "Примеры внедрения Телеграм-бота → Для кадровой службы #rec865803699 .t758__breadcrumb-divider{color:#858585;} #rec865803699 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-out,opacity 0"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbdokument",
+  "status": 200,
+  "h1": "Telegram-бот для документооборота",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "865804182",
+    "text": "Примеры внедрения Телеграм-бота → Чат-бот для документооборота 1С #rec865804182 .t758__breadcrumb-divider{color:#858585;} #rec865804182 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-o"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbotdelprod",
+  "status": 200,
+  "h1": "Телеграм-бот 1С для продажи товаров и услуг",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "865804726",
+    "text": "Примеры внедрения Телеграм-бота → Телеграм-бот для отдела продаж #rec865804726 .t758__breadcrumb-divider{color:#858585;} #rec865804726 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-ou"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbsotrudniki",
+  "status": 200,
+  "h1": "Телеграм-бот 1С для контроля переписки менеджеров с клиентами",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "865805290",
+    "text": "Примеры внедрения Телеграм-бота → Телеграм-бот 1С для контроля переписки менеджеров с клиентами #rec865805290 .t758__breadcrumb-divider{color:#858585;} #rec865805290 .t758 .t-menu__link-item{-webkit-t"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbfiksasotrud",
+  "status": 200,
+  "h1": "Telegram-bot для фиксации выхода сотрудников на работу",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "865805905",
+    "text": "Примеры внедрения Телеграм-бота → Фиксация выхода сотрудников на работу #rec865805905 .t758__breadcrumb-divider{color:#858585;} #rec865805905 .t758 .t-menu__link-item{-webkit-transition:color 0.3s eas"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbbot-parkovka-parking-garazh-stoyanka",
+  "status": 200,
+  "h1": "Телеграм-бот 1С для парковки, паркинга, гаражей, стоянки",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "893601421",
+    "text": "Примеры внедрения Телеграм-бота → Чат-бот для парковки, паркинга, гаражей (ГСК) #rec893601421 .t758__breadcrumb-divider{color:#858585;} #rec893601421 .t758 .t-menu__link-item{-webkit-transition:color "
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/tbbot-restoran-kafe-kofeynya-bar",
+  "status": 200,
+  "h1": "1С чат-бот ресторана, кафе, кофейни, бара и другого общепита!",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "895819861",
+    "text": "Примеры внедрения Телеграм-бота → Телеграм-бот для ресторана, кафе, кофейни, бара #rec895819861 .t758__breadcrumb-divider{color:#858585;} #rec895819861 .t758 .t-menu__link-item{-webkit-transition:colo"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/auvix",
+  "status": 200,
+  "h1": "Интеграция 1C с AUVIX B2B по API",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1131674231",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → AUVIX #rec1131674231 .t758__breadcrumb-divider{color:#858585;} #rec1131674231 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/digis",
+  "status": 200,
+  "h1": "Интеграция 1C с DIGIS B2B по API",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1131426891",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → DIGIS #rec1131426891 .t758__breadcrumb-divider{color:#858585;} #rec1131426891 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/dssl",
+  "status": 200,
+  "h1": "Интеграция 1C с ДССЛ B2B по API",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1131775441",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → DSSL #rec1131775441 .t758__breadcrumb-divider{color:#858585;} #rec1131775441 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/elko",
+  "status": 200,
+  "h1": "Интеграция 1C с ELKO Rus B2B по API",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1131790481",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Элко Рус #rec1131790481 .t758__breadcrumb-divider{color:#858585;} #rec1131790481 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/etm-ipro",
+  "status": 200,
+  "h1": "Интеграция 1C с ЭТМ iPRO по API",
+  "navs": [
+   {
+    "rec": "4021988501",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция с поставщиками",
+     "ЭТМ iPRO"
+    ],
+    "links": [
+     "https://alsn.ru/ecom",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/ecom\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Интеграция с поставщиками</a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">ЭТМ iPRO</span> </nav>"
+   }
+  ],
+  "t758": [
+   {
+    "rec": "1131539066",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → ЭТМ iPRO #rec1131539066 .t758__breadcrumb-divider{color:#858585;} #rec1131539066 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease"
+   }
+  ],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"@id\": \"https://alsn.ru/etm-ipro#breadcrumb\",\n  \"itemListElement\": [\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Интеграция с поставщиками\", \"item\": \"https://alsn.ru/ecom\" },\n    { \"@type\": \"ListItem\", \"position\": 3, \"name\": \"ЭТМ iPRO\", \"item\": \"https://alsn.ru/etm-ipro\" }\n  ]\n}\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/etm-ipro#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция с поставщиками",
+      "https://alsn.ru/ecom"
+     ],
+     [
+      "ЭТМ iPRO",
+      "https://alsn.ru/etm-ipro"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/marvel",
+  "status": 200,
+  "h1": "Интеграция 1C с Marvel B2B по API",
+  "navs": [
+   {
+    "rec": "4022061601",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция с поставщиками",
+     "Марвел"
+    ],
+    "links": [
+     "https://alsn.ru/ecom",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/ecom\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Интеграция с поставщиками</a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Марвел</span> </nav>"
+   }
+  ],
+  "t758": [
+   {
+    "rec": "1129465941",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Марвел #rec1129465941 .t758__breadcrumb-divider{color:#858585;} #rec1129465941 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-i"
+   }
+  ],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/marvel#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Интеграция с поставщиками\", \"item\": \"https://alsn.ru/ecom\" },\r\n    { \"@type\": \"ListItem\", \"position\": 3, \"name\": \"Марвел\", \"item\": \"https://alsn.ru/marvel\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/marvel#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция с поставщиками",
+      "https://alsn.ru/ecom"
+     ],
+     [
+      "Марвел",
+      "https://alsn.ru/marvel"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/merlion",
+  "status": 200,
+  "h1": "Интеграция 1C с Merlion B2B по API",
+  "navs": [
+   {
+    "rec": "4022017101",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция с поставщиками",
+     "Мерлион"
+    ],
+    "links": [
+     "https://alsn.ru/ecom",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/ecom\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Интеграция с поставщиками</a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Мерлион</span> </nav>"
+   }
+  ],
+  "t758": [
+   {
+    "rec": "1123068641",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Merlion #rec1123068641 .t758__breadcrumb-divider{color:#858585;} #rec1123068641 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-"
+   }
+  ],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/merlion#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Интеграция с поставщиками\", \"item\": \"https://alsn.ru/ecom\" },\r\n    { \"@type\": \"ListItem\", \"position\": 3, \"name\": \"Мерлион\", \"item\": \"https://alsn.ru/merlion\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/merlion#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция с поставщиками",
+      "https://alsn.ru/ecom"
+     ],
+     [
+      "Мерлион",
+      "https://alsn.ru/merlion"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/ocs",
+  "status": 200,
+  "h1": "Интеграция 1C с OCS B2B по API",
+  "navs": [
+   {
+    "rec": "4022036001",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция с поставщиками",
+     "OCS"
+    ],
+    "links": [
+     "https://alsn.ru/ecom",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/ecom\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Интеграция с поставщиками</a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">OCS</span> </nav>"
+   }
+  ],
+  "t758": [
+   {
+    "rec": "1129314396",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → OCS Distribution #rec1129314396 .t758__breadcrumb-divider{color:#858585;} #rec1129314396 .t758 .t-menu__link-item{-webkit-transition:color 0"
+   }
+  ],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/ocs#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Интеграция с поставщиками\", \"item\": \"https://alsn.ru/ecom\" },\r\n    { \"@type\": \"ListItem\", \"position\": 3, \"name\": \"OCS\", \"item\": \"https://alsn.ru/ocs\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/ocs#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция с поставщиками",
+      "https://alsn.ru/ecom"
+     ],
+     [
+      "OCS",
+      "https://alsn.ru/ocs"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/resurs-media",
+  "status": 200,
+  "h1": "Интеграция 1C с Ресурс-Медиа B2B по API",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1131163126",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Ресурс-Медиа #rec1131163126 .t758__breadcrumb-divider{color:#858585;} #rec1131163126 .t758 .t-menu__link-item{-webkit-transition:color 0.3s "
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/russkiy-svet",
+  "status": 200,
+  "h1": "Интеграция 1C с Русский Свет B2B по API",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1131270696",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Русский Свет #rec1131270696 .t758__breadcrumb-divider{color:#858585;} #rec1131270696 .t758 .t-menu__link-item{-webkit-transition:color 0.3s "
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/treolan",
+  "status": 200,
+  "h1": "Интеграция 1C с Treolan B2B по API",
+  "navs": [
+   {
+    "rec": "4022093801",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция с поставщиками",
+     "Treolan"
+    ],
+    "links": [
+     "https://alsn.ru/ecom",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/ecom\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Интеграция с поставщиками</a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">Treolan</span> </nav>"
+   }
+  ],
+  "t758": [
+   {
+    "rec": "1129548101",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → Treolan #rec1129548101 .t758__breadcrumb-divider{color:#858585;} #rec1129548101 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-"
+   }
+  ],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/treolan#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Интеграция с поставщиками\", \"item\": \"https://alsn.ru/ecom\" },\r\n    { \"@type\": \"ListItem\", \"position\": 3, \"name\": \"Treolan\", \"item\": \"https://alsn.ru/treolan\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/treolan#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция с поставщиками",
+      "https://alsn.ru/ecom"
+     ],
+     [
+      "Treolan",
+      "https://alsn.ru/treolan"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/vtt",
+  "status": 200,
+  "h1": "Интеграция 1C с ВТТ B2B по API",
+  "navs": [],
+  "t758": [
+   {
+    "rec": "1131768631",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → ВТТ #rec1131768631 .t758__breadcrumb-divider{color:#858585;} #rec1131768631 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-o"
+   }
+  ],
+  "lds": []
+ },
+ {
+  "path": "/3logic",
+  "status": 200,
+  "h1": "Интеграция 1C с 3Logic B2B по API",
+  "navs": [
+   {
+    "rec": "4022107801",
+    "bg": "",
+    "color": "#8a8a8a",
+    "names": [
+     "Интеграция с поставщиками",
+     "3logic"
+    ],
+    "links": [
+     "https://alsn.ru/ecom",
+     null
+    ],
+    "raw": "<nav aria-label=\"Хлебные крошки\" style=\"display:flex;align-items:center;flex-wrap:nowrap;font-size:14px;line-height:1.2;color:#8a8a8a;padding:12px 20px 8px;\"> <a href=\"https://alsn.ru/\" aria-label=\"Главная\" title=\"Главная\" style=\"display:inline-flex;color:inherit;text-decoration:none;\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 3.2 3 10.8V21h6.2v-6.5h5.6V21H21V10.8L12 3.2z\"/></svg> </a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <a href=\"https://alsn.ru/ecom\" style=\"color:inherit;text-decoration:none;white-space:nowrap;\">Интеграция с поставщиками</a> <span style=\"margin:0 6px;opacity:.45;\" aria-hidden=\"true\">/</span> <span style=\"opacity:.75;white-space:nowrap;\">3logic</span> </nav>"
+   }
+  ],
+  "t758": [
+   {
+    "rec": "1131049611",
+    "text": "Интеграция 1C по API с B2B поставщиками и дистрибьютерами → 3logic #rec1131049611 .t758__breadcrumb-divider{color:#858585;} #rec1131049611 .t758 .t-menu__link-item{-webkit-transition:color 0.3s ease-i"
+   }
+  ],
+  "lds": [
+   {
+    "raw": "<script type=\"application/ld+json\">\r\n{\r\n  \"@context\": \"https://schema.org\",\r\n  \"@type\": \"BreadcrumbList\",\r\n  \"@id\": \"https://alsn.ru/3logic#breadcrumb\",\r\n  \"itemListElement\": [\r\n    { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Главная\", \"item\": \"https://alsn.ru/\" },\r\n    { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Интеграция с поставщиками\", \"item\": \"https://alsn.ru/ecom\" },\r\n    { \"@type\": \"ListItem\", \"position\": 3, \"name\": \"3logic\", \"item\": \"https://alsn.ru/3logic\" }\r\n  ]\r\n}\r\n</script>",
+    "graph": false,
+    "id": "https://alsn.ru/3logic#breadcrumb",
+    "items": [
+     [
+      "Главная",
+      "https://alsn.ru/"
+     ],
+     [
+      "Интеграция с поставщиками",
+      "https://alsn.ru/ecom"
+     ],
+     [
+      "3logic",
+      "https://alsn.ru/3logic"
+     ]
+    ]
+   }
+  ]
+ }
+]

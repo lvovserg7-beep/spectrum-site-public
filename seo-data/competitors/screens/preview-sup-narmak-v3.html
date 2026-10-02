@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Интеграция 1С с NARMAK по API - макет v3</title>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F8FA;--acc:#F55823;--ink:#212121;--line:#D7DADD;--soft:#FDE7DE;--mut:#6b7075}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Onest',Arial,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.in{max-width:1240px;margin:0 auto;padding:0 28px}
+.mono{font-family:'JetBrains Mono',monospace}
+
+.head{background:#000;color:#fff;font-size:14px;padding:20px 0}
+.head .in{display:flex;justify-content:space-between;gap:20px}
+.crumb{font-size:14px;color:#8a8a8a;padding:16px 0}
+
+/* hero */
+.hero{padding:28px 0 0}
+.hero .in{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:end}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:22px}
+.eyebrow .rails{display:flex;flex-direction:column;gap:3px}
+.eyebrow .rails i{display:block;height:2px;width:22px;background:var(--acc);border-radius:2px}
+.eyebrow .rails i:nth-child(2){width:16px}.eyebrow .rails i:nth-child(3){width:10px}
+h1{font-size:68px;line-height:1.02;font-weight:800;letter-spacing:-.03em;margin:0 0 26px}
+h1 span{color:var(--acc)}
+.lead{font-size:20px;line-height:1.5;color:#3d4247;margin:0 0 34px;max-width:560px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 26px;border-radius:12px;font-weight:600;font-size:16px}
+.btn.m{background:var(--acc);color:#fff}
+.btn.g{background:var(--bg);border:1px solid var(--line)}
+.btn .ar{font-weight:800}
+.photo{position:relative;border-radius:28px;overflow:hidden;margin-bottom:44px}
+.photo img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 50%}
+.photo .tag{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.94);color:var(--mut);font-size:13px;line-height:1.35;padding:10px 16px 10px 14px;border-radius:12px;border-left:3px solid var(--acc);box-shadow:0 8px 20px rgba(33,33,33,.15)}
+.photo .tag b{display:block;color:var(--ink);font-size:15px;font-weight:600}
+
+/* day timeline */
+.day{padding:36px 0 0}
+.day .box{background:var(--bg);border-radius:24px;padding:26px 30px 28px}
+.day .lbl{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:20px}
+.day .track{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.day .track::before{content:"";position:absolute;left:8px;right:8px;top:8px;height:2px;background:linear-gradient(90deg,var(--line),var(--acc))}
+.day .it{position:relative;padding-top:30px;font-size:14.5px;line-height:1.45;color:var(--mut)}
+.day .it::before{content:"";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid var(--acc);box-sizing:border-box}
+.day .it:last-child::before{background:var(--acc)}
+.day .t{display:inline-block;font-size:12.5px;color:var(--acc);background:var(--soft);border-radius:6px;padding:3px 8px;margin-bottom:8px}
+.day .it b{display:block;color:var(--ink);font-weight:600;font-size:17px;margin-bottom:2px}
+.day .track{grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
+.day .it b{font-size:16px}
+.day .more{display:block;width:fit-content;margin-top:8px;color:var(--acc);font-weight:600;font-size:14px;text-decoration:none}
+.day .more:hover{text-decoration:underline}
+
+/* layout with passport */
+.body{padding:80px 0 40px}
+.body .in{display:grid;grid-template-columns:330px 1fr;gap:56px;align-items:start}
+.pass{position:sticky;top:24px;border:1px solid var(--line);border-radius:22px;padding:26px;background:#fff}
+.pass .ttl{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.pass .price{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.pass .per{color:var(--mut);font-size:14px;margin:6px 0 20px}
+.pass dl{margin:0 0 22px;display:grid;grid-template-columns:auto 1fr;gap:10px 14px;font-size:14px;border-top:1px solid var(--line);padding-top:18px}
+.pass dt{color:var(--mut)}
+.pass dd{margin:0;font-weight:500;text-align:right}
+.pass .btn{width:100%;justify-content:center;margin-bottom:10px}
+.pass .small{font-size:12.5px;color:var(--mut);line-height:1.45;margin-top:8px}
+.pass .trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.pass .trust span{font-size:12px;font-weight:600;background:var(--bg);border-radius:8px;padding:6px 9px}
+
+.sec{margin-bottom:96px}
+.num{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.num .n{font-family:'JetBrains Mono',monospace;color:var(--acc);font-size:14px}
+.num .ln{flex:1;height:1px;background:var(--line)}
+h2{font-size:42px;line-height:1.1;font-weight:800;letter-spacing:-.02em;margin:0 0 14px}
+.sub{font-size:18px;line-height:1.55;color:var(--mut);margin:0 0 34px;max-width:680px}
+
+/* questions panel */
+.qpanel{background:var(--ink);border-radius:28px;padding:34px;display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:14px}
+.q{background:#2c2c2c;border-radius:20px;padding:26px;color:#cfd2d6;font-size:15px;line-height:1.5;display:flex;flex-direction:column}
+.q b{display:block;color:#fff;font-size:23px;line-height:1.2;font-weight:700;margin-bottom:12px;letter-spacing:-.01em}
+.q .go{margin-top:auto;padding-top:18px;color:var(--acc);font-weight:600;font-size:14px;align-self:flex-start;border-bottom:1px solid transparent;transition:border-color .2s}
+.q .go:hover{border-bottom-color:currentColor}
+.q.big{grid-row:span 2;background:var(--acc);color:#fff}
+.q.big b{font-size:32px}
+.q.big .go{color:#fff}
+.q.big .mini{margin-top:22px;background:rgba(255,255,255,.14);border-radius:14px;padding:14px 16px;font-size:14px}
+.q.big .mini div{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.q.big .mini div:last-child{border:0;font-weight:700}
+
+/* route */
+.route{display:grid;grid-template-columns:1fr 96px 1fr 96px 1fr;align-items:stretch}
+.node{border:1px solid var(--line);border-radius:20px;padding:22px 20px;background:#fff}
+.node.mid{background:var(--bg);border-color:var(--bg)}
+.node .k{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+.node b{display:block;font-size:22px;margin-bottom:12px}
+.node ul{margin:0;padding:0;list-style:none;font-size:14.5px;line-height:1.5;color:#3d4247}
+.node li{padding:3px 0;display:flex;gap:9px;align-items:baseline}
+.node li::before{content:"";flex:0 0 10px;height:2px;background:var(--acc);transform:translateY(-4px)}
+.pipe{display:flex;flex-direction:column;justify-content:center;gap:14px;padding:0 8px}
+.pipe div{font-size:12.5px;color:var(--mut);text-align:center}
+.pipe div::before{content:"";display:block;height:2px;margin-bottom:6px;background:linear-gradient(90deg,var(--line),var(--acc))}
+.pipe div.back::before{background:linear-gradient(270deg,var(--line),var(--acc))}
+
+/* tabs */
+.tabs{display:flex;gap:6px;background:var(--bg);border-radius:14px;padding:6px;margin-bottom:18px;width:max-content;max-width:100%;flex-wrap:wrap}
+.tabs button{border:0;background:transparent;font:600 15px 'Onest',sans-serif;padding:11px 18px;border-radius:10px;cursor:pointer;color:var(--mut)}
+.tabs button.on{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(33,33,33,.08)}
+.pane{display:none;grid-template-columns:1fr 290px;gap:28px;align-items:start}
+.pane.on{display:grid}
+.pane .shot{border:1px solid var(--line);border-radius:18px;padding:10px;background:#fff}
+.pane .shot img{display:block;width:100%;border-radius:10px}
+.tabs+.pane .shot img{aspect-ratio:1121/515;object-fit:cover;object-position:top}
+.pane .txt b{display:block;font-size:22px;line-height:1.25;margin-bottom:12px}
+.pane .txt p{font-size:15.5px;line-height:1.6;color:#3d4247;margin:0 0 14px}
+.pane .txt .res{border-left:3px solid var(--acc);padding:4px 0 4px 14px;font-weight:600;font-size:15px}
+.extra-h{font-size:22px;font-weight:700;margin:44px 0 16px}
+.extra{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ex{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff}
+.ex .exshot{position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:16px}
+.ex .exshot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:left top;transition:transform .3s}
+.ex .exshot:hover img{transform:scale(1.02)}
+.ex .zoom{position:absolute;right:10px;bottom:10px;background:rgba(33,33,33,.86);color:#fff;font-size:13px;font-weight:600;padding:7px 10px;border-radius:8px}
+.ex b{display:block;font-size:18px;line-height:1.3;margin-bottom:8px}
+.ex p{font-size:15px;line-height:1.55;color:#3d4247;margin:0}
+.ex .need{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--acc);background:var(--soft);border-radius:6px;padding:5px 9px}
+@media(max-width:1000px){.extra{grid-template-columns:minmax(0,1fr)}}
+
+/* case */
+.case{display:grid;grid-template-columns:1fr 1fr;border-radius:28px;overflow:hidden;border:1px solid var(--line)}
+.case .l{background:var(--bg);padding:38px}
+.case .big{font-size:76px;font-weight:800;letter-spacing:-.04em;line-height:.95;white-space:nowrap}
+.case .big span{color:var(--acc)}
+.case .cap{font-size:16px;color:var(--mut);margin-top:10px}
+.case .l{display:flex;flex-direction:column}
+.case blockquote{margin:28px 0 0;font-size:19px;line-height:1.5;font-weight:500}
+.case .who{margin-top:auto;padding-top:22px;font-size:14px;color:var(--mut)}
+.case .who b{display:block;color:var(--ink);font-size:16px}
+.case .r{padding:24px;display:flex;flex-direction:column;justify-content:center;background:#fff}
+.video{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:16/9;background:#000;cursor:pointer}
+.video img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55))}
+.video .play{position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:var(--acc);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 12px rgba(245,88,35,.28);z-index:2;transition:transform .2s}
+.video .play svg{margin-left:4px}
+.video .vcap{position:absolute;left:18px;bottom:16px;color:#fff;font-weight:600;font-size:15px;z-index:2}
+.video:hover img{transform:scale(1.03)}
+.video:hover .play{transform:scale(1.08)}
+.vnote{font-size:14px;color:var(--mut);margin-top:12px}
+.vids{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.vids .ex{padding:14px 14px 18px}
+.vids .video{margin-bottom:14px}
+@media(max-width:1000px){.vids{grid-template-columns:minmax(0,1fr)}}
+.vids.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.prices.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.prices.three .p{font-size:40px}
+.cmpw{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.cmp{width:100%;border-collapse:collapse;font-size:14.5px}
+.cmp th{background:var(--bg);text-align:left;font-weight:600;padding:12px 16px;font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--mut)}
+.cmp td{padding:11px 16px;border-top:1px solid var(--line);color:#3d4247;line-height:1.45;vertical-align:top}
+.cmp th+th,.cmp td+td{width:92px;text-align:center}
+.cmp tr.g td{font-weight:700;color:var(--ink);background:#fff;padding-top:18px}
+.cmp .y{color:var(--acc);font-weight:800}
+.cmp .s{display:inline-block;font-size:12px;color:var(--mut);background:var(--bg);border-radius:6px;padding:3px 7px}
+.cmp .n{color:#b0b4b8}
+.cmp a{color:var(--acc);text-decoration:underline}
+.cmpmore{margin-top:12px}
+.cmpmore summary{cursor:pointer;list-style:none;font-weight:600;font-size:15px;color:var(--acc);padding:10px 0}
+.cmpmore summary::-webkit-details-marker{display:none}
+.cmpmore[open] summary{margin-bottom:8px}
+.cmpnote{font-size:13.5px;color:var(--mut);margin-top:12px}
+.team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.team .pp{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.team .pp img{display:block;width:100%;aspect-ratio:1/.95;object-fit:cover;object-position:top}
+.team .pp div{padding:12px 14px 16px;font-size:13px;line-height:1.4;color:var(--mut)}
+.team .pp b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:3px}
+@media(max-width:1000px){.team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.team .pp{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.team .pp img{display:block;width:100%;aspect-ratio:1/.95;object-fit:cover;object-position:top}
+.team .pp div{padding:12px 14px 16px;font-size:13px;line-height:1.4;color:var(--mut)}
+.team .pp b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:3px}
+@media(max-width:1000px){.team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1000px){.vids.c3,.prices.three{grid-template-columns:minmax(0,1fr)}.cmp td,.cmp th{padding:10px 10px}.cmp th+th,.cmp td+td{width:62px}}
+
+/* letter */
+.letter{display:grid;grid-template-columns:240px 1fr;gap:32px;margin-top:14px;border:1px solid var(--line);border-radius:28px;padding:28px;align-items:start}
+.scan{position:relative;display:block;border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 30px rgba(33,33,33,.10);transform:rotate(-2deg);transition:transform .2s;background:#fff}
+.scan img{display:block;width:100%}
+.scan .zoom{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(33,33,33,.86);color:#fff;font-size:13px;font-weight:600;text-align:center;padding:8px;border-radius:8px}
+.scan:hover{transform:rotate(0) scale(1.02)}
+.ltxt .lk{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.ltxt blockquote{margin:0;font-size:19px;line-height:1.55;font-weight:500}
+.ltxt mark{background:var(--soft);color:var(--ink);padding:0 3px;border-radius:4px}
+.ltxt .tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.ltxt .tags span{font-size:13px;background:var(--bg);border-radius:8px;padding:6px 10px}
+.ltxt .who{font-size:14px;color:var(--mut)}
+.ltxt .who b{display:block;color:var(--ink);font-size:16px}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;align-items:center;justify-content:center;z-index:50;cursor:zoom-out;padding:24px}
+.lb img{max-height:94vh;max-width:94vw;border-radius:8px;background:#fff}
+
+/* fit */
+.fit{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.fit div{border-top:3px solid var(--ink);padding-top:18px}
+.fit b{display:block;font-size:19px;margin-bottom:8px}
+.fit p{margin:0;font-size:15px;line-height:1.55;color:#3d4247}
+
+/* price */
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pc{border:1px solid var(--line);border-radius:22px;padding:28px}
+.pc.a{background:var(--ink);color:#fff;border-color:var(--ink);position:relative}
+.pc .badge{position:absolute;top:-13px;right:22px;background:var(--acc);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px}
+.pc .nm{font-size:18px;font-weight:600}
+.pc .p{font-size:46px;font-weight:800;letter-spacing:-.02em;margin:14px 0 2px}
+.pc .s{font-size:14px;color:var(--mut)}
+.pc.a .s{color:#b9bcc0}
+.pc ul{list-style:none;margin:20px 0 22px;padding:0;font-size:14.5px;line-height:1.5}
+.pc li{padding:5px 0;border-bottom:1px solid var(--line)}
+.pc.a li{border-color:#3a3a3a}
+.pc .btn{width:100%;justify-content:center}
+.pc.a .btn.g{background:#fff;color:var(--ink);border:0}
+.note{font-size:13.5px;color:var(--mut);line-height:1.55;margin-top:18px}
+
+/* faq */
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{font-size:19px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq summary::after{content:"+";color:var(--acc);font-size:24px;line-height:1}
+.faq details[open] summary::after{content:"-"}
+.faq p{margin:12px 0 0;font-size:15.5px;line-height:1.6;color:#3d4247;max-width:720px}
+
+/* final */
+.final{background:var(--bg);padding:70px 0}
+.final .in{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+.final h2{margin:0 0 10px}
+.final p{margin:0;color:var(--mut);font-size:17px}
+.final .ph{font-size:22px;font-weight:700;margin-top:12px;color:var(--ink)}
+
+@media(max-width:1000px){
+ h1{font-size:44px} h2{font-size:32px}
+ .hero .in,.body .in,.qpanel,.case,.prices,.fit,.pane.on{grid-template-columns:1fr}
+ .q.big{grid-row:auto}
+ .letter{grid-template-columns:1fr}.scan{max-width:240px}
+ .pass{position:static}
+ .day .track{grid-template-columns:1fr;gap:18px}.day .track::before{left:8px;right:auto;top:8px;bottom:8px;width:2px;height:auto;background:linear-gradient(180deg,var(--line),var(--acc))}.day .it{padding:0 0 0 32px}
+ .route{grid-template-columns:1fr}.pipe{flex-direction:row;padding:14px 0}.pipe div{flex:1}
+ .final .in{grid-template-columns:1fr}
+}
+.body .in>*,.hero .in>*,.pane>*,.case>*,.letter>*,.qpanel>*{min-width:0}
+@media(max-width:1000px){
+ .hero .in,.body .in,.qpanel,.case,.prices,.fit,.pane.on,.letter,.route,.final .in{grid-template-columns:minmax(0,1fr)}
+ .tabs{width:auto}.tabs button{padding:10px 12px;font-size:14px}
+ .case .big{font-size:56px}
+ .in{padding:0 18px}
+ .hero .in{gap:24px}.hero .in>div:first-child{padding-bottom:0!important}.photo{margin-bottom:0}
+}
+
+.mh{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.mh .bar{display:flex;align-items:center;gap:28px;height:76px}
+.mh .logo{display:flex;align-items:center;flex:0 0 auto}
+.mh .logo img{height:54px;width:auto;display:block}
+.mh nav{flex:1 1 auto}
+.mh .top{display:flex;gap:4px;margin:0;padding:0;list-style:none}
+.mh .top>li>button,.mh .top>li>a{display:flex;align-items:center;gap:7px;height:76px;padding:0 14px;background:none;border:0;font:600 15.5px Onest,sans-serif;color:var(--ink);cursor:pointer;position:relative}
+.mh .top>li>button::after{content:"";width:7px;height:7px;border-right:1.8px solid currentColor;border-bottom:1.8px solid currentColor;transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.mh .top>li>button::before{content:"";position:absolute;left:14px;right:14px;bottom:-1px;height:2px;background:var(--acc);transform:scaleX(0);transition:transform .2s}
+.mh .top>li.open>button,.mh .top>li>button:hover{color:var(--acc)}
+.mh .top>li.open>button::before{transform:scaleX(1)}
+.mh .top>li.open>button::after{transform:rotate(-135deg) translateY(-1px)}
+.mh .tools{display:flex;align-items:center;gap:14px;flex:0 0 auto}
+.mh .ph{font-weight:700;font-size:15.5px;white-space:nowrap}
+.mh .ph small{display:block;font-weight:400;font-size:12px;color:var(--mut)}
+.mh .ic{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);display:grid;place-items:center;background:#fff;cursor:pointer}
+.mh .ic:hover{border-color:var(--acc);color:var(--acc)}
+.mh .ic svg{width:18px;height:18px}
+.mh .burger{display:none}
+/* мега-панель */
+.mh .panel{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 24px 48px rgba(33,33,33,.10);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s}
+.mh li.open>.panel{opacity:1;visibility:visible;transform:none}
+.mh .pin{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;padding:32px 28px 36px;max-width:1240px;margin:0 auto}
+.mh .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;align-content:start}
+.mh .cols.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mh .cols.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.mh .promo{align-self:start}
+.mh .col h4{margin:0 0 4px;font-size:16px;font-weight:700;line-height:1.3}
+.mh .col h4 a{display:inline-flex;gap:8px;align-items:baseline}
+.mh .col h4 a:hover{color:var(--acc)}
+.mh .col h4 a::before{content:"";flex:0 0 14px;height:2px;background:var(--acc);transform:translateY(-4px)}
+.mh .col p{margin:0 0 12px 22px;font-size:13.5px;line-height:1.45;color:var(--mut)}
+.mh .col ul{list-style:none;margin:0 0 0 22px;padding:0;display:grid;gap:2px}
+.mh .col ul a{display:flex;justify-content:space-between;gap:10px;padding:6px 10px;margin-left:-10px;border-radius:8px;font-size:14.5px;color:#3d4247}
+.mh .col ul a:hover{background:var(--bg);color:var(--ink)}
+.mh .col ul em{font-style:normal;font-size:12px;color:var(--mut);white-space:nowrap}
+.mh .col ul em.new{color:var(--acc);background:var(--soft);border-radius:6px;padding:1px 7px}
+.mh .all{grid-column:1/-1;display:flex;align-items:center;gap:10px;padding-top:18px;border-top:1px solid var(--line);font-weight:600;font-size:14.5px;color:var(--acc)}
+.mh .all::after{content:"→"}
+.mh .promo{background:var(--bg);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:10px;border:1px solid var(--line)}
+.mh .promo .k{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc)}
+.mh .promo b{font-size:20px;line-height:1.25}
+.mh .promo p{margin:0;font-size:14px;line-height:1.5;color:#3d4247}
+.mh .promo .btn{margin-top:auto;align-self:flex-start}
+.mh .simple{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px 24px;padding:24px 28px 28px;max-width:1240px;margin:0 auto}
+.mh .simple a{padding:10px 12px;border-radius:10px;font-weight:600;font-size:15px}
+.mh .simple a span{display:block;font-weight:400;font-size:13px;color:var(--mut);margin-top:2px}
+.mh .simple a:hover{background:var(--bg);color:var(--acc)}
+.mh-shade{position:fixed;inset:76px 0 0;background:rgba(33,33,33,.18);opacity:0;visibility:hidden;transition:.18s;z-index:90}
+.mh-shade.on{opacity:1;visibility:visible}
+@media(max-width:1180px){.mh .ph small{display:none}.mh .top>li>button,.mh .top>li>a{padding:0 10px;font-size:15px}}
+@media(max-width:1000px){
+ .mh .bar{height:64px;gap:12px}.mh .logo img{height:44px}
+ .mh nav,.mh .tools .btn,.mh .ph{display:none}
+ .mh .tools{margin-left:auto}
+ .mh .burger{display:grid}
+ .mh-shade{display:none}
+}
+/* мобильное меню */
+.mm{position:fixed;inset:64px 0 0;background:#fff;z-index:120;overflow:auto;transform:translateX(100%);transition:transform .25s;padding:8px 18px 28px;display:flex;flex-direction:column}
+.mm.on{transform:none}
+.mm details{border-bottom:1px solid var(--line)}
+.mm summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-weight:700;font-size:18px;cursor:pointer}
+.mm summary::-webkit-details-marker{display:none}
+.mm summary::after{content:"+";font-weight:400;font-size:24px;color:var(--acc);line-height:1}
+.mm details[open]>summary::after{content:"−"}
+.mm details details{border:0;margin-left:14px}
+.mm details details summary{font-size:16px;font-weight:600;padding:10px 0}
+.mm .lnk{display:block;padding:10px 0 10px 14px;font-size:15.5px;color:#3d4247}
+.mm .lnk.all{color:var(--acc);font-weight:600}
+.mm .foot{margin-top:auto;padding-top:22px;display:grid;gap:12px}
+.mm .foot .btn{justify-content:center;padding:15px}
+.mm .foot .ph{font-weight:700;font-size:18px;text-align:center}
+
+.mh{background:#111214;border-bottom:0;backdrop-filter:none;color:#fff}
+.mh .top>li>button,.mh .top>li>a{color:#e9eaec;font-weight:500}
+.mh .top>li.open>button,.mh .top>li>button:hover{color:var(--acc)}
+.mh .top>li>button::before{bottom:0}
+.mh .ph{color:#fff}.mh .ph small{color:#9aa0a6}
+.mh .ic{background:transparent;border-color:#3a3d42;color:#fff}
+.mh .ic:hover{border-color:var(--acc);color:var(--acc)}
+.mh .panel{border-top:1px solid #2a2d31;color:var(--ink)}
+.mh .panel h4,.mh .panel h4 a,.mh .panel .promo b,.mh .panel .promo h3,.mh .panel .promo strong{color:var(--ink)}
+.mh-shade{background:rgba(17,18,20,.35)}
+.mm{background:#111214;color:#fff}
+.mm details{border-bottom:1px solid #2a2d31}
+.mm .lnk{color:#cfd2d6}
+.mh .promo p a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.mh .promo p a:hover{color:var(--acc);text-decoration-color:var(--acc)}
+
+/* первый экран в рамке (.hf) */
+.v3 .hf{padding:8px 0 0;--h:clamp(400px,36vw,460px)}
+.v3 .hf .frame{position:relative;height:var(--h);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
+.v3 .hf .txt{position:relative;z-index:2;width:calc(100% - var(--h)*16/9*.95);height:100%;padding:36px 8px 36px 40px;display:flex;flex-direction:column;box-sizing:border-box}
+.v3 .hf .eyebrow{margin-bottom:16px}
+.v3 .hf h1{font-size:clamp(38px,3.3vw,48px);line-height:1.05;margin:0 0 16px}
+.v3 .hf .lead{font-size:16px;line-height:1.5;margin:0 0 20px;max-width:none}
+.v3 .hf .btns{margin:auto 0 0;gap:10px;flex-wrap:wrap}
+.v3 .hf .btns .btn{padding:14px 18px;font-size:15px;white-space:nowrap}
+.v3 .hf .ph{position:absolute;top:0;right:0;bottom:0;aspect-ratio:16/9}
+.v3 .hf .ph img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.v3 .hf .veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#fff 0%,#fff 5%,rgba(255,255,255,.7) 6.5%,rgba(255,255,255,.3) 8%,rgba(255,255,255,0) 9.5%)}
+.v3 .hf .who{position:absolute;z-index:3;right:16px;bottom:16px;font-size:12.5px;line-height:1.3;padding:7px 12px;border-radius:10px;background:rgba(255,255,255,.92);color:var(--ink);border:1px solid var(--line)}
+.v3 .hf .who b{font-weight:600}
+@media(min-width:1001px) and (max-width:1240px){.v3 .hf .txt{padding:26px 8px 26px 32px}.v3 .hf h1{font-size:36px;margin-bottom:12px}.v3 .hf .eyebrow{margin-bottom:12px}.v3 .hf .lead{font-size:15px;line-height:1.45;margin-bottom:14px}.v3 .hf .btns{gap:8px}.v3 .hf .btns .btn{padding:12px 16px}}
+@media(min-width:1001px) and (max-width:1140px){.v3 .hf .txt{width:340px}.v3 .hf .ph{aspect-ratio:auto;width:calc(100% - 318px)}.v3 .hf .ph img{object-position:100% 50%}.v3 .hf .veil{background:linear-gradient(90deg,#fff 0%,#fff 3%,rgba(255,255,255,.5) 4.5%,rgba(255,255,255,0) 6%)}.v3 .hf .eyebrow{font-size:12px}}
+@media(max-width:1000px){
+.v3 .hf .frame{display:flex;flex-direction:column;height:auto}
+.v3 .hf .txt{width:auto;height:auto;padding:0 20px 24px;margin-top:-6px}
+.v3 .hf .ph{position:relative;order:-1;aspect-ratio:auto;padding-top:62.5%}
+.v3 .hf .ph img{bottom:auto;height:auto;aspect-ratio:16/10;object-position:40% 25%}
+.v3 .hf .veil{bottom:auto;aspect-ratio:16/10;background:linear-gradient(180deg,rgba(255,255,255,0) 60%,#fff 100%)}
+.v3 .hf h1{font-size:44px}
+.v3 .hf .lead{font-size:17px}
+.v3 .hf .who{position:static;margin:8px 20px 18px;padding:0;background:none;border:0;border-radius:0;font-size:13px;line-height:1.4;color:var(--mut)}
+.v3 .hf .who b{color:var(--ink)}
+.v3 .hf .btns .btn{width:100%;justify-content:center}
+}
+
+@media(min-width:1141px){.v3 .hf.wide .txt{width:470px}.v3 .hf.wide .ph{aspect-ratio:auto;width:calc(100% - 448px)}.v3 .hf.wide .ph img{object-position:100% 50%}}
+@media(max-width:1000px){.v3 .hf h1.long{font-size:37px}}
+.prices.three .pc{display:flex;flex-direction:column;padding:26px 22px}
+.prices.three .pc ul{flex:1 1 auto}
+.prices.three .pc .btn{margin-top:auto;padding:15px 12px;font-size:15px;white-space:nowrap;text-align:center}
+.q.big .mini div{gap:14px}.q.big .mini div span+span{text-align:right}
+.v3 .hf h1 small{display:block;font-size:.5em;line-height:1.2;font-weight:700;letter-spacing:-.01em;color:var(--ink);margin-top:8px}
+.crumb-bar .crumb a{color:inherit}
+.crumb-bar .crumb a:hover{color:var(--acc)}
+.cmp.sup td:first-child a{color:var(--ink);text-decoration:none;font-weight:600;border-bottom:1px solid var(--line)}
+.cmp.sup td:first-child a:hover{color:var(--acc);border-color:var(--acc)}
+.cmp.sup th+th,.cmp.sup td+td{width:84px}
+.fit.six{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 14px}
+.pane .shotz{position:relative;display:block}
+.tabs+.pane .shot img,.pane .shot img{aspect-ratio:auto;object-fit:contain}
+.pane .zoom{position:absolute;right:10px;bottom:10px;background:rgba(33,33,33,.86);color:#fff;font-size:13px;font-weight:600;padding:7px 10px;border-radius:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{font-size:14px;font-weight:600;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.chips a:hover{border-color:var(--acc);color:var(--acc)}
+.chips a.all{background:#fff;color:var(--acc);border-color:var(--acc)}
+.mh .btn,.mm .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:15px;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
+.mh .btn.m,.mm .btn.m{background:var(--acc);color:#fff}
+@media(max-width:1000px){.fit.six{grid-template-columns:minmax(0,1fr)}.cmp.sup th+th,.cmp.sup td+td{width:48px}.cmp.sup th{font-size:10.5px;letter-spacing:0}}
+
+.case.solo .r{padding:38px;justify-content:center}
+.case.solo blockquote{margin:0}
+.go{display:inline-block;margin-top:auto;padding-top:22px;color:var(--acc);font-weight:600;font-size:15px;text-decoration:none}
+.go:hover{text-decoration:underline}
+.vh{margin:56px 0 0;font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1.25}
+.letter.vid{grid-template-columns:minmax(0,400px) minmax(0,1fr);align-items:center}
+.letter.vid b{display:block;font-size:18px;margin-bottom:4px}
+.letter.vid p{margin:0;font-size:15.5px;line-height:1.55;color:#3d4247}
+.letter.vid .go{padding-top:14px}
+@media(max-width:1000px){.letter.vid{grid-template-columns:minmax(0,1fr)}.case.solo .r{padding:28px}.vh{font-size:21px;margin-top:40px}}
+@media(min-width:1241px){.v3 .hf h1.long{font-size:clamp(34px,2.8vw,40px)}}
+@media(min-width:1001px) and (max-width:1240px){.v3 .hf h1.long{font-size:30px}}
+</style>
+</head>
+<body>
+<div style="background:#F7F8FA;border-bottom:1px solid #D7DADD;font:13px Onest,sans-serif;color:#6b7075;padding:8px 0"><div class="in"><b style="color:#212121">Макет.</b> Страница «Интеграция 1С с NARMAK по API» (https://alsn.ru/narmak) в стиле v3. <a href="../sup-cards-design-options-2026-09-30.html" style="color:#F55823">Все макеты</a></div></div><header class="mh" id="mh">
+<div class="in bar">
+ <a class="logo" href="https://alsn.ru/" aria-label="Аллсан Интеграция, на главную"><img src="https://static.tildacdn.com/tild6634-3863-4731-a232-653239393635/_5.png" alt="Аллсан"></a>
+ <nav aria-label="Основное меню"><ul class="top"><li><button type="button" aria-expanded="false" aria-controls="p0">Услуги</button><div id="p0" class="panel" role="region" aria-label="Услуги"><div class="pin"><div class="cols c4"><div class="col"><h4><a href="/development1c">Внедрение 1С под ключ</a></h4><p>Запуск учёта с нуля или переход на новую конфигурацию</p><ul><li><a href="/erp-time-price">1С:ERP</a></li><li><a href="/upt8">1С:Управление торговлей</a></li><li><a href="/kompleksnaya_avtomatizaciya">1С:Комплексная автоматизация</a></li><li><a href="/buhv8">1С:Бухгалтерия</a></li><li><a href="/zup8">1С:ЗУП</a></li><li><a href="/upravlenie_nashei_firmoi">1С:УНФ</a></li></ul></div><div class="col"><h4><a href="/dorabotka-1c">Разработка и доработка 1С</a></h4><p>Отчёты, печатные формы, обмены, исправление чужих правок</p></div><div class="col"><h4><a href="/support1c">Техническая поддержка 1С</a></h4><p>Внешний отдел 1С вместо штатного программиста</p></div><div class="col"><h4><a href="/bitrix24">Битрикс24</a></h4><p>Готовые решения и быстрое внедрение</p><ul><li><a href="/bitrix24">Внедрение Битрикс24</a></li><li><a href="/1cbitrix">Интеграция сайта с 1С и Битрикс24</a></li></ul></div><a href="/uslugi" class="all">Все услуги</a></div><aside class="promo"><span class="k">Услуги</span><b>Реакция от 15 минут</b><p>Программист, аналитик и руководитель проекта на связи по вашей 1С.</p><a href="#popup:consult" class="btn m">Получить консультацию</a></aside></div></div></li><li><button type="button" aria-expanded="false" aria-controls="p1">Продукты</button><div id="p1" class="panel" role="region" aria-label="Продукты"><div class="pin"><div class="cols c3"><div class="col"><h4><a href="/casemarketplace">Интеграция 1С с маркетплейсами</a></h4><p>Остатки, заказы и финансы Ozon и WB в 1С</p><ul><li><a href="/1c-ozon">Ozon<em>FBO, FBS, rFBS, DBS</em></a></li><li><a href="/1c-wildberries">Wildberries<em>FBO, FBS, DBS</em></a></li></ul></div><div class="col"><h4><a href="/ecom">Интеграция 1С с поставщиками B2B</a></h4><p>Цены, остатки, резерв и заказы телеком и IT-поставщиков</p><ul><li><a href="/b2b-postavshiki">Все поставщики</a></li></ul></div><div class="col"><h4><a href="/telegram1c">Чат-боты 1С для мессенджеров</a></h4><p>Данные 1С в мессенджере сотрудника</p><ul><li><a href="/telegram1c">Телеграм-бот 1С</a></li><li><a href="/max1c">Бот 1С для MAX<em class="new">новое</em></a></li></ul></div><a href="/produkty" class="all">Все продукты</a></div><aside class="promo"><span class="k">Продукты</span><b>Модуль 1С для Ozon и WB</b><p>40 700 ₽ за площадку, 69 990 ₽ за обе, с НДС 5%. Остатки, заказы и юнит-экономика в вашей 1С.</p><a href="/casemarketplace" class="btn m">Смотреть решение</a></aside></div></div></li><li><button type="button" aria-expanded="false" aria-controls="p2">Лицензии</button><div id="p2" class="panel" role="region" aria-label="Лицензии"><div class="pin"><div class="cols c2"><div class="col"><h4><a href="/products">Программы 1С</a></h4><p>Коробки, облако и договор поддержки</p><ul><li><a href="/licenzii-1c-buhgalteriya">1С:Бухгалтерия</a></li><li><a href="/licenzii-1c-ut">1С:Управление торговлей</a></li><li><a href="/licenzii-1c-ka">1С:Комплексная автоматизация</a></li><li><a href="/licenzii-1c-zup">1С:ЗУП</a></li><li><a href="/licenzii-1c-unf">1С:УНФ</a></li><li><a href="/its">1С:КП (ИТС)</a></li><li><a href="/1cfresh">1С:Fresh</a></li><li><a href="/dokumentooborot8">1С:Документооборот</a></li><li><a href="/dopolnitelnie_licenzii">Лицензии 1С</a></li></ul></div><div class="col"><h4><a href="/bitrix24">Битрикс24</a></h4><p>Лицензии и тарифы Битрикс24</p></div><a href="/licenzii" class="all">Все лицензии</a></div><aside class="promo"><span class="k">Лицензии</span><b>Официальный партнёр 1С</b><p><a href="/cra">ТОП 10 ЦРА</a>. Подберём лицензию под задачу и сразу поможем с установкой и внедрением.</p><a href="/licenzii" class="btn m">Подобрать лицензию</a></aside></div></div></li><li><button type="button" aria-expanded="false" aria-controls="p3">Наш опыт</button><div id="p3" class="panel" role="region" aria-label="Наш опыт"><div class="simple"><a href="/cases">Кейсы<span>Задача, решение и результат по проектам</span></a><a href="/clients">Отзывы<span>Письма и видеоотзывы клиентов</span></a><a href="/publication">СМИ о нас<span>Публикации и интервью</span></a></div></div></li><li><button type="button" aria-expanded="false" aria-controls="p4">О компании</button><div id="p4" class="panel" role="region" aria-label="О компании"><div class="simple"><a href="/about_us">О компании</a><a href="/cra">Реальная автоматизация</a><a href="/persons">Команда</a><a href="/blog">Блог</a><a href="/vacancy">Вакансии</a><a href="/internship">Для стажёров</a><a href="/contacts">Контакты</a></div></div></li></ul></nav>
+ <div class="tools">
+  <a class="ph" href="tel:+74952600403">+7 495 260-04-03<small>Пн-Пт 9:00-18:00</small></a>
+  <a class="ic" href="#opensearch" aria-label="Поиск по сайту"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+  <a class="btn m" href="#popup:consult">Получить консультацию</a>
+  <button class="ic burger" type="button" aria-label="Открыть меню" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+ </div>
+</div>
+</header>
+<div class="mh-shade" id="mhShade"></div><div class="mm" id="mm" aria-hidden="true"><details><summary>Услуги</summary><a href="/uslugi" class="lnk all">Все услуги</a><details><summary>Внедрение 1С под ключ</summary><a href="/development1c" class="lnk all">Обзор</a><a href="/erp-time-price" class="lnk">1С:ERP</a><a href="/upt8" class="lnk">1С:Управление торговлей</a><a href="/kompleksnaya_avtomatizaciya" class="lnk">1С:Комплексная автоматизация</a><a href="/buhv8" class="lnk">1С:Бухгалтерия</a><a href="/zup8" class="lnk">1С:ЗУП</a><a href="/upravlenie_nashei_firmoi" class="lnk">1С:УНФ</a></details><a href="/dorabotka-1c" class="lnk">Разработка и доработка 1С</a><a href="/support1c" class="lnk">Техническая поддержка 1С</a><details><summary>Битрикс24</summary><a href="/bitrix24" class="lnk all">Обзор</a><a href="/bitrix24" class="lnk">Внедрение Битрикс24</a><a href="/1cbitrix" class="lnk">Интеграция сайта с 1С и Битрикс24</a></details></details><details><summary>Продукты</summary><a href="/produkty" class="lnk all">Все продукты</a><details><summary>Интеграция 1С с маркетплейсами</summary><a href="/casemarketplace" class="lnk all">Обзор</a><a href="/1c-ozon" class="lnk">Ozon</a><a href="/1c-wildberries" class="lnk">Wildberries</a></details><details><summary>Интеграция 1С с поставщиками B2B</summary><a href="/ecom" class="lnk all">Обзор</a><a href="/b2b-postavshiki" class="lnk">Все поставщики</a></details><details><summary>Чат-боты 1С для мессенджеров</summary><a href="/telegram1c" class="lnk all">Обзор</a><a href="/telegram1c" class="lnk">Телеграм-бот 1С</a><a href="/max1c" class="lnk">Бот 1С для MAX</a></details></details><details><summary>Лицензии</summary><a href="/licenzii" class="lnk all">Все лицензии</a><details><summary>Программы 1С</summary><a href="/products" class="lnk all">Обзор</a><a href="/licenzii-1c-buhgalteriya" class="lnk">1С:Бухгалтерия</a><a href="/licenzii-1c-ut" class="lnk">1С:Управление торговлей</a><a href="/licenzii-1c-ka" class="lnk">1С:Комплексная автоматизация</a><a href="/licenzii-1c-zup" class="lnk">1С:ЗУП</a><a href="/licenzii-1c-unf" class="lnk">1С:УНФ</a><a href="/its" class="lnk">1С:КП (ИТС)</a><a href="/1cfresh" class="lnk">1С:Fresh</a><a href="/dokumentooborot8" class="lnk">1С:Документооборот</a><a href="/dopolnitelnie_licenzii" class="lnk">Лицензии 1С</a></details><a href="/bitrix24" class="lnk">Битрикс24</a></details><details><summary>Наш опыт</summary><a href="/cases" class="lnk">Кейсы</a><a href="/clients" class="lnk">Отзывы</a><a href="/publication" class="lnk">СМИ о нас</a></details><details><summary>О компании</summary><a href="/about_us" class="lnk">О компании</a><a href="/cra" class="lnk">Реальная автоматизация</a><a href="/persons" class="lnk">Команда</a><a href="/blog" class="lnk">Блог</a><a href="/vacancy" class="lnk">Вакансии</a><a href="/internship" class="lnk">Для стажёров</a><a href="/contacts" class="lnk">Контакты</a></details><div class="foot"><a class="ph" href="tel:+74952600403">+7 495 260-04-03</a><a class="btn m" href="#popup:consult">Получить консультацию</a></div></div>
+<div class="v3">
+<div class="crumb-bar"><div class="in crumb">⌂ / <a href="https://alsn.ru/ecom">Интеграция с поставщиками</a> / NARMAK</div></div>
+
+<!-- HERO -->
+<section class="hf wide"><div class="in"><div class="frame"><div class="txt"><div class="eyebrow"><span class="rails"><i></i><i></i><i></i></span>Поставщики · NARMAK</div><h1>Интеграция 1С <br>с <span>NARMAK</span><small>по API</small></h1><p class="lead">Остатки с настроенных складов NARMAK и закупочные цены приходят в вашу 1С, резерв ставится из 1С. Кабинет NARMAK при этом не отменяем: модуль забирает из него рутину.</p><div class="btns"><a class="btn m" href="#popup:konsultacia">Получить консультацию <span class="ar">→</span></a><a class="btn g" href="#price">Сколько стоит</a></div></div><div class="ph"><img src="../../brand-images/allsun-hero-ecom-suppliers.jpg" alt="Павел Агеев, ведущий аналитик 1С и эксперт по интеграциям Аллсан Интеграция, с коммутатором у стола с сетевым оборудованием поставщиков" fetchpriority="high"><div class="veil"></div><div class="who"><b>Павел Агеев</b> · ведущий аналитик 1С, эксперт по интеграциям</div></div></div></div></section>
+
+<!-- BODY -->
+<section class="body" style="padding-top:56px">
+ <div class="in">
+  <aside class="pass">
+   <div class="ttl">Паспорт интеграции</div>
+   <div class="price">103 950 ₽</div>
+   <div class="per">в год за пакет из 5 поставщиков, NARMAK входит</div>
+   <dl>
+    <dt>Поставщик</dt><dd>NARMAK</dd>
+    <dt>Данные</dt><dd>остатки, цены, резерв</dd>
+    <dt>Сайт</dt><dd>через виртуальные склады</dd>
+    <dt>Доступ к API</dt><dd>выдаёт поставщик</dd>
+    <dt>Подключение</dt><dd>2 недели</dd>
+    <dt>Оплата</dt><dd>ежегодно</dd>
+   </dl>
+   <a class="btn m" href="#popup:konsultacia">Получить консультацию</a>
+   <a class="btn g" href="https://alsn.ru/ecom#suppliers">Все поставщики</a>
+   <div class="small">Цены с НДС 5%. +1 поставщик из списка 15 645 ₽ в год. Год продления стоит столько же, сколько покупка.</div>
+   <div class="trust"><span>с 2015 года</span><span>ТОП 10 ЦРА</span><span>1С:Франчайзи</span></div>
+  </aside>
+
+  <div>
+
+   <div class="sec">
+    <div class="num"><span class="n">01</span><span class="ln"></span></div>
+    <h2>NARMAK: коротко о поставщике</h2>
+    <p>NARMAK - бренд бакалеи: орехи, сухофрукты, семена и сопутствующие продукты. Оптовые заказы на сайте принимают письменно, отдельного кабинета партнёра нет</p>
+    <p><b>В ассортименте:</b> орехи, сухофрукты, семена, бакалея.</p>
+    <p>Юридический адрес: Московская обл., г. Орехово-Зуево, ул. Московская, д. 2. Доставка по всей России</p>
+    <p>Отдел оптовых продаж (B2B): заявки только письменно на почту, тема письма «Оптовый заказ». Личного кабинета партнёра на сайте не найдено</p>
+   </div>
+
+   <div class="sec">
+    <div class="num"><span class="n">02</span><span class="ln"></span></div>
+    <h2>Что модуль забирает у NARMAK</h2>
+    <p class="sub">Модуль забирает данные по API NARMAK и кладёт их в вашу базу.</p>
+    <div class="fit">
+     <div><b>Остатки</b><p>Остаток NARMAK обновляется в 1С сам. Склады, которые вы не включили, в обмен не входят.</p></div>
+     <div><b>Закупочные цены</b><p>Прайс NARMAK больше не загружают файлом: цена приходит вместе с обменом.</p></div>
+     <div><b>Резерв онлайн</b><p>Резерв NARMAK не ставят в кабинете: его создаёт 1С, а ответ поставщика возвращается в заказ.</p></div>
+    </div>
+   </div>
+
+   <div class="sec">
+    <div class="num"><span class="n">03</span><span class="ln"></span></div>
+    <h2>Что остаётся ручным</h2>
+    <p class="sub">Кабинет NARMAK остаётся у вас. Модуль убирает ручной перенос данных из него в 1С.</p>
+    <div class="extra">
+     <div class="ex"><b>Личный кабинет NARMAK</b><p>Остатки и закупочные цены видны на сайте NARMAK. Чтобы они попали в 1С, менеджер скачивает Excel и загружает вручную. Резерв ставят в кабинете.</p><span class="need">Каждый день руками</span></div>
+     <div class="ex"><b>Модуль Аллсан в 1С</b><p>Остатки и закупочные цены приходят в 1С сами. Резерв ставится из 1С, рядом лежат данные других ваших поставщиков.</p><span class="need">Автоматически</span></div>
+    </div>
+   </div>
+
+   <div class="sec">
+    <div class="num"><span class="n">04</span><span class="ln"></span></div>
+    <h2>Как идут данные</h2>
+    <div class="route">
+     <div class="node"><div class="k">NARMAK</div><b>API NARMAK</b><ul><li>остатки на складах</li><li>закупочные цены</li><li>резерв товара</li></ul></div>
+     <div class="pipe"><div>остатки и цены</div><div class="back">резерв</div></div>
+     <div class="node mid"><div class="k">Модуль Аллсан</div><b>Обмен по расписанию</b><ul><li>загрузка в 1С</li><li>резерв у NARMAK</li><li>другие поставщики</li></ul></div>
+     <div class="pipe"><div>в учёт</div><div class="back">заказы</div></div>
+     <div class="node"><div class="k">Ваша 1С и сайт</div><b>Учёт и прайс</b><ul><li>остатки NARMAK</li><li>цены для прайса</li><li>резервы у NARMAK</li></ul></div>
+    </div>
+   </div>
+
+   <div class="sec">
+    <div class="num"><span class="n">05</span><span class="ln"></span></div>
+    <h2>Как получить доступ к API NARMAK</h2>
+    <p class="sub">Доступ выдаёт сам поставщик. Логин и пароль, код доступа или токен мы вставляем в модуль и проверяем обмен на вашей базе.</p>
+    <div class="extra">
+     <div class="ex"><b>Доступ у поставщика</b><p>Доступ к API выдаёт сам NARMAK, обычно своим партнёрам. Спросите у своего менеджера, а мы подскажем, что запросить.</p><span class="need">Через менеджера</span></div>
+     <div class="ex"><b>Что загружаем</b><p>По NARMAK модуль работает с данными: остатки, цены, резерв. Набор зависит от того, что отдаёт API поставщика.</p><span class="need">Остатки, цены, резерв</span></div>
+    </div>
+   </div>
+
+   <div class="sec" id="price">
+    <div class="num"><span class="n">06</span><span class="ln"></span></div>
+    <h2>Сколько стоит</h2>
+    <p class="sub">NARMAK входит в пакет из 5 любых поставщиков из списка.</p>
+    
+    <div class="prices three">
+     <div class="pc a"><span class="badge">Основной пакет</span><div class="nm">5 поставщиков из списка</div><div class="p">103 950 ₽</div><div class="s">в год, продление по той же цене</div>
+      <ul><li>Любые 5 поставщиков из таблицы</li><li>Остатки, цены, резерв</li><li>Настройка в вашей 1С</li></ul>
+      <a class="btn m" href="#popup:konsultacia">Получить консультацию</a></div>
+     <div class="pc"><div class="nm">+1 поставщик из списка</div><div class="p">15 645 ₽</div><div class="s">в год, к основному пакету</div>
+      <ul><li>Любой следующий поставщик из таблицы</li><li>Подключаем, когда нужно</li></ul>
+      <a class="btn g" href="#popup:konsultacia">Добавить поставщика</a></div>
+     <div class="pc"><div class="nm">Новый поставщик</div><div class="p">208 950 ₽</div><div class="s">стартовая цена, если поставщика нет в списке</div>
+      <ul><li>Интеграция под API или кабинет поставщика</li><li>Потом он появляется в списке</li></ul>
+      <a class="btn g" href="#popup:konsultacia">Обсудить поставщика</a></div>
+    </div>
+    <p class="note">Оплата ежегодная: год продления стоит столько же, сколько покупка. Без продления модуль перестаёт получать обновления, и если поставщик изменит свой API, обмен с ним может остановиться. Цены с НДС 5%.</p>
+   </div>
+
+   <div class="sec faq">
+    <div class="num"><span class="n">07</span><span class="ln"></span></div>
+    <h2>Частые вопросы</h2>
+    <details open><summary>Что входит в каталог NARMAK?</summary><p>На сайте NARMAK указаны: орехи, сухофрукты, семена, бакалея. В 1С по этой интеграции приходят остатки, закупочные цены и резерв.</p></details>
+    <details><summary>Как устроен кабинет NARMAK?</summary><p>Отдел оптовых продаж (B2B): заявки только письменно на почту, тема письма «Оптовый заказ». Личного кабинета партнёра на сайте не найдено</p></details>
+    <details><summary>Что меняется для менеджера после подключения NARMAK?</summary><p>Менеджер перестаёт скачивать прайс NARMAK. Остатки и закупочные цены приходят прямо в 1С, резерв ставится из 1С через API NARMAK.</p></details>
+    <details><summary>Нужен ли доступ к API NARMAK?</summary><p>Да. Доступ к API выдаёт сам NARMAK. Подскажем, что у него запросить.</p></details>
+    <details><summary>Можно ли выгружать остатки NARMAK на ваш сайт?</summary><p>Да, если ваша 1С уже связана с сайтом. Настроим автоматическую загрузку остатков NARMAK на виртуальные склады в 1С, которые связаны с сайтом.</p></details>
+    <details><summary>Сколько времени занимает подключение NARMAK?</summary><p>Подключение одного поставщика занимает 2 недели.</p></details>
+    <details><summary>Можно подключить других поставщиков?</summary><p>Да. NARMAK входит в пакет из 5 любых поставщиков из нашего списка за 103 950 ₽ в год. Каждый следующий из списка стоит 15 645 ₽ в год.</p></details>
+    <details><summary>Нужно ли продлевать интеграцию?</summary><p>Да, оплата ежегодная. Год продления стоит столько же, сколько покупка: 103 950 ₽ за пакет из 5 поставщиков, 15 645 ₽ за каждого следующего из списка. Если не продлить, модуль перестанет получать обновления, и когда поставщик изменит свой API, обмен с ним может остановиться. Цены с НДС 5%.</p></details>
+   </div>
+
+   <div class="sec" style="margin-bottom:40px">
+    <div class="extra-h" style="margin-top:0">Другие поставщики</div>
+    <div class="chips"><a href="https://alsn.ru/bion">BION</a><a href="https://alsn.ru/mont">MONT</a><a href="https://alsn.ru/v1-electronics">В1 Электроникс</a><a href="https://alsn.ru/it-proekt">IT Partner</a><a href="https://alsn.ru/3logic">3logic</a><a href="https://alsn.ru/dihouse">diHouse</a><a class="all" href="https://alsn.ru/ecom#suppliers">Весь список →</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="in">
+  <div><h2>NARMAK в вашей 1С</h2><p>Посчитаем, сколько поставщиков из списка вам нужно.</p><div class="ph">+7 (495) 260-04-03</div></div>
+  <a class="btn m" href="#popup:konsultacia">Получить консультацию <span class="ar">→</span></a>
+ </div>
+</section>
+</div>
+<script>
+function showTab(i){
+ document.querySelectorAll('.tabs button').forEach(function(x,k){x.classList.toggle('on',k===i)});
+ document.querySelectorAll('.pane').forEach(function(x,k){x.classList.toggle('on',k===i)});
+}
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){showTab(+b.dataset.t)})});
+document.querySelectorAll('a[data-tab]').forEach(function(a){a.addEventListener('click',function(e){
+ e.preventDefault();e.stopPropagation();
+ showTab(+a.dataset.tab);
+ var t=document.getElementById('reports');
+ window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-20,behavior:'smooth'});
+})});
+document.querySelectorAll('[data-zoom]').forEach(function(a){a.addEventListener('click',function(e){
+ e.preventDefault();
+ var d=document.createElement('div');d.className='lb';d.innerHTML='<img src="'+a.getAttribute('href')+'" alt="">';
+ d.addEventListener('click',function(){d.remove()});document.body.appendChild(d);
+})});
+</script>
+<script>
+(function(){
+ var mh=document.getElementById('mh'),shade=document.getElementById('mhShade'),mm=document.getElementById('mm');
+ var items=[].slice.call(mh.querySelectorAll('.top>li')),t=null,desk=matchMedia('(min-width:1001px)');
+ function close(){items.forEach(function(li){li.classList.remove('open');var b=li.querySelector('button');if(b)b.setAttribute('aria-expanded','false')});if(shade)shade.classList.remove('on')}
+ function open(li){close();li.classList.add('open');li.querySelector('button').setAttribute('aria-expanded','true');if(shade)shade.classList.add('on')}
+ items.forEach(function(li){
+  var b=li.querySelector('button');if(!b)return;
+  b.addEventListener('click',function(){li.classList.contains('open')?close():open(li)});
+  li.addEventListener('mouseenter',function(){if(!desk.matches)return;clearTimeout(t);t=setTimeout(function(){open(li)},120)});
+  li.addEventListener('mouseleave',function(){if(!desk.matches)return;clearTimeout(t);t=setTimeout(close,220)});
+ });
+ [].slice.call(mh.querySelectorAll('.row.has>a')).forEach(function(x){x.addEventListener('focus',function(){x.parentNode.classList.add('open')});x.parentNode.addEventListener('focusout',function(ev){if(!x.parentNode.contains(ev.relatedTarget))x.parentNode.classList.remove('open')})});
+ document.addEventListener('keydown',function(ev){if(ev.key==='Escape'){close();mm.classList.remove('on')}});
+ document.addEventListener('click',function(ev){if(!mh.contains(ev.target))close()});
+ if(shade)shade.addEventListener('click',close);
+ var bg=mh.querySelector('.burger');
+ bg.addEventListener('click',function(){mm.style.top=Math.max(0,mh.getBoundingClientRect().bottom)+'px';var on=mm.classList.toggle('on');bg.setAttribute('aria-expanded',on);mm.setAttribute('aria-hidden',!on);document.body.style.overflow=on?'hidden':''});
+})();
+</script>
+</body>
+</html>

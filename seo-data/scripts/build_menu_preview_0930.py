@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """Макеты верхнего меню alsn.ru кодом (T123 в Header) в стиле страниц v3.
 
-Вариант A - светлая шапка и мега-панель. Вариант B - тёмная шапка и каскадные списки.
-Выход: seo-data/competitors/screens/preview-menu-v3-{a,b}.html и сводная страница вариантов.
+Канон - вариант C (чёрная шапка и белая мега-панель), правило .cursor/rules/tilda-menu-v3.mdc.
+A (светлая шапка) и B (каскадные списки) оставлены для сравнения.
+Выход: seo-data/competitors/screens/preview-menu-v3-{a,b,c}.html и сводная страница вариантов.
 """
 import html
 from pathlib import Path
@@ -244,6 +245,33 @@ CSS_B = """
 .mm .foot .ph{font-weight:700;font-size:18px;text-align:center}
 """
 
+# ---------- Вариант C: тёмная шапка (как B) + белая мега-панель (как A) ----------
+CSS_C = CSS_A + """
+.mh{background:#111214;border-bottom:0;backdrop-filter:none;color:#fff}
+.mh .top>li>button,.mh .top>li>a{color:#e9eaec;font-weight:500}
+.mh .top>li.open>button,.mh .top>li>button:hover{color:var(--acc)}
+.mh .top>li>button::before{bottom:0}
+.mh .ph{color:#fff}.mh .ph small{color:#9aa0a6}
+.mh .ic{background:transparent;border-color:#3a3d42;color:#fff}
+.mh .ic:hover{border-color:var(--acc);color:var(--acc)}
+.mh .panel{border-top:1px solid #2a2d31;color:var(--ink)}
+.mh .panel h4,.mh .panel h4 a,.mh .panel .promo b,.mh .panel .promo h3,.mh .panel .promo strong{color:var(--ink)}
+.mh-shade{background:rgba(17,18,20,.35)}
+.mm{background:#111214;color:#fff}
+.mm details{border-bottom:1px solid #2a2d31}
+.mm .lnk{color:#cfd2d6}
+.mh .promo p a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.mh .promo p a:hover{color:var(--acc);text-decoration-color:var(--acc)}
+"""
+
+CRA = "ТОП 10 ЦРА"
+CRA_HREF = "/cra"
+
+
+def cra_link(escaped):
+    return escaped.replace(CRA, f'<a href="{CRA_HREF}">{CRA}</a>', 1)
+
+
 ICON_SEARCH = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
 ICON_BURGER = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg>'
 
@@ -280,20 +308,20 @@ def panel_a(sec, pid):
             + (f"<ul>{lis}</ul>" if lis else "") + "</div>")
     all_html = a(allink[1], e(allink[0]), "all") if allink else ""
     k, text, btn, bhref = promo
-    promo_html = (f'<aside class="promo"><span class="k">{e(name)}</span><b>{e(k)}</b><p>{e(text)}</p>'
+    promo_html = (f'<aside class="promo"><span class="k">{e(name)}</span><b>{e(k)}</b><p>{cra_link(e(text))}</p>'
                   f'{a(bhref, e(btn), "btn m")}</aside>')
     return (f'<div id="{pid}" class="panel" role="region" aria-label="{e(name)}"><div class="pin">'
             f'<div class="cols c{len(cols)}">{"".join(col_html)}{all_html}</div>{promo_html}</div></div>')
 
 
-def header_a():
+def header_a(logo=LOGO_DARK_TEXT):
     lis = []
     for i, sec in enumerate(MENU):
         lis.append(f'<li><button type="button" aria-expanded="false" aria-controls="p{i}">{e(sec[0])}</button>'
                    f'{panel_a(sec, "p" + str(i))}</li>')
     return f"""<header class="mh" id="mh">
 <div class="in bar">
- <a class="logo" href="https://alsn.ru/" aria-label="Аллсан Интеграция, на главную"><img src="{LOGO_DARK_TEXT}" alt="Аллсан"></a>
+ <a class="logo" href="https://alsn.ru/" aria-label="Аллсан Интеграция, на главную"><img src="{logo}" alt="Аллсан"></a>
  <nav aria-label="Основное меню"><ul class="top">{''.join(lis)}</ul></nav>
  <div class="tools">
   <a class="ph" href="{PHONE_HREF}">{PHONE}<small>Пн-Пт 9:00-18:00</small></a>
@@ -383,8 +411,11 @@ PAGE = """<main class="page"><div class="in">
 
 
 def build(variant):
-    css, head = (CSS_A, header_a()) if variant == "a" else (CSS_B, header_b())
-    title = "светлая шапка и мега-панель" if variant == "a" else "тёмная шапка и каскадные списки"
+    css, head, title = {
+        "a": (CSS_A, header_a(), "светлая шапка и мега-панель"),
+        "b": (CSS_B, header_b(), "тёмная шапка и каскадные списки"),
+        "c": (CSS_C, header_a(LOGO_WHITE_TEXT), "чёрная шапка и белая мега-панель"),
+    }[variant]
     note = ("Наведите на пункт меню или нажмите на него. На телефоне (уже 1000 px) - кнопка меню справа."
             " Ссылки на новые страницы (/uslugi, /max1c и т.п.) заработают после их публикации.")
     doc = f"""<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
@@ -424,8 +455,13 @@ h1{{font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 10px}}
 .box b{{color:var(--ink)}}
 @media(max-width:800px){{.g{{grid-template-columns:minmax(0,1fr)}}}}
 </style></head><body><div class="w">
-<h1>Верхнее меню кодом: два варианта</h1>
+<h1>Верхнее меню кодом</h1>
 <p class="sub">Структура одна и та же: Услуги, Продукты, Лицензии, Наш опыт, О компании, до третьего уровня. Отличается только подача.</p>
+<div class="c" style="border:2px solid var(--acc);margin-bottom:22px"><span class="k">C - выбран 30.09.2026</span><h2>Чёрная шапка и белая мега-панель</h2>
+<ul><li>Чёрная полоса и белый логотип, как на сайте сейчас.</li>
+<li>Список раскрывается широкой белой панелью, как в варианте A: 2-й уровень заголовками с подписью, 3-й уровень ссылками, справа карточка раздела.</li>
+<li>Мобильное меню тёмное, в тон шапке.</li></ul>
+<a class="btn m" href="screens/preview-menu-v3-c.html">Открыть вариант C</a></div>
 <div class="g">
 <div class="c"><span class="k">A</span><h2>Светлая шапка и мега-панель</h2>
 <ul><li>Белая полоса в тон страницам v3, логотип с тёмным текстом.</li>
@@ -442,13 +478,13 @@ h1{{font-size:40px;font-weight:800;letter-spacing:-.02em;margin:0 0 10px}}
 <div class="box"><b>Как это встанет в Тильду.</b> Шапка - один блок T123 на странице Header (вместо текущего T228, его выключаем, не удаляем).
 Стили с префиксом, чтобы не задеть страницы. Поиск открывает стандартный поиск Тильды, кнопка «Получить консультацию» - существующую всплывающую форму.
 На телефоне своя кнопка меню и раскрывающиеся списки. Перед боевой шапкой - проверка на копии Header.<br><br>
-<b>Мой выбор - A.</b> Он продолжает дизайн новых страниц, третий уровень в нём виден без «охоты» мышью, а карточка справа продаёт главный продукт раздела.</div>
+<b>Выбор - C.</b> Узнаваемая чёрная шапка сайта, а третий уровень виден без «охоты» мышью, и карточка справа продаёт главный продукт раздела.</div>
 </div></body></html>"""
     OPTIONS.write_text(doc, encoding="utf-8")
     return OPTIONS
 
 
 if __name__ == "__main__":
-    for v in ("a", "b"):
+    for v in ("a", "b", "c"):
         print(build(v))
     print(options())
